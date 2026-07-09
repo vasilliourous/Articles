@@ -1,0 +1,9 @@
+# Core
+crawl4ai>=0.9
+beautifulsoup4>=4.14
+tqdm>=4.67
+
+# Transitive (installed by crawl4ai, listed for clarity)
+aiohttp>=3.11
+playwright>=1.49
+lxml>=5.3

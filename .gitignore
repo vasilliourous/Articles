@@ -1,0 +1,20 @@
+# Virtual environment
+venv/
+.venv/
+
+# Environment variables
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.so
+
+# Project output / cache directories
+summaries/
+clean_texts/
+failed/
+
+# OS files
+.DS_Store
+Thumbs.db
