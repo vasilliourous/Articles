@@ -1,0 +1,52 @@
+{
+  "article_title": "I bought a KVM-over-IP for my home lab, and I can't believe I waited this long",
+  "core_thesis": "A dedicated KVM-over-IP device, such as the GL.iNet Comet 5G, provides out-of-band management for home lab servers, enabling full remote control (including BIOS access and troubleshooting) even when the network or server is down, which is a significant upgrade over traditional remote tools like SSH or RDP that fail when the target machine is offline.",
+  "detailed_summary": "The author describes the common home lab frustration of servers becoming unreachable after a failed reboot or network misconfiguration, requiring physical access to plug in a monitor, keyboard, and mouse. To solve this, they purchased a GL.iNet Comet 5G KVM-over-IP device, which acts as a mini-computer that connects to the server's video output and USB ports, providing remote console access over Ethernet, Wi-Fi, or 5G RedCap. Unlike software-based remote tools, KVM-over-IP works independently of the server's operating system, allowing the user to see the boot process, enter BIOS, and even upload files as virtual storage. The device also supports Tailscale and Zerotier for secure remote access, and can be used as a Wi-Fi hotspot. The author emphasizes that this capability is similar to enterprise out-of-band management (like IPMI or iLO) but is now accessible to home labbers via affordable dedicated hardware.",
+  "entities": [
+    {
+      "name": "GL.iNet Comet 5G",
+      "type": "product",
+      "role": "KVM-over-IP device reviewed in the article, offering Ethernet, Wi-Fi 6, and 5G RedCap connectivity for remote server management."
+    },
+    {
+      "name": "Joe Rice-Jones",
+      "type": "person",
+      "role": "Author of the article and home lab enthusiast."
+    },
+    {
+      "name": "Tailscale",
+      "type": "organization",
+      "role": "VPN/mesh networking service used to securely access the KVM-over-IP device remotely."
+    },
+    {
+      "name": "Zerotier",
+      "type": "organization",
+      "role": "Alternative to Tailscale for secure remote access."
+    }
+  ],
+  "key_data_points": [
+    "Traditional remote tools like SSH and RDP fail when the target server is offline or fails to boot, making them unreliable for troubleshooting (🟢 relevant to your homelab: you need a fallback for when your server goes down).",
+    "KVM-over-IP provides out-of-band management, giving console access from power-on through boot, including BIOS/UEFI, independent of the server's OS (🟢 critical for Red Teaming: you can modify boot parameters or recover a compromised system without physical access).",
+    "The GL.iNet Comet 5G supports three connectivity methods: Ethernet, Wi-Fi 6, and 5G RedCap, ensuring access even if the primary network fails (🟢 useful for homelab resilience: multiple failover paths).",
+    "The device can act as a Tailscale or Zerotier node, adding an extra layer of security and enabling remote access without exposing the device directly to the internet (🟢 good security practice for your homelab).",
+    "It supports virtual media (uploading ISO files as if they were a local USB drive), allowing OS reinstalls or BIOS updates remotely (🟢 practical for homelab maintenance).",
+    "Wake-on-LAN and Fingerbot integration are supported for power cycling devices that lack remote power control (🟢 helpful for automating server recovery)."
+  ],
+  "methodology_steps": [
+    "Identify the need: If your home lab servers frequently become unreachable after reboots or network changes, consider a KVM-over-IP device for out-of-band management.",
+    "Choose a device: The GL.iNet Comet 5G is one option; alternatives include PiKVM (Raspberry Pi-based) or enterprise IPMI if your hardware supports it.",
+    "Connect the KVM-over-IP to your server: Plug the device's HDMI input into the server's video output, and its USB port into the server for keyboard/mouse emulation.",
+    "Connect the KVM-over-IP to your network: Use Ethernet for primary connectivity, and optionally enable Wi-Fi and 5G for redundancy.",
+    "Configure remote access: Set up Tailscale or Zerotier on the device for secure remote access without port forwarding.",
+    "Test: Reboot your server and verify you can see the boot process and enter BIOS remotely.",
+    "Use for maintenance: Upload ISO files via virtual media to reinstall OS or update firmware without physical presence."
+  ],
+  "conclusions": [
+    "KVM-over-IP is a game-changer for home lab management because it provides reliable out-of-band access that works even when the server is offline or misconfigured, saving time and frustration.",
+    "The GL.iNet Comet 5G's multiple connectivity options (Ethernet, Wi-Fi, 5G) ensure high availability, making it suitable for critical infrastructure like a home server running Home Assistant.",
+    "For homelabbers, this device bridges the gap between consumer and enterprise management capabilities, offering features like virtual media and BIOS access at a reasonable price ($300)."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your homelab and DevOps interests because it introduces a practical solution for remote server management that overcomes the limitations of SSH and RDP. As someone who runs a home lab and values uptime, a KVM-over-IP device like the GL.iNet Comet 5G can save you from physical trips to your server room. The article also touches on security (Tailscale integration) and redundancy (multiple network paths), which align with your Red Teaming mindset of ensuring resilient access. You can apply this knowledge to build a more robust homelab infrastructure and even automate recovery workflows using the device's Wake-on-LAN and virtual media features.",
+  "extra_advice": "Consider integrating the KVM-over-IP with your existing automation tools (e.g., Ansible or Home Assistant) to trigger automatic recovery actions when a server becomes unresponsive. For Red Teaming, you could use a similar device to maintain persistent remote access to a target machine even after OS-level compromises, as long as you have physical access to install it.",
+  "source_url": "https://www.xda-developers.com/should-have-bought-kvm-over-ip-for-home-lab-sooner/"
+}

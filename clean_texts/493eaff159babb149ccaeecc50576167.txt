@@ -1,0 +1,356 @@
+I kept deleting files but my phone storage kept filling up — here's what was actually eating it
+Menu
+Sign in now
+Close
+PC & Mobile
+Submenu
+Windows2
+Linux
+Android
+Apple
+Technical
+Submenu
+Tech Explained
+Security
+Software
+Submenu
+Productivity
+Internet
+Creative
+Screen
+Submenu
+Entertainment
+Streaming
+Home
+Submenu
+Smart Home
+Home
+News
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+Productivity
+Android
+Smart TVs
+Networking
+Windows 11
+Entertainment
+Close
+I kept deleting files but my phone storage kept filling up — here's what was actually eating it
+Pankil Shah / MakeUseOf
+Credit: Pankil Shah / MakeUseOf
+By 
+Kanika Gogia
+Published
+ Apr 25, 2026, 2:30 PM EDT
+Kanika began writing about consumer technology in 2019 and has contributed to tech websites like Beebom and The Mac Observer. During her journey, she covered a wide range of topics, including Android, Windows, AI, and everything Apple. She has been a loyal iPhone user since 2014, and owns an Apple device from almost every lineup. With a keen eye on the latest trends, she strives to help users get the most out of their gadgets.
+
+Beyond her love for writing, she is a deep researcher and a lifelong learner, always eager to explore the latest innovations and emerging technologies. With her passion for technology and writing, she joined MUO in 2025 as a Freelance Tech Writer.
+
+When not writing, she's probably trying a viral Instagram recipe or watching some thriller suspense on Netflix.
+Sign in to your 
+MakeUseOf
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																						
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Every time my phone showed a low storage warning, I would follow my usual routine. First, I’d open up my gallery and delete a few photos and videos. Then, I’d try to uninstall a few apps that I haven’t used in a while. And this would work for some time. My phone would get a little breathing room, stop showing low storage alerts, and I would move on. Unfortunately, this would come back every few days. No matter how many photos and files I deleted, something was filling up that space.
+✕
+ Remove Ads
+Later on, I realized that I was focusing on the obvious culprits that I could see but completely missing the things that were actually eating up space on my phone.
+
+                        App cache and data
+               
+
+            The biggest storage hogs weren’t my files
+    
+Since I was actively deleting apps on my phone every now and then, I first decided to check how much space my apps are actually using. It didn’t just focus on the installation size, but their actual footprint. Once I did that, I found out that some of my apps, like Spotify, TikTok, and Instagram, weren’t just taking a few megabytes, as I expected. Rather, they were eating up multiple gigabytes. The reason? App cache and stored data.
+Every time we watch a video or stream a song, it all gets temporarily saved in the cache. This makes the app feel faster. However, this temporary data can accumulate into a few gigabytes in no time. Therefore, it’s important to 
+clear the app cache and data 
+regularly. Go to 
+Settings -> Apps,
+ pick the app that’s taking unnecessary space, tap 
+Storage
+, and then hit the
+ Clear cache or Clear data
+ button.
+
+                        Messaging apps
+               
+
+            They were secretly filling my storage
+    
+Digvijay Kumar / MakeUseOf
+Credit: Digvijay Kumar / MakeUseOf
+✕
+ Remove Ads
+ Next, I checked my messaging apps, mainly WhatsApp and Telegram. This is where things got frustrating. These messaging apps were automatically downloading everything for me. Be it photos, videos, documents, voice notes, or memes, everything was being saved locally on my phone. Even worse, it was also saving duplicates across chats and conversations I hadn’t opened in months. Frankly, I wasn’t even concerned about it until I had to deal with storage full notifications.
+Together, these unnecessary files added several gigabytes of clutter that I didn’t even remember downloading on my phone. So, I went to the app’s settings and turned off the auto-download option. Now, I’m relying on the built-in storage tools from the apps. This immediately helped me 
+free up space on my phone
+.
+
+                        Deleted photos weren't actually gone
+               
+
+            I deleted hundreds of photos and got nothing back
+    
+ This one really annoyed me. A couple of times, I would open the gallery and delete a couple of photos and videos on my phone. Obviously, I would expect it to free up some space. However, this didn’t happen. In fact, nothing changed. That's when I remembered checking out the trash folder in Google Photos.
+✕
+ Remove Ads
+When you 
+delete photos on your phone
+, they aren't actually removed. Rather, they are moved to a separate “Recently Deleted” folder, where they sit for some weeks before getting permanently deleted. The thing is that these recently deleted items still take up storage space. They are still on your device after all. I decided to empty the trash folder and saw a difference immediately.
+
+                        Downloads folder was a mess
+               
+
+            It was packed with junk
+    
+I won’t deny that I haven’t opened my Downloads folder in months. When I did, though, it explained a lot. It was packed with duplicate images, old PDFs, random screenshots, and APK files that I installed and forgot about. It’s worth knowing that several apps and browsers like Chrome often save things in the background without telling you. Unless you pay attention, they just pile up.
+I did not use a cleaning app because 
+Android already offers a built-in version
+. I used the Files app to get rid of these junk files and leftover installations. It easily identified old screenshots, junk files, cache, leftover installations, and unused apps. With a clear breakdown, I could easily decide what I actually wanted to remove from my device.
+
+                        Offline content
+               
+
+            It took more space than I realized
+    
+Credit: Brandon Miniman / MakeUseOf
+✕
+ Remove Ads
+ The final thing I had to deal with was offline content. Frankly speaking, I download a lot of content on my phone. I need everything for my journeys: YouTube videos, offline music, and Netflix shows at my fingertips. Saving them offline made all the sense at that time. I would soon forget that they are still on my phone, eating up unnecessary storage space.
+
+                    Subscribe to our newsletter for smarter phone storage tips
+                
+Stop guessing what’s filling your phone and subscribe to the newsletter for clear coverage of phone storage strategies and practical tech tips that help you regain control over device space.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+The problem is that you aren’t reminded of what you have downloaded. So, it stays out of sight and out of mind naturally. When I checked mine, I had several GBs wasted on offline content from YouTube and Netflix, particularly. I hadn’t touched them in weeks now. When I deleted them, it freed up my storage space instantly.
+
+            My storage problem finally stopped coming back
+    
+I realized that my storage wasn’t filling up because of the files I was actively managing. Instead, it was filling up because of the things that were happening in the background. Cached data, automatically downloaded media, offline content, and forgotten downloads were responsible. Once I tackled them, the cycle finally stopped. Now, I don’t constantly delete files to maintain space on my phone. I just keep my eye on the real culprits. Now, the phone’s storage stays under control without much effort and aggressive deletions.
+✕
+ Remove Ads
+Android
+Android Tips
+Storage
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+
+                                                    Technology Explained
+                                            
+
+                                                    PC & Mobile
+                                            
+
+			3 tech companies that make your gadgets more expensive
+		
+18 minutes ago
+
+			Your SSD does not wipe your deleted files — this is what TRIM actually does
+		
+3 hours ago
+
+			Wireless charging is finally worth using, but only if you know what to look for
+		
+4 hours ago
+See More
+
+			The Lenovo Yoga Pro 7i is a tough sell, but the display is insane
+		
+48 minutes ago
+
+			I ran a Windows network reset and fixed problems I'd blamed on my router for months
+		
+5 hours ago
+
+			I switched to Gentoo Linux and now I get why it's worth the headache
+		
+9 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			I thought VLC was peak until I found this cleaner alternative
+		
+
+			Your Samsung phone can optimize itself overnight — here's how to set it up
+		
+
+			I stopped using LM Studio once I found this open-source alternative
+		
+
+                                                
+                
+                                                    
+                                    Thread
+                                                    
+Sign in to your 
+MakeUseOf
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Be the first to post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+This space is open for discussion.
+Be the first to share your thoughts.
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 23, 2026
+
+                                    The $0 upgrade that made my smart TV so much better
+                            
+Apr 23, 2026
+
+                                    I ran a DNS speed test and Google's 8.8.8.8 wasn't even in the top two
+                            
+Apr 22, 2026
+
+                                    I replaced Google's search bar with Samsung Finder and I'm never going back
+                            
+Apr 22, 2026
+
+                                    5 USB-C tricks that feel wrong until you try them
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+MakeUseOf
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:04
+Skip Ad
+5

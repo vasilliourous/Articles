@@ -1,0 +1,439 @@
+6 self-hosted media tools you owe it to yourself to try
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+2
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+6 self-hosted media tools you owe it to yourself to try
+By 
+Ayush Pande
+Published
+ Feb 14, 2026, 3:30 PM EST
+Ayush Pande is a PC hardware and gaming writer. When he's not working on a new article, you can find him with his head stuck inside a PC or tinkering with a server operating system. Besides computing, his interests include spending hours in long RPGs, yelling at his friends in co-op games, and practicing guitar. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+2
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Aside from ad-blockers, databases, and network tools, media servers are the most common utilities you’d find in the self-hosted ecosystem.
+✕
+ Remove Ads
+After all, you wouldn’t want privacy-intrusive third-party apps that require a constant Internet connection and regular subscription fees just to manage your own media. But with thousands of FOSS apps out there, it’s easy to get overwhelmed when you’re trying to deploy a container stack. So, here’s a byte-sized collection of the best media server tools you can run on your home server.
+Related
+
+			9 Docker containers that run 24/7 on my $100 mini PC
+		
+Maximum value budget homelab.
+Posts
+15
+By 
+Samir Makwana
+Feb 9, 2026
+
+                        Karakeep
+               
+
+            Perfect for organizing your bookmark collection
+    
+If you’re as terminally online as I am, you’ve probably got a chaotic collection of hyperlinks and bookmarks spanning all sorts of topics. Although most web browsers have proper bookmark managers, there’s not much you can do to organize them. That’s where Karakeep comes in handy, with its clean UI and tagging capabilities. Besides letting you add conventional web links, Karakeep can also house PDF files, images, and notes – making it more of a private Pinterest board than a mere bookmark manager.
+For folks with self-hosted LLMs, you can pair Karakeep with your local AI model to create tags and summaries for your pinned files and web links. It even supports a yt-dlp integration, allowing you to download and link videos to your idea board. The best part? Karakeep can archive pages and prevent link rot from rendering your favorite blogs inaccessible.
+✕
+ Remove Ads
+
+                        RomM
+               
+
+            For emulation lovers with far too many ROM files
+    
+When you’re into emulation, ripping game files from physical media becomes second nature. But if you’re someone who owns dozens of consoles and hundreds of titles, keeping all your ROM files can be a problem without a dedicated tool. As a hardcore emulation lunatic, I’ve been using 
+RomM
+ to make my game library more structured instead of relying on a haphazard collection of directories.
+Compared to the other services on this list, RomM is somewhat difficult to deploy because you need to configure numerous environment variables. Once you integrate it with game databases, RomM will automatically retrieve artwork and other metadata for your titles. It also supports DLCs, patches, and third-party mods, and you can even use its built-in EmulatorJS to access retro games directly from your web browser.
+
+                        Paperless-ngx
+               
+
+            Bonus points if you use its LLM-powered companion tools
+    
+✕
+ Remove Ads
+ Technically, 
+Paperless-ngx
+ is better suited for official documents than typical entertainment media, but it has enough quality-of-life features to earn a place on this list. For starters, this document management tool supports everything from invoices and receipts to product manuals and tax filings, and it can perform OCR scans on your uploaded files. That way, you can search for random strings, and Paperless-ngx will pull up the right document.
+You can also create tags for your document collection and configure automatic email processing, so Paperless-ngx pulls files attached to important mails. Paperless-ngx also has a couple of companion services that can utilize your locally-hosted LLMs to make your life easier. Me? I rely on Paperless-GPT’s superior OCR capabilities, while Paperless-AI is better for automatic document tagging.
+
+                        Calibre-Web
+               
+
+            The best self-hosted utility for bibliophiles
+    
+Switching gears to conventional ebooks, comics, and audiobooks, 
+Calibre-Web
+ offers a neat web UI for your digital library. It’s compatible with most ebook file standards and can read metadata to automatically populate the description, author, publisher, and other fields. But you’re also free to modify the metadata, which can be pretty useful when you’ve got as many uni notes on your Calibre-Web instance as I do. Plus, you can configure external metadata plugins, so you don’t have to go around manually adding records for obscure ebooks.
+✕
+ Remove Ads
+Its built-in reader is decent, though I prefer Kavita for reading comics and graphic novels. But since Calibre-Web supports the OPDS format, you can read your ebooks from typical reader devices, while send2reader lets you access your digital library from Kobo and Kindle tablets.
+
+                        Immich
+               
+
+            A Google Photos-like UI, minus all the privacy-intrusive services
+    
+Google Photos may be the most popular cloud platform for managing your image collection, but between steep pricing tiers and a lack of privacy, it’s far from ideal when you’re into FOSS utilities. Having switched between multiple image backup solutions over the course of my home lab journey, Immich is by far the best option. After all, it packs the same intuitive UI as Google Photos, and you can edit tags, create albums, and tweak metadata information from its web UI.
+Plus, Immich has a robust mobile application that automatically syncs your photos with your self-hosted server, and, like its Google counterpart, it creates “memories” albums from older images. If you’ve got a spare GPU in your home lab, you can leverage its firepower to speed up Immich’s facial recognition and smart search facilities.
+
+                        Jellyfin
+               
+
+            Add some plugins, and it becomes a killer media server
+    
+✕
+ Remove Ads
+Despite being a Plex user during my early home lab days, I have to crown Jellyfin as the default king of media server tools. Unlike its popular rival, Jellyfin doesn’t shove annoying ads and subscriptions down your throat, and you get a simple UI to view your TV shows and movie collection. Its mobile app is just as convenient, and you don’t need an Internet connection for authentication.
+Jellyfin also lets you use your GPU for hardware-accelerated transcoding, which pairs exceedingly well with the QuickSync feature you’d find on budget-friendly Intel mini-PCs. Factor in all the companion apps and plugins you can add to your self-hosted Jellyfin instance, and you’ve got a powerful media server that’s armed to the teeth with QoL features.
+Related
+
+			10 apps I always run on my TrueNAS Scale server
+		
+Make TrueNAS Scale even better with these amazing utilities
+Posts
+2
+By 
+Ayush Pande
+Apr 14, 2025
+✕
+ Remove Ads
+Entertainment
+Self-Hosting
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I'm never going back to Photoshop after mastering this free, self-hosted editor
+		
+
+			4 essential Docker containers i run on every new server
+		
+
+			7 game-changing Docker containers worth hosting on your NAS
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+2
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Sam
+Sam
+Sam
+#XF751131
+Member since 2024-11-10
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+A couple of gaps in this list: music and cookbooks. Jellyfin is pretty good for video content, but Navidrome is more focused on music and was frankly easier to set up. I'm still looking for a cookbook management system that will work how I want, but I'm just getting started with that.
+2026-02-15 08:19:45
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Derek
+Derek
+Derek
+#WI799331
+Member since 2024-07-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Tandoor. Head and shoulders above Mealie and KitchenOwl, imo
+2026-02-15 10:24:00
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Feb 10, 2026
+
+                                    9 Docker containers that run 24/7 on my $100 mini PC
+                            
+Feb 5, 2026
+
+                                    3 key features where Plex still has the edge over Jellyfin — for now
+                            
+Feb 5, 2026
+
+                                    This Docker container helps to manage my Jellyfin libraries and I love it
+                            
+Feb 3, 2026
+
+                                    This is the one thing I'd love to see changed with Jellyfin
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 28, 2026
+1:17
+
+                            Android for Desktop has leaked
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 28, 2026
+1:12
+
+                            Why are we so nostalgic for Windows XP?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 22, 2026
+1:11
+
+                            The closest we'll ever get to Windows Phone 11
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 12, 2026
+1:17
+
+                            Razer made a holographic AI anime Assistant
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 10, 2026
+0:59
+
+                            When will the RAM crisis actually end?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

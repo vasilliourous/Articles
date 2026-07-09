@@ -1,0 +1,447 @@
+How open source ideals must expand for AI | InfoWorld
+🚀 The new InfoWorld.com hybrid search: 🔍 Explore InfoWorld content smarter, faster and AI powered. ✨ 
+Try it!
+Topics
+Latest
+Newsletters
+Resources
+Buyer’s Guides
+Events
+
+										Search									
+
+									Menu								
+
+										Search									
+
+									Menu								
+Topics
+Close
+Analytics
+Artificial Intelligence
+Careers
+Cloud Computing
+Data Management
+Databases
+Development Tools
+Devops
+Emerging Technology
+Enterprise Buyer’s Guides
+Generative AI
+IT Leadership
+Java
+JavaScript
+Microsoft .NET
+Open Source
+Programming Languages
+Python
+Security
+Software Development
+Technology Industry
+Back
+Close
+Search
+Topics
+Latest
+Newsletters
+Resources
+Buyer’s Guides
+More
+Features
+Blogs
+BrandPosts
+Videos
+Topics
+Topics
+Analytics
+Artificial Intelligence
+Careers
+Cloud Computing
+Data Management
+Databases
+Development Tools
+Devops
+Emerging Technology
+Enterprise Buyer’s Guides
+Generative AI
+IT Leadership
+Java
+JavaScript
+Microsoft .NET
+Open Source
+Programming Languages
+Python
+Security
+Software Development
+Technology Industry
+Home
+Blogs
+New Tech Forum
+
+				by									
+Scott McCarty
+Contributor
+How open source ideals must expand for AI
+opinion
+Apr 23, 2026
+8 mins
+
+				The new definition of open must consider implementation, specification, and governance as three critical factors that must be woven together. 			
+
+							Credit: 															PHOTOCREO Michal Bednarek / Shutterstock													
+Open source
+ has never been just a licensing model. Rather, it’s also a philosophy about shared effort, shared transparency, and shared agency. The shared goal is to make an impact in the world. In the age of AI‑assisted development and agents, there is a line of thinking that AI slop, specifically mass-produced and submitted code, is the downfall of open source projects. On the contrary, I think open source is headed for a resurgence like we’ve never seen before, as long as we emphasize the aspects of open source beyond code submissions.
+In this new world, the philosophy, ethics, and morals of open source are more relevant than ever. However, the focus of open source needs to evolve past raw code: Specification files (spec files) and governance documents (constitutions) are becoming as important as the source itself. The challenge is not to choose between open source and AI, but to recognize that open source is now a community-based control and scope mechanism for open technologies.
+Let me break this down further. Specs describe intent and outcomes, while code shows how that intent is actually realized. When something goes wrong, you still need to trace the path from spec to implementation. Trust is earned, not inferred, so the promise that, for example, an app values your privacy or that an agent never sends data to third parties must be backed by code and built on pipelines that anyone can inspect and verify (e.g. 
+Acquacotta Constitution
+).
+Governance complements spec files, in showing how a spec is created, enforced and followed. It’s the “people decisions” around a project — who makes the final decision? If there’s a vote on something, who votes? How do they vote? It’s these seemingly pedantic yet crucial decisions that emerge from governance, and they are the backbone for how spec files are created and followed when code contributions become as simple as writing a basic agent prompt.
+More Videos
+0 seconds of 30 seconds
+Volume 0%
+Press shift question mark to access a list of keyboard shortcuts
+Keyboard Shortcuts
+Enabled
+Disabled
+Shortcuts Open/Close
+/ or ?
+Play/Pause
+SPACE
+Increase Volume
+↑
+Decrease Volume
+↓
+Seek Forward
+→
+Seek Backward
+←
+Captions On/Off
+c
+Fullscreen/Exit Fullscreen
+f
+Mute/Unmute
+m
+Decrease Caption Size
+-
+Increase Caption Size
++ or =
+Seek %
+0-9
+Next Up
+How to set up a Django project in Python | Pt. 1
+09:08
+Subtitle Settings
+Off
+Automated Captions - en-US
+Font Color
+White
+Font Opacity
+100%
+Font Size
+100%
+Font Family
+Arial
+Character Edge
+None
+Edge Color
+Black
+Background Color
+Black
+Background Opacity
+50%
+Window Color
+Black
+Window Opacity
+0%
+Reset
+White
+Black
+Red
+Green
+Blue
+Yellow
+Magenta
+Cyan
+100%
+75%
+50%
+25%
+200%
+175%
+150%
+125%
+100%
+75%
+50%
+Arial
+Courier
+Georgia
+Impact
+Lucida Console
+Tahoma
+Times New Roman
+Trebuchet MS
+Verdana
+None
+Raised
+Depressed
+Uniform
+Drop Shadow
+White
+Black
+Red
+Green
+Blue
+Yellow
+Magenta
+Cyan
+White
+Black
+Red
+Green
+Blue
+Yellow
+Magenta
+Cyan
+100%
+75%
+50%
+25%
+0%
+White
+Black
+Red
+Green
+Blue
+Yellow
+Magenta
+Cyan
+100%
+75%
+50%
+25%
+0%
+This ad will end in 10
+Live
+00:19
+00:10
+00:30
+Open means open, even for AI 
+The main criticism of AI with open source is that code contributions become open to everyone, not just those with deep technical knowledge. This makes the pillars of an open source community outside of the code more important than ever. Users fundamentally become contributors when anyone can create code, which means they need agency in specification. Additionally, this new class of community members needs to be able to help influence and change governance and spec, just like “normal” contributors in the pre-AI days. The spec files submitted with their AI-generated code must be open for inspection and reproducible, just like a more traditional code contribution. The ability to fork the implementation and run it on outside infrastructure also remains, enabling contributors to further refine their own customizations, integrations, and optimizations.
+This is how organizations retain real agency in an era where code is a commodity. In other words, spec files broaden what we need to keep open; they do not replace the need to keep code, build systems, and dependency trees open and inspectable. The future is not specs instead of open source; it is open source plus open specs and open governance.
+You version, review, and discuss specs in the same way you review and discuss code. You make architecture and governance artifacts part of the public record so that others can learn from, reuse, and improve them. This creates a richer set of open source assets. The repository does not just contain code; it contains the constitution of the project, the architectural reasoning, and the guardrails that keep AI tools and AI-driven code contributions on the rails.
+This lowered barrier cannot be overstated. Truly anyone can now contribute, not just those who understand the code-based components of a project. Domain experts, designers, and operations specialists can propose changes at the spec level that AI agents then help implement. For a community that leads with open source values, and robust testing frameworks (coded in the constitution), this fuels the creation of high‑quality software while preserving the transparency, reviewability, and forkability that open source depends on.
+‘Real’ open source
+We do risk the convergence of open source and specs turning into a two-sided purity test. Some argue that if AI wrote most of the code, it is not “real” open source. This argument implies that the provenance of each line of syntax matters more than whether the system as a whole is transparent, forkable, and governed in the open. Meanwhile, the opposing side suggests that if we can regenerate the implementation from a spec, we no longer need to worry as much about licensing and code openness — as if an elegant constitution makes inspection of the actual machinery optional.
+Both positions miss the point. If you care about user agency, security, and long‑term sustainability, as all open source projects should, you need both open code and open build pipelines, so anyone can inspect, reproduce, and harden what is running. You need open specs and governance, so anyone can understand what the system is supposed to do, how it is supposed to behave, and how decisions get made over time.
+InfoWorld Smart Answers
+Learn more
+Explore related questions
+Why do proprietary AI models remain dominant?
+How do Meta's Llama and Mistral AI boost the global AI ecosystem?
+How do open source AI projects empower developers?
+Why is trustworthy documentation crucial for ensuring AI agent reliability?
+What are the challenges in defining Open Source AI for the OSI?
+Ask
+The new “definition” of open must consider implementation, specification, and governance as three critical factors that must be woven together. Open implementation means the source, dependencies, and build system are available under an open source license so you can rebuild, audit, and run the software yourself. Open specification means the requirements, architecture, and project constitution are documented, versioned, and public, so others can reuse them, learn from them, and adapt them to their own needs. Open governance means the processes by which changes are proposed, reviewed, and accepted — whether at the spec level or in code — are transparent and participatory.
+The path forward for open source communities is not to retreat from spec‑driven, AI‑assisted development, nor to declare the old mission obsolete. It is to lead in defining and practicing what open specification, governance, and implementation look like together in an AI‑first world — and to do so with the confidence to dream bigger than incremental automation.
+It’s this ability for individuals and organizations to dream bigger that makes it possible to tackle problems that were previously too big, too weird, or too niche to justify a full project team. A UX designer who’s never committed a line of code can suddenly create a serious tool. A security engineer can prototype a new threat‑hunting pipeline end‑to‑end. An architect can stand up a reference implementation of a safer integration pattern, then let others clone and extend it. In each case, AI doesn’t replace expertise; it amplifies it. The most valuable people in the room spend less time grinding out boilerplate and more time on intent, constraints, and trade‑offs.
+AI tooling isn’t a one way street
+However, there’s one really important thing to remember about dreaming bigger with AI tools: You are not the only one who has easy access to them — so do your competitors. Perhaps more importantly, the bad guys have them too.
+When it comes to the former, dreaming bigger means dreaming bigger than the folks who would take business away from you. It’s about making sure that your customers stay your customers and that you can attract new ones on a continual basis.
+When it comes to the latter, it means considering that the people who would do you and your customers harm have these same tools. And, if anyone dreams bigger, it’s the people who want to break your systems, defraud your customers, and manipulate your users.
+That’s one reason the traditional “open source = open code” framing is starting to feel too small. If attackers can continuously remix powerful AI tooling in the shadows, defenders need open, inspectable patterns for detection, response, and governance that anyone can adopt and improve.
+Open source’s big tent
+The same openness that once turned a loose collection of hackers into the engine of the modern software stack can now be applied to a new layer of specs and agents. This is a new way forward to make open source even more accessible to a new type of contributor. For open source, it’s not about fighting AI slop. Instead, we as a global community need to push the positives of AI-driven contributions forward, so that the good far outweighs the bad.
+—
+New Tech Forum
+ provides a venue for technology leaders—including vendors and other outside contributors—to explore and discuss emerging enterprise technology in unprecedented depth and breadth. The selection is subjective, based on our pick of the technologies we believe to be important and of greatest interest to InfoWorld readers. InfoWorld does not accept marketing collateral for publication and reserves the right to edit all contributed content. Send all 
+inquiries to 
+doug_dineley@foundryco.com
+.
+Open Source
+Software Development
+Artificial Intelligence
+Generative AI
+NEWSLETTER
+The latest AI updates, straight to your inbox
+News, analysis, and insights for IT leaders navigating the risks and rewards of AI. A special series from the editors of CIO, Computerworld, CSO, InfoWorld and Network World
+By submitting your information, you agree to our 
+PRIVACY POLICY
+.
+SUBSCRIBE
+Related content
+news
+What happens when engineering teams reorganize around AI agents
+By Travis Van
+May 8, 2026
+4 mins
+
+								Artificial Intelligence							
+
+								Development Approaches							
+
+								Generative AI							
+opinion
+12 model-level deep cuts to slash AI training costs
+By Jayachander Reddy Kandakatla
+May 8, 2026
+8 mins
+
+								Developer							
+
+								Development Approaches							
+
+								Development Tools							
+opinion
+When cloud giants meddle in markets
+By David Linthicum
+May 8, 2026
+5 mins
+
+								Artificial Intelligence							
+
+								Cloud Architecture							
+
+								Cloud Computing							
+news
+Teradata launches platform for enterprise AI agents moving beyond pilots
+By Prasanth Aby Thomas
+May 7, 2026
+4 mins
+
+								Analytics							
+
+								Artificial Intelligence							
+Other Sections
+
+								Resources							
+
+								Videos							
+
+														by 															
+
+																Scott McCarty															
+Contributor
+Follow Scott McCarty on X
+Follow Scott McCarty on LinkedIn
+At Red Hat, Scott McCarty is senior principal product manager for RHEL Server, arguably the largest open source software business in the world. Scott is a social media startup veteran, an e-commerce old timer, and a weathered government research technologist, with experience across a variety of companies and organizations, from seven person startups to 12,000 employee technology companies. This experience has culminated in a unique perspective on open source software development, delivery, and maintenance.
+More from this author
+opinion
+AI agents and IT ops: Cowboy chaos rides again
+Jan 22, 2026 
+8 mins
+opinion
+Agentic AI is complex, not complicated
+Nov 4, 2025 
+6 mins
+feature
+Why zero CVEs makes zero sense
+Jul 14, 2025 
+9 mins
+feature
+How RamaLama helps make AI model testing safer
+Mar 27, 2025 
+7 mins
+feature
+The AI backlash couldn’t have come at a better time
+Dec 24, 2024 
+7 mins
+feature
+What generative AI can do for sysadmins
+Aug 7, 2024 
+13 mins
+feature
+Project Bluefin and the future of operating systems
+Apr 1, 2024 
+10 mins
+feature
+Applying the lessons of open source to generative AI
+Aug 21, 2023 
+8 mins
+Show me more
+Popular
+Articles
+Videos
+feature
+Python isn’t always easy
+By Serdar Yegulalp
+May 8, 2026
+2 mins
+Programming Languages
+Python
+Software Development
+news
+13 new critical holes in JavaScript sandbox allow execution of arbitrary code
+By Howard Solomon
+May 7, 2026
+5 mins
+Development Tools
+JavaScript
+Programming Languages
+feature
+The best new features in Python 3.15
+By Serdar Yegulalp
+May 7, 2026
+6 mins
+Programming Languages
+Python
+Software Development
+video
+Two powerful tools for viewing Python app performance stats
+May 5, 2026
+5 mins
+Python
+video
+How to back up SQLite databases the right way (not by copying them!)
+Apr 28, 2026
+5 mins
+Python
+video
+Jujutsu: The rising alternative to Git
+Apr 21, 2026
+5 mins
+Python
+About
+About Us
+Advertise
+Contact Us
+Editorial Ethics Policy
+Foundry Careers
+Newsletters
+Reprints
+Add InfoWorld as a Preferred Source in Google Search
+Policies
+Terms of Service
+Privacy Policy
+Cookie Policy
+Copyright Notice
+Member Preferences
+About AdChoices
+Your California Privacy Rights
+Privacy Settings
+More
+News
+Features
+Blogs
+BrandPosts
+Events
+Videos
+Enterprise Buyer’s Guides
+Our Network
+CIO
+Computerworld
+CSO
+Network World
+Facebook
+X
+YouTube
+Google News
+LinkedIn
+© 2026  FoundryCo, Inc. All Rights Reserved.
+InfoWorld wants to show you notifications
+You can turn off notifications at any time from your browser
+Accept
+Do not accept
+Powered by 
+subscribers

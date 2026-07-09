@@ -1,0 +1,68 @@
+{
+  "article_title": "How to Deploy a Full-Stack Next.js App on Cloudflare Workers with GitHub Actions CI/CD",
+  "core_thesis": "This article provides a comprehensive, step-by-step guide for deploying a full-stack Next.js 14 (App Router) application with Supabase to Cloudflare Workers using the @opennextjs/cloudflare adapter, combined with GitHub Actions for continuous deployment. The author argues that Cloudflare Workers offer superior global latency, near-zero cold starts, and a more generous free tier compared to Vercel, making them a compelling alternative for cost-conscious developers who need edge performance.",
+  "detailed_summary": "The article begins by comparing Cloudflare Workers to Vercel, highlighting lower TTFB, minimal cold starts (V8 isolates), 300+ edge locations, and a more flexible free tier (millions of requests/day vs. fair usage limits). It acknowledges trade-offs: Cloudflare Workers use a V8 isolate runtime, not full Node.js, so APIs like fs or child_process are unavailable, but for modern stacks (Next.js + Supabase + Stripe + Resend) this is rarely an issue. The guide then walks through seven steps: (1) installing the @opennextjs/cloudflare adapter and Wrangler CLI, adding deploy scripts to package.json; (2) wiring OpenNext into next dev via next.config.mjs so local development reads Cloudflare bindings; (3) setting up local environment with .dev.vars (for Wrangler) and .env.local (for Next.js), including a .dev.vars.example committed to the repo; (4) deploying from local machine using pnpm deploy, which compiles the app to .open-next/worker.js and uploads it to Cloudflare; (5) pushing secrets to the Worker via wrangler secret put or the Cloudflare Dashboard; (6) setting up GitHub Actions CI/CD with a deploy.yml that runs lint and build on PRs, and deploys to production on pushes to main, using repository secrets for CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID, and Supabase keys; (7) describing the daily workflow: branch, dev, preview, commit, PR, merge, auto-deploy. The author concludes that @opennextjs/cloudflare has matured, making the developer experience nearly identical to Vercel while offering better economics and edge performance.",
+  "entities": [
+    {
+      "name": "Cloudflare Workers",
+      "type": "organization",
+      "role": "Serverless edge computing platform used for deploying the Next.js app"
+    },
+    {
+      "name": "Vercel",
+      "type": "organization",
+      "role": "Default Next.js deployment platform, compared unfavorably for cost and latency"
+    },
+    {
+      "name": "Supabase",
+      "type": "organization",
+      "role": "Backend-as-a-service providing authentication and Postgres database"
+    },
+    {
+      "name": "@opennextjs/cloudflare",
+      "type": "software",
+      "role": "Adapter that compiles Next.js apps into Cloudflare Workers, supporting SSR, ISR, middleware, and Image component"
+    },
+    {
+      "name": "Wrangler",
+      "type": "software",
+      "role": "Cloudflare CLI tool for building and deploying Workers"
+    },
+    {
+      "name": "GitHub Actions",
+      "type": "software",
+      "role": "CI/CD platform used to automate linting, building, and deployment"
+    },
+    {
+      "name": "Md Tarikul Islam",
+      "type": "person",
+      "role": "Author and software engineer who created the guide"
+    }
+  ],
+  "key_data_points": [
+    "Cloudflare Workers free tier allows millions of requests per day, while Vercel Hobby has fair usage limits (🟢 relevant to your homelab/devops: if you run a side project or portfolio, you can handle significant traffic without paying).",
+    "Cloudflare Workers have near-zero cold starts due to V8 isolates, compared to Vercel's ~100-300 ms region-based cold starts (🟢 relevant to your Red Teaming: faster response times can be critical for C2 infrastructure or phishing pages that need to load quickly).",
+    "Cloudflare Workers run across 300+ global edge locations, while Vercel has limited regions for SSR (🟢 relevant to your homelab: better global performance for your apps without extra cost).",
+    "The @opennextjs/cloudflare adapter supports SSR, ISR, middleware, and the Image component without major code changes (🟢 relevant to your programming: you can deploy existing Next.js apps with minimal refactoring).",
+    "The deploy script uses pnpm cloudflare-build && wrangler deploy, compiling the app to .open-next/worker.js (🟢 relevant to your devops: understanding the build pipeline helps you customize or debug deployments).",
+    "GitHub Actions workflow runs lint and build on PRs, and deploys only on pushes to main, ensuring broken code never reaches production (🟢 relevant to your devops: this is a standard CI/CD pattern you can reuse for any project).",
+    "Secrets must be pushed separately via wrangler secret put or the Cloudflare Dashboard; .dev.vars is not uploaded (🟢 relevant to your cybersecurity: proper secret management is critical; never commit secrets to the repo)."
+  ],
+  "methodology_steps": [
+    "Install the Cloudflare adapter and Wrangler: run 'pnpm add @opennextjs/cloudflare' and 'pnpm add -D wrangler'. Then add deploy scripts to package.json: cloudflare-build, preview, deploy, upload, cf-typegen.",
+    "Wire OpenNext into next dev by editing next.config.mjs: conditionally import and call initOpenNextCloudflareForDev() only when NODE_ENV is not 'production'.",
+    "Set up local environment: create .dev.vars.example with placeholder values, commit it. Then copy to .dev.vars (for Wrangler) and .env.local (for Next.js). Update .gitignore to ignore .dev.vars, .env*.local, .open-next, .wrangler.",
+    "Deploy from local machine: run 'pnpm deploy' which executes 'pnpm cloudflare-build && wrangler deploy'. The first time, Wrangler compiles the app to .open-next/worker.js and uploads it, printing a live URL.",
+    "Push secrets to the Worker: use 'wrangler secret put <KEY>' for each secret (e.g., NEXT_PUBLIC_SUPABASE_URL). Alternatively, use the Cloudflare Dashboard under Workers & Pages → your worker → Settings → Variables and Secrets.",
+    "Set up GitHub Actions CI/CD: create .github/workflows/deploy.yml with two jobs: 'verify' (lint and build on PRs and pushes) and 'deploy' (build and deploy on pushes to main, after verify passes). Add required secrets to the GitHub repo: CLOUDFLARE_API_TOKEN, CLOUDFLARE_ACCOUNT_ID, and Supabase keys.",
+    "Daily workflow: create a branch, edit code, run 'pnpm dev' for local iteration, 'pnpm preview' for a final smoke test on the Worker runtime, commit, push, open a PR, verify the CI job passes, merge, and the deploy job automatically ships to production."
+  ],
+  "conclusions": [
+    "Cloudflare Workers, combined with @opennextjs/cloudflare, now provide a developer experience nearly identical to Vercel for Next.js apps, with better global latency and a more generous free tier. The author's personal testing showed lower TTFB and cost savings, making it a strong alternative for side projects and production apps alike.",
+    "The CI/CD pipeline using GitHub Actions ensures that every push to main is automatically deployed after passing lint and build checks, preventing broken code from reaching production. This pattern is industry-standard and can be adapted to other projects.",
+    "The guide's step-by-step runbook covers everything from initial setup to daily workflow, including secret management and environment variable synchronization. It addresses common pain points like the need for both .dev.vars and .env.local, and the explicit secret push step."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your interests in programming, devops, and homelabbing. It provides a complete, actionable guide to deploying a full-stack Next.js app on Cloudflare Workers with CI/CD, which you can directly apply to your own projects. The detailed steps on environment setup, secret management, and GitHub Actions automation are valuable for your devops skills. Additionally, the comparison between Vercel and Cloudflare Workers helps you make informed decisions about deployment platforms for future projects. The guide's focus on edge performance and cost efficiency aligns with your ambition to build scalable, production-ready systems.",
+  "extra_advice": "Consider using this deployment pattern for your Red Teaming infrastructure: Cloudflare Workers can host phishing pages or C2 redirectors with low latency and global coverage. The near-zero cold starts and generous free tier make it ideal for disposable or short-lived campaigns. You could also leverage Cloudflare's KV or D1 bindings for storing session data or configuration, all within the same Worker deployment.",
+  "source_url": "https://www.freecodecamp.org/news/how-to-deploy-a-full-stack-next-js-app-on-cloudflare-workers-with-github-actions-ci-cd/"
+}

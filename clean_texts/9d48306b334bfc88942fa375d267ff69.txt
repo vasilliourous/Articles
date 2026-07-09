@@ -1,0 +1,236 @@
+Online Open Source OS Puter Becomes More Awesome With Office Offering
+🧩 Quizzes & Puzzles
+🎒 Resources
+📬 Newsletter
+▶️ YouTube
+🏘️ Community
+📖 About
+ Contact Us
+ Policies
+👤 Members
+ Get Plus Membership
+ Free eBooks for Members
+About
+🎁 Donate
+Privacy Policy
+Linux Server Stuff
+Log in
+Sign up
+      
+Sign in
+      
+🧩 Quizzes & Puzzles
+🎒 Resources
+📬 Newsletter
+▶️ YouTube
+🏘️ Community
+📖 About
+ Contact Us
+ Policies
+👤 Members
+ Get Plus Membership
+ Free eBooks for Members
+About
+🎁 Donate
+Privacy Policy
+Linux Server Stuff
+
+          Log in
+        
+
+          Subscribe
+        
+Online Open Source OS Puter Becomes More Awesome With Office Offering
+A full functional operating system in the web browser. From coding tools to office suite, it has everything.
+Abhishek Prakash
+07 Apr 2026
+3 min read
+0 comments
+On this page
+Puter has proper office tools now
+Like Nextcloud but with filesystem
+Experiencing the office experience in online OS
+Many more apps at your disposal
+Powered By
+10
+Replacing Ubuntu With Newer Version in Dual Boot Setup
+Share
+Next
+Stay
+Skip Ad
+Replacing Ubuntu With Newer Version in Dual Boot Setup
+NOW 
+ PLAYING
+Customize GNOME Task Switcher on Linux [And Give it a Different Look]
+NOW 
+ PLAYING
+Meet The First True Linux Smartphone: Librem 5
+NOW 
+ PLAYING
+How to Fix Ubuntu Linux Freezing on Boot
+NOW 
+ PLAYING
+This is What Ubuntu 18.04 Community Theme Looks Like
+NOW 
+ PLAYING
+Mycroft Mark II: The Open Source Answer to Amazon Echo and Google Home
+NOW 
+ PLAYING
+22 Must Have Linux Applications in 2019
+NOW 
+ PLAYING
+Why Use Linux? Here Are 10 Reasons for using Linux
+NOW 
+ PLAYING
+11 ways you can help Linux grow
+NOW 
+ PLAYING
+Ubuntu is everywhere
+NOW 
+ PLAYING
+Arrow Left #1 Icon
+Created with Sketch.
+Arrow right #1 Icon
+Created with Sketch.
+If you did not know already, Puter is an operating system that runs inside a web browser. It is open source and you can self-host it if you like. 
+It has everything you would expect in a desktop. A file system, app store, text editor, IDE, video player, etc. The video below shows it in action. See, how somooth it is.
+Why not give it a try 
+yourself here
+.
+Puter has proper office tools now
+As you can see in the video above, Puter has a text editor which is capable of taking notes. But it is not enough for rich text format and proper documents. 
+Now, they are offering ONLYOFFICE in their app center. The open source ONLYOFFICE is a collaborative productivity suite like MS Office 365. 
+Puter Marketplace now offers office tools
+With this integration, you also get spreadhseet, pdf editor and presentation tools. This make the online browser based desktop operating system more capable and complete than ever.
+Like Nextcloud but with filesystem
+If you ever used Nextcloud, you know that the cloud storage also has office integration with ONLYOFFICE and Collabora (sort of LibreOffice online). The difference I see here is that Puter gives you the entire filesystem, not just cloud storage and productivity tools. This is excellent for people who prefer the comfort of a desktop like environment in the cloud.
+File explorer in Puter
+Experiencing the office experience in online OS
+I have used ONLYOFFICE in Nextcloud in the past. I have noticed that it does take a bit of time to load the application in both Puter and Nextcloud. Sure, we cannot expect a full office app to open in a jiffy like a text editor. These applications take longer to start, even on local desktop system. It takes pretty much the same in Puter.
+Creating the document was smooth. The in-built grammar checker worked well too. For some reason, the Save button on the top interface did not work. The print and open and other buttons were working fine and so did the keyboard shortcut. Not a dealbreaker but something worth mentioning. I am sure the Puter team will fix it in the next iteration.
+Since I didn't have any complicated word document with macros and images, I uploaded a csv file with 1000 rows and opened it in ONLYOFFICE. I was expecting it to take some time to load and struggle but it did not. Obviously, that's a good thing.
+I recorded it in a video so that you can see if yourself if it takes too long or lags while moving down the sheet.
+I also created a simple presentation slide. Unsurprisingly again, it went smoothly. ONLYOFFICE actually works quite well in a web browser. That is their USP, afterall.
+The entire ONLYOFFICE integration gives Puter the complete desktop OS features. After all, 
+ONLYOFFICE also has PDF editor
+ and 
+diagram app
+ (Visio alternative). All your office needs are sorted, that too in a web browser.
+Many more apps at your disposal
+Puter Marketplace
+ (app store) has many more applications that you can explore and use as per your requirement. From games to coding to AI, there are plenty of options. 
+We had covered Puter last summer. In less than a year, Puter has grown and created an ecosystem that is admirable. I was skeptical of the actual, real-world usage of an online operating system that lives in a web browser but it seems there is demand for such a thing. Good to see an open source project filling up this demand.
+If you are coming across Puter OS for the first time, you should know that the files you uploaded or created will be available as long as the browser session is not deleted. But if you want to save them for longer period, you can create an account with Puter. If you see a good use of Puter in your workflow or it could help your team (if you have one), you can also self-host it or pay to Puter for their managed hosting.
+Explore Puter
+News
+Share
+Share
+Share
+Share
+Email
+Feedback
+About the author
+Abhishek Prakash
+Created It's FOSS 13 years ago to share my Linux adventures. Have a Master's degree in Engineering and years of IT industry experience. Huge fan of Agatha Christie detective mysteries 🕵️‍♂️
+Featured
+Dirty Frag is a New Linux Exploit That Grants Root, and There's No Proper Patch Yet
+After Days of DDoS, Now Ubuntu's Twitter Account Seems to be Compromised
+LibreOffice Questions Whether Euro-Office is Truly Sovereign
+Should You Be Worried About The Copy Fail Linux Exploit?
+Go Away Microsoft! The Netherlands is Quietly Building Its Own GitHub Replacement
+Latest
+Good Job Dell and Lenovo! Hope Others Follow You
+
+                  09 May 2026
+                
+FOSS Weekly #26.19: Ubuntu Under Attack, Linux Exploitation Ongoing, Upgrading to 26.04, Linux on PS5 and More
+
+                  07 May 2026
+                
+Yazi is the Terminal-based File Manager I Didn't Know I Needed
+
+                  07 May 2026
+                
+
+              Become a Better Linux User
+            
+
+                With the FOSS Weekly Newsletter, you learn useful Linux tips, discover applications, explore new distros and stay updated with the latest from Linux world 
+            
+Subscribe
+Great! Check your inbox and click the link.
+Sorry, something went wrong. Please try again.
+Read next
+Good Job Dell and Lenovo! Hope Others Follow You
+Dirty Frag is a New Linux Exploit That Grants Root, and There's No Proper Patch Yet
+After Days of DDoS, Now Ubuntu's Twitter Account Seems to be Compromised
+This $85 PCB is Giving Old Google Home Mini Devices a Second Life
+LibreOffice Questions Whether Euro-Office is Truly Sovereign
+Become a Better Linux User
+With the FOSS Weekly Newsletter, you learn useful Linux tips, discover applications, explore new distros and stay updated with the latest from Linux world 
+Subscribe
+Great! Check your inbox and click the link.
+Sorry, something went wrong. Please try again.
+
+          Making You A Better Linux User
+        
+Subscribe
+Great! Check your inbox and click the link.
+Sorry, something went wrong. Please try again.
+Navigation
+🧩 Quizzes & Puzzles
+🎒 Resources
+📬 Newsletter
+▶️ YouTube
+🏘️ Community
+📖 About
+ Contact Us
+ Policies
+👤 Members
+ Get Plus Membership
+ Free eBooks for Members
+About
+🎁 Donate
+Privacy Policy
+Linux Server Stuff
+Resources
+Courses 🎓
+Distro Resources 📖
+Guides 📒
+Social
+Facebook
+Twitter
+RSS
+Bluesky
+Mastodon
+Download more icon variants from https://tabler-icons.io/i/brand-github
+Github
+Download more icon variants from https://tabler-icons.io/i/brand-instagram
+Instagram
+Reddit
+Download more icon variants from https://tabler-icons.io/i/brand-telegram
+Telegram
+Download more icon variants from https://tabler-icons.io/i/brand-youtube
+Youtube
+©2026 
+It's FOSS
+.
+Hosted on 
+Digital Ocean (get $200 in FREE credits)
+ & Published with 
+Ghost
+ & 
+Rinne
+.
+System
+Light
+Dark
+Great! You’ve successfully signed up.
+Welcome back! You've successfully signed in.
+You've successfully subscribed to It's FOSS.
+Your link has expired.
+Success! Check your email for magic link to sign-in.
+Success! Your billing info has been updated.
+Your billing was not updated.
+Privacy Manager
+Freestar.com

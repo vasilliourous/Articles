@@ -1,0 +1,483 @@
+How To Install Haiku On A UEFI-Only Modern System | Hackaday
+Skip to content
+Hackaday
+Primary Menu
+Home
+Blog
+Hackaday.io
+Contests
+Submit
+About
+Search for:
+May 8, 2026
+How To Install Haiku On A UEFI-Only Modern System
+
+                12 Comments            
+by:
+Maya Posch
+April 24, 2026
+Title:
+Copy
+Short Link:
+Copy
+Recently Haiku has become a bit of a popular subject of articles and videos, owing perhaps to how close it currently is to be a daily-driver OS and fulfilling the dream that BeOS set out with. That said, there are still quite a few hurdles before that glorious era can fully commence, with a video by [Ex-IT guy] on YouTube demonstrating some of the major hurdles 
+by installing Haiku on Ryzen 3-based MiniPC
+ that only supports UEFI boot.
+Installing the UEFI bootloader is still a 
+very much manual process
+ with the user required to create UEFI boot and OS partitions before copying the bootloader into UEFI boot partition. After this Haiku can be installed as normal. The other variation of multi-boot is demonstrated in the video, with Haiku installed alongside Windows and Linux. This requires a more complex directory layout in the UEFI boot partition.
+The other major hurdle with Haiku comes after the system boots into the OS following installation, with no driver available for the Vega-based iGPU as AMD GPU support peters out around the GCN 2 era for now. Without accelerated graphics the utility of an OS is quite diminished, but fortunately this seems to be a fixable issue considering that Linux has the appropriate GPU support.
+Meanwhile features like sound worked out of the box, which makes it arguably a more pleasant experience than installing 
+Haiku on a 2009 Mac Mini
+. It’s also very easy to port software 
+from Linux to Haiku
+, often with very few changes since it has all the typical POSIX things.
+Posted in 
+how-to
+Tagged 
+haiku
+, 
+UEFI
+Post navigation
+←
+ Muon Magnetic Moment Matches Model, Making Major Malaise
+3D Print This Retro Desktop Case 
+→
+
+            12 thoughts on “
+How To Install Haiku On A UEFI-Only Modern System
+”        
+Joshua
+says:
+
+							April 24, 2026 at 11:34 pm						
+Back by the turn of the millennium I enjoyed tinkering with BeOS 5 Personal Edition.
+
+It could be installed on Windows 98SE and could be booted from a disk image, which I did.
+
+I also remember using the CD Player application quite often..
+
+Unfortunately, PE was a closed system. It was limited to the world within the image.
+A few years later, I saw Zeta being advertised on a shopping channel on TV.
+
+At the time, XP was quite popular and normal people hesitated giving Linux a try (still too obscure and demanding).
+
+So Zeta felt like an alternative that could make it, just like OS/2 could have could about ten years earlier.
+
+There were even a few shrink-wrapped games made for BeOS/Zeta.
+https://www.mobygames.com/platform/beos/
+Anyway, what personally kept me from using BeOS/Zeta/Haiku in the hobby room
+
+was the lack of any software for the radio amateur, the model maker or the electronic hobbiest.
+Other fascinating little OSes like MenutOS/KolibriOS, SymbOS or AmigaOS did lack that, too.
+
+Okay, AmigaOS had a handful of it about four decades ago (esp. for Packet-Radio and SSTV).
+
+But AROS and other modern versions have none, it seems.
+That’s when I’ve noticed I’m not really part of the audience for these OSes.
+
+No ports of, say, Xastir, QSSTV, fldigi, gpredict, KiCAD, LinPSK, WSPR etc.
+In fact, there’s a dozen of ancient Windows 3.1 programs for amateur radio, but none for the current OSes except Linux (or BSD. Xastir is available on BSD, too).
+
+Even MacOS has a handful native ham radio applications (as well as many *nix ports via MacPorts).
+https://discuss.haiku-os.org/t/amateur-radio/15375
+That’s not meant as a complaint whatsoever, just a realization.
+
+It just makes me realize that these OSes focus on different things.
+
+Games/emulators, multimedia, raytracing, demoscene etc.
+
+Ham radio and electronics smells more like productivity software or lab software, I guess, so it’s no fun and thus there’s not much motivation to port something.
+
+Hams/SWLs currently fleeing from Windows probably go straight to Linux Mint, I guess.
+Report comment
+Reply
+Ostracus
+says:
+
+							April 25, 2026 at 12:35 pm						
+Hence virtualization where the boundaries of choice are much bigger.
+Report comment
+Reply
+Joshua
+says:
+
+							April 25, 2026 at 1:12 pm						
+I don’t think something comparable to Virtualbox or Virtual PC 2007 will be available to those niche OSes.
+
+But I hope that WINE will be available, eventually, at least.
+
+KolibriOS has some project going in this regards.
+
+It provides Windows core funtionality, if I understand correctly. It’s not finished yet, though.
+
+KolibriOS Forum: 
+https://tinyurl.com/yn74kach
+Really, I’d love to run some of these alternative OSes in my SWL shack and in a meaningful way.
+
+But the best there seems to be so far in this regards is running vintage DOS/Windows 3.x applications in DOSBox.
+
+KolibriOS has multiple emulators, including DOSBox, so I could run JV-FAX 7 or 16-Bit UI-View that way.
+
+Provided that serial port access is supported on such an OS (for HamComm modem or TNC).
+But that’s not exactly most rational, maybe.
+
+DOSBox or any other PC emulator causes some CPU overhead.
+
+Compared to just running things natively.
+
+If I have to use DOS or Windows 3.1 applications, I’d perhaphs be better off running them natively.
+
+Like on a Thin Client or an old, hacked internet set-up box.
+
+They’re not requiring much power, stay cool/silent and are old enough to support running MS-DOS 6/WfW 3.11 or FreeDOS.
+If I’d run KolibriOS or Haiku first and then run an PC emulator on them to have ham radio applications,
+
+the processing power of such a humble system wouldn’t be enough.
+
+It would be on 286 level, at best. Which isn’t bad (I like 286es) but not exactly great, either.
+
+For more demanding applications, I would have to use a big gamer PC, rather, to compensate for emulation overhead.
+But again, I don’t mean to complain.
+
+Maybe there will be ports of ham radio applications in the future.
+
+(I had considered try doing it myself, but I’m afraid my mind is not very compatible with Linux software and how it’s build. 😅)
+Report comment
+Reply
+rooted
+says:
+
+							April 26, 2026 at 8:22 pm						
+It’s not always as difficult as you may think to port software , give it a shot and you may be the one who brings one or more of these applications to a unsupported OS.
+Report comment
+Reply
+James P Davis
+says:
+
+							April 25, 2026 at 1:45 am						
+I was involved in the Tiano core project. Written by the Chinese.
+Report comment
+Reply
+Ex-IT guy
+says:
+
+							April 25, 2026 at 2:20 am						
+Hey thanks for sharing my video! Much appreciated! :)
+Report comment
+Reply
+Maya Posch
+says:
+
+							April 26, 2026 at 12:56 am						
+You’re very welcome, and thank you for making a good tutorial video :)
+Report comment
+Reply
+psrrh
+says:
+
+							April 25, 2026 at 4:54 am						
+One of the nice things about Haiku is that it hearkens back to a better era, when software developers tried to make the best use of the OS’ native UI toolkit, instead trying to make their own web UI that looks and works like nothing else.
+Report comment
+Reply
+Maya Posch
+says:
+
+							April 26, 2026 at 1:03 am						
+Indeed, I really liked BeOS 5 PE back in the day for its looks as well, though I went with Win2k in the end mostly due to software support. It’s really fun to relive some of those best moments of BeOS with Haiku today. I’m still not convinced with its ‘start bar’ take even when expanded, but I appreciate that they stick to a coherent GUI.
+I hope ‘Electron apps’  and a Win8+ restyling stay away from Haiku.
+Report comment
+Reply
+Jack Foust
+says:
+
+							April 26, 2026 at 2:35 pm						
+Honestly, I’m not sure when everyone doesn’t use Ubuntu. The only reason I waited as long as I did was my kids’ school (Windoze) and the Army (same). After that, it was all Ubuntu all the time. Never looked back.
+Report comment
+Reply
+rooted
+says:
+
+							April 26, 2026 at 8:30 pm						
+Because Ubuntu is certainly not the best Linux variant for many people, much less the best OS.
+Debian, Mint, Arch, and CachyOS are all superior in various ways to Ubuntu in my opinion.
+I’ve been using Linux as my primary OS since 1996 and my only OS for many years.
+Report comment
+Reply
+Zangar the Pangarian
+says:
+
+							April 27, 2026 at 8:13 am						
+I’m not using Ubuntu because Debian exists.
+
+I’m not using Debian because Gentoo exists.
+
+I’m not using Gentoo because I am not at home right now.
+Report comment
+Reply
+Leave a Reply
+Cancel reply
+Please be kind and respectful to help make the comments section excellent. (
+Comment Policy
+)
+This site uses Akismet to reduce spam. 
+Learn how your comment data is processed.
+Search
+Search for:
+Never miss a hack
+Follow on facebook
+Follow on twitter
+Follow on youtube
+Follow on rss
+Contact us
+Subscribe
+If you missed it
+There’s More To Global Positioning Than Just GPS
+ 14 Comments				
+AI On Every Machine: The LLM You Probably Didn’t Want
+ 55 Comments				
+How Giant Tanks Of Fluid Could Help Support The Power Grid
+ 53 Comments				
+Why Leaded Fuel Is Still A Thing
+ 87 Comments				
+How TTY Opened Up The Phones For The Hard Of Hearing
+ 15 Comments				
+More from this category
+Our Columns
+Hackaday Podcast Episode 369: IR, E-Ink, And Avgas
+ 1 Comment				
+This Week In Security: Another Linux Exploit, Ubuntu Knocked Offline, Finals Interrupted, And Backdoored Tools
+ 8 Comments				
+Congratulations To The Green Powered Challenge Winners!
+ 2 Comments				
+Retrotechtacular: Julius Sumner Miller Breaks Lamps With Magnets
+ 23 Comments				
+Strange Ways To Make Cold
+ 14 Comments				
+More from this category
+Search
+Search for:
+Never miss a hack
+Follow on facebook
+Follow on twitter
+Follow on youtube
+Follow on rss
+Contact us
+Subscribe
+If you missed it
+There’s More To Global Positioning Than Just GPS
+ 14 Comments				
+AI On Every Machine: The LLM You Probably Didn’t Want
+ 55 Comments				
+How Giant Tanks Of Fluid Could Help Support The Power Grid
+ 53 Comments				
+Why Leaded Fuel Is Still A Thing
+ 87 Comments				
+How TTY Opened Up The Phones For The Hard Of Hearing
+ 15 Comments				
+More from this category
+Categories
+Categories
+Select Category
+3d Printer hacks
+Android Hacks
+Arduino Hacks
+ARM
+Art
+Artificial Intelligence
+Ask Hackaday
+ATtiny Hacks
+Battery Hacks
+Beer Hacks
+Biography
+blackberry hacks
+Business
+car hacks
+Cellphone Hacks
+chemistry hacks
+classic hacks
+clock hacks
+cnc hacks
+computer hacks
+cons
+contests
+cooking hacks
+Crowd Funding
+Curated
+Current Events
+Cyberdecks
+digital audio hacks
+digital cameras hacks
+downloads hacks
+drone hacks
+Engine Hacks
+Engineering
+Fail of the Week
+Featured
+Fiction
+firefox hacks
+FPGA
+g1 hacks
+Games
+google hacks
+gps hacks
+green hacks
+Hackaday Columns
+Hackaday links
+Hackaday Store
+Hackerspaces
+HackIt
+handhelds hacks
+hardware
+High Voltage
+History
+Holiday Hacks
+home entertainment hacks
+home hacks
+how-to
+Interest
+internet hacks
+Interviews
+iphone hacks
+ipod hacks
+Kindle hacks
+Kinect hacks
+laptops hacks
+Laser Hacks
+LED Hacks
+Lifehacks
+Linux Hacks
+lockpicking hacks
+Mac Hacks
+Machine Learning
+Major Tom
+Medical Hacks
+Microcontrollers
+Misc Hacks
+Multitouch Hacks
+Musical Hacks
+Netbook Hacks
+Network Hacks
+News
+Nintendo DS Hacks
+Nintendo Game Boy Hacks
+Nintendo Hacks
+Nintendo Wii Hacks
+Nook Hacks
+Original Art
+Palm Pre Hacks
+Parts
+PCB Hacks
+Peripherals Hacks
+Phone Hacks
+Playstation Hacks
+Podcasts
+Portable Audio Hacks
+Portable Video Hacks
+PSP Hacks
+Radio Hacks
+Rants
+Raspberry Pi
+Repair Hacks
+Retrocomputing
+Retrotechtacular
+Reverse Engineering
+Reviews
+Robots Hacks
+Roundup
+Science
+Security Hacks
+Skills
+Slider
+Software Development
+Software Hacks
+Solar Hacks
+Space
+Tablet Hacks
+Teardown
+Tech Hacks
+The Hackaday Prize
+Tool Hacks
+Toy Hacks
+Transportation Hacks
+Uncategorized
+Video Hacks
+Virtual Reality
+Weapons Hacks
+Wearable Hacks
+Weekly Roundup
+Wireless Hacks
+Xbox Hacks
+Our Columns
+Hackaday Podcast Episode 369: IR, E-Ink, And Avgas
+ 1 Comment				
+This Week In Security: Another Linux Exploit, Ubuntu Knocked Offline, Finals Interrupted, And Backdoored Tools
+ 8 Comments				
+Congratulations To The Green Powered Challenge Winners!
+ 2 Comments				
+Retrotechtacular: Julius Sumner Miller Breaks Lamps With Magnets
+ 23 Comments				
+Strange Ways To Make Cold
+ 14 Comments				
+More from this category
+Recent comments
+Patrick Maupin
+ on 
+How Commodore Made A Sync Splitter
+Yet Another Robert Smith
+ on 
+Could Your Next House Be Built From Giant Lego By An Inchworm Robot?
+Anonymous
+ on 
+Could Your Next House Be Built From Giant Lego By An Inchworm Robot?
+Ject
+ on 
+Easy-ish Glitch Camera? There’s A Pi 4 That
+Kelly
+ on 
+How Commodore Made A Sync Splitter
+the gambler
+ on 
+The ESP8266 Gets An OS, And It’s Familiar
+RICHARD MACKEY
+ on 
+Broadcasting GPS On The Local Network To Help Geoclue Find You
+Conor Stewart
+ on 
+True-Spectrum Photography With Structural Color
+J ODell
+ on 
+An Improved Robot Dog For Senior Design
+fumthings
+ on 
+Hackaday Podcast Episode 369: IR, E-Ink, And Avgas
+Home
+Blog
+Hackaday.io
+Tindie
+Video
+Submit A Tip
+About
+Contact Us
+Never miss a hack
+Follow on facebook
+Follow on twitter
+Follow on youtube
+Follow on rss
+Contact us
+Subscribe to Newsletter
+
+            Copyright © 2026            
+ | 
+Hackaday, Hack A Day, and the Skull and Wrenches Logo are Trademarks of Hackaday.com
+ | 
+Privacy Policy
+ | 
+Terms of Service
+ | 
+Digital Services Act
+ | 
+Do not sell or share my personal information
+Cookie Management
+Powered by 
+WordPress VIP

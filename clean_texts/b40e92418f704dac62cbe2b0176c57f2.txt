@@ -1,0 +1,1930 @@
+Fedora is becoming the default Linux recommendation, and Ubuntu did this to itself
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+70
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+Fedora is becoming the default Linux recommendation, and Ubuntu did this to itself
+By 
+João Carrasqueira
+Published
+ Apr 24, 2026, 9:00 AM EDT
+João has been covering the tech world for over 7 years, with a heavy focus on laptops and the Windows ecosystem. I also love all things tech and videogames, especially Nintendo, which he's always happy to talk about.
+
+Prior to joining XDA in 2021, he worked at Neowin: 
+https://www.neowin.net/news/poster/jo%C3%A3o-carrasqueira
+/ 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+70
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+For years, if not decades, Ubuntu has been the 
+default recommendation
+ for anyone wanting to switch from Windows to Linux. Backed by a large organization like Canonical, Ubuntu arguably has the most coordinated resources behind it to create a reliable and predictable experience.
+✕
+ Remove Ads
+But the Linux landscape has evolved a lot, and what used to be a driving force in the Linux space seems to have turned into a ball and chain holding it back. At least, that's how many in Linux community seem to see it, and I can understand why.
+I've made it no secret that I'm not a big fan of Ubuntu, and more and more, it's looking like Fedora is taking over as the standard recommendation for new Linux users, and for good reason. While Fedora has its drawbacks, Canonical has often made bad decisions that contribute to Ubuntu losing its popularity.
+Related
+
+			Ubuntu is the reason Windows users don't want to switch to Linux
+		
+First impressions matter
+Posts
+309
+By 
+João Carrasqueira
+Jan 23, 2026
+
+                        Choosing Snap over Flatpak
+               
+
+            Sometimes the standard exists for a reason
+    
+App distribution on Linux in general can be a bit of a mess, as a lot of different distros support different packaging systems and package managers by default. But in 2015, something called 
+Flatpak
+ appeared, offering a new way to distribute apps on Linux that can be easily supported by any distro while also adding a layer of security by running apps in a containerized environment. Flatpak has grown to be widely adopted by many Linux distros, but Canonical had different plans for Ubuntu.
+✕
+ Remove Ads
+Instead of embracing Flatpak, which would have effectively made it 
+the
+ way to get apps on Linux, Ubuntu introduced Snap, a somewhat similar packaging system that's actually worse in a few key ways. For one thing, Snaps can be even more restrictive for developers, which has caused some apps to choose not to adopt it. But also, Ubuntu has been criticizing for making its official "Snap store" a requirement for anyone using Snap, giving more control over what can be distributed to Canonical.
+Quiz
+8 Questions · Test Your Knowledge
+How much do you know about Fedora?
+Trivia challenge
+From cutting-edge kernels to RPM packages — find out if you're a true Fedora expert.
+History
+Releases
+Features
+Packages
+Community
+Begin
+01 / 8
+History
+Which company sponsors and funds the Fedora Project?
+A
+Canonical
+B
+SUSE
+C
+Red Hat
+D
+Oracle
+Correct! Red Hat has sponsored the Fedora Project since its founding and continues to provide significant resources and engineering talent. Fedora also serves as an upstream testing ground for Red Hat Enterprise Linux (RHEL).
+Not quite — Red Hat is the correct answer. While companies like Canonical and SUSE have their own Linux distributions, Red Hat specifically backs Fedora as part of its open-source strategy and uses it to prototype features destined for RHEL.
+Continue
+02 / 8
+History
+In what year was the first version of Fedora Core officially released?
+A
+2001
+B
+2003
+C
+2005
+D
+2007
+Correct! Fedora Core 1 was released in November 2003, following the discontinuation of Red Hat Linux as a free consumer distribution. It marked the beginning of a community-driven project that would evolve into today's Fedora Linux.
+Not quite — Fedora Core 1 launched in November 2003. Red Hat had just announced it would discontinue its free Red Hat Linux line, and Fedora was created to carry that torch forward as a community-supported project.
+Continue
+03 / 8
+Releases
+How frequently does Fedora Linux release a new major version?
+A
+Every 6 months
+B
+Every 9 months
+C
+Every 12 months
+D
+Every 18 months
+Correct! Fedora follows an approximately 6-month release cycle, keeping it on a fast cadence that brings users the latest software and kernel updates quickly. Each release is supported for about 13 months, overlapping with the next two releases.
+Not quite — Fedora targets a 6-month release cycle. This rapid cadence is one of the things that distinguishes Fedora from more conservative distributions, ensuring users get access to the newest open-source software relatively quickly.
+Continue
+04 / 8
+Features
+What is the default desktop environment in Fedora Workstation?
+A
+KDE Plasma
+B
+Xfce
+C
+MATE
+D
+GNOME
+Correct! Fedora Workstation ships with GNOME as its default desktop environment and has a close relationship with the GNOME project, often debuting new GNOME releases before most other major distributions.
+Not quite — GNOME is the default in Fedora Workstation. While KDE Plasma, Xfce, and MATE are available through Fedora Spins, the flagship Workstation edition is tightly integrated with GNOME and frequently ships the latest GNOME releases on day one.
+Continue
+05 / 8
+Packages
+Which package manager is used natively on Fedora Linux?
+A
+apt
+B
+pacman
+C
+dnf
+D
+zypper
+Correct! Fedora uses DNF (Dandified YUM) as its default package manager. DNF replaced the older YUM tool and offers improved dependency resolution, better performance, and a cleaner codebase written in Python.
+Not quite — the correct answer is DNF. Tools like apt belong to Debian-based systems, pacman is Arch Linux's package manager, and zypper is used by openSUSE. Fedora's DNF builds on the legacy of YUM with significant improvements.
+Continue
+06 / 8
+Features
+What is the name of Fedora's immutable, image-based desktop variant?
+A
+Fedora Atomic
+B
+Fedora Silverblue
+C
+Fedora CoreOS
+D
+Fedora Kinoite
+Correct! Fedora Silverblue is the flagship immutable desktop edition, using OSTree to deliver an image-based, atomic update model. It pairs with Flatpak for app delivery and toolbox for development environments, making the core OS far more stable and rollback-friendly.
+Not quite — Fedora Silverblue is the correct answer. While Fedora Kinoite is a related immutable spin using KDE Plasma, and CoreOS targets containerized server workloads, Silverblue is the primary GNOME-based immutable desktop that pioneered this approach within the Fedora family.
+Continue
+07 / 8
+Community
+What is the name of the alternative software repository commonly used alongside Fedora to provide codecs and proprietary drivers?
+A
+PPAs
+B
+AUR
+C
+RPM Fusion
+D
+Snap Store
+Correct! RPM Fusion is a community-maintained repository that provides software Fedora cannot ship due to legal or licensing restrictions, such as NVIDIA drivers, multimedia codecs, and certain media tools. It is split into 'free' and 'nonfree' sections.
+Not quite — RPM Fusion is the right answer. PPAs are an Ubuntu concept, the AUR belongs to Arch Linux, and Snap Store is Canonical's package platform. RPM Fusion fills a critical gap for Fedora users who need proprietary or patent-encumbered software that Fedora's strict open-source policies exclude.
+Continue
+08 / 8
+History
+What was Fedora's package format called before it was rebranded simply as part of the broader RPM ecosystem?
+A
+Fedora Core packages
+B
+Red Hat packages
+C
+RPM packages — it was always RPM
+D
+YUM bundles
+Correct! Fedora has always used the RPM (Red Hat Package Manager) format, which predates Fedora itself. RPM was originally developed by Red Hat in the mid-1990s and became a standard package format adopted by many distributions including openSUSE and RHEL.
+Not quite — Fedora has always used RPM packages. The RPM format was created by Red Hat in the 1990s and became one of the foundational package standards in Linux. Fedora inherited it directly from Red Hat Linux and continues to use it to this day.
+See My Score
+Challenge Complete
+Your Score
+/ 8
+Thanks for playing!
+Try Again
+While Snap is supported on multiple Linux distros, it's easy to see that adoption is nowhere near on the same level, and Ubuntu is suffering for it. But it actually hurts every other distro, too, because Flatpak adoption could be that much more significant if the entire ecosystem embraced it. It would be a huge step toward solving the "app gap".
+Related
+
+			Linux's app problem isn't compatibility anymore, it's Flatpak and Snap splitting the desktop in two
+		
+Both try to solve the chaos of Linux app delivery, but their split creates even more confusion, inconsistent behavior, and a constant trust tax.
+Posts
+32
+By 
+Jeff Butts
+Feb 25, 2026
+
+                        Increasingly high resource usage
+               
+
+            How did we get to this point?
+    
+Resource usage in Ubuntu shows the Firecracker microVM has a negligible impact on system performance
+ One of the big talking points when it comes to comparing Linux to Windows is how much lighter Linux can be and how it still supports lower-end or older hardware. But when you look at Ubuntu, that seems to be less and less true as time goes on. Being the default for so many people, Canonical has felt the need to load Ubuntu with a lot of things to make things easier, but in doing so, Ubuntu has, in many ways, become almost as bloated as Windows.
+✕
+ Remove Ads
+We've talked about that before, and there are options to have a lighter Ubuntu experience, but just look at what's happening with the upcoming release of Ubuntu 26.04. With that release, you'll start needing a minimum of 6GB of RAM to run Ubuntu, which is 50% more than 
+Windows 11
+. And you can argue that's because Canonical wants to ensure you have a good experience by meeting the minimum requirements, but that isn't really the point of minimum requirements, in my opinion. That's why software often has recommended specs in addition to that.
+When Fedora still lets you install the operating system on just 2GB of RAM (though it is advised to use a different desktop than the default GNOME in those cases), it becomes a little ridiculous.
+Related
+
+			Ubuntu is easily the most bloated Linux distro, but it doesn't have to be
+		
+Ubuntu doesn't deserve all the hate it gets (especially not the Server version)
+Posts
+11
+By 
+Ayush Pande
+Nov 6, 2025
+
+                        The default desktop is alienating
+               
+
+            GNOME isn't for everyone
+    
+There's also the fact that Ubuntu ships with the GNOME desktop environment, and really 
+only
+ GNOME. There are officially endorsed Ubuntu derivatives that do use different desktops, but you won't find those easily on the Ubuntu website, and they're not maintained by Canonical, so you never know how reliably they'll be supported.
+✕
+ Remove Ads
+GNOME is often considered beginner-friendly, but for a user coming from Windows, I actually believe it's a detractor. It just looks and feels too different, and customization options are somewhat limited unless you dive into 
+GNOME extensions
+, but you need to know what those are first.
+Fedora has two official flavors for desktop users right on the official website. Sure, GNOME is the "true" default, but the KDE version is right up there next to it, with the same level of official support. And again, it's a matter of preference, but even if you like GNOME more than KDE, just having the option right there is great. You can choose what works best for you from the get-go, and for most people, I'd say KDE probably makes the most sense.
+Ubuntu sort of makes you feel like GNOME is the only option you have, and it's customized in a way that doesn't make sense for everyone, either.
+Related
+
+			I switched from GNOME to KDE Plasma 6.6 and it fixed all my complaints about the Linux desktop
+		
+It's time to move on from GNOME
+Posts
+21
+By 
+João Carrasqueira
+Mar 4, 2026
+
+                        Fedora is on the bleeding edge
+               
+
+            Ubuntu moves a little more slowly
+    
+ While this last one isn't necessarily a benefit to everyone, it's also worth mentioning the cadence of updates on Fedora is a lot faster, which means you're almost always on the bleeding edge. Fedora still does a reasonable amount of testing and it's not as prone to problems as something like Arch, but you get new features, fixes, and improvements at a much faster pace.
+✕
+ Remove Ads
+Ubuntu does have a faster cadence option if you opt for the non-LTS releases, but it's typically still a good bit behind the latest innovations in the Linux kernel and other packages, which makes Fedora more exciting for new developments. Though, again, whether you prefer a faster update cycle or not is entirely a personal choice and I don't necessarily hold that against Ubuntu.
+Related
+
+			Fedora made me realize Windows was the problem with my workflow
+		
+And now I can't go back.
+Posts
+12
+By 
+Simon Batt
+Feb 14, 2026
+
+            Fedora is an easy choice
+    
+Seeing the route that Ubuntu has taken over the past few years and how the Linux landscape looks these days, it's easy to understand why Ubuntu is losing some traction among Linux fans. In some ways, it feels like it's become so big that it felt the need to be more like Windows, for better and for worse.
+At this point, other distros are much easier to recommend, and while Fedora may not be perfect for everyone either, it's not surprising to see it recommended much more often.
+
+    						Fedora
+			
+See at The Fedora Project
+Expand
+Collapse
+✕
+ Remove Ads
+Linux
+Ubuntu
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I replaced Adobe, Figma, and Canva with one free tool, and I'm not paying for design software again
+		
+
+			I asked Gemini, Claude, and ChatGPT to build a customer landing page, and only one nailed the brief
+		
+2:59
+
+			How to install ADB on Windows, macOS, and Linux
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+70
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+JustSaying
+JustSaying
+JustSaying
+#VT957977
+Member since 2025-05-30
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+1  Follower 
+View
+"
+I've made it no secret that I'm not a big fan of Ubuntu..." Most of the arguments for Fedora following this sentence are unpersuasive when there's clear bias.
+2026-04-24 10:54:18
+Upvote
+
+                                    32
+                            
+Downvote
+Reply
+
+                        10
+                    
+Copy
+        
+Andrzej
+Andrzej
+Andrzej
+#JP529462
+Member since 2024-08-24
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I do like Fedora, but I am not a fan of "rolling" release distros. I switched to Debian 13 KDE about 6 mo. ago after 7+ years on Mint. It is really great, Debian that is, stable and actually "snappier" than Mint.
+2026-04-24 11:49:39
+Upvote
+
+                                    12
+                            
+Downvote
+Reply
+Copy
+        
+Paradoxide
+Paradoxide
+Paradoxide
+#TO317015
+Member since 2024-08-05
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Andrzej
+ I like Debian especially for containers, for a lightweight, simple reliable application host container. It's great. 
+2026-04-24 14:32:01
+Upvote
+
+                                    7
+                            
+Downvote
+Reply
+Copy
+        
+Ben
+Ben
+Ben
+#AB277441
+Member since 2026-04-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Paradoxide
+ if it's headless server version then literally none of the points the article makes apply to any distro's server versions. This is talking about desktop every day use systems with a GUI and the apps that are included by default from the installer. 
+2026-04-24 21:57:46
+Upvote
+
+                                    4
+                            
+Downvote
+Reply
+Copy
+        
+Varma
+Varma
+Varma
+#BL672221
+Member since 2026-04-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Andrzej
+ Yes, want a stable distro. Maybe time to try Debian 
+2026-04-25 03:58:34
+Upvote
+
+                                    6
+                            
+Downvote
+Reply
+Copy
+        
+Ícaro
+Ícaro
+Ícaro
+#GH989771
+Member since 2026-04-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Andrzej
+ i have a tri boot pc here, Fedora to gamming, Windows when fedora dont allow me to play the game and Debian to work, the updates on the Fedora is worst than in windows, but maybe, after all this is why i can play a lot of games on Fedora 
+2026-04-25 06:09:20
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Saul
+Saul
+Saul
+#ER681547
+Member since 2025-11-24
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Varma
+ I’m doing a tri boot also with Windows 11 Debian 13 Trixie and Garuda Linux which doesn’t get much publicity but is also a very secure and fast Distro that is Arch based 
+2026-04-25 08:20:39
+Upvote
+Downvote
+Reply
+Copy
+        
+More Replies
+Shayne
+Shayne
+Shayne
+#YI082935
+Member since 2026-04-24
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Never been a fan of Fedora either. It used to so bloated, I would never recommend it. But I thought I would try it out recently, version 43.
+And it was not intuitive and not a fan of default gnome de.
+Linux Mint Debian Edition with Cinnamon
+And ZorinOS were so much more new user friendly in my opinion.
+2026-04-24 12:59:05
+Upvote
+
+                                    12
+                            
+Downvote
+Reply
+
+                        4
+                    
+Copy
+        
+Bilind
+Bilind
+Bilind
+#EC235183
+Member since 2025-10-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+ZorinOS is fantastic. It has turned GNOME into a truly reliable and functional interface.
+2026-04-24 17:59:44
+Upvote
+
+                                    5
+                            
+Downvote
+Reply
+Copy
+        
+HK
+HK
+HK
+#IA662974
+Member since 2025-05-17
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+It seems your not a gnome fan. What about the other offerings KDE or others that are available for  download? 
+2026-04-25 21:35:08
+Upvote
+Downvote
+Reply
+Copy
+        
+g
+g
+g
+#XR742175
+Member since 2025-02-10
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+HK
+ Lubuntu
+2026-04-26 18:49:09
+Upvote
+Downvote
+Reply
+Copy
+        
+Piledriver
+Piledriver
+Piledriver
+#TR241636
+Member since 2023-12-23
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+HK, recently installed Ubuntu Studio, which uses KDE 6, installed the 26.4 beta (26.4 IS lts) and it works very nicely.
+have never been a gnome fan, going back to redhat 7, nor have had any good luck with Fedora, either using Mageia or Debian. 
+2026-04-27 17:54:51
+Upvote
+Downvote
+Reply
+Copy
+        
+Nick
+Nick
+Nick
+#UI949070
+Member since 2024-11-27
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I don't recommend Linux for people that need recommendations. They should get used to figuring things out. Ubuntu is fine.
+2026-04-24 19:32:08
+Upvote
+
+                                    13
+                            
+Downvote
+Reply
+
+                        3
+                    
+Copy
+        
+Mickeyp100
+Mickeyp100
+Mickeyp100
+#IE136723
+Member since 2024-08-12
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+This. 100% this. Find out for yourself. You have your own specific needs and your own specific pain points. To say nothing of your own specific prejudices, which is why I won't go near anything RHEL related - therefore exclude Fedora from my consideration.
+And why anything Debian-derived is good, given their uncompromising FOSS position - even if the derivative doesn't have the same positioning.
+Now, if only they weren't all infested with systemd.......
+2026-04-25 04:21:50
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Rick
+Rick
+Rick
+#KP219560
+Member since 2025-04-27
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+You know not everyone is a power user and some people just need an operating system that turns on and opens a browser and steam.... Right?
+2026-04-25 07:37:08
+Upvote
+
+                                    5
+                            
+Downvote
+Reply
+Copy
+        
+Yndril
+Yndril
+Yndril
+#JP329081
+Member since 2024-07-11
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Rick
+ I would argue that that demographic would not ask for or want recommendations in the first place, they stick with what is on the machine, because the task of installing an OS would feel like climbing a mountain with no experience to them, and not everyone have a techie friend to do it for them (and if they do. They'll probably just let them choose).
+But I do get what you mean, there are those that are interested and experienced with computers but want guidance in the beginning to get started.
+I'm one of those people, I looked at a friend using Linux at school and was intrigued, don't remember what distro they used, but I asked what they recommended, and they recommended Mint, which was still very fresh back then, believe it was the second release update. Once I had gotten started, I started looking for the base and DE that suits me, but I may have put off doing that for years or decades if I didn't get that initial recommendation and guidance.
+2026-04-25 14:01:09
+Upvote
+Downvote
+Reply
+Copy
+        
+Mye-nyme
+Mye-nyme
+Mye-nyme
+#TW396359
+Member since 2024-11-14
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I agree that gnome is not for everyone. However, I find it far more user-friendly and visually appealing than anything Fedora has released. But if you don't like gnome, canonical releases a variety of desktop environments in parallel with the main release. 
+For what it's worth, my mom started using Ubuntu when she was 80 and was tired of her grandchildren loading up her windows box with viruses. At 92, she's still adapting to any changes made. 
+There are times where I don't want bleeding edge. I use Ubuntu for servers and I just want it to work reliably.
+Oh Christ on a stick! I'm so tired of the snap versus flat pack controversy. Both are good for different domains. Yes, snap is more restrictive because it's for making secure systems by providing greater access control and immutability. flat pack is for loading up desktops applications. Again given my server focus, I'll take snap over flat pack any day.
+Canonical has made what appears to be missteps such as Upstart versus systemd or unity versus versus gnome. I saw it as trying to demonstrate different, potentially better ways to do something than just following the crowd and building monoculture. 
+I've noticed consistently that whatever canonical proposes, the red hat/ Fedora crowd reflexively dump on canonical and reject what canonical does based on ideology and not good technical assessment.
+2026-04-24 14:25:44
+Upvote
+
+                                    9
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Resurrection20
+Resurrection20
+Resurrection20
+#SE074054
+Member since 2026-03-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+"However, I find it far more user-friendly and visually appealing than anything Fedora has released." Fedora doesn't release DE's, bro. 
+2026-04-30 23:59:19
+Upvote
+Downvote
+Reply
+Copy
+        
+Kim
+Kim
+Kim
+#MB865062
+Member since 2025-04-28
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Funny I never hear anyone recommend Fedora. Zorin, Mint, Ubuntu and even some Arch variants, but never fedora.
+2026-04-24 17:12:40
+Upvote
+
+                                    10
+                            
+Downvote
+Reply
+Copy
+        
+callum
+callum
+callum
+#UL629612
+Member since 2026-04-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I would probably do some fact checking before writing an article. Snaps was released in 2014 before flatpak came about. Snaps is a continuation of click which was first developed in 2011 for Ubuntu touch. But let’s not forget about AppImage which is the original cross distro app platform that started as klik in 2004 
+2026-04-25 07:01:01
+Upvote
+
+                                    6
+                            
+Downvote
+Reply
+Copy
+        
+Jason
+Jason
+Jason
+#AQ507917
+Member since 2026-04-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Fedora is leading edge not bleeding edge. 
+Another thing is that people confuse desktop UI with Distros. Even in these comments there is confusion. 
+I definitely agree with most of the article. 
+2026-04-25 02:05:48
+Upvote
+
+                                    5
+                            
+Downvote
+Reply
+Copy
+        
+Rich
+Rich
+Rich
+#QY827296
+Member since 2024-12-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Just one thought, why do your images show Linux Mint Cinnamon, yet I can't see any mention of it.
+Personally I'm not a fan of Ubunto nor Fedora as I find their desktops annoying.
+  I've been using computers since before Windows, my first was a Sinclare ZX1 then an Amstrad, then through to a Gateway Pentium PC, been through all versions of windows, however my daily driver now is Linux Mint, which I'd recommend to anyone. 
+2026-04-25 08:45:01
+Upvote
+
+                                    4
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Michael E.
+Michael E.
+Michael E.
+#LV353606
+Member since 2024-08-18
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Came out of the USN and started with the Radio Shack TRS Model 3. My favorite modus operandi is CLI. That's one of the reasons I feel more comfortable with Linux. I started my Linux journey with Red Hat 3.0. I am self taught and have absolutely no problem with RTFM! My USN job was in the electronics technical field! RTFM was required! I prefer Linux over Windows/Mac anyday! It feels more intuitive me.
+2026-04-25 14:48:14
+Upvote
+Downvote
+Reply
+Copy
+        
+Michiel
+Michiel
+Michiel
+#EZ645836
+Member since 2024-06-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I'm running 100s of Ubuntu servers and no issues whatsoever. You sir are an idiot. 
+I don't use snap, don't use gnome so I don't know what you are on about. 
+It runs "everything" I want and need. 
+There's something for everyone depending on the needs.  I've tried tons of Linux distros and I like Manjaro a lot but others don't. And my daily driver is windows 11 pro (stripped bare).
+2026-04-24 13:00:00
+Upvote
+
+                                    10
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Per Kristen
+Per Kristen
+Per Kristen
+#FQ281148
+Member since 2025-06-05
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+And how do you cope with update nagging on that stripped down version? And secondly how did you strip down your win11 pro??
+PKF
+2026-04-25 10:12:02
+Upvote
+Downvote
+Reply
+Copy
+        
+Mykhailo
+Mykhailo
+Mykhailo
+#ZQ904574
+Member since 2025-04-21
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Linux is Linux not matter the distro
+2026-04-26 03:24:59
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+Alon
+Alon
+Alon
+#CA368470
+Member since 2026-04-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Gnome/KDE is just a pre selected package with the base OS. It is not a major or completly different OS, if you choose Gnome or KDE.
+You can switch between them as you like, or other DE, or even remove it entirely and become more like a server.
+I have both Ubuntu and Fedora. There is not a lot of difference in the RAM and cpu consumption for similar actions. Behind the sheets it's very similar applications with just different defaults. If you use Gnome, the resources in Ubuntu or Fedora are similar. 
+The only thing, that you are right about, is Snap. Anyway, you can also install easily flatpak as I did. 
+All those distro wars, are stupid. It's same linux kernel and same applications on top if it. 
+The main difference is defaults and package/system management and updates policies (bleeding edge, vs not bleeding edge). You can even set Selinux in Ubuntu. The only thing you can't change is system managment tools.
+Anyway, defaults are important, since you don't want to fight you OS, but rather use it, so it's up to the user to see what's fits for his preferences better.
+2026-04-25 07:17:56
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+Rohan
+Rohan
+Rohan
+#WR375378
+Member since 2025-08-07
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I just hope Fedora doesn't take the steps that Ubuntu took.
+2026-04-25 04:58:17
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+
+                        2
+                    
+Copy
+        
+hey
+hey
+hey
+#QL797985
+Member since 2026-03-08
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+They already do. E.g. X11->Wayland (among other things).
+I never support companies that dictate you what or how to do things. Freedom of choice rules when it comes to Linux...
+2026-04-25 11:56:10
+Upvote
+Downvote
+Reply
+Copy
+        
+Christopher
+Christopher
+Christopher
+#AZ894994
+Member since 2025-02-21
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+hey
+ Your freedom of choice is to build your own distro with whatever you want in it.  Your only limit is you.
+2026-04-27 09:11:26
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Dave
+Dave
+Dave
+#RA718040
+Member since 2024-09-14
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Ubuntu's GNOME is customized which is why Windows users should be looking at KDE distros.  Fedora used to be the development bed for Red Hat, so traditionally the bleeding edge.  Windows users that are looking to jump should check out Linux Mint.  I use Linux Mint Debian Edition on all of my home equipment for its look, feel and reliability.
+I am calling you out on the Ubuntu alternative distros though.  Saying that they are not supported by Canonical is a misnomer.  They follow the same development guidelines and timelines, so stop and verify before you type.
+2026-04-24 22:59:12
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+g
+g
+g
+#XR742175
+Member since 2025-02-10
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Lubuntu
+2026-04-26 18:51:18
+Upvote
+Downvote
+Reply
+Copy
+        
+Oleg
+Oleg
+Oleg
+#GS212651
+Member since 2026-04-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Fedora is unstable. Broke a lot. I used Ubuntu for years and not once had any problems with stability.
+2026-04-25 04:46:33
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+phil
+phil
+phil
+#EA131455
+Member since 2026-01-05
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+That's why I recommend kubuntu LTS.
+KDE, Plasma is really and impressed windows users. 
+I also disable snap and just use flatpak.
+No big deal. I don't like snap but I don't hissy fit either.
+There are reasons to not like canonical.
+But kubuntu is still the sweet Spot in my view.
+2026-04-25 04:07:32
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Paradoxide
+Paradoxide
+Paradoxide
+#TO317015
+Member since 2024-08-05
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+For me Fedora has felt to have many of the same drawbacks as Ubuntu and doesn't it also have an unfriendly  Gnome default, which is why I was instantly turned of by it. Besides, its opinionated attitude about priopritary software was a turn off. 
+An operating system should not impose it's own preferences on the user...like a Microsoft or Apple product will do.
+I've used multiple distros through the years, but keep falling back to one of the first I tried, openSUSE(now using Tumbleweed), and will keep using it as it's been both stable and reliable as long as it remains actively maintained.
+I've tried many that I've liked, especially Manjaro, but openSUSE package managers, both zypper and yast keep me satisfied with ongoing maintenance and easy and flexible options for adding repos, etc.
+2026-04-24 14:27:50
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Jack
+Jack
+Jack
+#EE014477
+Member since 2026-03-06
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Personally, I'd recommend Ultramarine for new Linux users. It's based on Fedora, applies sane options during installation. Think of it like the Fedora-branch version of Linuxmint.
+2026-04-25 12:31:34
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+MarVellJones
+MarVellJones
+MarVellJones
+#IQ558005
+Member since 2023-10-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Thanks for that, I don't know why I didn't notice Ultramarine before. Of course now I have to decide if I want to leave the relative safety of Bazzite to switch to a distro I can "play around with and possibly break." 
+2026-04-25 20:59:55
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Glen
+Glen
+Glen
+#HL459015
+Member since 2026-04-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Thanks for this interesting and insightful article.
+I moved from Ubuntu to Debian because of snap.  Chose Debian over Fedora because of Docker: some Fedora variants use podman which can make a docker rootless install fight for acceptable iptables rules. Not sure if that's an issue on vanilla Fedora; I mostly investigated Silverblue.
+It is a little annoying to run vanilla Debian 12 with flatpak because the default root partition size is too small and flatpak isn't integrated with the app manager.  But I manage by uninstalling anything unused regularly.  Gamers note: I ended up installing Steam via apt instead of flatpak because of Windows game compatability.
+When you run any Gnome app, it loads a bunch of Gnome libraries so you only get the benefit of a lighter-weight desktop if you only use apps built for it.  Otherwise, it can be lighter-weight to run gnome and only load libraries from other desktops for applications that require them.  Flatpak reduces the overhead of Gnome vs. KDE by introducing a shared library layer, which may help this issue.
+I find jamming my mouse into the upper left corner and navigating pages of huge icons in Gnome pretty annoying.  There's more than one system to put those huge icons on the list and I don't understand any of them.  I learned to touch type without Windows keys and don't have them on my keyboard.  I use Gnome without loving it.
+I wish for better flatpak desktop app-manager integration in Debian but I get by.  Need to try Debian 13 vs. latest Fedora.
+2026-04-25 07:42:24
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+PaulBarnett
+PaulBarnett
+PaulBarnett
+#DC713061
+Member since 2026-04-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+You comment about the size of Canonical is misleading. Red hat, behind fedora , is at least 20 times larger.
+2026-04-25 14:30:38
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Allen
+Allen
+Allen
+#DI591555
+Member since 2024-10-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Ubuntu’s “flaws” are often Canonical’s policy choices, not technical limitations of the base system, and many Ubuntu‑based distros already fix them. That makes the Fedora vs. Ubuntu framing in the article misleading.
+The article positions Fedora as “the better choice” by contrasting it with Canonical’s decisions, but ignores that 
+Ubuntu derivatives already neutralize those pain points
+. In reality, the debate is less 
+Ubuntu vs. Fedora
+ and more 
+Canonical’s vision vs. community‑driven alternatives
+.
+So when someone says “Ubuntu has these flaws,” the fair counter is: 
+Yes, Canonical’s Ubuntu does — but Mint, Zorin, Pop!\_OS, and others prove the Ubuntu base isn’t the problem.
+2026-04-25 12:23:35
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Tony
+Tony
+Tony
+#MN793902
+Member since 2025-06-08
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I gave up on Red Hat/Fedora about 20 years ago when they consistently failed to install on my hardware. Used Ubuntu for about a dozen years but had to switch back to Windows when I couldn't get my family to move off MS. Now they want to avoid Windows 11. I'm not going to force Gnome onto them as it's basically unusable for anyone with a history of Windows XP, 7 and 10.
+My personal choice for a daily driver is Debian 13 Mate, but I also like Q4OS as a strong candidate for my family.
+2026-04-25 09:51:21
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Mean-UI-Thread
+Mean-UI-Thread
+Mean-UI-Thread
+#GS065083
+Member since 2026-01-05
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I like CachyOS now
+2026-04-24 18:55:18
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Christopher
+Christopher
+Christopher
+#AZ894994
+Member since 2025-02-21
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I tried to like it, but Arch got in the way.
+2026-04-27 09:13:04
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+hey
+hey
+hey
+#QL797985
+Member since 2026-03-08
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+What about Redhat/Fedora doing the same thing with the whole Wayland debacle? Both are the Micro$ofts among Linux distros, taking away freedom of choice. 
+Arch or CachyOS will be the next standards in Linux-land.
+2026-04-25 11:46:04
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Craig
+Craig
+Craig
+#LQ435086
+Member since 2025-11-05
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I am no expert but yes I do wish they would settle on a distribution system.... The masses want to ditch Windows so stop being so geeky for the sake of it especially for the basics. And that's not just directed at Ubuntu it's to Linux in general.
+I use Ubuntu because Bitwig recommends it and I don't want to use bitwig in Flatpack.
+Recently bought a  thinkpad without an OS and after a couple of months I can now say I do not need windows at all.... There are two pieces of software I have been using for a few years that are  not Linux native but I have decided that if they (Akai & Arturia) can't be bothered to port them I can't be bothered to use them anymore.
+2026-04-24 20:48:42
+Upvote
+Downvote
+Reply
+Copy
+        
+Phil
+Phil
+Phil
+#EC567135
+Member since 2026-04-27
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I run Ubuntu, Fedora and CachyOS in parallel and in terms of stability, Ubuntu usually wins. In terms of package management though Arch wins hands down with pacman/paru, personally think both snap and flatpak suck and would rather use the standard tools. And KDE is just an ugly Windows 2000 clone, I'd rather have COSMIC.
+2026-04-27 10:22:15
+Upvote
+Downvote
+Reply
+Copy
+        
+Shaun
+Shaun
+Shaun
+#TQ856562
+Member since 2026-04-17
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+One you missed: rewriting proven, stable software in Rust "just because", thereby increasing risk and instability.  It is, objectively, the single most stupid decision a software organization can make. 
+2026-04-24 15:44:48
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Show More
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 23, 2026
+
+                                    3 reasons I'm finally uninstalling Obsidian - and what I'm replacing it with
+                            
+Apr 22, 2026
+
+                                    HDMI 2.2 promises 4K at 480Hz, but your current cable situation is about to get worse
+                            
+Apr 22, 2026
+
+                                    I've been running SteamOS on a non-Steam mini PC, and it makes a better living room console than I expected
+                            
+Apr 22, 2026
+
+                                    4 unique ways I use Claude that has nothing to do with coding
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:15
+
+                            What was the best version of Windows?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:07
+
+                            The end of affordable PCs?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            Windows XP's Secret Themes
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:09
+Skip Ad
+5

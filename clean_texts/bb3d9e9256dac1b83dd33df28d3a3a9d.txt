@@ -1,0 +1,204 @@
+CVE: Common Vulnerabilities and Exposures
+Opens in a new window
+Opens an external website
+Opens an external website in a new window
+<!---->Close this dialog<!---->
+ This website utilizes technologies such as cookies to enable essential site functionality, as well as for analytics, personalization, and targeted advertising. To learn more, view the following link:  
+Privacy Policy
+ Manage Preferences 
+<!---->Close Cookie Preferences<!---->
+Common vulnerabilities and Exposures (CVE)
+We're sorry but the CVE Website doesn't work properly without JavaScript enabled. Please enable it to continue.
+Skip to main content
+About
+Overview
+History
+Process
+Related Efforts
+Metrics
+Partner Information
+Partner
+List of Partners
+Program Organization
+Structure
+Program Relationship with Partners
+Board
+Working Groups
+CVE Numbering Authorities
+Authorized Data Publishers
+Downloads
+Resources & Support
+Resources
+Glossary
+FAQs
+Report/Request
+CNAs
+Non-CNAs
+Site Search
+Search
+ Search tips 
+ lightbulb 
+|
+ Provide feedback 
+ Survey opens in a new tab or window depending on browser settings 
+Site Search
+alert
+Notice: 
+Expanded keyword searching of CVE Records 
+(with limitations)
+is now available in the search box above. Learn more 
+here
+. 
+alert
+Notice: 
+Expanded keyword searching of CVE Records
+(with limitations)
+is now available in the search box above. Learn more
+here
+.
+Expand or collapse notification button
+close notification button
+CVE
+ CVE
+™
+ Program Mission 
+ Identify, define, and catalog publicly disclosed cybersecurity vulnerabilities. 
+ There are currently over 
+331,000
+ CVE Records accessible via 
+Download
+ or 
+Keyword Search
+ above. 
+CVE partnership
+ The CVE Program partners with community members worldwide to grow CVE content and expand its usage. Click below to learn more about the role of 
+CVE Numbering Authorities (CNAs) 
+ and 
+Roots
+. 
+Learn More
+ Become a Partner 
+ Access
+List of Partners
+CNA Rules
+CVE Record Lifecycle
+CVEProject on GitHub for Development 
+external site
+CVE Record User Guide
+ Learn
+About CVE
+Process
+Program Organization
+Related Efforts
+Terminology
+CVE Services for CNAs
+ Report/Request
+Report vulnerability/Request CVE ID
+Request CVE Record be published/updated
+Report the use of a reserved CVE ID 
+external site
+ Access Resources Based on Role 
+CVE Numbering Authority (CNA)
+Working Group
+Vulnerability Researcher
+News
+blog
+podcast
+news
+tweet
+“Supplier ADP Pilot Update” — SADP Content Now Live in CVE Records
+blog
+podcast
+news
+tweet
+GVision Italia Added as CVE Numbering Authority (CNA)
+blog
+podcast
+news
+tweet
+Orange Cyberdefense Added as CVE Numbering Authority (CNA)
+blog
+podcast
+news
+tweet
+Ygreky Added as CVE Numbering Authority (CNA)
+blog
+podcast
+news
+tweet
+Computer Incident Response Center Luxembourg (CIRCL) Added as CVE Numbering Authority (CNA)
+blog
+podcast
+news
+tweet
+Vulnerability Data Enrichment for CVE Records: 261 CNAs on the Enrichment Recognition List for May 4, 2026
+ news icons 
+Blog
+blog icon
+Podcast
+podcast icon
+News
+news icon
+Press Release
+press release icon
+More news
+Events
+private event
+CVE Artificial Intelligence Working Group (CVEAI WG) Meeting
+Every other Monday
+ | Virtual
+private event
+Researcher Working Group (RWG) Meeting
+Every Tuesday
+ | Virtual
+ event icons 
+Public
+public event icon
+Private
+private event icon
+More Events
+Policies & Cookies
+Terms of Use
+Website Security Policy
+Privacy Policy
+Cookie Notice
+Manage Cookies
+Media
+News
+Blogs
+Podcasts
+Email newsletter sign up
+Social Media
+github
+linkedin
+bluesky
+mastodon
+youtube
+medium
+x-twitter icon for @CVEnew
+ New CVE Records 
+x-twitter icon for @CVEannounce
+ CVE Announce 
+Contact
+CVE Program Support 
+external site
+CNA Partners
+CVE Website Feedback Form 
+external site
+CVE Website Support 
+external site
+ Use of the CVE
+™
+ List and the associated references from this website are subject to the 
+terms of use
+. CVE is sponsored by the 
+U.S. Department of Homeland Security (DHS) 
+external link
+ Cybersecurity and Infrastructure Security Agency (CISA) 
+external link
+. Copyright © 1999-2026, 
+The MITRE Corporation 
+external link
+. CVE is a trademark and the CVE logo is a registered trademark of The MITRE Corporation. 
+ Links that redirect to external websites 
+ will open a new window or tab depending on the web browser used. 

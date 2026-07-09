@@ -1,0 +1,299 @@
+Manage Proxmox Like Kubernetes? This CLI Tool Makes It Possible - Virtualization Howto
+Skip to content
+YouTube
+Twitter
+LinkedIn
+GitHub
+Facebook
+Discord
+Pinterest
+Virtualization Howto
+Virtualization, Cloud, DevOps, Reviews
+Search for:
+Subscribe
+Forum
+My kits
+Home Lab NAS Kits
+Intel Optane Swap Kit
+VMware Compatible Mini PCs
+Podcast
+DevOps
+Virtualization
+Proxmox
+VMware
+Hyper-V
+XCP-ng
+Containers
+Kubernetes
+Mini PC & Server
+Home Lab
+My Home Lab
+Nested ESXi Lab
+Proxmox Build 2025
+About
+Contact
+Disclaimer
+E-books
+Privacy
+Newsletter
+3
+Home
+2026
+March
+Manage Proxmox Like Kubernetes? This CLI Tool Makes It Possible
+Manage Proxmox Like Kubernetes? This CLI Tool Makes It Possible
+March 25, 2026
+March 25, 2026
+by Brandon Lee
+If you have spent any amount of time working with Proxmox, you are probably super familiar with the web interface. The default web interface is clean and gives you good visibility, and everything feels pretty intuitive. But as your environment grows, the web UI doesn’t scale very well. You will find yourself clicking through menus. Jumping between nodes. Trying to 
+keep track
+ of what is running where. And if you are doing anything at scale or trying to automate, then the UI actually becomes a bit of a blocker. This is where I have found things. At the same time, I have been spending more time around Kubernetes. And one of the biggest mindset shifts with Kubernetes is how much you rely on the CLI. That is when I came across a tool called 
+cv4pve-cli
+, and it completely changed how I think about managing my 
+Proxmox clusters
+ from the command line. Let’s see what this Proxmox CLI tool is and how to use it.
+The problem with managing Proxmox at scale with only a GUI
+Proxmox UI management is great when you are managing a handful of VMs 
+when you access your home lab
+. Even a small cluster feels very manageable through the UI. But once you start scaling out and you need to perform the same actions over and over again with clicks, this can get to be a bit of a hassle.
+Proxmox ve server web ui
+You may say, doesn’t Proxmox have built-in CLI tools? Yes it does, but the built-int CLI tools are a bit fragmented. You have commands like 
+qm
+ for virtual machines, 
+pct
+ for containers, and 
+pvesh 
+for API access. Each one has its own syntax and way of doing things. There is no single command and unified way to query things in your environment.
+This all means that automation becomes harder than it should be in Proxmox. Yes, you can script things with bash or call the API directly or use things like Terraform and Ansible, but it takes effort to stitch everything together. It does not feel natural or consistent in every use case.
+This is where Kubernetes tooling like 
+kubectl
+ really shines. With kubectl, you can do things like list all resources, filter them, output JSON, pipe into other tools, and build workflows that feel seamless. You are interacting with your infrastructure in a consistent, predictable way. That is the experience that I have wanted with Proxmox. There is a tool that makes this experience very close.
+What is cv4pve-cli?
+cv4pve-cli
+ is a command line tool that is designed to give you an uplift in how you interact with Proxmox. It gives us a much more unified and user friendly interface to the Proxmox API. So, instead of juggling multiple commands and different syntax, you can get a single CLI that allows you to do the following:
+Query your Proxmox environment
+List 
+virtual machines and containers
+Retrieve configuration details
+Interact with clusters in a more structured way
+Corsinvest cv4pve cli
+Under the hood, it is leveraging the Proxmox API, but it wraps API calls in a way that feels much closer to modern CLI tools that you might already be familiar with. So, if you have ever used 
+kubectl
+, you will immediately notice the similarities in how you think about interacting with your environment. It’s not a one-for-one type of syntax with kubectl, but you will definitely notice the similarities with the workflow.
+Also, this is made by the same company/developer that made the tool I recently covered as well which is an RVTools for Proxmox type tool that is great for those moving over to the PVE platform. Check out my blog post on that one here:
+This Free Tool Feels Like RVTools for Proxmox (And It’s CLI-Based)
+Corsinvest makes an rvtools for proxmox type tool
+How to install the cv4pve-cli command
+On the 
+Github repo
+, the developer has a simple script that will pull down the latest version programmatically so you don’t have to worry about grabbing the latest. It will pull it down, extract it and copy the binary to your /usr/local/bin folder.
+LATEST_URL=$(curl -s https://api.github.com/repos/Corsinvest/cv4pve-cli/releases/latest | grep browser_download_url | grep linux-x64 | cut -d '"' -f 4)
+wget "$LATEST_URL" && unzip cv4pve-cli-linux-x64.zip
+chmod +x cv4pve-cli
+sudo mv cv4pve-cli /usr/local/bin/
+Installing the cv4pve cli tool
+Setting a “context” for the cv4pve-cli command
+One of the other cool things that you can do with this tool is set a “context”. Think of this like a kubeconfig. You set the context to point to a specific Proxmox environment like you would a Kubernetes cluster.
+You can see the syntax below, but it is the following:
+cv4pve-cli config add homelab --host 192.168.1.100 --username root@pam --password P@$$w0rd1
+Syntax to configure a context for cv4pve cli for your home lab
+You can also 
+skip certificate verification
+ which will be what most will want to do:
+cv4pve-cli config add dev --host 10.0.0.1 --port 8007 --username root@pam --password P@$$w0rd1 --validate-certificate false
+Connected to the home lab context skipping certificate verification
+Viewing multiple contexts you have configured
+One of the great Kubernetes-like things that you can do with this tool is set “multiple contexts” or Proxmox environments that you have saved as connections. When you add multiple contexts as we have shown above, you can then list your contexts, using the command:
+cv4pve-cli config list
+Below, you can see the one that has the asterisk next to it is the default:
+Viewing the contexts you have configured and which is active
+Switching contexts with the cv4pve-cli tool
+Below, you can see that we are switching the context with the command:
+cv4pve-cli config use <context>
+Then you can see I quickly followed it up by viewing the contexts and we now see the asterisk next to “homelab2”.
+Switching contexts with the cv4pve cli tool to work with a different proxmox environment
+Simple examples of using the cv4pve-cli utility
+There are several great examples of how you can use the cv4pve-cli utility and do so easily. What I like is that it will return results to you for the entire cluster and not just a particular node. 
+Below is getting information for a specific VM by the VM name:
+cv4pve-cli show vm --guest <your vm name>
+Getting information for a specific proxmox virtual machine with cv4pve cli
+You can also get the VM status using the VM ID:
+cv4pve-cli get vm status --guest 100
+Getting vm status in proxmox with the cv4pve cli command using the vm id
+Getting information about the Proxmox nodes
+Very similar to the 
+kubectl get nodes
+ command, you can do something similar with the command:
+cv4pve-cli api get /nodes --output text
+Getting pve nodes information
+There are built-in aliases that allow you to do a lot of really cool things very easily from the command line.
+Alias
+Arguments
+Description
+get guests
+—
+This will list all VMs and containers for the whole cluster
+show guest
+<node> <vmtype> <vmid>
+Show guest configs for (VM or CT)
+get guest status
+<node> <vmtype> <vmid>
+Show guest runtime status
+do start guest
+<node> <vmtype> <vmid>
+Start a guest
+do stop guest
+<node> <vmtype> <vmid>
+Stop a guest
+do shutdown guest
+<node> <vmtype> <vmid>
+Shutdown a guest
+do reboot guest
+<node> <vmtype> <vmid>
+Reboot a guest
+do migrate guest
+<node> <vmtype> <vmid> <target_node>
+Migrate a guest to another node
+get guest snapshots
+<node> <vmtype> <vmid>
+List snapshots
+create guest snapshot
+<node> <vmtype> <vmid> <snapname> <descr>
+Create a snapshot
+do rollback guest
+<node> <vmtype> <vmid> <snapname>
+Rollback to a snapshot
+delete guest
+<node> <vmtype> <vmid>
+Destroy a guest (this is destructive and will result in data loss!)
+Why this feels like managing Proxmox with kubectl
+The biggest difference I think is not just the commands. It is the mindset. When you start using a tool like 
+cv4pve-cli
+, you start thinking more in terms of querying your environment instead of “Click Ops”.
+For example, instead of asking questions like “which node is this VM on”? You start asking the question “how can I query all VMs and filter the results”? Instead of “let me click into each VM to see its status”, you think “how can I get a list of all VMs and their states in one command”? This is a subtle shift, but it is powerful. This allows you to:
+Get faster visibility into your environment
+Build scripts that automate common tasks
+Combine commands with other CLI tools
+Treat your infrastructure as something you can query programmatically like Kubernetes
+Also the whole “contexts” mental model I think is powerful that allows you to manage your Proxmox environments in terms of contexts of different PVE hosts or clusters and allows a single command line or management workstation to span all of the environments you have.
+Limitations of cv4pve-cli?
+No tool is perfect though no matter how good they may be, and it is important to know where cv4pve-cli fits in and maybe where it isn’t the best fit. First, don’t think of this as a replacement for the Proxmox UI. The default Proxmox web UI is still super powerful for:
+Visual management
+Initial configuration
+Quick troubleshooting
+Advanced configurations
+Second, there is a learning curve. If you are used to the UI, shifting to a CLI driven workflow takes some adjustment and time. I don’t think you should think of it being a “one or the other” type tool. Use it to complement your other management tools for Proxmox. But I do think for many day-to-day tasks, especially anything repetitive or automation related, this tool can save a lot of time compared to clicking around in the GUI of the Proxmox web UI.
+Wrapping up
+I think this is a really great Proxmox CLI tool that allows you to have the familiar workflows that we already have for 
+Kubernetes clusters
+ but have these for our Proxmox VE Servers and Clusters. With all the built-in aliases in the tool there is probably a command that will do what you want it to be able to do. Adding the cv4pve-cli command has definitely changed how I think about and interact with my 
+Proxmox VE Server
+ environment. It provides a fast way to get information and 
+automate tasks
+ from the command line. If you are running a Proxmox cluster and have started to feel the limits of managing everything through the UI with Click Ops, this is absolutely worth checking out. How about you? Have you used the cv4pve-cli command before? Does this seem like something you would like to check out?
+Add as a preferred source on Google
+Google is updating how articles are shown. Don’t miss our leading home lab and tech content, written by humans, by setting 
+Virtualization Howto as a preferred source
+.
+About The Author
+Brandon Lee
+Brandon Lee is the Senior Writer, Engineer and owner at Virtualizationhowto.com, and a 7-time VMware vExpert, with over two decades of experience in Information Technology. Having worked for numerous Fortune 500 companies as well as in various industries, He has extensive experience in various IT segments and is a strong advocate for open source technologies. Brandon holds many industry certifications, loves the outdoors and spending time with family. Also, he goes through the effort of testing and troubleshooting issues, so you don't have to.
+See author's posts
+Like this:
+Like
+Loading…
+Proxmox
+Tagged 
+proxmox
+Post navigation
+I Changed How I Access My Home Lab and This Fixed Everything
+I Stopped Deploying Containers Manually. This Changed My Home Lab
+Related Posts
+Why Proxmox Wasn’t Reclaiming Storage Until I Fixed This Setting
+Maybe you have been in this situation where you know you are deleting data inside your virtual machines running in Proxmox. You see the disk usage drop inside the guest…
+Like this:
+Like
+Loading…
+Proxmox Swap Tweaks Guide! Dedicated drive, Swappiness, Page Cluster
+I have been doing quite a bit of testing with Proxmox swap and Intel Optane drives for ultra fast swap storage. In doing so have learned quite a bit about…
+Like this:
+Like
+Loading…
+QEMU Guest Agent Installation in Proxmox VE
+If you are running a Proxmox VE server in your home lab or production, there is a component that you will want to know and use with your guest virtual…
+Like this:
+Like
+Loading…
+0
+0
+votes
+Article Rating
+Subscribe
+Connect with
+ Login
+I allow to create an account
+When you login first time using a Social Login button, we collect your account public profile information shared by Social Login provider, based on your privacy settings. We also get your email address to automatically create an account for you in our website. Once your account is created, you'll be logged-in to this account.
+Disagree
+Agree
+Notify of 
+new follow-up comments
+new replies to my comments
+Label
+Name*
+Email*
+Connect with
+I allow to create an account
+When you login first time using a Social Login button, we collect your account public profile information shared by Social Login provider, based on your privacy settings. We also get your email address to automatically create an account for you in our website. Once your account is created, you'll be logged-in to this account.
+Disagree
+Agree
+Label
+Name*
+Email*
+1
+ Comment                    
+Oldest
+Newest
+Most Voted
+ Inline Feedbacks                    
+View all comments
+
+    Daniele Corsini
+
+
+    1 month ago
+
+Hi,
+
+Actually I just released exactly that — cv4pve-report is the RVTools equivalent for Proxmox VE. It exports your entire infrastructure to a single navigable Excel file: nodes, VMs, containers, storages, users, firewall rules, backup jobs, resource pools, QEMU agent data and more. Every row is a hyperlink to the detail sheet.
+https://github.com/Corsinvest/cv4pve-report
+0
+Reply
+Proxmox Server Build Components
+As an Amazon Associate, I earn from qualifying purchases.
+Minisforum BD795M
+RackChoice 2U Micro ATX Compact
+Cooler Master MWE Gold 850 V2
+Noctua NH-L9i-17xx, Low-Profile CPU Cooler
+★ New!
+Crucial 128GB DDR5 SODIMM Kit
+Crucial 96GB DDR5 SODIMM Kit
+Intel X520-DA2 10 GbE Network Adapter
+Kingston 240GB Drive for Boot
+Samsung 990 Pro 2TB
+MX-4 Thermal Paste
+Gaming/Proxmox Build 2025
+As an Amazon Associate, I earn from qualifying purchases.
+Thermaltake Tower 200
+Minisforum BD790i X3D
+Cooler Master MWE Gold 850 V2
+★ New!
+Crucial 128GB DDR5 SODIMM Kit
+Arctic P12 Slim Fan
+PNY NVIDIA GeForce RTX 5080 OC
+Predator 1TB NVMe Boot Drive
+Samsung 990 Pro 4TB – VM Storage
+Copyright © 2026 
+Virtualization Howto
+wpDiscuz
+Insert
+%d

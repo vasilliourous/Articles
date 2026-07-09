@@ -1,0 +1,830 @@
+I replaced my entire AI prompt library with Fabric, and now I can't imagine going back
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+11
+More Action
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I replaced my entire AI prompt library with Fabric, and now I can't imagine going back
+By 
+Anurag Singh
+Published
+ Apr 30, 2026, 4:31 PM EDT
+Anurag is an experienced journalist and author who’s been covering tech for the past 5 years, with a focus on Windows, Android, and Apple. He’s written for sites like Android Police, Neowin, Dexerto, and MakeTechEasier. Anurag’s always pumped about tech and loves getting his hands on the latest gadgets. When he's not procrastinating, you’ll probably find him catching the newest movies in theaters or scrolling through Twitter from his bed. 
+Sign in to your 
+XDA
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+11
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+AI tools have gotten much smarter over the past few years. They understand prompts better now, so you don’t always need to be extremely descriptive. That said, 
+more detailed prompts still lead to better results
+. The problem is that being descriptive takes effort. You have to think more, write more, and refine what you’re asking to get the right output. If it’s something repetitive, like summarizing YouTube videos in a specific format, typing the same detailed prompt every time becomes tedious.
+✕
+ Remove Ads
+One way around this is to write the prompt once, save it, and reuse it. You can build your own prompt library and use it for repetitive tasks. That’s what I did for a long time until I discovered Fabric. Fabric is an
+ AI prompting framework
+ that offers a collection of reusable prompts, accessible through the terminal. Instead of writing prompts from scratch every time, it gives you structured instructions for specific tasks. It also works with multiple models, so you just need to connect an API key and you’re set.
+I’ve been using it for a few months now, and it has been consistently reliable across different models. I really wish I had found this tool earlier. It did exist back then, and it would have made things a lot easier.
+Related
+
+			Claude Code works best when you stop asking it to code
+		
+Claude Code became far more useful once I stopped treating it like a code generator and started using it to understand projects and terminal chaos.
+Posts
+10
+By 
+Jeff Butts
+Apr 23, 2026
+
+                        Fabric is the moderator between you and AI
+               
+
+            It makes sure you get consistent responses
+    
+Fabric is an open-source AI framework created by Daniel Miessler. It’s designed around the idea that AI does not have a capability problem, but an integration problem, meaning that while models are powerful, it is still difficult to apply them consistently in everyday workflows. Fabric addresses this by organizing prompts into reusable components and making them accessible through a unified system.
+✕
+ Remove Ads
+At its core, Fabric is a modular framework built around a collection of structured prompts called “Patterns.” These patterns are essentially predefined prompt templates designed to solve specific real-world tasks. You can use these patterns to summarize content, extract insights, generate text, or transform information into different formats.
+Quiz
+8 Questions · Test Your Knowledge
+Fabric AI prompting framework
+Trivia challenge
+Think you know Daniel Miessler's open-source AI tool? Put your Fabric knowledge to the test.
+Patterns
+Commands
+Open Source
+AI Tools
+Workflow
+Begin
+01 / 8
+Origins
+Who created the Fabric AI prompting framework?
+A
+Andrej Karpathy
+B
+Daniel Miessler
+C
+Simon Willison
+D
+Yann LeCun
+Correct! Fabric was created by Daniel Miessler, a cybersecurity professional and writer known for his work on AI augmentation. He built Fabric to help people integrate AI into their everyday workflows using reusable, structured prompts called patterns.
+Not quite — Fabric was created by Daniel Miessler, a cybersecurity expert and prolific writer on AI topics. He designed the framework to make it easier for people to use AI consistently and effectively through modular, reusable prompts.
+Continue
+02 / 8
+Core Concepts
+In Fabric, what is the term used for a pre-built, reusable prompt template designed to accomplish a specific task?
+A
+Module
+B
+Agent
+C
+Pattern
+D
+Workflow
+Correct! In Fabric, reusable prompt templates are called patterns. Each pattern is a carefully crafted system prompt stored as a Markdown file, designed to perform a specific task like summarizing content, extracting insights, or writing essays.
+Not quite — Fabric calls its reusable prompt templates 'patterns.' These are Markdown-based system prompts that can be piped together or used individually to accomplish a wide variety of AI-assisted tasks consistently.
+Continue
+03 / 8
+Installation
+What programming language is Fabric primarily written in?
+A
+Rust
+B
+TypeScript
+C
+Python
+D
+Go
+Correct! Fabric is written in Go, which makes it fast and easy to distribute as a standalone binary. The project was originally prototyped in Python but was later rewritten in Go for better performance and cross-platform compatibility.
+Not quite — while Fabric started as a Python project, it was rewritten in Go. Go was chosen for its speed, simplicity, and the ability to compile the tool into a single portable binary that works across different operating systems.
+Continue
+04 / 8
+Patterns
+Which of the following is a real Fabric pattern used to extract the most important ideas from a piece of content?
+A
+extract_wisdom
+B
+summarize_core
+C
+distill_insights
+D
+pull_concepts
+Correct! The 'extract_wisdom' pattern is one of Fabric's most popular built-in patterns. It analyzes text — such as a podcast transcript or article — and pulls out key ideas, quotes, references, and actionable insights in a structured format.
+Not quite — the correct pattern is 'extract_wisdom,' one of the most-used patterns in Fabric's library. It's designed to process long-form content like articles or video transcripts and surface the most valuable insights, quotes, and ideas.
+Continue
+05 / 8
+Workflow
+How does Fabric primarily receive input content to process with a pattern?
+A
+Through a graphical drag-and-drop interface
+B
+Via Unix-style pipes in the command line
+C
+By uploading files through a web dashboard
+D
+Through a dedicated desktop application
+Correct! Fabric is built around Unix-style piping, allowing users to chain commands together in the terminal. For example, you can pipe the output of a YouTube transcript fetcher directly into a Fabric pattern like 'extract_wisdom' in a single command.
+Not quite — Fabric is a command-line tool that embraces Unix philosophy, meaning it uses pipes to receive and pass data. This lets users chain it with other tools, making it extremely flexible and scriptable for automation workflows.
+Continue
+06 / 8
+AI Models
+Which of the following AI model providers can Fabric connect to out of the box?
+A
+OpenAI only
+B
+Anthropic and Google only
+C
+OpenAI, Ollama, Anthropic, and others
+D
+Only locally hosted open-source models
+Correct! Fabric supports multiple AI backends, including OpenAI, Anthropic (Claude), Google Gemini, Ollama for local models, and more. This flexibility means users can choose their preferred provider or switch between them depending on the task.
+Not quite — Fabric is designed to be model-agnostic and supports a wide range of providers including OpenAI, Anthropic, Google Gemini, and Ollama for local inference. You can configure your preferred model globally or specify one per command.
+Continue
+07 / 8
+Community
+Where is Fabric's official pattern library and source code publicly hosted?
+A
+GitLab under danielmiessler/fabric
+B
+Hugging Face model hub
+C
+GitHub under danielmiessler/fabric
+D
+A self-hosted Gitea instance
+Correct! Fabric is an open-source project hosted on GitHub at 
+github.com/danielmiessler/fabric
+. The repository includes all official patterns, documentation, and the Go source code, and it welcomes community contributions for new patterns.
+Not quite — Fabric lives on GitHub at 
+github.com/danielmiessler/fabric
+. The repo is fully open source under a permissive license and includes the complete pattern library, making it easy for contributors to add their own patterns for the community.
+Continue
+08 / 8
+Advanced Use
+What is the purpose of Fabric's 'stitches' feature?
+A
+To visually theme the CLI output with custom colors
+B
+To chain multiple patterns together into a single automated pipeline
+C
+To stitch together multiple AI model responses into one answer
+D
+To merge two input files before sending them to a pattern
+Correct! Stitches in Fabric allow users to chain multiple patterns sequentially, passing the output of one pattern as the input to the next. This enables the creation of powerful, multi-step AI workflows without writing any custom code.
+Not quite — stitches are Fabric's way of chaining patterns together into a pipeline. The output of the first pattern automatically becomes the input for the next, enabling complex, multi-stage AI processing tasks to be automated with minimal effort.
+See My Score
+Challenge Complete
+Your Score
+/ 8
+Thanks for playing!
+Try Again
+Fabric is primarily accessed through a command-line interface, although additional interfaces and helper tools can be layered on top. The CLI lets you run patterns, manage configurations, and interact with different AI models. It supports multiple providers, including ChatGPT, 
+Claude
+, Gemini, and things we have left in the past, like Copilot.
+Setting up Fabric involves downloading a prebuilt binary or installing it through a package manager such as Homebrew.
+curl -fsSL 
+https://raw.githubusercontent.com/danielmiessler/fabric/main/scripts/installer/install.sh
+ | bash
+Once installed, the tool can be run directly from the terminal. You then configure API keys or connect local models, after which they can start executing patterns against input data. Fabric supports a wide range of use cases. These include summarizing articles or videos, extracting key ideas from content, generating written drafts, analyzing information, and converting raw input into structured outputs. Since patterns are reusable and can be chained together, the framework can also support more complex workflows where multiple steps are executed in sequence.
+
+                        Using Fabric is super easy
+               
+
+            You can also easily plug it into your automations
+    
+✕
+ Remove Ads
+ As mentioned above, Fabric works directly from the command line by passing input into a selected pattern, which defines how the AI should process that input. This usually means piping text from a file or a URL into Fabric and specifying a pattern with the
+ -p flag
+.
+For example, an article saved locally can be summarized by running a command like 
+cat 
+article.txt
+ | fabric -p summarize
+, while a web link can be passed directly for processing using 
+fabric -p summarize 
+. The same applies across different types of content. Meeting notes or transcripts can be piped into patterns such as summarize or extract_action_items, and YouTube transcripts can be processed in the same way to generate summaries or key takeaways.
+Want to stay in the loop with the latest in AI? The XDA AI Insider newsletter drops weekly with deep dives, tool recommendations, and hands-on coverage you won't find anywhere else on the site. Subscribe by 
+modifying your newsletter preferences
+!
+This came in really handy recently when I had to interview around 30 people for a client. It was part of a consumer survey, and I had a fixed set of questions I was asking. But when you’re speaking to someone in person, the conversation tends to flow in different directions. I did have transcripts, but when I ran them through AI directly, I kept getting slightly different responses each time. However, once I started using Fabric to summarize them, the results were far more consistent.
+
+                    Get Practical Fabric Patterns — Subscribe to the Newsletter
+                
+Subscribe to the newsletter to access curated Fabric patterns, reusable prompt templates, and concrete automation examples that make prompting repeatable and reliable — practical coverage to help you build consistent AI workflows.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+✕
+ Remove Ads
+Fabric also fits naturally into 
+automation workflows
+ because its command-line interface makes it easy to plug into scripts and orchestration tools. For example, I wanted to build a daily brief using n8n that pulled together articles, newsletters, tweets, and YouTube videos, all summarized in a consistent format each day. I built this workflow using Fabric along with n8n, where Fabric handled the processing.
+It acts as the processing layer within a larger pipeline. Automation can be triggered when a new article is saved, a YouTube link is added, or a meeting transcript is generated, then fetch the content, pass it through a Fabric pattern such as summarization or insight extraction, and store the output in a destination like Notion, Google Docs, or a database.
+
+    						Fabric
+			
+Interact with all your LLMs without spending too much time perfecting and saving your prompts.
+See at Github
+Expand
+Collapse
+Related
+
+			I tested Claude Code, Codex, Lovable, and Replit side by side, and only one felt ready for real work
+		
+May the best AI ship. 
+Posts
+12
+By 
+Mahnoor Faisal
+Apr 27, 2026
+✕
+ Remove Ads
+AI tools
+AI
+automation
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I finally found a local LLM I want to use every day (and it's not for coding)
+		
+
+			I tried Cursor, Claude Code, and Google Antigravity for a month and I have a clear winner for you
+		
+
+			I gave Claude Code control of my desktop for a week, and it automated things I didn't think were possible
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+11
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Darryl
+Darryl
+Darryl
+#XT945579
+Member since 2025-06-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Another taut take of nonsense, smells like an advertisement, feels wrong, and carries no substance.
+No comparator information, and the author, again leads us to believe they spend their entire being switching between "prompts".
+Are they even a real person?
+I'm tiring of these shallow articles. 
+They provide nothing in terms of form or reason, just, here's some command line terms, crack on.
+Frankly, it's another pishy article that promotes something the author really hasn't used, else they'd be talking on that.
+Do better.
+2026-05-01 12:45:32
+Upvote
+
+                                    6
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Seth
+Seth
+Seth
+#NI408801
+Member since 2026-05-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Then maybe you should NOT read the articles and move on. 
+2026-05-01 20:27:21
+Upvote
+Downvote
+Reply
+Copy
+        
+J. Brad
+J. Brad
+J. Brad
+#XY587168
+Member since 2025-03-29
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Thank you, sincerely, for using the phrase command-line interface, and the abbreviation CLI, and referring to the console throughout this post.
+I despise the new "Terminal User Interface", TUI, and especially when people pronounce it "tooey." 
+We already had a name for the black and white typy type interface - it's the console. Or the command line. Or if you want to be specific, on Unix it is usually done through ncurses, so naming it that is also acceptable.
+We don't need a new name, and we definitely don't need YouTube kids pretending they just discovered magic by opening the terminal.
+Now get off my lawn.
+2026-05-01 06:20:41
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+
+                        2
+                    
+Copy
+        
+J
+J
+J
+#PP472056
+Member since 2026-05-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I don't consider a curses-based text UI to be the same as a CLI. A TUI is just a substitute for a GUI with a simpler renderer, still using text boxes, mouse, etc.
+2026-05-01 09:19:13
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Eric
+Eric
+Eric
+#HK172638
+Member since 2025-09-19
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Tui and cli are different things. 
+2026-05-01 21:28:25
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Alexzender
+Alexzender
+Alexzender
+#EX418692
+Member since 2026-05-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Great its a collection of system prompt. Dude you are already using n8n , how hard it is for you to use the ai agent node and set its system prompt ? 
+You can make thousands of reusable template in n8n instead of this crap.
+2026-05-02 09:44:20
+Upvote
+Downvote
+Reply
+Copy
+        
+Test
+Test
+Test
+#RW871376
+Member since 2026-03-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Dude just complicated notepad 🤣🤦‍♂
+2026-05-01 21:20:40
+Upvote
+Downvote
+Reply
+Copy
+        
+Mike
+Mike
+Mike
+#ZY891778
+Member since 2024-09-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Perhaps useful, prompts that are reused over and over are likely simply best created as agent skills
+2026-05-01 15:34:40
+Upvote
+Downvote
+Reply
+Copy
+        
+Herb
+Herb
+Herb
+#SE524027
+Member since 2026-05-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+It’s apps like this that that make me say we are in the DOS days of AI.  Just like the 80s and early 90s were for non Mac users.  Most people hate command line interaction which is why we are GUI (no one ever remembers that term).  Ai tools will evolve, as some already have to be push button, short answer, fill in the blank apps.  
+2026-05-03 22:18:06
+Upvote
+Downvote
+Reply
+Copy
+        
+Jeff
+Jeff
+Jeff
+#LH301724
+Member since 2024-10-13
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I appreciate the info.
+However, when I see "use of an API" or "requires an API" nowadays, I am prompted to ask, "How much $ does it cost?"
+And therein lies the problem.
+2026-05-01 09:19:54
+Upvote
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Rodrigo Antonio
+Rodrigo Antonio
+Rodrigo Antonio
+#JQ123428
+Member since 2025-02-16
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I guess you could use a local model, I see ollama on the list of providers.
+2026-05-01 11:43:10
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 29, 2026
+
+                                    Valve isn't ditching Windows or x86, but it's quietly making both optional
+                            
+Apr 29, 2026
+
+                                    You, too, can build this ESP32 3D-printed solar system model, and yes, it spins
+                            
+Apr 28, 2026
+
+                                    Your old Nintendo 64 games are finally getting unofficial PC ports, and they run better than emulators
+                            
+Apr 28, 2026
+
+                                    I built my first home server for under $200, and it replaced 4 monthly subscriptions
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:07
+
+                            The end of affordable PCs?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:04
+
+                            MacBook Neo: an iPhone 16 Pro in laptop form
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:27
+
+                            3 big tech anniversaries from 1996
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:26
+
+                            Id Software's Quake turns 30
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

@@ -1,0 +1,468 @@
+Your PC feels slow, but it's probably not your CPU — here's what I checked instead
+Menu
+Sign in now
+Close
+PC & Mobile
+Submenu
+Windows2
+Linux
+Android
+Apple
+Technical
+Submenu
+Tech Explained
+Security
+Software
+Submenu
+Productivity
+Internet
+Creative
+Screen
+Submenu
+Entertainment
+Streaming
+Home
+Submenu
+Smart Home
+Home
+News
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+Productivity
+Android
+Smart TVs
+Networking
+Windows 11
+Entertainment
+Close
+Your PC feels slow, but it's probably not your CPU — here's what I checked instead
+Afam Onyimadu / MUO
+By 
+Afam Onyimadu
+Published
+ Apr 28, 2026, 1:00 PM EDT
+Afam's experience in tech publishing dates back to 2018, when he worked for Make Tech Easier. Over the years, he has built a reputation for publishing high-quality guides, reviews, tips, and explainer articles, covering Windows, Linux, and open source tools. His work has been featured on top websites, including Technical Ustad, Windows Report, Guiding Tech, Alphr, and Next of Windows.
+
+He holds a first degree in Computer Science and is a strong advocate for data privacy and security, with several tips, videos, and tutorials on the subject published on the Fuzo Tech YouTube channel.
+
+When he is not working, he loves to spend time with his family, cycling, or tending to his garden.  
+Sign in to your 
+MakeUseOf
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																						
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+I've used Windows long enough not to panic when my PC feels slow
+. The Task Manager's Performance tab shows CPU usage, and it often explains what happened. However, it gets a bit trickier when CPU usage is low, and the computer remains slow. You may think it's caused by old hardware, but that's not necessarily the case.
+✕
+ Remove Ads
+It can be a sign to investigate the RAM and whether Windows is running out of it, especially since Windows 11 can use up to 10GB of RAM when idle on a 16GB RAM computer. So, the answer may not be the processor when your computer is slow.
+
+                        What actually happens when your RAM fills up
+               
+
+            Your SSD becomes a very expensive, very slow substitute
+    
+Afam Onyimadu / MUO
+ The RAM and your computer storage work a bit like a desk and a cabinet. If the desk is full, you don't suddenly stop working; you start filling up the cabinet.
+Once your RAM fills up, Windows begins moving recently used data to your page file (
+pagefile.sys
+). This is a file on your storage drive that allows you to retrieve that data on demand in a process called a Hard Fault.
+Below are hard fault numbers you should know about:
+Memory type
+Typical read latency
+Relative to RAM
+What it means in practice
+DDR4 RAM
+10–15 nanoseconds
+Baseline
+Instantaneous from the CPU's perspective
+NVMe SSD (high-end)
+~50–100 microseconds
+~5,000× slower
+Feels fast to humans, agonizing for the CPU
+SATA SSD
+~100 microseconds
+~8,000× slower
+Noticeable stutter when paging kicks in
+HDD (spinning disk)
+5–10 milliseconds
+~600,000× slower
+System effectively freezes under heavy paging
+So, RAM is still about 5,000 times faster than the fastest NVMe SSDs. If your computer constantly pulls data from the storage drive, you can expect the CPU to remain idle during this process. Hence, verifying in Task Manager shows decent CPU usage without surfacing the actual process that's keeping it idle.
+✕
+ Remove Ads
+Related
+
+			I found a Windows 11 log that shows exactly what's making my PC slow — and most people don't know it exists
+		
+A forgotten Windows feature that explains performance drops clearly.
+Posts
+3
+By 
+Afam Onyimadu
+Apr 13, 2026
+
+                        How to catch RAM pressure while it's happening
+               
+
+            There's one number in Resource Monitor that doesn't lie
+    
+The right tool for this problem is the Resource Monitor
+. You can launch it from the Task Manager's Performance tab by clicking the ellipsis in the top-right corner and choosing Resource Monitor. Once in the process manager, expand the 
+Memory
+ section, and the column to look at is Hard 
+Faults/sec
+. It represents the number of times per second when Windows retrieves data from storage that should have been in RAM. If the values in the column are 20 or below, that is normal; but if you consistently have values above 20 while the computer stutters, that is solid confirmation that your computer is slow.
+However, as you look through these figures, avoid the mistake of assuming that because free memory in the memory breakdown is low, your RAM is exhausted. The OS caches data, but that memory is released immediately and becomes available when needed.
+You can make sense of the values you see using the table below:
+What Resource Monitor shows
+What it actually means
+Action needed
+Hard Faults/sec near 0, disk activity low
+RAM is comfortably handling your workload
+None (look elsewhere for the bottleneck)
+Hard Faults/sec climbing + disk at 100%
+Page file is being hammered (RAM is overwhelmed)
+RAM pressure confirmed (this is your culprit)
+High committed memory, Hard Faults still near 0
+RAM is heavily allocated but not yet spilling to disk
+Monitor it (you're close to the edge)
+Free memory low, Standby memory high
+Windows is caching aggressively (Standby is still usable RAM)
+Normal behavior (don't misread this as a problem)
+✕
+ Remove Ads
+Open everything you typically use and keep it running for about five minutes before running this check.
+
+                        Why 16GB doesn't go as far as it used to
+               
+
+            Windows 11 is a different beast than it was three years ago
+    
+Afam Onyimadu / MUO
+ Before 2024, I would still recommend 16GB of RAM for most people, but that has changed in recent years. 
+Microsoft
+ admits that a 16GB computer uses up to 10GB when idle, and an 8GB computer uses up to 6GB when idle. This leaves a small margin before paging to disk, and the table below gives an idea of what you may expect depending on your workload:
+Workload
+RAM used
+On 8GB
+On 16GB
+On 32GB
+Windows 11 idle (no apps open)
+3–4GB
+Tight immediately
+Adequate headroom
+Comfortable
+Browser (10–15 tabs) + music streaming
+5–7GB
+Already paging to disk
+Workable but tight
+Fine
+Video call + browser + Slack or Teams
+7–9GB
+Struggling noticeably
+At the edge, little room left
+Fine
+Modern gaming title (mid-to-high end)
+10–14GB
+Not viable
+Tight (stutters under asset loading)
+Recommended minimum
+Video editing (HD timeline, DaVinci/Premiere)
+12–18GB
+Not viable
+Struggling (frequent cache drops)
+Workable minimum for HD
+An 8GB computer with an SSD is perfectly fine today, as long as the workload stays within the first two rows. But for more work, 16GB now feels like the baseline, and 32GB should be the goalpost.
+
+            Same symptom, different cause — the diagnostic instinct applies to all of them
+    
+RAM pressure can cause your computer to run slowly, but it's the most overlooked cause, not necessarily the only or most common trigger.
+✕
+ Remove Ads
+
+                    Subscribe to the newsletter for smarter PC diagnostics
+                
+Want clearer fixes for sluggish PCs? Subscribe to the newsletter for practical diagnostics and step-by-step guidance on RAM pressure, Resource Monitor checks, SSD vs RAM impacts, and tool recommendations to troubleshoot performance.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+Thermal throttling is one that I have explored extensively
+. It is similar to RAM pressure in the sense that people rarely consider it when a computer is slow. But there are more common culprits, like storage health degradation. You can use 
+CrystalDiskInfo
+ to see your drive's health status.
+You may also be experiencing a post-boot storm where Windows Updates, Windows Defender, and cloud sync apps start running almost simultaneously, 10 to 15 seconds after startup.
+The difference is that while a lot of the slowdowns will be visible in the Task Manager, RAM pressure requires some extra investigation to catch.
+
+    						CrystalDiskInfo
+			
+OS
+
+									
+										
+											Wiindows
+
+										
+																	
+Price model
+
+									
+										
+											Free
+
+										
+																	
+CrystalDiskInfo is an open-source software for Windows. It monitors the health, temperature, and S.M.A.R.T. status of HDDs and SSDs and provides warnings before potential disk failures.
+See at CrystalDiskInfo
+Expand
+Collapse
+✕
+ Remove Ads
+Windows
+Troubleshooting
+Performance Tweaks
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+
+                                                    Technology Explained
+                                            
+
+                                                    PC & Mobile
+                                            
+
+			3 tech companies that make your gadgets more expensive
+		
+3 hours ago
+
+			Your SSD does not wipe your deleted files — this is what TRIM actually does
+		
+5 hours ago
+
+			Wireless charging is finally worth using, but only if you know what to look for
+		
+6 hours ago
+See More
+
+			The Lenovo Yoga Pro 7i is a tough sell, but the display is insane
+		
+3 hours ago
+
+			I ran a Windows network reset and fixed problems I'd blamed on my router for months
+		
+7 hours ago
+
+			I switched to Gentoo Linux and now I get why it's worth the headache
+		
+11 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			I ran a DNS speed test and Google's 8.8.8.8 wasn't even in the top two
+		
+
+			Your NVMe SSD might be running at half speed because of this BIOS setting
+		
+
+			My computer felt slow for months until I realized my RAM was never running at full speed
+		
+
+                                                
+                
+                                                    
+                                    Thread
+                                                    
+Sign in to your 
+MakeUseOf
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Be the first to post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Nathanael
+Nathanael
+Nathanael
+#RU984309
+Member since 2026-05-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Interesting point on 16/32 GB. I'm glad I futureproofed my personal laptop with 32 GB RAM but as an IT admin, my minimum specs for laptops remain to be 16 GB — should I start to look at increasing this to 32 GB soon?
+2026-05-04 10:38:33
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 27, 2026
+
+                                    Your Windows 11 PC is hiding 7GB of storage you can reclaim right now
+                            
+Apr 27, 2026
+
+                                    I disabled these Windows services Microsoft recommends – and everything works better
+                            
+Apr 27, 2026
+
+                                    I changed one Windows setting and my PC finally started getting Wi-Fi 6E speeds
+                            
+Apr 27, 2026
+
+                                    My 2-year-old Android phone felt too slow to keep— then I fixed it without upgrading
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+MakeUseOf
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

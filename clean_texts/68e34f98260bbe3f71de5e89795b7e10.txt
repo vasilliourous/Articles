@@ -1,0 +1,750 @@
+Introducing SQL MCP Server - Azure SQL Dev Corner
+Skip to main content
+Microsoft
+Dev Blogs
+Dev Blogs
+
+                            Dev Blogs
+                        
+ Home 
+Developer
+Microsoft for Developers
+Visual Studio
+Visual Studio Code
+Develop from the cloud
+All things Azure
+Xcode
+DevOps
+Windows Developer
+ISE Developer
+Azure SDK
+Command Line
+Aspire
+Technology
+DirectX
+Microsoft Agent Framework
+Languages
+C++
+C#
+F#
+TypeScript
+PowerShell Team
+Python
+Java
+Java Blog in Chinese
+Go
+Go programming language
+.NET
+All .NET posts
+.NET MAUI
+AI
+ASP.NET Core
+Blazor
+Entity Framework
+NuGet
+Servicing
+.NET Blog in Chinese
+Platform Development
+#ifdef Windows
+Microsoft Foundry
+Azure Government
+Azure VM Runtime Team
+Bing Dev Center
+Inside MSIX
+Microsoft Edge Dev
+Microsoft Azure
+Microsoft 365 Developer
+Microsoft Entra Identity Developer
+Old New Thing
+Power Platform
+Data Development
+ Azure Cosmos DB
+Azure Data Studio
+Azure SQL
+OData
+Unified Data Model (IDEAs)
+Microsoft Entra PowerShell
+More
+
+Theme
+Sign in
+Search
+Search
+No results
+Cancel
+Dev Blogs
+Azure SQL Dev Corner
+Introducing SQL MCP Server
+April 8th, 2026
+6 reactions
+Introducing SQL MCP Server
+Jerry Nixon
+Principal Program Manager
+Table of contents
+Table of contents
+Like an elite guard dog at your SQL door
+Fine print worth reading
+Model Context Protocol (MCP)
+Agentic use cases
+MCP for Microsoft SQL
+Configuration snapshot
+Secure your schema
+Automatic configuration
+Support for DDL
+Support for DML
+Custom tools
+Solving NL2SQL
+Support for RBAC
+Support for caching
+Support for monitoring
+Health checks
+Semantic Guidance
+Why descriptions?
+Start here
+Show more
+Read next
+April 21, 2026
+The Polyglot tax – Part 4
+Aditya Badramraju
+April 27, 2026
+Azure Data Studio is retired: Move your Azure SQL workflow to VS Code in 10 minutes
+Iqra Shaikh
+SQL MCP Server
+ gives enterprises a secure, feature-rich way to enable agents to access data. This is accomplished without exposing the schema, risking consistency, or relying on fragile natural language parsing. SQL MCP Server is a feature of Data API builder, so deployments have a proven entity abstraction system, RBAC security at the API layer with Azure Key Vault integration, custom OAuth and Microsoft Entra support, first-level and second-level caching with integration with Redis and Azure Managed Redis, and complete instrumentation and telemetry with integration with Azure Log Analytics, Application Insights, and OpenTelemetry.
+Learn more: 
+https://aka.ms/sql/mcp
+Like an elite guard dog at your SQL door
+Copy link
+It supports hybrid queries and multiple data sources across Microsoft SQL, PostgreSQL, Azure Cosmos DB, and MySQL. Data API builder (DAB) 2.0 provides a production-ready surface for REST, GraphQL, and MCP with automatic configuration, native integration with Microsoft Foundry, a first-class query builder, and developer tooling like dedicated VS Code extensions, built-in REST and GraphQL tools, and a cross-platform CLI.
+SQL MCP Server is a simple MCR container that requires a JSON configuration file. It is a zero-code solution that reduces friction, dependencies, and entire blocks of repetitive, error-prone CRUD code from line-of-business applications, custom websites, tailored mobile apps, and AI agents.
+Fine print worth reading
+Copy link
+Best of all, SQL MCP Server is open source and free. It runs in any cloud, including on-premises. It was built, managed, and is maintained by Microsoft as the prescriptive approach to expose enterprise databases to applications and agents in a secure, feature-rich way, with no language or framework requirements and no drivers or libraries to install.
+Model Context Protocol (MCP)
+Copy link
+Model Context Protocol (MCP) is a standard that defines how AI agents discover and call external tools. A tool is a single operation, such as creating a record or reading data. Each tool describes its inputs, outputs, and behavior. MCP provides a predictable way for agents to discover and use capabilities.
+Standards-based
+SQL MCP Server implements MCP protocol version 2025-06-18 as a fixed default. It supports two transports: streamable HTTP for standard hosting scenarios and 
+stdio
+ for local or CLI scenarios. During initialization, the server advertises tool and logging capabilities and returns server metadata so agents can understand the server’s intent.
+Agentic use cases
+Copy link
+Enterprises are looking for agentic solutions that take security, performance, scale, and exposure seriously. SQL MCP Server was built to solve the problems in the gap between AI agents and production data. It has a considerable breadth of potential applications. Here are a few:
+Allow copilots or chatbots to perform safe CRUD operations
+Build internal automations without writing SQL
+Add agent capabilities without exposing the database directly
+Interoperate with multiple databases, one on-premises and one in the cloud
+Integrate an agent into a REST-based line-of-business application
+The multimodal use case for Data API builder is one of its key differentiators. Combined with its multi-data-source capabilities and broad suite of integrations, the engine stands out as a cornerstone of the Azure Data developer story.
+Endpoints
+Data API builder (DAB) supports REST, GraphQL, and MCP endpoints in any combination. In the diagram above, DAB exposes both REST and MCP at the same time, exposing the same rich data access through both protocols.
+MCP for Microsoft SQL
+Copy link
+SQL MCP Server is Microsoft’s dynamic, open-source engine for agentic apps accessing SQL. It exposes data operations as a small family of MCP tools so agents can interact with database entities through a controlled contract. The server is self-hosted but, for developers, it can also run locally through the DAB command line. You configure it with a JSON file that defines:
+How to connect to your database
+Which tables, views, or stored procedures to expose
+The permissions that apply to each object
+Configuration snapshot
+Copy link
+The DAB CLI can create, configure, and run SQL MCP Server in three easy commands: 
+init
+, 
+add
+, and 
+start
+. Here’s a simplified example to illustrate how you can get started.
+
+                                           Copy
+dab init 
+    --database-type mssql 
+    --connection-string 
+"@env('sql_connection_string')"
+
+
+dab add Customers
+    --
+source
+ dbo.Customers
+    --permissions 
+"anonymous:*"
+
+
+dab start 
+Read the docs: 
+SQL MCP Server
+Configuration secrets
+Configuration property values can use literal strings, environment variables, or Azure Key Vault secrets.
+Secure your schema
+Copy link
+Data API builder uses a well-defined entity abstraction layer that lists all tables, views, and stored procedures exposed through the API in the configuration. This layer lets you alias names and columns, describe objects and parameters, and limit which fields are available to different roles.
+Role-based security
+Data API builder (DAB) is role-aware and only exposes the entities and operations that the current role is permitted to access.
+Because SQL MCP Server is a feature of Data API builder, it also uses this abstraction layer. This approach prevents the internal schema from being exposed to external consumers and allows you to define complex, and even cross-data-source, families of objects and relationships at the API layer.
+Automatic configuration
+Copy link
+In some cases, a schema-driven API is enough. It simplifies getting started and reduces configuration complexity. Auto-config, introduced in 2.0, allows enterprises that are comfortable with limited abstraction to run without a static config file. Instead, the system inspects the database each time the stateless container starts and builds the configuration dynamically.
+This gives flexibility for rapid setup and changing schemas, while still allowing other enterprises to define a more controlled, abstracted configuration when they need stronger boundaries and protection.
+Read the docs: 
+DAB auto-configuration
+Support for DDL
+Copy link
+DDL (Data Definition Language) is the database language used to create and alter objects such as tables and views. SQL MCP Server is built around 
+DML (Data Manipulation Language)
+, the database language used to create, read, update, and delete data in existing tables and views. DML also covers the execution of stored procedures. As a result, SQL MCP Server is designed to work with data, not schema. This design aligns with production MCP use cases where AI agents interact with mission-critical or business-sensitive systems.
+Visual Studio Code
+To modify schema during local development, you can use the Microsoft SQL Server (MSSQL) extension in Visual Studio Code, which provides comprehensive DDL support.
+Support for DML
+Copy link
+SQL Model Context Protocol (MCP) Server exposes seven Data Manipulation Language (DML) tools to AI agents. These tools provide a typed CRUD surface for database operations, creating, reading, updating, and deleting records, aggregating data, and executing stored procedures. All tools respect role-based access control (RBAC), entity permissions, and policies defined in your configuration.
+DML (Data Manipulation Language) tools handle data operations, creating, reading, updating, and deleting records, aggregating data, and executing stored procedures. Unlike DDL (Data Definition Language), which modifies schema, DML works exclusively on the data plane in existing tables and views.
+describe_entities
+ – Discovers available entities and operations
+create_record
+ – Inserts new rows from a table or view
+read_records
+ – Queries tables and views
+update_record
+ – Modifies existing rows from a table or view
+delete_record
+ – Removes rows from a table or view
+execute_entity
+ – Runs stored procedures
+aggregate_records
+ – Performs aggregation queries
+The context window is the agent’s thinking space. When too many tools are exposed, that space fills with tool definitions instead of reasoning. 
+SQL MCP Server avoids this
+ by using a fixed, small set of tools, regardless of database size. This keeps the context focused so the agent can think first and access data second. Each tool can still be configured independently in the configuration file, letting you control behavior without expanding the surface area.
+
+                                           Copy
+"runtime"
+:
+{
+"mcp"
+:
+{
+"enabled"
+:
+true
+,
+// default: true
+"path"
+:
+"/mcp"
+,
+// default: /mcp
+"dml-tools"
+:
+{
+"describe-entities"
+:
+true
+,
+// default: true
+"create-record"
+:
+true
+,
+// default: true
+"read-records"
+:
+true
+,
+// default: true
+"update-record"
+:
+true
+,
+// default: true
+"delete-record"
+:
+true
+,
+// default: true
+"execute-entity"
+:
+true
+,
+// default: true
+"aggregate-records"
+:
+true
+// default: true
+}
+}
+}
+Set 
+dml
+-
+tools
+ to 
+true
+ or 
+false
+ to enable or disable all tools, or use an object with per-tool toggles.
+Custom tools
+Copy link
+Some enterprises will want to create a specific MCP experience with tailored tools instead of a generic family. Turning off built-in DML tools is available to every customer. SQL MCP Server supports this scenario, too. Promoting stored procedures in your database as custom tools lets you fine-tune the agentic experience through routines that encapsulate business processes, workflows, and specialized validation. Custom tools allow you to configure and create a bespoke MCP surface area, helping guide agents toward real success.
+Solving NL2SQL
+Copy link
+SQL MCP Server takes a different approach from many of the short-sighted database MCP servers available today. A key example is that 
+SQL MCP Server intentionally doesn’t support NL2SQL
+.
+Why? Models aren’t deterministic, and complex queries are the most likely to produce subtle errors. These complex queries are often the ones users hope AI can generate, yet they are also the ones that require the most scrutiny when produced in a nondeterministic way.
+Determinism
+Deterministic means the same input always produces the same output. There is no randomness or variation across calls, which makes results predictable, testable, and safe to automate.
+Instead, SQL MCP Server supports what might be called an NL2DAB model. This approach uses the secure Data API builder entity abstraction layer and the built-in DAB Query Builder. Together, they produce accurate, well-formed Transact-SQL (T-SQL) in a fully deterministic way. This approach removes the risk, overhead, and nuisance associated with NL2SQL while preserving safety and reliability for agent-generated queries.
+Support for RBAC
+Copy link
+Authorization scope
+Role-based constraints apply at every step of agent interaction.
+SQL MCP Server benefits from the same proven role-based access control (RBAC) system used throughout Data API builder. Each entity in your configuration defines which roles may read, create, update, or delete data, and which fields are included or excluded for those roles. These rules apply automatically to every MCP tool, ensuring security remains consistent across REST, GraphQL, and MCP with no extra configuration required.
+Support for caching
+Copy link
+SQL MCP Server automatically caches results from the 
+read_records
+ tool. Caching in Data API builder is enabled globally, and you can configure it per entity. Both level 1 and level 2 caching help reduce database load, prevent request stampedes, and support warm-start scenarios in horizontally scaled environments.
+Support for monitoring
+Copy link
+SQL MCP Server emits logs and telemetry that let enterprises monitor and validate activity from a single pane of glass. This capability includes Azure Log Analytics, Application Insights, and local file logs inside a container.
+Health checks
+Copy link
+SQL MCP Server provides a detailed health report and entity health checks across REST, GraphQL, and MCP endpoints. Data API builder Health lets developers define performance expectations, set thresholds, and verify that each endpoint is functioning as expected.
+Semantic Guidance
+Copy link
+Descriptions are semantic metadata that help AI agents understand your SQL Model Context Protocol (MCP) Server database schema. When you add descriptions to entities, fields, and parameters, language models make better decisions about which data to query and how to use it. This article shows how to add descriptions at every level using the Data API builder CLI, improving AI agent accuracy and tool discovery.
+Agentic consumption
+AI agents rely on context to understand your data. Without descriptions, an agent only sees technical names like 
+ProductID
+ or 
+dbo
+.
+Orders
+. With descriptions, the agent understands that 
+ProductID
+ is “Unique identifier for each product in the catalog” and 
+dbo
+.
+Orders
+ contains “Customer purchase orders with line items and shipping details.”
+Why descriptions?
+Copy link
+Tool discovery
+ – Agents find the right entities faster
+Query accuracy
+ – Agents build better queries with proper context
+Parameter usage
+ – Agents supply correct values to stored procedures
+Field selection
+ – Agents return only relevant fields
+Start here
+Copy link
+Over and over, you can see how SQL MCP Server elevates how agents work with data. Replacing fragile queries and unpredictable results, it establishes a controlled, deterministic surface built on proven patterns. Defining the contract once, every agent interaction follows it with precision. This means safer systems, simpler architecture, and a clear path to scaling agentic solutions without compromising your data.
+Get Started with SQL MCP Server
+ 6
+ 3
+
+                            8                        
+Share on Facebook
+Share on X
+Share on Linkedin
+Category
+Azure SQL
+Data API builder
+SQL MCP Server
+Share
+Author
+Jerry Nixon
+Principal Program Manager
+SQL Server Developer Experience Program Manager for Data API builder.
+3
+ comments		
+ Join the discussion.
+Leave a comment
+Cancel reply
+Sign in
+Code of Conduct
+Sort by :
+Newest
+Newest
+Popular
+Oldest
+
+												Nitish Srivastava											
+
+							April 14, 2026          	
+ 0
+Collapse comment by Nitish Srivastava
+Copy link to comment by Nitish Srivastava
+Thanks this auto scan was much needed. Waiting for more detailed documentation. And include SQL Authentication please.
+Log in to Vote or Reply
+
+												MgSam											
+
+							April 8, 2026          	
+ 2
+Collapse comment by MgSam
+Copy link to comment by MgSam
+Would have been helpful to include some examples of using it.
+Log in to Vote or Reply
+Jerry Nixon
+Author
+
+							April 9, 2026          	
+ 0
+Collapse comment by Jerry Nixon
+Copy link to comment by Jerry Nixon
+Thanks for the note. We’ve been leading up to this for a long time, and we have a lot of content to come. We have most everything you would never need in our docs, but here’s a recent blog that might be what you are looking for 
+https://devblogs.microsoft.com/azure-sql/data-api-builder-mcp-questions/
+Log in to Vote or Reply
+Stay informed
+Get notified when new posts are published.
+Email 
+*
+Country/Region 
+*
+Select...
+United States
+Afghanistan
+Åland Islands
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bonaire
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cabo Verde
+Cambodia
+Cameroon
+Canada
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo
+Congo (DRC)
+Cook Islands
+Costa Rica
+Côte dIvoire
+Croatia
+Curaçao
+Cyprus
+Czechia
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Eswatini
+Ethiopia
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern Territories
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong SAR
+Hungary
+Iceland
+India
+Indonesia
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Jan Mayen
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Korea
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau SAR
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar
+Namibia
+Nauru
+Nepal
+Netherlands
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Macedonia
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestinian Authority
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Réunion
+Romania
+Rwanda
+Saba
+Saint Barthélemy
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+São Tomé and Príncipe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Eustatius
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and South Sandwich Islands
+South Sudan
+Spain
+Sri Lanka
+St Helena
+Ascension
+Tristan da Cunha
+Suriname
+Svalbard
+Sweden
+Switzerland
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Timor-Leste
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+U.S. Outlying Islands
+U.S. Virgin Islands
+Uganda
+Ukraine
+United Arab Emirates
+United Kingdom
+Uruguay
+Uzbekistan
+Vanuatu
+Vatican City
+Venezuela
+Vietnam
+Wallis and Futuna
+Yemen
+Zambia
+Zimbabwe
+I would like to receive the Azure SQL Dev Corner Newsletter. 
+Privacy Statement.
+Subscribe
+Follow this blog
+Are you sure you wish to delete this
+          comment?
+OK
+Cancel
+Insert/edit link
+
+			Close		
+Enter the destination URL
+URL
+Link Text
+ Open link in a new tab
+Or link to existing content
+Search
+No search term specified. Showing recent items.
+
+							Search or use up and down arrow keys to select an item.						
+Cancel
+Code Block
+×
+Paste your code snippet
+Ok
+Cancel
+What's new
+Surface Pro
+Surface Laptop
+Surface Laptop Studio 2
+Copilot for organizations
+Copilot for personal use
+AI in Windows
+Explore Microsoft products
+Windows 11 apps
+Microsoft Store
+Account profile
+Download Center
+Microsoft Store support
+Returns
+Order tracking
+Certified Refurbished
+Microsoft Store Promise
+Flexible Payments
+Education
+Microsoft in education
+Devices for education
+Microsoft Teams for Education
+Microsoft 365 Education
+How to buy for your school
+Educator training and development
+Deals for students and parents
+AI for education
+Business
+Microsoft AI
+Microsoft Security
+Dynamics 365
+Microsoft 365
+Microsoft Power Platform
+Microsoft Teams
+Microsoft 365 Copilot
+Small Business
+Developer & IT
+Azure
+Microsoft Developer
+Microsoft Learn
+Support for AI marketplace apps
+Microsoft Tech Community
+Microsoft Marketplace
+Marketplace Rewards
+Visual Studio
+Company
+Careers
+About Microsoft
+Company news
+Privacy at Microsoft
+Investors
+Diversity and inclusion
+Accessibility
+Sustainability
+Your Privacy Choices Opt-Out Icon
+Your Privacy Choices
+Your Privacy Choices Opt-Out Icon
+Your Privacy Choices
+Consumer Health Privacy
+Sitemap
+Contact Microsoft
+Privacy 
+Manage cookies
+Terms of use
+Trademarks
+Safety & eco
+Recycling
+About our ads
+© Microsoft 2026
+×
+Notifications

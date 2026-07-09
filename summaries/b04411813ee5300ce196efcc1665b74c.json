@@ -1,0 +1,65 @@
+{
+  "article_title": "We Found a Stable Firefox Identifier Linking All Your Private Tor Identities",
+  "core_thesis": "A privacy vulnerability in Firefox-based browsers (including Tor Browser) allows websites to derive a stable, process-lifetime identifier from the order of IndexedDB database names returned by the `indexedDB.databases()` API. This identifier persists across private windows and even through Tor Browser's 'New Identity' feature, defeating user expectations of unlinkability. The root cause is that the API returns database names in an order determined by internal hash table iteration, which is deterministic and shared across origins. The fix is to canonicalize (sort) the output before returning it.",
+  "detailed_summary": "The article describes a vulnerability discovered by FingerprintJS researchers in all Firefox-based browsers, including Tor Browser. The issue lies in the `indexedDB.databases()` API, which returns metadata about IndexedDB databases. In Firefox's Private Browsing mode and Tor Browser, the order of returned database names is not random or sorted, but derived from the internal layout of a global hash table (`StorageDatabaseNameHashtable`) that maps database names to UUIDs. This hash table is process-scoped and persists for the lifetime of the browser process, even after closing all private windows or using Tor's 'New Identity' feature. Because the iteration order of the hash set is deterministic for a given set of UUIDs and insertion history, the same ordering is observed by any website that creates a fixed set of databases and calls the API. This allows unrelated websites to derive a shared, stable identifier, enabling cross-origin tracking without cookies or other storage. The identifier has high entropy: with 16 controlled database names, the theoretical space is about 44 bits. The vulnerability was responsibly disclosed to Mozilla and the Tor Project; Mozilla fixed it in Firefox 150 and ESR 140.10.0 by sorting the results. The article emphasizes that even seemingly harmless APIs can leak process-level state and become tracking vectors.",
+  "entities": [
+    {
+      "name": "FingerprintJS",
+      "type": "organization",
+      "role": "Security research company that discovered and disclosed the vulnerability"
+    },
+    {
+      "name": "Mozilla",
+      "type": "organization",
+      "role": "Developer of Firefox; released the fix in Firefox 150 and ESR 140.10.0"
+    },
+    {
+      "name": "Tor Project",
+      "type": "organization",
+      "role": "Developer of Tor Browser; affected due to inheriting Gecko's IndexedDB implementation"
+    },
+    {
+      "name": "Dai Nguyen",
+      "type": "person",
+      "role": "Senior Engineer, Security Research at FingerprintJS, co-discoverer"
+    },
+    {
+      "name": "Martin Bajanik",
+      "type": "person",
+      "role": "Staff Engineer, Research at FingerprintJS, co-discoverer"
+    },
+    {
+      "name": "Mozilla Bug 2024220",
+      "type": "event",
+      "role": "Bug tracking the vulnerability fix"
+    }
+  ],
+  "key_data_points": [
+    "The vulnerability affects all Firefox-based browsers, including Tor Browser, due to the shared Gecko IndexedDB implementation.",
+    "The `indexedDB.databases()` API returns database names in an order derived from internal hash table iteration, which is deterministic and process-scoped.",
+    "In Firefox Private Browsing mode, the identifier persists even after all private windows are closed, as long as the Firefox process remains running.",
+    "In Tor Browser, the identifier survives the 'New Identity' feature, which is designed to fully reset session state and unlinkability.",
+    "The identifier is stable across origins: two unrelated websites can independently derive the same identifier and link user activity across domains.",
+    "With 16 controlled database names, the theoretical entropy is about 44 bits (log2(16!)), providing a high-capacity fingerprint.",
+    "The fix is to canonicalize the output by sorting database names lexicographically before returning them, eliminating the entropy.",
+    "Mozilla released the fix in Firefox 150 and ESR 140.10.0; the patch is tracked in Mozilla Bug 2024220.",
+    "🟢 Relevant to Red Teaming: This vulnerability can be weaponized for cross-origin tracking and user identification without relying on cookies or JavaScript exploits. A red team could use this to correlate user activity across different sites during a single browser session, bypassing privacy protections like private browsing or Tor's New Identity. The high entropy (44 bits) makes it effective for uniquely identifying browser instances.",
+    "🟢 Relevant to programming: The article provides a concrete example of how internal implementation details (hash table iteration order) can leak sensitive information. Developers should be aware that APIs returning unordered data may inadvertently expose deterministic state. The fix (sorting) is a simple but effective mitigation."
+  ],
+  "methodology_steps": [
+    "1. Create a fixed set of IndexedDB databases with known names (e.g., 'a' through 'p') on a test origin.",
+    "2. Call `indexedDB.databases()` and record the order of returned database names.",
+    "3. On a different origin (or in a different private window), repeat steps 1-2.",
+    "4. Compare the observed order across origins/windows. If the order is identical and not the creation order, the vulnerability is present.",
+    "5. Restart the browser and repeat to confirm the order changes only on full restart.",
+    "6. In Tor Browser, use the 'New Identity' feature and repeat to verify the order persists."
+  ],
+  "conclusions": [
+    "The vulnerability demonstrates that even APIs not designed for tracking can leak stable identifiers if they expose deterministic internal state. The `indexedDB.databases()` API's output order, derived from a global hash table, provides a high-entropy, cross-origin stable identifier that defeats private browsing and Tor's New Identity isolation.",
+    "The fix is simple and effective: sort the results before returning them. This eliminates the entropy without breaking API functionality. The article highlights that privacy bugs often arise from subtle implementation details rather than direct access to identifying data.",
+    "For red teamers, this vulnerability offers a novel technique for tracking users across origins without traditional tracking mechanisms. It can be used to correlate activity in private browsing sessions or Tor Browser, making it valuable for advanced persistent tracking scenarios."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your cybersecurity and red teaming interests, as it reveals a novel browser fingerprinting technique that bypasses private browsing and Tor's New Identity feature. You can leverage this vulnerability to track users across origins without cookies or JavaScript exploits, making it a powerful addition to your tracking arsenal. The detailed technical explanation of the root cause (hash table iteration order) and the proof-of-concept methodology provide actionable insights for implementing or defending against such attacks. Additionally, the article's emphasis on how internal implementation details can leak sensitive information is a valuable lesson for secure programming and browser security research.",
+  "extra_advice": "Consider implementing a proof-of-concept script that uses this technique to demonstrate cross-origin tracking in a controlled environment. This can be used for red team exercises to test the effectiveness of browser privacy features. Additionally, explore whether similar deterministic ordering exists in other browser APIs (e.g., `indexedDB.databases()` in Chromium or Safari) to expand your fingerprinting toolkit.",
+  "source_url": "https://fingerprint.com/blog/firefox-tor-indexeddb-privacy-vulnerability/"
+}

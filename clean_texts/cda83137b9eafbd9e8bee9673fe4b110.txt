@@ -1,0 +1,1268 @@
+AWS Load Balancer Controller Reaches GA with Kubernetes Gateway API Support - InfoQ
+Your choice regarding cookies on this site
+We use cookies to optimise site functionality and give you the best possible experience.
+I Accept
+I Do Not Accept
+Settings
+BT
+InfoQ Software Architects' Newsletter
+A monthly overview of things you need to know as an architect or aspiring architect.
+View an example
+Enter your e-mail address
+Select your country
+Select a country
+Afghanistan
+Åland
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bonaire, Sint Eustatius, and Saba
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+Brunei Darussalam
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canada
+Cape Verde
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo (Democratic Republic)
+Congo (People's Republic)
+Cook Islands
+Costa Rica
+Cote D'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Falkland Islands (Malvinas)
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern Territories
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestinian Territory
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn
+Poland
+Portugal
+Puerto Rico
+Qatar
+Reunion
+Romania
+Russian Federation
+Rwanda
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Saint-Barthélemy
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+Uganda
+Ukraine
+United Arab Emirates
+United Kingdom
+United States Minor Outlying Islands
+Uruguay
+USA
+Uzbekistan
+Vanuatu
+Vatican City (Holy See)
+Venezuela
+Vietnam
+Virgin Islands (British)
+Virgin Islands (U.S.)
+Wallis and Futuna
+Western Sahara
+Yemen
+Zaire
+Zambia
+Zimbabwe
+I consent to InfoQ.com handling my data as explained in this 
+Privacy Notice
+.
+We protect your privacy.
+Close
+Live Webinar and Q&A: Architecting for Autonomous Reliability: Embedding AI into Your Observability Stack (Jun 25, 2026)
+
+                            Save Your Seat
+                        
+Close
+                    
+Toggle Navigation 
+
+                        Facilitating the Spread of Knowledge and Innovation in Professional Software Development
+                    
+English edition 
+English edition
+Chinese edition
+Japanese edition
+French edition
+
+                        Write for InfoQ
+                    
+Search
+Register
+Sign in
+Unlock the full InfoQ experience
+Unlock the full InfoQ experience by logging in! Stay updated with your favorite authors and topics, engage with content, and download exclusive resources.
+Log In
+or
+Don't have an InfoQ account?
+Register
+Stay updated on topics and peers that matter to you
+Receive instant alerts on the latest insights and trends.
+Quickly access free resources for continuous learning
+Minibooks, videos with transcripts, and training materials.
+Save articles and read at anytime
+Bookmark articles to read whenever youre ready.
+
+                        Logo - Back to homepage
+                    
+News
+Articles
+Presentations
+Podcasts
+Guides
+Topics
+Development
+Java
+Kotlin
+.Net
+C#
+Swift
+Go
+Rust
+JavaScript
+Featured in  Development
+From VR to Flat Screens: Bridging the Input and Immersion Gap
+Dany Lepage discusses the architectural journey of porting a hit VR title to seven non-VR platforms. He explains how his team solved the challenges of cross-progression, diverse input paradigms, and maintaining release velocity across Steam, iOS, and PlayStation. Beyond the tech, he shares candid lessons on the "product fit" gap when translating immersive social presence to 2D screens.
+All in  development
+Follow Topic
+Architecture & Design
+Architecture
+Enterprise Architecture
+Scalability/Performance
+Design
+Case Studies
+Microservices
+Service Mesh
+Patterns
+Security
+Featured in  Architecture & Design
+Stripe’s Docdb: How Zero-Downtime Data Movement Powers Trillion-Dollar Payment Processing
+Jimmy Morzaria discusses the evolution of Stripe’s database tier to support 5 million QPS with 5.5 nines of reliability. He explains the architecture of DocDB and shares how Stripe leverages a custom zero-downtime data movement platform to perform horizontal sharding, version upgrades, and multi-tenant migrations - all while maintaining the strict consistency required for global commerce.
+All in  architecture-design
+Follow Topic
+AI Infrastructure
+Big Data
+Machine Learning
+NoSQL
+Database
+Data Analytics
+Streaming
+Featured in  AI, ML & Data Engineering
+Leadership in AI-Assisted Engineering
+Justin Reock discusses the reality of AI’s impact on engineering, moving past anecdotes to hard data from DORA and DX research.  He explains the "GenAI Divide" - where 95% of pilots fail - and shares how leaders can use the SPACE and Core 4 frameworks to measure true ROI.  He explains how to balance speed with quality, reduce developer fear, and apply agentic solutions across the entire SDLC.
+All in  ai-ml-data-eng
+Follow Topic
+Culture & Methods
+Agile
+Diversity
+Leadership
+Lean/Kanban
+Personal Growth
+Scrum
+Sociocracy
+Software Craftmanship
+Team Collaboration
+Testing
+UX
+Featured in  Culture & Methods
+The AI Joy Gap: Why Some Developers Thrive While Others Struggle
+In this podcast, Shane Hastie, Lead Editor for Culture & Methods, spoke to Michael Parker, VP of Engineering at TurinTech AI, about bringing joy back to software development in the AI era, the emerging role of "factory architects" who orchestrate AI agents rather than write code directly, and the cultural divide between AI hype and the reality developers face on legacy codebases.
+All in  culture-methods
+Follow Topic
+DevOps
+Infrastructure
+Continuous Delivery
+Automation
+Containers
+Cloud
+Observability
+Featured in  DevOps
+How Netflix Shapes our Fleet for Efficiency and Reliability
+The speakers explain the inherent tension between service efficiency and reliability at Netflix's global scale. They share a mental model for "risk-adjusted net value," moving beyond simple CPU utilization to focus on capacity buffers. They discuss hardware shaping, proactive traffic steering, and reactive levers like "hammers" and prioritized load shedding to protect critical playback.
+All in  devops
+Follow Topic
+Events
+Helpful links
+
+                About InfoQ
+            
+
+                InfoQ Editors
+            
+
+                Write for InfoQ
+            
+
+                About C4Media
+            
+Diversity
+Choose your language
+En
+中文
+日本
+Fr
+Online InfoQ Architect Certification
+The more senior you become, the fewer people pressure-test your decisions. This 5-week cohort gives you that check.
+Register Now.
+QCon AI Boston
+Learn how leading engineering teams run AI in production—reliably, securely, and at scale.
+Register Now.
+Online InfoQ AI Engineering Certification
+A practical online cohort for senior engineers making decisions around retrieval, agents, evals, and AI infrastructure.
+Register Now.
+QCon San Francisco
+Learn what's next in AI and software, from teams already doing it.
+Register Now.
+InfoQ Homepage
+News
+AWS Load Balancer Controller Reaches GA with Kubernetes Gateway API Support
+
+
+            Cloud
+        
+Architecting for Autonomous Reliability: Embedding AI into Your Observability Stack (Webinar Jun 25th) 
+
+							AWS Load Balancer Controller Reaches GA with Kubernetes Gateway API Support
+						
+Mar 25, 2026
+
+								
+								
+								
+									
+									3
+									min read
+								
+							
+by
+Steef-Jan Wiggers
+Follow
+Cloud Queue Lead Editor | Domain Architect | Cloud Expert
+Write for InfoQ
+Feed your curiosity.
+Help 550k+ global 
+senior developers 
+each month stay ahead.
+Get in touch
+Log in to listen to this article
+Loading audio
+
+                Your browser does not support the audio element.
+             
+0:00
+0:00
+Normal
+1.25x
+1.5x
+Like
+Reading list
+AWS recently 
+shipped general availability support
+ for Kubernetes Gateway API in its Load Balancer Controller. With this release, the company allows teams to manage Application Load Balancers and Network Load Balancers through the 
+Gateway API specification
+, a Kubernetes SIG-maintained standard that's been gaining traction as the successor to the aging Ingress API.
+This matters because it dumps annotation challenges. Before the Gateway API, users configured load balancers by cramming JSON into Kubernetes annotations. No schema validation, no IDE support, just strings that could break at runtime. Now users get type-safe 
+Custom Resource Definitions
+ (CRDs) with proper validation and GitOps-friendly YAML.
+The 
+AWS Load Balancer Controller
+ now handles both Layer 4 routes (TCP, UDP, TLS via Network Load Balancer) and Layer 7 routes (HTTP, gRPC via Application Load Balancer) using Gateway API resources. This completes AWS's Gateway API coverage, as VPC Lattice already supported it for east-west service mesh traffic. Together, they cover north-south ingress and east-west service communication using the same Kubernetes-native API.
+The old way looked like this: stuff target-group attributes, health-check configs, and stickiness settings into annotation strings. The new approach uses three CRDs: TargetGroupConfiguration, LoadBalancerConfiguration, and ListenerRuleConfiguration that validate at apply time instead of failing mysteriously at runtime.
+Example: configuring deregistration delay used to require parsing this annotation:
+alb.ingress.kubernetes.io/target-group-attributes: |
+
+  deregistration_delay.timeout_seconds=30,
+
+  stickiness.enabled=true
+Now it's structured data:
+apiVersion: gateway.k8s.aws/v1beta1
+
+kind: TargetGroupConfiguration
+
+spec:
+
+  targetGroupAttributes:
+
+    - key: deregistration_delay.timeout_seconds
+
+      value: "30"
+
+    - key: stickiness.enabled
+
+      value: "true"
+Gateway API splits responsibilities across three resources. Platform teams define GatewayClass (infrastructure templates), cluster operators configure Gateway (listeners, TLS, subnet placement), and app developers create Routes (path-based routing, header matching). This maps cleanly to RBAC boundaries; developers don't need cluster-admin to route traffic.
+(Source: 
+AWS Networking & Content Delivery blog post
+ – API Gateway Components)
+Cross-namespace routing works now, too. A platform team provisions a shared Gateway within a single namespace. Application teams in separate namespaces create HTTPRoutes that reference them. The controller automatically configures the load balancer without requiring developers to touch infrastructure-level settings such as security groups or VPC subnets.
+AWS engineers Alexandra Huides and Zac Nixon wrote in the 
+announcement
+ that automatic TLS certificate discovery from AWS Certificate Manager extends to Gateway API listeners. When you specify a hostname, the controller queries ACM and attaches the matching certificate. Certificate rotation happens automatically without manual ARN updates.
+Gateway API isn't AWS-specific. Google Cloud's GKE Gateway controller, NGINX, Envoy Gateway, Istio, and others all implement the spec. The 
+Kubernetes Gateway API implementations page
+ lists 20+ conformant controllers. AWS joining GA signals the spec's maturity; it reached v1.0 in October 2023 and v1.3 in June 2025.
+The portability story matters here. Core routing logic in Gateway, GatewayClass, and Route resources stays consistent across implementations. AWS-specific CRDs (the three mentioned earlier) remain optional and isolated. You can write portable Kubernetes manifests and layer in cloud-specific features where needed.
+The 
+v3.1.0 release
+ includes conformance test results showing which Gateway API features work and which don't. The controller supports HTTPRoute path matching, header-based routing, weighted traffic splitting, and TLS termination. Some edge cases around ReplacePrefixMatch have documented ALB limitations.
+Teams already using Ingress resources don't need to migrate immediately. The controller still supports Ingress; it's not deprecated. But new projects might skip Ingress entirely and start with the Gateway API. The better validation, clearer error messages, and role separation pay off as clusters grow.
+One catch is that Gateway API resources require the controller's feature flags to be enabled. The 
+installation docs
+ cover enabling Gateway API support and installing the CRDs. Teams running older controller versions need to upgrade to v2.13.3+ for Layer 4 support and to v2.14.0+ for Layer 7 support. In addition, a respondent on a Reddit 
+thread
+ stated:
+Bummer, still no external cert support.
+The announcement positions this as "
+modernizing Kubernetes deployments on AWS
+." The controller's 
+GitHub repository
+ shows Gateway API support progressed from experimental beta releases in 2024 to this GA launch, reflecting sustained community interest in the feature.
+For teams deep in EKS, this release removes a reason to bolt on third-party ingress controllers just to get Gateway API features. Whether that matters depends on how much you value staying in AWS's supported stack versus adopting best-of-breed open source tools.
+About the Author
+Steef-Jan Wiggers
+
+                            
+                        Steef-Jan Wiggers is one of InfoQ's senior cloud editors and works as a Domain Architect at VGZ in the Netherlands. His current technical expertise focuses on implementing integration platforms, Azure DevOps, AI, and Azure Platform Solution Architectures. Steef-Jan is a regular speaker at conferences and user groups and writes for InfoQ. Furthermore, Microsoft has recognized him as a Microsoft Azure MVP for the past sixteen years.
+Show more
+Show less
+
+                
+                
+                    
+                This content is in the 
+Cloud
+ topic
+            
+Follow Topic
+Related Topics:
+Development
+Development
+Followers: 4094
+Follow Topic
+Architecture & Design
+Architecture & Design
+Followers: 10221
+Follow Topic
+DevOps
+DevOps
+Followers: 5064
+Follow Topic
+Load Balancers
+Load Balancers
+Followers: 8
+Follow Topic
+Amazon
+Amazon
+Followers: 70
+Follow Topic
+Kubernetes
+Kubernetes
+Followers: 490
+Follow Topic
+Amazon Web Services
+Amazon Web Services
+Followers: 54
+Follow Topic
+AWS
+AWS
+Followers: 347
+Follow Topic
+API Gateway
+API Gateway
+Followers: 95
+Follow Topic
+Cloud
+Cloud
+Followers: 2135
+Follow Topic
+Popular in Cloud
+Cloudflare Announces Agent Memory, a Managed Persistent Memory Service for AI Agents
+Securing Autonomous AI Agents on Kubernetes: Trust Boundaries, Secrets, and Observability for a New Category of Cloud Workload
+The InfoQ Trends Reports 2025 eMag
+Google Announces GKE Agent Sandbox and Hypercluster at Next '26, Positioning Kubernetes as AI Agent
+Amazon Q Business and Amazon Q Developer Now Generally Available
+Related Sponsors
+The Essential Guide to AI Tools for Jakarta EE Developers
+Shipping Faster, Breaking More: Rethinking Delivery Systems in the Age of AI (Live Webinar May 28th) - Save Your Seat
+Architecting for Autonomous Reliability: Embedding AI into Your Observability Stack (Live Webinar June 25, 2026) - Save Your Seat
+Multi-Cloud Backup Is Broken: Architectural Patterns That Actually Work
+Rethinking AppSec: Why Compiler‑Level Security Changes the Architecture Conversation (Live Webinar Jun 11th) - Save Your Seat
+Related Sponsor
+June 11, 2026, 10 AM EDT
+Rethinking AppSec: Why Compiler‑Level Security Changes the Architecture Conversation
+Presented by: Anton Baranenko - Product Manager at Guardsquare
+SPONSORED BY GUARDSQUARE
+Save your seat
+Related Content
+Related Content
+AWS Improves Aurora Serverless: 45% Faster Ramp-Up, 30% Higher Throughput
+May 09, 2026
+Grafana's Kubernetes Monitoring Helm Chart v4 Brings Multiple Fixes
+May 06, 2026
+Broadcom Donates Velero to CNCF, Shifting Kubernetes Backup to Community Governance
+May 01, 2026
+AWS Interconnect Reaches General Availability with Managed Multicloud and Last-Mile Connectivity
+Apr 29, 2026
+OpenChoreo 1.0 Brings AI Agents and GitOps to Kubernetes Developer Platforms
+Apr 28, 2026
+AWS Ends WorkMail and Moves App Runner to Maintenance Mode
+Apr 26, 2026
+AWS Announces General Availability of DevOps Agent for Automated Incident Investigation
+Apr 18, 2026
+CNCF Warns Kubernetes Alone Is Not Enough to Secure LLM Workloads
+Apr 17, 2026
+AWS Launches Agent Registry in Preview to Govern AI Agent Sprawl across Enterprises
+Apr 17, 2026
+Related Sponsors
+The Case for Real-Time Threat Monitoring and Analysis in Modern Mobile App Security
+Drive better mobile security with real‑time insights. This Guardsquare report shows why traditional client‑side defenses fall short against persistent threats and how continuous threat monitoring and analysis gives teams actionable visibility to protect apps, users, and revenue.
+The Rise of Client-Side Risk and the Trust Gap
+A global survey by TrendCandy reveals why traditional OS-level defenses fail against rising mobile app threats. Learn how client-side risk, API abuse, AI-generated code, and fast release cycles drive vulnerabilities—and how layered security and app attestation restore trust.
+Sponsored by
+Related Content
+AWS Introduces S3 Files, Bringing File System Access to S3 Buckets
+Apr 16, 2026
+Securing Autonomous AI Agents on Kubernetes: Trust Boundaries, Secrets, and Observability for a New Category of Cloud Workload
+May 01, 2026
+AWS Launches Sustainability Console with API Access and Scope 1-3 Emissions Reporting
+Apr 13, 2026
+Using AWS Lambda Extensions to Run Post-Response Telemetry Flush
+Apr 15, 2026
+Icon
+Duolingo's Kubernetes Leap
+Apr 06, 2026
+Proactive Autoscaling for Edge Applications in Kubernetes
+Feb 17, 2026
+The InfoQ
+ Newsletter
+
+        A round-up of last week’s content on InfoQ sent out every Tuesday. Join a community of over 250,000 senior developers.
+        
+			
+View an example
+Enter your e-mail address
+Select your country
+Select a country
+Afghanistan
+Åland
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bonaire, Sint Eustatius, and Saba
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+Brunei Darussalam
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canada
+Cape Verde
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo (Democratic Republic)
+Congo (People's Republic)
+Cook Islands
+Costa Rica
+Cote D'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Falkland Islands (Malvinas)
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern Territories
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestinian Territory
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn
+Poland
+Portugal
+Puerto Rico
+Qatar
+Reunion
+Romania
+Russian Federation
+Rwanda
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Saint-Barthélemy
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+Uganda
+Ukraine
+United Arab Emirates
+United Kingdom
+United States Minor Outlying Islands
+Uruguay
+USA
+Uzbekistan
+Vanuatu
+Vatican City (Holy See)
+Venezuela
+Vietnam
+Virgin Islands (British)
+Virgin Islands (U.S.)
+Wallis and Futuna
+Western Sahara
+Yemen
+Zaire
+Zambia
+Zimbabwe
+I consent to InfoQ.com handling my data as explained in this 
+Privacy Notice
+.
+We protect your privacy.
+Development
+Attacker Bought 30 WordPress Plugins on Flippa and Backdoored All of Them
+Cloudflare Introduces Flagship: an Edge-Native Feature Flag Service Built on OpenFeature
+QCon San Francisco 2026: 12 Tracks Announced
+Architecture & Design
+How GitHub Is Securing Agentic Workflows in Modern CI CD Systems
+OpenAI Introduces Websocket-Based Execution Mode to Reduce Latency in Agentic Workflows
+LinkedIn Consolidates Hiring Data Pipelines to Power AI Driven Talent Systems
+Culture & Methods
+The AI Joy Gap: Why Some Developers Thrive While Others Struggle
+Applying Best Simple System for Now for Software Design
+The Human Scalability Problem: Why Your Teams Don’t Scale Like Your Code
+AI, ML & Data Engineering
+Leadership in AI-Assisted Engineering
+Engineering at AI Speed: Lessons from the First Agentically Accelerated Software Project
+AI-First Software Delivery: Balancing Innovation with Proven Practices
+DevOps
+Cloudflare Launches “Artifacts” Beta, Introducing Git-Like Versioning for AI Agents
+Leading Open Source Author Calls for Verification over Trust in Software Supply Chains
+Grafana's Kubernetes Monitoring Helm Chart v4 Brings Multiple Fixes
+The InfoQ
+ Newsletter
+	
+A round-up of last week’s content on InfoQ sent out every Tuesday. Join a community of over 250,000 senior developers.
+		
+			
+View an example
+Get a quick overview of content published on a variety of innovator and early adopter technologies
+Learn what you don’t know that you don’t know
+Stay up to date with the latest information from the topics you are interested in
+Enter your e-mail address
+Select your country
+Select a country
+Afghanistan
+Åland
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bonaire, Sint Eustatius, and Saba
+Bosnia and Herzegovina
+Botswana
+Bouvet Island
+Brazil
+British Indian Ocean Territory
+Brunei Darussalam
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canada
+Cape Verde
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos (Keeling) Islands
+Colombia
+Comoros
+Congo (Democratic Republic)
+Congo (People's Republic)
+Cook Islands
+Costa Rica
+Cote D'Ivoire
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+East Timor
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Falkland Islands (Malvinas)
+Faroe Islands
+Fiji
+Finland
+France
+French Guiana
+French Polynesia
+French Southern Territories
+Gabon
+Gambia
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guadeloupe
+Guam
+Guatemala
+Guernsey
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Heard Island and McDonald Islands
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Martinique
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestinian Territory
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn
+Poland
+Portugal
+Puerto Rico
+Qatar
+Reunion
+Romania
+Russian Federation
+Rwanda
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Saint-Barthélemy
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Sint Maarten
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Georgia and the South Sandwich Islands
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard and Jan Mayen
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+Uganda
+Ukraine
+United Arab Emirates
+United Kingdom
+United States Minor Outlying Islands
+Uruguay
+USA
+Uzbekistan
+Vanuatu
+Vatican City (Holy See)
+Venezuela
+Vietnam
+Virgin Islands (British)
+Virgin Islands (U.S.)
+Wallis and Futuna
+Western Sahara
+Yemen
+Zaire
+Zambia
+Zimbabwe
+I consent to InfoQ.com handling my data as explained in this 
+Privacy Notice
+.
+We protect your privacy.
+ONLINE INFOQ CERTIFICATION PROGRAM
+
+                A Cohort for Senior Engineers and Architects
+            
+Focused on ARCHITECTURE
+ with Luca Mezzalira | JUNE 10
+Focused on AI ENGINEERING
+ with Hien Luu | JULY 25
+
+              Bring a real architecture or AI engineering challenge from your work. Spend 5 weeks pressure-testing your approach with senior peers from other companies and experienced facilitators. Explore the upcoming cohorts.
+            
+Register Now.
+Home
+Create account
+Log In
+QCon Conferences
+Events
+Write for InfoQ
+InfoQ Editors
+About InfoQ
+About C4Media
+
+            Media Kit
+        
+InfoQ Developer Marketing Blog
+Diversity
+Events
+QCon AI Boston
+June 1-2, 2026
+Online InfoQ Architect Certification
+June 10, 2026
+Online InfoQ AI Engineering Certification
+July 25, 2026
+QCon San Francisco
+November 16-20, 2026
+Follow us on 
+Youtube
+232K Followers
+Linkedin
+26K Followers
+Instagram
+New
+RSS
+19K Readers
+X
+57.1k Followers
+Facebook
+21K Likes
+Bluesky
+New
+Stay in the know
+The InfoQ Podcast
+Engineering Culture Podcast
+The Software Architects' Newsletter
+
+							General Feedback
+							
+feedback@infoq.com
+
+							Advertising
+							
+sales@infoq.com
+
+							Editorial
+							
+editors@infoq.com
+
+							Marketing
+							
+marketing@infoq.com
+
+					InfoQ.com and all content copyright © 2006-2026 C4Media Inc.
+Privacy Notice
+, 
+Terms And Conditions
+, 
+Cookie Policy
+Close
+BT

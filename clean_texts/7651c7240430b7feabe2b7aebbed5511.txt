@@ -1,0 +1,593 @@
+Your old router is the secret to a stable smart home
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+8
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+Your old router is the secret to a stable smart home
+By 
+Jasmine Mannan
+Published
+ Apr 12, 2026, 8:00 AM EDT
+Jasmine is Software and PC Hardware Author at XDA with years of tech reporting experience ranging from AI chatbots right down to gaming hardware, she's covered just about everything.
+
+Whether it's breaking news about the latest AMD NPUs or creating video tutorials on social media platforms, Jasmine has contributed to the world of AI and tech in a variety of ways including interviewing the CEO of Razer, AMD's Director of Product Marketing and the VP of Lenovo. Passionate about gaming and PC technology, she has built countless computers, keyboards and other peripherals - knowing them inside and out. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+8
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Modern smart homes often have around 30, 50, or even 100+ Wi-Fi devices when you count all the bulbs, plugs, and cameras. Most consumer routers start to choke or drop connections once you hit that 30-device threshold because they're just not made to handle so many devices trying to communicate at once. This means that, as a result, your expensive Wi-Fi 7 phone is getting slow speeds because it's sharing a radio channel with 40 cheap smart plugs that phone home every five seconds.
+✕
+ Remove Ads
+While most people see an old router as e-waste, it's actually the secret to a stable, secure, and high-performance smart home. A smart home shouldn't fight for bandwidth with your four clay in Netflix stream by offloading your smart devices to a dedicated hardware lane. You fix the congestion and security issues that plague modern Wi-Fi. The solution to the problem here is using your old router as a dedicated IoT subnetwork, and you'll finally stop encountering the "too many devices" crash.
+Related
+
+			Your smart TV may be holding your entire Wi-Fi hostage
+		
+Make your Wi-Fi great again by removing your smart TV from it
+Posts
+7
+By 
+Tanveer Singh
+Mar 5, 2026
+
+                        The benefits of using a second router
+               
+
+            It can fix the dreaded lag you always encounter
+    
+One of the main benefits of using your old router for your smart home devices is security. If you've picked up a load of cheap IoT smart home devices, it's likely they have questionable security and phone home to overseas servers quite often. Creating network segmentation with your old router creates a sort of security shield. By plugging your old router's WAN port into your main router's LAN port, you create an inner and outer network.
+The result is that even if a smart bulb is hacked, the attacker is trapped on the old router's network and then, as a result, they can't see your PC, your NAS, or your banking data on the main router. By using an old router to segment your network, you're actually creating a safer home network and ensuring that no matter what happens, all your information stays private.
+✕
+ Remove Ads
+Another great benefit is clearing the 2.4 GHz traffic jam that might be occurring. Most IoT devices only support 2.4 GHz, which is notoriously crowded and prone to interference from other devices, such as microwaves or even devices in your neighbor's home.
+The old router is strictly on the 2.4GHz band for your smart home, and then move all of your high-speed devices like phones, laptops, and consoles to the 5GHz or 6GHz bands on your primary router. As a result, your main Wi-Fi becomes a clean room for high-performance tasks and devices that absolutely need faster internet speeds, while the old router handles the constant chatter of the smart home on a congested band.
+
+    						NETGEAR Nighthawk R6900P Smart Wi-Fi Router
+			
+The NETGEAR Nighthawk R6900P Smart Wi-Fi Router is a great option for those looking for a router that will work with their smart home.
+See at Amazon
+Expand
+Collapse
+You can even create a permanent access point using an old router. Putting your router into access point mode 
+lets you place the 
+second router in a dead zone
+, such as
+ the garage or the far end of the garden, via an Ethernet cable. This means your outdoor smart devices and garage door openers have rock-solid 100% signal strength, without you needing to buy an expensive mesh system.
+
+                        How to set up your second router
+               
+
+            It's easier than you think
+    
+✕
+ Remove Ads
+ To get started, it's worth keeping in mind that this is a five-minute setup process, but despite that, you aren't just plugging things in. You're actually configuring a network bridge that needs to be invisible to your main traffic while remaining rock-solid for your IoT devices.
+Setting up your second router should take less time than making a pot of coffee, but make sure you avoid the dreaded IP address that can knock your entire house offline.
+Start with a hardware reset. Don't assume 
+your old settings
+ will work while the router is powered on. Hold the pinhole reset button for 30 seconds. Continue holding it while plugging in the power for another 30 seconds, and finally keep holding it while plugging the power back in for a final 30 seconds. This ensures a deep factory wipe.
+Next, change the IP. Log in to the old router using a laptop and an Ethernet cable. You need to change it to a LAN IP to sit inside your main network's range, but outside the DHCP pool. Make sure that you disable DHCP too, which is the most important step. In a single network, there can only be one brain, which is the DHCP server handing out IP addresses. Look for the DHCP server in the LAN settings and flip it to off or disabled. If you leave this on, the old router will try to assign your phone an IP address that the main router doesn't recognize, resulting in a "connected, no internet" error continuously.
+
+                    Subscribe to the newsletter for smarter smart-home networking
+                
+Take control of your congested Wi-Fi: subscribe to the newsletter for step-by-step guides on repurposing old routers, setting up IoT subnets, and practical security tips to keep your main network fast and private.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+Next is how you plug in the router, which determines how it behaves. You can either go as a bridge, meaning you connect it LAN to LAN. This means you connect an Ethernet cable from a LAN port on your main router to a LAN port on the old router. This makes the old router a switch/AP. It's the fastest, most stable way to expand your Wi-Fi.
+✕
+ Remove Ads
+If you want to use it as a shield, then go LAN to WAN. Connect a LAN port on your main router to a WAN port on the old router. This creates a firewall between your networks, and devices on the old router can see the internet, but they cannot see or hack the devices on your main router. And with that, you're set up and ready to go.
+
+                        Don't let your old device become e-waste
+               
+
+            You have the solution to laggy internet already at home
+    
+You don't need a $500 mesh system to
+ fix your smart home lag
+. You just need to stop making your smart devices fight with your actual fast devices, where you need that faster internet connection. If you have countless devices all connected to the same internet network fighting for airtime just so they can phone home, then of course your phone isn't going to be able to download an app as quickly as it should be able to. Instead of throwing out your old router and deeming it e-waste, use it as a high-performance lane for your home's growing digital brain.
+✕
+ Remove Ads
+Networking
+Router
+Smart Home
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			3 HDMI settings I always change to unlock my TV’s full potential
+		
+
+			My favorite alternative to Office 365 isn’t LibreOffice – it’s something way cooler
+		
+
+			I stopped treating my old 250GB SATA SSD as e-waste, and now I can't live without it
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+8
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Jerry
+Jerry
+Jerry
+#MG328395
+Member since 2024-09-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Because the isp is fiber
+ For those that keep asking the question about replacing. Think of all the reasons you can not & not just your configuration. The article is written for all of us.
+2026-04-12 12:51:44
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Art
+Art
+Art
+#IR958728
+Member since 2026-04-12
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+How do I set it up for devices that need to communicate with my mobile device, like Sonos? Do I leave those devices on the main network, and move everything else to a shielded network?
+2026-04-12 16:53:31
+Upvote
+Downvote
+Reply
+Copy
+        
+Cory
+Cory
+Cory
+#CR116762
+Member since 2025-05-05
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+If you know you're going to be upgrading your router, then why not upgrade to one that will actually handle all the clients you have and supports vlans, instead of counting on your "outdated" router for those tasks? 
+2026-04-12 10:39:27
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+
+                        2
+                    
+Copy
+        
+Nick
+Nick
+Nick
+#UI949070
+Member since 2024-11-27
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+It's not about adding in the old one because the new one isn't good enough. It's about splitting the available 2.4ghz spectrum and radios. Those 2.4 only devices often only support 20mhz width channels anyway, because it's better for them. I try not to have wifi IOT devices, but there are still a few things that don't have good alternatives. One good AP won't make your IOT devices not suck when they're all the same channel. If you don't need good range and capacity on 2.4ghz, one AP running the full channel width is good. 
+2026-04-12 15:00:16
+Upvote
+Downvote
+Reply
+Copy
+        
+Drono
+Drono
+Drono
+#DK523998
+Member since 2025-06-30
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Nick
+  I can add an iot dedicated network on a different channel on my router.. good enough?
+Plus I actually use my main 2.4GHz network for smarthome and only use 5GHz on everything that needs any speed above 20Mbps
+2026-04-14 07:24:44
+Upvote
+Downvote
+Reply
+Copy
+        
+Zibgis
+Zibgis
+Zibgis
+#QU113365
+Member since 2026-04-18
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+After many years of frustration with the WiFi I did this.  We have a big old house needing 5 extensers.  Use LAN connection from new to old router Now have second network and split extenders with 2 on 1 and 3 on other.  Now  network is fast and reliable
+2026-04-18 11:30:16
+Upvote
+Downvote
+Reply
+Copy
+        
+Andrzej
+Andrzej
+Andrzej
+#JP529462
+Member since 2024-08-24
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+So WHY did you upgrade your WIFI router in the first place?. If your old WIFI router was outdated at that time, then it is outdated now. Thei concept does not make any sense.
+2026-04-12 09:32:02
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Marco
+Marco
+Marco
+#SM619680
+Member since 2025-10-14
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I was experimenting with a ESP32 and thinking of CSI for home alerts. This way I learned how little activity the IoTs have (no cameras). So, an old router is a solution searching for a problem. 
+2026-04-12 22:03:50
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 10, 2026
+
+                                    RapidRAW is the free, open-source Lightroom alternative I've been waiting for
+                            
+Apr 10, 2026
+
+                                    Microsoft says Windows' Secure Lock screen clock deliberately runs up to 30 seconds behind
+                            
+Apr 9, 2026
+
+                                    I stopped carrying a laptop after trying Android's desktop mode
+                            
+Apr 9, 2026
+
+                                    Self-hosted LLM took my personal knowledge management system to the next level
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            Snapdragon X2 Elite Extreme benchmarks: RIP Panther Lake?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            Windows XP's Secret Themes
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

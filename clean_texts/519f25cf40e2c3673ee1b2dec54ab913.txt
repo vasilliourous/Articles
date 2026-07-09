@@ -1,0 +1,163 @@
+Critical WordPress Plugin Flaw Lets Attackers Bypass Authentication and Gain Admin Access
+Linkedin
+Naver
+RSS
+Twitter
+Home
+Threats
+Cyber Attacks
+Vulnerabilities
+Breaches
+Top 10
+Search
+Cyber Security News
+Latest Cyber Security News
+Saturday, May 9, 2026
+Linkedin
+RSS
+Twitter
+Google News
+Google News
+Cyber Security News
+Latest Cyber Security News
+Home
+Threats
+Cyber Attacks
+Vulnerabilities
+Breaches
+Top 10
+Follow on LinkedIn
+Search
+Discover more
+Content Management
+Blogging Resources & Services
+Computer Security
+Home
+Cyber Security News
+Critical WordPress Plugin Flaw Lets Attackers Bypass Authentication and Gain Admin Access
+By
+Tushar Subhra Dutta
+April 13, 2026
+A critical security flaw found in a widely used WordPress plugin is putting thousands of websites at serious risk worldwide. 
+Tracked as CVE-2026-1492, this vulnerability affects the User Registration & Membership plugin for WordPress and lets attackers completely bypass the login process to gain full administrator access — all without needing a username, password, or any existing account.
+Published on March 3, 2026, the vulnerability holds a CVSS v4.0 score of 9.8, placing it in the Critical severity category. It affects all versions of the User Registration & Membership plugin up to and including version 5.1.2. 
+The root cause is improper validation of user-controlled input combined with weak authorization checks inside the plugin’s backend processing logic. 
+The attack requires no special privileges, no user interaction, and can be carried out remotely over the internet.
+CYFIRMA researchers identified and analyzed CVE-2026-1492
+, noting that the flaw centers on how the plugin handles trust between its public-facing frontend and internal backend. 
+Besides this, the CVE-2026-1492 has been marked as “Critical” severity and received CVSS score of 9.8.
+The plugin relies on security tokens known as nonces, alongside AJAX-based workflows, to process membership-related requests. 
+These tokens are embedded in client-side JavaScript on publicly visible pages, making them accessible to anyone — even users who are not logged in. 
+By extracting these values, an attacker can craft a malicious request that triggers privileged backend actions and completely bypasses authentication.
+The consequences of a successful attack are severe. Once the flaw is exploited, the attacker immediately gains full administrative control over the targeted WordPress site. 
+They can install or modify plugins, access and steal stored user data, 
+alter website content
+, create hidden admin accounts, and plant backdoors for persistent future access. 
+A compromised site can also be turned into a platform for redirecting visitors to phishing pages or malware delivery sites, putting the site’s own users at direct risk.
+Activity on underground forums shows that threat actors are already discussing and sharing techniques to exploit this vulnerability. 
+Initial Access Brokers may use it to gain admin access and resell entry points for downstream criminal activities such as ransomware deployment, credential theft, and 
+SEO spam
+ operations. 
+This level of active interest confirms that the threat is real and immediate attention from site administrators is critical.
+Inside the Exploitation Workflow
+The attack begins in a controlled environment where the vulnerable plugin is confirmed to be installed and running. 
+Terminal showing Apache and MariaDB status (Source – Cyfirma)
+The attacker prepares the test setup before approaching the target. The publicly accessible membership pricing page is then identified as the main entry point into the site’s backend systems.
+Using the browser’s developer tools, the attacker inspects the JavaScript on the membership page. This reveals nonce values and AJAX endpoint details that should never have been publicly accessible. 
+With these values in hand, a crafted payload is sent to the 
+/wp-admin/admin-ajax.php
+ endpoint. The backend processes the request without checking whether the sender is authorized. 
+The server then logs the attacker in and redirects the session to the WordPress admin dashboard, without a single valid credential used.
+WordPress Dashboard showing successful login (Source – Cyfirma)
+The most important action is to immediately update the User Registration & Membership plugin to version 5.1.3, where the vulnerability has been fixed. 
+After patching, all administrator accounts should be reviewed, and any accounts created without proper authorization must be removed. Sessions tied to suspicious accounts should be invalidated, and unknown credentials reset right away.
+Organizations should also enforce strict server-side validation for all user-supplied input, especially values tied to role assignment. Access to sensitive endpoints like 
+/wp-admin/admin-ajax.php
+ must be tightly controlled, and internal 
+security tokens
+ should never be exposed in publicly accessible pages. 
+The principle of least privilege should be applied across all user roles, and continuous monitoring for abnormal AJAX requests or unexpected privilege escalations must remain active at all times.
+Follow us on 
+Google News
+, 
+LinkedIn
+, and 
+X
+ to Get More Instant Updates
+, 
+Set CSN as a Preferred Source in 
+Google
+.
+Tags
+cyber security
+cyber security news
+Copy URL
+Linkedin
+Twitter
+ReddIt
+Telegram
+Tushar Subhra Dutta
+Tushar is a senior cybersecurity and breach reporter. He specializes in covering cybersecurity news, trends, and emerging threats, data breaches, and malware attacks. With years of experience, he brings clarity and depth to complex security topics.
+Trending News
+Instagram’s to End Encrypted Chats for Direct Messages
+Hackers Leveraged Hugging Face and ClawHub With 575+ Malicious Skills to Deploy Malware
+Let’s Encrypt Halts Certificate Issuance After Cross-Signed Root Certificate Incident
+Zero-Auth Flaw Exposes DoD Contractor to Cross-Tenant Data Access
+Dirty Frag Linux Vulnerability Let Attackers Gain Root Privileges – PoC Released
+Load more
+Latest News
+Cyber Security News
+NVIDIA Data Breach Reportedly Exposes Personal Information of GeForce Users
+Cyber Security
+Let’s Encrypt Halts Certificate Issuance After Cross-Signed Root Certificate Incident
+Cyber Security
+Critical Microsoft 365 Copilot Vulnerabilities Expose sensitive Information
+Cyber Security News
+New PamDOORa Backdoor Attacking Linux Systems to Steal SSH Credentials
+Cyber Security News
+Hackers Deploy Modular RAT With Credential Theft and Screenshot Capture Capabilities
+Follow us
+Cyber Security News is a Dedicated News Platform For Cyber News, Cyber Attack News, Hacking News & Vulnerability Analysis.
+Linkedin
+RSS
+Twitter
+Google News
+Google News
+Cybersecurity News
+Home
+About Us
+Contact Us
+Privacy Policy
+Latest news
+TCLBANKER Malware Targets Users Through Self-Propagating WhatsApp and Outlook Worm Modules
+Cyber Security News
+May 9, 2026
+
+A highly sophisticated Brazilian banking trojan named TCLBANKER, tracked...
+NVIDIA Data Breach Reportedly Exposes Personal Information of GeForce Users
+Cyber Security News
+May 9, 2026
+
+A data breach at GFN.AM, an authorized NVIDIA GeForce...
+Let’s Encrypt Halts Certificate Issuance After Cross-Signed Root Certificate Incident
+Cyber Security
+May 9, 2026
+
+Let's Encrypt temporarily suspended all certificate issuance on May...
+CISO Corner
+DarkMoon AI-Powered Autonomous Penetration Testing Platform With 50+ Tools
+Cyber Security News
+May 8, 2026
+
+A new open-source cybersecurity platform called DarkMoon has emerged...
+CVE MCP Server Turns Claude Into a Fully Capable Security Analyst With 27 Tools Across 21 APIs
+Cyber Security News
+April 30, 2026
+
+A new open-source project called CVE MCP Server is...
+pentest-ai-agents – 28 Claude Code Subagents for Penetration Testing
+Cyber Security
+April 27, 2026
+
+A new open-source toolkit called pentest-ai-agents is redefining how...
+© Copyright 2026 - Cyber Security News

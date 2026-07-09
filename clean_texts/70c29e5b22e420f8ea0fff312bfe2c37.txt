@@ -1,0 +1,128 @@
+Ubuntu's "AI Kill Switch" Is Achieved By Removing Snaps, Initially Opt-In - Phoronix
+Articles & Reviews
+News Archive
+Forums
+Premium Ad-Free
+Contact
+ Popular Categories
+Close
+Articles & Reviews
+News Archive
+Forums
+Premium
+Contact
+ Categories
+Computers
+Display Drivers
+Graphics Cards
+Linux Gaming
+Memory
+Motherboards
+Processors
+Software
+Storage
+Operating Systems
+Peripherals
+Ubuntu's "AI Kill Switch" Is Achieved By Removing Snaps, Initially Opt-In
+Written by 
+Michael Larabel
+ in 
+Ubuntu
+ on 28 April 2026 at 06:25 AM EDT. 
+24 Comments
+
+Following yesterday's polarizing news of 
+Canonical to begin shipping AI features in Ubuntu Linux
+ over the course of the next year, Jon Seager as the VP of Engineering at Canonical has now provided some clarifications around their AI plans.
+
+A short time ago Seager posted an update to his Ubuntu Discourse announcement around rolling out of AI features in Ubuntu over the next year, beginning with Ubuntu 26.10. He still has yet to elaborate on possible AI-driven features for Ubuntu Linux but at least clarified that it will initially be opt-in and in effect the "AI kill switch" for Ubuntu will be a matter of just removing some Snaps.
+
+Seager 
+explained
+ in this morning's update while there won't be a "global kill switch" for AI features on Ubuntu, their plan is to deliver all the AI features via Snap packages. So removing AI features on Ubuntu will come down to removing Snaps.
+
+The AI-backed features will initially be as a "preview" and "strictly opt-in basis" for Ubuntu 26.10. For Ubuntu 27.04 and beyond, the plan is to have an initial setup wizard around prompt users on the AI native features they may want or not. Part of this is being done since due to the large size of LLMs, they won't be baked into the Ubuntu install ISOs but have to be downloaded after the fact and thus can be punted off to an initial configuration wizard.
+
+For addressing concerns around any cloud-based AI usage, Seager noted that those aren't part of the plans. The default configuration "will always be" to use local inference against local models.
+
+He also did elaborate as some possible AI features like camera focus and text to speech:
+
+"The plan here is not to force AI into every Desktop indiscriminately, but rather to enhance certain features where it makes sense (text to speech, camera focus, etc.) and make it easy for those who do want to consume AI features to do so in a way that they can trust, and that is well-integrated."
+Lastly, the VP of Engineering did clarify that they will be shipping code in Ubuntu that is co-authored by AI.
+
+"Regarding whether or not we should ship code that was co-authored by an AI - in reality we will be doing this. Even foundational projects in the ecosystem like the Kernel itself now have policies around how to govern this, and will accept tasteful, correct contributions that have been authored with AI."
+Again, all of the official commentary in full can be found via 
+Ubuntu Discourse
+.
+24 Comments
+Related News
+Ubuntu Touch 24.04-1.3 Improves Handling Of Desktop Apps, Other Fixes
+Ubuntu Linux Will Begin Landing AI Features Throughout The Next Year
+Ubuntu 26.04 LTS Now Available & Powered By Linux 7.0
+Ubuntu Server 26.04 LTS Will Now Automatically Install HWE/OEM Kernel Packages
+Ubuntu Rust Coreutils Audit Revealed 113 Issues, Ubuntu 26.10 Aims For "100% Rust Coreutils"
+Ubuntu Looks Toward More Snap-Based Devpacks Moving Forward
+About The Author
+Michael Larabel is the principal author of Phoronix.com and founded the site in 2004 with a focus on enriching the Linux hardware experience. Michael has written more than 20,000 articles covering the state of Linux hardware support, Linux performance, graphics drivers, and other topics. Michael is also the lead developer of the Phoronix Test Suite, Phoromatic, and OpenBenchmarking.org automated benchmarking software. He can be followed via 
+Twitter
+, 
+LinkedIn
+, or contacted via 
+MichaelLarabel.com
+.
+Popular News This Week
+VideoLAN Publishes Dav2d For Open-Source AV2 Decoder
+Dirty Frag Vulnerability Made Public Early: Root Privilege On All Distributions
+AMD Posts HDMI 2.1 FRL Patches For Their AMDGPU Linux Driver
+CachyOS Switches Python To Using Tail-Call Interpreter For 5~15% Better Performance
+Steam On Linux In April Pulled Back From Its Record High Marketshare
+Dell & Lenovo Now Sponsoring The Linux Vendor Firmware Service
+Linux 7.1 Fixes Audio For The Steam Deck OLED After Being Broken 2 Years On The Upstream Kernel
+Brush v0.4 Released As "Significant" Release For This Rust-Based Shell
+Latest Linux News
+Microsoft Releases Azure Linux 3.0.20260506 With Many Security Fixes
+Nocturne Is The Latest Music Player For GNOME To Hit v1.0
+Hyprland 0.55 Released With Lua-Based Configuration, User-Defined Layouts
+FEX 2605 Brings Performance Improvements, Initial Snapdragon X2 Elite Fixes
+NVIDIA-VAAPI-Driver 0.0.17 Fixes Support For GB10 Powered Systems
+KDE Plasma 6.7 To Support ICC Profiles In HDR Mode, Direct Scan-Out Improvement
+FreeBSD 15.1 Beta 2 Brings Updated Zstd, Bug Fixes
+NVIDIA Releases CUDA-Oxide 0.1 For Experimental Rust-To-CUDA Compiler
+DM-INLINECRYPT Expected For Linux 7.2 To Leverage Inline Encryption
+Qt Creator 20 Beta Expands AI Integration
+Show Your Support, Go Premium
+Phoronix Premium
+ allows ad-free access to the site, multi-page articles on a single page, and other features while supporting this site's continued operations.
+Latest Featured Articles
+AMD Instinct MI350P: PCIe Add-In Card For High Performance Open-Source AI/Compute
+Nouveau vs. NVIDIA R595 Linux Driver For Workstation Graphics Performance
+Linux 7.1 Features: New NTFS Driver, New Intel + AMD Hardware, Performance Optimizations & Modernization
+GCC 16 Compiler Delivering Some Decent Performance Gains Over GCC 15
+CachyOS Linux Performance Leading Over Ubuntu 26.04 LTS, Fedora Workstation 44
+Support Phoronix
+The mission at Phoronix since 2004 has centered around enriching the Linux hardware experience. In addition to supporting our site through advertisements, you can help by 
+subscribing to Phoronix Premium
+. You can also contribute to Phoronix through tips/donations via 
+PayPal
+ or 
+Stripe
+.
+Phoronix Media
+Contact
+Michael Larabel
+Phoronix Premium
+Support Phoronix
+While Having Ad-Free Browsing,
+Single-Page Article Viewing
+Share
+Facebook
+Twitter / X
+Legal Disclaimer, Privacy Policy, Cookies
+ | 
+Privacy Manager
+ | 
+Contact
+Copyright © 2004 - 2026 by 
+Phoronix Media
+.
+All trademarks used are properties of their respective owners. All rights reserved.

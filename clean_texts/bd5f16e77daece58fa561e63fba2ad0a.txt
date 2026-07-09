@@ -1,0 +1,730 @@
+There's a free way to use Claude Code — and it's surprisingly simple
+Menu
+Sign in now
+Close
+PC & Mobile
+Submenu
+Windows2
+Linux
+Android
+Apple
+Technical
+Submenu
+Tech Explained
+Security
+Software
+Submenu
+Productivity
+Internet
+Creative
+Screen
+Submenu
+Entertainment
+Streaming
+Home
+Submenu
+Smart Home
+Home
+News
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+12
+More Action
+Sign in now
+Productivity
+Android
+Smart TVs
+Networking
+Windows 11
+Entertainment
+Close
+There's a free way to use Claude Code — and it's surprisingly simple
+Raghav Sethi/MakeUseOf
+Credit: Raghav Sethi/MakeUseOf
+By 
+Raghav Sethi
+Published
+ May 4, 2026, 8:00 AM EDT
+Raghav Sethi began his tech writing journey in 2022, contributing to his college’s open-source community blog. Later that year, he joined MakeUseOf, and since then has written extensively about Apple, Android, and AI. His work ranges from hands-on experiments to opinion pieces that explore the bigger picture behind emerging tech trends. 
+
+Alongside his work at MUO, you can also find Raghav’s articles at 
+XDA Developers
+, where he mainly focuses on Linux and the world of open-source software. 
+
+Outside of writing, Raghav enjoys working on coding projects, playing the guitar, and living life on the edge by installing the latest beta software on his daily devices.
+Sign in to your 
+MakeUseOf
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+12
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Claude Code is a really good tool. If you have been using it, you already know that, especially when you 
+pair it with something like Obsidian
+ for managing context and notes, it becomes a pretty serious part of any workflow.
+✕
+ Remove Ads
+But the number one complaint I keep seeing is the same every time. Claude Code is locked behind Claude's Pro or Max plan, and at $20 a month, that is not exactly pocket change for a subscription you might only be dipping into occasionally. But there is a way to use Claude Code for free!
+Related
+
+			I finally caught up and tried OpenClaw — it’s everything you’d expect
+		
+The “agent” hype finally earned it.
+Posts
+5
+By 
+Amir Bohlooli
+Feb 26, 2026
+
+                        You are paying for the model, not the harness
+               
+
+            LLMs can be expensive
+    
+Claude Code is not a standalone AI. It is closer to a very smart intermediary. You give it a task; it figures out which files to read, what changes to make, and what to run, and then hands all that context off to an actual language model to do the thinking. By default, that model is Claude Sonnet or Opus, depending on what you have configured.
+The model is what reads your code, understands what you are asking for, and generates the output. Claude Code is the layer that takes that output and actually does something useful with it: editing files, running terminal commands, and managing context across your project.
+And here is the thing that changes the whole picture: Claude Code itself is free and open source. You can install it right now at no cost. What you are actually paying for every time you use it is the API call to the model that powers it.
+✕
+ Remove Ads
+Related
+
+			I moved my entire ChatGPT context to Claude and it finally felt like home
+		
+Here is the best path to go from ChatGPT to Claude.
+Posts
+3
+By 
+Brandon Miniman
+Apr 3, 2026
+Every prompt you send, every file it reads, every response it generates, that is all going through Anthropic's API, and that is what shows up on your bill or subscription usage.
+So when people say Claude Code is expensive, they are not really talking about Claude Code. They are talking about the cost of running a frontier model. Which is a real concern, but it is also a solvable one, because nothing is forcing you to use a frontier model.
+
+                        You can use it for free with local models through Ollama
+               
+
+            Local LLMs to the rescue
+    
+Image by Raghav Sethi
+Credit: Raghav Sethi/MakeUseOf
+ Ollama is a tool that lets you 
+run open-weight AI models locally on your own machine.
+ No API, no subscription, no usage bill. You download it, pull a model, and it runs a local server on your machine that applications can talk to exactly the same way they would talk to a remote API.
+Claude Code has a flag called 
+--model
+ that lets you swap the underlying model. On top of that, you can set an environment variable called 
+ANTHROPIC_BASE_URL
+ to point Claude Code to a different endpoint entirely. Point it to your local Ollama instance/URL instead of Anthropic's servers, and suddenly you have a fully functional agentic coding setup running entirely on your own hardware, completely free.
+✕
+ Remove Ads
+To get started, you'll first need to download a model via Ollama. For example, once you've installed Ollama, you can download the Gemma 4 model by entering this command in your terminal.
+ollama pull gemma4
+I'll get more into which model you should choose later, but once you've downloaded it, you can integrate it with Claude Code by entering this command:
+ollama launch claude
+You'll now be prompted to choose a model via Ollama. Just select the one you downloaded earlier, and that's it. Now you're inside Claude Code! The interface is identical. The file editing, the terminal commands, the context management — all of it works exactly as you would expect.
+Is it as capable as Sonnet? No, but free and pretty good is a completely different value proposition, and for a lot of everyday coding tasks, it gets you further than you might think. But there are some caveats that you should be aware of.
+
+                        There is a catch, like always
+               
+
+            You'll need beefy hardware
+    
+Screenshot by raghav-nar
+ Running a large language model locally is probably one of the most demanding things you can ask a consumer machine to do. This is especially true for coding-focused models, which tend to be bigger and more complex than general-purpose ones. So, before you get too excited about the free part, it is worth being honest about what you'll need.
+✕
+ Remove Ads
+If you have a modern Apple Silicon Mac, you are in a good position. The unified memory architecture means your CPU and GPU share the same pool of RAM, which is brilliant for local models. Something like a 32GB M-series Mac will comfortably handle the current best-in-class options.
+On the GPU side, a higher VRAM GPU gets you to a similar place. For models, the two I would point you toward right now are 
+Qwen3.6
+ and 
+Gemma 4
+. Qwen3.6 is built specifically for agentic coding, with particular improvements in frontend workflows and repository-level reasoning.
+https://huggingface.co/Qwen/Qwen3.6-27B
+ It comes in 27B and 35B variants and pulls around 17–24GB depending on which you run. Gemma 4 is Google DeepMind's latest family, with a 26B MoE model that uses only 4B active parameters, and a denser 31B variant aimed at higher-end setups. Both are on Ollama, and both have solid coding benchmarks.
+If you are working with 16GB of unified memory, you are not locked out. The smaller Gemma 4 E4B is designed specifically for edge devices and runs on around 5GB in 4-bit mode.
+On model quality: none of this matches Opus. That is just reality. But in my experience, the gap has gotten surprisingly small for everyday coding tasks. Smaller than you would expect.
+Related
+
+			Gemma 4 just replaced my whole local LLM stack
+		
+Gemma 4 made local LLMs feel practical, private, and finally useful on everyday hardware.
+Posts
+2
+By 
+Amir Bohlooli
+Apr 18, 2026
+✕
+ Remove Ads
+
+            Try it, then judge it
+    
+I currently have a separate machine running purely as an inference server
+, with Ollama on it handling all the local model work. I just connect to it from my laptop when I am doing dev work. I am still subscribed to Claude, but for quick tasks where I do not want to burn through my tokens on something trivial, it has been a solid fallback.
+The models are not as good. That is just the honest reality. But if you are on the fence about the Pro subscription, this is worth trying first, and if you are already subscribed, it is worth setting up anyway.
+
+    						Claude Code
+			
+Claude Code is an agentic coding tool built by Anthropic that works directly inside your terminal. It can read, edit, and manage files across your entire project, run commands, and work through multi-step coding tasks on its own.
+See at Anthropic
+Expand
+Collapse
+Productivity
+Artificial Intelligence
+Coding Tips
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+
+                                                    Technology Explained
+                                            
+
+                                                    PC & Mobile
+                                            
+
+			3 tech companies that make your gadgets more expensive
+		
+4 hours ago
+
+			Your SSD does not wipe your deleted files — this is what TRIM actually does
+		
+6 hours ago
+
+			Wireless charging is finally worth using, but only if you know what to look for
+		
+7 hours ago
+See More
+
+			The Lenovo Yoga Pro 7i is a tough sell, but the display is insane
+		
+4 hours ago
+
+			I ran a Windows network reset and fixed problems I'd blamed on my router for months
+		
+8 hours ago
+
+			I switched to Gentoo Linux and now I get why it's worth the headache
+		
+12 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			I stopped using LM Studio once I found this open-source alternative
+		
+
+			ChatGPT refused to help me vibe code my project and it led me somewhere better
+		
+
+			I switched to Hyprland and now I get why Linux users are obsessed with it
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+12
+Sign in to your 
+MakeUseOf
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+AA40
+AA40
+AA40
+#NX683731
+Member since 2025-10-16
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+You could have said you don't need no Claude code to run an open weight model, use Continue on VSCode. Much better and easier. 
+2026-05-06 06:31:01
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Samuel
+Samuel
+Samuel
+#RG533536
+Member since 2026-05-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Claude code - the CLI harness, is free to install but it is absolutely not "open source" as you claim here. 
+2026-05-04 11:19:36
+Upvote
+Downvote
+Reply
+
+                        3
+                    
+Copy
+        
+Lukasz
+Lukasz
+Lukasz
+#LJ516090
+Member since 2026-05-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Didn't it's code leak roughly a month ago? ;)
+2026-05-04 12:06:59
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Peter
+Peter
+Peter
+#RQ191870
+Member since 2026-05-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Well it is now, though not intentionally 😅
+2026-05-04 12:23:55
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Samuel
+Samuel
+Samuel
+#RG533536
+Member since 2026-05-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Peter
+ there's a difference between open source and leaked source but I take your point
+2026-05-04 12:30:54
+Upvote
+Downvote
+Reply
+Copy
+        
+Alex
+Alex
+Alex
+#WS086366
+Member since 2026-05-05
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Gemma 4 & qwen 3.6 are not even comparable with Claude Sonnet 4.6. It's like bicycle and formula 1. And Claude Code console tool by itself makes no sense to use when there is opencode - more flexible tool for AI. 
+2026-05-05 02:24:19
+Upvote
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+AA40
+AA40
+AA40
+#NX683731
+Member since 2025-10-16
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Have you used? Because I can get pretty damm close for FREE. Chinese models will run the open world while Americans will spend their last dime because '-it's not good enough' 
+2026-05-06 06:29:43
+Upvote
+Downvote
+Reply
+Copy
+        
+Matthew
+Matthew
+Matthew
+#UC612971
+Member since 2026-05-05
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Wmm and MN are 
+2026-05-05 17:02:21
+Upvote
+Downvote
+Reply
+Copy
+        
+Andrew
+Andrew
+Andrew
+#OZ007189
+Member since 2026-05-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I have yet to get Gemma 4 working with Claude code. It just stops processing when any tool call is needed. Qwen 3.5 works well though. 
+2026-05-04 11:56:55
+Upvote
+Downvote
+Reply
+
+                        2
+                    
+Copy
+        
+Peter
+Peter
+Peter
+#RQ191870
+Member since 2026-05-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I've got in running with LM Studio (Gemma 4 26b-a4b) on an M5 Max MacBook Pro. I had to tell LM Studio to use Anthropic APIs. I'm running the Claude Code plugin for IntelliJ.
+2026-05-04 12:20:35
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Denzil
+Denzil
+Denzil
+#GM303581
+Member since 2025-11-30
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+By default Ollama sets the context window too small. You need at least 64K or higher for a decent prompt. The harder the job, more tokens you need.
+2026-05-04 17:08:52
+Upvote
+Downvote
+Reply
+Copy
+        
+Clayton L
+Clayton L
+Clayton L
+#XM190675
+Member since 2023-10-18
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+What about running on a gaming PC? Is that a viable solution?
+2026-05-08 12:03:23
+Upvote
+Downvote
+Reply
+Copy
+        
+Geoffrey
+Geoffrey
+Geoffrey
+#DJ043898
+Member since 2026-05-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Nope, they closed this loophole with latest version.... 
+2026-05-04 18:03:03
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+May 2, 2026
+
+                                    I found 3 Android features so useful I'm confused why they ship disabled
+                            
+May 2, 2026
+
+                                    I cleared the hidden caches inside Discord, Spotify, and Adobe — this is how much space I got back
+                            
+May 1, 2026
+
+                                    I replaced my error-checking spreadsheets with Excel data validation and caught mistakes before they happened
+                            
+May 1, 2026
+
+                                    I stopped trying to script Windows automation and started using Claude instead
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+MakeUseOf
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

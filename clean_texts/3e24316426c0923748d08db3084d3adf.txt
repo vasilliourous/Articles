@@ -1,0 +1,419 @@
+I finally found a way to visualize my messy home lab and it made monitoring my stack so much easier
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+2
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I finally found a way to visualize my messy home lab and it made monitoring my stack so much easier
+By 
+Dhruv Bhutani
+Published
+ Apr 6, 2026, 10:30 AM EDT
+Dhruv Bhutani has been writing about consumer technology since 2008, offering deep insights into the personal technology landscape through features and opinion pieces. He writes for XDA-Developers, where he focuses on topics like productivity, networking, self-hosting, and more. Over the years, his work has also appeared in leading publications such as Android Police, Android Authority, CNET, PCMag, and more. Outside of his professional work, Dhruv is an avid fan of horror media spanning films and literature, enjoys fitness activities, collects vinyl records, and plays the guitar.
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+2
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+I'm not gonna lie. As I keep tacking on services, both those that I'm using every day, and those that I install just to tinker around, my homelab has been getting messier by the day. And I've reached a point where it's no longer just a fun quirk of my setup, it's a genuine practical problem. And it's a simple problem at that. With the sheer number of services running, I simply don't know what's running, what's broken, or where things are anymore. It doesn't help that my 
+home lab
+ is segregated across multiple servers. So, this weekend, I decided to tackle this problem.
+✕
+ Remove Ads
+I installed Homepage because I wanted a single place to see everything in my home lab. Not logs or metrics, those I can still extract through one of the many tools I have installed. Instead, I was looking for a clean, well-designed, human-readable overview of my stack that I can glance at and understand immediately. Homepage has solved that problem completely.
+
+			4 reasons Homepage is the best dashboard you should host on your home lab
+		
+Homepage stands out from the rest of the apps in the dashboard frontier with its rich set of features
+Posts
+3
+By 
+Ayush Pande
+Mar 28, 2025
+
+                        A clean front-end for your entire stack
+               
+
+            See your entire stack at a glance
+    
+Ease of use is important to me, and Homepage ranks among the easiest installs I've come across in the 
+self-hosted
+ world. A simple stack file is all it takes to get the service up and running, with the rest of the configuration done entirely through YAML files. What I like about Homepage is how straightforward it is. For one, it's not a full monitoring solution. It's a front-end for my self-hosted infrastructure. Unlike tools that try to do it all, I prefer that delineation between services. Do one thing, but do it well.
+All you have to do is define your services, group them in a way that makes sense to you for your needs, and attach useful context to each one. That could be as simple as an icon and a link, or a live status pulled from an API. There are a lot of configuration options here.
+✕
+ Remove Ads
+Talking about configuration, like I mentioned, everything runs through configuration files, much to my delight. 
+YAML
+ keeps things simple. Every time I add a new service, I document it and back it up, and it's a cinch. It's effectively a map of my entire stack.
+Service widgets elevate the experience further. Instead of just listing a service, Homepage can indicate whether a plugged-in service is working. It can pull real data, reflect the current status of the app or service, and give you a glanceable signal if something's not working as you expect it to. Essentially, instead of jumping between individual tools and services, you can open one page and get a snapshot of the entirety of your stack.
+Since Homepage integrates deeply with Docker, things get even better. It can read directly from the Docker socket and automatically surface container information. This means you don't need to manually keep everything up to date. Just label your containers, and Homepage will pick them up. The Docker labels integration is extremely nifty and does a lot to reduce the heavy lifting usually associated with setting up dashboard-like services.
+And finally, the speed of access is critical for a service like this. There's no point in setting up a home page dashboard if it's quicker to just launch a service directly. Just like my other favorite, 
+Dockpeek
+, Homepage is exceptionally fast and easy to get to. I keep it open anytime I'm at my desk, and it's set up as my start-up page in Chrome.
+✕
+ Remove Ads
+
+                        Easy monitoring without the overhead
+               
+
+            A quick way to know if everything's working as expected
+    
+ The biggest difference, as always, is in how Homepage changes your approach towards basics, like monitoring your home lab. More specifically, what all do you monitor, and how often? It doesn't replace the obvious tools like 
+Grafana
+, or give you deep logs. That's not the goal here. It's more about surfacing the information you need to act on immediately. Usually, I'd keep multiple tabs open, check containers, glance at metrics, and put things together. Now, I just open Homepage. If a service crashed overnight, I see it right there. Usually, everything is fine, but when it's not, I don't find out after the fact when I might get back to the service in a day or a few.
+
+                    Subscribe to the newsletter for home-lab dashboard tips
+                
+Get curated home-lab dashboard tips, YAML configuration examples, Docker labeling guidance, and tool recommendations in our newsletter. Subscribing delivers focused coverage on organizing and monitoring self-hosted stacks, alongside related self-hosting topics.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+The layout is also simple, but effective. It's flexible enough that I can easily organize things based on how I think. It's not particularly rigid. Combined with things like icons and widgets, it takes a visual approach to monitoring that I much prefer. When I switch on my laptop first thing in the morning, I don't want to look at data. Just tell me if things are working as they are supposed to, so I can move on with my day.
+Homepage isn't just a monitoring dashboard either. You can also use it to launch other services. Just start typing, and it'll surface the service. It's an easy way to launch lesser-used services without having to deal with a mess of bookmarks or a list of IP addresses.
+✕
+ Remove Ads
+
+            A simple dashboard I can't live without
+    
+Homepage lies squarely in the nice-to-have list of services, but it's these services that add a degree of polish to any home lab. It surfaces and shows me the things that I need and use every day. It helps me monitor my most 
+critical containers
+ and services to make sure that they are running as expected. However, it's a simpler kind of monitoring. Just enough to know that something is running or not. It's become my home page, quite literally. And, in my opinion, it's an easy recommendation for any home labber who hasn't set up a dashboard yet.
+
+    						Homepage
+			
+Homepage offers a clean, customizable dashboard that brings all your services, status and shortcuts into a simple, glanceable interface.
+See at Homepage
+Expand
+Collapse
+Software and Services
+Self-Hosting
+Open Source
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			Firefox is in trouble, and the alternatives aren't what you'd expect
+		
+
+			I turned a Steam Deck into my living room home lab terminal
+		
+
+			5 Jellyfin clients that finally make it look and feel like a premium app
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+2
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Derek
+Derek
+Derek
+#WI799331
+Member since 2024-07-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+My Homepage is my start page in my browser. All my docker containers and a few other apps at a glance.
+2026-04-06 15:07:17
+Upvote
+Downvote
+Reply
+Copy
+        
+Louis
+Louis
+Louis
+#BJ694854
+Member since 2025-08-16
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+The overhead is in maintaining it. Its not hard but I have like 8 things to add to it. It is nice and neat and pretty tho. I do love it, especially the alternate background with the tenticals
+2026-04-07 04:00:24
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 5, 2026
+
+                                    My favorite alternative to Office 365 isn’t LibreOffice – it’s something way cooler
+                            
+Apr 5, 2026
+
+                                    I tested Claude Code against 3 open-source alternatives, and one came surprisingly close
+                            
+Apr 4, 2026
+
+                                    I tried this hidden Google Chrome feature – and now I use it everyday
+                            
+Apr 4, 2026
+
+                                    I replaced complex Excel formulas with Python and got my time back
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:32
+
+                            Mac OS X launch: 25 years later
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            How much data does Steam use in a year?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

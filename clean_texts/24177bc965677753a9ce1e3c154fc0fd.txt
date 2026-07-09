@@ -1,0 +1,1049 @@
+How a single word killed Iomega's brilliant storage device
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+Networking
+Storage and NAS
+Components
+Peripherals
+Operating Systems
+Submenu
+Linux
+Windows
+Software
+Submenu
+Programming
+Applications
+Mobile
+Submenu
+Android
+iPhone
+Carriers
+New Tech
+Submenu
+Hobbies
+Smart Home
+Homelab
+Single-Board Computers (SBCs)
+Cutting Edge
+Streaming
+Submenu
+Streaming Content
+Streaming Platforms
+Audio/Video
+Automotive
+Reviews
+Buying Guides
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+18
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Storage
+Streaming
+Linux
+Open Source
+Microsoft Excel
+Android
+Windows
+Close
+How a single word killed Iomega's brilliant storage device
+By 
+Jorge A. Aguilar
+Published
+ May 1, 2026, 2:30 PM EDT
+Aggy is a veteran writer and editor in the technology and gaming space. Having served as a Managing Editor for high-traffic digital publications, alongside being an editor and consultant for over a dozen sites. Aggy's published work spans a wide and respected array of tech and gaming outlets, including WePC, Screen Rant, How-To Geek, Android Police, PC Invasion, and Try Hard Guides.
+
+Beyond editorial work, Aggy's direct experience in the tech sphere extends to app development. Aggy has published two games under Tales and is always eager to learn and do more. He also likes working on computers and researching in his spare time.
+
+He knows about Windows, Linux, Audio, Video, and much more. 
+Sign in to your 
+How-To Geek
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+18
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+The turn of the millennium was a good time to be into tech. Devices we use every day, like digital cameras, portable media players, and early handheld computers, were becoming mainstream, yet they all ran into a bottleneck with storage costs. 
+Floppy disks
+ held too little data, and the new solid-state flash memory was expensive, costing hundreds of dollars for only a few megabytes. This gap let established companies try to innovate, and one firm tried to use its history with removable media to launch a tiny, affordable format meant to act as the first reusable, digital roll of film. This was clever engineering that ultimately could not save a product line already collapsing under the weight of its tarnished brand history, and then market pressures finished the job.
+✕
+ Remove Ads
+
+                        The introduction of the Iomega Clik drive
+               
+
+            Iomega tried to replace film with a tiny disks
+    
+Introduced in late 1998 and rolled out in 1999, the Iomega Clik drive addressed storage problems in the late 90s. At the time, devices like digital cameras, PDAs, and early MP3 players were popular, but storage space was limited. Flash memory, like CompactFlash and SmartMedia, existed, but cards often cost between $120 and $160 for very little space. 
+Over 25 years ago
+, this was one of the best things to come out.
+Iomega, following the success of its 
+100MB Zip drives
+, created a miniature, affordable storage medium. The Clik drive was meant to be a low-cost alternative to flash memory, acting like a digital, reusable photographic negative.
+Quiz
+8 Questions · Test Your Knowledge
+Weird and quirky storage drives
+Trivia challenge
+From hybrid SSHDs to bizarre form factors — how well do you really know the oddest corners of storage technology?
+Hybrid Drives
+Form Factors
+History
+Hardware
+Oddities
+Begin
+01 / 8
+Hybrid Drives
+What does the acronym SSHD stand for in the context of hybrid storage drives?
+A
+Solid State Hard Drive
+B
+Solid State Hybrid Drive
+C
+Sequential Storage High-Density
+D
+Static Spinning Hard Disk
+Correct! SSHD stands for Solid State Hybrid Drive. These drives combine a traditional spinning hard disk with a small amount of NAND flash memory to accelerate frequently accessed data, giving users a middle ground between HDD capacity and SSD-like speed.
+Not quite — SSHD stands for Solid State Hybrid Drive. While 'Solid State Hard Drive' sounds convincing, it's actually a common misconception. The 'hybrid' part is key, since these drives merge both spinning magnetic platters and flash memory into a single unit.
+Continue
+02 / 8
+History
+Which company is widely credited with popularizing the consumer SSHD by releasing the Momentus XT in 2010?
+A
+Western Digital
+B
+Toshiba
+C
+Seagate
+D
+Samsung
+Correct! Seagate's Momentus XT was a landmark product that brought the SSHD concept to mainstream consumers. It combined a 500GB spinning platter with 4GB of SLC NAND flash and used adaptive memory technology to learn which data to cache for faster access.
+Not quite — it was Seagate that popularized the consumer SSHD with its Momentus XT in 2010. The drive used a modest 4GB of SLC NAND flash alongside a traditional 500GB platter, and it was groundbreaking enough to turn many heads in the enthusiast storage community.
+Continue
+03 / 8
+Oddities
+What was unusual about the Intel Optane Memory H10, released in 2019?
+A
+It combined a 3D XPoint Optane cache with a QLC NAND SSD on a single M.2 card
+B
+It used a spinning platter alongside Optane memory in a 2.5-inch chassis
+C
+It was the first drive to use PCIe 5.0 alongside SATA flash storage
+D
+It embedded Optane memory directly into a USB thumb drive casing
+Correct! The Intel Optane Memory H10 crammed both 3D XPoint Optane cache and QLC NAND storage onto a single M.2 2280 card. This meant the Optane portion acted as a super-fast buffer for the slower QLC NAND, all within one slot — a genuinely clever hybrid approach for thin laptops.
+Not quite. The Intel Optane Memory H10 was unusual because it placed 3D XPoint Optane cache and QLC NAND SSD storage together on one M.2 card. This dual-storage-on-one-stick design was highly unconventional and required special Intel RST drivers to function correctly, making it a quirky product indeed.
+Continue
+04 / 8
+Form Factors
+The Sony Microvault and similar tiny USB drives once came in novelty shapes like food items and cartoon characters. What is the technical term for this category of novelty drives?
+A
+Promotional flash drives
+B
+Swag drives
+C
+Designer USBs
+D
+Custom-molded drives
+Correct! The industry term most commonly used is 'promotional flash drives.' They are widely produced as branded giveaways and collectibles, molded into virtually any shape imaginable — from sushi rolls to rubber ducks. Some rare novelty drives have become genuine collector's items over the years.
+Not quite — the most widely recognized industry term for novelty-shaped USB drives is 'promotional flash drives.' These quirky drives are manufactured in bulk for marketing campaigns and giveaways, and the moldable casings mean manufacturers have produced everything from mini pizza slices to tiny LEGO-style bricks.
+Continue
+05 / 8
+Hardware
+Apple's Fusion Drive, introduced in 2012, is a type of hybrid storage. How does it differ from a traditional SSHD?
+A
+It uses proprietary Apple flash chips soldered directly to the HDD circuit board
+B
+It combines a separate SSD and HDD into a single logical volume managed by software
+C
+It is a single physical unit with flash embedded in the same enclosure as the platter
+D
+It caches only the operating system boot files using a dedicated firmware controller
+Correct! Apple's Fusion Drive is two separate physical drives — an SSD and an HDD — that macOS presents as a single unified volume using Core Storage (later APFS). Unlike an SSHD where everything is in one enclosure, Fusion Drive relies entirely on software-level management to decide what lives on the flash and what goes on the platter.
+Not quite. The key difference is that Apple's Fusion Drive consists of two separate physical drives — an SSD and an HDD — merged into one logical volume by macOS software. A traditional SSHD is a single self-contained unit with its own firmware controller managing the flash cache, making them architecturally quite different despite achieving similar goals.
+Continue
+06 / 8
+Oddities
+What was the primary purpose of the Robson cache technology Intel developed before eventually pivoting toward SSDs?
+A
+To use a small NAND chip on the motherboard to accelerate hard drive performance
+B
+To embed flash memory inside RAM DIMMs for faster boot times
+C
+To create a PCIe-attached SSD that could cache optical disc data
+D
+To use CPU-integrated storage for caching OS page files
+Correct! Intel's Robson technology — which became Intel Turbo Memory — placed a small NAND flash cache on a mini-PCIe card inside laptops to speed up hard drive access. It worked alongside Windows ReadyBoost and ReadyDrive but was largely underwhelming in real-world performance, and the project was quietly shelved as SSDs took over.
+Not quite. Intel's Robson/Turbo Memory technology used a small NAND flash chip on a mini-PCIe card to cache hard drive data on laptops. It leveraged Windows Vista's ReadyBoost and ReadyDrive features but never lived up to the hype, and it was eventually abandoned as standalone SSDs became cheaper and far more effective.
+Continue
+07 / 8
+History
+The iomega Zip drive was a popular removable storage medium in the late 1990s. What was the original storage capacity of the first Zip disks released in 1994?
+A
+250MB
+B
+100MB
+C
+750MB
+D
+50MB
+Correct! The original Iomega Zip disk launched in 1994 with a 100MB capacity, which was enormous compared to the 1.44MB floppy disks it aimed to replace. Later iterations pushed capacity to 250MB and even 750MB, but the original 100MB version was the one that captured the imagination of consumers and creative professionals alike.
+Not quite — the first Iomega Zip disks released in 1994 held 100MB, a staggering amount at the time when standard floppy disks only held 1.44MB. Later versions expanded to 250MB and 750MB, but it was that original 100MB capacity that made the Zip drive a cultural phenomenon in offices and design studios throughout the late 1990s.
+Continue
+08 / 8
+Hardware
+Western Digital's Black² drive was a quirky dual-drive product released around 2013. What made it so unusual?
+A
+It contained both a 120GB SSD and a 1TB HDD in a single standard 2.5-inch form factor
+B
+It used dual spinning platters rotating in opposite directions to reduce vibration
+C
+It featured two separate SATA connectors, one for flash and one for the platter
+D
+It combined SSD storage with a built-in PCIe controller on a 2.5-inch board
+Correct! Western Digital's Black² squeezed a 120GB SSD and a full 1TB HDD into a single 2.5-inch, 9.5mm-thick drive — the same size as a standard laptop hard drive. The catch was that it required special WD software to unlock the HDD portion, and it appeared as two separate drives to the operating system rather than one seamless volume.
+Not quite — the Western Digital Black² was remarkable because it packed a 120GB SSD and a 1TB HDD into one standard 2.5-inch laptop-sized enclosure. Unusually, users had to install WD's own software to unlock and access the HDD portion, and the two storage sections appeared as separate drives rather than being merged transparently like Apple's Fusion Drive.
+See My Score
+Challenge Complete
+Your Score
+/ 8
+Thanks for playing!
+Try Again
+The hardware was a proprietary storage option using tiny disks that held 40 megabytes of data. Measuring about two inches square and 2.0 mm thick, these disks were essentially miniaturized floppy disks. Like a standard 3.5-inch floppy, the Clik format used a flexible magnetic medium inside a rigid metal shell with a spring-loaded sliding shutter to protect against dust.
+Inside the drive, a tiny motor spun the disk at 2,941 RPM. The read/write heads accessed data with an average seek time of 38 milliseconds and a transfer rate up to 600 KB per second.
+✕
+ Remove Ads
+Iomega built the Clik system for mobile users. Drives were available in a PCMCIA Type II format that slid directly into a laptop or Windows CE device without needing external power. For standalone use, Iomega sold a drive with a rechargeable battery pack and a Flash Memory Reader add-on.
+This let photographers put CompactFlash or SmartMedia cards into the Clik reader and transfer images onto a 40MB disk in the field, which meant they didn't need a PC. At about 10 dollars per disk, the Clik format was an affordable bridge on the market before flash memory prices crashed.
+
+                        The click of death really did mean death
+               
+
+            A new name couldn't hide the hardware issues
+    
+Iomega launched the Clik drive with terrible timing. The 100MB Zip drive had become known for a mechanical failure where misaligned heads caused a rhythmic clicking sound. This failure ruined the hardware and could destroy the data on the media.
+This became known as the click of death. In September 1998, a class-action lawsuit accused Iomega of fraud after thousands of users complained. The word click became toxic for the brand. Iomega abandoned the Clik name and switched to PocketZip in 2000 to try to save the product line.
+The rebranding didn't work because the format was already losing to better technology. Iomega stuck with magnetic media while flash memory cards were getting better. Since PocketZip used spinning disks and moving parts, it was less reliable than solid-state options like CompactFlash, which had no moving parts.
+While flash memory started out expensive, prices dropped quickly, and capacities grew. The 40-megabyte limit soon became too small for most users. Camera makers and consumers preferred the ruggedness and falling costs of solid-state cards.
+✕
+ Remove Ads
+The combination of a bad reputation and the rise of high-capacity flash memory made the PocketZip obsolete almost immediately. Unfortunately, it was a string of misfortunes that ended up killing the brand.
+
+                        This was a great idea for the time
+               
+
+            Better technology made these disks obsolete
+    
+Originally, early digital cameras and MP3 players were held back by the high cost of flash memory. While a 32-megabyte card costs between 60 and 160 dollars, Iomega's 40-megabyte disks were only about 10 dollars.
+
+                    Subscribe for tech history and more in our newsletter
+                
+Interested in the rise and fall of devices like PocketZip? Subscribe to our newsletter to get more curated deep dives into retro storage, engineering pivots, and brand lessons from tech history — and more, all focused on stories like this.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+This price difference gave people an affordable way to carry dozens of photos or audio files. Iomega used micro-engineering to shrink floppy technology down to two inches square. Even though they were small, the disks were well-protected.
+They were housed in a thin metal casing with a rotating shutter to keep out debris. Each disk also came with a plastic protective sleeve, so you could put them in a pocket without worrying about damage.
+That sounds great, but unfortunately for the company, flash memory prices plummeted faster than Iomega could iterate the mechanical PocketZip format. That is what ultimately killed the Clik drive.
+
+            Some ideas are only great for short periods
+    
+How good a technology is typically matters less than timing and how people see a product. This was amazing technology that failed because of a self-inflicted public relations problem. The name Clik was a mistake, as it immediately linked the product to the click of death lawsuits that affected the larger Zip drives. That word made people distrust a device that used similar mechanical parts. Also, it used mechanics that were becoming obsolete, and its brand reputation made people prefer reliable, non-moving parts to competitors. The PocketZip became an artifact of bad timing, doomed by the future it couldn't stop and a history it couldn't escape.
+✕
+ Remove Ads
+
+    						USB-C Hub for Smartphones
+			
+Connection
+
+									
+										
+											USB-C
+
+										
+																	
+Ports
+
+									
+										
+											1 USB-A, 2 USB-C, 1 microSD
+
+										
+																	
+Power supply included
+
+									
+										
+											No
+
+										
+																	
+$40 at Amazon
+Expand
+Collapse
+Storage
+Computer Hardware
+Hardware
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. 
+Read More
+.
+Close
+✕
+ Remove Ads
+
+                                                    Desktop
+                                            
+
+                                                    Mobile
+                                            
+
+			Why Linux is my IDE
+		
+1 hour ago
+
+			Windows Fast Start-up is still causing problems in 2026, and everyone should disable it
+		
+4 hours ago
+
+			KDE Dolphin does file management better than GNOME—here's why
+		
+5 hours ago
+See More
+
+			8 Google Messages features I wish someone had told me about sooner
+		
+1 hour ago
+
+			5 hidden Motorola gestures that make other Android phones feel basic
+		
+3 hours ago
+
+			This open-source app suite replaced 6 closed-source apps and tools on my Android phone
+		
+5 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			Modern phones are locked down, but this legendary HTC ran every operating system imaginable (even Ubuntu)
+		
+
+			This app instantly turned my Plex server into a cable TV replacement
+		
+
+			The Raspberry Pi's 15-year reign is quietly ending—here's why
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+18
+Sign in to your 
+How-To Geek
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Suirdzign
+Suirdzign
+Suirdzign
+#ST825864
+Member since 2026-01-21
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Why picture a zip drive under the headline??? The 250mb drive was a game changer. The storage of over 170 floppies on one disk was a quantum leap
+2026-05-01 15:59:43
+Upvote
+
+                                    8
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Iseefractals
+Iseefractals
+Iseefractals
+#SB136052
+Member since 2025-06-30
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Eh, was it? 5.25in Magneto-optical disks, with 650mb of capacity were developed in the early 80s, and commercialized in the late 80s. Iomega released their own version in 1992 in various capacities from 35mb to 150mb...a shadow of the actual potential.
+We had half a dozen 650mb MO disks in 1994, when avg hd capacities were still 300mb, by the end of MO in the early 2000s capacities had increased to 9.2gb.
+2026-05-01 17:58:06
+Upvote
+Downvote
+Reply
+Copy
+        
+Craig
+Craig
+Craig
+#ZO124449
+Member since 2026-05-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I was hoping to hear about their Jaz drive.
+2026-05-01 17:20:48
+Upvote
+
+                                    7
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Jim
+Jim
+Jim
+#SL802500
+Member since 2024-08-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+They should have found ways to make the jaz disks  cheaper over time.  Same with SyQuest drives.
+I eventually moved to removable hdd racks then external USB hdds.  
+2026-05-01 22:15:47
+Upvote
+Downvote
+Reply
+Copy
+        
+Greg
+Greg
+Greg
+#RB342276
+Member since 2026-05-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I loved my chunky blue iomega zip drive 😢
+2026-05-01 20:19:36
+Upvote
+
+                                    7
+                            
+Downvote
+Reply
+
+                        5
+                    
+Copy
+        
+Jim
+Jim
+Jim
+#SL802500
+Member since 2024-08-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+We would take the blue zip drives to the computer labs at school, and do the quick downloads on the school networks back in the 28.8k modem days.  
+2026-05-01 22:17:29
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+Jim
+Jim
+Jim
+#SL802500
+Member since 2024-08-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Oh yeah and I managed to get the win95 version b install files on one. It was perfect to get win95 installed on a laptop with only a parallel port and no CD drive.   Win 95 on a monochrome laptop was interesting in itself.  It didn't look bad in shades of grey.
+2026-05-01 22:19:40
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+AdnanA
+AdnanA
+AdnanA
+#FV314460
+Member since 2023-10-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Jim
+ I remember those days 😆
+2026-05-01 23:20:53
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+Chris
+Chris
+Chris
+#SN652446
+Member since 2026-05-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I nearly bought one back in 2000 but eventually decided on a CD-RW drive (external) instead. It was a beast but I 
+loved
+ it!
+2026-05-02 15:21:11
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Lasse
+Lasse
+Lasse
+#ND806373
+Member since 2024-07-08
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I wholeheartedly agree. 
+And it was 
+fast
+ compared to a 1.44" floppydisc even though I had to connect my Zip drive over the LPT1 connection on the motherboard.
+It was my go to storage medium until computers came with CD-RW drives.
+2026-05-07 17:07:43
+Upvote
+Downvote
+Reply
+Copy
+        
+Mike
+Mike
+Mike
+#US875549
+Member since 2025-07-06
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I still have mine using usb. Haven't used it in 5 years and using the excuse of retro memory to disguise my laziness.
+2026-05-02 11:59:01
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Barry
+Barry
+Barry
+#BN655488
+Member since 2026-05-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Worked for IOMEGA since it started for while. Roy, UT. Consultant, test enginnering, original Bernolli OEM drive. Interesting times. 
+My sister in law also worked for IOMEGA in production. Unfortunately she had to train her replacement before the left Utah. 
+That the real click of Death... It was a good job. 
+2026-05-02 02:13:54
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Quiberon
+Quiberon
+Quiberon
+#YE590851
+Member since 2025-10-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Not a very good idea giving it the the Name "Clik!".
+Seeing as how Zip drives could be killed if they got the dreaded "Click of Death"
+2026-05-02 13:44:17
+Upvote
+Downvote
+Reply
+Copy
+        
+Pasi
+Pasi
+Pasi
+#UY918333
+Member since 2024-08-26
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+First I had the Bernoulli box and three 100MB disks.
+All those disks died in weeks. I threw the electronics to trash bin and installed a small mainboard and a CD drive in the box.
+Later I had three 100MB Zip drives and one 250 and about 30 disks with no problems. I sold them last year in full working order.
+2026-05-03 07:55:32
+Upvote
+Downvote
+Reply
+Copy
+        
+Mathew
+Mathew
+Mathew
+#QP294268
+Member since 2026-05-07
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Still got my internal Zip drive 250mb even today.  It was good times.
+2026-05-07 13:47:34
+Upvote
+Downvote
+Reply
+Copy
+        
+Poonsub
+Poonsub
+Poonsub
+#DY790230
+Member since 2025-12-13
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I think ZipDrive die by 2 things 
+1) cheap price of writable / rewriteable CD 
+2) then Flash Drive who kill both ZipDrive and CD
+2026-05-03 11:53:53
+Upvote
+Downvote
+Reply
+Copy
+        
+Felim_Doyle
+Felim_Doyle
+Felim_Doyle
+#IZ302721
+Member since 2025-06-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I am perturbed whenever I watch TV programmes or read articles about technology where imperial measure is used but it is particularly annoying when imperial measure is mixed with metric, as in “Measuring about two inches square and 2.0 mm thick”!
+Whilst I realise that the US hangs on for dear life to its version of imperial measure and we have the legacy of storage media being quoted as 8", 5¼", 3½", stating that a magnetic medium was “about two inches square”, which doesn't sound particularly accurate nor show confidence from the author in their research, then adding “and 2.0 mm thick” is just infuriating!
+I would have expected a technical writer, especially one named Jorge A. Aguilar, to have a reasonable grasp of the metric system and to use it appropriately in articles with a global audience.
+The inappropriate mixing of imperial and SI units resulted in this: “NASA lost the $125 million Mars Climate Orbiter in 1999 because one engineering team (Lockheed Martin) used Imperial units (pound-seconds) while NASA's navigation team used metric units (newton-seconds). This mismatch, where thruster data was interpreted incorrectly, caused the probe to fly too close to Mars and disintegrate.”. Yet NASA and its contractors continue to use imperial measure, except in joint ventures with ESA and other space agencies, all of which use metric and SI units, where mixing imperial and metric units has also been a problem in the past.
+2026-05-02 05:18:54
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        2
+                    
+Copy
+        
+Rigo
+Rigo
+Rigo
+#ZJ685040
+Member since 2025-11-19
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Metric is lame.  For the layperson.
+They are called Freemdom units now.  lol
+2026-05-02 14:28:57
+Upvote
+Downvote
+Reply
+Copy
+        
+Pepe
+Pepe
+Pepe
+#MQ213570
+Member since 2026-05-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+How can it have escaped your notice that this "article" is 100% "written" by ChatGPT? It's the worst kind of aimless AI slop. 
+2026-05-09 14:02:40
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 17, 2026
+
+                                    You don’t need to dual-boot anymore, there’s a better way to try another OS
+                            
+Apr 16, 2026
+
+                                    Stop waiting for your PC to fail: 5 warning signs I check every month
+                            
+Apr 16, 2026
+
+                                    Thinking about a Meta Quest 3 or 3S? Buy it before the April 19 price hike
+                            
+Apr 16, 2026
+
+                                    I tried to ditch cloud storage for self-hosting. Three drives and a mini PC later, I gave up
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+How-To Geek
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:00
+Skip Ad
+5

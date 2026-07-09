@@ -1,0 +1,162 @@
+Copy Fail - A 732-Byte Python Script Can Get Root on Every Major Linux Distro - Cyber Kendra
+Follow Cyber Kendra on 
+Google News
+! | 
+WhatsApp
+ | 
+Telegram
+Add as a preferred source on Google
+
+Cyber Kendra
+
+Tech Hub
+
+Contact Us
+
+
+Disclaimer
+
+
+Privacy
+
+Home
+About
+Privacy Policy
+Contact
+More...
+Disclaimer
+Advertise
+Breach List
+Download
+JSON-TOON
+Tools
+Adsense Calculator
+JWT Decoder
+Morse Code Decoder
+Image to Webp Converter
+Random IP Generator
+Image to PDF Converter
+Search Suggest
+Apache
+Apple
+Google
+Internet
+Security
+Home
+Posts
+
+Copy Fail - A 732-Byte Python Script Can Get Root on Every Major Linux Distro
+
+CVE-2026-31431 "Copy Fail": a logic bug in the Linux kernel lets any local user get root on Ubuntu, RHEL, Amazon Linux, and SUSE since 2017.
+4 min read
+Add as preferred source
+New Flaw: 
+Dirty Frag — No Patch, No Warning — Root Access on Every Major Linux Distro
+A newly disclosed vulnerability in the Linux kernel gives any unprivileged local user a reliable, one-shot path to root — and it has been sitting undetected for nearly a decade. The exploit is a single 732-byte Python script. It works unmodified on Ubuntu, Amazon Linux, Red Hat Enterprise Linux, and SUSE. No guesswork, no timing windows, no per-distribution tuning required.
+Researchers at Theori's 
+Xint Code team published
+ the details today under the name 
+Copy Fail
+ (
+CVE-2026-31431
+), disclosing both the root cause and a working proof-of-concept after coordinated patching with the Linux kernel security team.
+Most Linux privilege escalation bugs demand some form of luck — a race condition to win, a kernel version to match, a compiled payload to stage. Copy Fail eliminates all of that. It is a straight-line logic flaw: run it once, get root. Researchers directly tested kernel lines 6.12, 6.17, and 6.18 across four distributions and observed a root shell every time.
+The write-up draws a deliberate contrast with two famous predecessors. Dirty Cow (2016) required winning a memory-subsystem race, sometimes crashing the machine in the process. Dirty Pipe (2022) was limited to specific kernel versions and needed careful pipe-buffer manipulation. Copy Fail needs none of that — the same script simply works everywhere.
+The bug lives at the intersection of three independent kernel changes made between 2011 and 2017 — none problematic on its own. The Linux kernel exposes its cryptographic subsystem to unprivileged userspace through a socket type called 
+AF_ALG
+. A separate system call, 
+splice()
+, can transfer file data between file descriptors without copying it — passing references to the kernel's own cached pages of a file directly into the crypto subsystem.
+In 2017, an optimization was added to 
+algif_aead.c
+ that made AEAD (authenticated encryption) operations run "in-place," meaning the input and output scatterlists (memory maps used for crypto operations) pointed to the same location. This put live, shared page-cache pages into what the crypto layer treated as a writable destination. That mattered because of a separate, older bug in 
+authencesn
+ — a crypto wrapper used by IPsec for extended sequence numbers — which writes 4 bytes past the legitimate end of its output buffer as a scratch-pad operation and never restores them.
+Together: an attacker splices any readable file's page cache into the crypto path, triggers an 
+authencesn
+ decryption, and that scratch write lands 4 controlled attacker-chosen bytes at a chosen offset inside the kernel's cached copy of that file. The HMAC check fails and 
+recvmsg()
+ returns an error — but the write already happened.
+The default target is 
+/usr/bin/su
+, a setuid-root binary on every tested distribution. Repeat the operation for each 4-byte chunk of shellcode, then call 
+execve("/usr/bin/su")
+.
+The kernel loads the binary from the now-corrupted page cache. Because 
+su
+ is setuid, the shellcode runs as root.
+Affected distributions
+Ubuntu 24.04 LTS, Amazon Linux 2023, RHEL 14.3, SUSE 16, Debian, Arch, Fedora, Rocky, Alma, and other distributions running kernels built between 2017
+ and the patch are also affected.
+The container problem
+Copy Fail does not stop at the host. Because the Linux page cache is shared across all processes on a system — including across container boundaries — a compromised container or pod can use this primitive to tamper with the host's cached binaries and escape to the underlying node. The researchers are publishing a separate follow-up detailing the Kubernetes escape path.
+How it was found
+The discovery was a collaboration between human insight and AI tooling. Theori researcher Taeyang Lee identified 
+AF_ALG
+ combined with 
+splice()
+ as a promising attack surface — recognizing that this path could feed page-cache pages of read-only files directly into the kernel crypto subsystem. 
+That hypothesis was fed as an operator prompt into Xint Code, an AI-assisted security audit tool, which scanned the entire 
+crypto/
+ subsystem in roughly an hour. Copy Fail was the highest-severity finding in the run. The same scan surfaced additional high-severity vulnerabilities still under coordinated disclosure.
+What to do right now
+Update your distribution's kernel package. The fix (mainline commit a664bf3d603d) reverts the 2017 in-place optimization in 
+algif_aead.c
+, separating source and destination scatterlists so page-cache pages can no longer end up in a writable crypto destination. Major distributions are shipping the fix now.
+If you cannot patch immediately, disable the algif_aead kernel module. This breaks nothing for the vast majority of systems — dm-crypt, LUKS, IPsec, TLS, SSH, and standard OpenSSL/GnuTLS builds all use the in-kernel crypto API directly and do not go through 
+AF_ALG
+:
+echo "install algif_aead /bin/false" > /etc/modprobe.d/disable-algif.conf
+rmmod algif_aead 2>/dev/null || true
+For containerized or multi-tenant workloads, block 
+AF_ALG
+ socket creation via seccomp policy regardless of patch state. The page-cache corruption does not persist across reboots — the cached page reloads clean from disk — but the root shell obtained before reboot is fully real.
+The proof-of-concept is published on 
+GitHub
+. The researchers ask that it be used only on systems the tester owns or has written authorization to test.
+Copy
+
+Post a Comment
+
+
+Post a Comment
+
+
+Post a Comment
+
+Popular Posts
+Dirty Frag — No Patch, No Warning — Root Access on Every Major Linux Distro
+
+Discovered by Korean security researcher Hyunwoo Kim, Dirty Frag chains two separate kernel vulnerabilities to hand any local user a root shell on vi…
+
+AnyFlip Downloader (Free, Fast & No Login Required) – Download PDFs Instantly
+Download ExaGear APK + OBB for Android | Windows Emulator 2026
+React and Next.js Hit With 12 Security Flaws — Three Let Attackers Bypass Auth, Hijack Servers
+Pirates Bay Proxy List April 2026: Unblock Pirate Bay
+
+Category
+
+Android
+Apple
+Data Breached
+Google
+Microsoft
+News
+OpenAI
+Ransomware
+Security
+Tips
+Vulnerability
+Windows 10
+Windows 11
+
+
+                        © 
+2026
+ ‧ 
+Cyber Kendra
+. All rights reserved.
+                        
+
+With 💛 
+Cyber Kendra

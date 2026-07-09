@@ -1,0 +1,54 @@
+{
+  "article_title": "I finally found a way to track all my home server ports without using a spreadsheet",
+  "core_thesis": "The article presents Portracker, a self-hosted Docker container that automatically discovers and displays all running containers and their exposed ports on a home server, solving the common problem of 'port sprawl' without requiring manual spreadsheets or bookmarks. The author argues that Portracker's simplicity, real-time visibility, and built-in port generator make it an essential tool for self-hosters who manage multiple services.",
+  "detailed_summary": "The author, Dhruv Bhutani, describes the challenge of tracking ports on a home server as the number of Docker containers grows. Initially, bookmarks or spreadsheets suffice, but as services multiply, remembering which port corresponds to which service becomes difficult. The author tried various dashboards but found them overkill for simply seeing which ports are in use. Portracker solves this by running as a Docker container that automatically inspects the host's Docker socket, listing all running containers and their exposed ports in a clean, glanceable interface. It updates in real-time when containers are added or removed, eliminating manual tracking. Key features include a built-in port generator that suggests unused ports to avoid conflicts, and troubleshooting assistance: if a service fails but its port appears in Portracker, the issue is likely with the app, not deployment. The author runs Portracker on a Synology NAS with Docker and finds it invaluable for cleaning up forgotten services and simplifying daily management. The article also includes a Reddit-style comment section where users debate alternatives like Traefik with service discovery, reverse proxies, or simple nmap scans, with some arguing that proper reverse proxy setups eliminate the need for port tracking entirely.",
+  "entities": [
+    {
+      "name": "Dhruv Bhutani",
+      "type": "person",
+      "role": "Author and self-hoster who tested and recommends Portracker"
+    },
+    {
+      "name": "Portracker",
+      "type": "software",
+      "role": "Self-hosted Docker container for tracking exposed ports on a home server"
+    },
+    {
+      "name": "Synology NAS",
+      "type": "product",
+      "role": "Hardware platform used by the author to run Docker and Portracker"
+    },
+    {
+      "name": "Docker",
+      "type": "software",
+      "role": "Containerization platform used to deploy services and Portracker"
+    },
+    {
+      "name": "Traefik",
+      "type": "software",
+      "role": "Reverse proxy mentioned in comments as an alternative that avoids port exposure"
+    }
+  ],
+  "key_data_points": [
+    "Portracker runs as a Docker container and automatically inspects the host's Docker socket to list all running containers and their exposed ports without manual input (🟢 relevant to your homelab: saves time and reduces errors in tracking services).",
+    "The tool includes a built-in port generator that suggests unused ports, preventing deployment failures due to port conflicts (🟢 relevant to your DevOps: streamlines container deployment and reduces friction).",
+    "Portracker provides real-time visibility: when a container is added or removed, the interface updates instantly, eliminating the need for spreadsheets or bookmarks (🟢 relevant to your homelab: keeps your server organized with minimal effort).",
+    "The author uses Portracker on a Synology NAS with dozens of services and finds it helps identify and remove unused containers, freeing up resources (🟢 relevant to your homelab: aids in resource optimization and cleanup).",
+    "Commenters note that using a reverse proxy like Traefik with Docker labels and internal networking can make port tracking unnecessary, as services are accessed via subdomains and ports are not exposed on the host (🟢 relevant to your Red Teaming: understanding reverse proxy setups is crucial for mapping attack surfaces; also relevant to homelab: a more advanced but cleaner approach)."
+  ],
+  "methodology_steps": [
+    "Deploy Portracker as a Docker container on your home server (e.g., using docker-compose with a volume mount to the Docker socket).",
+    "Access the Portracker web interface to see a live list of all running containers and their exposed ports.",
+    "Use the built-in port generator when deploying a new container to get a recommended unused port, avoiding conflicts.",
+    "Leverage the interface for troubleshooting: if a service fails, check Portracker to see if the port is open (app issue) or not (deployment issue).",
+    "Optionally, use the overview to identify and remove forgotten containers, freeing up system resources."
+  ],
+  "conclusions": [
+    "Portracker effectively solves the problem of port sprawl for self-hosters who manage multiple Docker containers, providing a simple, real-time view of all exposed ports without manual tracking. The author confirms it has become an essential part of his stack, replacing spreadsheets and bookmarks.",
+    "However, commenters argue that a properly configured reverse proxy (e.g., Traefik) with internal Docker networking eliminates the need for port tracking altogether, as services are accessed via domain names and ports are not exposed on the host. This suggests that Portracker is most useful for simpler setups or as a transitional tool until a reverse proxy is implemented.",
+    "For users with advanced networking setups (e.g., IPv6, Cloudflare tunnels), port tracking may be irrelevant, but for those starting out or managing many services without a reverse proxy, Portracker offers a low-friction solution."
+  ],
+  "personal_relevance_summary": "This article is directly relevant to your homelab and DevOps interests, as it introduces a practical tool (Portracker) for managing Docker container ports, a common pain point in self-hosted environments. As a programmer and Red Teamer, you can appreciate the automation and real-time visibility it provides, which reduces manual overhead and potential misconfigurations. The article also sparks a useful debate about reverse proxies (Traefik) and service discovery, which are valuable concepts for both securing and organizing your homelab. You can take away the tool itself for immediate use, and the discussion encourages you to consider more advanced networking setups that align with best practices in cybersecurity (e.g., minimizing exposed ports).",
+  "extra_advice": "Consider implementing a reverse proxy like Traefik or Nginx Proxy Manager alongside Portracker. This dual approach gives you both automatic port visibility (via Portracker) and secure, domain-based access to services without exposing ports on the host. For Red Teaming practice, use Portracker to audit your own homelab's exposed ports and then harden the setup by moving services behind a reverse proxy, simulating an attack surface reduction exercise.",
+  "source_url": "https://www.xda-developers.com/found-way-track-my-home-server-ports-without-using-spreadsheet/"
+}

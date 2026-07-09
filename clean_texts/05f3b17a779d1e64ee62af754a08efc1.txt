@@ -1,0 +1,476 @@
+I self-hosted my own Cloudflare Workers replacement, and it's incredibly simple
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+2
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I self-hosted my own Cloudflare Workers replacement, and it's incredibly simple
+By 
+Anurag Singh
+Published
+ Mar 25, 2026, 7:30 AM EDT
+Anurag is an experienced journalist and author who’s been covering tech for the past 5 years, with a focus on Windows, Android, and Apple. He’s written for sites like Android Police, Neowin, Dexerto, and MakeTechEasier. Anurag’s always pumped about tech and loves getting his hands on the latest gadgets. When he's not procrastinating, you’ll probably find him catching the newest movies in theaters or scrolling through Twitter from his bed. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+2
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Cloudflare Workers is a serverless platform that lets you run JavaScript at the edge, handling requests close to users without managing servers. It powers fast APIs, routing logic, and lightweight apps with minimal setup. What’s less obvious is that the runtime behind it, workerd, is open source. That means you can replicate a similar setup on your own machine or server without relying on Cloudflare’s infrastructure. I tried exactly that: self-hosting a Workers-like environment using workerd, and it turned out to be far simpler than expected, both in terms of setup and actually getting something useful running locally.
+✕
+ Remove Ads
+Related
+
+			The most underrated Windows feature is the built-in OpenSSH server
+		
+Windows can now behave like a Linux machine.
+Posts
+2
+By 
+Anurag Singh
+Mar 23, 2026
+
+                        Getting Workerd up and running
+               
+
+            It doesn't take a lot of time
+    
+Getting workerd running locally is surprisingly straightforward once you skip the unnecessary detours. The simplest path is to install 
+Node.js
+ using the official .msi installer from 
+nodejs.org
+. Don’t bother with Docker or package managers here; they add friction without helping. Once that’s done, open Command Prompt instead of PowerShell, since it tends to behave more predictably with Node and npx.
+From there, create a working folder anywhere you like and move into it. Inside this folder, you’ll need just two files. The first is your actual worker script. Create a file called 
+hello.js
+ and drop in the following:
+addEventListener
+(
+"fetch"
+,
+event
+ =>
+ {
+event.
+respondWith
+(
+newResponse
+(
+"Hello from workerd 🚀"
+));
+});
+
+This is your entire application. Every request that hits your server will be handled here. The second file is where workerd gets interesting. It doesn’t use a typical config format but instead relies on Cap’n Proto. Create a file called 
+config.capnp
+ and add this:
+using Workerd = import "/workerd/workerd.capnp";
+
+const config :Workerd.Config = (
+  services = [
+    (name = "main", worker = .mainWorker),
+  ],
+
+  sockets = [
+    (
+      name = "http",
+      address = "*:8080",
+      http = (),
+      service = "main"
+    ),
+  ]
+);
+
+const mainWorker :Workerd.Worker = (
+  serviceWorkerScript = embed "hello.js",
+  compatibilityDate = "2023-02-28",
+);
+
+This file wires everything together. It defines a service, binds it to a socket on port 8080, and tells workerd to execute your 
+hello.js
+ file when requests come in.
+Once both files are in place, you don’t install workerd globally — you just run it directly using:
+npx workerd serve 
+config.capnp
+✕
+ Remove Ads
+The first run will download the runtime automatically. After that, it spins up a local server. Open your browser and head to http://localhost:8080, and you should see your response immediately.
+It's worth noting how little infrastructure is actually needed. There’s no framework, build step, and complex routing unless you choose to add it. You’re effectively running the same runtime that powers Cloudflare Workers, but entirely on your own machine.
+
+                        Workerd is Cloudflare Workers without Cloudflare
+               
+
+            It runs the same execution model
+    
+ Once you have workerd running, you'll notice that at its core, you’re working with the same execution model as Cloudflare. It’s also an event-driven JavaScript that responds to HTTP requests using standard Web APIs like fetch, Request, and Response. That means anything you’d typically build as a lightweight backend can live here, whether it’s APIs, authentication layers, redirects, or even small proxy services.
+One of the more interesting capabilities is how workerd handles service composition. It lets you define multiple “nanoservices” in the same config and let them call each other internally instead of thinking in terms of separate microservices deployed across different machines. These calls don’t go over the network, so they’re extremely fast, almost like function calls. This is a very different model from traditional backend setups and even most serverless platforms, where services are isolated and communicate over HTTP.
+✕
+ Remove Ads
+You also get fine-grained control over routing and request handling. Because you define sockets and services explicitly in the Cap’n Proto config, you can decide exactly how traffic flows through your system. This makes it possible to use workerd as a programmable HTTP proxy, intercepting and modifying requests before they reach another service. That alone opens up use cases like custom caching layers, API gateways, or middleware-style processing without needing a full reverse proxy stack.
+
+                    Subscribe to the newsletter for practical self-hosting guidance
+                
+Get deeper workerd know-how: subscribe to the newsletter for hands-on how-tos, config examples, and troubleshooting tips focused on running Workers-like runtimes on your own machines.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+Compared to Cloudflare Workers, the biggest difference is everything around the runtime. With Cloudflare, you get global edge deployment, automatic scaling, built-in KV storage, and integrations like Durable Objects out of the box. With workerd, you only get the runtime itself.
+
+            Workerd hands you the control
+    
+Workerd comes with some trade-offs, but it also hands you control. You’re not locked into a vendor, and you can run the same Workers-style code anywhere, from your laptop to a VPS cluster. If you’re willing to handle deployment and infrastructure, workerd gives you a surprisingly powerful foundation to build your own edge-like platform on your own terms.
+While you're at it, check out 
+these five self-hosted tools you should install on every PC
+. You can even 
+replace Google services and save some cash by self-hosting the right tools
+, or explore other 
+tools that can help you automate your life
+.
+Related
+
+			I added one tool to my local LLM setup, and it finally stopped making things up
+		
+It finally knows what it's talking about
+Posts
+4
+By 
+Nolen Jonker
+Mar 23, 2026
+✕
+ Remove Ads
+Software and Services
+Software
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I don't pay for ChatGPT, Perplexity, Gemini, or Claude – I stick to my self-hosted LLMs instead
+		
+
+			Someone made their own Moltclaw personal assistant with a Raspberry Pi Zero 2W
+		
+
+			I set up Claude Code the way its creator does, and the difference is night and day
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+2
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Chris
+Chris
+Chris
+#ET615291
+Member since 2024-08-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+So it's serverless ... but it sets up a server running on your pc/server. OK.
+2026-03-26 05:01:43
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Adam
+Adam
+Adam
+#MN479559
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+10  Followers 
+View
+Serverless means code written and deployed without managing an underlying infrastructure. Not that there are literally no servers.
+2026-03-26 09:13:52
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Mar 24, 2026
+
+                                    A popular Python library just became a backdoor to your entire machine
+                            
+Mar 23, 2026
+
+                                    Stop reading raw server logs: These terminal tools turn them into visual dashboards
+                            
+Mar 23, 2026
+
+                                    I didn’t realize my Plex Pass lets other users stream remotely from my server for free
+                            
+Mar 23, 2026
+
+                                    I tried to make my Steam Deck a real server, and it’s better at it than it has any right to be
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:07
+
+                            The end of affordable PCs?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            Windows XP's Secret Themes
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

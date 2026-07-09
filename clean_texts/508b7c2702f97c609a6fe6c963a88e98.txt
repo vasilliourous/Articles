@@ -1,0 +1,942 @@
+Vibe coding is harder than regular coding : r/vibecoding
+Skip to main content
+Vibe coding is harder than regular coding : r/vibecoding
+Open menu
+Open navigation
+Go to Reddit Home
+r/vibecoding
+Get App
+
+        Get the Reddit app
+      
+Log In
+Log in to Reddit
+Expand user menu
+Open settings menu
+
+                  Go to vibecoding
+                
+r/vibecoding
+•
+9mo ago
+brayan_el
+
+      Vibe coding is harder than regular coding 
+
+      At first, vibe coding feels awesome, like you’re flying. But then out of nowhere you’ve got a headache and you’re swearing at the AI that just does whatever it feels like, sometimes even deleting stuff without warning. It tricks you into thinking you’re being super productive, but that illusion doesn’t last long.
+    
+
+      With regular coding, things are more straightforward. You actually understand how each piece fits together, and way fewer random surprises pop up compared to vibe coding. It’s deterministic: if you want to get to X, you just write the exact steps that lead you there. With AI, the problem is that language is ambiguous; it might interpret what you said differently, so it either doesn’t do what you want or does it in some weird, half-broken way.
+    
+
+      In the end, regular coding might feel slower at the start, but over time it’s way more productive. The productivity curve goes up. With vibe coding, it’s the opposite, the curve goes down, almost like it’s upside down.
+    
+
+      Edit: Thanks to everyone who commented. I learned a lot from all the different perspectives. I think vibe coding can definitely give you a headache (at least the way I was doing it—throwing huge tasks at it all at once). From what I’ve gathered, the healthier flow is structure → specify → review, instead of just dumping everything in one go. It’s not magic, and it doesn’t have to be treated like it.
+    
+
+      Read more
+      
+Share
+FigmaOfficial
+•
+Promoted
+Prompt your ideas to life with Figma Make. No more explaining your vision in a doc. Pitch your idea with an AI-prompted proof of concept.
+Learn More
+
+      figma.com
+    
+u/TryCursor
+•
+Promoted
+Cursor's Agent Skills: the smartest way to automate your development workflow.
+Sign Up
+
+      cursor.com
+    
+
+        Collapse video player
+      
+u/GitKraken
+•
+Promoted
+GitKraken vs Fork: More powerful conflict resolution, team collaboration & cross-platform consistency.
+Download
+
+      gitkraken.com
+    
+
+      
+      ratbastid
+    
+•
+9mo ago
+
+      20+ year developer then got kicked upstairs and hasn't touched code in probably 8 or 10 years.
+    
+
+      I'm developing again. I'm a programmer. I'm just not hand-writing the code.
+    
+
+      After several messy false-starts, I've gotten good at constraining the AI to exactly the architecture I intend, not letting it gallop ahead or assume my intentions. I'm 
+making
+ the software, I'm just not 
+typing
+ the software. And I'm MANY MANY times more efficient at it than I ever was as a senior+ engineer.
+    
+46
+[deleted]
+•
+9mo ago
+
+      Yeah, same. I think what people miss is that vibe coding is really vibe management. If you have coded in groups and understand the practices need to keep people on track and developing in the same code base without making it a complete clusterf*ck you can vibe code production ready apps.
+    
+
+      I never stop coding, even when I was managing a team. I would greenfield new ideas instead of getting myself in the middle of prod code because that messes up with teams dynamics.
+    
+
+      Compared to last year, I am coding as I have a team of 3 recent grads. Smart, fast, but also stupid, inexperienced, and quick to change requirements if unattended.
+    
+
+      My current workflow tries to minimize as much as possible prompting. I write issues in GH with detailed description and acceptance criteria, then I ask an instance of Claude to work on it and open a PR when ready. Once the PR is up I have copilot do a code review and Claude to address comments, if everything looks ok and tests are passing, I do functional testing, an AI assisted code review(asking to explain the implementation), and then I merge.
+    
+10
+
+      
+      Abject-Kitchen3198
+    
+•
+9mo ago
+
+      If you are a dev, is it faster than just programming it yourself (including validation, testing, maintaining, updating, fixing issues)?
+    
+
+      If you're not a dev, is it overall more productive than you defining the problem and letting a developer figure out the solution, asking you for more details and clarification as needed?
+    
+1
+
+      
+      mdn-mdn
+    
+•
+9mo ago
+
+      That’s a completely different thing from “vibe coding” , It’s a engineered ai development, you define rules and guideline, not “wishes” .
+    
+
+      I really don’t like the term “vibe”, one thing is developing manually or with ai, another is to follow the “vibe” and see what’s happen. Most people tend to make confusion between these two flows
+    
+1
+
+      
+      Synth_Sapiens
+    
+•
+9mo ago
+
+      There's no "vibe coding". It just regular software engineering with the 
+sole
+ difference being that the code is written by AI and not by a jun. 
+    
+1
+6
+ more replies
+      
+6
+ more replies
+      
+
+            Continue this thread
+          
+3
+ more replies
+      
+3
+ more replies
+      
+
+            Continue this thread
+          
+
+      
+      yubario
+    
+•
+9mo ago
+
+      Not really. It is literally impossible to code out faster than some of these models (like GPT-5 for example)
+    
+
+      You can be more direct with the AI and tell it exactly what to code out step by step and you would be significantly ahead than writing the code by hand.
+    
+
+      What it falls behind on is if you try to automate everything, such as the architecture and design itself on top of the code... then yeah you're going to have a mess overall.
+    
+
+      But if you're the one designing it and delegating the coding tasks to an AI, you'll be more productive than not.
+    
+42
+
+      
+      Big_Combination9890
+    
+•
+9mo ago
+
+      t is literally impossible to code out faster than some of these models (like GPT-5 for example)
+    
+
+      Yes, and that would be great if typing speed was an important metric for an actual programmers productivity.
+    
+
+      But, since actually writing code is probably one of the tasks we spend the least amount of time on, well, it's not.
+    
+6
+7
+ more replies
+      
+7
+ more replies
+      
+
+            Continue this thread
+          
+
+      
+      jordanpwalsh
+    
+•
+9mo ago
+
+      This is why I'm enjoying it. I'm a software engineer and feel like I'm still "engineering" just not typing much code.
+    
+1
+[deleted]
+•
+9mo ago
+
+      Yup. I'm a cloud engineer, I've never used AI generated code that I didn't fully understand. It can still take 1+ hr to produce 500 lines of good code with AI; you are constantly modifying it manually and reprompting it for the same blocks. The overall design still belongs to me though. 
+    
+1
+
+            Continue this thread
+          
+30
+ more replies
+      
+30
+ more replies
+      
+
+            Continue this thread
+          
+
+      
+      Big_Combination9890
+    
+•
+9mo ago
+
+      With AI, the problem is that language is ambiguous;
+    
+
+      NO, REALLY?
+    
+
+      Wow! Almost as if there was a reason computer scientists came up with formal languages to describe algorithms to a machine.
+    
+
+      As always, I am deeply amused how "vibe coding" rediscovers that there is a reason for all these things in real programming, pretty reminiscent to the way that crypto bros have slowly rediscovering that there is a reason banks exist :D
+    
+5
+u/TryCursor
+•
+Promoted
+Cursor's Agent Skills: the smartest way to automate your development workflow.
+Sign Up
+
+      cursor.com
+    
+
+        Collapse video player
+      
+
+      
+      helpprogram2
+    
+•
+9mo ago
+
+      Naaaaaaaaaaaaaaaaaaaa
+    
+6
+
+      
+      WeeklySoup4065
+    
+•
+9mo ago
+
+      You just don't know what you're doing bruh
+    
+8
+15
+ more replies
+      
+15
+ more replies
+      
+
+            Continue this thread
+          
+
+      
+      Ok_Counter_8887
+    
+•
+9mo ago
+
+      What a take 😂😂😂
+    
+3
+
+      
+      neocorps
+    
+•
+9mo ago
+
+      I've understood this:
+    
+
+      If you don't know architecture.. you ask Claude what is the best way to achieve what you want. Then you make a plan with that architecture, ask the details, how would you do it, which files must be created, what is the input/output, what is the expected returns of each part or function.
+    
+
+      You ask what are the best practices for each part or the entire thing.
+    
+
+      You plan for everything and make an overall plan of how to link everything together..
+    
+
+      Then, after everything is accounted for and you have asked sufficient questions, you ask it to create part by part while testing and confirming you are getting what you expect.
+    
+
+      You go slowly but surely completing every step, untill you are done.
+    
+
+      No need to code yourself, but you need to guide and confirm what you are getting.
+    
+3
+2
+ more replies
+      
+2
+ more replies
+      
+
+            Continue this thread
+          
+[deleted]
+•
+9mo ago
+Comment deleted by user
+
+      
+      SouthStreet1474
+    
+•
+9mo ago
+
+      this
+    
+1
+
+      
+      -n-i-c-k
+    
+•
+9mo ago
+
+      Ya skill issue I have no problems with it - ya things take time - and I plan a TON with the AI before I have them build any feature - but it’s actually pretty effective
+    
+2
+u/GitKraken
+•
+Promoted
+GitKraken vs Fork: More powerful conflict resolution, team collaboration & cross-platform consistency.
+Download
+
+      gitkraken.com
+    
+[deleted]
+•
+9mo ago
+
+      Yeah let me just go spend years learning how to code so I can code easily and efficiently 
+    
+2
+
+      
+      Ifnerite
+    
+•
+9mo ago
+
+      It isn't coding. You don't understand what you are doing and at some point neither does that llm, then it all goes wrong and there is no way back except to actually learn to code and probably start from the beginning with proper structure and style.
+    
+2
+
+      
+      sandspiegel
+    
+•
+9mo ago
+
+      I am currently working on a bigger project and collaborate with a friend on the App where I am the developer and he provides the content. We often have calls where I share my screen and we work on layout etc. together and I basically live code and he asks a question here and there if x and y is possible or not. I just often sit there and think to myself how lost I would be if AI coded the whole App and I had no idea how it even works under the hood. Yes it takes way longer doing almost everything myself but at least I know where to look if I want to change something or fix a bug or answer questions about the app if asked.
+    
+2
+
+      
+      rag1987
+    
+•
+8mo ago
+
+      "AI" will give good results doing something someone else has already done before, that this AI has been trained on, that it can now confidently regurgitate as yet another boilerplate implementation of a common problem.
+    
+
+      It is not going to give good results for problems that have a degree of uniqueness or require nuance. This will, at the very least, require some intervention from a person that understands the domain and the scope of the task, reviewed the proposed implementation, and had enough expertise to find it lacking. Or it's just going to go into a repository and become someone else's problem, as mountains of technical debt, bugs and security vulnerabilities accumulate at geometrical rates.
+    
+
+      This turns the whole, otherwise fun, engaging and fulfilling coding experience into a never ending, miserable code review session for your autocomplete subsystem. Someone else's too, if you happen to be the guy in charge of maintaining code quality at your company.
+    
+
+      And eventually the whole thing, initially being trained on relatively high quality code, is just going to choke on its own deluge of slop and stop working altogether.
+    
+
+      AI will not replace human, nor is it intended to do so.
+    
+https://thenewstack.io/ai-and-vibe-coding-are-radically-impacting-senior-devs-in-code-review/
+2
+
+      
+      StupidIncarnate
+    
+•
+9mo ago
+
+      Lack of ingrained mental model is what kills it the most, but then again, thats the same if youre reviewing someone's code. Free form pair programming is what you want, but you gotta look over its code with every step.
+    
+1
+
+      
+      neotorama
+    
+•
+9mo ago
+
+      I feel the same when the model doesn’t suit your brain conventions. It just implements the complex way. I experienced this many times. When you explain. “You are absolutely right, WE should not do this” smh.
+    
+1
+
+      
+      Maleficent_Mess6445
+    
+•
+9mo ago
+
+      An automobile is harder to drive than a Bullock cart.
+    
+1
+
+      
+      Input-X
+    
+•
+9mo ago
+
+      Eventually, frame work will all be built for ai navigation, smaller modules, and repeat patterns. Ai friendly code. I've sent the last 7 months literally studying source code and different frame works. Some quite large code bases. Breaking them down to what we believe to be more ai friendly systems.  workflows that complement ai and human collaboration.  It is very possible to set ur ai up so they can work/do more than the average setup.  Automation is a big part. Remove most if not all work that a script could automate. This keeps the context clean( actually, clean context is very powerful)  i think n 5 yrs, working with ai will be the norm,( kinda already is right) no code professionals in the workplace will become a norm.  Im hedging my bets on ai coding system becoming increasingly more in demand in the coming years. So for me I enjoying these early wild west days learning as much as I can about ai in general at the  production level. And im enjoying it.
+    
+1
+New to Reddit?
+          
+
+                  Create your account and connect with a world of communities.
+                
+
+        Continue with Email
+      
+
+              Continue with Phone Number
+            
+By continuing, you agree to our
+User Agreement
+and acknowledge that you understand the
+Privacy Policy
+.
+  
+
+      Related Answers Section
+    
+
+      Related Answers
+    
+
+    Vibe coding tools and resources
+  
+
+    Vibe coding versus AI-assisted development
+  
+
+    Innovative AI tools for creative coding
+  
+
+    Unique coding projects to explore vibes
+  
+
+    How to embrace creativity in programming
+  
+
+    More posts you may like
+  
+ Vibe coding is a horrible experience 
+r/webdev
+•
+9mo ago
+
+            Vibe coding is a horrible experience
+          
+621
+ upvotes
+            
+·
+247
+ comments
+          
+
+            Atlassian_Official 
+•
+Promoted
+
+    Deliver great service experiences with the ITSM platform powered by AI.
+  
+
+      atlassian.com
+    
+Learn More
+ Hate for vibe coding - small rant ! 
+r/vibecoding
+•
+2mo ago
+
+            Hate for vibe coding - small rant !
+          
+9
+ upvotes
+            
+·
+47
+ comments
+          
+ What's the hype with Vibe Coding? 
+r/vibecoding
+•
+5d ago
+
+            What's the hype with Vibe Coding?
+          
+10
+ upvotes
+            
+·
+50
+ comments
+          
+ Vibe coding has become a lot of sitting around 
+r/vibecoding
+•
+5d ago
+
+            Vibe coding has become a lot of sitting around
+          
+6
+ upvotes
+            
+·
+28
+ comments
+          
+ Is Vibe Coding Actually Harder Than We Admit? 
+r/vibecoding
+•
+3mo ago
+
+            Is Vibe Coding Actually Harder Than We Admit?
+          
+73
+ upvotes
+            
+·
+86
+ comments
+          
+ Is it just me or is vibe coding actually solid? 
+r/vibecoding
+•
+11d ago
+
+            Is it just me or is vibe coding actually solid?
+          
+170
+ upvotes
+            
+·
+227
+ comments
+          
+ After two weeks of back-and-forth, I'm convinced vibe coding is just expensive debugging with extra steps 
+r/vibecoding
+•
+6mo ago
+
+            After two weeks of back-and-forth, I'm convinced vibe coding is just expensive debugging with extra steps
+          
+132
+ upvotes
+            
+·
+212
+ comments
+          
+ Is it just me or you too? Vibe coding is cool… until one point. 
+r/vibecoding
+•
+12d ago
+
+            Is it just me or you too? Vibe coding is cool… until one point.
+          
+13
+ upvotes
+            
+·
+76
+ comments
+          
+ My hot take on vibecoding 
+r/vibecoding
+•
+2mo ago
+
+            My hot take on vibecoding
+          
+95
+ upvotes
+            
+·
+109
+ comments
+          
+ Shipping Fast Feels Better Than Perfect Planning 
+r/SaaS
+•
+10mo ago
+
+            Shipping Fast Feels Better Than Perfect Planning
+          
+4
+ upvotes
+            
+            
+          
+ Chasing bigger models is a distraction; Context engineering is the real unlock 
+r/AgentsOfAI
+•
+9mo ago
+
+            Chasing bigger models is a distraction; Context engineering is the real unlock
+          
+22
+ upvotes
+            
+·
+6
+ comments
+          
+ Anyone else feels like vibe coding hits a wall after a point ? 
+r/vibecoding
+•
+1mo ago
+
+            Anyone else feels like vibe coding hits a wall after a point ?
+          
+196
+ upvotes
+            
+·
+179
+ comments
+          
+ Ive been vibe coding too much. 
+r/vibecoding
+•
+4mo ago
+
+            Ive been vibe coding too much.
+          
+92
+ upvotes
+            
+·
+71
+ comments
+          
+ Long term viability of vibe coding 
+r/vibecoding
+•
+8d ago
+
+            Long term viability of vibe coding
+          
+5
+ upvotes
+            
+·
+49
+ comments
+          
+ Isn't vibe coding overrated? 
+r/vibecoding
+•
+3mo ago
+
+            Isn't vibe coding overrated?
+          
+37
+ upvotes
+            
+·
+73
+ comments
+          
+ The brutal truth about vibe coding and why you should care 
+r/vibecoding
+•
+5mo ago
+
+            The brutal truth about vibe coding and why you should care
+          
+843
+ upvotes
+            
+·
+278
+ comments
+          
+ What are your thoughts on this perspective of vibe coding? 
+r/vibecoding
+•
+1y ago
+
+            What are your thoughts on this perspective of vibe coding?
+          
+64
+ upvotes
+            
+·
+83
+ comments
+          
+ In defense of vibe coding 
+r/vibecoding
+•
+5mo ago
+
+            In defense of vibe coding
+          
+226
+ upvotes
+            
+·
+88
+ comments
+          
+ Are we trading software quality for "vibe coding" with AI tools? 
+r/vibecoding
+•
+1y ago
+
+            Are we trading software quality for "vibe coding" with AI tools?
+          
+17
+ upvotes
+            
+·
+34
+ comments
+          
+ Vibe Coding is addicting 
+r/vibecoding
+•
+7d ago
+
+            Vibe Coding is addicting
+          
+25
+ upvotes
+            
+·
+20
+ comments
+          
+ Are we trading software quality for "vibe coding" with AI tools? 
+r/ExperiencedDevs
+•
+1y ago
+
+            Are we trading software quality for "vibe coding" with AI tools?
+          
+21
+ comments
+          
+ I finally tried "vibe coding" just to see if the hype was real. 30 minutes later, I have a fully working (and weirdly addictive) game? 
+r/vibecoding
+•
+2mo ago
+
+            I finally tried "vibe coding" just to see if the hype was real. 30 minutes later, I have a fully working (and weirdly addictive) game?
+          
+64
+ upvotes
+            
+·
+66
+ comments
+          
+ what vibe coding can't achieve (right now)? 
+r/vibecoding
+•
+1mo ago
+
+            what vibe coding can't achieve (right now)?
+          
+1
+ upvote
+            
+·
+17
+ comments
+          
+ Vibe coding is ok 
+r/cursor
+•
+9mo ago
+
+            Vibe coding is ok
+          
+74
+ comments
+          
+ Spent 70 hours vibe coding this week, what I learned. 
+r/vibecoding
+•
+3mo ago
+
+            Spent 70 hours vibe coding this week, what I learned.
+          
+57
+ upvotes
+            
+·
+43
+ comments
+          
+
+          View Post in
+        
+日本語
+        
+      
+Français
+        
+      
+हिन्दी
+        
+      
+Русский
+        
+      
+Português (Brasil)
+        
+      
+简体中文
+        
+      
+
+          See more
+        
+
+          See fewer
+        
+한국어
+        
+      
+Čeština
+        
+      
+ไทย
+        
+      
+Ελληνικά
+        
+      
+Svenska
+        
+      
+Українська
+        
+      
+
+      VibeJam is happening!
+    
+ Public
+  
+Anyone can view, post, and comment to this community
+0
+0
+
+        Top Posts
+      
+ Reddit 
+reReddit: Top posts of August 20, 2025
+ Reddit 
+reReddit: Top posts of August 2025
+ Reddit 
+reReddit: Top posts of 2025
+Reddit Rules
+Privacy Policy
+User Agreement
+Accessibility
+Reddit, Inc. © 2026. All rights reserved.
+Expand Navigation
+Collapse Navigation
+&nbsp;
+&nbsp;
+&nbsp;
+RESOURCES
+About Reddit
+Advertise
+Developer Platform
+Reddit Pro
+
+      BETA
+    
+Help
+Blog
+Careers
+Press
+Best of Reddit
+Reddit Rules
+Privacy Policy
+User Agreement
+Accessibility
+Reddit, Inc. © 2026. All rights reserved.

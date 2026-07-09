@@ -1,0 +1,528 @@
+Your TP-Link router is under attack from Russian state hackers | PCWorld
+Sign up for PCWorld Newsletters
+Receive the latest news, reviews, deals and how-tos straight to your inbox.
+Don't Miss Out
+No, Thanks
+Consumer AI
+Performance
+Privacy
+Productivity
+More
+Accessories
+Business
+Entertainment
+Gaming
+Laptops
+Mobile
+Monitors
+PCs & Components
+Security
+Smart Home Security
+Software
+Storage
+Streaming
+Wi-Fi & Networks
+Windows
+By Story Type
+News
+Best Picks
+Reviews
+How-To
+Deals
+Newsletters
+Digital Magazine
+Digital Magazine – Subscribe
+Digital Magazine – Info
+Smart Answers
+Client Content
+BrandPosts
+The 1Password Guide to Password Managers
+The Avast Online Security Buyer’s Guide
+The Dell 2026 buying guide: Laptops, monitors and Alienware gaming gear
+The 2026 ECOVACS Robot Vacuum & Window Robot Buying Guide
+The GIGABYTE Guide to AI Gaming Laptops
+The MSI AI PC Buyer’s Guide
+The MSI Guide to Wi-Fi 7: How to Fix Wireless Dead Zones and Upgrade to Wi-Fi 7 at Home
+The Norton Security Buyer’s Guide
+The Norton Small Business Security Buyer’s Guide
+The ROG Custom Gaming Keyboard Buyer’s Guide
+The Seagate & LaCie External Storage Buyer’s Guide
+The T-Mobile 5G and Fiber Home Internet Buying Guide
+The ZOTAC GAMING Graphics Card & MEK PC Buyer’s Guide
+Skip to content
+Menu
+Consumer AI
+Performance
+Privacy
+Productivity
+More
+Expand More
+Accessories
+Business
+Entertainment
+Gaming
+Laptops
+Mobile
+Monitors
+PCs & Components
+Security
+Smart Home Security
+Software
+Storage
+Streaming
+Wi-Fi & Networks
+Windows
+By Story Type
+Expand By Story Type
+News
+Best Picks
+Reviews
+How-To
+Deals
+Newsletters
+Digital Magazine
+Expand Digital Magazine
+Digital Magazine – Subscribe
+Digital Magazine – Info
+Smart Answers
+Client Content
+Expand Client Content
+BrandPosts
+The 1Password Guide to Password Managers
+The Avast Online Security Buyer’s Guide
+The Dell 2026 buying guide: Laptops, monitors and Alienware gaming gear
+The 2026 ECOVACS Robot Vacuum & Window Robot Buying Guide
+The GIGABYTE Guide to AI Gaming Laptops
+The MSI AI PC Buyer’s Guide
+The MSI Guide to Wi-Fi 7: How to Fix Wireless Dead Zones and Upgrade to Wi-Fi 7 at Home
+The Norton Security Buyer’s Guide
+The Norton Small Business Security Buyer’s Guide
+The ROG Custom Gaming Keyboard Buyer’s Guide
+The Seagate & LaCie External Storage Buyer’s Guide
+The T-Mobile 5G and Fiber Home Internet Buying Guide
+The ZOTAC GAMING Graphics Card & MEK PC Buyer’s Guide
+Type your search and hit enter
+Hot Topics
+Best laptops
+Best VPN
+Best antivirus
+Best SSDs
+Best monitors
+Laptop deals
+Desktop PC deals
+Newsletters
+When you purchase through links in our articles, we may earn a small commission. This doesn't affect our 
+editorial independence
+.
+Home
+News
+Wi-Fi & Networks News
+
+				News
+				
+Your TP-Link router is under attack from Russian state hackers
+
+				Russian hacking group Fancy Bear is targeting TP-Link routers worldwide. Update your router firmware now.			
+ By 
+Laura Pippig
+Staff Writer, PC-WELT 
+Apr 9, 2026 7:13 am PDT
+Image: Mark Hachman / Foundry
+Summary created by Smart Answers AI
+In summary:
+PCWorld reports that Russian state hackers from ‘Fancy Bear’ are exploiting TP-Link router vulnerabilities to conduct DNS hijacking attacks targeting personal and government data.
+The campaign redirects users to fake websites to steal passwords and banking information, with German intelligence, FBI, and NSA investigating these router infiltrations.
+Users should immediately update router firmware and watch for suspicious redirects or security warnings to protect against these ongoing attacks.
+Various authorities are now issuing warnings that affect users of certain router models. Said routers are reportedly the target of a large-scale hacking campaign by Russian actors. The concerns center around TP-Link routers, although other manufacturers are also said to be affected.
+The hacker group “Fancy Bear” (also known as “APT 28”) is believed to be behind the attacks on these routers. In the past, they’ve carried out attacks on companies supporting Ukraine in the war against Russia. They’re also credited with an attack on German air traffic control and on the German SPD party’s headquarters.
+This warning
+ (machine translated) from Germany’s domestic intelligence agency states that the group has “infiltrated vulnerable TP-Link internet routers worldwide to obtain military information, government information, or information about critical infrastructure.”
+According to 
+Spiegel Netzwelt
+ (also machine translated), certain companies and households were reportedly informed of the threat back in mid-March. The letters contained details regarding affected devices. The FBI and NSA are also said to be involved in the investigations.
+External VS NAS
+More Videos
+0 seconds of 9 minutes, 40 seconds
+Volume 0%
+Press shift question mark to access a list of keyboard shortcuts
+Keyboard Shortcuts
+Enabled
+Disabled
+Shortcuts Open/Close
+/ or ?
+Play/Pause
+SPACE
+Increase Volume
+↑
+Decrease Volume
+↓
+Seek Forward
+→
+Seek Backward
+←
+Captions On/Off
+c
+Fullscreen/Exit Fullscreen
+f
+Mute/Unmute
+m
+Decrease Caption Size
+-
+Increase Caption Size
++ or =
+Seek %
+0-9
+Next Up
+Carsair Gallion 100
+02:33
+Live
+00:00
+09:40
+09:40
+What the threat looks like
+These router attacks fall under the category of DNS hijacking, where hackers attempt to redirect users to fake websites in hopes that they’ll disclose personal information, passwords, or bank details. Alternatively, users are infected with malware after downloading files.
+The hackers are thought to be mainly targeting information that could assist the Russian military intelligence service GRU. In Germany, international investigators have already identified 30 devices that could be abused for this type of attack. The first incidents are said to date back to at least 2024.
+Recommended For You
+Skip the Microsoft 365 subscription with this free office suite
+PCWorld
+Undo
+Samsung is reportedly ditching Windows on its Galaxy Book laptops
+PCWorld
+Undo
+Why This Electric SUV Is Turning Heads
+Suzuki NZ
+ | 
+Sponsored
+Sponsored
+Undo
+Powered by Taboola
+Powered by Taboola
+Don't miss a thing
+Receive the latest news, reviews and how-tos straight to your inbox. Plus, discover great tech deals.
+By submitting your information, you agree to our 
+PRIVACY POLICY
+.
+Sign up now
+How to protect yourself
+The attackers are exploiting a known security vulnerability in TP-Link routers, which has already been patched by the manufacturer. Anyone with a TP-Link router should therefore check as soon as possible whether all the latest router firmware updates have been installed.
+Also, watch out for typical signs of DNS hijacking:
+Frequent redirects to other websites
+Security warnings from your browser or antivirus software
+Increased frequency of pop-ups and suspicious ads
+Unusually long loading times despite a stable internet connection
+Changed DNS servers (you can check these in your router’s settings)
+In similar news, the US government 
+recently banned the import of foreign routers
+ due to fears of espionage and malicious attacks on critical network infrastructure. Although TP-Link has had an American branch for several years, the company originally hails from China and is therefore also affected by the ban.
+Don't miss a thing
+Receive the latest news, reviews and how-tos straight to your inbox. Plus, discover great tech deals.
+By submitting your information, you agree to our 
+PRIVACY POLICY
+.
+Sign up now
+This article originally appeared on our sister publication 
+PC-WELT
+ and was translated and localized from German.
+
+		Author: Laura Pippig
+, Staff Writer, PC-WELT		
+Laura is an enthusiastic gamer as well as a movie and TV fan. After studying communication science, she went straight into a job at PCMagazin and Connect Living. Since then, she has been writing about everything to do with PCs and technology topics, and has been a permanent editor at our German sister site PC-WELT since May 2024.
+ Recent stories by Laura Pippig:
+
+									Microsoft Edge stores your passwords in plaintext RAM… on purpose								
+
+									Unpatched Microsoft Defender flaw lets hackers gain admin access								
+
+									Security expert publishes Windows exploit after Microsoft went silent								
+It’s $99.99/year for Microsoft 365, but just $33 for the lifetime version of Office
+Discover
+Windows 11's April update is now breaking third-party backup apps
+Discover
+tritonhearing.co.nz
+Pukekohe We Are Looking for 160 People Who Want to Hear Better
+Read More
+Skip
+Buying a laptop? These are the 9 best laptops you can buy today
+Discover
+Microsoft explains why it killed Windows phone activation
+Discover
+Pukekohe We Are Looking for 160 People Who Want to Hear Better
+tritonhearing.co.nz
+ | 
+Sponsored
+Sponsored
+Undo
+This 5-Second Fix Is Saving Thousands Of Seniors From an ER Trip
+Healthnewsinsider
+ | 
+Sponsored
+Sponsored
+Undo
+If Your Mom Still Uses a Towel Bar to Get Out of the Shower, Read This Now
+Healthnewsinsider
+ | 
+Sponsored
+Sponsored
+Undo
+I Was Embarrassed By My Toes Until I Found This Simple Home Method
+Orivelle
+ | 
+Sponsored
+Sponsored
+Read More
+Undo
+If You Have Thick Nails, Try This Routine After Your Shower
+Orivelle
+ | 
+Sponsored
+Sponsored
+Read More
+Undo
+by Taboola
+by Taboola
+You might be interested in the content above
+-
+ | 
+Sponsored
+Sponsored
+Undo
+East Coast Farmer's "Magic Potion" Stuns Golf Club
+Koru Health
+ | 
+Sponsored
+Sponsored
+Undo
+Beauticians Say This $36 Lip Plumping Device "Is Actually Worth It"
+The Insider's Choice
+ | 
+Sponsored
+Sponsored
+Learn More
+Undo
+People From AUCKLAND Love This Casino Game
+MyJackpot
+ | 
+Sponsored
+Sponsored
+Play Game
+Undo
+People From PUKEKOHE LOVE these free slots.
+MyJackpot
+ | 
+Sponsored
+Sponsored
+Play Game
+Undo
+Viral $36 Lip Plumper Is Gaining Attention Quickly
+The Insider's Choice
+ | 
+Sponsored
+Sponsored
+Learn More
+Undo
+
+			PCWorld helps you navigate the PC ecosystem to find the products you want and the advice you need to get the job done.	
+			
+Policies
+Expand Policies
+Privacy Policy
+Cookie Policy
+Terms of Service
+Copyright Notice
+European Privacy Settings
+Member Preferences
+Editorial independence
+Licensing & Eprints
+California: Do not Sell my Personal Info
+About
+Expand About
+About Us
+Advertise
+Ad Choice
+Contact Us
+Foundry Careers
+GamePro
+Smart Answers
+PCWorld Categories
+Expand submenu for PCWorld Categories
+Business
+Laptop
+Mobile
+PC Hardware
+Storage
+Deals
+Subscribe
+Expand submenu for Subscribe
+Digital Magazine - Subscribe
+Digital Magazine - Info
+Gift Subscription
+Newsletters
+© 2026 FoundryCo, Inc.
+Explore the Foundry Network +
+Tech Advisor
+Macworld
+Top Of Page
+
+					Do Not Sell or Share My Personal Information				
+
+					Privacy Settings				
+Advertisement
+x
+Menu
+Consumer AI
+Performance
+Privacy
+Productivity
+More
+Expand More
+Accessories
+Business
+Entertainment
+Gaming
+Laptops
+Mobile
+Monitors
+PCs & Components
+Security
+Smart Home Security
+Software
+Storage
+Streaming
+Wi-Fi & Networks
+Windows
+By Story Type
+Expand By Story Type
+News
+Best Picks
+Reviews
+How-To
+Deals
+Newsletters
+Digital Magazine
+Expand Digital Magazine
+Digital Magazine – Subscribe
+Digital Magazine – Info
+Smart Answers
+Client Content
+Expand Client Content
+BrandPosts
+The 1Password Guide to Password Managers
+The Avast Online Security Buyer’s Guide
+The Dell 2026 buying guide: Laptops, monitors and Alienware gaming gear
+The 2026 ECOVACS Robot Vacuum & Window Robot Buying Guide
+The GIGABYTE Guide to AI Gaming Laptops
+The MSI AI PC Buyer’s Guide
+The MSI Guide to Wi-Fi 7: How to Fix Wireless Dead Zones and Upgrade to Wi-Fi 7 at Home
+The Norton Security Buyer’s Guide
+The Norton Small Business Security Buyer’s Guide
+The ROG Custom Gaming Keyboard Buyer’s Guide
+The Seagate & LaCie External Storage Buyer’s Guide
+The T-Mobile 5G and Fiber Home Internet Buying Guide
+The ZOTAC GAMING Graphics Card & MEK PC Buyer’s Guide
+Type your search and hit enter
+Hot Topics
+Best laptops
+Best VPN
+Best antivirus
+Best SSDs
+Best monitors
+Laptop deals
+Desktop PC deals
+Newsletters
+When you purchase through links in our articles, we may earn a small commission. This doesn't affect our 
+editorial independence
+.
+Keep on reading
+Samsung is reportedly ditching Windows on its Galaxy Book laptops
+According to a report, future Galaxy Book laptops will forego Windows 11 in favor of Android 17 and One UI 9.
+PCWorld
+Undo
+It’s $99.99/year for Microsoft 365, but just $33 for the lifetime version of Office
+Pay once and download Word, Excel, PowerPoint, Outlook, and more to your PC for lifelong use, now on sale for $32.97 (MSRP $219.99).
+PCWorld
+Undo
+I tried Claude Design for half an hour. I’m already locked out for a week
+With a single prompt, Anthropic’s new design tool created an elaborate webpage design in minutes. Those minutes cost me an entire week of Claude Design usage.
+PCWorld
+Undo
+Microsoft explains why it killed Windows phone activation
+In December, Microsoft unexpectedly removed the last remaining method for activating Windows without an internet connection. Now we know why.
+PCWorld
+Undo
+'
+        
+'
+    
+'
+
+'
+        
+'
+    
+'
+
+Skip the Microsoft 365 subscription with this free office suite
+OnlyOffice gives you secure document editing, spreadsheets, and presentations in the cloud or on your desktop free of charge.
+PCWorld
+Undo
+Pukekohe We Are Looking for 160 People Who Want to Hear Better
+tritonhearing.co.nz
+ | 
+Sponsored
+Sponsored
+Undo
+This 5-Second Fix Is Saving Thousands Of Seniors From an ER Trip
+Healthnewsinsider
+ | 
+Sponsored
+Sponsored
+Undo
+Windows 11 restarts several times after a recent update? Don't panic
+Microsoft says it's normal if Windows 11 restarts two or three times after recent or upcoming updates. Here's what you should do afterwards.
+PCWorld
+Undo
+Buying a laptop? These are the 9 best laptops you can buy today
+To find the best laptops, we employ thorough hands-on, testing-based evaluations of laptop PCs from all the top brands. Our recommendations pinpoint the best budget, premium, gaming laptop, 2-in-1's, and even Chromebook.
+PCWorld
+Undo
+Microsoft VP releases free Windows tool inspired by macOS feature
+Peek Desktop is a free Windows tool by Scott Hanselman that hides all open windows with a single desktop click.
+PCWorld
+Undo
+by Taboola
+by Taboola
+Brought to you by
+-
+ | 
+Sponsored
+Sponsored
+Undo
+Windows 11's April update is now breaking third-party backup apps
+Windows 11 update KB5083769 is causing software failures with several backup programs. Microsoft hasn't released a fix yet.
+PCWorld
+Undo
+10 Microsoft account settings I wish I had checked sooner
+Secure your Microsoft account, secure your PC. Make sure these account settings in particular are properly set!
+PCWorld
+Undo
+If Your Mom Still Uses a Towel Bar to Get Out of the Shower, Read This Now
+Healthnewsinsider
+ | 
+Sponsored
+Sponsored
+Undo
+I Was Embarrassed By My Toes Until I Found This Simple Home Method
+Orivelle
+ | 
+Sponsored
+Sponsored
+Read More
+Undo
+You don't need extra antivirus on Windows 11, Microsoft officially says
+In a blog post, Microsoft says Defender is enough for most Windows 11 users. No extra antivirus needed if you keep defaults enabled and update regularly.
+PCWorld
+Undo
+I wanted to like this Lenovo laptop, but it's just too slow
+The Lenovo IdeaPad 5a is a budget Windows 2-in-1 that offers a comfortable keyboard and lots of connectivity. However, AMD’s quad-core Ryzen AI 5 430 doesn’t offer great performance, even for an entry-level 2-in-1.
+PCWorld
+Undo

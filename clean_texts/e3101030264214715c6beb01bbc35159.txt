@@ -1,0 +1,231 @@
+Google’s Gemini can now run on a single air-gapped server — and vanish when you pull the plug | VentureBeat
+Orchestration
+Infrastructure
+Data
+Security
+Events
+More
+Newsletters
+Google’s Gemini can now run on a single air-gapped server — and vanish when you pull the plug
+Michael Nuñez
+Published
+
+    5:00 am, PT, April 22, 2026
+  
+Updated
+
+    4:59 pm, PT, April 22, 2026
+  
+Credit: VentureBeat made with Midjourney
+Cirrascale Cloud Services
+ today announced it has expanded its partnership with 
+Google Cloud 
+to deliver the 
+Gemini model
+on-premises
+ through 
+Google Distributed Cloud
+, making it the first neocloud provider to offer Google's most advanced AI model as a fully private, disconnected appliance. The announcement, timed to coincide with 
+Google Cloud Next 2026
+ in Las Vegas, addresses a stubborn problem that has plagued regulated industries since the generative AI boom began: how to access frontier-class AI models without surrendering control of your data.
+The offering packages Gemini into a 
+Dell-manufactured, Google-certified hardware appliance
+ equipped with eight Nvidia GPUs and wrapped in confidential computing protections. Enterprises and government agencies can deploy the system inside Cirrascale's data centers or their own facilities, fully disconnected from the internet and from Google's cloud infrastructure. The product enters preview immediately, with general availability expected in June or July.
+In an exclusive interview with VentureBeat ahead of the announcement, Dave Driggers, CEO of Cirrascale Cloud Services, described the deployment as "the next step of the partnership” and “being able to offer their most important model they have, which is Gemini." He was emphatic about what customers would be getting: "It is full blown Gemini. It's not pulled,” he told VentureBeat. “Nothing's missing from it, and it'll be available in a private scenario, so that we can guarantee them that their data is secure, their inputs are secure, their outputs are secure."
+0:22
+/
+11:21
+Keep Watching
+The move signals a deepening shift in the enterprise AI market, where the most capable models are migrating out of hyperscaler data centers and into customers' own racks — a reversal of the cloud computing orthodoxy that defined the past decade.
+The impossible tradeoff that kept banks and governments on the AI sidelines
+For years, organizations in financial services, healthcare, defense and government faced a binary choice: access the most powerful AI models through public cloud APIs, exposing sensitive data to third-party infrastructure, or settle for less capable open-source models they could host themselves. Cirrascale's new offering attempts to eliminate that tradeoff entirely.
+Driggers described how the trust problem escalated in stages. First, companies worried about handing their proprietary data to hyperscalers. Then came a deeper realization. "They started realizing, holy crap, when my users type stuff in, they're giving private information away — and the output is private too," Driggers told VentureBeat. "And then the hyperscalers said, 'Your prompts and the responses? That's our stuff. We need that in order to answer your question.'" That was the moment, he argued, when the demand for fully private AI became impossible to ignore.
+Unlike 
+Google Distributed Cloud
+, which Google already offers as its own on-premises cloud extension, the Cirrascale deployment places the actual model — weights and all — outside of Google's infrastructure entirely. "Google doesn't own this hardware. We own the hardware, or the customer owns the hardware," Driggers said. "It is completely outside of Google."
+Driggers drew a sharp distinction between this offering and what competitors provide. When asked about Microsoft Azure's 
+on-premises deployments with OpenAI models
+ and 
+AWS Outposts
+, he was blunt: "Those are a lot different. This is the actual model being deployed on prem outside of their cloud. It's not a cut down version. It's the actual model." 
+Pull the plug and the model vanishes: how confidential computing guards Google's crown jewel
+The technical underpinnings of the deployment reveal how seriously both Google and Cirrascale are treating the security question. The Gemini model resides entirely in volatile memory — not on persistent storage. "As soon as the power is off, the model is gone," Driggers explained. User sessions operate through caches that clear automatically when a session ends. "A company's user inputs, once that session's over, they're gone. They can be saved, but by default, they're gone," he said.
+Perhaps the most striking security feature is what happens when someone attempts to tamper with the appliance. Driggers described a mechanism that effectively renders the machine inoperable: "You do anything that is against confidential compute, and it's gone. Not only does the machine turn off, and therefore the model is gone, it actually puts in a marker that says, 'You violated the confidential compute.' That machine has to come back to us, or back to Dell or back to Google." He characterized the appliance as something that "does time bomb itself if something goes wrong."
+This level of protection reflects Google's own anxiety about releasing its flagship model's weights into environments it doesn't control. The appliance is effectively a vault: the model runs inside it, but nobody — not even the customer — can extract or inspect the weights. The confidential computing envelope ensures that even physical possession of the hardware doesn't grant access to the model's intellectual property.
+When Google releases a new version of Gemini, the appliance needs to reconnect — but only briefly, and through a private channel. "It does have to get connected back to Google to load the new model. But that can go via a private connection," Driggers said. For the most security-sensitive customers who can never allow their machine to connect to an outside network, Cirrascale offers a physical swap: "The server will be unplugged, purged, all the data gone, guaranteed it's gone, a new server will show up with a new version of the model."
+From Wall Street to drug labs, the rush for air-gapped AI is accelerating
+Driggers identified three primary drivers of demand: trust, security and guaranteed performance. Financial services institutions top the list. "They've got regulatory issues where they can't have something out of their control. They've got to be the one who determines where everything is. It's got to be air gap," Driggers said. The minimum deployment footprint — a single eight-GPU server — makes the product accessible in a way that Google's own private offerings do not. Running Gemini on Google's TPU-based infrastructure, Driggers noted, requires a much larger commitment. "If you want a private [instance] from Google, they require a much bigger bite, because to build something private for you, Google requires a gigantic footprint. Here we can do it down to a single machine."
+Beyond finance, Driggers pointed to drug discovery, medical data, public-sector research, and any business handling personal information. He also flagged an increasingly critical use case: data sovereignty. "How about your business that's doing business outside of the United States, and now you've got data sovereignty laws in places where GCP is not? We can provide private Gemini in these smaller countries where the data can't leave."
+The public sector is another major target. Cirrascale launched a dedicated 
+Government Services division
+ in March as part of its earlier partnership with Google Public Sector around the GPAR (Google Public Sector Program for Accelerated Research) initiative. That program provides higher education and research institutions access to AI tools including 
+AlphaFold
+, AI Co-Scientist, and Gemini Enterprise for Education. Today's announcement extends that relationship from the research tooling layer to the model itself.
+The performance guarantee is the third pillar. Driggers noted that frontier models accessed through public APIs deliver inconsistent response times — a problem for mission-critical business applications. The private deployment eliminates that variability. Cirrascale layers management software on top of the Gemini appliance that allows administrators to prioritize users, allocate tokens by role, adjust context window sizes, and load-balance across multiple appliances and regions. "Your primary data scientists or your programmers may need to have really large context windows and get priority, especially maybe nine to five," Driggers explained, "but yet, the rest of the time, they want to share the Gemini experience over a wider group of people." He also noted that agentic AI workloads, which can run around the clock, benefit from the ability to consume unused capacity during off-peak hours — a scheduling flexibility that public cloud deployments don't easily support.
+Seat licenses, token billing and all-you-can-eat pricing: a model built for enterprise flexibility
+The pricing model reflects Cirrascale's broader philosophy of meeting customers where they are. Driggers described several consumption options: seat-based licensing (with both enterprise and standard tiers), per-token billing, and flat "all-you-can-eat" pricing per appliance. The minimum commitment is a single dedicated server — the appliances are not shared between customers in any configuration. "We'll meet the customer, what they're used to," Driggers said. "If they're currently taking a seat license, we'll create a seat license for them."
+Customers can also choose to purchase the hardware outright while still consuming Gemini as a managed service, an arrangement Cirrascale has offered since its earliest days in the AI wave. Driggers said OpenAI has been a customer since 2016 or 2017, and in that engagement, OpenAI purchased its own GPUs while Cirrascale "took those GPUs, incorporated them into our servers and storage and networking, and then presented it back as a cloud service to them so they didn't have to manage anything."
+That flexible ownership model is particularly relevant for universities and government-funded research institutions, where mandates often require a specific mix of capital expenditure, operating expenditure, and personnel investment. "A lot of government funding requires a mixture of CapEx, OPEX and employment development," Driggers said. "So we allow that as well."
+Inside the neocloud that built the world's first eight-GPU server — and just landed Google's biggest AI model
+Cirrascale's announcement arrives during a period of explosive growth for the 
+neocloud sector 
+— the tier of specialized AI cloud providers that sit between the hyperscalers and traditional hosting companies. The neocloud market is projected to be 
+worth $35.22 billion
+ in 2026 and is growing at a compound annual growth rate of 46.37%, according to Mordor Intelligence. Leading neocloud providers include 
+CoreWeave
+, 
+Crusoe Cloud
+, 
+Lambda
+, 
+Nebius
+ and 
+Vultr
+, and these companies specialize in GPU-as-a-Service for AI and high-performance computing workloads.
+But Cirrascale occupies a different niche within this booming category. While companies like CoreWeave have focused primarily on providing raw GPU compute at scale — CoreWeave boasts a $55.6 billion backlog — Cirrascale has positioned itself around private AI, managed services and longer-term engagements rather than on-demand elastic compute. Driggers described the company as "not an on-demand place" but rather a provider focused on "longer-term workloads where we're really competing against somebody doing it back on prem."
+The company's history supports that claim. Cirrascale traces its roots to a hardware company that "designed the world's first eight GPU server in 2012 before anybody thought you'd ever need eight GPUs in a box," as Driggers put it. It pivoted to pure cloud services roughly eight years ago and has since built a client roster that includes the 
+Allen Institute for AI
+, which in August 2025 tapped Cirrascale as the managed services provider for a $152 million open AI initiative funded by the National Science Foundation and Nvidia. Earlier this month, Cirrascale announced a three-way alliance with Rafay Systems and Cisco to deliver end-to-end enterprise AI solutions combining Cirrascale's inference platform, Rafay's GPU orchestration, and Cisco's networking and compute hardware.
+The private AI era is arriving faster than anyone expected
+The Gemini partnership is the highest-profile move yet — and it taps into a broader industry current. The push to move frontier AI out of the public cloud and into private infrastructure is no longer a niche demand. Industry analysts predict that by 2027, 40% of AI model training and inference will occur outside public cloud environments. That projection helps explain why Google is willing to let its crown-jewel model run on hardware it doesn't own, in data centers it doesn't operate, managed by a company in San Diego. The alternative — watching regulated enterprises default to open-source models or to Microsoft's Azure OpenAI Service — is apparently a worse outcome.
+The announcement also carries major implications for Google's competitive positioning. Microsoft has built its enterprise AI strategy around the 
+Azure OpenAI Service
+ and its deep partnership with OpenAI, while AWS has invested in 
+Amazon Bedrock
+ and its own on-premises solutions through Outposts. Google Cloud Platform still trails both rivals in market share, though Q4 cloud revenue rose 48% year-over-year. Enabling Gemini to run on third-party infrastructure via partners like Cirrascale broadens its distribution surface in exactly the segments — government, finance, healthcare — where Microsoft and Amazon have historically held advantages. For Cirrascale, the partnership represents a chance to differentiate sharply in a market where most neoclouds are competing on GPU availability and price.
+Driggers expects rapid uptake in the second half of 2026. "It's going to be crazy towards the end of this year," he said. "Major banks will finally do stuff like this, because they can secure it. They can do it globally. Big research institutions who have labs all over the world will do these types of things." He predicted other frontier model providers will follow with similar offerings soon, and he doesn't see Gemini as the end of the story. "We really think that the enterprise have been waiting for private AI, not just Gemini, but all sorts of private AI," Driggers said.
+That may be the most telling line of all. For three years, the AI revolution has been defined by a simple bargain: send your data to the cloud and get intelligence back. Cirrascale's bet — and increasingly, Google's — is that the biggest customers in the world are done accepting those terms. The most powerful AI on the planet is now available on a single locked box that can sit in a bank vault, a university basement, or a government facility in a country where Google has no data center. The cloud, it turns out, is finally ready to come back down to earth.
+Subscribe to get latest news!
+Deep insights for enterprise AI, data, and security leaders
+VB Daily
+AI Weekly
+AGI Weekly
+Security Weekly
+Data Infrastructure Weekly
+VB Events
+All of them
+By submitting your email, you agree to our 
+Terms
+ and 
+Privacy Notice
+.
+Get updates
+You're in! Our latest news will be hitting your inbox soon.
+More
+CleoP made with Midjourney
+Intent-based chaos testing is designed for when AI behaves confidently — and wrongly
+Here is a scenario that should concern every enterprise architect shipping autonomous AI systems right now: An observability agent is running in production. Its job is to detect infrastructure anomalies and trigger the appropriate response. Late one night, it flags an elevated anomaly score across a production cluster, 0.87, above its defined threshold of 0.75. The agent is within its permission boundaries. It has access to the rollback service. So it uses it.
+Sayali Patil
+
+    May 9, 2026
+  
+Image Credit: Michael Nunez / VentureBeat
+Anthropic says it hit a $30 billion revenue run rate after 'crazy' 80x growth
+So when Amodei took the stage at Anthropic's 
+Code with Claude
+ developer conference on Wednesday and offered a genuinely striking piece of financial candor, the room paid attention.
+Michael Nuñez
+
+    May 8, 2026
+  
+Made by VentureBeat with NanonBanana 2
+5% GPU utilization: The $401 billion AI infrastructure problem enterprises can't keep ignoring
+Enterprises panic-bought GPU capacity for two years. Real-world audits now show average utilization stuck at 5%. Rob Strechay on what the data says — and what comes next.
+Rob Strechay
+
+    May 8, 2026
+  
+Credit: VentureBeat made with Midjourney
+Anthropic introduces "dreaming," a system that lets AI agents learn from their own mistakes
+The company also moved two previously experimental features — 
+outcomes
+ and 
+multi-agent orchestration
+ — from research preview into public beta, making them broadly available to developers building on the Claude platform. Together, the three features address what Anthropic says are the hardest problems in running AI agents at scale: keeping them accurate, helping them learn, and preventing them from becoming bottlenecks on complex, multi-step work.
+Michael Nuñez
+
+    May 8, 2026
+  
+Credit: VentureBeat made with ChatGPT Images 2.0 
+Meet ZAYA1-8B, a super efficient, open reasoning model trained on AMD Instinct MI300 GPUs
+The real headline is what ZAYA1-8B was trained on: a full stack of AMD Instinct MI300 graphics processing units (GPUs), the rival to Nvidia GPUs.
+Carl Franzen
+
+    May 7, 2026
+  
+Credit: VentureBeat made with Google Gemini 3.1 Pro Image 
+The app store for robots has arrived: Hugging Face launches open-source Reachy Mini App Store with 200+ apps
+The new Hugging Face Reachy Mini App Store already hosts a library of over 200 community-built applications, and Reachy Mini owners will be able to download any of these free of charge to start 
+Carl Franzen
+
+    May 6, 2026
+  
+Credit: Subquadratic
+Miami startup Subquadratic claims 1,000x AI efficiency gain with SubQ model; researchers demand independent proof.
+A little-known Miami-based startup called 
+Subquadratic
+ emerged from stealth on Tuesday with a sweeping claim: that it has built the first large language model to fully escape the mathematical constraint that has defined — and limited — every major AI system since 2017.
+Michael Nuñez
+
+    May 5, 2026
+  
+A happy content white ox chews grass on a green field surrounded by holographic diagrams and messages against a cloudy greenish hued sky
+AI agents are missing all the discussions your team is having. SageOX has an answer: agentic context infrastructure
+Their suite of tools, from the open-source Ox CLI to the hardware-enabled Ox Dot, is designed to solve the immediate problem of alignment drift.
+Carl Franzen
+
+    May 5, 2026
+  
+Credit: VentureBeat made with Midjourney
+OpenAI turns its sold-out GPT-5.5 party into a monthlong Codex giveaway for 8,000 developers
+"We had over 8,000 people express interest in just 24 hours, and while we wish our office was big enough to welcome everyone, we weren't able to make space for every person who applied," the company wrote in the email, which VentureBeat obtained. "As a small token of appreciation, we've 10x'ed your Codex rate limits until June 5th on your personal ChatGPT account."
+Michael Nuñez
+
+    May 5, 2026
+  
+Credit: VentureBeat made with Midjourney
+Microsoft takes Agent 365 out of preview as shadow AI becomes an enterprise threat
+The product, first announced at 
+Microsoft's Ignite conference
+ in November, positions itself as a unified control plane that lets enterprise IT and security teams observe, govern, and secure AI agents wherever they run: inside Microsoft's own ecosystem, on third-party cloud platforms like 
+AWS Bedrock
+ and 
+Google Cloud
+, on employee endpoints, and increasingly across a sprawling ecosystem of SaaS agents built by partner software companies.
+Michael Nuñez
+
+    May 4, 2026
+  
+CleoP made with Midjourney. 
+The AI scaffolding layer is collapsing. LlamaIndex's CEO explains what survives.
+Jerry Liu says 95% of LlamaIndex code is now AI-generated — and that's the point. The stack is thinning, and context is the only moat left.
+Taryn Plumb
+
+    May 1, 2026
+  
+Credit: VentureBeat made with Grok Imagine
+xAI launches Grok 4.3 at an aggressively low price and a new, fast, powerful voice cloning suite
+The launch of Grok 4.3 represents a calculated bet by xAI that the market wants specialized brilliance and extreme cost efficiency over a perfectly balanced generalist. 
+Carl Franzen
+
+    May 1, 2026
+  
+Press Releases
+Contact Us
+Advertise
+Share a News Tip
+Contribute
+Privacy Policy
+Terms of Service
+Consent Preferences
+Do Not Sell or Share My Personal Information
+Limit the Use Of My Sensitive Personal Information
+© 2026 VentureBeat. All rights reserved.
+AI Weekly
+The AI insights you need to lead
+By submitting your email, you agree to our 
+Terms
+ and 
+Privacy Notice
+.
+Get updates

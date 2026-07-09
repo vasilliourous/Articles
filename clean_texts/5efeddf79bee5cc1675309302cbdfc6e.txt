@@ -1,0 +1,1531 @@
+Sniffnet is my new go-to app for network monitoring — Free, open-source, and taking on GlassWire and Wireshark | Windows Central
+Skip to main content
+Windows Central Insider
+- Join our community
+JOIN NOW
+11
+Premium Benefits
+24/7
+Access Available
+9K+
+Active Members
+Exclusive Articles
+Member-only articles
+Weekly Newsletters
+Gaming & entertainment news
+Commenting
+Join the discussion
+Achievements
+Earn as you go
+Exclusive Competitions
+Members-only prize draws
+Curated Deals
+Curated gaming & tech deals
+BECOME AN INSIDER
+For the quickest way to join, simply enter your email below and get access. We will send a confirmation and sign you up to our newsletter to keep you updated on all your gaming news.
+
+Contact me with news and offers from other Future brands
+
+
+By submitting your information you agree to the
+
+Terms & Conditions
+
+and
+
+Privacy Policy
+
+and are aged 16 or over.
+
+FIND OUT ABOUT OUR MAGAZINE
+Want to subscribe to the magazine? Click the button below to
+find out more information.
+Find out more
+
+GET INSIDER ACCESS
+
+
+Join the club for quick access. Enter your email below and we'll send confirmation, and sign you up to our newsletter.
+
+
+Contact me with news and offers from other Future brands
+
+
+Sign Up
+
+
+By submitting your information you agree to the
+
+Terms & Conditions
+
+and
+
+Privacy Policy
+
+and are aged 16 or over.
+
+Welcome
+
+to
+Windows Central Insider
+
+!
+
+Hi
+,
+
+
+Your membership journey starts here.
+
+
+Keep exploring and earning more as a member.
+
+
+MY ACCOUNT
+
+
+Earn your first
+achievement
+
+
+Read 1 article to unlock your first achievement.
+
+
+Keep earning achievements
+
+
+Unlock by reading, taking quizzes and surveys, and joining the conversations.
+
+Latest about Microsoft
+Updates, launches and rumors.
+
+Read Now
+
+Latest about AI.
+AI updates, how-tos and comparisons in one place.
+
+Read Now
+
+
+See what you’ve unlocked.
+
+
+Explore your membership
+benefits.
+
+
+Explore
+
+
+Member Exclusives
+
+
+Stay Ahead with Windows Central
+
+
+Get the biggest gaming news, reviews, and releases straight to your inbox.
+
+
+Learn More
+
+Sign Out
+Open menu
+Windows Central
+RSS
+Sign in
+View Profile
+Sign out
+Search
+Search Windows Central
+
+Microsoft
+
+
+Microsoft Core
+
+
+Bing
+
+
+Copilot+ PC
+
+
+Microsoft Copilot
+
+
+Copilot Plus vs Copilot
+
+
+Windows Help
+
+
+Microsoft Surface
+
+
+Windows 10
+
+
+Windows 10 How To
+
+
+Windows 10 News
+
+
+Windows 11
+
+
+Windows 11 How To
+
+
+Windows 11 News
+
+
+Office & Teams
+
+
+Microsoft Teams
+
+
+Microsoft Office
+
+
+Microsoft Excel
+
+
+Microsoft Powerpoint
+
+
+Microsoft Word
+
+
+Microsoft Outlook
+
+
+Editorial Coverage
+
+
+How To Guides
+
+
+News
+
+
+Features
+
+
+AI
+
+
+AI Platforms & Tools
+
+
+Copilot+ PC
+
+
+Microsoft Copilot
+
+
+Open AI / ChatGPT
+
+
+Local AI
+
+
+Copilot Plus vs Copilot
+
+
+Insights & Analysis
+
+
+News
+
+
+How To Guides
+
+
+Features
+
+
+Gaming
+
+
+By Publisher
+
+
+Activision
+
+
+Blizzard
+
+
+Zenimax & Bethesda
+
+
+Playstation Studios
+
+
+Take 2
+
+
+By Franchise
+
+
+Call of Duty
+
+
+Forza
+
+
+Halo
+
+
+Minecraft
+
+
+MS Flight Sim
+
+
+Gears of War
+
+
+WoW
+
+
+Platforms & Hardware
+
+
+Xbox
+
+
+PC Gaming
+
+
+Gaming Chairs
+
+
+Indies & ID@Xbox
+
+
+Xbox Game Pass
+
+
+Handheld Gaming PC
+
+
+Controllers
+
+
+Gaming Accessories
+
+
+Editorial Coverage
+
+
+Gaming News
+
+
+Gaming Reviews
+
+
+Gaming Deals
+
+
+Gaming Buying Guides
+
+
+Gaming How To
+
+
+Gaming Features
+
+
+Hardware
+
+
+Computers
+
+
+Laptops
+
+
+Desktops
+
+
+Handheld Gaming
+
+
+Mini PCs
+
+
+All-in-Ones (AiO)
+
+
+Components
+
+
+Processors
+
+
+AMD
+
+
+Intel
+
+
+Qualcomm
+
+
+GPUs
+
+
+CPUs
+
+
+Nvidia
+
+
+Storage
+
+
+Mobile & Smart Devices
+
+
+Phones
+
+
+Smart Home
+
+
+Wearable Tech
+
+
+By Brand
+
+
+Acer
+
+
+ASUS
+
+
+Dell
+
+
+HP
+
+
+Lenovo
+
+
+LG
+
+
+MSI
+
+
+Razer
+
+
+Samsung Notebooks
+
+
+Surface
+
+
+Editorial Coverage
+
+
+Hardware Buying Guides
+
+
+Hardware Deals
+
+
+Hardware How To
+
+
+Hardware News
+
+
+Hardware Reviews
+
+
+Hardware Versus
+
+
+Laptop Buying Guides
+
+
+Laptop Deals
+
+
+Laptop How To
+
+
+Laptop News
+
+
+Laptop Reviews
+
+
+Laptop Versus
+
+
+Software
+
+
+Cloud Storage
+
+
+Cloud Computing
+
+
+Backup
+
+
+OneDrive
+
+
+Collaboration
+
+
+Discord
+
+
+GitHub
+
+
+Reddit
+
+
+Slack
+
+
+Teams
+
+
+Creative
+
+
+Adobe
+
+
+Browsers
+
+
+Microsoft Edge
+
+
+Google Chrome
+
+
+Firefox
+
+
+Opera
+
+
+Operating Systems
+
+
+Chrome OS
+
+
+Steam OS
+
+
+Linux
+
+
+Accessories
+
+
+Input Devices
+
+
+Keyboards
+
+
+Mice
+
+
+Microphones
+
+
+Audio & Visual
+
+
+Headphones
+
+
+Speakers
+
+
+Monitors
+
+
+Webcams
+
+
+Connectivity & Protection
+
+
+Networking
+
+
+Bags & Cases
+
+
+Editorial Coverage
+
+
+Accessories Buying Guides
+
+
+Accessories Deals
+
+
+Accessories How To
+
+
+Accessories Reviews
+
+
+Features
+
+
+From the Editor's Desk
+
+
+Windows Central LIVE
+
+
+Windows Wrap
+
+
+Windows Central Podcast
+
+
+r/WindowsCentral
+
+
+More
+
+home
+
+Microsoft
+
+
+View Microsoft
+
+
+Microsoft Core 
+
+Bing
+
+
+Copilot+ PC
+
+
+Microsoft Copilot
+
+
+Copilot Plus vs Copilot
+
+
+Windows Help
+
+
+Microsoft Surface
+
+
+Windows 10 
+
+View Windows 10
+
+
+Windows 10 How To
+
+
+Windows 10 News
+
+
+Windows 11 
+
+View Windows 11
+
+
+Windows 11 How To
+
+
+Windows 11 News
+
+
+Office & Teams 
+
+Microsoft Teams
+
+
+Microsoft Office
+
+
+Microsoft Excel
+
+
+Microsoft Powerpoint
+
+
+Microsoft Word
+
+
+Microsoft Outlook
+
+
+Editorial Coverage 
+
+How To Guides
+
+
+News
+
+
+Features
+
+
+AI
+
+
+View AI
+
+
+AI Platforms & Tools 
+
+Copilot+ PC
+
+
+Microsoft Copilot
+
+
+Open AI / ChatGPT
+
+
+Local AI
+
+
+Copilot Plus vs Copilot
+
+
+Insights & Analysis 
+
+News
+
+
+How To Guides
+
+
+Features
+
+
+Gaming
+
+
+View Gaming
+
+
+By Publisher 
+
+Activision
+
+
+Blizzard
+
+
+Zenimax & Bethesda
+
+
+Playstation Studios
+
+
+Take 2
+
+
+By Franchise 
+
+Call of Duty
+
+
+Forza
+
+
+Halo
+
+
+Minecraft
+
+
+MS Flight Sim
+
+
+Gears of War
+
+
+WoW
+
+
+Platforms & Hardware 
+
+Xbox
+
+
+PC Gaming
+
+
+Gaming Chairs
+
+
+Indies & ID@Xbox
+
+
+Xbox Game Pass
+
+
+Handheld Gaming PC
+
+
+Controllers
+
+
+Gaming Accessories
+
+
+Editorial Coverage 
+
+Gaming News
+
+
+Gaming Reviews
+
+
+Gaming Deals
+
+
+Gaming Buying Guides
+
+
+Gaming How To
+
+
+Gaming Features
+
+
+Hardware
+
+
+View Hardware
+
+
+Computers 
+
+Laptops
+
+
+Desktops
+
+
+Handheld Gaming
+
+
+Mini PCs
+
+
+All-in-Ones (AiO)
+
+
+Components 
+
+View Components
+
+
+Processors
+
+
+AMD
+
+
+Intel
+
+
+Qualcomm
+
+
+GPUs
+
+
+CPUs
+
+
+Nvidia
+
+
+Storage
+
+
+Mobile & Smart Devices 
+
+Phones
+
+
+Smart Home
+
+
+Wearable Tech
+
+
+By Brand 
+
+Acer
+
+
+ASUS
+
+
+Dell
+
+
+HP
+
+
+Lenovo
+
+
+LG
+
+
+MSI
+
+
+Razer
+
+
+Samsung Notebooks
+
+
+Surface
+
+
+Editorial Coverage 
+
+Hardware Buying Guides
+
+
+Hardware Deals
+
+
+Hardware How To
+
+
+Hardware News
+
+
+Hardware Reviews
+
+
+Hardware Versus
+
+
+Laptop Buying Guides
+
+
+Laptop Deals
+
+
+Laptop How To
+
+
+Laptop News
+
+
+Laptop Reviews
+
+
+Laptop Versus
+
+
+Software
+
+
+View Software
+
+
+Cloud Storage 
+
+Cloud Computing
+
+
+Backup
+
+
+OneDrive
+
+
+Collaboration 
+
+Discord
+
+
+GitHub
+
+
+Reddit
+
+
+Slack
+
+
+Teams
+
+
+Creative 
+
+Adobe
+
+
+Browsers 
+
+Microsoft Edge
+
+
+Google Chrome
+
+
+Firefox
+
+
+Opera
+
+
+Operating Systems 
+
+Chrome OS
+
+
+Steam OS
+
+
+Linux
+
+
+Accessories
+
+
+View Accessories
+
+
+Input Devices 
+
+Keyboards
+
+
+Mice
+
+
+Microphones
+
+
+Audio & Visual 
+
+Headphones
+
+
+Speakers
+
+
+Monitors
+
+
+Webcams
+
+
+Connectivity & Protection 
+
+Networking
+
+
+Bags & Cases
+
+
+Editorial Coverage 
+
+Accessories Buying Guides
+
+
+Accessories Deals
+
+
+Accessories How To
+
+
+Accessories Reviews
+
+
+Features
+
+
+View Features
+
+
+From the Editor's Desk
+
+
+Windows Central LIVE
+
+
+Windows Wrap
+
+
+Windows Central Podcast
+
+
+r/WindowsCentral
+
+Don't miss these
+Windows 11
+11 big Windows 11 changes landing in April 2026
+Windows 11
+Windows 11 is bloated, and power users are done with it 
+Windows 11
+Why this Windows 11 photo app beats Photos for me  
+Windows 11
+Windows Wrap: Windows 11 reboot shows Microsoft listening again
+Windows 11
+Microsoft should steal concepts from this fan's redesigned Windows 11
+Windows
+Inside the Insider reboot: how Microsoft wants enthusiasts to help rescue Windows 11
+Windows 11
+Stop running winget upgrade manually – this tool does it for you
+Windows 11
+Hate AI in Windows 11? Nuke it with this tool
+Windows 11
+Reddit users recommend 10 open‑source apps that run great on Windows 11
+Windows 11
+Windows 11's customization scene is thriving — here’s why
+Software Apps
+ExplorerPatcher just hit 42M downloads. Why aren't more people talking about it?
+Software Apps
+I tried to make my Windows 11 PC better with Winhance and wish I'd done it sooner
+Windows 11
+7 best Windhawk mods for Windows 11
+Software Apps
+Speechify is the template for the perfect Windows app
+Software Apps
+I tested Speechify’s new Windows app — here’s why it impressed me
+YOUR NEXT READ:
+1
+
+                                    Windows 11 is bloated, and power users are done with it 
+                                
+2
+
+                                    Why this Windows 11 photo app beats Photos for me  
+                                
+3
+
+                                    Microsoft should steal concepts from this fan's redesigned Windows 11
+                                
+Windows Central
+Get the Windows Central Newsletter
+All the latest news, reviews, and guides for Windows and Xbox diehards.
+Become a Member in Seconds
+ Unlock instant access to exclusive member features.
+
+Contact me with news and offers from other Future brands
+
+
+Receive email from us on behalf of our trusted partners or sponsors
+
+There was a problem. Please refresh the page and try again.
+
+By submitting your information you agree to the 
+Terms & Conditions
+ and 
+Privacy Policy
+ and are aged 16 or over.
+
+You are now subscribed
+Your newsletter sign-up was successful
+Join the club
+Get full access to premium articles, exclusive features and a growing list of member rewards.
+Explore
+ An account already exists for this email address, please log in.
+Trending
+ID@Xbox 🎮
+Windows 11 🪟
+Windows 10 EOL ☠️
+Project Helix🧬
+PC Deals💲
+Software Apps
+Sniffnet is my new go-to app for network monitoring — Free, open-source, and taking on GlassWire and Wireshark
+News
+
+By
+
+Cale Hunt
+
+published
+
+April 17, 2026
+Created by one developer, Sniffnet is an awesome network monitoring tool that does everything I want ... and more.
+
+When you purchase through links on our site, we may earn an affiliate commission. 
+Here’s how it works
+.
+
+
+Click for next article
+
+Sniffnet's overview page displayed on a Windows 11 desktop.
+(Image credit: Future)
+
+Copy link
+
+
+Facebook
+
+
+X
+
+
+Reddit
+
+
+Pinterest
+
+
+Flipboard
+
+
+Bluesky
+
+
+Threads
+
+
+Email
+
+
+Share this article
+
+0
+
+Join the conversation
+
+
+Follow us
+
+
+Add us as a preferred source on Google
+
+
+Newsletter
+
+
+Subscribe to our newsletter
+
+I'm always on the lookout for novel Windows apps that can either improve my baseline experience or provide more insight than the regular tools that come with my favorite OS.
+This week, I was introduced to 
+Sniffnet
+, which has recently exploded in popularity to hit some 
+401,000+ overall downloads
+. It's available to download directly from the 
+Sniffnet website
+ or from 
+GitHub
+, where it has amassed 33,800 stars
+.
+Sniffnet, which works with 
+Windows 11
+ in its standard and 
+ARM64
+ flavors, is a free and open-source internet traffic monitoring tool.
+Article continues below 
+Watch full video here: Surface Go 4
+Latest Videos From Windows Central
+Surface Go 4
+The new Surface Go is more powerful, but also more costly.
+More Videos
+0 seconds of 1 minute, 28 seconds
+Volume 0%
+Press shift question mark to access a list of keyboard shortcuts
+Keyboard Shortcuts
+Enabled
+Disabled
+Shortcuts Open/Close
+/ or ?
+Play/Pause
+SPACE
+Increase Volume
+↑
+Decrease Volume
+↓
+Seek Forward
+→
+Seek Backward
+←
+Captions On/Off
+c
+Fullscreen/Exit Fullscreen
+f
+Mute/Unmute
+m
+Decrease Caption Size
+-
+Increase Caption Size
++ or =
+Seek %
+0-9
+Next Up
+Isometric metroidvania puzzle game 'OOLO' comes to Xbox Play Anywhere in May
+04:40
+Live
+00:00
+01:28
+01:28
+
+            You may like
+        
+I'm replacing Task Manager on all my PCs with this free app
+I found a great open‑source screenshot alternative to Snipping Tool and ShareX on Windows 11
+Reddit users recommend 10 open‑source apps that run great on Windows 11
+As the developer, Giuliano Bellini (
+GyulyVGC on GitHub
+), 
+points out
+, Sniffnet was created as "
+a more intuitive and simpler-to-use version of Wireshark, and can be considered a completely free alternative to GlassWire.
+"
+A look at the Sniffnet dashboard with network hosts, services, programs, and traffic rates readily available. 
+(Image credit: Giuliano Bellini (Sniffnet))
+I've been toying around with Sniffnet, and I can testify that it's quite easy to navigate and operate. It's clearly been refined over its three years of development history (all by Bellini, notably), and because it's developed with Rust, it uses hardly any system resources.
+The part I appreciate most? 
+Sniffnet doesn't collect any user data
+. Everything remains on your device, so you don't have to worry about outside forces snooping on your traffic. It also 
+works with VPNs
+, which is great news considering I usually have one enabled.
+What can Sniffnet do for you?
+A look at the Sniffnet inspect page, taking a look at the GitHub.com domain. 
+(Image credit: Giuliano Bellini (Sniffnet))
+I downloaded Sniffnet without issue and installed the required Npcap capture packet tool to begin (you'll be prompted to download at the end of the Sniffnet installation). Easy enough.
+The app is instantly populated with traffic sources, and you can choose to begin monitoring any of the sources. Once you've gone deeper, a full list of network hosts, services, and programs shows up with detailed information about each connection.
+Filter and notification settings are available for each entry, and you can add alerts for when data thresholds are met. There are 12 preset themes from which you can choose, and you can also mix and match colors. Within the app, you can also select one of 24 different languages.
+Image 1 of 2
+A look at the Sniffnet app's varied language options.
+(Image credit: Future)
+A look at the Sniffnet thumbnail widget that helps keep track of traffic without having the full app open.
+(Image credit: Future)
+The full-size app is, of course, the best way to monitor your traffic, but a thumbnail overlay setup is also available if you want to keep an eye on movement from the corner of your screen.
+
+            What to read next
+        
+I replaced Windows 11’s default apps with these open-source tools
+OpenNOW might be the open-source GeForce Now app you need
+ExplorerPatcher just hit 42M downloads. Why aren't more people talking about it?
+Sniffnet is great for keeping tabs on your network's bandwidth usage and connections, but as mentioned, it's also great for sniffing out suspicious activity.
+If you deal in IoT devices on your network, a tool like this is especially priceless for identifying unauthorized connections.
+What features were just added with the Sniffnet 1.5 update?
+Sniffnet 
+version 1.5
+ just launched on 
+April 14, 2026
+, adding tools that identify which apps and programs are using up your network's bandwidth.
+Not only does this help rein in data usage, but it also helps users spot suspicious programs that they might not otherwise notice.
+Drilling deeper, each application can be favorited and set up to notify you whenever it begins to generate traffic. Adding to the security aspect, the Sniffnet 1.5 update adds the ability to import IP blacklists and traffic rundowns for any network adapter connected to your PC.
+Have you used Sniffnet to monitor internet traffic?
+Voting closed at 06:48 AM on Apr 30, 2026
+I don't really monitor traffic.
+49%
+I use a different tool.
+29%
+Yes, and I love it.
+21%
+Yes, but it's not for me.
+1%
+Thanks for voting!
+We'd love to hear more! Tell us in the comments why you chose that answer.
+Leave a comment
+Thanks for voting!
+Please log in or register to see the results!
+View results
+Random Quiz
+Play a Random Quiz
+Filter by Category
+Join the community
+Join the Windows Central Family! The best way to keep in touch and to be informed of our latest quizzes and competitions, as well as news and offers.
+I'm in!
+Not right now
+ Keep me informed about new quizzes and offers from Future and its partners
+ Contact me with news and offers from Windows Central and other Future brands
+By submitting your information you confirm you are aged 16 or over, have read our 
+Privacy Policy
+ and agree to the 
+Terms & Conditions
+.
+Continue
+Already have an account? 
+Log in
+Log In
+Log In
+Forgotten your password? 
+Reset it
+Not got an account? 
+Register
+This page will close automatically once you have completed the authorisation process
+My Details
+Update your details below...
+ Keep me informed about new quizzes and offers from Future and its partners
+Update
+Keep in the Know
+Would you like to be kept informed about new quizzes and offers from Future and its partners?
+Yes Please!
+No Thanks
+OK
+Validate Your Mobile No.
+We have sent a code to 
+. Please enter it below to verify your account.
+Validate
+Update Your Mobile No.
+You may enter a new mobile number below. You will be sent a verification code to the phone number you provide.
+Update
+Cancel
+embed-poll.hint_heading
+
+                            embed-poll.hint_subheading
+                        
+embed-poll.hint_submit_btn
+Validate Your Email Address
+We have sent a code to 
+. Please enter it below to verify your account.
+Validate
+Update Your Email Address
+You may enter a new email address below. You will be sent a verification code to the address you provide.
+Update
+Cancel
+Create a Username
+This will be publicly viewable so make it something you like!
+Check availability
+Reset your password
+Enter your email address below. If it is registered with us, we will email you a code that will allow you to reset your password.
+Submit
+Check your inbox
+If your email address was found in our system, you should receive an email in the next few minutes containing a code. Enter that code below to reset your password.
+Submit
+Set new password
+Please enter your new password below.
+Update password
+Leaderboard
+Rank
+Player
+Score
+Time
+Log In or Register
+More Quizzes
+Log Out
+Windows Central's take
+I've been toying around with Sniffnet on my PC for a couple of days now, and it's not going anywhere.
+It's fast, it hardly takes up any system resources, and it provides the level of detail I need. I can see why it's so popular.
+Have you already tried Sniffnet? Do you use a different network monitoring tool? Let me know in the comments section below!
+Join us on 
+Reddit at r/WindowsCentral 
+to share your insights and discuss our latest news, reviews, and more.
+Cale Hunt
+Social Links Navigation
+Contributor
+Cale Hunt brings to Windows Central more than nine years of experience writing about PC gaming, Windows laptops, accessories, and beyond. If it runs Windows or in some way complements the hardware, there’s a good chance he knows about it, has written about it, or is already busy testing it.
+View More
+You must confirm your public display name before commenting
+Please logout and then login again, you will then be prompted to enter your display name.
+
+Logout
+
+Read more
+Software Apps
+I'm replacing Task Manager on all my PCs with this free app
+Windows 11
+I found a great open‑source screenshot alternative to Snipping Tool and ShareX on Windows 11
+Windows 11
+Reddit users recommend 10 open‑source apps that run great on Windows 11
+Windows 11
+I replaced Windows 11’s default apps with these open-source tools
+Nvidia
+OpenNOW might be the open-source GeForce Now app you need
+Software Apps
+ExplorerPatcher just hit 42M downloads. Why aren't more people talking about it?
+Latest in Software Apps
+Software Apps
+PowerToys update adds two new utilities that streamline common Windows tasks
+Software Apps
+Microsoft 365 and Outlook outage confirmed by Microsoft
+Software Apps
+Copilot Keyboard launches with the return of an unexpected mascot
+Software Apps
+Files adds customizable toolbar Microsoft should copy for File Explorer
+Software Apps
+Microsoft will retire Clipchamp for iOS, leaving creators without a mobile option
+Software Apps
+Why did Xbox, Steam, and PlayStation all surrender their socials to Discord?
+Latest in News
+Xbox
+Xbox encourages players to request classic games for future compatibility
+Windows 11
+Microsoft confirms it's hiding ads by default in Windows 11's widget panel
+Xbox
+Xbox adds its new logo to dynamic backgrounds, gamer pics, and more
+Gaming
+Roblox Reality shows off DLSS 5’s AI upscaling in a big way
+PC Gaming
+PC modders revive full wireless support for PlayStation controllers
+Windows 11
+Latest Windows 11 update brings more reliable explorer.exe, AI agents, and new haptic engine
+Advertisement
+Advertisement
+LATEST ARTICLES
+1
+Why this Windows 11 photo app beats Photos for me  
+2
+Windows Wrap: Windows K2, Xbox Mode, and Windows Phone mods breathe new life into Windows 11
+3
+Performance and features drive the latest Edge vs Chrome debate on Reddit
+4
+Hate AI in Windows 11? Nuke it with this tool
+5
+Diablo 4: Lord of Hatred has delivered
+
+Windows Central is part of Future US Inc, an international media group and leading digital publisher. 
+Visit our corporate site
+.
+
+Add as a preferred source on Google
+Terms and conditions
+Contact Future's experts
+Privacy policy
+Cookies policy
+Accessibility statement
+Careers
+Licensing
+About us
+Forums
+Advertise with us
+Android Central
+©
+Future US, Inc. Full 7th Floor, 130 West 42nd Street,
+New York,
+NY 10036. 
+Close
+
+Please login or signup to comment
+
+Please wait...
+
+Login
+
+
+Sign Up

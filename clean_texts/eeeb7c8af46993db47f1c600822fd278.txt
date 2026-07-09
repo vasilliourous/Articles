@@ -1,0 +1,450 @@
+I gave Claude Code five years of notes and finally got the organization I'd been waiting for
+Menu
+Sign in now
+Close
+PC & Mobile
+Submenu
+Windows2
+Linux
+Android
+Apple
+Technical
+Submenu
+Tech Explained
+Security
+Software
+Submenu
+Productivity
+Internet
+Creative
+Screen
+Submenu
+Entertainment
+Streaming
+Home
+Submenu
+Smart Home
+Home
+News
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+2
+More Action
+Sign in now
+Productivity
+Android
+Smart TVs
+Networking
+Windows 11
+Entertainment
+Close
+I gave Claude Code five years of notes and finally got the organization I'd been waiting for
+Yadullah Abidi / MakeUseOf
+By 
+Yadullah Abidi
+Published
+ Apr 30, 2026, 9:30 AM EDT
+Yadullah Abidi is a Computer Science graduate from the University of Delhi and holds a postgraduate degree in Journalism from the Asian College of Journalism, Chennai. With over a decade of experience in Windows and Linux systems, programming, PC hardware, cybersecurity, malware analysis, and gaming, he combines deep technical knowledge with strong editorial instincts.
+
+Yadullah currently writes for MakeUseOf as a Staff Writer, covering cybersecurity, gaming, and consumer tech. He formerly worked as Associate Editor at 
+Candid.Technology
+ and as News Editor at 
+The Mac Observer
+, where he reported on everything from raging cyberattacks to the latest in Apple tech.
+
+In addition to his journalism work, Yadullah is a full-stack developer with experience in JavaScript/TypeScript, 
+Next.js
+, the MERN stack, Python, C/C++, and AI/ML. Whether he's analyzing malware, reviewing hardware, or building tools on GitHub, he brings a hands-on, developer’s perspective to tech journalism. 
+Sign in to your 
+MakeUseOf
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+2
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+I've been taking my notes digitally for about as long as I can remember. In that time, I've gone through plenty of note-taking apps. At first, it was OneNote and Windows 11's sticky notes, then Notion, and when that didn't work out, I switched to AFFiNE. At this point, I've got half a decade's worth of notes scattered across different apps, and organizing them has turned out to be a bigger task than I imagined.
+✕
+ Remove Ads
+When 
+I ditched Notion for AFFiNE
+, I only carried forward relevant notes. It wasn't a full reorganization, but it did cut down the clutter. Now that clutter has regrown, but this time I have Claude Code to help me organize it.
+Related
+
+			I let my local LLM organize my chaotic Obsidian vault and it nailed it
+		
+Organize hundreds of messy notes in minutes with this AI-powered Obsidian setup!
+Posts
+1
+By 
+Jayric Maning
+Oct 12, 2025
+
+                        No app was going to fix my notes
+               
+
+            Why better tools won’t solve a messy system
+    
+Note-taking apps, whether it's something as simple as Sticky Notes or more complicated tools like Notion, Obsidian, or AFFiNE, give you a lot of options for how you want to organize your notes. They're great at helping you write notes, but terrible at making sense of them, at least until you manually step in and organize everything.
+Every app I've tried has a ton of organization features. I'm talking folders, tags, search bars, and even AI support with the implied promise that using these features consistently will help you stay on top of your notes. But if you're like me and treat your notes app as a dumping ground for your thoughts, there's not much the app itself can do to help you out.
+Another problem is that notes are personal. A folder called "article ideas" means nothing to an algorithm, but it means a lot to me. Getting value out of that folder requires someone, or something, to analyze what it means and organize it accordingly. Thankfully, AI assistants such as Claude Code are perfect for the job.
+✕
+ Remove Ads
+
+    						AFFiNE
+			
+OS
+
+									
+										
+											Windows, macOS, Linux
+
+										
+																	
+Developer
+
+									
+										
+											Toeverything
+
+										
+																	
+Price model
+
+									
+										
+											Free, Open-source
+
+										
+																	
+AFFiNE is a workspace with fully merged docs, whiteboards, and databases.
+See at AFFiNE
+Expand
+Collapse
+
+                        Getting the data ready matters
+               
+
+            Cleaning and structuring years of notes before anything else
+    
+Screenshot by Yadullah Abidi | No Attribution Required.
+You can't just start chatting with Claude and expect it to do everything for you. Depending on how extensive your notes are, there's a decent amount of legwork required to collect everything in one place so Claude can easily access and reorganize what's needed. Thankfully, I use AFFiNE, which saves notes locally on my disk, meaning I can just copy AFFiNE's data directories and dump them in a folder for Claude to start working with. You can also choose to export individual pages as Markdown or PDF files if you want.
+This approach not only helps give you a backup in case Claude messes something up, it also gives you the chance to collect all your notes in one place. My two most frequently used note apps are Sticky Notes on Windows 11 and AFFiNE. AFFiNE's source Markdown files were easy to find, but Sticky Notes can be tricky. Ideally, you're supposed to find a 
+plum.sqlite
+ file containing all your notes at the following path:
+C:\Users%USERNAME%\AppData\Local\Packages\Microsoft.MicrosoftStickyNotes_8wekyb3d8bbwe\LocalState
+However, that folder did not exist on my Windows 11 installation. So I went around the hard way and manually copied and pasted each sticky note into a text file, which was promptly moved into the same folder as my AFFiNE Markdown files.
+✕
+ Remove Ads
+
+                        Organizing my notes with Claude Code
+               
+
+            Turning chaos into something actually searchable
+    
+Before you start organizing notes, you're going to have to download Claude's desktop or terminal apps. Both work fine, but I recommend you choose the terminal version for tasks that require direct file manipulation. On Windows, you can install Claude Code terminal with a single PowerShell command:
+curl -fsSL 
+https://claude.ai/install.cmd
+ -o 
+install.cmd
+ && 
+install.cmd
+ && del 
+install.cmd
+Claude requires Git for Windows to track changes to files. Additionally, you'll have to add its install directory to the Windows PATH environment variable to launch Claude Code from any directory.
+Once done, you can start Claude Code in any directory by opening a Windows Terminal window and typing 
+claude
+. You'll be prompted to log in with your Claude account to finish setup.
+After Claude Code is up and running, I started by asking it to analyze the folder it was in. It should be able to understand that it's running in a local app data directory for your note-taking app. I did this just to have more control over the organization process and to better see what Claude is doing. This process might take a while, and Claude Code might repeatedly ask your permission to install necessary tools and create additional files, so don't leave your terminal unattended.
+Screenshot by Yadullah Abidi | No Attribution Required.
+✕
+ Remove Ads
+In my case, Claude ended up creating multiple small reader scripts to access the SQLite database that AFFiNE uses to store its data. Once it went through the database, it automatically cleaned up any scripts it made and presented a five-phase checklist for organizing my notes.
+Claude came up with a rather versatile to-do list for me, but if you want it to go in a different direction, now is your chance to tell the AI model what to do. Once done, ask it to power through the to-do list, and you should have a fully organized collection of notes. It'll even ask you follow-up questions as it's organizing your notes, such as whether you want to keep certain files or not.
+Screenshot by Yadullah Abidi | No Attribution Required.
+As a bonus, once the organization process is complete, you can come back to Claude and ask it questions about your notes. This is an especially helpful side effect in the sense that you can quickly find what you were thinking at any given point in time. If it's in your notes, Claude will find what you're looking for, or just give you a general idea of where you were headed.
+✕
+ Remove Ads
+
+                        The shoebox is finally sorted
+               
+
+            Why this approach worked when everything else didn’t
+    
+I was able to collect thoughts from pretty much my entire professional career as a software developer and journalist in an afternoon—a task that would otherwise have taken me well beyond a full weekend. I can continue working on my now-organized notes in AFFiNE, and Claude takes care of any organization issues. Not to mention it also pulls double duty as a search engine for my own thoughts. It's one of the biggest 
+reasons why I started using Claude instead of several apps
+, and I'm not going back.
+Related
+
+			I Connected Claude to My Work Apps—Now I Get So Much More Done
+		
+It's not just a chatbot. This AI can automate my workflow.
+Posts
+By 
+Yasir Mahmood
+Aug 2, 2025
+Organizing this mess taught me that the problem was never finding the right app. The problem was that I needed a reader, not a container. I needed something that could engage with my content, understand it, and make changes accordingly. Claude turned out to be the closest thing to that—not perfect, not a replacement for clear thinking, but a remarkably useful tool to organize that messy stage in my brain where ideas are half-formed.
+✕
+ Remove Ads
+Productivity
+Note-Taking Apps
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+
+                                                    Technology Explained
+                                            
+
+                                                    PC & Mobile
+                                            
+
+			3 tech companies that make your gadgets more expensive
+		
+2 hours ago
+
+			Your SSD does not wipe your deleted files — this is what TRIM actually does
+		
+4 hours ago
+
+			Wireless charging is finally worth using, but only if you know what to look for
+		
+5 hours ago
+See More
+
+			The Lenovo Yoga Pro 7i is a tough sell, but the display is insane
+		
+2 hours ago
+
+			I ran a Windows network reset and fixed problems I'd blamed on my router for months
+		
+6 hours ago
+
+			I switched to Gentoo Linux and now I get why it's worth the headache
+		
+10 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			I moved my entire ChatGPT context to Claude and it finally felt like home
+		
+
+			I stopped using Microsoft Word and write everything in Markdown now — this is my setup
+		
+
+			I started using Obsidian as a complete beginner and now I understand why people switch and never go back
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+2
+Sign in to your 
+MakeUseOf
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+The
+The
+The
+#HI450109
+Member since 2025-11-06
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Proof positive you dont need any common sense to be a writer on this site, or other sites like it.
+2026-04-30 19:23:57
+Upvote
+Downvote
+Reply
+Copy
+        
+Rob
+Rob
+Rob
+#TQ223573
+Member since 2024-06-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Good points. I use Evernote and have been moving to long structured notes with a table of contents and so on. Turns out that structure rather than random collections of content is important (for me at least)
+2026-04-30 21:01:21
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 29, 2026
+
+                                    I started using Claude instead of these 5 apps — and I'm not going back
+                            
+Apr 28, 2026
+
+                                    I stopped paying for file manager apps after discovering what Android already has
+                            
+Apr 24, 2026
+
+                                    I replaced Windows Settings, File Explorer, and the Microsoft Store — and everything feels much more efficient
+                            
+Apr 24, 2026
+
+                                    GPT-5.5 beats Claude at the one task that actually matters
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+MakeUseOf
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

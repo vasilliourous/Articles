@@ -1,0 +1,1159 @@
+I replaced the expensive Claude Pro subscription with these local models, and my productivity didn’t drop a bit
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+12
+Threads
+23
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I replaced the expensive Claude Pro subscription with these local models, and my productivity didn’t drop a bit
+By 
+Parth Shah
+Published
+ Apr 21, 2026, 6:01 AM EDT
+Parth, a seasoned tech writer, wields the keyboard (or pen) with finesse to unravel the intricacies of both Windows and Mac operating systems. He has covered evergreen content on mobile devices and computers for multiple publications over the last six years. You can find his work on AndroidPolice, GuidingTech and TechWiser. Whether it’s demystifying system updates, deciphering error codes, or exploring hidden features, Parth’s prose guides readers through the binary maze. When not immersed in tech jargon, you’ll find him sipping chai, pondering the next software review, and occasionally indulging in a friendly debate about mechanical keyboards. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+12
+
+                            Like
+                                        
+12
+
+								Thread
+																										
+23
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+The era of the $20-a-month AI tax is officially over for my workflow. For the last few months, Claude Pro was my co-pilot (not the one from Microsoft) for debugging Python scripts, planning a vacation, and giving me ideas about improving my home lab.
+✕
+ Remove Ads
+I decided to pull the plug on my subscription and migrate my entire development and writing stack to local LLMs through LM Studio. And suddenly the capacity errors vanished, the 
+privacy fears disappeared
+, and my productivity stayed exactly where it should be.
+Related
+
+			I used Claude Code, Google Antigravity and OpenAI Codex to develop an app, and found only one worth using
+		
+Vibe coding is here to stay, and it has only one champion
+Posts
+38
+By 
+Abhinav Raj
+Mar 24, 2026
+
+                        Qwen3.6-35B-A3B
+               
+
+            Cloud power, local speed
+    
+The real turning point in my transition to a local-first workflow was the release of Qwen3.6-35B-A3B. When you are used to the ‘it just works’ nature of Claude Pro, you're naturally skeptical of open-source alternatives, but this model changed the math for me. It’s a Mixture-of-Experts model with 35 billion total parameters but activates only 3 billion at any given time. For my setup, that means I get elite-level reasoning without my MacBook Pro fans spinning up all the time.
+The standout feature for me is its Agentic Coding capability. Most small models can write a single function, but Qwen3.6 can actually think through a repository. I started with a classic productivity hurdle: automating my messy Downloads folder. I asked it to build a robust organization script using pathlib that could handle file collisions without overwriting my data.
+Quiz
+8 Questions · Test Your Knowledge
+How much do you know about Claude?
+Trivia challenge
+Think you know Anthropic's AI assistant? Put your knowledge of Claude to the test.
+Origins
+Capabilities
+Safety
+Features
+Design
+Begin
+01 / 8
+Origins
+Which company created Claude?
+A
+OpenAI
+B
+Google DeepMind
+C
+Anthropic
+D
+Meta AI
+Correct! Claude was created by Anthropic, an AI safety company founded in 2021. Anthropic was co-founded by Dario Amodei and Daniela Amodei, among others who previously worked at OpenAI.
+Not quite. Claude is made by Anthropic, not to be confused with OpenAI, which makes ChatGPT. Anthropic was founded in 2021 with a strong focus on AI safety research.
+Continue
+02 / 8
+Safety
+What is the name of the safety and values framework Anthropic developed to guide Claude's behavior?
+A
+RLHF Protocol
+B
+Constitutional AI
+C
+SafeGuard Framework
+D
+Alignment Core
+Correct! Anthropic developed Constitutional AI (CAI), a technique that trains Claude using a set of principles — a 'constitution' — to guide its responses toward being helpful, harmless, and honest.
+Not quite. The framework is called Constitutional AI (CAI). It is a novel training approach pioneered by Anthropic that uses a written set of principles to help the model self-critique and improve its own outputs.
+Continue
+03 / 8
+Origins
+What is the name most commonly associated with inspiring Claude's name?
+A
+Claude Shannon, the father of information theory
+B
+Claude Monet, the French impressionist painter
+C
+Claude Lévi-Strauss, the anthropologist
+D
+Claude Bernard, the physiologist
+Correct! Claude Shannon is widely cited as the inspiration behind the name. Shannon founded information theory, which is foundational to all modern computing and digital communication — a fitting namesake for an AI.
+Not quite. The name Claude is most commonly associated with Claude Shannon, the mathematician and electrical engineer who founded information theory. His pioneering work laid the groundwork for the digital age.
+Continue
+04 / 8
+Capabilities
+Which of the following best describes Claude's context window capability in its more advanced versions?
+A
+Up to 4,000 tokens
+B
+Up to 16,000 tokens
+C
+Up to 100,000 tokens or more
+D
+Up to 32,000 tokens
+Correct! Advanced versions of Claude support context windows of 100,000 tokens or more, allowing it to process entire books, lengthy codebases, or large documents in a single conversation — a standout feature at the time of its release.
+Not quite. Claude's advanced versions support context windows of 100,000 tokens or more. This was a significant leap beyond many contemporaries and allows Claude to reason over very large amounts of text in one session.
+Continue
+05 / 8
+Design
+Which of the following principles is NOT part of Anthropic's core goal for Claude?
+A
+Helpful
+B
+Harmless
+C
+Honest
+D
+Hierarchical
+Correct! Anthropic's guiding principles for Claude are to be Helpful, Harmless, and Honest — often called the 'three H's.' Hierarchical is not part of this framework. The goal is to make AI that is safe and beneficial for everyone.
+Not quite. Anthropic's three guiding principles for Claude are Helpful, Harmless, and Honest. 'Hierarchical' is not one of them. These three H's shape how Claude is trained to interact with users responsibly.
+Continue
+06 / 8
+Features
+What was a key distinguishing feature of Claude 2 when it launched compared to many rival models at the time?
+A
+It could generate images natively
+B
+It had a 100,000-token context window
+C
+It could browse the internet in real time
+D
+It supported voice conversations out of the box
+Correct! Claude 2 launched with a 100,000-token context window, which was remarkable at the time. This allowed users to feed in entire books or massive codebases for analysis, setting Claude apart from many competing models.
+Not quite. The standout feature of Claude 2 was its 100,000-token context window. Claude does not natively generate images, and real-time browsing and built-in voice were not launch features of Claude 2.
+Continue
+07 / 8
+Safety
+Anthropic describes itself primarily as which type of company?
+A
+A consumer electronics company
+B
+An AI safety and research company
+C
+A cloud infrastructure provider
+D
+A social media and AI hybrid company
+Correct! Anthropic describes itself as an AI safety and research company. Unlike some competitors who lead with products or platforms, Anthropic's founding mission centers on building AI systems that are safe, interpretable, and steerable.
+Not quite. Anthropic is primarily an AI safety and research company. Its founding mission is rooted in making AI that is safe and understandable, which is why safety-focused training methods like Constitutional AI are central to its work.
+Continue
+08 / 8
+Features
+Which of the following tasks is Claude specifically designed to handle well?
+A
+Rendering 3D graphics in real time
+B
+Long-form writing, summarization, and complex reasoning
+C
+Executing system-level operating commands autonomously
+D
+Streaming live video content analysis
+Correct! Claude excels at long-form writing, summarization, coding assistance, and complex reasoning tasks. Its large context window and nuanced language understanding make it particularly well suited for handling detailed, multi-step text-based work.
+Not quite. Claude is designed for text-based tasks like writing, summarization, analysis, and reasoning. It does not render graphics, autonomously execute system commands, or perform live video analysis — it is a large language model at its core.
+See My Score
+Challenge Complete
+Your Score
+/ 8
+Thanks for playing!
+Try Again
+✕
+ Remove Ads
+I was surprised that the code worked on the first try. It even added error handling for edge cases, such as what to do with files that don’t have an extension. It proved that for daily automation tasks, the $20 cloud subscription is now an unnecessary add-on.
+Whether I’m debugging Python scripts or drafting a 2000-word deep dive into the latest Android firmware, the latency is virtually zero.
+It’s lean enough to run on consumer hardware but has enough brainpower to rival Claude Sonnet 4.5 in intelligence and document understanding. It’s become my go-to for vibe coding sessions.
+
+                        Gemma 4 E4B
+               
+
+            The ‘everyday’ champion
+    
+If Qwen3.6 is my heavy-duty engineer, Gemma 4 E4B is my nimble, everyday champion. When it comes to local LLMs, we often think that bigger is smarter, but Google’s latest 4-billion-parameter powerhouse proves that efficiency is the new benchmark for 2026. Because it’s so lightweight, I leave it running in the background of my workstation 24/7; it’s the model I turn to for instant brainstorming, email drafting, and those complex logic puzzles that usually trip up smaller models.
+To see if Gemma 4 could actually replicate Claude's reasoning feel, I gave it a complex prompt that would make models struggle. I asked it to describe a square room with specific items on each wall and put conditions on which words to avoid. It didn’t just pass; it excelled. Despite some conditions, like it couldn’t even say ‘bookshelf,’ ‘blue,’ or ‘behind’ words, it managed to describe the room with precision.
+✕
+ Remove Ads
+It handled the Sound wall reflection perfectly, calculated the room temperature using the given formula, and did all of this while hitting a tight 112-word count. Most local models lose the plot when you stack negative constraints like that, but Gemma’s instruction following felt sharp.
+And because it’s the E4B (Edge-4-Billion) variant, I 
+run it directly on my laptop without a dedicated GPU
+. I can draft sensitive client emails or jewelry business strategies for Asha Jewels without worrying about my data training a future cloud model. Gemma 4 is one of the few models of this size that doesn’t break when you ask it to format a table or calculate a quick conversion. It feels polished in a way that many open-source models don’t. Due to its lightweight nature, I’m already running it on my Pixel 8 via the Google AI Edge Gallery app.
+Related
+
+			I use ChatGPT, Claude, Perplexity, and Gemini daily — here's the only one worth paying for
+		
+One stands above the rest.
+Posts
+16
+By 
+Mahnoor Faisal
+Feb 21, 2026
+
+                        GPT-OSS 20B
+               
+
+            Honorable mention
+    
+ No productivity piece would be complete without an honorable mention for the heavyweight in the room: GPT-OSS 20B. If you are running a workstation with a beefy GPU or a top-tier Mac Studio, this is the model that brings GPT-level polish to your local workflow. Since it only activates 3.6B parameters at a time (despite its 20B size), it remains snappy and responsive.
+✕
+ Remove Ads
+
+                    Get the newsletter: practical guides for local LLM workflows
+                
+Subscribe to the newsletter for curated local LLM model picks, step-by-step setup guidance, reproducible prompt examples, and practical troubleshooting tailored to moving workflows local, along with broader AI-tooling perspectives and model tradeoffs.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+When I need a model to not just write code, but to actually simulate the output and catch logic errors before I even hit save, GPT-OSS is the one I load up. While the Qwen and Gemma models I mentioned earlier are perfect for my MacBook Pro on the go, I save GPT-OSS 20B exclusively for my Windows workstation.
+
+                        I fired Claude Pro
+               
+The dream of Saas-free professional productivity used to be a compromise, but thanks to the arrival of Gemma 4 and other capable local LLMs, you can actually transition away from Claude Pro without affecting your work output.
+Whether you are a developer tired of capacity errors or a writer looking to secure your property, the 
+local LLM ecosystem is finally ready for prime time
+.
+Of course, these are just my preferred LLM models for my workflow. You shouldn’t hold yourself back from exploring other LLMs based on your hardware setup and workflow.
+✕
+ Remove Ads
+AI tools
+Claude
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+12
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			Ollama is still the easiest way to start local LLMs, but it's the worst way to keep running them
+		
+
+			I stopped carrying a laptop after trying Android's desktop mode
+		
+
+			I used Claude Code, Antigravity, and Perplexity Computer to build a portfolio — there was a clear winner
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+23
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Shad
+Shad
+Shad
+#GW849906
+Member since 2024-11-14
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Curious what hardware you're running this on? Looking at getting off the online models myself but I think I need to look at my hardware stack. 
+2026-04-21 15:37:34
+Upvote
+
+                                    8
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Andrew
+Andrew
+Andrew
+#EK406934
+Member since 2026-03-24
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I assume it's a base model Mac book pro. 
+2026-04-22 01:51:27
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Alexandru
+Alexandru
+Alexandru
+#WB569713
+Member since 2026-04-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I personally went the other way, to Claude Max subscription, and use only the latest Opus models. I think it depends on your usage. From what I read you don't handle heavy tasks, so why not use the free tiers of Gemini, or GPT ? Also, I tried Gpt-oss 20b on my Mac and it takes 16gb of ram, so it is far from light. 
+2026-04-22 05:47:25
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Rajkumar
+Rajkumar
+Rajkumar
+#YI653412
+Member since 2024-08-17
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+free version doesn’t give api so we can’t integrate with our apps and automate.
+2026-04-27 07:21:38
+Upvote
+Downvote
+Reply
+Copy
+        
+Bart
+Bart
+Bart
+#XI749070
+Member since 2026-04-21
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Good stuff.  I too have been getting a lot out of the Gemma 4b model. I running on my 2 year old laptop with a new 8G Nvidia GPU. It's fine for one shot python scripts and relatively straight forward stuff.  But I write c# code, Blazor web apps, and winforms apps. That's a bit more challenging, but I have managed to build a VS Code like environment that gets me about 90 percent of what I want,  but that last 10 percent is challenging. 
+2026-04-21 19:34:26
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+The
+The
+The
+#GL893303
+Member since 2025-06-29
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Sure, little fella, sure.
+I guess when your productivity is mediocre to begin with (which is why you use these tools in the first place), its easy to spin "results".
+2026-04-21 09:59:30
+Upvote
+
+                                    7
+                            
+Downvote
+Reply
+
+                        3
+                    
+Copy
+        
+Justin
+Justin
+Justin
+#JV077351
+Member since 2025-12-28
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+It sounds like someone spend many wasted years in college just to get replaced by a llm and vibe coders. Cope harder. 
+2026-04-21 13:05:22
+Upvote
+
+                                    12
+                            
+Downvote
+Reply
+Copy
+        
+RikxianELE
+RikxianELE
+RikxianELE
+#FL001617
+Member since 2024-11-10
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Justin
+ If the Ai bubble pops millions will die due to Ai dying out. Imo Ai is great but having it replace artists, coders, writers, lawyers, we will be in a future where we rely on AI to even breath. The internet is alr being enslopified and vibecoding and ai artists create even more slop. I use AI myself but to help and assist. I wont be a lazy useless human letting AI do the work for me while i collect the money and go party on ibiza having AI as a money farn while fillinf the world with more slop. I am not that terrible of a person....
+But enjoy your AI art and code if you like! Such a bummer they shutdown sora or i could be a millionaire making AI slop videos to ruin whats left of, the minds of children and young adults. 
+2026-04-22 04:31:27
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Tyler
+Tyler
+Tyler
+#FV567145
+Member since 2025-12-14
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+You really pulled up on article just to be a douche 
+2026-04-22 13:15:11
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Ивайло
+Ивайло
+Ивайло
+#EZ346434
+Member since 2023-11-06
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+What about your power consumption, initial hardware investment (especially now with the prices) and the constant connectivity to the models??
+2026-04-21 17:10:49
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+
+                        2
+                    
+Copy
+        
+Billy
+Billy
+Billy
+#RY430573
+Member since 2026-04-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Initial hardware is real unless you already have it, however, power is greatly exaggerated. Even running 4x RTX 3090 24GB, my cards rarely go over half power under load. To be honest, I've increased my power bill more gaming than using AI.
+Connectivity is a non issue, no internet required, turn them on or off whenever you want.
+2026-04-22 05:09:34
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+Pablo
+Pablo
+Pablo
+#TU307624
+Member since 2025-06-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Billy
+ with 4 gpus you don't have unifed memory. It's not worth it to local inference ai 
+2026-04-22 08:43:37
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Mark
+Mark
+Mark
+#LN013928
+Member since 2026-03-27
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Cost of hardware?
+Cost of running hardware?
+2026-04-23 00:23:03
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Justin
+Justin
+Justin
+#JV077351
+Member since 2025-12-28
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Great article. What ide are you using with these llms to interact with your codebase?
+2026-04-21 13:14:07
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+luckz
+luckz
+luckz
+#QW969183
+Member since 2024-06-28
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Why do 80% of XDA articles name-drop some jewelry shops?
+2026-04-25 18:37:51
+Upvote
+Downvote
+Reply
+Copy
+        
+Darshan Sarvaiya
+Darshan Sarvaiya
+Darshan Sarvaiya
+#UY747496
+Member since 2026-04-24
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I like XDA than any other blog websites
+I will give 4/5 
+The level of Questions (MCQs) are high otherwise that are childish and down the value of Blog websites
+UI UX Designs 🔥 🔥 
+2026-04-24 01:08:23
+Upvote
+Downvote
+Reply
+Copy
+        
+Juliano
+Juliano
+Juliano
+#TC100782
+Member since 2026-04-23
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Only if you have a m5 max with 64gb
+2026-04-23 09:20:31
+Upvote
+Downvote
+Reply
+Copy
+        
+Kevin
+Kevin
+Kevin
+#VK041701
+Member since 2026-04-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Have you tried using Claude Code with local LLMs from LM Studio? 
+LM Studio is great but it won't actually write the files to your folders, instead you serve as a janitor role. Claude will write, debug, fix, ect. 
+2026-04-22 07:32:47
+Upvote
+Downvote
+Reply
+Copy
+        
+Jonathan
+Jonathan
+Jonathan
+#HP929964
+Member since 2023-11-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I have developed a series of projects (a high dynamic range microphone, a guitar that uses light to measure waveforms then reconstruct the sound, a highly modular DAW that uses network theory and logic, rather than tape metaphors and presets (it's provably more expressive than you can build a conventional DAW), a multi-wavelength high-end camera that is smaller and lighter than a standard camera, and a reworked Merlin engine (fixes all unresolved historic issues and switches to modern materials, otherwise it's just a regular Merlin 100-series).
+They're useful for testing AIs because they require minimal creation from scratch, but they do require chaining ideas from unrelated areas in novel ways, and ensuring that this actually works, there's no chemical, electrical, or material conflict. 
+So it's constraint-checking very large projects for very large numbers of variables, where the benefits and hazards are all in the interactions, so you can't get away with just knowing a bunch of facts, you have to know a very large set of interrelationships. 
+This is important in AI, because that's where humans make mistakes and that's where all the real work goes. Nobody cares what colour you paint the AI-generated hairdryer or whatever, at least not nearly as much as they care it doesn't explode. 
+If AI is going to be useful, it needs to handle high complexity projects. Inventing a new bottle washer is great, but if you're going yo burn an entire power station to the ground to build it, it had better be a very good bottle washer. 
+I can tell you what AIs can't cut it. Gemini can't track the relationships. Grok, Qwen, Kimi, and DeepSeek can cope (just) with seeing the relationships but not what they mean. ChatGPT and Claude break down if they are given too large a chunk, the relationship table explodes and they can't navigate it for more than three or four prompts. 
+Will your suggested method actually help in these cases? 
+2026-04-22 15:47:30
+Upvote
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+luckz
+luckz
+luckz
+#QW969183
+Member since 2024-06-28
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Sounds like it might be more of a dependency/graph/lookup/RAG problem for something like an MCP server than necessarily a question of finding other models.
+2026-04-25 18:37:08
+Upvote
+Downvote
+Reply
+Copy
+        
+Paul
+Paul
+Paul
+#UV204520
+Member since 2025-07-08
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Qwen3-Coder-Next is your real answer 
+2026-04-21 08:42:23
+Upvote
+Downvote
+Reply
+Copy
+        
+Chris
+Chris
+Chris
+#ET615291
+Member since 2024-08-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Using any form of AI to write your code is pure laziness, and, frankly, cheating your employer out of the wages they pay you.
+2026-04-23 04:19:57
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Cygnus
+Cygnus
+Cygnus
+#XB006016
+Member since 2026-04-27
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+NOT using AI while coding is cheating nowadays. You should make sensible use of AI to be efficient. Doing simple tasks manually is a waste of time. (Outside special occasions, like for hobby, for learning, etc.)
+2026-04-27 14:40:10
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 17, 2026
+
+                                    Claude Projects is the best productivity booster that you're not using
+                            
+Apr 17, 2026
+
+                                    I tested Claude's two biggest competitors because of its usage limits, and one banned my account
+                            
+Apr 16, 2026
+
+                                    Claude Code installed my IDE, and now I can't go back to manual setup
+                            
+Apr 16, 2026
+
+                                    Proxmox running Xpenology gave me the best of both worlds for my home NAS
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:04
+
+                            MacBook Neo: an iPhone 16 Pro in laptop form
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:03
+
+                            Now you can buy fake RAM for your gaming PC
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:07
+
+                            The end of affordable PCs?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            Snapdragon X2 Elite Extreme benchmarks: RIP Panther Lake?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:12
+Skip Ad
+5

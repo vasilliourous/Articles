@@ -1,0 +1,225 @@
+VoidStealer Malware Darts Past Google Chrome's Encryption
+TechTarget and Informa Tech’s Digital Business Combine.
+TechTarget and Informa
+TechTarget and Informa Tech’s Digital Business Combine.
+Together, we power an unparalleled network of 220+ online properties covering 10,000+ granular topics, serving an audience of 50+ million professionals with original, objective content from trusted sources. We help you gain critical insights and make more informed decisions across your business priorities.
+Dark Reading Resource Library
+Black Hat News
+Omdia Cybersecurity
+Advertise
+Newsletter Sign-Up
+Newsletter Sign-Up
+Cybersecurity Topics
+Related Topics
+Application Security
+Cybersecurity Careers
+Cloud Security
+Cyber Risk
+Cyberattacks & Data Breaches
+Cybersecurity Analytics
+Cybersecurity Operations
+Data Privacy
+Endpoint Security
+ICS/OT Security
+Identity & Access Mgmt Security
+Insider Threats
+IoT
+Mobile Security
+Perimeter
+Physical Security
+Remote Workforce
+Threat Intelligence
+Vulnerabilities & Threats
+Recent in Cybersecurity Topics
+Сloud Security
+After Replacing TeamPCP Malware, 'PCPJack' Steals Cloud Secrets
+After Replacing TeamPCP Malware, 'PCPJack' Steals Cloud Secrets
+by
+Nate Nelson
+May 7, 2026
+5 Min Read
+Application Security
+'TrustFall' Convention Exposes Claude Code Execution Risk
+'TrustFall' Convention Exposes Claude Code Execution Risk
+by
+Jai Vijayan
+May 7, 2026
+6 Min Read
+World                   
+Related Topics
+DR Global
+Middle East & Africa
+Asia Pacific
+Latin America
+See All
+The Edge
+DR Technology
+Events
+Related Topics
+Upcoming Events
+Podcasts
+Webinars
+SEE ALL
+Resources
+Related Topics
+Resource Library
+Newsletters
+Podcasts
+Reports
+Videos
+Webinars
+White Papers
+Partner Perspectives
+Dark Reading Resource Library
+Endpoint Security
+Threat Intelligence
+Vulnerabilities & Threats
+Cyber Risk
+News
+VoidStealer Malware Darts Past Google Chrome's Encryption
+Authors of the VoidStealer Trojan uncovered yet another way to get around Google's App-Bound Encryption (ABE), opening the door to infostealers.
+Jai Vijayan,
+Contributing Writer
+May 6, 2026
+3 Min Read
+Source: izzuanroslan via Shutterstock
+In another sign that browsers continue to be a prime attack target, authors of the VoidStealer Trojan have uncovered a way to bypass a Chrome security feature designed to protect session cookies and other sensitive data.
+It's the latest successful bypass of Chrome's App-Bound Encryption (ABE), introduced by Google in July 2024 and compatible with other Chromium-based browsers that also use ABE, like Microsoft Edge, Opera, Vivaldi, Brave, and others, according to 
+Kaspersky
+.
+Google introduced ABE specifically to 
+protect cookie data against infostealers
+ on Windows systems. As the company explains, Google uses the highest level protections the operating system provides — like Keychain services in macOS and system-provided wallets on Linux systems — to encrypt and protect cookies and other sensitive browser data. The problem with the equivalent Data Protection API (DPAPI) feature in Windows is that it does not protect stored data like cookies and passwords from being accessed by malicious applications like 
+infostealers,
+ masquerading as a legitimate, logged in user. ABE aimed to fix the problem by ensuring that only the Chrome application itself could decrypt stored data rather than any process running as the legitimate user.
+Related:
+Silver Fox Springs Tax-Themed Attacks on Orgs in India, Russia
+Bypassing Browser Protections
+"The architects of this feature assumed that to access 
+ABE-protected browser data
+, an infostealer would either need to escalate its privileges to system-level, or inject malicious code directly into Chrome," Kaspersky researcher Alanna Titterington said. "In theory, this should have made attacking Chrome significantly harder and reduced the effectiveness of mass-market infostealers," she said.
+In reality however, security researchers and malware authors have found ways to bypass the protection almost as soon as Google implemented the feature in Chrome. The authors of infostealers like Meduza Stealer, Whitesnake, 
+Lumma Stealer
+, and Lumar have all successfully continued to harvest cookie data and other secrets from Chrome, even after Google implemented ABE. 
+And researchers have demonstrated ways to do it as well. Titterington pointed to an effort by researcher 
+Alex Hagenah,
+ who showed how an attacker could extract cookies, passwords, payment methods, and tokens from Chrome even with ABE. His technique combined fileless, in-memory execution, process hollowing, direct system calls, and other stealth techniques to access encrypted data as if it were legitimate Chrome activity. Last year, 
+CyberArk
+ disclosed how its researchers developed a new so-called C4 attack technique that allowed them to decrypt Chrome cookies, even as a user with low privileges.
+Related:
+WhatsApp Leaks User Metadata to Attackers
+VoidStealer Malware Takes A Different Tactic
+The tactic that the authors of VoidStealer employ is different from previous ABE bypasses, according to Titterington. It targets the moment when Chrome needs to decrypts data and uses it to sign into a website or to access saved credentials, she noted. To do this, Chrome exposes the master key in plaintext in browser memory; VoidStealer authors figured out a way to take advantage of that brief window of opportunity. 
+To capture that moment the malware attaches to the browser as a debugger, which developers use as a legitimate mechanism for troubleshooting. It then identifies the exact point in the browser's execution where decryption occurs and pauses the process at that instant. This allows the attacker to extract the encryption key directly from memory, effectively bypassing the protections designed to keep it secure.
+The VoidStealer bypass tactic is another indication of how browsers and browser extension have become a 
+popular target
+ for attackers. With enterprises moving more of their workflows into Web applications, browsers have become repositories of sorts for authentication token, credentials, financial information and a variety of other sensitive data.
+Related:
+Two-Factor Authentication Breaks Free From the Desktop
+Don't miss the latest Dark Reading Confidential podcast,
+ How the Story of a USB Penetration Test Went Viral
+. Two decades ago Dark Reading posted its first blockbuster piece — a column by a pen tester who sprinkled rigged thumb drives around a credit union parking lot and let curious employees do the rest. This episode looks back at the history-making piece with its author, Steve Stasiukonis.
+ Listen now!
+About the Author
+Jai Vijayan
+Contributing Writer
+Jai Vijayan is a seasoned technology reporter with over 20 years of experience in IT trade journalism. He was most recently a Senior Editor at Computerworld, where he covered information security and data privacy issues for the publication. Over the course of his 20-year career at Computerworld, Jai also covered a variety of other technology topics, including big data, Hadoop, Internet of Things, e-voting, and data analytics. Prior to Computerworld, Jai covered technology issues for The Economic Times in Bangalore, India. Jai has a Master's degree in Statistics and lives in Naperville, Ill.
+See more from Jai Vijayan
+Want more Dark Reading stories in your Google search results?
+Add Us Now
+More Insights
+Industry Reports
+How Enterprises Are Developing Secure Applications
+Inside RSAC 2026: security leaders reveal the risks redefining your defense strategy
+How Enterprises Are Harnessing Emerging Technologies in Cybersecurity
+Ditch the Data Center: Understanding Flexible Cloud Infrastructure Security Management
+2025 State of Malware
+Access More Research
+Webinars
+The New Attack Surface: How Attackers Are Exploiting OAuth to Own Your Cloud Workspace
+Prompt Injection Is Just the Start: Securing LLMs in AI Systems
+Anatomy of a Data Breach: What to Do if it Happens to You
+How Well Can You See What's in Your Cloud?
+Implementing CTEM: Beyond Vulnerability Management
+More Webinars
+You May Also Like
+Endpoint Security
+2 Separate Campaigns Probe Corporate LLMs for Secrets
+by 
+Elizabeth Montalbano, Contributing Writer
+Jan 12, 2026
+Endpoint Security
+Pro-Russian Hackers Use Linux VMs to Hide in Windows
+by 
+Alexander Culafi
+Nov 04, 2025
+Endpoint Security
+We've All Been Wrong: Phishing Training Doesn't Work
+by 
+Nate Nelson, Contributing Writer
+Jul 01, 2025
+Endpoint Security
+Attackers Lace Fake GenAI Tools With Malware
+by 
+Alexander Culafi, Senior News Writer, Dark Reading
+May 12, 2025
+Editor's Choice
+Threat Intelligence
+From Stuxnet to ChatGPT: 20 News Events That Shaped Cyber
+From Stuxnet to ChatGPT: 20 News Events That Shaped Cyber
+by
+Dark Reading Editorial Team
+May 6, 2026
+31 Min Read
+Cyber Risk
+Physical Cargo Theft Gets a Boost From Cybercriminals
+Physical Cargo Theft Gets a Boost From Cybercriminals
+by
+Robert Lemos
+May 4, 2026
+5 Min Read
+Cyber Risk
+NSA Chief During Snowden Affair Shares Regrets, Reflections 13 Years Later
+NSA Chief During Snowden Affair Shares Regrets, Reflections 13 Years Later
+by
+Dark Reading Editorial Team
+Apr 28, 2026
+Want more Dark Reading stories in your Google search results?
+Keep up with the latest cybersecurity threats, newly discovered vulnerabilities, data breach information, and emerging trends. Delivered daily or weekly right to your email inbox.
+Subscribe
+Webinars
+The New Attack Surface: How Attackers Are Exploiting OAuth to Own Your Cloud Workspace
+Wed, June 24,2026 at 1pm EST
+Prompt Injection Is Just the Start: Securing LLMs in AI Systems
+Tues, May 26, 2026, at 1pm EST
+Anatomy of a Data Breach: What to Do if it Happens to You
+June 18th, 2026 | 11:00am -5:00pm ET | Doors Open at 10:30am ET
+How Well Can You See What's in Your Cloud?
+Thurs, June 4, 2026 at 1:00pm EST
+Implementing CTEM: Beyond Vulnerability Management
+Thurs, May 21, 2026 at 1pm EST
+More Webinars
+Black Hat USA | Mandalay Bay, Las Vegas
+The premier cybersecurity event of the year returns to Mandalay Bay with a re‑engineered, six‑day program built to ignite innovation, push boundaries, and bring the global security community together like never before. Use code: DARKREADING to save $200 on a Briefings pass or $100 on a Business pass.
+GET YOUR PASS
+Discover More
+Black Hat
+Omdia
+Working With Us
+About Us
+Advertise
+Reprints
+Join Us
+Newsletter Sign-Up
+Follow Us
+Copyright © 2026 TechTarget, Inc. d/b/a Informa TechTarget. This website is owned and operated by Informa TechTarget, part of a global network that informs, influences and connects the world’s technology buyers and sellers. All copyright resides with them. Informa PLC’s registered office is 5 Howick Place, London SW1P 1WG. Registered in England and Wales. TechTarget, Inc.’s registered office is 275 Grove St. Newton, MA 02466.
+Home
+|
+Cookie Policy
+|
+Privacy
+|
+Terms of Use
+Your Privacy Choices
+×
+×

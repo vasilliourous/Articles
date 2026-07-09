@@ -1,0 +1,112 @@
+Even cybersecurity researchers are exposing secrets in their arXiv LaTeX source - Help Net Security
+Help Net Security newsletters
+: Daily and weekly news, cybersecurity jobs, open source projects, breaking news – 
+subscribe here!
+News
+Features
+CISO
+AI
+Videos
+Product showcase
+Industry news
+Reviews
+Whitepapers
+Events
+Newsletters
+Please turn on your JavaScript for this page to function normally.
+Mirko Zorz
+, Director of Content, Help Net Security
+                                            
+April 28, 2026
+Share
+Even cybersecurity researchers are exposing secrets in their arXiv LaTeX source
+Researchers submit papers to arXiv every day, and most of them upload the LaTeX source files alongside the PDF. The preprint service requires source uploads when available, and around 93 percent of submissions include them. Those files contain everything the author worked with: draft paragraphs, comments between coauthors, leftover figures, build artifacts, and whatever else happened to sit in the project folder at submission time.
+A 
+study
+ from RWTH Aachen University, set to appear at the 2026 IEEE Symposium on Security and Privacy, looked at every arXiv paper with source files going back to 1991. The dataset covers 2.7 million submissions. In 88 percent of them, the researchers found content that does nothing for the compiled PDF and was never meant for public distribution.
+What the source files give away
+The leaks fall into three groups. First, files bundled into the upload that the paper does not need to compile: backup folders, old drafts, complete Git repositories with editing histories, configuration files, even leftover .nfs files created when something is deleted on a network filesystem. Second, metadata embedded in images and PDFs, which can include usernames, software versions, hardware identifiers, and GPS coordinates. Third, comments and commented-out text inside the LaTeX files themselves.
+Shwetha Babu Prasad, an information security specialist, said the third category carries risks that aren’t always obvious. “Comments between collaborators can be blunt opinions on reviewers, criticism of other work, internal disagreements,” she said. “Once that’s public, it can be taken out of context very easily. That’s reputational and legal risk.”
+LaTeX sources might contain comments or dangling files that are irrelevant to or unused in the compiled PDF, respectively. When being distributed regardless, they disclose (sensitive) information (Source: Research paper)
+Among the more sensitive findings: 699 links to Google Docs that granted edit access to anyone who clicked, at least 200 exposing material from the authoring process such as reviews, rebuttals, cover letters, and meeting minutes. Eighteen of those documents contained survey data with personally identifiable information about study participants. The researchers also recovered API tokens, private keys, passwords in 82 submissions, links to FTP and SSH servers, and GPS coordinates that in some cases mapped both research buildings and authors’ residential addresses.
+Prasad said the risk goes beyond direct credential exposure. “Even if there’s no direct credential exposed, references to APIs, internal systems, or testing setups can give away how things are structured behind the scenes,” she said. “Sometimes internal or security teams already know about these paths, but once they’re exposed externally, they become validated reconnaissance for anyone looking to get in.”
+Security researchers come off worse than most
+The finding that should sting most is this: papers connected to top-tier security conferences leak more hidden information on average than papers from other fields. Submissions matched to A-star and A-ranked security venues showed statistically significant increases in dangling files, metadata, and unique comments compared to other computer science work, and to the rest of arXiv. 
+The researchers offer a benign explanation, suggesting that security papers tend to have larger and more complex source trees, which gives more places for things to hide. Even after normalizing for file size, the gap holds.
+The authors point to a small group of counter-examples: 70 papers from matched security venues were clean across all three dimensions. The number out of nearly 2,000 matched papers gives a sense of how rare careful sanitization is.
+The cleaning tools do not work well
+arXiv recommends Google’s 
+arxiv_latex_cleaner
+, the most widely cited tool for this job. The study tested six sanitization tools against a set of standard cases and found none that handles all of them. Some crash on basic LaTeX comment environments. Some remove files the paper needs in order to compile. Most rely on regular expressions, which produce both false positives and false negatives. Metadata cleaning is missing from every existing tool the researchers evaluated.
+The researchers built their own replacement, ALC-NG, which combines structured parsing of LaTeX source with metadata stripping and a more reliable method for identifying which files the paper uses. Their evaluation shows it covers more cases than any prior tool, and it produces visually identical PDFs in 87 percent of the submissions tested.
+Disclosure ran into a wall
+The authors notified 2,660 researchers across 1,141 papers about specific findings in their submissions. They first asked arXiv to coordinate the disclosure. arXiv declined, citing author identity protection, and assigned the responsibility back to the authors of affected papers.
+Juan Mathews Rebello Santos, a cybersecurity analyst, said the underlying question of who handles disclosure points to a broader design problem. “The right model is shared responsibility, but asymmetrical,” he said. “The platform should handle systemic risk reduction at scale, while users remain accountable for final verification.” He pointed to layered approaches that have worked in other ecosystems: default automated scanning combined with interruptive feedback loops and progressive enforcement that escalates from warning to blocking to requiring explicit override justification.
+The research team then collected contact addresses themselves, partly through automated extraction and partly by hand. Eighteen affected submissions were updated after disclosure. The original versions remain accessible on arXiv, since old versions of a paper are never removed. For anyone who has uploaded a sensitive Google Docs link or a working API key inside a LaTeX comment, the practical fix is to revoke access or rotate the credential. Cleaning the source file does not help once it has been published.
+arXiv was contacted for comment but did not respond by the time of publication.
+Download: 
+2026 SANS Identity Threats & Defenses Survey
+More about
+cybersecurity
+data
+data analysis
+data leak
+IEEE
+metadata
+PDF
+privacy
+research
+Share
+Featured
+
+                news
+            
+Dirty Frag: Unpatched Linux vulnerability delivers root access
+Ivanti EPMM vulnerability exploited in zero-day attacks (CVE-2026-6973)
+What Mozilla learned running an AI security bug hunting pipeline on Firefox
+Download: Automating Pentest Delivery Guide
+Resources
+Webinar: The IT Leader’s Guide to AI Governance
+CIS Benchmarks March 2026 Update
+Download: 2026 SANS Identity Threats & Defenses Survey
+Don't
+ miss
+Dirty Frag: Unpatched Linux vulnerability delivers root access
+Ivanti EPMM vulnerability exploited in zero-day attacks (CVE-2026-6973)
+May 2026 Patch Tuesday forecast: AI starts driving security industry changes
+Product showcase: NetGuard open-source firewall for Android
+What Mozilla learned running an AI security bug hunting pipeline on Firefox
+Cybersecurity news
+HNS Daily
+
+                                                    Daily newsletter sent Monday-Friday                                                
+HNS Newsletter
+
+                                                    Weekly newsletter sent on Mondays                                                
+InSecure Newsletter
+
+                                                    Editor's choice newsletter sent twice a month                                                
+Breaking news
+
+                                                    Periodical newsletter released when there is breaking news                                                
+Cybersecurity jobs
+
+                                                    Weekly newsletter listing new cybersecurity job positions                                                
+Open source
+
+                                                    Monthly newsletter focusing on open source cybersecurity tools                                                
+Subscribe
+I have read and agree to the
+                                    
+terms & conditions
+
+                    © Copyright 1998-2026 by
+                    
+Help Net Security
+Read our privacy policy
+|
+About us
+|
+Advertise
+Follow us
+×

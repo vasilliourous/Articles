@@ -1,0 +1,283 @@
+We Found a Stable Firefox Identifier Linking All Your Private Tor Identities
+Product
+Use Cases
+Resources
+Docs
+Templates
+Demo
+Pricing
+Login
+Contact Sales
+Get Started
+Back
+April 22, 2026
+Fingerprinting
+Engineering
+We found a stable Firefox identifier linking all your private Tor identities
+Dai Nguyen
+Senior Engineer, Security Research
+Martin Bajanik
+Staff Engineer, Research
+Contents
+See less 
+Why this matters
+What is IndexedDB and what does indexedDB.databases() do?
+How indexedDB.databases() became a stable identifier
+Reproducing the issue
+Privacy impact
+Entropy and fingerprinting capacity
+The fix
+Responsible disclosure
+Building for privacy
+Identify your web and mobile traffic for free 
+in minutes
+Get Started
+Contents
+See less 
+Why this matters
+What is IndexedDB and what does indexedDB.databases() do?
+How indexedDB.databases() became a stable identifier
+Reproducing the issue
+Privacy impact
+Entropy and fingerprinting capacity
+The fix
+Responsible disclosure
+Building for privacy
+Summarize this article with
+We recently discovered a privacy vulnerability affecting all Firefox-based browsers. The issue allows websites to derive a unique, deterministic, and stable process-lifetime identifier from the order of entries returned by IndexedDB, even in contexts where users expect stronger isolation.
+This means a website can create a set of IndexedDB databases, inspect the returned ordering, and use that ordering as a fingerprint for the running browser process. Because the behavior is process-scoped rather than origin-scoped, unrelated websites can independently observe the same identifier and 
+link activity across origins
+ during the same browser runtime. In 
+Firefox Private Browsing mode
+, the identifier can also persist after all private windows are closed, as long as the Firefox process remains running. In Tor Browser, the stable identifier persists even through the 
+"New Identity"
+ feature, which is designed to be a full reset that clears cookies and browser history and uses new Tor circuits. The feature is described as being for users who "want to prevent [their] subsequent browser activity from being linkable to what [they] were doing before." This vulnerability effectively defeats the isolation guarantees users rely on for unlinkability.
+We responsibly disclosed the issue to Mozilla and to the Tor Project. Mozilla has quickly released the fix in 
+Firefox 150
+ and 
+ESR 140.10.0
+, and the patch is tracked in 
+Mozilla Bug 2024220
+. The underlying root cause is inherited by Tor Browser through Gecko’s IndexedDB implementation, so the issue is relevant to both products and to all Firefox-based browsers.
+The fix is straightforward in principle: the browser should not expose internal storage ordering that reflects process-scoped state. Canonicalizing or sorting results before returning them removes the entropy and prevents this API from acting as a stable identifier.
+Why this matters
+Private browsing modes and 
+privacy-focused browsers
+ are designed to reduce websites' ability to identify users across contexts. Users generally expect two things:
+First, unrelated websites should not be able to tell they are interacting with the same browser instance unless a shared storage or explicit identity mechanism is involved.
+Second, when a private session ends, the state associated with that session should disappear.
+This issue breaks both expectations. A website does not need cookies, localStorage, or any explicit cross-site channel. Instead, it can rely on the browser’s own internal storage behavior to derive a high-capacity identifier from the ordering of database names returned by an API.
+For developers, this is a useful reminder that privacy bugs do not always come from direct access to identifying data. Sometimes they come from deterministic exposure of internal implementation details.
+For security and product stakeholders, the key point is simple: even an API that appears harmless can become a cross-site tracking vector if it leaks stable process-level state.
+What is IndexedDB and what does 
+indexedDB.databases()
+ do?
+IndexedDB
+ is a browser API for storing structured data on the client side. Web applications use it for offline support, caching, session state, and other local storage needs. Each origin can create one or more named databases, which can hold object stores and large amounts of data.
+The 
+indexedDB.databases()
+ API returns metadata about the databases visible to the current origin. In practice, developers might use it to inspect existing databases, debug storage usage, or manage application state.
+Under normal privacy expectations, the order of results returned by this API should not, in itself, carry identifying information. It should simply reflect a neutral, canonical, or otherwise non-sensitive presentation of database metadata.
+The issue we found comes from the fact that, in all Firefox-based browsers, the returned order was not neutral at all.
+How 
+indexedDB.databases()
+ became a stable identifier
+In all Firefox Private Browsing mode, 
+indexedDB.databases()
+ returns database metadata in an order derived from internal storage structures rather than from database creation order.
+The relevant implementation is in 
+dom/indexedDB/ActorsParent.cpp
+.
+In Private Browsing mode, database names are not used directly as on-disk identifiers. Instead, they are mapped to UUID-based filename bases via a global hash table:
+using
+ StorageDatabaseNameHashtable 
+=
+ nsTHashMap
+<
+nsString
+,
+ nsString
+>
+;
+
+StaticAutoPtr
+<
+StorageDatabaseNameHashtable
+>
+ gStorageDatabaseNameHashtable
+;
+The mapping is performed inside 
+GetDatabaseFilenameBase()
+ called within 
+OpenDatabaseOp::DoDatabaseWork()
+.
+When 
+aIsPrivate
+ is true, the website-provided database name is replaced with a generated UUID and stored in the global 
+StorageDatabaseNameHashtable
+. This mapping:
+Is keyed only by the database name string
+Persists for the lifetime of the IndexedDB QuotaClient
+Is shared across all origins
+Is cleared only when Firefox is fully restarted
+Later, when 
+indexedDB.databases()
+ is invoked, Firefox gathers database filenames via 
+QuotaClient::GetDatabaseFilenames(...)
+ called in 
+GetDatabasesOp::DoDatabaseWork()
+.
+Database base names are inserted into an 
+nsTHashSet
+.
+No sorting is performed before iteration. The final result order is determined by iteration over the hash set’s internal bucket layout.
+Because UUID mappings are stable for the lifetime of the Firefox process, and hash table structure and iteration order are deterministic for a given internal layout, the returned ordering becomes a deterministic function of the generated UUID values, hash function behavior, and hash table capacity and insertion history. This ordering persists across tabs and private windows, resetting only upon a full Firefox restart. Crucially, the UUID mapping and hash set iteration are not origin-scoped. They are process-scoped.
+Reproducing the issue
+A simple proof of concept is enough to demonstrate the behavior. Two different origins host the same script. Each script:
+Creates a fixed set of named databases.
+Calls 
+indexedDB.databases()
+.
+Extracts and prints the returned order.
+In affected Firefox Private Browsing and Tor Browser builds, both origins observe the same permutation during the lifetime of the same browser process. Restarting the browser changes the permutation.
+Conceptually, the output looks like this:
+created:
+a,b,c,d,e,f,g,h,i,j,k,l,m,n,o,p
+
+listed:
+g,c,p,a,l,f,n,d,j,b,o,h,e,m,i,k
+The important point is not the exact order itself, but rather that the order is not the original creation order, that the same order appears across unrelated origins, and it persists across reloads and new private windows, even after all private windows are closed. Only a full browser restart yields a new one. That is exactly what you do not want from a privacy perspective.
+Privacy impact
+This issue enables both cross-origin and same-origin tracking within a single browser runtime.
+Cross-origin impact
+Unrelated websites can independently derive the same identifier and infer that they are interacting with the same running Firefox or Tor Browser process. That lets them link activity across domains without cookies or other shared storage.
+Same-origin impact
+In Firefox Private Browsing mode, the identifier can persist even after all private windows are closed, provided the Firefox process itself is still running. That means a site can recognize a later visit in what appears to be a fresh private session. In Tor Browser, the stable identifier effectively defeats Tor Browser’s “New Identity” isolation within a running browser process, allowing websites to link sessions that are expected to be fully isolated from one another.
+Why this is especially serious in Tor Browser
+Tor Browser is specifically designed to reduce cross-site linkability and minimize browser-instance-level identity. A stable process-lifetime identifier cuts directly against that design goal. Even if it only survives until a full process restart, that is still enough to weaken unlinkability during active use.
+Entropy and fingerprinting capacity
+The signal is not just stable. It also has high capacity.
+If a site controls 
+N
+ database names, then the number of possible observable permutations is 
+N!
+, with theoretical entropy of 
+log2(N!)
+. With 16 controlled names, the theoretical space is about 44 bits. That is far more than enough to distinguish realistic numbers of concurrent browser instances in practice.
+The exact number of reachable permutations may be somewhat lower because of internal hash table behavior, but that does not materially change the security story. The exposed ordering still provides more than enough entropy to act as a strong identifier.
+The fix
+The right fix is to stop exposing entropy derived from the internal storage layout.
+The cleanest mitigation is to return results in a canonical order, such as lexicographic sorting. That preserves the API's usefulness for developers while removing the fingerprinting signal. Randomizing output per call could also hide the stable ordering, but sorting is simpler, more predictable, and easier for developers to reason about.
+From a security engineering standpoint, an ideal  fix:
+Low conceptual complexity
+Minimal compatibility risk
+Direct elimination of the privacy leak
+Responsible disclosure
+We responsibly disclosed the issue to Mozilla and to the Tor Project. Mozilla has released the fix in 
+Firefox 150
+ and 
+ESR 140.10.0
+, and the patch is tracked in 
+Mozilla Bug 2024220
+. Because the behavior originates from Gecko’s IndexedDB implementation, downstream Gecko-based browsers, including Tor Browser, are also affected unless they apply their own mitigation.
+Building for privacy
+This vulnerability shows how a small implementation detail can create a meaningful privacy problem. The impact is significant. Unrelated websites can link activity across origins during the same browser runtime, and private-session boundaries are weakened because the identifier survives longer than users would expect.
+The good news is that the fix is simple and effective. By canonicalizing the output before returning it, browsers can eliminate this source of entropy and restore the expected privacy boundary. This is exactly the kind of issue worth paying attention to: subtle, easy to miss, and highly instructive for anyone building privacy-sensitive browser features.
+All article tags
+Fingerprinting
+Engineering
+Share this post
+Related Articles
+Engineering
+Fingerprinting
+Leak
+Demo: Exploiting leaked timestamps from Google Chrome extensions
+In this demo, learn how Chromium extensions are unintentionally exposing an exploit that can be used to track a user’s activity across multiple websites. 
+Apple safari
+Fingerprinting
+Engineering
+How We Bypassed Safari 17's Advanced Audio Fingerprinting Protection
+Explore how Safari 17’s new anti-fingerprinting techniques affect audio fingerprinting and browser differentiation.
+Fingerprinting
+Account sharing
+Tutorials
+Engineering
+Use cases
+Account Sharing: The Step-By-Step Prevention Guide
+Address account sharing impacts with our tutorial on detection techniques and converting users into paying customers.
+Fingerprinting
+Ios
+Engineering
+Overview of iOS fraud detection APIs and device fingerprinting
+Discuss iOS application security techniques, their pros and cons, and alternative fraud detection approaches.
+Engineering
+Fingerprinting
+Leak
+Demo: Exploiting leaked timestamps from Google Chrome extensions
+In this demo, learn how Chromium extensions are unintentionally exposing an exploit that can be used to track a user’s activity across multiple websites. 
+Apple safari
+Fingerprinting
+Engineering
+How We Bypassed Safari 17's Advanced Audio Fingerprinting Protection
+Explore how Safari 17’s new anti-fingerprinting techniques affect audio fingerprinting and browser differentiation.
+Fingerprinting
+Account sharing
+Tutorials
+Engineering
+Use cases
+Account Sharing: The Step-By-Step Prevention Guide
+Address account sharing impacts with our tutorial on detection techniques and converting users into paying customers.
+Fingerprinting
+Ios
+Engineering
+Overview of iOS fraud detection APIs and device fingerprinting
+Discuss iOS application security techniques, their pros and cons, and alternative fraud detection approaches.
+Subscribe to our 
+newsletter_
+Product
+Device Intelligence Platform
+Smart Signals
+AI Agent Detection
+Integrations
+FingerprintJS vs. Pro
+Demo
+Identification
+Pricing
+Use Cases
+New Account Fraud
+Account Takeover
+Account Sharing Prevention
+SMS Fraud
+Payment Fraud
+Paywall Enforcement
+Returning User Experience
+Bot Detection
+Resources
+Resource Center
+Blog
+Case Studies
+Guides
+FAQ
+Support Center
+Developers
+Documentation
+Tutorials
+SDKs and Libraries
+GitHub
+Discord Community
+Company
+About us
+Careers
+We‘re hiring
+Info for AI Bots
+Press
+Partners
+System status
+Security
+Subscribe to our 
+newsletter_
+© 2026 FingerprintJS, Inc
+Privacy policy
+Terms and conditions
+Join our developer community on Discord
+All systems normal

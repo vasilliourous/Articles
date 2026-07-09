@@ -1,0 +1,602 @@
+Why I abandoned Gmail for a privacy-first email service—and never looked back
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+Networking
+Storage and NAS
+Components
+Peripherals
+Operating Systems
+Submenu
+Linux
+Windows
+Software
+Submenu
+Programming
+Applications
+Mobile
+Submenu
+Android
+iPhone
+Carriers
+New Tech
+Submenu
+Hobbies
+Smart Home
+Homelab
+Single-Board Computers (SBCs)
+Cutting Edge
+Streaming
+Submenu
+Streaming Content
+Streaming Platforms
+Audio/Video
+Automotive
+Reviews
+Buying Guides
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+5
+More Action
+Sign in now
+🔥Tech Deals
+Storage
+Streaming
+Linux
+Open Source
+Microsoft Excel
+Android
+Windows
+Close
+Why I abandoned Gmail for a privacy-first email service—and never looked back
+Credit: Joe Fedewa / How-To Geek
+By 
+Umair Khurshid
+Published
+ Apr 21, 2026, 12:30 PM EDT
+Umair Khurshid is a technology writer and developer with a strong focus on Linux, FreeBSD, cloud infrastructure, and automation. Before focusing on writing, Umair worked as a developer and DevOps engineer building and automating cloud-native systems.
+Sign in to your 
+How-To Geek
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+5
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+I stopped using Gmail around 8 years ago. The decision did not arrive as a reaction to a single incident or policy change but as a gradual shift in how I thought about email as a system. Gmail worked well then and continues to work well now. What changed for me was not the quality of the product but the role it played in a larger ecosystem that collects and correlates data across nearly every digital interaction (which sounds abstract until you notice how often you click "Sign in with Google").
+✕
+ Remove Ads
+Email sits in a unique position because it quietly becomes the backbone of your online identity, linking accounts, storing transaction records, and acting as a fallback mechanism whenever something goes wrong elsewhere. Once that becomes obvious, it becomes difficult to ignore that Gmail operates inside an environment designed for 
+data harvesting
+ and I wanted my email to remain a contained tool rather than an entry point into everything.
+
+                        Looking for a simpler model
+               
+
+            Choosing a practical alternative approach
+    
+The search for an alternative was grounded in practicality rather than ideology, since I still needed something that behaved like a normal email service without reinventing everything from scratch (no desire to self-host a mail server and spend weekends debugging
+ SPF records
+). That search led me to Proton AG and their offering, Proton Mail, which presented itself as a familiar interface built on a different set of assumptions about data handling.
+Proton Mail does not attempt to redesign email, which makes the transition easier at a surface level, but its underlying model changes how messages are stored and accessed.
+Messages between Proton users are encrypted by default, while communication with external recipients can be encrypted when necessary, and the entire service operates under Swiss privacy laws that impose additional constraints on data access. These details do not alter the act of writing or receiving email, yet they significantly alter the conditions under which that data exists.
+✕
+ Remove Ads
+
+                        The migration was slow by design
+               
+
+            Gradual transition without breaking access
+    
+Moving away from Gmail required more patience than I initially expected because email addresses are embedded across a wide range of services that accumulate over time.
+Instead of attempting a complete switch, I ran Proton Mail alongside Gmail and gradually migrated accounts that mattered, starting with financial services, infrastructure providers, and platforms tied to ongoing work. This incremental process reduced the risk of breaking access to something important and allowed the transition to happen without disruption.
+Related
+
+			How to Switch From Google to Proton
+		
+Want to de-Google your cloud life? 
+Posts
+7
+By 
+Fergus O'Sullivan
+Sep 2, 2024
+It also made it clear that email migration is not about moving messages from one inbox to another but about updating the web of connections that depend on that address. The process stretched over months, which turned out to be necessary rather than excessive.
+
+                        Living outside the Google ecosystem
+               
+
+            Reducing dependency on Google services
+    
+Credit: Lucas Gouveia / How-To Geek | Google
+✕
+ Remove Ads
+ Leaving Gmail introduces a broader question about dependence on Google services, since email often sits alongside tools like Google Drive and Google Calendar in a tightly integrated workflow. Replacing everything at once would have added unnecessary complexity, so I treated each service independently and avoided forcing a complete migration before suitable alternatives were available.
+Over time, Proton expanded its ecosystem with tools like 
+Proton Drive
+, Proton Calendar, and the new Proton Docs, which made it easier to consolidate certain parts of my workflow without recreating the same level of interdependence found in the Google stack (or at least not the same kind).
+
+                        I still keep a Gmail account (unfortunately)
+               
+
+            Maintaining access to legacy systems
+    
+Even though Proton Mail became my primary inbox, I never removed my Gmail account entirely because it remains tied to earlier phases of my digital life, particularly university systems and accounts that were created long before I considered switching providers. These connections are not always worth untangling, especially when they function without issue and do not require active use.
+Related
+
+			How To Import Your Outlook Calendar Into Proton Calendar
+		
+Get your Outlook calendar into Proton
+Posts
+By 
+Chizara Ibeakanma
+Jan 19, 2025
+The role of Gmail shifted as a result, since it now acts as a secondary inbox for legacy access rather than a central hub for communication. Important conversations, new registrations, and ongoing work all happen through Proton Mail, while Gmail exists as a compatibility layer that allows me to interact with systems that still expect a Google account. This separation has proven to be practical, since it avoids unnecessary migration effort while still keeping my primary workflow within a more controlled environment.
+✕
+ Remove Ads
+
+                        Proton Mail gets it right
+               
+
+            Focused design without unnecessary layers
+    
+The most noticeable change after switching is the absence of additional layers built around the inbox, since Proton Mail focuses on core functionality without attempting to extend into adjacent behaviors. The interface remains straightforward, and the experience revolves around reading and writing email without introducing elements designed to capture attention or guide user behavior.
+Encryption is central to this approach, with messages secured both at rest and in transit, and communication between Proton users handled automatically without additional configuration (no toggles to remember). 
+External communication 
+can also be encrypted when required, which provides flexibility without complicating the default workflow. This design keeps the system consistent, even if it introduces certain limitations compared to more feature-rich alternatives.
+
+                        The trade-offs you notice
+               
+
+            Where limitations become more visible
+    
+The differences become more apparent in areas where encryption imposes constraints, particularly in search functionality, since the server cannot process message contents in the same way as a traditional email provider. Proton has addressed this with client-side indexing, which improves usability, but the experience still differs from the near-instant search capabilities offered by Gmail.
+✕
+ Remove Ads
+Integration also requires adjustment, since Proton Mail does not connect as broadly with third-party services, and using desktop clients such as Mozilla Thunderbird involves an additional bridge application that manages encryption locally. This setup works reliably but introduces an extra component that needs to be maintained.
+
+                        Paying for the product changes the relationship
+               
+
+            Subscriptions align incentives with users
+    
+The business model behind Proton Mail influences how the service behaves, since it relies on subscriptions rather than advertising, which aligns its incentives more closely with the user. This creates a clearer boundary between functionality and data collection, since the service does not depend on extracting behavioral insights to generate revenue.
+Related
+
+			This Is My Favorite Email Client on Linux (And It’s Not Thunderbird)
+		
+This is the hidden gem of Linux email clients.
+Posts
+11
+By 
+Dibakar Ghosh
+Sep 22, 2025
+With Gmail, the relationship is shaped by its role within a larger ecosystem that benefits from aggregated data, whereas Proton Mail positions itself as a standalone tool designed to perform a specific function. This distinction becomes more meaningful over time, especially when considering how much personal information passes through an email account.
+
+                        How it holds up after 8 years
+               
+
+            Long-term reliability and steady improvements
+    
+Proton Mail has evolved significantly since I first started using it, with improvements in interface design, mobile applications, and overall performance that bring it closer to the level of refinement expected from a modern email service. The addition of related tools like Proton Drive and Proton Calendar has made it easier to maintain a consistent workflow without relying on external providers for basic functionality.
+✕
+ Remove Ads
+
+    						Proton Mail
+			
+Subscription
+Yes
+Categories
+
+									
+										
+											Email app
+
+										
+																	
+Proton Mail offers an encrypted and secure way to keep track of your life and emails.
+See at Proton
+Expand
+Collapse
+Despite these improvements, the service retains its original focus, which is evident in its limited scope compared to more expansive platforms. This focus contributes to a sense of stability, since the service evolves without attempting to redefine its purpose.
+
+            Why I never went back
+    
+The decision to leave Gmail was not driven by dissatisfaction with its capabilities but by a preference for a system that aligns more closely with how I think about data ownership and privacy.
+Proton Mail introduces a small amount of additional effort in exchange for greater control, and over time, that trade-off becomes part of the routine rather than an obstacle. After 8 years, Proton Mail feels like a natural default, while Gmail feels like a system built around a different set of priorities.
+Maintaining a secondary Gmail account for legacy access has proven to be a practical compromise, allowing me to retain compatibility where necessary without returning to a workflow that depends on it as a primary tool.
+✕
+ Remove Ads
+Applications
+Email
+Google
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. 
+Read More
+.
+Close
+✕
+ Remove Ads
+
+                                                    Desktop
+                                            
+
+                                                    Mobile
+                                            
+
+			KDE Dolphin does file management better than GNOME—here's why
+		
+52 minutes ago
+
+			This open-source project brings the best part of Linux to Windows
+		
+2 hours ago
+
+			These 6 Linux command defaults make the terminal much less frustrating
+		
+3 hours ago
+See More
+
+			This open-source app suite replaced 6 closed-source apps and tools on my Android phone
+		
+36 minutes ago
+
+			I don't use Google Maps in Android Auto anymore—this navigation app took its place
+		
+2 hours ago
+
+			Please stop typing on your Google Pixel—these 3 voice commands are a game changer
+		
+20 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			Your sleek flat Ethernet cable is picking up interference like an antenna
+		
+
+			Soldered RAM is the future of desktops—and I finally understand why
+		
+
+			5 Android Auto settings you should change before your next drive
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+5
+Sign in to your 
+How-To Geek
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Dannywoods
+Dannywoods
+Dannywoods
+#PQ919838
+Member since 2025-04-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Been a Proton user for long time. It’s great. Not as much flash as Goo, but it gets the task done. 
+Anyone not paying attention to privacy is open to all sorts of exploitation. Simple things like shopping lists online can lead to identity theft. If you have no credit or don’t mind your identity used for nefarious purposes, great.  Save them effort a publish yourself on Facebook and such. 
+2026-04-22 08:16:10
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+The
+The
+The
+#IC175023
+Member since 2024-08-30
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Proton Mail isnt all its cracked up to be... this article sounds like a giant ad.
+2026-04-21 23:11:39
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Umair
+Umair
+Umair
+#XC683111
+Member since 2026-04-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Yeah totally, Proton Mail has me swimming in ad money, it is basically raining cash over here.
+2026-04-22 18:07:51
+Upvote
+Downvote
+Reply
+Copy
+        
+Atalantis
+Atalantis
+Atalantis
+#YN238481
+Member since 2026-04-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Skill issue. Just host your own mail server. Then you can make your password 12345 if you want. And as many email addresses as you want. And in total for the domain and vps it's like $20 a year total? And it's yours, and you can do whatever you want with it. (Or you could get a booooring .cc domain and it's $16/yr)
+2026-04-21 21:18:23
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Umair
+Umair
+Umair
+#XC683111
+Member since 2026-04-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I understand the appeal because I have actually run mail servers as part of my job, not just as a hobby. Self hosting email does not remove security concerns, it's just that you are now responsible for everything, and while the domain and VPS might be cheap, the real cost is ongoing attention, which becomes very real when you also have work, other systems to maintain, and a family. 
+2026-04-22 18:04:51
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Gracjan
+Gracjan
+Gracjan
+#PJ582792
+Member since 2026-04-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Oh, the irony is truly delicious. I just had to click "Sign in with Google" to leave this comment, because after a decade of playing "privacy crusader" with Proton Mail, I’ve finally realized that being a voluntary digital hermit is just exhausting.
+I spent years acting like I was some high-stakes international spy hiding state secrets, when in reality, my most sensitive data was just a grocery list and a lukewarm email from my electric company. At 37, I’ve finally seen the light: it turns out convenience actually is king. I’m back in the warm, all-knowing embrace of the Google ecosystem—Gmail, Docs, Gemini—where everything just works.
+And spare me the performative outrage about Google "tracking" your flight details. If you’re genuinely having a panic attack because Google had the audacity to suggest your boarding pass, that’s not a corporate surveillance issue—that’s a you issue. Unless you’re an investigative journalist uncovering a global conspiracy or a high-ranking politician, nobody cares about your search history. You aren't that interesting, and neither am I.
+We’re all running away from "the algorithm" like it’s the boogeyman, all while carrying a smartphone that knows our heart rate, location, and the fact that we’re currently procrastinating in the bathroom. Unless you’re living in a literal Faraday cage and paying in gold bars, Google already knows your soul, your habits, and your favorite pizza topping anyway. So, congratulations on your "private" email—I’m sure the Indian scammers and the data brokers appreciate the extra effort you’re making to keep your spam folder slightly more curated than mine.
+2026-04-22 05:30:21
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 8, 2026
+
+                                    Android's face unlock problem: Why only Pixel phones can replace your fingerprint
+                            
+Apr 7, 2026
+
+                                    I let Claude control my computer—and it filled my Amazon basket
+                            
+Apr 6, 2026
+
+                                    After 15 years, Samsung will admit defeat by shutting down Messages in July
+                            
+Apr 6, 2026
+
+                                    This distro nobody talks about is more popular than Ubuntu and Fedora—here's 3 reasons why
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+How-To Geek
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

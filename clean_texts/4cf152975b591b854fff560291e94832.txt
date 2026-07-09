@@ -1,0 +1,613 @@
+Gmail’s long-awaited email address change has finally arrived
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+Networking
+Storage and NAS
+Components
+Peripherals
+Operating Systems
+Submenu
+Linux
+Windows
+Software
+Submenu
+Programming
+Applications
+Mobile
+Submenu
+Android
+iPhone
+Carriers
+New Tech
+Submenu
+Hobbies
+Smart Home
+Homelab
+Single-Board Computers (SBCs)
+Cutting Edge
+Streaming
+Submenu
+Streaming Content
+Streaming Platforms
+Audio/Video
+Automotive
+Reviews
+Buying Guides
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+9
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Storage
+Streaming
+Linux
+Open Source
+Microsoft Excel
+Android
+Windows
+Close
+Gmail’s long-awaited email address change has finally arrived
+Credit: Joe Fedewa / How-To Geek
+By 
+Corbin Davenport
+Published
+ Mar 31, 2026, 11:38 AM EDT
+Corbin Davenport was the News Editor at 
+How-To Geek
+ and 
+now does other things
+. Corbin previously worked at 
+Android Police
+, 
+PC Gamer
+, and 
+XDA
+ before joining 
+How-To Geek
+. 
+Sign in to your 
+How-To Geek
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+9
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+If you created your Gmail account with an email address you don’t want anymore, this is your big day. Google is finally rolling out the ability to change your primary Gmail address.
+Google announced today that all accounts in the United States should be able to change their usernames. You can do it by 
+visiting your Google account email settings
+, clicking ‘Personal info’ at the top-left corner, then Email > Google Account email > Change Google Account email. Google 
+started testing the feature
+ in December 2025, but it was only formally revealed today.
+✕
+ Remove Ads
+Google still supports 
+using a third-party email address
+ as an alternative login method, so if you have 
+example@gmail.com
+ and 
+example@outlook.com
+, you can add the Outlook email and sign in with that. You can also 
+delete your Gmail entirely
+, which will require using a third-party email address as your sign-in method.
+There are a few potential issues with changing your primary Gmail address. If you have a Chromebook, you might need to remove your local account before changing, then sign in again after the switch. That’s going to be annoying if you have Android or Linux apps that can’t be easily backed up. A support page explained, “This is necessary so that your Chromebook will update to use your new Google Account email. Otherwise after you log in your home directory will sometimes appear empty.”
+When you change your primary Gmail address, your old email is saved as an alternative email address, and you will continue to receive emails for that address. You can still delete the old one if you want—it just doesn’t happen automatically.
+Related
+
+			Google just made this Gemini paid feature available for free
+		
+Google today announced that it is expanding Personal Intelligence to more people in the United States. First introduced earlier this year, it was limited to paid Google AI subscriptions, but now most free accounts will have access to the feature.
+Posts
+By 
+Viraj Gawde
+Mar 17, 2026
+The documentation also explained, “* You can change back to your previous email address at any time, but you can’t create a new Google Account email ending in 
+gmail.com
+ for the next 12 months. You also can’t delete your new email address. You can sign in with your old or new email address on Google services, such as Gmail, Maps, YouTube, Google Play or Drive. “
+✕
+ Remove Ads
+
+                    Subscribe for clear guidance on Gmail address changes
+                
+Discover why subscribing to our newsletter delivers focused coverage of Gmail's new address-change option: practical walkthroughs, Chromebook troubleshooting tips, sign-in implications, and clear decision guides so you can manage your account with confidence.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+There’s no word yet on when accounts in other regions will be able to change email addresses. Hopefully, it rolls out to everyone soon.
+Source: Google (
+1
+, 
+2
+)
+Web
+Gmail
+Google
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. 
+Read More
+.
+Close
+✕
+ Remove Ads
+
+                                                    Desktop
+                                            
+
+                                                    Mobile
+                                            
+
+			PowerShell isn't scary—these everyday commands prove it
+		
+1 hour ago
+
+			Dirty Frag vulnerability in Linux lets hackers do more damage—here's how to protect yourself
+		
+16 hours ago
+
+			Intel will make chips for Apple—what does that mean for Windows PCs?
+		
+19 hours ago
+See More
+
+			Please stop typing on your Google Pixel—these 3 voice commands are a game changer
+		
+17 hours ago
+
+			Google Maps has a power-saving mode that extends battery life by 4 hours—but there's a catch
+		
+18 hours ago
+
+			6 ways to repurpose your old Motorola phone
+		
+19 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			What to Do If You Forget Your Android Phone's PIN, Pattern, or Password
+		
+
+			Google Maps navigation is about to change in a big way
+		
+
+			Google Chrome on Linux is getting a big upgrade
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+9
+Sign in to your 
+How-To Geek
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Brian
+Brian
+Brian
+#HE450152
+Member since 2026-04-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+when UK?
+This is the mIn reason I haven't transitioned from outlook to Gmail in like 10 years!!!
+2026-04-01 02:18:36
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Denijel
+Denijel
+Denijel
+#EC231387
+Member since 2026-04-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Wow, yet another function to make hackers job if stealing mails and accounts easier 
+How about you fix the bullshit that parent mail new addition caused before giving hackers more tools to play with
+2026-04-02 09:26:13
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+James
+James
+James
+#XF165368
+Member since 2026-04-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+It's not available to me yet, so I created an account using the address I want just incase it gets stolen.
+I figure it's time to transition my other accounts as well.
+2026-04-15 11:37:14
+Upvote
+Downvote
+Reply
+Copy
+        
+Jesica
+Jesica
+Jesica
+#AU831006
+Member since 2026-04-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Ykjjuyobt3iv640poti
+2026-04-02 09:08:04
+Upvote
+Downvote
+Reply
+Copy
+        
+Wilson Joseph Ponraj
+Wilson Joseph Ponraj
+Wilson Joseph Ponraj
+#ZY543713
+Member since 2026-04-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+When for India?
+2026-04-02 10:31:14
+Upvote
+Downvote
+Reply
+Copy
+        
+Bradavon
+Bradavon
+Bradavon
+#UC629878
+Member since 2024-06-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+You can also create a Google account using a 3rd party email account and not create a Gmail account at all.
+I did this for a couple of family members. They had no use for another email account. They needed a Google account.
+A friend already had a Google account which a Gmail email address. 
+I added his third party email account to the Google account and as he'd never used the Gmail email, I deleted it.
+2026-03-31 20:48:46
+Upvote
+Downvote
+Reply
+Copy
+        
+Tanbir
+Tanbir
+Tanbir
+#HJ056597
+Member since 2026-04-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+About Bangladeshi?
+2026-04-02 16:06:59
+Upvote
+Downvote
+Reply
+Copy
+        
+Bradavon
+Bradavon
+Bradavon
+#UC629878
+Member since 2024-06-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Thanks for the Chromebook tip. You've gotta love it when Tech companies don't tell you this when you make the change 
+Android apps from the Google Play store will just all reinstall. You'd need to reinstall manual APK installations (which is rare on Chromebooks) and Linux apps.
+2026-03-31 20:52:32
+Upvote
+Downvote
+Reply
+Copy
+        
+Stephen
+Stephen
+Stephen
+#QS397488
+Member since 2026-04-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+It is available to me now in the UK. I'm a Google One customer, not sure if that is a factor.
+2026-04-01 13:18:06
+Upvote
+Downvote
+Reply
+Copy
+        
+Jesica
+Jesica
+Jesica
+#AU831006
+Member since 2026-04-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Brian
+ uf8c9xnxxjsodm
+2026-04-02 09:08:40
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Mar 24, 2026
+
+                                    Android’s clipboard history is one of its best hidden features
+                            
+Mar 24, 2026
+
+                                    VPN connections are broken on Android 16, and there’s still no fix
+                            
+Mar 24, 2026
+
+                                    6 Google Wallet features I wish someone had told me about sooner
+                            
+Mar 13, 2026
+
+                                    Windows 11 is fixing my biggest complaint with user accounts
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+How-To Geek
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

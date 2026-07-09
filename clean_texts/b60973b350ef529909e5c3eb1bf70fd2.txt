@@ -1,0 +1,740 @@
+What I Actually Run in My Homelab – 2026 Self-Hosted Stack - YouTube
+
+      Back
+    
+
+  NZ
+
+Skip navigation
+
+        Search
+      
+
+  Search with your voice
+
+Sign in
+
+  NZ
+
+Limited-time deals | VPS hosting | Hostinger.com
+Tap to unmute
+2x
+What I Actually Run in My Homelab – 2026 Self-Hosted Stack
+DB Tech   23,010 views   2 weeks ago
+Search
+Copy link
+Info
+Shopping
+If playback doesn't begin shortly, try restarting your device.
+•
+You're signed out
+Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer.
+Cancel
+Confirm
+Share
+Include playlist
+An error occurred while retrieving sharing information. Please try again later.
+0:00
+0:00
+ / 
+0:31
+Live
+•
+Watch full video
+•
+•
+1x
+What I Actually Run in My Homelab – 2026 Self-Hosted Stack
+DB Tech
+
+  
+    DB Tech
+  
+
+107K subscribers
+Join
+Subscribe
+Subscribed
+654
+Share
+Save
+Download
+
+  Download
+
+23K views
+2 weeks ago
+
+  23,010 views • Apr 23, 2026
+
+Sponsored by Faved - a self-hosted, open-source bookmark manager. Your links live on your server, not someone else's cloud. Check it out: 
+https://faved.dev/?r=DBTech
+…
+...more
+
+...more
+
+Chapters
+View all
+Intro
+Intro
+0:00
+Intro
+0:00
+Faved (sponsor)
+Faved (sponsor)
+0:37
+Faved (sponsor)
+0:37
+Infrastructure overview
+Infrastructure overview
+1:32
+Infrastructure overview
+1:32
+Koffan
+Koffan
+2:43
+Koffan
+2:43
+Obsidian LiveSync
+Obsidian LiveSync
+3:42
+Obsidian LiveSync
+3:42
+Home Assistant
+Home Assistant
+5:00
+Home Assistant
+5:00
+Plex
+Plex
+5:44
+Plex
+5:44
+Privacy and access (Vaultwarden, Cloudflared, Marreta)
+Privacy and access (Vaultwarden, Cloudflared, Marreta)
+6:27
+Privacy and access (Vaultwarden, Cloudflared, Marreta)
+6:27
+Transcript
+Follow along using the transcript.
+Show transcript
+DB Tech
+
+      107K subscribers
+    
+Videos
+About
+Join My Patreon
+Discord
+Show less
+
+What I Actually Run in My Homelab – 2026 Self-Hosted Stack
+23,010 views
+23K views
+Apr 23, 2026
+654
+Share
+Save
+Download
+
+  Download
+
+Shop the DB Tech store
+Be Your Own Sysadmin - White Women's T-shirt
+Limited shipping areas
+
+                Dashery
+                
+Why let someone else control your data and hardware when you can be your own sysadmin?
+Shop
+Dashery
+I Self-host, Therefore I Am Socks
+Limited shipping areas
+
+                Dashery
+                
+I don't remember life before I self-hosted my services. I self-host, therefore I am.
+Shop
+Dashery
+Be Your Own Sysadmin - White Pin
+Limited shipping areas
+
+                Dashery
+                
+Why let someone else control your data and hardware when you can be your own sysadmin?
+Shop
+Dashery
+404 Error Crewneck Sweatshirt
+Limited shipping areas
+
+                Dashery
+                
+Error 404 - Not found, but on a shirt! (or sticker, magnet, or pin)
+Shop
+Dashery
+99.999% Crewneck Sweatshirt
+Limited shipping areas
+
+                Dashery
+                
+My uptime is better than most SLA agreements you get from Saas platforms. I'm part of the 99.999% club!
+Shop
+Dashery
+Local > Cloud Hoodie
+Limited shipping areas
+
+                Dashery
+                
+Why store your data in the cloud and use 3rd-party services when you can self-host all the things? Local is greater than the Cloud
+Shop
+Dashery
+Comments
+Comments
+67
+Top
+                
+
+              Show featured comments
+            
+Newest
+                
+
+              Show recent comments, including potential spam
+            
+In this video
+Chapters
+Transcript
+Chapters
+Intro
+Intro
+0:00
+Intro
+0:00
+Faved (sponsor)
+Faved (sponsor)
+0:37
+Faved (sponsor)
+0:37
+Infrastructure overview
+Infrastructure overview
+1:32
+Infrastructure overview
+1:32
+Koffan
+Koffan
+2:43
+Koffan
+2:43
+Obsidian LiveSync
+Obsidian LiveSync
+3:42
+Obsidian LiveSync
+3:42
+Home Assistant
+Home Assistant
+5:00
+Home Assistant
+5:00
+Plex
+Plex
+5:44
+Plex
+5:44
+Privacy and access (Vaultwarden, Cloudflared, Marreta)
+Privacy and access (Vaultwarden, Cloudflared, Marreta)
+6:27
+Privacy and access (Vaultwarden, Cloudflared, Marreta)
+6:27
+Content and publishing (Ghost, WordPress, YOURLS, Postiz, LinkStack)
+Content and publishing (Ghost, WordPress, YOURLS, Postiz, LinkStack)
+7:09
+Content and publishing (Ghost, WordPress, YOURLS, Postiz, LinkStack)
+7:09
+Business tools (EspoCRM, Invoice Ninja, BookStack, Lenpaste, FreshRSS + n8n)
+Business tools (EspoCRM, Invoice Ninja, BookStack, Lenpaste, FreshRSS + n8n)
+7:35
+Business tools (EspoCRM, Invoice Ninja, BookStack, Lenpaste, FreshRSS + n8n)
+7:35
+Dev and fun (Gitea, Gotify, Speedtest Tracker, My AI Game)
+Dev and fun (Gitea, Gotify, Speedtest Tracker, My AI Game)
+8:15
+Dev and fun (Gitea, Gotify, Speedtest Tracker, My AI Game)
+8:15
+Outro
+Outro
+8:46
+Outro
+8:46
+Sync to video time
+Products
+DB Tech tagged products below.
+Learn more
+Be Your Own Sysadmin - White Women's T-shirt
+Dashery
+Limited shipping areas
+View
+I Self-host, Therefore I Am Socks
+Dashery
+Limited shipping areas
+View
+Be Your Own Sysadmin - White Pin
+Dashery
+Limited shipping areas
+View
+404 Error Crewneck Sweatshirt
+Dashery
+Limited shipping areas
+View
+99.999% Crewneck Sweatshirt
+Dashery
+Limited shipping areas
+View
+Local > Cloud Hoodie
+Dashery
+Limited shipping areas
+View
+404 Error Magnet
+Dashery
+Limited shipping areas
+View
+Home Is Where My Servers Are Sticker
+Dashery
+Limited shipping areas
+View
+Be Your Own Sysadmin - White Hoodie
+Dashery
+Limited shipping areas
+View
+I Self-host, Therefore I Am T-shirt
+Dashery
+Limited shipping areas
+View
+Be Your Own Sysadmin - White Long Sleeve T-shirt
+Dashery
+Limited shipping areas
+View
+I Self-host, Therefore I Am Long Sleeve T-shirt
+Dashery
+Limited shipping areas
+View
+404 Error T-shirt
+Dashery
+Limited shipping areas
+View
+Local > Cloud T-shirt
+Dashery
+Limited shipping areas
+View
+Local > Cloud Crewneck Sweatshirt
+Dashery
+Limited shipping areas
+View
+Be Your Own Sysadmin - White T-shirt
+Dashery
+Limited shipping areas
+View
+Home Is Where My Servers Are Socks
+Dashery
+Limited shipping areas
+View
+404 Error Pin
+Dashery
+Limited shipping areas
+View
+Gotta Run 'em All Socks
+Dashery
+Limited shipping areas
+View
+I Self-host, Therefore I Am Pin
+Dashery
+Limited shipping areas
+View
+Home Is Where My Servers Are Magnet
+Dashery
+Limited shipping areas
+View
+Gotta Run 'em All Hoodie
+Dashery
+Limited shipping areas
+View
+Local > Cloud Pin
+Dashery
+Limited shipping areas
+View
+Local > Cloud Socks
+Dashery
+Limited shipping areas
+View
+Self-hosting Society Women's T-shirt
+Dashery
+Limited shipping areas
+View
+Self-hosting Society Hoodie
+Dashery
+Limited shipping areas
+View
+Self-hosting Society Socks
+Dashery
+Limited shipping areas
+View
+Self-hosting Society Magnet
+Dashery
+Limited shipping areas
+View
+Home Is Where My Servers Are Women's T-shirt
+Dashery
+Limited shipping areas
+View
+Gotta Run 'em All Long Sleeve T-shirt
+Dashery
+Limited shipping areas
+View
+Description
+What I Actually Run in My Homelab – 2026 Self-Hosted Stack
+654
+Likes
+23,010
+Views
+Apr 23
+2026
+Sponsored by Faved - a self-hosted, open-source bookmark manager. Your links live on your server, not someone else's cloud. Check it out: 
+https://faved.dev/?r=DBTech
+
+
+
+Every year homelab creators make a video showing everything running on their servers. This is mine for 2026. I walk you through everything on my ZimaCube right now, from the daily drivers to the stuff quietly keeping everything else working, to a browser-based jumping game that has absolutely no practical purpose.
+ 
+
+ 
+---------------------------------
+TIMESTAMPS
+---------------------------------
+
+0:00
+ Intro
+
+0:37
+ Faved (sponsor)
+
+1:32
+ Infrastructure overview
+
+2:43
+ Koffan
+
+3:42
+ Obsidian LiveSync
+
+5:00
+ Home Assistant
+
+5:44
+ Plex
+
+6:27
+ Privacy and access (Vaultwarden, Cloudflared, Marreta)
+
+7:09
+ Content and publishing (Ghost, WordPress, YOURLS, Postiz, LinkStack)
+
+7:35
+ Business tools (EspoCRM, Invoice Ninja, BookStack, Lenpaste, FreshRSS + n8n)
+
+8:15
+ Dev and fun (Gitea, Gotify, Speedtest Tracker, My AI Game)
+
+8:46
+ Outro
+ 
+---------------------------------
+LINKS
+---------------------------------
+Faved: 
+https://faved.dev/?r=DBTech
+
+Koffan: 
+https://github.com/PanSalut/Koffan
+
+Obsidian LiveSync: 
+https://github.com/vrtmrz/obsidian-li...
+
+Home Assistant: 
+https://www.home-assistant.io
+
+Plex: 
+https://www.plex.tv
+
+Vaultwarden: 
+https://github.com/dani-garcia/vaultw...
+
+Cloudflared: 
+https://github.com/cloudflare/cloudfl...
+
+Marreta: 
+https://github.com/yournamehere/marreta
+
+FreshRSS: 
+https://freshrss.org
+
+n8n: 
+https://n8n.io
+
+EspoCRM: 
+https://www.espocrm.com
+
+Invoice Ninja: 
+https://invoiceninja.com
+
+Ghost: 
+https://ghost.org
+
+WordPress: 
+https://wordpress.org
+
+YOURLS: 
+https://yourls.org
+
+LinkStack: 
+https://linkstack.org
+
+Lenpaste: 
+https://github.com/krasovsky22/lenpaste
+
+BookStack: 
+https://www.bookstackapp.com
+
+Postiz: 
+https://postiz.com
+
+Gitea: 
+https://gitea.io
+
+Gotify: 
+https://gotify.net
+
+Speedtest Tracker: 
+https://github.com/alexjustesen/speed...
+
+
+Subtitles by WinWhisper
+
+/=========================================/
+
+✅ Amazon Wishlist:
+
+https://dbte.ch/amznwishlist
+
+
+Get early, ad-free access to new content by becoming a channel member, or a Patron!
+
+✅ 
+ / dbtech  
+
+✅ 
+ / @dbtechyt  
+
+
+All My Social Links: 
+✅ 
+https://dbt3.ch/@dbtech
+
+
+Join Discord!
+✅ 
+ / discord  
+
+
+/=========================================/
+
+✨Ways to support DB Tech:
+✅ 
+ / dbtech  
+
+✅ 
+https://www.paypal.me/DBTechReviews
+
+✅ 
+https://ko-fi.com/dbtech
+
+✅ Cashapp: 
+https://cash.app/$dbtechyt
+
+✅ Venmo: 
+https://venmo.com/dbtechyt
+
+
+✨Come chat in Discord:
+✅ 
+https://dbte.ch/discord
+…
+...more
+
+...more
+
+Show less
+
+Chapters
+View all
+Intro
+Intro
+0:00
+Intro
+0:00
+Faved (sponsor)
+Faved (sponsor)
+0:37
+Faved (sponsor)
+0:37
+Infrastructure overview
+Infrastructure overview
+1:32
+Infrastructure overview
+1:32
+Koffan
+Koffan
+2:43
+Koffan
+2:43
+Transcript
+Follow along using the transcript.
+Show transcript
+DB Tech
+
+      107K subscribers
+    
+Videos
+About
+Join My Patreon
+Discord
+Transcript
+NaN / NaN
+35:00
+What’s Actually Running in My Homelab? (50+ Self-Hosted Services)
+Techno Tim
+292K views
+ • 
+1 month ago
+15:38
+Self-Hosted Apps That Replace Everything You Pay For in 2026
+WunderTech
+203K views
+ • 
+3 weeks ago
+21:20
+How did Apple make this work??
+Jeff Geerling
+150K views
+ • 
+1 day ago
+New
+12:09
+The Doomsday App Every Home Lab Needs
+TechHut
+37K views
+ • 
+3 days ago
+New
+7:36
+Container Sprawl is a Feature: My Full 100TB Unraid Setup
+Technically Marv
+2K views
+ • 
+6 days ago
+New
+10:06
+ownCloud Is Everything Nextcloud Should Have Been
+DB Tech
+17K views
+ • 
+10 days ago
+13:38
+Before You Trust Another Self-Hosted App, Watch This
+DB Tech
+21K views
+ • 
+3 weeks ago
+30:21
+NetBird Setup Guide (New & Simplified)
+Christian Lempa
+33K views
+ • 
+4 weeks ago
+30:59
+Hosting Your Game Servers is EASY with This
+Hardware Haven
+403K views
+ • 
+7 months ago
+20:28
+Ditch the Monthly Fees: 6 Awesome Self-Hosted Apps
+Lon.TV
+28K views
+ • 
+1 month ago
+16:08
+This Open Source Project Just Killed the Proxmox GUI!
+2GuysTek
+89K views
+ • 
+2 months ago
+23:56
+This kubernetes homelab setup is my favorite one yet.
+Mischa van den Burg
+90K views
+ • 
+1 month ago
+16:03
+I Tracked Down the Hidden Workers Secretly Powering ChatGPT
+More Perfect Union
+427K views
+ • 
+1 day ago
+Fundraiser
+New
+46:39
+I Spent a Year Replacing My Subscriptions. Here’s How.
+Dammit Jeff
+817K views
+ • 
+2 months ago
+19:03
+What's in my Homelab Rack?
+Wolfgang's Channel
+106K views
+ • 
+11 months ago
+24:19
+STOP Paying for Subscriptions — Build This Homelab Instead
+Asian Dad Energy
+40K views
+ • 
+2 weeks ago
+17:24
+If I rebuilt my Smart Home, I’d want THIS
+Smart Home Solver
+416K views
+ • 
+2 months ago
+14:20
+I Gave Pi Access to Obsidian And I'm Not Looking Back
+DevOps Toolbox
+21K views
+ • 
+1 day ago
+New
+14:46
+This is The Most Powerful Tool to Give to Claude Code
+Nate Herk | AI Automation
+32K views
+ • 
+15 hours ago
+New
+13:12
+Which Apps Should You Run in 2026?
+ServersatHome
+63K views
+ • 
+3 months ago
+Show more
+Join this channel and unlock members-only perks

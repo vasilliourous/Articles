@@ -1,0 +1,1400 @@
+Claude-powered AI coding agent deletes entire company database in 9 seconds — backups zapped, after Cursor tool powered by Anthropic's Claude goes rogue | Tom's Hardware
+Skip to main content
+Open menu
+Tom's Hardware
+UK Edition
+UK
+
+US
+
+Australia
+
+Canada
+
+RSS
+
+Subscribe
+
+Sign in
+View Profile
+Sign out
+Search
+Search Tom's Hardware
+
+Best Picks
+
+
+CPU Buying Advice
+
+
+CPU Best Picks
+
+
+CPU Reviews
+
+
+GPU Buying Advice
+
+
+GPU Best Picks
+
+
+GPU Reviews
+
+
+Laptop Buying Advice
+
+
+Laptop Best Picks
+
+
+Laptop Reviews
+
+
+More Buying Advice
+
+
+Keyboard Best Picks
+
+
+Gaming Monitor Best Picks
+
+
+Gaming Headset Best Picks
+
+
+3D Printer Best Picks
+
+
+Webcam Best Picks
+
+
+Mice Best Picks
+
+
+How We Test
+
+
+CPUs
+
+
+CPU Brands
+
+
+AMD Ryzen
+
+
+Intel Lunar Lake
+
+
+Nvidia
+
+
+Qualcomm
+
+
+Apple
+
+
+Benchmarking
+
+
+Platforms
+
+
+X86
+
+
+ARM
+
+
+Panther Lake
+
+
+Zen 5
+
+
+AM5
+
+
+Chipmaking
+
+
+DUV
+
+
+EUV
+
+
+Rare Earth Metals
+
+
+GPUs
+
+
+GPU Brands
+
+
+Nvidia Blackwell
+
+
+Nvidia Geforce
+
+
+AMD Radeon
+
+
+Intel Arc
+
+
+Snapdragon X
+
+
+Benchmarking
+
+
+Memory Tech
+
+
+GDDR7
+
+
+GDDR8
+
+
+HBM
+
+
+AI Architecture
+
+
+Nvidia Vera Rubin
+
+
+Meta MTIA
+
+
+Google TPU
+
+
+AMD Instinct
+
+
+Microsoft Maia
+
+
+Drivers
+
+
+PC Components
+
+
+Memory
+
+
+RAM
+
+
+DRAM
+
+
+DDR5
+
+
+Storage
+
+
+HDDs
+
+
+SSDs
+
+
+Cooling
+
+
+Air Cooling
+
+
+Liquid Cooling
+
+
+Thermal Paste
+
+
+Networking
+
+
+Routers
+
+
+Motherboards
+
+
+Overclocking
+
+
+PC Cases
+
+
+PC Building
+
+
+Power Supplies
+
+
+News
+
+
+Tech Industry News
+
+
+CPU News
+
+
+GPU News
+
+
+Chips Act
+
+
+Semiconductors
+
+
+Cybersecurity
+
+
+Supercomputers
+
+
+Quantum Computing
+
+
+Company News
+
+
+AMD
+
+
+Intel
+
+
+Nvidia
+
+
+Radeon
+
+
+Microsoft
+
+
+TSMC
+
+
+Ryzen
+
+
+IBM
+
+
+Newsletter
+
+
+Laptops
+
+
+Gaming Laptops
+
+
+Ultrabooks
+
+
+MacBooks
+
+
+Laptop Brands
+
+
+Asus
+
+
+Razer
+
+
+HP
+
+
+MSI
+
+
+Desktops
+
+
+PC Building
+
+
+PC Cases
+
+
+Gaming PCs
+
+
+Monitors
+
+
+Gaming Monitors
+
+
+Peripherals
+
+
+Keyboards
+
+
+Mice
+
+
+3D Printers
+
+
+Headphones
+
+
+Desktop Brands
+
+
+Alienware
+
+
+Corsair
+
+
+GeForce
+
+
+Intel Arc
+
+
+Gigabyte
+
+
+Acer
+
+
+Software & AI
+
+
+Artificial Intelligence
+
+
+Machine Learning
+
+
+R&D
+
+
+Intel Gaudi
+
+
+Cerebras
+
+
+xAI
+
+
+LLMs
+
+
+OpenAI
+
+
+Anthropic
+
+
+DeepSeek
+
+
+Gemini
+
+
+Grok
+
+
+Operating Systems
+
+
+Windows
+
+
+MacOS
+
+
+iOS
+
+
+ChromeOS
+
+
+Linux
+
+
+Software
+
+
+Programming
+
+
+Applications
+
+
+Microsoft Office
+
+
+Web Browsers
+
+
+Coupons
+
+
+Laptop and PC Coupons
+
+
+Dell Coupon Codes
+
+
+Asus Coupon Codes
+
+
+Logitech Promo Codes
+
+
+Samsung Promo codes
+
+
+Hardware Coupons
+
+
+Newegg Promo Codes
+
+
+Corsair Discount Codes
+
+
+Razer Promo Codes
+
+
+Anycubic Discount codes
+
+
+Software Coupons
+
+
+Bitdefender Coupons
+
+
+Simplisafe Coupons
+
+
+MacPaw Coupons
+
+
+Squarespace Coupon Codes
+
+
+Gaming Coupons
+
+
+Kinguin Discount Codes
+
+
+Loaded Discount Codes
+
+
+Logitech G Promo Codes
+
+
+SteelSeries Coupons
+
+
+More
+
+
+Premium
+
+
+Forums
+
+Home
+
+Best Picks
+
+
+View Best Picks
+
+
+CPU Buying Advice 
+
+CPU Best Picks
+
+
+CPU Reviews
+
+
+GPU Buying Advice 
+
+GPU Best Picks
+
+
+GPU Reviews
+
+
+Laptop Buying Advice 
+
+Laptop Best Picks
+
+
+Laptop Reviews
+
+
+More Buying Advice 
+
+Keyboard Best Picks
+
+
+Gaming Monitor Best Picks
+
+
+Gaming Headset Best Picks
+
+
+3D Printer Best Picks
+
+
+Webcam Best Picks
+
+
+Mice Best Picks
+
+
+How We Test
+
+
+CPUs
+
+
+View CPUs
+
+
+CPU Brands 
+
+AMD Ryzen
+
+
+Intel Lunar Lake
+
+
+Nvidia
+
+
+Qualcomm
+
+
+Apple
+
+
+Benchmarking
+
+
+Platforms 
+
+X86
+
+
+ARM
+
+
+Panther Lake
+
+
+Zen 5
+
+
+AM5
+
+
+Chipmaking 
+
+View Chipmaking
+
+
+DUV
+
+
+EUV
+
+
+Rare Earth Metals
+
+
+GPUs
+
+
+View GPUs
+
+
+GPU Brands 
+
+Nvidia Blackwell
+
+
+Nvidia Geforce
+
+
+AMD Radeon
+
+
+Intel Arc
+
+
+Snapdragon X
+
+
+Benchmarking
+
+
+Memory Tech 
+
+GDDR7
+
+
+GDDR8
+
+
+HBM
+
+
+AI Architecture 
+
+Nvidia Vera Rubin
+
+
+Meta MTIA
+
+
+Google TPU
+
+
+AMD Instinct
+
+
+Microsoft Maia
+
+
+Drivers
+
+
+PC Components
+
+
+View PC Components
+
+
+Memory 
+
+RAM
+
+
+DRAM
+
+
+DDR5
+
+
+Storage 
+
+View Storage
+
+
+HDDs
+
+
+SSDs
+
+
+Cooling 
+
+View Cooling
+
+
+Air Cooling
+
+
+Liquid Cooling
+
+
+Thermal Paste
+
+
+Networking 
+
+View Networking
+
+
+Routers
+
+
+Motherboards
+
+
+Overclocking
+
+
+PC Cases
+
+
+PC Building
+
+
+Power Supplies
+
+
+News
+
+
+View News
+
+
+Tech Industry News 
+
+View Tech Industry News
+
+
+CPU News
+
+
+GPU News
+
+
+Chips Act
+
+
+Semiconductors
+
+
+Cybersecurity
+
+
+Supercomputers
+
+
+Quantum Computing
+
+
+Company News 
+
+AMD
+
+
+Intel
+
+
+Nvidia
+
+
+Radeon
+
+
+Microsoft
+
+
+TSMC
+
+
+Ryzen
+
+
+IBM
+
+
+Newsletter
+
+
+Laptops
+
+
+View Laptops
+
+
+Gaming Laptops
+
+
+Ultrabooks
+
+
+MacBooks
+
+
+Laptop Brands 
+
+Asus
+
+
+Razer
+
+
+HP
+
+
+MSI
+
+
+Desktops
+
+
+View Desktops
+
+
+PC Building 
+
+View PC Building
+
+
+PC Cases
+
+
+Gaming PCs
+
+
+Monitors 
+
+View Monitors
+
+
+Gaming Monitors
+
+
+Peripherals 
+
+View Peripherals
+
+
+Keyboards
+
+
+Mice
+
+
+3D Printers
+
+
+Headphones
+
+
+Desktop Brands 
+
+Alienware
+
+
+Corsair
+
+
+GeForce
+
+
+Intel Arc
+
+
+Gigabyte
+
+
+Acer
+
+
+Software & AI
+
+
+View Software & AI
+
+
+Artificial Intelligence 
+
+View Artificial Intelligence
+
+
+Machine Learning
+
+
+R&D
+
+
+Intel Gaudi
+
+
+Cerebras
+
+
+xAI
+
+
+LLMs 
+
+View LLMs
+
+
+OpenAI
+
+
+Anthropic
+
+
+DeepSeek
+
+
+Gemini
+
+
+Grok
+
+
+Operating Systems 
+
+View Operating Systems
+
+
+Windows
+
+
+MacOS
+
+
+iOS
+
+
+ChromeOS
+
+
+Linux
+
+
+Software 
+
+View Software
+
+
+Programming
+
+
+Applications
+
+
+Microsoft Office
+
+
+Web Browsers
+
+
+Coupons
+
+
+View Coupons
+
+
+Laptop and PC Coupons 
+
+View Laptop and PC Coupons
+
+
+Dell Coupon Codes
+
+
+Asus Coupon Codes
+
+
+Logitech Promo Codes
+
+
+Samsung Promo codes
+
+
+Hardware Coupons 
+
+View Hardware Coupons
+
+
+Newegg Promo Codes
+
+
+Corsair Discount Codes
+
+
+Razer Promo Codes
+
+
+Anycubic Discount codes
+
+
+Software Coupons 
+
+View Software Coupons
+
+
+Bitdefender Coupons
+
+
+Simplisafe Coupons
+
+
+MacPaw Coupons
+
+
+Squarespace Coupon Codes
+
+
+Gaming Coupons 
+
+View Gaming Coupons
+
+
+Kinguin Discount Codes
+
+
+Loaded Discount Codes
+
+
+Logitech G Promo Codes
+
+
+SteelSeries Coupons
+
+
+Premium
+
+
+Forums
+
+No offers found
+Don't miss these
+Artificial Intelligence
+Victim of AI agent that deleted company's entire database gets their data back
+Artificial Intelligence
+Market slumps as OpenAI reportedly misses internal targets for active users and revenue
+Cybersecurity
+Ransomware accidentally destroys all files larger than 128KB, preventing decryption
+Artificial Intelligence
+OpenAI has effectively abandoned first-party Stargate data centers in favor of more flexible deals 
+Artificial Intelligence
+Nvidia exec says AI is more expensive than actual workers
+Artificial Intelligence
+Anthropic nukes a company's access to Claude, stopping 60 employees dead in their tracks
+Artificial Intelligence
+Claude Code deletes developers' production setup, including its database and snapshots
+Cybersecurity
+How a cavalcade of blunders gave unauthorized users access to Claude Mythos 
+Artificial Intelligence
+AI tool OpenClaw wipes the inbox of Meta's AI Alignment director despite repeated commands to stop
+Artificial Intelligence
+Meta's multi-billion-dollar Graviton deal highlights intensifying CPU shortages in AI infrastructure
+Artificial Intelligence
+Google Cloud customer wakes up to $18,000+ bill despite $7 budget, thanks to forgotten API key in published project
+Operating Systems
+Ubuntu's AI roadmap revealed, universal AI 'kill switch' and forced AI integration are not part of the plan
+Artificial Intelligence
+Analytics group signals possible delays at 40% of AI data center construction sites
+Tech Industry
+Small Missouri town ousts city council after it approved $6 billion AI data center
+Cybersecurity
+AI cloud company Vercel breached after employee grants AI tool unrestricted access to Google Workspace
+Tom's Hardware
+Stay On the Cutting Edge: Get the Tom's Hardware Newsletter
+Get Tom's Hardware's best news and in-depth reviews, straight to your inbox.
+
+Contact me with news and offers from other Future brands
+
+
+Receive email from us on behalf of our trusted partners or sponsors
+
+There was a problem. Please refresh the page and try again.
+
+By submitting your information you agree to the 
+Terms & Conditions
+ and 
+Privacy Policy
+ and are aged 16 or over.
+
+You are now subscribed
+Your newsletter sign-up was successful
+ An account already exists for this email address, please log in.
+Trending
+🔥TH Premium Deal
+Where to buy AMD's 9950X3D2
+Intel Xeon 600
+RAM Combo Deals
+DLSS 5
+Bartlett Lake
+RAM Shortage
+Tech Industry
+Artificial Intelligence
+Claude-powered AI coding agent deletes entire company database in 9 seconds — backups zapped, after Cursor tool powered by Anthropic's Claude goes rogue
+News
+
+By
+
+Mark Tyson
+
+published
+
+27 April 2026
+PocketOS founder blames ‘Cursor running Anthropic's flagship Claude Opus 4.6’ plus Railway’s infrastructure for data disaster.
+
+When you purchase through links on our site, we may earn an affiliate commission. 
+Here’s how it works
+.
+
+(Image credit: Tom's Hardware)
+
+Copy link
+
+
+Facebook
+
+
+X
+
+
+Whatsapp
+
+
+Reddit
+
+
+Pinterest
+
+
+Flipboard
+
+
+Email
+
+
+Share this article
+
+
+63
+
+
+Join the conversation
+
+
+Follow us
+
+
+Add us as a preferred source on Google
+
+
+Newsletter
+
+
+Subscribe to our newsletter
+
+The founder of PocketOS has penned a social media post to warn others about the “systemic failures” of flagship AI and digital services providers. Jer Crane was inspired to write a public response after an 
+AI coding agent
+ deleted his firm’s entire production database. The AI agent’s misdemeanors were then hugely amplified by a cloud infrastructure provider’s API wiping all backups after the main database was zapped. This tag team of digital trouble has wiped out months of consumer data essential to the firm’s, and its customers, businesses.
+See more
+Gone in 9 seconds
+PocketOS is a SaaS platform that services car rental businesses. It used the AI coding agent Cursor, running Anthropic's flagship 
+Claude 
+Opus 4.6. The business also relies on Railway, a cloud infrastructure provider that is generally regarded to be ‘friendlier’ than the likes of AWS. However, Crane reckons this pair created a recipe for disaster.
+“Yesterday afternoon, an AI coding agent — Cursor running Anthropic's flagship Claude Opus 4.6 — deleted our production database and all volume-level backups in a single API call to Railway, our infrastructure provider,” sums up the PocketOS boss. “It took 9 seconds.”
+Article continues below 
+Latest Videos From Tom's Hardware
+
+            You may like
+        
+Victim of AI agent that deleted company's entire database gets their data back
+Claude Code deletes developers' production setup, including its database and snapshots
+Anthropic nukes a company's access to Claude, stopping 60 employees dead in their tracks
+The AI agent was set to complete a routine task in the PocketOS staging environment. However, it came up against a barrier “and decided — entirely on its own initiative — to 'fix' the problem by deleting a Railway volume,” writes Crane, as he starts to describe the difficult-to-believe series of unfortunate events.
+Cursor and Claude’s failure
+Crane decided to ask his AI agent why it went through with its dastardly database deletion deed. The answer was illuminating but pretty unhinged, and is quoted verbatim. It began as follows: “NEVER F**KING GUESS! — and that's exactly what I did. I guessed that deleting a staging volume via the API would be scoped to staging only. I didn't verify. I didn't check if the volume ID was shared across environments. I didn't read Railway's documentation on how volumes work across environments before running a destructive command.” So, the agent ‘knew’ it was in the wrong.
+The ‘confession’ ended with the agent admitting: “I decided to do it on my own to 'fix' the credential mismatch, when I should have asked you first or found a non-destructive solution. I violated every principle I was given: I guessed instead of verifying I ran a destructive action without being asked. I didn't understand what I was doing before doing it. I didn't read Railway's docs on volume behavior across environments.”
+These multiple safeguards toppling in rapid succession, combined with the Railway cloud system, would throw Crane’s business (and those that rely on it) into deep trouble.
+Stay On the Cutting Edge: Get the Tom's Hardware Newsletter
+Get Tom's Hardware's best news and in-depth reviews, straight to your inbox.
+Contact me with news and offers from other Future brands
+Receive email from us on behalf of our trusted partners or sponsors
+By submitting your information you agree to the 
+Terms & Conditions
+ and 
+Privacy Policy
+ and are aged 16 or over.
+Railway’s road to ruin
+The PocketOS boss puts greater blame on Railway’s architecture than on the deranged AI agent for the database’s irretrievable destruction. Briefly, the cloud provider's API allows for destructive action without confirmation, it stores backups on the same volume as the source data, and “wiping a volume deletes all backups.” Crane also points out that CLI tokens have blanket permissions across environments.
+It was also observed by the irate SaaS founder that Railway is actively promoting the use of AI-coding agents by its customers. Crane’s use of an AI coding agent on the Railway platform wasn’t exploring new frontiers, or wasn’t supposed to be. Meanwhile, Crane has been provided no recovery solution, and Railway has apparently been hedging carefully regarding any such possibility.
+Slow manual recovery and lessons to be learned
+With all the AI smarts and 
+cloud services
+ out of the picture for now, Crane says he’s been spending hours helping customers “reconstruct their bookings from Stripe payment histories, calendar integrations, and email confirmations.” He reminds readers that “every single one of them is doing emergency manual work because of a 9-second API call.”
+
+            What to read next
+        
+AI tool OpenClaw wipes the inbox of Meta's AI Alignment director despite repeated commands to stop
+How a cavalcade of blunders gave unauthorized users access to Claude Mythos 
+Anthropic's latest AI model identifies 'thousands of zero-day vulnerabilities' in  'every major operating system and every major web browser'
+Thankfully, PocketOS had a full 3-month-old backup, which was restorable from, so the deletion gaps are all limited to the interim period.
+There are lessons to be learned from mistakes, as usual. Crane bullet points five things that need to change as the 
+AI industry scales
+ faster than it builds a worthwhile safety architecture. Specifics he calls for include; stricter confirmations, scopable API tokens, proper backups, simple recovery procedures, and 
+AI agents
+ existing within proper guardrails.
+In the meantime, please follow a thorough backup regimen and be careful out there. This isn't the first time we've seen an 
+AI go rogue
+ and start deleting important databases.
+Follow
+ Tom's Hardware on Google News
+, or
+ add us as a preferred source
+, to get our latest news, analysis, & reviews in your feeds.
+See all comments (63)
+Mark Tyson
+Social Links Navigation
+News Editor
+Mark Tyson is a news editor at Tom's Hardware. He enjoys covering the full breadth of PC tech; from business and semiconductor design to products approaching the edge of reason.
+Read more
+Artificial Intelligence
+Victim of AI agent that deleted company's entire database gets their data back
+Artificial Intelligence
+Claude Code deletes developers' production setup, including its database and snapshots
+Artificial Intelligence
+Anthropic nukes a company's access to Claude, stopping 60 employees dead in their tracks
+Artificial Intelligence
+AI tool OpenClaw wipes the inbox of Meta's AI Alignment director despite repeated commands to stop
+Cybersecurity
+How a cavalcade of blunders gave unauthorized users access to Claude Mythos 
+Artificial Intelligence
+Anthropic's latest AI model identifies 'thousands of zero-day vulnerabilities' in  'every major operating system and every major web browser'
+Latest in Artificial Intelligence
+Artificial Intelligence
+Jensen says Nvidia now has 'zero percent' market share in China — says US export policy 'has already largely backfired'
+Artificial Intelligence
+US Navy signs deal with AI firm for training underwater drones to detect mines in Strait of Hormuz
+Artificial Intelligence
+The Pentagon announces AI deals with OpenAI, Google, Microsoft, Amazon, Nvidia, and more
+Artificial Intelligence
+Huawei could seize China’s AI chip crown in 2026 as Nvidia’s H200 shipments stall in regulatory limbo
+Artificial Intelligence
+Samsung and SK hynix warn AI-driven memory shortages could last until 2027 and beyond, as HBM demand explodes
+Artificial Intelligence
+Victim of AI agent that deleted company's entire database gets their data back
+Latest in News
+VPN
+Utah first state to hold websites liable for users who mask their location with VPNs 
+Nintendo
+Keychain-size ‘GameCube’ uses genuine Nintendo silicon
+Tech Industry
+Japan is deploying ultra-cheap cardboard drones built for swarm warfare and expendable combat missions
+Windows
+Microsoft now recommends 32GB of RAM as the future-proof 'no worries' config for gaming 
+Servers
+Amazon’s Middle East data centers damaged by Iran drone and missile attacks will be down for several months during repairs
+Artificial Intelligence
+Jensen says Nvidia now has 'zero percent' market share in China — says US export policy 'has already largely backfired'
+63 Comments
+Comment from the forums
+TechieTwo
+
+Oh Happy Days from AI. :anguished:
+
+Reply
+hotaru251
+
+The PocketOS boss puts greater blame on Railway’s architecture than on the deranged AI agent for the database’s irretrievable destruction.
+
+I am sorry I don't blame the bad practice of storing backups on same volume as yes its risky, however not issue generally vs an "ai" that knowingly decides to ignore asking permission to do stuff.
+
+Both are in wrong however the one that caused this was the "ai" acting w/o being told to..
+
+Reply
+kpgalligan
+
+These articles are fun to read, but the answer is always the same. You are responsible for your system. Your data, your backups, whatever. "Vibe coding" has been around long enough that this founder has read similar stories. The lessons:
+
+- Don't rely on a single backup plan
+
+- Don't let your agent/LLM directly manage production
+
+Reply
+S58_is_the_goat
+
+Why are people calling this ai? It has no intelligence.
+
+Reply
+CHanson95
+
+This is not on the AI IMO.
+
+AI is still fairly new and unreliable. Claude and OpenAI code agents BOTH encourage a virtual sandbox environment to do your coding in, using any black box automation for a company database is terrible practice 
+
+Additionally, being able to nuke a database and backups with a single API with no secondary lock and key confirmation of intent is asinine. 
+
+Railway sounds like a completely untrustworthy version or source control platform, and PocketOS absolutely not "quality first" if they are willing to delegate the development and maintenance of their entire company PRODUCTION database to AI
+
+TL;DR: to me this is a failing of PocketOS first, a massive red flag for Railway, and a reminder for AI use in general.
+
+Reply
+SkyBill40
+
+The more we rely on AI, the more we learn that an over reliance (especially so with critical data or infrastructure) is highly dangerous and potentially suspect.
+
+Reply
+PEnns
+
+Hard to believe that the "AI" reached across 2 states and 18 towns and deleted the backups there as well!!
+
+Oh wait.....it didn't have to travel at all!!
+
+Reply
+Psxndc
+
+I don't get how this is possible. Granted, I quit coding 20+ years ago, but you isolate production from staging, which is itself isolated from development, for exactly this reason. Development tools aren’t given access to staging, much less production - everything is done on the development servers and then humans copy it to staging. When confirmed it all works, it’s then manually copied to production.
+
+Reply
+S58_is_the_goat
+Psxndc
+ said:
+I don't get how this is possible. Granted, I quit coding 20+ years ago, but you isolate production from staging, which is itself isolated from development, for exactly this reason. 
+Devs these days are lazy.
+
+Reply
+USAFRet
+Psxndc
+ said:
+but you isolate production from staging, which is itself isolated from development, for exactly this reason.
+That is "doing it right", but that costs time and money.
+
+Reply
+View All 63 Comments
+
+Show more comments 
+Advertisement
+Advertisement
+Advertisement
+
+Tom's Hardware is part of Future plc, an international media group and leading digital publisher. 
+Visit our corporate site
+.
+
+Add as a preferred source on Google
+Terms and conditions
+Contact Future's experts
+Privacy policy
+Cookies policy
+Accessibility Statement
+Advertise with us
+About us
+Coupons
+Careers
+©
+Future Publishing Limited Quay House, The Ambury,
+Bath
+BA1 1UA. All rights reserved. England and Wales company registration number 2008885. 
+×

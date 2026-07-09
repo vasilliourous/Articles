@@ -1,0 +1,472 @@
+My entire productivity stack is just these 4 Docker containers
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+4
+More Action
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+My entire productivity stack is just these 4 Docker containers
+By 
+Nolen Jonker
+Published
+ Feb 28, 2026, 3:00 PM EST
+Nolen began their writing career in 2019, with three years dedicated to editing the Creative section at 
+MakeUseOf
+. Their expertise lies at the crossroads of technology and creativity, covering areas like photography, video editing, and graphic design.
+
+Outside of work, you'll often find Nolen diving into a good book, writing their own stories, or playing video games. 
+Sign in to your 
+XDA
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+4
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+At any given moment, I’m always juggling way too many productivity apps. It involves a lot of switching accounts and hopping between services just to get basic things done. Some tools were great initially, but then they just became clutter to manage, especially as new apps come into my rotation, whether for user testing or just as a productivity enthusiast. Most of them also run on the cloud, so all my data is scattered across different servers I have no control over.
+✕
+ Remove Ads
+That’s why I started 
+self-hosting some of my productivity tools
+ as well as 
+my design stack through Docker
+. Instead of relying on scattered cloud dashboards, most of the tools I use now run locally, and I can spin them up or replace them whenever I want. Over time, my productivity system shrunk down to just a 
+handful of containers
+ that handle most things I do day to day. These are the self-hosted tools I rely on daily now…
+
+                        Super Productivity
+               
+
+            Managing my tasks, projects, work, and more
+    
+I started using 
+Super Productivity
+ last year and loved it for its minimalist yet comprehensive approach to task management. It’s primarily an open-source, self-hostable task manager, but it also combines notes, to-do’s, time tracking, and alarms in one workspace. It can run as a desktop app, a web app, and as a Docker container, which makes it easy to plug into a self-hosted environment alongside your other tools.
+Super Productivity is one of those apps that you don’t know you need until you use it. It’s been really helpful in keeping track of how long it takes me to write or do other tasks like learning design. I also love the timer settings since it gives me complete control over how “invasive” the alarms are on my PC. And I get to keep track of every single section and subsection of all my projects, plus get a congratulatory notification when all of them are complete, which is a nice little quirk.
+✕
+ Remove Ads
+Whether you self-host or not, Super Productivity stores all your data locally by default. But self-hosting gives you control over where and how that data syncs, ensuring full privacy and independence from third-party services. It eliminates the reliance on external providers like Dropbox, you keep the end-to-end encryption keys, and maintain long-term access without risk of server shutdown.
+
+                        PhotoPrism
+               
+
+            Managing hoards of media files
+    
+PhotoPrism
+ might not be the first tool to come to mind when you think of productivity, but trust me, if you juggle a lot of images and video clips, 
+a good file manager
+ makes all the difference for your productivity. A lot of my work involves screenshots, reference images, small illustrations, icons, and short video clips, so things can get messy pretty fast.
+PhotoPrism primarily appealed to me for its AI-powered organization and smart filters. It uses AI to automatically tag, classify, and group media by things like faces, locations, dates, and objects. Self-hosting the app, however, means no cloud AI or third parties access those files, so they’re completely under my control and I can rest assured they’re not being used to train AI or serve me ads. Beyond that, it’s just a very intuitive interface that makes it easy to keep track of all the files coming in and out of my design and project workflows.
+✕
+ Remove Ads
+
+                        AFFiNE
+               
+
+            The only PKM tool anyone needs
+    
+I’ll never stop talking about 
+AFFiNE
+ because it’s 
+the 
+app to use for anything related to note-taking or project management; a second-brain type of tool. I started by using the hosted version, then 
+learned how to self-host it
+ so there are no third parties involved, my files stay off the AFFiNE cloud, and I completely control where or how my data moves around. You can also connect it to external AI providers to retain that AI retrieval and interaction layer, even when self-hosting.
+It’s a block-based editor with a similar feel to Notion, complete with databases. One of my favorite parts about AFFiNE is the Edgeless Canvas, which is similar to Obsidian’s Canvas. Here, I can lay out my documents and connect them visually.
+
+                        Excalidraw
+               
+
+            A handy digital whiteboard
+    
+I actually have a whiteboard right next to my desk, and it serves its purpose. It’s great for rough ideas, doodles, and keeping track of small tasks. The problem starts when those sketches need to stay alive for more than a couple of days, and they’d be erased by then. This is why I started using 
+Excalidraw
+.
+✕
+ Remove Ads
+Excalidraw is a more recent find for me. It’s an infinite whiteboard canvas app where you can create basic sketches and diagrams with a handful of design and drawing tools. Even though it’s primarily used collaboratively, I use it as a solo worker and creator. Self-hosting it means I completely control where my diagrams live, and I can use it offline.
+
+            Productivity without the chaos
+    
+Moving my productivity stack into Docker was the right move. It didn't just make me more intentional about which apps I use and reduced the number of apps I juggle, but it also gave me more power over how I manage them. Everything now runs in the same environment on my own machine and on my own terms.
+Software and Services
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			Why I stopped buying official ESP32 developer boards, and what I use instead
+		
+
+			9 Docker containers that run 24/7 on my $100 mini PC
+		
+
+			5 open-source apps that are so good their premium versions are worth paying for
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+4
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Fastest
+Fastest
+Fastest
+#II250957
+Member since 2026-03-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Some comments are from very disturbed ppl. 
+2026-03-01 14:42:30
+Upvote
+
+                                    5
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Jarek
+Jarek
+Jarek
+#VN923895
+Member since 2024-09-19
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Nice to see that you have some self reflection. 
+2026-03-04 06:25:26
+Upvote
+Downvote
+Reply
+Copy
+        
+Jarek
+Jarek
+Jarek
+#VN923895
+Member since 2024-09-19
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Well your only task is writing human slop on XDA, even notepad can handle this. 
+2026-03-01 07:13:49
+Upvote
+
+                                    5
+                            
+Downvote
+Reply
+Copy
+        
+The
+The
+The
+#GL893303
+Member since 2025-06-29
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+The fact you need a "productivity stack" is insanely laughable.
+2026-03-01 08:53:22
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Feb 27, 2026
+
+                                    I hacked into this "AI NAS" after it blocked SSH, but it had nothing to hide
+                            
+Feb 27, 2026
+
+                                    Bazzite triples its userbase in 8 months as gamers seek a Windows alternative
+                            
+Feb 27, 2026
+
+                                    This fan-made Windows monitor management tool should be in PowerToys
+                            
+Feb 26, 2026
+
+                                    5 Jellyfin clients that finally make it look and feel like a premium app
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 28, 2026
+1:17
+
+                            Android for Desktop has leaked
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 28, 2026
+1:12
+
+                            Why are we so nostalgic for Windows XP?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 22, 2026
+1:11
+
+                            The closest we'll ever get to Windows Phone 11
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 12, 2026
+1:17
+
+                            Razer made a holographic AI anime Assistant
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 10, 2026
+0:59
+
+                            When will the RAM crisis actually end?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

@@ -1,0 +1,35 @@
+A Beginner’s Guide to Kubernetes - ByteByteGo Newsletter
+ByteByteGo Newsletter
+Subscribe
+Sign in
+A Beginner’s Guide to Kubernetes
+ByteByteGo
+Apr 30, 2026
+∙ Paid
+221
+21
+Share
+Think about the difference between leaving a housemate a to-do list and writing them a contract. The to-do list says “buy bread on Monday, take out the bins Tuesday, water the plants Wednesday.”
+It’s a sequence of instructions, and if any step fails or gets skipped, the whole thing fails. The contract says something different. It says the kitchen should always have bread, the bins should never overflow, and the plants should never go three days without water. One is a script. The other is a promise, and somebody has to keep checking whether the promise is being kept.
+Kubernetes is what we get when that second approach is taken seriously and built into a whole infrastructure platform.
+In this article, we will learn how Kubernetes is a system of promises, and that every piece of it is a small program keeping one of those promises.
+The Kubernetes Approach
+Continue reading this post for free, courtesy of Alex Xu.
+Claim my free post
+Or purchase a paid subscription.
+© 2026 ByteByteGo
+ · 
+Privacy
+ ∙ 
+Terms
+ ∙ 
+Collection notice
+ Start your Substack
+Get the app
+Substack
+ is the home for great culture
+
+        This site requires JavaScript to run correctly. Please 
+turn on JavaScript
+ or unblock scripts
+    

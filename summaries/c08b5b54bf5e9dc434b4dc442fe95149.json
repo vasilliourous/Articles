@@ -1,0 +1,55 @@
+{
+  "article_title": "This open-source dashboard finally gave me the unified view my home lab desperately needed",
+  "core_thesis": "The article argues that as a home lab grows beyond a few containers, managing visibility across separate tools (Portainer, Unifi, etc.) becomes a pain point. The open-source project HomeLabInfo solves this by providing a unified dashboard that combines Docker container monitoring and network device discovery into a single view, using a hub-and-agent architecture. It is positioned as a companion to existing container managers, not a replacement.",
+  "detailed_summary": "The author describes the common home lab progression: starting with a few containers for media, backups, and Home Assistant, then expanding to a small infrastructure where visibility becomes fragmented. To address this, they adopted HomeLabInfo, an open-source self-hosted dashboard. Installation is straightforward via Docker with a provided compose file, and it uses host networking to scan the actual LAN. The tool employs a hub-and-agent model: the hub runs the main dashboard, while agents on each server report Docker activity, CPU, RAM, disk usage, and system health. This allows monitoring multiple servers from one place. HomeLabInfo surfaces running/stopped containers, uptime, health states, and host metrics without needing Portainer or SSH. It also performs network discovery, identifying devices across the subnet (routers, NAS, IoT, etc.) and provides a topology view of both devices and containers. The author notes the topology view is somewhat lacking but hopes for improvement. The key takeaway is that HomeLabInfo is best used as a companion to Portainer (for management) and router interfaces, unifying their data for a complete overview.",
+  "entities": [
+    {
+      "name": "HomeLabInfo",
+      "type": "organization",
+      "role": "Open-source project providing a unified dashboard for Docker containers and network devices in a home lab."
+    },
+    {
+      "name": "Dhruv Bhutani",
+      "type": "person",
+      "role": "Author of the article, an XDA-Developers writer focusing on productivity, networking, and self-hosting."
+    },
+    {
+      "name": "Portainer",
+      "type": "organization",
+      "role": "Container management tool that HomeLabInfo complements; used for managing containers but lacks unified visibility."
+    },
+    {
+      "name": "Unifi",
+      "type": "organization",
+      "role": "Network equipment brand whose interface shows network clients but not containers; part of the fragmentation problem."
+    },
+    {
+      "name": "Docker",
+      "type": "organization",
+      "role": "Container platform that HomeLabInfo monitors; the tool pulls data from Docker via agents."
+    }
+  ],
+  "key_data_points": [
+    "HomeLabInfo uses a hub-and-agent model: the hub runs the dashboard, agents on each server report Docker and system metrics (CPU, RAM, disk, health). (🟢 Relevant to your homelab: you can monitor multiple servers from one dashboard, reducing SSH/Portainer hopping.)",
+    "The tool performs network discovery by scanning the LAN subnet, identifying devices like routers, NAS, IoT, etc., and presents them alongside containers. (🟢 Relevant to your homelab: gives a complete asset inventory, useful for security auditing and troubleshooting.)",
+    "HomeLabInfo offers a topology view that visualizes both devices and containers, though the author found it lacking in scaling and interactivity. (🟢 Relevant to your homelab: provides a map of your infrastructure, but may need improvement for complex setups.)",
+    "Installation is simple via Docker with a provided compose file; it requires host networking to scan the actual LAN. (🟢 Relevant to your homelab: easy to deploy, but ensure host networking is enabled for full functionality.)",
+    "The dashboard surfaces container health, uptime, and system stats without needing Portainer or terminal access. (🟢 Relevant to your homelab: saves time during incident response by centralizing health checks.)"
+  ],
+  "methodology_steps": [
+    "Deploy HomeLabInfo using Docker: use the provided docker-compose file from the GitHub repository. Ensure host networking is enabled so the container can scan the LAN.",
+    "Configure the hub container to run the main dashboard. Then, on each server hosting Docker containers, deploy the agent container that connects to the hub.",
+    "Set the scan range in HomeLabInfo to match your actual subnet (e.g., 192.168.1.0/24) so network discovery works correctly.",
+    "Access the dashboard to view a unified list of Docker containers (running/stopped, health, uptime, CPU/RAM/disk usage) and network devices (routers, NAS, IoT, etc.).",
+    "Use the topology view to visualize connections between devices and containers. Note: the author found this view lacking; consider supplementing with other tools if needed.",
+    "Keep Portainer or your router interface for container management and network configuration; use HomeLabInfo solely for monitoring and visibility."
+  ],
+  "conclusions": [
+    "HomeLabInfo effectively solves the fragmentation problem in home labs by unifying Docker container monitoring and network device discovery into one dashboard. The hub-and-agent architecture scales across multiple servers, making it suitable for growing infrastructures.",
+    "The tool is not a replacement for container managers like Portainer but a companion that provides a high-level overview. This aligns with the user's need for technical homelab advice: it's a practical addition to a monitoring stack.",
+    "Network discovery is a standout feature, giving a complete asset inventory that is useful for both troubleshooting and security auditing. The topology view, while imperfect, offers a unique combined view of devices and containers."
+  ],
+  "personal_relevance_summary": "This article directly addresses your homelab needs by introducing HomeLabInfo, an open-source dashboard that centralizes Docker container monitoring and network device discovery. As someone managing a growing homelab, you'll benefit from reduced context-switching between Portainer, SSH, and router interfaces. The hub-and-agent model allows you to monitor multiple servers from one place, which is valuable if you run a distributed setup. Additionally, the network discovery feature can help you identify all devices on your LAN, aiding in security audits and troubleshooting. The article also provides practical installation steps and a clear use case, making it easy to implement.",
+  "extra_advice": "Consider integrating HomeLabInfo with your existing monitoring stack (e.g., Grafana, Prometheus) by exporting its data via APIs if available. Also, since the topology view is lacking, you could supplement it with a tool like NetBox for more robust network documentation. For Red Teaming, use the network discovery to map out target environments during internal assessments.",
+  "source_url": "https://www.xda-developers.com/open-source-dashboard-gave-me-unified-view-home-lab-needed/"
+}

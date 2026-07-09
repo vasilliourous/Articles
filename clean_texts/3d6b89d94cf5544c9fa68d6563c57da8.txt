@@ -1,0 +1,415 @@
+I always tweak my Proxmox host's settings before spinning up a single VM or LXC
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+1
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I always tweak my Proxmox host's settings before spinning up a single VM or LXC
+By 
+Ayush Pande
+Published
+ May 2, 2026, 2:30 PM EDT
+Ayush Pande is a PC hardware and gaming writer. When he's not working on a new article, you can find him with his head stuck inside a PC or tinkering with a server operating system. Besides computing, his interests include spending hours in long RPGs, yelling at his friends in co-op games, and practicing guitar. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+1
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Over the last couple of years, I’ve installed Proxmox on PCs of all shapes and sizes, including 
+enterprise-grade servers
+, dinosaur machines, 
+single-board computers
+, and 
+gaming laptops
+. After all, Proxmox’s lightweight nature lets me run this killer platform on anything with an x86 CPU, and since it supports Linux containers and KVM-based virtual machines, I can use my PVE-powered systems as hybrid project-building workstations and self-hosting hubs.
+✕
+ Remove Ads
+But no matter what version I use, Proxmox’s default settings are far from ideal – to the point where I’d often modify them as soon as I’m done installing the virtualization platform on a new guinea pig device.
+Related
+
+			5 common Proxmox mistakes everyone makes when starting fresh (and how to avoid them)
+		
+Yeah, I've made some of these mistakes in my early Proxmox days
+Posts
+1
+By 
+Ayush Pande
+Jan 17, 2026
+
+                        By default, Proxmox uses its enterprise repo for updates
+               
+
+            It’s impossible to get updates without enabling the no-subscription repo
+    
+Although most PVE enthusiasts are aware of the enterprise repo, I’ve often seen newcomers leave their Proxmox update settings at the default values and wonder why the platform doesn’t receive new packages or security patches. You see, Proxmox sets its enterprise repository for updates upon a fresh installation, and unless you’ve bought a subscription, your Proxmox node will throw errors if you try updating it.
+Fortunately, Proxmox has the no-subscription repository, which includes almost every tool you need to turn your PVE node into a powerful server. I used to enable it manually by heading to the Updates section of the Datacenter tab back in the day, though I’ve started executing the Post Install script from the community-driven Proxmox VE-Helper Scripts package. Besides taking care of the repository issue, it also gets rid of the subscription nag and disables certain cluster services – once I give it the approval, that is. And unless I’ve got plans to use a node in a cluster, I almost always let it turn them off…
+✕
+ Remove Ads
+
+                        Disabling certain cluster settings reduces the SSD strain
+               
+
+            I also enable Log2Ram on old SSDs
+    
+Let me be clear: as much as I love HDDs, I configure Proxmox installations on SSDs, partly because my bulky hard drives can’t fit inside half the mini-PCs in my arsenal, and also because I’ve got spare SSDs recycled from outdated machines. But reliability is a bit of an issue with salvaged drives, especially for SSDs with limited write cycles. Worse still, pve-ha-lrm.service and pve-ha-crm.service tend to write data frequently on the Proxmox boot device. Now, I verify the drive health on my SSDs before I send them through the PVE grinder and only use cheap drives for test systems, not on my main workstation.
+Disabling these cluster services not only prevents extra SSD wear on my standalone nodes, but it also slightly decreases the resources they’d otherwise siphon when writing to my boot drives. Since I’m a worrywart, I’ve also configured Log2Ram on cheaper Proxmox systems I’ve cobbled together from old components. True to its name, this handy tool writes logs to the system memory for the most part, and only saves them on the SSD at infrequent intervals, thereby reducing the write operations just a tad more.
+
+                        I always configure a Pulse agent on fresh PVE nodes
+               
+
+            Pulse is the best home lab monitoring utility by a long shot
+    
+✕
+ Remove Ads
+Proxmox undoubtedly has a neat web UI for managing containers and VMs, but it’s not the best for quickly checking the health and resource consumption metrics of my virtual guests. Fortunately, genius developer rcourtman designed Pulse, a powerful monitoring service that works exceedingly well with Proxmox. Besides automatically discovering my LXCs and VMs, it can pull all their essential statistics, and even supports remote monitoring for multiple PVE nodes.
+And that’s where the aforementioned Pulse agent comes into the picture. I’ve got a centralized Pulse instance on a secondary node that I’ve armed with all the documentation and networking tools (so I don’t bring it down with my home lab experiments), and the agents section within Pulse’s Settings generates a fresh command that I can execute on fresh PVE instances to add them to my monitoring server.
+Related
+
+			This is hands-down the best monitoring utility for Proxmox
+		
+Pulse is a solid addition to any Proxmox lover's container suite
+Posts
+2
+By 
+Ayush Pande
+Aug 27, 2025
+
+                        Proxmox’s default power settings are somewhat unoptimized
+               
+
+            I often fiddle with the BIOS settings on power-hungry systems
+    
+✕
+ Remove Ads
+I’ve mostly got old hardware powering my home lab, so you’d expect the energy consumption rate to be off the charts. But with the right set of optimizations, it’s possible to tone down the energy-guzzling tendencies of Proxmox rigs quite a bit. I tweak the scaling governor on every new PVE node, as this setting is responsible for setting the CPU’s clock speeds during different tasks – including idle workloads. Specifically, I set the scaling governor to powersave instead of the default performance profile, which aggressively throttles down the processor frequency when it’s not actively in use.
+
+                    Subscribe to the newsletter for practical Proxmox tweaks
+                
+Want more hands-on Proxmox guidance? Subscribing to the newsletter unlocks curated Proxmox optimization notes, tool recommendations, and configuration walkthroughs — plus related self-hosting and virtualization insights to apply to your lab.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+Since my Proxmox machines aren’t involved in tasks requiring high CPU horsepower (at least, not unless I specifically use them to host remote gaming VMs) and tend to remain idle most of the time, powersave is the perfect option for my setup. I’ve also enabled C-States, Eco Mode, and ASPM (and disabled boost clocks) in the BIOS of most PVE nodes, just to save some extra watts every month.
+
+            A couple more tweaks for Proxmox enthusiasts
+    
+Proxmox’s solid first-party companion tools are yet another reason I adore its ecosystem, and I always pair fresh PVE nodes with its Datacenter Manager utility. Besides providing a neat UI comprising all the systems in my home lab, it lets me migrate LXCs and VMs seamlessly between nodes, even if they’re not clustered together. I’ve also connected several PVE rigs with my local Proxmox Backup Server instances, though I’ve started clamping down on my snapshot automations after I nearly choked a PBS-powered mini-PC with unnecessary virtual guest files.
+✕
+ Remove Ads
+Meanwhile, if you’re looking for some tips to improve your VM performance, I’d recommend setting the CPU option to host. While you shouldn’t use it on cluster nodes bearing different CPU types, the host setting can improve your VM’s responsiveness. Likewise, switching the Display option to SPICE gets rid of the cursor lag and overall sluggishness on GUI-laden VMs, and I wish I’d known about this setting during my early Proxmox days.
+
+    						Proxmox
+			
+Proxmox is an open-source platform built on Debian Linux designed for server virtualization.
+See at Proxmox
+Expand
+Collapse
+Linux
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I tested Claude Code, Codex, Lovable, and Replit side by side, and only one felt ready for real work
+		
+
+			When AAA game developers block entire GPU brands, PC gaming loses its biggest advantage
+		
+
+			Forget Cursor and Claude Code, Google Antigravity is the perfect example of vibe coding
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+1
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+SirLogic
+SirLogic
+SirLogic
+#AB471932
+Member since 2026-05-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+This article is a little light on details.  For example, what community post-install script are you referring to?  The one by tteck no longer works as it is tied to ProxMox version 8.x and the current ProxMox version is 9.1.x
+2026-05-03 19:48:29
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+May 1, 2026
+
+                                    After six months, Microsoft's Auto SR finally gives the ROG Xbox Ally X what it needed all along
+                            
+May 1, 2026
+
+                                    Someone installed an e-ink stat display in their PC, and it looks gorgeous
+                            
+May 1, 2026
+
+                                    Laptop makers are sacrificing ports and repairability for designs nobody asked for
+                            
+Apr 30, 2026
+
+                                    Microsoft rolls out Xbox Mode, bringing a console-like experience to any PC
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            Windows XP's Secret Themes
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:15
+
+                            What was the best version of Windows?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:05
+Skip Ad
+5

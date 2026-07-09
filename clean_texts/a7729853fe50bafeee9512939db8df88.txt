@@ -1,0 +1,120 @@
+Claude Code Is Wasting 98% Of Your Tokens | Vibe Coding
+Sitemap
+Open in app
+Sign up
+Sign in
+Medium Logo
+Get app
+Write
+Search
+Sign up
+Sign in
+Vibe Coding
+·
+Follow publication
+Vibe Coders is where we share ideas that help shape the future.
+Follow publication
+Press enter or click to view image in full size
+Image made with midjourney, edited in figma
+Member-only story
+Claude Code Is Wasting 98% Of Your Tokens On Search. Here’s The Fix.
+Local MCP server. Your agents become better at finding.
+Alex Dunlop
+Follow
+5 min read
+·
+May 1, 2026
+461
+4
+Listen
+Share
+Claude Code
+ is very 
+bad
+ at 
+finding
+functions
+.
+You sit there
+waiting
+ for it to 
+find right files
+, watching the 
+token count
+ go 
+up
+.
+Those tokens though, most of them
+ are 
+wasted/unneeded
+.
+This isn’t a bug, this is how Claude Code is built to search.
+When it greps, it reads full files, then launches sub agents, it charges you for every token of code 
+(even if they aren’t related)
+.
+Not a Medium member? Read for free by 
+clicking here
+.
+The Problem Nobody Talks About
+We are focusing on everything else, while there is a massive problem.
+Really the biggest drain is looking for files.
+Every time Claude Code looks to find something it defaults to 
+grep
+. Matching keywords, not your intent.
+Search for the word “parse” and you will get every config parser, URL parser, anything to with parse & parser & parsing. Claude then reads 
+(charges)
+ you for all those files.
+It’s not in their interest to make this more effective.
+The average grep+read workflow uses 50k+ tokens per query, most of that isn’t needed.
+Not to mention how slow it is.
+The Fix That’s Local
+Shout out to 
+Minish
+ this company is insane, they made a crazy super fast embedding model too.
+Press enter or click to view image in full size
+https://huggingface.co/minishlab
+The open source MCP server is called Semble. It gives Claude Code amazing searching, that isn’t just basic keyword matching.
+To install it locally:
+uv add semble
+(or use pip)
+claude mcp add semble -s user — uvx — from “semble[mcp]” semble
+In Claude Code (or Codex, etc) run 
+semble init
+That’s it, no API needed, no GPU, it runs locally on your CPU.
+Create an account to read the full story.
+The author made this story available to Medium members only.
+If you’re new to Medium, create a new account to read this story on us.
+Continue in app
+Or, continue in mobile web
+Sign up with Google
+Sign up with Facebook
+Sign up with email
+Already have an account? 
+Sign in
+461
+461
+4
+Follow
+Published in Vibe Coding
+4.7K followers
+·
+Last published 2 days ago
+Vibe Coders is where we share ideas that help shape the future.
+Follow
+Follow
+Written by Alex Dunlop
+4.2K followers
+·
+3 following
+Engineer at Popp AI. Volunteer at Aruuri. Passionate about learning/collaborating. Trying to leave a positive contribution for the dev community.
+Follow
+Help
+Status
+About
+Careers
+Press
+Blog
+Privacy
+Rules
+Terms
+Text to speech

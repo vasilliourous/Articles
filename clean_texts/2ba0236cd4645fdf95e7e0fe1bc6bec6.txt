@@ -1,0 +1,387 @@
+I Deployed My Own Flatcar Linux Update Server and Here’s What Actually Happened - Virtualization Howto
+Skip to content
+YouTube
+Twitter
+LinkedIn
+GitHub
+Facebook
+Discord
+Pinterest
+Virtualization Howto
+Virtualization, Cloud, DevOps, Reviews
+Search for:
+Subscribe
+Forum
+My kits
+Home Lab NAS Kits
+Intel Optane Swap Kit
+VMware Compatible Mini PCs
+Podcast
+DevOps
+Virtualization
+Proxmox
+VMware
+Hyper-V
+XCP-ng
+Containers
+Kubernetes
+Mini PC & Server
+Home Lab
+My Home Lab
+Nested ESXi Lab
+Proxmox Build 2025
+About
+Contact
+Disclaimer
+E-books
+Privacy
+Newsletter
+3
+Home
+2026
+April
+I Deployed My Own Flatcar Linux Update Server and Here’s What Actually Happened
+I Deployed My Own Flatcar Linux Update Server and Here’s What Actually Happened
+April 21, 2026
+April 21, 2026
+by Brandon Lee
+I have been having a blast trying out container-specific operating systems. As of recently I have tried out a couple including 
+Lightwhale
+ and Flatcar. Both have been very good in my testing. I really think Flatcar for me is going to be one that stays long term in the lab since it is production grade and used by many in production environments. It has a lot of groundwork underneath it from 
+Fedora CoreOS
+. I love the Butane and Ignition configuration and how it is immutable. Updates are automatic and designed to reduce downtime. As it turns out there is a free solution, called Nebraska, to keep your Flatcar Linux updated and manage your fleet of Flatcar deployments.a
+Brief Flatcar overview
+Flatcar 
+is a minimal, immutable OS built for containers. Updates are automatic and safe by design, and reduces any possible downtime with dual partitions. These function like a 
+network switch
+ where you have active slots for firmware that is active and one that is standby which is awesome.
+Read my post on how to get up and running on Flatcar Linux in Proxmox here: 
+I Installed Flatcar Linux on Proxmox and It’s Not Like a Normal Linux VM
+.
+But even with this, you are relying on the public Flatcar update service to control when your nodes update and to what version they move to. The way the Flatcar OS is designed, this is a pretty safe operation, but then you start thinking about real-world scenarios like the following:
+What if an update breaks something in your cluster?
+What if you want to stage updates across nodes?
+What if you want to test updates before rolling them out?
+That is where Nebraska comes in.
+What is Nebraska?
+Nebraska 
+is a free and open source update server that Flatcar uses under the hood. The public Flatcar update service is 
+essentially a hosted
+ Nebraska instance. When you deploy your own Nebraska server, you take control of the entire update workflow in your home lab or production.
+Nebraska update server for flatcar linux
+One of the biggest misconceptions I had going in was thinking Nebraska would “manage” my nodes. It doesn’t do that. Nebraska is not an agent-based system. It does not discover machines. It does not 
+push
+ updates.
+Instead, Nebraska is an Omaha update server. Flatcar nodes use 
+update_engine
+ to check in with an update server and ask it the simple question: 
+“Is there an update available for me?”
+Nebraska then uses a few things to answer that question based on:
+the group the node belongs to
+the channel it is on
+the rollout rules configured
+So, it is a passive solution meaning that the Flatcar 
+server initiates
+ the update checks not the other way around. So, just know when you deploy the Nebraska server, your nodes won’t automatically appear in the console from some discovery process. Even with Nebraska in place, the update process itself does not change fundamentally.
+Flatcar still uses its dual partition system and the flow looks like this:
+Node checks Nebraska for updates
+Nebraska responds with a version if available
+Flatcar downloads the update to the passive partition
+System waits for a reboot
+On reboot, it switches to the updated partition
+Nebraska controls step 2 but everything else is handled by Flatcar locally. This is an important note because Nebraska does not reboot your nodes. You still need a reboot strategy for your Flatcar nodes.
+Installing Nebraska
+The Nebraska server is provided via a 
+Helm chart
+ that you can use to stand up the server in your Kubernetes cluster solution. Below are the configuration files that I created for my environment. Your environment may differ here so be sure to plugin the values you need for your environment. I also do have an ingress created for nebraska where 
+Traefik takes care of my SSL certificates
+, etc. 
+I am also running middleware for handling logins to the solution. I tried to get Github auth working, but couldn’t find the right combination of helm values that worked correrctly.
+File 1: kustomization.yaml
+apiVersion: kustomize.config.k8s.io/v1beta1
+kind: Kustomizationnamespace: nebraskaresources:
+  - namespace.yaml
+  - nebraska-ingressroute.yamlhelmCharts:
+  - name: nebraska
+    repo: https://flatcar.github.io/nebraska
+    releaseName: nebraska
+    version: "2.0.0"
+    valuesFile: values-nebraska.yaml
+File 2: namespace.yaml
+apiVersion: v1
+kind: Namespace
+metadata:
+  name: nebraska
+  labels:
+    pod-security.kubernetes.io/enforce: baseline
+    pod-security.kubernetes.io/audit: baseline
+    pod-security.kubernetes.io/warn: baseline
+File 3: nebraska-ingressroute.yaml
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: nebraska-forwarded-headers
+  namespace: nebraska
+spec:
+  headers:
+    customRequestHeaders:
+      X-Forwarded-Proto: https
+    accessControlAllowOriginList:
+      - "*"
+---
+apiVersion: traefik.io/v1alpha1
+kind: Middleware
+metadata:
+  name: nebraska-basicauth
+  namespace: nebraska
+spec:
+  basicAuth:
+    secret: nebraska-basicauth
+---
+apiVersion: traefik.io/v1alpha1
+kind: IngressRoute
+metadata:
+  name: nebraska
+  namespace: nebraska
+spec:
+  entryPoints:
+    - websecure
+  routes:
+    - kind: Rule
+      match: Host(`nebraska.example.com`) && PathPrefix(`/v1/update`)
+      services:
+        - name: nebraska
+          port: 80
+      middlewares:
+        - name: nebraska-forwarded-headers
+    - kind: Rule
+      match: Host(`nebraska.example.com`)
+      services:
+        - name: nebraska
+          port: 80
+      middlewares:
+        - name: nebraska-forwarded-headers
+        - name: nebraska-basicauth
+  tls:
+    certResolver: letsencrypt
+File 4: values-nebraska.yaml
+image:
+  registry: ghcr.io
+  repository: flatcar/nebraska
+  tag: "3.0.0"
+  pullPolicy: IfNotPresentreplicaCount: 1service:
+  type: ClusterIP
+  port: 80ingress:
+  enabled: falsepostgresql:
+  enabled: true
+  auth:
+    database: nebraska
+    username: nebraska
+    existingSecret: nebraska-postgresql
+    secretKeys:
+      adminPasswordKey: postgres-password
+      userPasswordKey: password
+  image:
+    tag: 13.8.0-debian-11-r18
+  primary:
+    persistence:
+      enabled: true
+      storageClass: your-storage-class
+      size: 5Giconfig:
+  app:
+    title: "Nebraska - Flatcar Update Manager"
+    headerStyle: "dark"  syncer:
+    enabled: true
+    interval: "1h"  hostFlatcarPackages:
+    enabled: false
+    packagesPath: /mnt/packages
+    persistence:
+      enabled: false
+      storageClass: your-storage-class
+      size: 50Gi  auth:
+    mode: noop  database:
+    host: nebraska-postgresql
+    port: 5432
+    sslMode: disable
+    dbname: nebraska
+    username: nebraska
+    passwordExistingSecret:
+      enabled: true
+      name: nebraska-postgresql
+      key: passwordenv:
+  - name: LOG_LEVEL
+    value: "debug"resources:
+  requests:
+    cpu: 100m
+    memory: 128Mi
+  limits:
+    cpu: 500m
+    memory: 512Mi
+Deploy it:
+kubectl apply -k .
+Browsing out to the Nebraska dashboard
+After the pods were running, I was able to browse out to the Nebraska dashboard and get everything pulled up. Out of the box, Nebraska already has default “applications” added with policies attached for the various groups of Flatcar deployments. You will see:
+Edge (ARM & AMD64)
+Alpha (ARM & AMD64)
+Beta (ARM & AMD64)
+Stable (ARM & AMD64)
+Exploring nebraska flatcar linux self hosted update server
+How do you connect your Flatcar instances to your Nebraska server?
+This one was one that I was stumped over for just a bit. I kept looking for a place to “add” servers or “discover” servers and didn’t find it. I even though that maybe I wasn’t in the true admin interface. However, after doing some more looking around, I learned that you “point” your Flatcar instances to your Nebraska server and they “register” themselves with it. 
+So, the update process is still initiated from the client side (your Flatcar server), but then the policy that is applied comes from the Nebraska server. So to get your Flatcar server pointed to your Nebraska server, you add this as part of your 
+ignition file
+ that tells Flatcar to register itself to the Nebraska server and get update configurations from there.
+This is under my 
+storage configuration
+ in my butane file. This is pretty straightforward here but you edit the contents of this update.conf file and point it to the server address of your nebraska server and the machine alias is how it will register itself with Nebraska.
+- path: /etc/flatcar/update.conf
+      overwrite: true
+      mode: 0644
+      contents:
+        inline: |
+          GROUP=stable
+          SERVER=https://nebraska.example.cloud/v1/update/
+          MACHINE_ALIAS=flatcar-proxmox
+Here is the minimal configuration needed:
+GROUP=stable
+SERVER=https://nebraska.yourdomain.com/v1/update/
+MACHINE_ALIAS=flatcar-proxmox
+There are three important values here.
+GROUP 
+defines which rollout group the node belongs to and how you control staged updates later
+SERVER 
+tells the node where to check for update and this points to your Nebraska host with the /v1/update/ URL
+MACHINE_ALIAS
+ is optional but gives you a friendly name in the Nebraska UI, which is definitely useful
+Once your ignition file runs for the Flatcar server, it will register itself with the Nebraska instance. You can speed up this process by logging into your Flatcar server and running:
+sudo update_engine_client -update
+Updating the flatcar server client update configuration
+Once the flatcar server instance is registered with the nebraska server
+If you view the instance list for the Stable channel, here is what mine looks like:
+Viewing instances in nebraska server of flatcar linux servers that have registered
+Below, I am viewing the 1 instance that is registered. Below you can see the alias name that we configured in the ignition file and other information like the IP address, status, what group it belongs to, etc.
+Flatcar linux checking into the nebraska servers for new updates
+When you look at the release channel group, you get a lot of valuable information, including updates that are complete, installed, downloading, downloaded, other, and those that are in an error state.
+Viewing the details of the stable channel for updates failures errors and more
+You can also edit the group and see the options here.
+Editing the group for the stable channel
+Under 
+policy
+, this is where you enable the updates, turn on safe mode if you want for only one update at a time, setting your timezone, and setting update limits.
+Viewing the policy settings for the stable channel group
+An IP address issue with Nebraska and Flatcar
+After getting everything connected, I noticed something strange. Nebraska was showing my Flatcar node with an IP address in the Kubernetes pod network range:
+10.244.x.x
+Kubernetes pod ip showing for flatcar linux instead of the real ip address in nebraska server
+But my actual node IP was:
+10.1.149.187
+This was confusing at first, but it started to make sense when I thought about how the actual traffic flows in Kubernetes. Nebraska records the IP of the connection it sees. If your request passes through:
+an 
+Ingress controller
+kube-proxy
+or a service that rewrites source IP
+Then, Nebraska will see the internal cluster IP instead of the real client IP. In my case, traffic was being proxied through Kubernetes with Traefik, so Nebraska saw the pod network.
+How to fix the wrong IP showing in Nebraska
+There are a few ways to address this, depending on your setup.
+If you are using a Service of type LoadBalancer or NodePort, you can preserve the original client IP by the following setting:
+externalTrafficPolicy: Local
+Setting the externaltrafficpolicy to local to preserve real ip addresses coming in
+After applying this patch, Nebraska started to see the right IP address of my Flatcar Linux host.
+Wrapping up
+Nebraska is one of the tools working with Flatcar that really makes a lot of sense that this is a strong contender for adoption as your container host of choice. It is enterprise ready and has tools that show it can be managed in terms of fleets of nodes and not just one off updates. Nebraska is super simple but it gets the job done and gives you control over how the updates take place on your Flatcar nodes. How about you? Are you running Flatcar Linux and if so, are you making use of Nebraska server? Let me know in the comments.
+Add as a preferred source on Google
+Google is updating how articles are shown. Don’t miss our leading home lab and tech content, written by humans, by setting 
+Virtualization Howto as a preferred source
+.
+About The Author
+Brandon Lee
+Brandon Lee is the Senior Writer, Engineer and owner at Virtualizationhowto.com, and a 7-time VMware vExpert, with over two decades of experience in Information Technology. Having worked for numerous Fortune 500 companies as well as in various industries, He has extensive experience in various IT segments and is a strong advocate for open source technologies. Brandon holds many industry certifications, loves the outdoors and spending time with family. Also, he goes through the effort of testing and troubleshooting issues, so you don't have to.
+See author's posts
+Like this:
+Like
+Loading…
+home lab
+Tagged 
+home lab
+, 
+home server
+Post navigation
+I Installed Flatcar Linux on Proxmox and It’s Not Like a Normal Linux VM
+Proxmox 9.1.8 Finally Rebalances HA Workloads Automatically
+Related Posts
+E Cores vs P Cores in Home Servers
+If you are thinking about a new mini PC for your home lab server and want to go the Intel CPU route, there are some considerations to be made when…
+Like this:
+Like
+Loading…
+Consumer vs Enterprise SSDs in the Home Lab: I Benchmarked Both in Ceph
+A lot of questions on types of hardware come up when ones are building a home lab server or home lab cluster that are definitely worth asking. Recently I had…
+Like this:
+Like
+Loading…
+Copy VMware Workstation VM to ESXi: Home Lab
+When it comes to building your first home lab, there is nothing wrong with starting out with VMware Workstation. Realistically, this may be all you need. Having a decent workstation…
+Like this:
+Like
+Loading…
+0
+0
+votes
+Article Rating
+Subscribe
+Connect with
+ Login
+I allow to create an account
+When you login first time using a Social Login button, we collect your account public profile information shared by Social Login provider, based on your privacy settings. We also get your email address to automatically create an account for you in our website. Once your account is created, you'll be logged-in to this account.
+Disagree
+Agree
+Notify of 
+new follow-up comments
+new replies to my comments
+Label
+Name*
+Email*
+Connect with
+I allow to create an account
+When you login first time using a Social Login button, we collect your account public profile information shared by Social Login provider, based on your privacy settings. We also get your email address to automatically create an account for you in our website. Once your account is created, you'll be logged-in to this account.
+Disagree
+Agree
+Label
+Name*
+Email*
+0
+ Comments                    
+Oldest
+Newest
+Most Voted
+ Inline Feedbacks                    
+View all comments
+Proxmox Server Build Components
+As an Amazon Associate, I earn from qualifying purchases.
+Minisforum BD795M
+RackChoice 2U Micro ATX Compact
+Cooler Master MWE Gold 850 V2
+Noctua NH-L9i-17xx, Low-Profile CPU Cooler
+★ New!
+Crucial 128GB DDR5 SODIMM Kit
+Crucial 96GB DDR5 SODIMM Kit
+Intel X520-DA2 10 GbE Network Adapter
+Kingston 240GB Drive for Boot
+Samsung 990 Pro 2TB
+MX-4 Thermal Paste
+Gaming/Proxmox Build 2025
+As an Amazon Associate, I earn from qualifying purchases.
+Thermaltake Tower 200
+Minisforum BD790i X3D
+Cooler Master MWE Gold 850 V2
+★ New!
+Crucial 128GB DDR5 SODIMM Kit
+Arctic P12 Slim Fan
+PNY NVIDIA GeForce RTX 5080 OC
+Predator 1TB NVMe Boot Drive
+Samsung 990 Pro 4TB – VM Storage
+Copyright © 2026 
+Virtualization Howto
+wpDiscuz
+Insert
+%d

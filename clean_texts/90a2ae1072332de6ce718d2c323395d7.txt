@@ -1,0 +1,456 @@
+I bought a KVM-over-IP for my home lab, and I can't believe I waited this long
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+3
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I bought a KVM-over-IP for my home lab, and I can't believe I waited this long
+By 
+Joe Rice-Jones
+Published
+ Mar 26, 2026, 11:00 AM EDT
+Maker, meme-r, and unabashed geek, Joe has been writing about technology since starting his career in 2018 at KnowTechie. He's covered everything from Apple to apps and crowdfunding and loves getting to the bottom of complicated topics. In that time, he's also written for SlashGear and numerous corporate clients before finding his home at XDA in the spring of 2023.
+
+He was the kid who took apart every toy to see how it worked, even if it didn't exactly go back together afterward. That's given him a solid background for explaining how complex systems work together, and he promises he's gotten better at the putting things back together stage since then. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+3
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+The more my 
+home lab grows
+, the more I realize that the tools 
+bringing the most benefit to my workflow
+ aren't always the flashiest. What makes a big difference is anything that reduces my repetitive tasks or makes     
+remote access easier to handle
+. That last part is always a struggle, because SSH, RDP, and other tools only work if your hardware is booted up, and that frequently becomes an issue in my home lab.    
+✕
+ Remove Ads
+It's depressingly common for me to push a config to the server or node I'm working on and have it fail to reboot successfully. Or worse, it reboots and becomes inaccessible on the network due to a change. That generally means walking to my server, plugging in a monitor, keyboard, and mouse to troubleshoot, and it's a pain. Even worse if it goes down, and I'm not at home, Home Assistant is no longer running my smart home. To fix it, I picked up a capable KVM-over-IP device, and it's been a game-changer.
+Related
+
+			I bought a $30 KVM switch, and it did more for my desk than any monitor upgrade
+		
+Tons of productivity improvements with two (admittedly large) provisos
+Posts
+9
+By 
+Joe Rice-Jones
+Mar 3, 2026
+About this article: 
+GL.iNet
+ sent over the Comet 5G used in the content; it had no input over how it was used and didn't see the content before publication.
+
+                        Wait, but what's KVM-over-IP anyway?
+               
+
+            Think of it as a mini-computer to control your bigger computer
+    
+Normally, 
+KVM switches
+ take one mouse, keyboard, and monitor(s) and share those peripherals between multiple computers. That's the general idea of KVM-over-IP, except that instead of sharing between two physically connected PCs, one of them is elsewhere, connected over the network.
+While you can do this 
+with a Raspberry Pi
+, I wanted something that would work even if my network went down. Yes, that's a disturbingly common occurrence in my home lab, completely self-inflicted whenever I mess up something with the router settings.
+✕
+ Remove Ads
+Now, I'm already using a few 
+GL.iNet
+ devices as portable routers, and they sent over their newest KVM-over-IP device, the Comet 5G. This KVM works over Ethernet, Wi-Fi, and also 
+5G RedCap
+, ensuring that I'll have connectivity to my home server for admin tasks no matter what. Well, okay, if the local cell towers go down, I've got another problem, but that'll be larger than my home lab.
+
+            Ex-enterprise hardware often has out-of-band management built in
+    
+Hardware used in the datacenter have 
+dedicated out-of-band management hardware
+ to give you console access from the second the machine goes on. That could be on your servers, or the network appliances, but all of it is easily configurable from a dedicated network that works whether that machine is on or not, and often provides a view into the boot sequence as well.
+
+    						Gl.iNet Comet 5G
+			
+$300 at Gl.iNet
+Expand
+Collapse
+
+                        My home lab has never been easier to manage
+               
+
+            Being able to see what happens during reboots is fantastic
+    
+Every remote access tool I've used before this fails as soon as the client device goes offline, or if the local network links do. That's a big problem in my home lab, because if it's not DNS this time, it'll be DNS the next, and I lose visibility over my hardware all too often.
+✕
+ Remove Ads
+With 5G RedCap, Ethernet, and Wi-Fi 6 options for connectivity (and yes, I have all three enabled and working), if the wired link goes down, I have two other connectivity options, and there's always the 5G connection unless I lose power and my UPS runs out of capacity. The Wi-Fi radio can be flicked into hotspot mode for use in areas with zero connectivity, which is also a fantastic feature.
+Being able to manage my server as if I'm sitting next to it is fantastic, and stops me from having to scramble to find cables and other devices if the worst happens. I've even used it for BIOS updates, since you can upload files to the Comet 5G and make them appear as local storage. You can even use it to control a Fingerbot if you need to use a physical power button, and it also supports Wake-on-LAN if your device's BIOS supports it.
+
+            Oh, and it can be a Tailscale node
+    
+I've got it connected to my tailnet, for even more security (and for remote access without using the GLKVM app), but I could use Zerotier for a similar setup. It all really depends on your home lab, and the best devices offer options without limiting you to a single ecosystem.
+Related
+
+			PiKVM was overkill until I realized what else it could do
+		
+I built my PiKVM for emergencies, but it’s quickly turned into the tool that keeps my server and my patience from falling apart.
+Posts
+By 
+Jeff Butts
+Feb 11, 2026
+✕
+ Remove Ads
+
+            Having KVM-over-IP on my home server makes my life easier
+    
+There's a reason out-of-band management is a big deal for enterprise use: we homelabbers normally have to deal with decommissioned servers or huge energy bills to achieve the same thing. Having a reliable KVM-over-IP device attached to my server means I can tweak BIOS settings or fix things if it won't boot, when I'd have to walk over to it and plug in equipment to fix things otherwise. That saves time and effort, and I've started using it for normal management tasks as well, so I don't have to worry about SSH not reconnecting or any of the myriad of other issues I often cause.
+Phones, smartwatches, and everything else
+Home Lab
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I set up Claude Code the way its creator does, and the difference is night and day
+		
+
+			Your smart TV may be holding your entire Wi-Fi hostage
+		
+
+			I don't pay for ChatGPT, Perplexity, Gemini, or Claude – I stick to my self-hosted LLMs instead
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+3
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Ketil
+Ketil
+Ketil
+#PK837259
+Member since 2024-11-11
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+What replaced your Home Assistant?
+2026-03-28 05:06:47
+Upvote
+Downvote
+Reply
+Copy
+        
+John
+John
+John
+#QX233242
+Member since 2025-03-24
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Good info I just don't need to access my PC remotely. I stare at a screen too much as it is now.
+2026-03-30 02:20:52
+Upvote
+Downvote
+Reply
+Copy
+        
+Ben
+Ben
+Ben
+#PH605991
+Member since 2026-03-27
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Fantastic 
+2026-03-26 23:56:24
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Mar 25, 2026
+
+                                    Your Proxmox 8 server stops getting security updates in August, and upgrading to PVE 9 isn't straightforward
+                            
+Mar 25, 2026
+
+                                    This Nvidia Linux driver update finally fixes a frustrating Wayland display problem
+                            
+Mar 24, 2026
+
+                                    Console optimization is holding PC gaming back more than you think
+                            
+Mar 24, 2026
+
+                                    I optimized Proxmox's defaults and cut my home lab energy costs without sacrificing speed
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            Snapdragon X2 Elite Extreme benchmarks: RIP Panther Lake?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:07
+
+                            The end of affordable PCs?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:03
+
+                            Now you can buy fake RAM for your gaming PC
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

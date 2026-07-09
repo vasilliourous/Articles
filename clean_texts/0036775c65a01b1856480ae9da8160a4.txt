@@ -1,0 +1,1502 @@
+Devastating 'Dirty Frag' exploit leaks out, gives immediate root access on most Linux machines since 2017, no patches available, no warning given — Copy Fail-like vulnerability had its embargo broken | Tom's Hardware
+Skip to main content
+Unlock world-class roadmaps & trusted Bench data.
+See More
+×
+Unparalleled insights. Industry analysis. Insider access.
+Tom's Hardware
+ Premium equips you with world-class
+coverage and detailed insights into the evolving hardware landscape.
+
+✓
+Full access to our trusted Bench database:
+Access granular performance data instantly.
+✓
+Exclusive hardware roadmaps:
+Peer into the
+future of the hardware industry.
+✓
+Daily news analysis:
+Dive deep into the
+biggest stories.
+Subscribe to our annual plan for just $29
+Open menu
+Tom's Hardware
+UK Edition
+UK
+
+US
+
+Australia
+
+Canada
+
+RSS
+
+Subscribe
+
+Sign in
+View Profile
+Sign out
+Search
+Search Tom's Hardware
+
+Best Picks
+
+
+CPU Buying Advice
+
+
+CPU Best Picks
+
+
+CPU Reviews
+
+
+GPU Buying Advice
+
+
+GPU Best Picks
+
+
+GPU Reviews
+
+
+Laptop Buying Advice
+
+
+Laptop Best Picks
+
+
+Laptop Reviews
+
+
+More Buying Advice
+
+
+Keyboard Best Picks
+
+
+Gaming Monitor Best Picks
+
+
+Gaming Headset Best Picks
+
+
+3D Printer Best Picks
+
+
+Webcam Best Picks
+
+
+Mice Best Picks
+
+
+How We Test
+
+
+CPUs
+
+
+CPU Brands
+
+
+AMD Ryzen
+
+
+Intel Lunar Lake
+
+
+Nvidia
+
+
+Qualcomm
+
+
+Apple
+
+
+Benchmarking
+
+
+Platforms
+
+
+X86
+
+
+ARM
+
+
+Panther Lake
+
+
+Zen 5
+
+
+AM5
+
+
+Chipmaking
+
+
+DUV
+
+
+EUV
+
+
+Rare Earth Metals
+
+
+GPUs
+
+
+GPU Brands
+
+
+Nvidia Blackwell
+
+
+Nvidia Geforce
+
+
+AMD Radeon
+
+
+Intel Arc
+
+
+Snapdragon X
+
+
+Benchmarking
+
+
+Memory Tech
+
+
+GDDR7
+
+
+GDDR8
+
+
+HBM
+
+
+AI Architecture
+
+
+Nvidia Vera Rubin
+
+
+Meta MTIA
+
+
+Google TPU
+
+
+AMD Instinct
+
+
+Microsoft Maia
+
+
+Drivers
+
+
+PC Components
+
+
+Memory
+
+
+RAM
+
+
+DRAM
+
+
+DDR5
+
+
+Storage
+
+
+HDDs
+
+
+SSDs
+
+
+Cooling
+
+
+Air Cooling
+
+
+Liquid Cooling
+
+
+Thermal Paste
+
+
+Networking
+
+
+Routers
+
+
+Motherboards
+
+
+Overclocking
+
+
+PC Cases
+
+
+PC Building
+
+
+Power Supplies
+
+
+News
+
+
+Tech Industry News
+
+
+CPU News
+
+
+GPU News
+
+
+Chips Act
+
+
+Semiconductors
+
+
+Cybersecurity
+
+
+Supercomputers
+
+
+Quantum Computing
+
+
+Company News
+
+
+AMD
+
+
+Intel
+
+
+Nvidia
+
+
+Radeon
+
+
+Microsoft
+
+
+TSMC
+
+
+Ryzen
+
+
+IBM
+
+
+Newsletter
+
+
+Laptops
+
+
+Gaming Laptops
+
+
+Ultrabooks
+
+
+MacBooks
+
+
+Laptop Brands
+
+
+Asus
+
+
+Razer
+
+
+HP
+
+
+MSI
+
+
+Desktops
+
+
+PC Building
+
+
+PC Cases
+
+
+Gaming PCs
+
+
+Monitors
+
+
+Gaming Monitors
+
+
+Peripherals
+
+
+Keyboards
+
+
+Mice
+
+
+3D Printers
+
+
+Headphones
+
+
+Desktop Brands
+
+
+Alienware
+
+
+Corsair
+
+
+GeForce
+
+
+Intel Arc
+
+
+Gigabyte
+
+
+Acer
+
+
+Software & AI
+
+
+Artificial Intelligence
+
+
+Machine Learning
+
+
+R&D
+
+
+Intel Gaudi
+
+
+Cerebras
+
+
+xAI
+
+
+LLMs
+
+
+OpenAI
+
+
+Anthropic
+
+
+DeepSeek
+
+
+Gemini
+
+
+Grok
+
+
+Operating Systems
+
+
+Windows
+
+
+MacOS
+
+
+iOS
+
+
+ChromeOS
+
+
+Linux
+
+
+Software
+
+
+Programming
+
+
+Applications
+
+
+Microsoft Office
+
+
+Web Browsers
+
+
+Coupons
+
+
+Laptop and PC Coupons
+
+
+Dell Coupon Codes
+
+
+Asus Coupon Codes
+
+
+Logitech Promo Codes
+
+
+Samsung Promo codes
+
+
+Hardware Coupons
+
+
+Newegg Promo Codes
+
+
+Corsair Discount Codes
+
+
+Razer Promo Codes
+
+
+Anycubic Discount codes
+
+
+Software Coupons
+
+
+Bitdefender Coupons
+
+
+Simplisafe Coupons
+
+
+MacPaw Coupons
+
+
+Squarespace Coupon Codes
+
+
+Gaming Coupons
+
+
+Kinguin Discount Codes
+
+
+Loaded Discount Codes
+
+
+Logitech G Promo Codes
+
+
+SteelSeries Coupons
+
+
+More
+
+
+Premium
+
+
+Forums
+
+Home
+
+Best Picks
+
+
+View Best Picks
+
+
+CPU Buying Advice 
+
+CPU Best Picks
+
+
+CPU Reviews
+
+
+GPU Buying Advice 
+
+GPU Best Picks
+
+
+GPU Reviews
+
+
+Laptop Buying Advice 
+
+Laptop Best Picks
+
+
+Laptop Reviews
+
+
+More Buying Advice 
+
+Keyboard Best Picks
+
+
+Gaming Monitor Best Picks
+
+
+Gaming Headset Best Picks
+
+
+3D Printer Best Picks
+
+
+Webcam Best Picks
+
+
+Mice Best Picks
+
+
+How We Test
+
+
+CPUs
+
+
+View CPUs
+
+
+CPU Brands 
+
+AMD Ryzen
+
+
+Intel Lunar Lake
+
+
+Nvidia
+
+
+Qualcomm
+
+
+Apple
+
+
+Benchmarking
+
+
+Platforms 
+
+X86
+
+
+ARM
+
+
+Panther Lake
+
+
+Zen 5
+
+
+AM5
+
+
+Chipmaking 
+
+View Chipmaking
+
+
+DUV
+
+
+EUV
+
+
+Rare Earth Metals
+
+
+GPUs
+
+
+View GPUs
+
+
+GPU Brands 
+
+Nvidia Blackwell
+
+
+Nvidia Geforce
+
+
+AMD Radeon
+
+
+Intel Arc
+
+
+Snapdragon X
+
+
+Benchmarking
+
+
+Memory Tech 
+
+GDDR7
+
+
+GDDR8
+
+
+HBM
+
+
+AI Architecture 
+
+Nvidia Vera Rubin
+
+
+Meta MTIA
+
+
+Google TPU
+
+
+AMD Instinct
+
+
+Microsoft Maia
+
+
+Drivers
+
+
+PC Components
+
+
+View PC Components
+
+
+Memory 
+
+RAM
+
+
+DRAM
+
+
+DDR5
+
+
+Storage 
+
+View Storage
+
+
+HDDs
+
+
+SSDs
+
+
+Cooling 
+
+View Cooling
+
+
+Air Cooling
+
+
+Liquid Cooling
+
+
+Thermal Paste
+
+
+Networking 
+
+View Networking
+
+
+Routers
+
+
+Motherboards
+
+
+Overclocking
+
+
+PC Cases
+
+
+PC Building
+
+
+Power Supplies
+
+
+News
+
+
+View News
+
+
+Tech Industry News 
+
+View Tech Industry News
+
+
+CPU News
+
+
+GPU News
+
+
+Chips Act
+
+
+Semiconductors
+
+
+Cybersecurity
+
+
+Supercomputers
+
+
+Quantum Computing
+
+
+Company News 
+
+AMD
+
+
+Intel
+
+
+Nvidia
+
+
+Radeon
+
+
+Microsoft
+
+
+TSMC
+
+
+Ryzen
+
+
+IBM
+
+
+Newsletter
+
+
+Laptops
+
+
+View Laptops
+
+
+Gaming Laptops
+
+
+Ultrabooks
+
+
+MacBooks
+
+
+Laptop Brands 
+
+Asus
+
+
+Razer
+
+
+HP
+
+
+MSI
+
+
+Desktops
+
+
+View Desktops
+
+
+PC Building 
+
+View PC Building
+
+
+PC Cases
+
+
+Gaming PCs
+
+
+Monitors 
+
+View Monitors
+
+
+Gaming Monitors
+
+
+Peripherals 
+
+View Peripherals
+
+
+Keyboards
+
+
+Mice
+
+
+3D Printers
+
+
+Headphones
+
+
+Desktop Brands 
+
+Alienware
+
+
+Corsair
+
+
+GeForce
+
+
+Intel Arc
+
+
+Gigabyte
+
+
+Acer
+
+
+Software & AI
+
+
+View Software & AI
+
+
+Artificial Intelligence 
+
+View Artificial Intelligence
+
+
+Machine Learning
+
+
+R&D
+
+
+Intel Gaudi
+
+
+Cerebras
+
+
+xAI
+
+
+LLMs 
+
+View LLMs
+
+
+OpenAI
+
+
+Anthropic
+
+
+DeepSeek
+
+
+Gemini
+
+
+Grok
+
+
+Operating Systems 
+
+View Operating Systems
+
+
+Windows
+
+
+MacOS
+
+
+iOS
+
+
+ChromeOS
+
+
+Linux
+
+
+Software 
+
+View Software
+
+
+Programming
+
+
+Applications
+
+
+Microsoft Office
+
+
+Web Browsers
+
+
+Coupons
+
+
+View Coupons
+
+
+Laptop and PC Coupons 
+
+View Laptop and PC Coupons
+
+
+Dell Coupon Codes
+
+
+Asus Coupon Codes
+
+
+Logitech Promo Codes
+
+
+Samsung Promo codes
+
+
+Hardware Coupons 
+
+View Hardware Coupons
+
+
+Newegg Promo Codes
+
+
+Corsair Discount Codes
+
+
+Razer Promo Codes
+
+
+Anycubic Discount codes
+
+
+Software Coupons 
+
+View Software Coupons
+
+
+Bitdefender Coupons
+
+
+Simplisafe Coupons
+
+
+MacPaw Coupons
+
+
+Squarespace Coupon Codes
+
+
+Gaming Coupons 
+
+View Gaming Coupons
+
+
+Kinguin Discount Codes
+
+
+Loaded Discount Codes
+
+
+Logitech G Promo Codes
+
+
+SteelSeries Coupons
+
+
+Premium
+
+
+Forums
+
+No offers found
+Don't miss these
+Cybersecurity
+College student hacks Taiwan high-speed rail line, stopping four trains
+Laptops
+New Linux StarFighter laptop family debuts starting at $1,878 
+Cybersecurity
+Canonical under sustained DDoS attack as Ubuntu 26 releases
+Linux
+PS5 Linux loader goes public, turning ‘Phat’ consoles into full Linux PCs
+Artificial Intelligence
+Anthropic's Claude Mythos isn't a sentient super-hacker, it's a sales pitch — claims of 'thousands' of severe zero-days rely on just 198 manual reviews
+Cybersecurity
+Ransomware accidentally destroys all files larger than 128KB, preventing decryption
+Artificial Intelligence
+Anthropic's latest AI model identifies 'thousands of zero-day vulnerabilities' in  'every major operating system and every major web browser'
+Security Software
+Decades-old pre-Stuxnet cyber sabotage tool breaks cover, NSA listed it as 'nothing to see here' 
+Linux
+Linux lays down the law on AI-generated code, says yes to Copilot, no to AI slop, and humans take the fall for mistakes 
+Cybersecurity
+How a cavalcade of blunders gave unauthorized users access to Claude Mythos 
+Cybersecurity
+AI cloud company Vercel breached after employee grants AI tool unrestricted access to Google Workspace
+Artificial Intelligence
+Anthropic's Model Context Protocol includes a critical remote code execution vulnerability
+Windows
+Microsoft's April patch puts Windows domain controllers into reboot loops
+Cybersecurity
+Iran claims US exploited networking equipment backdoors during strikes
+Cybersecurity
+The Chernobyl virus turned 27 today, and it could brick your PC in ways that modern malware can't
+Tom's Hardware
+Stay On the Cutting Edge: Get the Tom's Hardware Newsletter
+Get Tom's Hardware's best news and in-depth reviews, straight to your inbox.
+
+Contact me with news and offers from other Future brands
+
+
+Receive email from us on behalf of our trusted partners or sponsors
+
+There was a problem. Please refresh the page and try again.
+
+By submitting your information you agree to the 
+Terms & Conditions
+ and 
+Privacy Policy
+ and are aged 16 or over.
+
+You are now subscribed
+Your newsletter sign-up was successful
+ An account already exists for this email address, please log in.
+Trending
+🔥TH Premium Deal
+Where to buy AMD's 9950X3D2
+Intel Xeon 600
+RAM Combo Deals
+DLSS 5
+Bartlett Lake
+RAM Shortage
+Tech Industry
+Cybersecurity
+Devastating 'Dirty Frag' exploit leaks out, gives immediate root access on most Linux machines since 2017, no patches available, no warning given — Copy Fail-like vulnerability had its embargo broken
+News
+
+By
+
+Bruno Ferreira
+
+published
+
+2 days ago
+A great disturbance in the cyberspace, as if millions of sysadmins suddenly cried out in terror.
+
+When you purchase through links on our site, we may earn an affiliate commission. 
+Here’s how it works
+.
+
+(Image credit: Getty Images)
+
+Copy link
+
+
+Facebook
+
+
+X
+
+
+Whatsapp
+
+
+Reddit
+
+
+Pinterest
+
+
+Flipboard
+
+
+Email
+
+
+Share this article
+
+
+62
+
+
+Join the conversation
+
+
+Follow us
+
+
+Add us as a preferred source on Google
+
+
+Newsletter
+
+
+Subscribe to our newsletter
+
+Here's a question for the systems administrators in the crowd: what's better than one instant-root™️Linux vulnerability that affects most every system since 2017? Two of them, of course. Today's bag of bad news comes by way of the 
+Dirty Frag vulnerability
+, which uses a mechanism similar to the 
+Copy Fail exploit
+ that's currently 
+setting the Linux server world on fire
+. This vulnerability affects nearly every Linux install since 2017, and no advance warning was given, so there is no patch available. This appears to be due to a broken embargo that revealed the vulerability before preparations were made.
+As a refresher, any local user can instantly get root (administrator) access on an affected box, just by running a small program. The attack does not depend on specific system conditions or timing, as it's a straightforward logic bug. Most every popular Linux distribution since 2017 is affected, including but not limited to current versions of Ubuntu (24 and 26), Arch, RHEL, OpenSUSE, CentOS Stream, Fedora, and Alma. We even tested WSL2 ourselves and sure enough, "root" was the word.
+Dirty Frag one-ups its cousin, though, as there are currently 
+zero
+ patches for it at the time of this writing, making it spectacularly dangerous. Even the mainline Linux kernel itself doesn't appear to have any patches, as one colleague of mine reported a successful trigger of the exploit on a CachyOS machine running kernel 7.0.3-1-cachyos, and also on an updated Arch box. Needless to say, keep your eyes peeled for updates and patch your servers the second they're available.
+Latest Videos From
+How to check SSD health in Windows 10 and Windows 11
+0 seconds of 1 minute, 25 seconds
+Volume 0%
+Press shift question mark to access a list of keyboard shortcuts
+Keyboard Shortcuts
+Enabled
+Disabled
+Shortcuts Open/Close
+/ or ?
+Play/Pause
+SPACE
+Increase Volume
+↑
+Decrease Volume
+↓
+Seek Forward
+→
+Seek Backward
+←
+Captions On/Off
+c
+Fullscreen/Exit Fullscreen
+f
+Mute/Unmute
+m
+Decrease Caption Size
+-
+Increase Caption Size
++ or =
+Seek %
+0-9
+Next Up
+How to change your mouse pointer in Windows 11 & 10
+01:48
+ facebook
+ x
+ Email
+ Link
+https://cdn.jwplayer.com/previews/kcZT1nyq
+Copied
+Live
+00:00
+01:25
+01:25
+More Videos
+01:25
+How to check SSD health in Windows 10 and Windows 11
+01:48
+How to change your mouse pointer in Windows 11 & 10
+01:32
+How To Choose A Graphics Card
+01:05
+How To Install Windows 11 Without A Microsoft Account
+01:42
+How to get rid of Google's AI overviews
+01:22
+3 Easy Ways To Find A Windows 10 Or 11 Product Key
+Close
+How to check SSD health in Windows 10 and Windows 11
+
+            You may like
+        
+Zero-day exploit instantly grants administrator access on most Linux distributions since 2017
+CISA flags actively exploited ‘Copy Fail’ Linux kernel flaw enabling root takeover across major distros
+Anthropic's Model Context Protocol includes a critical remote code execution vulnerability
+Mercifully, though, the machine gods made the mitigation easy and unlikely to affect the functioning of the vast majority of servers. One needs only to disable the esp4, esp6, and rxrpc modules. These are all related in various degrees to IPSec networking and unlikely to be used unless the machine in question is an IPSec client or server. You can disable the modules in question with:
+sh -c "printf 'install esp4 /bin/false\ninstall esp6 /bin/false\ninstall rxrpc /bin/false\n' > /etc/modprobe.d/dirtyfrag.conf; rmmod esp4 esp6 rxrpc 2>/dev/null; true"
+The reason why Dirty Frag is catching everyone flat-footed is because although the vulnerability was reported to the Linux kernel team in April 30, an "unrelated third party" broke the embargo for the reveal. The website offers no more detail, but our best theory is that it means the exploit is already in use by malicious actors, prompting the embargo breakage. If you want to test your boxen, you can use:
+git clone https://github.com/V4bel/dirtyfrag.git && cd dirtyfrag && gcc -O0 -Wall -o exp exp.c -lutil && ./exp
+As far as 
+technical details go
+, the story isn't much different than with Copy Fail, relying on exploiting a zero-copy operation by splicing a page cache descriptor into it. The different is that this time around, the fallible code is in the IPSec-related modules. The original vulnerability is "xfrm-ESP Page Cache Write", introduced in kernel commit 
+cac2661c53f3 from 2017
+, and present across most distros
+. S
+ince Ubuntu systems' AppArmor plugs that particular hole, the PoC chains a second exploit, "RxRPC Page-Cache Write", added 
+in commit 2dc334f1a63a
+.
+Follow
+ Tom's Hardware on Google News
+, or
+ add us as a preferred source
+, to get our latest news, analysis, & reviews in your feeds.
+Stay On the Cutting Edge: Get the Tom's Hardware Newsletter
+Get Tom's Hardware's best news and in-depth reviews, straight to your inbox.
+Contact me with news and offers from other Future brands
+Receive email from us on behalf of our trusted partners or sponsors
+By submitting your information you agree to the 
+Terms & Conditions
+ and 
+Privacy Policy
+ and are aged 16 or over.
+See all comments (62)
+Bruno Ferreira
+Social Links Navigation
+Contributor
+Bruno Ferreira is a contributing writer for Tom's Hardware. He has decades of experience with PC hardware and assorted sundries, alongside a career as a developer. He's obsessed with detail and has a tendency to ramble on the topics he loves. When not doing that, he's usually playing games, or at live music shows and festivals.
+Read more
+Artificial Intelligence
+Anthropic's Model Context Protocol includes a critical remote code execution vulnerability
+Cybersecurity
+Researchers discover massive Wi-Fi vulnerability affecting multiple access points
+Cybersecurity
+Zombie ZIP vulnerability lets malware stroll past gates of 95% of AV suites 
+Cybersecurity
+CanisterWorm, a persistent malware worm, uses time zone to identify and wipe Iranian machines for no apparent reason.
+GPUs
+New 'GeForge' and 'GDDRHammer' attacks can fully infiltrate your system through Nvidia's GPU memory
+Cybersecurity
+Canonical under sustained DDoS attack as Ubuntu 26 releases
+Latest in Cybersecurity
+Cybersecurity
+College student hacks Taiwan high-speed rail line, stopping four trains
+Cybersecurity
+Google Chrome 'silently' downloads 4GB AI model to your device without permission, report claims
+Cybersecurity
+Canonical under sustained DDoS attack as Ubuntu 26 releases
+Cybersecurity
+Zero-day exploit instantly grants administrator access on most Linux distributions since 2017
+Cybersecurity
+Ransomware accidentally destroys all files larger than 128KB, preventing decryption
+Cybersecurity
+The Chernobyl virus turned 27 today, and it could brick your PC in ways that modern malware can't
+Latest in News
+Artificial Intelligence
+Maryland citizens slapped with $2 billion grid upgrade bill for out-of-state AI data centers
+Wi-Fi Routers
+FCC reverses course, allows software updates for foreign-made drones and routers until 2029
+VPN
+Fears grow that age verification coming to VPNs as a British research firm labels them a 'loophole'
+Artificial Intelligence
+Supermicro-tied execs used Thailand government entity to ship Nvidia AI GPUs to China — report alleges Chinese web giant Alibaba received restricted servers
+Semiconductors
+Apple reportedly strikes deal for Intel to make some of its chips
+Big Tech
+Cloudflare cuts 20% of its jobs due to AI, and its stock takes a 19% spill
+62 Comments
+Comment from the forums
+bit_user
+
+Again, this is a 
+local
+ exploit. This should really be stated in the headline, which is too alarmist as written. It's not until the second paragraph that this is mentioned.
+
+Yes, it's bad (mainly in terms of being published before patches were fully out, as we've seen plenty of privilege escalation exploits before). However, in the thread about the Copy Fail exploit, we saw that some folks clearly got the impression the vulnerability directly enabled a 
+remote
+ attacker to gain root access, which it didn't.
+
+Please take care not to mislead people. I'd suggest the headline should characterize it as a privilege-escalation exploit, which is the usual way of describing them.
+
+Reply
+chaos215bar2
+git clone https://github.com/V4bel/dirtyfrag.git && cd dirtyfrag && gcc -O0 -Wall -o exp exp.c -lutil && ./exp
+Is Tom's Hardware 
+really
+ sure they want to be recommending people download, build, and run code straight from some Github repository 
+without even bothering to explain who's repository this is?
+
+I mean, I'm going to assume this has been vetted and the repository is from a very well trusted source, but telling people to execute code effectively straight from a repository without further vetting doesn't exactly seem like the kind of thing you want to be recommending people do in an article about the second Linux zero day to drop in quick succession.
+
+Reply
+bit_user
+chaos215bar2
+ said:
+Is Tom's Hardware 
+really
+ sure they want to be recommending people download, build, and run code straight from some Github repository 
+without even bothering to explain who's repository this is?
+Yeah, I'd say just link the repository. It has a readme which says how to execute it, if that's what someone chooses to do. But, you could also just study the source code by browsing it.
+
+Reply
+ThisIsMe
+
+It’s not limited to local only. It can be remotely executed by any user that has remote access to the Linux device. This describes a large number of Linux devices. This could also affect systems that have other software running on them with possible vulnerabilities that let you execute code within its context. To try understating it is dangerous imho. It likely means much less to people who only have that one hobby-fulfilling Linux installation at home so they can say they have a Linux installation at home. However, this will affect many devices and enterprise Linux environments.
+
+Reply
+rluker5
+
+I like that Tom's posted a fix.
+
+I rarely run Linux, mostly just to occasionally check it out, know almost nothing about it, but would have no problem copy/pasting that line to put myself at ease.
+
+Reply
+bit_user
+ThisIsMe
+ said:
+It’s not limited to local only. It can be remotely executed by any user that has remote access to the Linux device.
+What the local/remote thing is really meant to distinguish is whether or not you're 
+authenticated
+. Someone who is not logged in to a machine and doesn't have a way of making an authenticated user execute arbitrary code cannot apply this exploit.
+ThisIsMe
+ said:
+This could also affect systems that have other software running on them with possible vulnerabilities that let you execute code within its context.
+Yes, if there's a remote-access exploit, which grants access or execution privileges to a remote, unauthenticated actor, then they can combine such remote-access or code-execution exploits with privilege-escalation.
+
+Reply
+JarredWaltonGPU
+bit_user
+ said:
+What the local/remote thing is really meant to distinguish is whether or not you're 
+authenticated
+. Someone who is not logged in to a machine and doesn't have a way of making an authenticated user execute arbitrary code cannot apply this exploit.
+
+Yes, if there's a remote-access exploit, which grants access or execution privileges to a remote, unauthenticated actor, then they can combine such remote-access or code-execution exploits with privilege-escalation.
+Seems like this would be pretty catastrophic in hosted Linux instances, as you could get root on any box. Hopefully the VMs are sandboxed off and can't affect other VMs on the same hardware. Still having full root access to any Linux system where you have an account is pretty bad. And any employee of a company who might be leaving could get root as well. Basically, while it doesn't inherently affect everyone, even a local account hack to get root is terrible and can't really be overstated as a serious issue. IMO
+
+Reply
+bit_user
+JarredWaltonGPU
+ said:
+Seems like this would be pretty catastrophic in hosted Linux instances, as you could get root on any box.
+Are you talking about gaining root, on the hypervisor? The hypervisor usually isn't Linux, and even with root on the hypervisor, properly-managed servers should use technologies like SEV that prevent the host from being able to see into the tenant VMs. At worst, having root on such a host would mean you can shutdown or de-provision guests, but you can't steal their data (unless using an unmitigated side-channel attack) or login to them.
+JarredWaltonGPU
+ said:
+having full root access to any Linux system where you have an account is pretty bad. And any employee of a company who might be leaving could get root as well.
+The way most professional Linux environments are setup, normal employees only have an account on their local machines, which are not privileged in any way. So, getting root on your desktop won't then enable you to gain root access on a database server or fileserver.
+JarredWaltonGPU
+ said:
+even a local account hack to get root is terrible and can't really be overstated as a serious issue. IMO
+Yes, it 
+can
+ be overstated. Like I said, it's not as if an unauthenticated remote user can directly use this exploit to access a box (root or otherwise). Nor (generally speaking) the other scenarios you outlined.
+
+Reply
+wakuwaku
+bit_user
+ said:
+Again, this is a 
+local
+ exploit. This should really be stated in the headline, which is too alarmist as written. It's not until the second paragraph that this is mentioned.
+
+Yes, it's bad (mainly in terms of being published before patches were fully out, as we've seen plenty of privilege escalation exploits before). However, in the thread about the Copy Fail exploit, we saw that some folks clearly got the impression the vulnerability directly enabled a 
+remote
+ attacker to gain root access, which it didn't.
+
+Please take care not to mislead people. I'd suggest the headline should characterize it as a privilege-escalation exploit, which is the usual way of describing them.
+SEO and keeping the AI fed is more important than the well being of Tom's people.
+
+Reply
+vossile
+
+"and unlikely to affect the functioning of the vast majority of servers"
+
+I checked several of my servers. Nothing there. This sort of clickbaiting is annoying.
+
+Reply
+View All 62 Comments
+
+Show more comments 
+Advertisement
+Advertisement
+Advertisement
+
+Tom's Hardware is part of Future plc, an international media group and leading digital publisher. 
+Visit our corporate site
+.
+
+Add as a preferred source on Google
+Terms and conditions
+Contact Future's experts
+Privacy policy
+Cookies policy
+Accessibility Statement
+Advertise with us
+About us
+Coupons
+Careers
+©
+Future Publishing Limited Quay House, The Ambury,
+Bath
+BA1 1UA. All rights reserved. England and Wales company registration number 2008885. 
+×

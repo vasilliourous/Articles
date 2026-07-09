@@ -1,0 +1,201 @@
+No Exploit Needed: How Attackers Walk Through the Front Door via Identity-Based Attacks
+sudo apt-get update cyber_news
+Followed by 5.70+ million
+
+
+
+
+
+
+ Get the Latest News
+Home
+Newsletter
+Webinars
+Home
+Threat Intelligence
+Vulnerabilities
+Cyber Attacks
+Webinars
+Expert Insights
+Awards
+
+
+
+Resources
+Webinars
+Awards
+Free eBooks
+About Site
+About THN
+Jobs
+Advertise with us
+Contact/Tip Us
+
+Reach out to get featured—contact us to send your exclusive story idea, research, hacks, or ask us a question or leave a comment/feedback!
+Follow Us On Social Media
+
+
+
+
+
+
+ RSS Feeds
+
+ Email Alerts
+No Exploit Needed: How Attackers Walk Through the Front Door via Identity-Based Attacks
+
+The Hacker News
+
+Apr 21, 2026
+Incident Response / Artificial Intelligence
+The cybersecurity industry has spent the last several years chasing sophisticated threats like zero-days, supply chain compromises, and AI-generated exploits. However, the most reliable entry point for attackers still hasn't changed: stolen credentials.
+Identity-based attacks remain a dominant initial access vector in breaches today. Attackers obtain valid credentials through credential stuffing from prior breach databases, password spraying against exposed services, or phishing campaigns — and use them to walk through the front door. No exploits needed. Just a valid username and password.
+What makes this difficult to defend against is how unremarkable the initial access looks. A successful login from a legitimate credential doesn't trigger the same alarms as a port scan or a malware callback. The attacker looks like an employee. Once inside, they dump and crack additional passwords, reuse those credentials to move laterally, and expand their foothold across the environment. For ransomware crews, this chain leads to encryption and extortion within hours. For nation-state actors, the same entry point supports long-term persistence and intelligence gathering.
+AI Is Accelerating What Already Works
+The fundamental attack pattern here hasn't changed much. But what has changed is the speed and polish with which it gets executed. Attackers are leveraging AI to scale their operations by automating credential testing across larger target sets, writing custom tooling faster, and crafting phishing emails that are materially harder to distinguish from legitimate communications.
+This acceleration puts additional pressure on already-stretched defenders. Breaches are unfolding faster, spreading further and touching more of the environment, from identity systems to cloud infrastructure to endpoints. IR teams built for a slower tempo of engagement are finding that their existing processes can't keep pace.
+A Dynamic Approach to Incident Response
+This is where the way teams think about incident response matters as much as the technical controls they deploy. In SEC504, we teach the Dynamic Approach to Incident Response, or DAIR — a model designed to handle incidents of any size and shape more effectively than the traditional linear approach.
+The classic model treats the process as a sequence: prepare, identify, contain, eradicate, recover, debrief. The problem isn't the theory, it's that real incidents don't unfold in a straight line. New data surfaces during containment that changes what you thought the scope was. Evidence collected during eradication reveals attacker tactics you didn't know about during initial detection. The scope almost always grows — it rarely shrinks.
+DAIR accounts for this reality. After detecting and verifying an incident, response teams enter a loop: scoping the compromise, containing affected systems, eradicating the threat, and recovering operations. That loop repeats as new information emerges. Consider a credential-based compromise where initial scoping identifies a single affected workstation. During containment, forensic analysis reveals a registry-based persistence mechanism. That finding sends the team back to scoping — now searching the entire enterprise for the same indicator on other systems. A confirmed attacker IP address uncovered during that sweep triggers another pass through containment and eradication. Each cycle produces better intelligence, which feeds the next round of response actions.
+The response keeps cycling until the team and organizational decision-makers determine the incident is fully addressed. This is what separates DAIR from the traditional model: it treats the messy, iterative nature of real-world investigations as a feature of the process, not a deviation from it.
+Communication Comes First
+When multiple teams converge on an incident — spanning SOC analysts, cloud engineers, IR leads, and system administrators — maintaining alignment can be difficult. Most organizations aren't perfectly aligned across those functions before an incident hits. What you can control is how well you communicate once the response is underway.
+Communication is the single most important factor here in effective incident response. It determines whether scoping data reaches the right people, whether containment actions are coordinated or contradictory, and whether decision-makers have accurate information to guide priorities. Beyond communication, consistent practice and rehearsal are essential. And the technical capabilities of your team still matter enormously. As AI becomes increasingly part of the defensive toolkit, it takes sharp practitioners to configure and direct those capabilities effectively.
+Building Skills That Matter
+The organizations that handle identity-based attacks well are the ones that invested in their people before the incident started. They've trained their teams on how attackers actually operate — not just in theory, but through hands-on practice against the same tools and techniques used in real compromises. Executing the DAIR response loop effectively requires practitioners who understand both sides of the engagement: how attackers gain access, move laterally, and persist — and how to investigate the evidence they leave behind at each stage.
+This June, I will be teaching 
+SEC504: Hacker Tools, Techniques, and Incident Handling
+ at SANS Chicago 2026. The course covers the full attack lifecycle — from initial credential compromise through lateral movement and persistence — alongside the incident response skills needed to detect, contain, and eradicate threats using the DAIR model. For practitioners who want to sharpen both their offensive understanding and their defensive response capabilities, this is where to start.
+Register for SANS Chicago 2026 here
+.
+Note
+: 
+This article has been expertly written and contributed by Jon Gorenflo, SANS Instructor, SEC504: Hacker Tools, Techniques, and Incident Handling
+Found this article interesting? 
+This article is a contributed piece from one of our valued partners.
+ Follow us on 
+Google News
+, 
+Twitter
+ and 
+LinkedIn
+ to read more exclusive content we post.
+SHARE
+
+
+
+
+
+Tweet
+
+Share
+
+Share
+
+Share
+
+
+Share on Facebook
+
+Share on Twitter
+
+Share on Linkedin
+
+Share on Reddit
+
+Share on Hacker News
+
+Share on Email
+
+Share on WhatsApp
+Share on Facebook Messenger
+
+Share on Telegram
+SHARE 
+
+artificial intelligence
+, 
+Cloud security
+, 
+Credential stuffing
+, 
+cybersecurity
+, 
+Identity Security
+, 
+Incident response
+, 
+password security
+, 
+Phishing
+, 
+ransomware
+, 
+Threat Intelligence
+Get the Latest News in Your Inbox
+Get the latest news, expert insights, exclusive resources, and strategies from industry leaders, all for free.
+Email
+Cybersecurity Webinars
+Building Stronger Defenses
+Stop Patient Zero Attacks Before They Bypass Detection
+Learn how to stop patient zero attacks before they bypass detection and compromise your systems at entry points.
+Secure My Spot
+Reduce AppSec Risk
+Validate Real Attack Paths Before Attackers Exploit Them
+Learn how to validate real attack paths and reduce exploitable risk with continuous agentic security validation.
+Watch Free Now
+⚡ Latest News
+Cybersecurity Resources
+The Room Where Security Actually Gets Done — SANSFIRE 2026
+D.C., July 13–18. Elite instructors, 50+ courses, NetWars, and peers who operate at your level.
+ROI Calculator: See the Value of IAM Automation
+Calculate your savings on audits, app onboarding, and discovery. Try it now.
+Earn a Master's in Cybersecurity Risk Management
+Lead the future of cybersecurity risk management with an online Master’s from Georgetown.
+Your VPN is Helping Attackers Move as Fast as AI
+AI collapsed human response window and turned remote access into fastest path to breach.
+Expert Insights 
+Articles
+Videos
+Mythos is Coming: What the Next Six Months Require
+
+May 04, 2026
+Read ➝
+Your Biggest Security Risk Isn’t Malware — It's What You Already Trust
+
+May 04, 2026
+Read ➝
+From Phishing to Recovery: Breaking the Ransomware Attack Chain
+
+May 04, 2026
+Read ➝
+CTM360 Exposes Global GovTrap Campaign With 11,000+ Fake Government Portals Targeting Citizens Worldwide
+
+April 27, 2026
+Read ➝
+Connect with us!
+
+1,300,000 Followers
+
+710,100 Followers
+
+25,500 Subscribers
+
+157,500 Followers
+
+1,990,000 Followers
+55,500 Followers
+Company
+About THN
+Advertise with us
+Contact
+Pages
+Webinars
+Awards
+Privacy Policy
+
+ RSS Feeds
+
+ Contact Us
+© 2026 The Hacker News. All Rights Reserved.

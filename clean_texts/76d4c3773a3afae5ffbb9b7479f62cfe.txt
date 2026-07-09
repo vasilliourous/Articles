@@ -1,0 +1,192 @@
+Microsoft releases the earliest DOS source code ever discovered as open source | TechSpot
+User login
+User icon
+Login
+Search
+A search icon
+TechSpot
+The word TechSpot
+Trending
+How Much RAM
+Most Anticipated Games
+DLSS 4.5 vs FSR 4
+Ryzen Best Feature
+Google Chrome
+Radeon 9070 XT Roundup
+Reviews
+Outstanding
+CPU
+Graphics Cards
+Monitors
+PC Buying Guide
+Software
+Gaming Benchmarks
+Features
+Tech Culture
+Must Reads
+Legends of Tech
+Explainers
+Hardware
+Gaming
+Downloads
+Software Essentials
+Popular Apps
+Chrome
+VMWare
+Minecraft
+Device Drivers
+PS3 Firmware
+The Best
+Best GPUs
+Best Gaming Monitors
+Best Monitors
+Best SSD
+Best Tablets
+Best Mouse
+Best PC Games
+Tech DB
+CPU Database
+Top Multi-core CPUs
+Fastest Gaming CPUs
+GPU Database
+Fastest GPUs
+Product Finder
+Search
+Forums
+Join TechSpot Elite
+New Forum Posts
+Software
+Microsoft
+ms-dos
+open source
+Microsoft releases the earliest DOS source code ever discovered as open source
+Redmond needed an OS, Tim Paterson joined the fray, and the rest is history
+
+ By 
+Alfonso Maruccia
+April 30, 2026 at 2:21 PM
+
+ Serving tech enthusiasts for over 25 years.
+ 
+ TechSpot means tech analysis and advice 
+you can trust
+.
+ 
+Editor's take:
+ Microsoft continues to tightly control the release of some of its most important pieces of legacy software. While enthusiasts and programmers are eager to see newer versions of MS-DOS made available, Redmond remains focused on preserving early DOS releases, which offer limited value for future development efforts. 
+Microsoft has officially released another significant piece of DOS history. The "
+Paterson Listings
+" include the earliest known source code related to the DOS platform ever discovered, the company 
+explained
+, providing scanned listings and several transcribed portions that have been converted into compilable source code.
+Tim Paterson's DOS listings continue the "tradition" Microsoft began a few years ago, when the company released MS-DOS 1.25 and 2.11 as open-source code. More recently, in 2024, Redmond shared the source code and floppy disk images for 
+MS-DOS 4.0
+, although that release was somewhat marred by 
+execution issues
+.
+The new open-source repository includes code for the 86-DOS 1.00 kernel, development snapshots of the PC-DOS 1.00 kernel, and core utilities such as CHKDSK. The repository also includes assembler listings, as well as materials that can be used to build a working copy of the assembler itself.
+Microsoft explained that "this work offers rare insight into how MS-DOS/PC-DOS came to be, and how operating system development was done at the time, not as it was later reconstructed."
+Paterson is the computer programmer who created 86-DOS, an early operating system for the Intel 8086 microprocessor designed to emulate the application programming interface of Gary Kildall's CP/M. Microsoft acquired 86-DOS, using the foundational technology to build its own command-line operating system. The code shared on GitHub eventually became MS-DOS, which IBM sold as PC-DOS alongside its personal computer systems.
+Microsoft highlights that the newly preserved listings include both source code and handwritten notes preserved by Paterson himself. Together, the code and scanned documents trace a timeline of development, showing feature implementation, coding errors, and subsequent bug fixes. Thanks to Paterson's involvement, the material will soon become "living" artifacts at the 
+Interim Computer Museum
+.
+// Related Stories
+
+ DR-DOS is coming back from the dead, rebuilt from scratch in pure assembly 
+
+ Open-source project wants to bring stereoscopic 3D gaming back from the dead 
+According to Microsoft OSPO Director Stacey Haffner and Microsoft/GitHub VP Scott Hanselman, this kind of software archaeology requires significant effort, including legal vetting, archival work, and technical validation. It also involves a team of specialists dedicated to computer history and digital preservation.
+This may also help explain why Microsoft has not released any "modern" versions of MS-DOS, such as MS-DOS 5.0 or 6.22. Several developers are now working to resurrect or emulate early PC operating systems and their 
+alternatives
+, while the 
+FreeDOS team
+ would likely benefit from access to Redmond's "official" codebase to improve compatibility and reliability with classic DOS applications and games.
+
+ 3 comments
+ 
+36 likes and shares
+Share this article:
+Featured on TechSpot
+Microsoft admits Windows lost its way, Nadella pledges to "win back fans"
+"Windows K2" plan promises faster UX, fewer botched updates
+Most Popular
+AI images are getting harder to spot, but physics still gives them away if you know where to look
+The Best Ultrawide Gaming Monitors 2026
+The Best CPUs: Gaming, Productivity, and the Best Bang for Your Buck
+This Early Access pirate game was quietly killing your SSD without you knowing
+Load Comments 
+3
+...
+
+ User Comments: 
+3
+
+ Got something to say? Post a comment
+ 
+Load all comments...
+Discuss
+24
+California just gave police a way to ticket Waymo and other robotaxis
+34
+Gen Z is turning subscriptions into short-term rentals for shows, movies, and games
+58
+Denuvo may have reached the end as every protected PC game is now crackable
+17
+Utah just passed the first US law targeting VPN use for age verification
+8
+SpaceX will help power Claude with 220,000 Nvidia GPUs despite Elon's attacks on Anthropic
+Recently commented stories
+Jump to forum mode
+Add your comment to this article
+Create your free account to leave a comment. Join thousands of tech enthusiasts and participate.
+TechSpot Account
+Sign up for free
+, it takes 30 seconds.
+ 
+Already have an account? 
+Login now
+.
+ 
+Main Sections
+Tech News
+Reviews
+Features
+Downloads
+The Best
+Tech DB
+Product Finder
+News Archive
+Popular Features
+How Much RAM Do You Need?
+Most Anticipated Games of 2026
+ 
+The Best GPUs
+Nvidia DLSS 4.5 vs AMD FSR 4
+Is This Ryzen's Best Feature?
+Anatomy of a Storage Drive
+Windows 11 25H2 vs Windows 10
+Essential Apps for Windows and macOS
+Top Downloads
+Google Chrome
+VMware Download Free
+Minecraft Free Download
+Cinebench Download
+Roblox Download
+PS3 Firmware
+Play Store Download
+Tiny11 Download
+Subscribe to the TechSpot Newsletter
+Follow TechSpot
+About
+Ethics Statement
+Terms of Use
+Privacy Policy
+Manage Ad Consent
+TECHSPOT : Tech Enthusiasts, Power Users, Gamers
+TechSpot is a registered trademark and may not be used by third parties without express written permission.
+TechSpot is represented by 
+Future PLC
+. Learn about 
+advertising opportunities
+.
+© 1998 - 2026 TechSpot, Inc. All Rights Reserved.

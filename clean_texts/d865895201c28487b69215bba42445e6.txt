@@ -1,0 +1,289 @@
+FBI: China's hacker-for-hire ecosystem 'out of control'
+Jump to main content
+Search
+TOPICS
+Security
+All Security
+Cyber-crime
+Patches
+Research
+CSO
+Off-Prem
+All Off-Prem
+Edge + IoT
+Channel
+PaaS + IaaS
+SaaS
+On-Prem
+All On-Prem
+Systems
+Storage
+Networks
+HPC
+Personal Tech
+Cx0
+Public Sector
+Software
+All Software
+AI + ML
+Applications
+Databases
+DevOps
+OSes
+Virtualization
+Offbeat
+All Offbeat
+Columnists
+Science
+BOFH
+Legal
+Bootnotes
+Site News
+About Us
+Special Features
+All Special Features
+HPE: AI Explainers
+RSA Conference
+Agentic AI
+The Future of the Datacenter
+AWS:Reinvent
+Nvidia GTC
+SC25
+Supercomputing Month
+Vendor Voice
+All Vendor Voice
+Infinidat
+Everpure
+Rubrik
+Make it real with Capgemini and AWS
+Money Movement Hub
+ZTE
+Nutanix: Scale Kubernetes. Not Chaos.
+AWS New Horizon
+Resources
+Intelligence
+Webinars & Events
+Newsletters
+Search
+Sign in
+Datacenter
+Security
+Microsoft
+AWS
+Developer
+Open Source
+IT Careers
+Columnists
+Who, Me?
+On Call
+REG AD
+Security
+FBI cyber boss: China's hacker-for-hire ecosystem 'out of control'
+One alleged cyber contractor was extradited to the US over the weekend
+Jessica Lyons
+Jessica
+Lyons
+3
+Published
+Thu 30 Apr 2026 
+//
+ 19:30 UTC
+China's "hacker-for-hire ecosystem has gotten out of control," according to Brett Leatherman, assistant director of the FBI's cyber division.
+This ecosystem includes private technology companies operating at the behest of the PRC's intelligence agencies while allowing Beijing to maintain plausible deniability. 
+"Motivated by profit, this network of private companies and contractors in China cast a wide net to identify vulnerable computers, exploit those computers, and then identify information that it could sell directly or indirectly to the PRC government," Leatherman told reporters on Thursday.
+REG AD
+Or, if the Chinese government won't buy it, the hackers-for-hire "turn from cyber mercenaries into cyber dealers," selling access to the compromised systems and stolen data to third parties on the dark web.
+REG AD
+"This leads to a less secure environment that is ripe for further lawlessness," Leatherman said. 
+Xu Zewei's extradition and the criminal charges against him, however, should send a message to China's contractor ecosystem, he added: "The protection you assume from operating inside China does not extend the moment you cross a border."
+Xu, a Chinese national, was extradited from Italy to the United States over the weekend and charged with nine hacking-related crimes. Italian cops 
+arrested Xu
+ last July.
+According to American prosecutors, China's Ministry of State Security (MSS) and Shanghai State Security Bureau allegedly directed Xu to hack thousands of computers and steal sensitive information in a way that hid the Chinese government's involvement.
+This happened between February 2020 and June 2021, and some of the digital intrusions were part of the 2021 campaign in which Hafnium (now better known as 
+Silk Typhoon
+) exploited 
+zero-day bugs in Microsoft Exchange
+ and compromised hundreds of thousands of servers worldwide, including 12,700 organizations in the US alone.
+Other intrusions targeted American universities and researchers working on COVID-19 vaccines, treatments, and testing during the height of the pandemic, prosecutors allege. 
+MORE CONTEXT
+Silk Typhoon spun a web of patents for offensive cyber tools, report says
+Feds name and charge alleged Silk Typhoon spies behind years of China-on-US attacks
+Microsoft fixes four zero-day flaws in Exchange Server exploited by China's 'Hafnium' spies to steal victims' data
+How Chinese insiders are stealing data scooped up by President Xi's national surveillance system
+The indictment claims that at the time, Xu worked as a general manager at a company named Shanghai Powerock Network, which the feds 
+previously linked
+ to Hafnium/Silk Typhoon.
+"Among other things, Xu worked on taskings from the SSSB, supervised hacking activity of other Powerock personnel in support of such taskings, coordinated hacking activities with fellow hacker Zhang Yu, and reported the results of the hacking activities to the SSSB," according to the 
+indictment
+ [PDF].
+REG AD
+The indictment also charges Zhang, a director at Shanghai Firetech Information Science and Technology Company who allegedly operated at the direction of the SSSB, along with two unnamed SSSB officers who directed the hacking operations.
+Court records show Xu is charged with conspiracy to cause damage to and obtain information by unauthorized access to protected computers, to commit wire fraud, and to commit aggravated identity theft, which carries a maximum penalty of five years in prison; conspiracy to commit wire fraud and two counts of wire fraud, each carrying a maximum penalty of 20 years; two counts of obtaining information by unauthorized access to protected computers, each carrying a maximum penalty of five years; two counts of intentional damage to a protected computer, each carrying a maximum penalty of 10 years; and one count of aggravated identity theft, which carries a mandatory consecutive two-year sentence.
+Zhang remains at large, according to the DoJ. ®
+cybercrime
+china
+security
+fbi
+3
+REG AD
+
+ai and ml
+
+Google tweaks Chrome AI privacy wording, insists processing stays on-device
+
+
+    Deletion of a longstanding privacy assurance sparks concerns
+
+
+Software
+
+macOS 27 threatens to bury Time Capsule, FOSS brings a shovel
+
+
+    Apple's old backup boxes only speak AFP and SMB1, but NetBSD under the hood gives them one last shot
+
+
+AI + ML
+
+AI inference just plays by different rules
+
+
+    Why no cloud storage architecture was designed for what agentic AI is about to demand
+
+
+Offbeat
+
+London’s BT Tower to get rooftop swimming pool
+
+
+    Imagine taking a dip 177m above the streets of London’s West End
+
+
+AI + ML
+
+Trump jumps from 'anything goes' to 'strict regulation' AI policy
+
+
+    In a word, 'Huh?'
+
+
+Networks
+
+Akamai surges on big LLM deal as Cloudflare dims
+
+
+    Good times, bad times
+
+
+                    MOST POPULAR
+                
+Cyber-crime
+Taiwan cops say student's radio kit brought bullet trains to a standstill
+off-prem
+IBM Cloud evaporates as datacenter loses power
+AI + ML
+Chrome silently installs a 4 GB local LLM on your computer
+AI + ML
+Brit mathematician lets AI agent loose with credit card – cue password leaks, CAPTCHA chaos and more
+Software
+Firefox integrates an ad-blocker, but not to block ads
+EVENTS
+Securing the Untrusted Agentic Development Layer
+Join us to learn how to architect a development environment where your builders and their agents can move fast and securely.
+Toxic Flows: When Your AI Agent Skill Becomes a Supply Chain Attack
+When a developer installs an AI agent skill – granting it access to secured IT resources and data – they make a significant trust decision.
+The Hardware Crunch: How Supply Chain Turbulence Is Forcing a New IT Playbook
+Infrastructure teams are facing a perfect storm: extended hardware lead times, rising costs driven by AI demand, and accelerated platform timelines.
+Identity Resilience: The New Mandate for Cyber Survival
+Join Druva experts for a compelling deep dive into what it takes to build an identity-first recovery strategy in this new threat landscape.
+Identity Resilience: The New Mandate for Cyber Survival
+Join Druva experts for a compelling deep dive into what it takes to build an identity-first recovery strategy in this new threat landscape.
+Unfriendly Followers: The Black Market For Your Identity
+They’ll reveal how attackers use your profile as intel and show you how to make yourself harder to target
+AI Found the Problem. Now What?
+AI is transforming the software development lifecycle, helping teams identify and remediate vulnerabilities before they reach production.
+
+            EXPLORE ALL OF OUR EVENTS
+        
+AI
+Software
+macOS 27 threatens to bury Time Capsule, FOSS brings a shovel
+Apple's old backup boxes only speak AFP and SMB1, but NetBSD under the hood gives them one last shot
+Offbeat
+London’s BT Tower to get rooftop swimming pool
+Imagine taking a dip 177m above the streets of London’s West End
+Public Sector
+UK wants fresh fingerprints on £300M biometrics platform
+Home Office probes supplier interest as core police and immigration system heads for support shake-up
+Add section name here
+Akamai surges on big LLM deal as Cloudflare dims
+Good times, bad times
+ai and ml
+GPT-5.5 may burn fewer tokens, but it always burns more cash
+It’s not just gas prices skyrocketing. Frontier-model pricing keeps climbing too
+Infosec
+Software
+macOS 27 threatens to bury Time Capsule, FOSS brings a shovel
+Apple's old backup boxes only speak AFP and SMB1, but NetBSD under the hood gives them one last shot
+Offbeat
+London’s BT Tower to get rooftop swimming pool
+Imagine taking a dip 177m above the streets of London’s West End
+Public Sector
+UK wants fresh fingerprints on £300M biometrics platform
+Home Office probes supplier interest as core police and immigration system heads for support shake-up
+Add section name here
+Akamai surges on big LLM deal as Cloudflare dims
+Good times, bad times
+ai and ml
+GPT-5.5 may burn fewer tokens, but it always burns more cash
+It’s not just gas prices skyrocketing. Frontier-model pricing keeps climbing too
+FOSS
+macOS 27 threatens to bury Time Capsule, FOSS brings a shovel
+Apple's old backup boxes only speak AFP and SMB1, but NetBSD under the hood gives them one last shot
+London’s BT Tower to get rooftop swimming pool
+Imagine taking a dip 177m above the streets of London’s West End
+UK wants fresh fingerprints on £300M biometrics platform
+Home Office probes supplier interest as core police and immigration system heads for support shake-up
+Akamai surges on big LLM deal as Cloudflare dims
+Good times, bad times
+GPT-5.5 may burn fewer tokens, but it always burns more cash
+It’s not just gas prices skyrocketing. Frontier-model pricing keeps climbing too
+Tech is now rolling out the old grievance grift
+Not just for hated US Presidents, now even tech bros lament their foes
+FEATURES
+GNOME may rule Ubuntu Resolute Raccoon, but X.org isn't roadkill yet
+OpenClaw, but in containers: Meet NanoClaw
+Open source registries don't have enough money to implement basic security
+Contain your Windows apps inside Linux Windows
+The Linux mid-life crisis that's an opportunity for Tux-led transformation
+Too much AI for some, too little for others: Why AMD can't win with investors
+How agentic AI can strain modern memory hierarchies
+'Ralph Wiggum' loop prompts Claude to vibe-clone commercial software for $10 an hour
+How one developer used Claude to build a memory-safe extension of C
+No one talking about a datacenter could be a sign one is coming
+✕
+Biting the hand that feeds IT
+About Us
+
+Contact us
+Advertise with us
+Who we are
+Our Websites
+
+The Next Platform
+DevClass
+Blocks and Files
+Situation Publishing
+Your Privacy
+
+Cookies Policy
+Privacy Policy
+Ts & Cs
+Do not share my personal information
+Your Consent Options
+Archives
+27 years of articles
+
+        Copyright. All rights reserved © 1998-2026.
+    

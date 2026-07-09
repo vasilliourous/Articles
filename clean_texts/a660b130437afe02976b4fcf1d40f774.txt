@@ -1,0 +1,237 @@
+Testing the Flipper Zero: From Unboxing to Hacking Just About Anything in Under 60 Minutes
+PCMag Australia
+Best Picks
+/
+Reviews
+/
+News
+/
+How-To
+/
+Security
+Business
+Software
+Deals
+Best Picks
+/
+Computer & Electronics
+Best Laptops
+Best Monitors
+Best Wireless Routers
+Best Ultrawide Monitors
+Best Printers
+Best Keyboards
+Best Robot Vacuums
+Best Outdoor Home Security Cameras
+Best Smart Locks
+Best TVs
+Best Noise-Cancelling Headphones
+Best Gaming Headsets
+Software
+Best VPN Services
+Best Antivirus Protection
+Best Malware Removal and Protection Software
+Best Password Managers
+ Best Web Hosting Services
+Best Mac Antivirus Protection
+Best Security Suites
+Best Streaming Services Australia
+Best Free Password Managers
+Business
+Best CRM Software
+Best Email Marketing Software
+Best Marketing Automation Software
+Best Dedicated Web Hosting Services
+Best Business Cloud Storage and File Sharing Providers
+Best Password Managers for Businesses
+Best Business Laptops
+Best Computer Monitors for Business
+Best Printers for Business
+Reviews
+/
+News
+/
+How-To
+/
+Security
+Business
+Software
+Deals
+Looking for a bargain? Shop the biggest tech deals in Australia here!
+PCMag Australia
+Opinion
+Security
+Testing the Flipper Zero: From Unboxing to Hacking Just About Anything in Under 60 Minutes
+Updated Apr 21, 2026
+It may look like a cute little dolphin-themed toy, but the Flipper Zero is a surprisingly powerful learning tool for hacking. Here's how I got started with mine—and how you can get the most out of yours.
+ &
+Justyn Newman
+Senior Writer, Security
+
+                        Our team tests, rates, and reviews more than 1,500 products each year to help you make better buying decisions and get more from technology.
+                    
+
+                Our Expert
+            
+LOOK INSIDE PC LABS
+HOW WE TEST
+65
+EXPERTS
+43
+YEARS
+41,500+
+REVIEWS
+(Credit: Justyn Newman)
+Table of Contents
+Compare Specs: Our Picks Side by Side
+The Price of Pocket Power
+Inside the Flipper: Buttons, Sensors, and Signals
+Getting Started: Your First Steps Into Flipper Territory
+Who the Flipper Zero Is Actually For
+Imagine it: one gadget that can open your garage door, play a round of chess, open locked security doors, or even poke at systems you probably shouldn't. But that's exactly what the Flipper Zero can do. It's essentially 
+the Swiss Army knife of the digital age
+, packed with a massive library of open‑source tools and games. Best of all, it's easy to use.
+At its core, the Flipper Zero is a gamified hacking device with a playful, almost toy‑like interface. Imagine a multitool with a built‑in mood meter and leveling system that reacts every time you use it. It’s designed to interact with a wide range of digital and control systems, and you don’t need to be a programmer—or know anything about “hacking”—to get started. The platform is intentionally beginner‑friendly, offering plenty of tools right out of the box without requiring advanced technical knowledge.
+That said, as I quickly discovered after getting one, the rabbit hole goes deep. The Flipper Zero is an excellent jumping‑off point for anyone curious about how control systems work and eager to explore them further.
+The Price of Pocket Power
+$199 gets you the Flipper Zero, a USB-C charging cable, and a small vinyl sticker. You can price out additional tools, such as the video game module for $49, a silicone case for $15, or a set of 3 screen protectors for $7.50. The 
+pricing page
+ also lists more advanced add-ons, such as prototyping boards for building custom modules and a Wi-Fi development board.
+Inside the Flipper: Buttons, Sensors, and Signals
+To get a clearer picture of what the Flipper Zero is and how it works, I’ll walk you through what you get out of the box and how its various features work. You can also check out the company's 
+documentation page
+ for more info.
+(Credit: Justyn Newman)
+The Flipper comes in a whimsically decorated cardboard box with a short USB-A-to-USB-C data and charging cable and a quick start guide. You will need a microSD card to get the Flipper up and running, so make sure you have one at the ready, as it’s not included. Flipper has a short 
+YouTube video
+ on how to pick the right card, stressing that you don’t need a top-of-the-line, high-capacity card. Any older, 16-32GB card will do just fine. I had success with an older 256GB Samsung card I had sitting around, but you certainly do not need to get one with that much capacity.
+(Credit: Justyn Newman)
+My Flipper weighs in at 3.56 ounces, giving the device a substantial feel in the palm thanks to its compact size, while remaining light enough to pocket or toss in a bag without being too noticeable. For reference, that’s about half the weight of my Pixel 9 Pro. 
+The orange, backlit 1.4-inch LCD is crisp and gets plenty bright for outdoor viewing, though no official specs are listed for nits or peak brightness. The screen defaults to showing a random animation of your dolphin from a large set of pre-loaded options while the device is idle. 
+The directional pad has a subtle tactile feel, and each direction, as well as the center button, pulls up different menus. The center button opens the main menu to access apps and settings. The left directional pad takes you to the installed apps list. The down arrow brings up your most recent app selection. The right arrow shows you your dolphin’s name, level, and current mood. The up button opens a short menu of quick tabs for locking or muting your device. There’s also an option to activate Dummy Mode, which makes the Flipper appear as just a Tamagotchi-like toy. The smaller button in the bottom-right serves as a back button and powers off if held for three seconds. A small front LED to the right of the screen will flash during certain actions or when an error occurs.
+(Credit: Justyn Newman)
+A battery icon in the top-right shows your current level. The 2,100 mAh battery provides a fairly long life, with Flipper Zero claiming a month of standby time. I found that a week of frequent use reduced my battery life by roughly 40%. The top-left houses icons indicating active connections (such as Bluetooth or USB).
+(Credit: Justyn Newman)
+The opposite side of the Flipper Zero is bare except for an iButton 1-Wire connector. iButtons are small, coin-sized computer chips that can be used to access buildings and other controlled systems. The Flipper can read, write, and emulate certain iButton keys by connecting it to this rear interface and using the requisite app. 
+Internal sensors for near field communication (NFC), radio frequency identification (RFID), and Bluetooth are tucked away under the back panel. These sensors allow the Flipper to read, write, emulate, and interact with devices that transmit those signals. For example, I used the RFID sensor to extract my pet’s microchip information and the Bluetooth connection to wirelessly control my digital audio player (DAP).
+Recommended by Our Editors
+Canvas Restored After Hack, Breach Traced to 'Free-For-Teacher' Accounts
+Meta Shuts Down End-to-End Encryption for Instagram Messaging
+While You Manage 120 Passwords, AI Is Deleting Databases and Governments Are Blocking the Web
+(Credit: Justyn Newman)
+A general-purpose input/output (GPIO) pinout is accessible at the top of the unit, allowing external modules to connect directly to the Flipper. There’s no single use case for the Flipper’s GPIO. Essentially, it can connect to any supported external hardware to receive or transmit data.
+(Credit: Justyn Newman)
+The most straightforward expansion for the GPIO is Flipper Zero’s video game module. I don’t go into the module in depth in this piece, but it is plug-and-play and unlocks unique functionality, such as motion detection and air mouse control.
+(Credit: Justyn Newman)
+At the front of the Flipper’s oblong hexagonal body is a black rectangle that functions as an infrared (IR) transmitter and receiver. It can be used to replicate remotes and control simple devices, such as TVs and air conditioners. Also nestled under the plastic is a sub-1GHz antenna. Somewhat similar to IR in use, sub-1GHz can be used to control systems such as security gates, garages, and smart home devices.
+(Credit: Justyn Newman)
+A lanyard hole, microSD card slot, and USB-C connector make up the rest of the connectivity options on the Flipper. USB-C unlocks far more than just charging or file transfers. It can connect to a PC and mimic most USB devices, such as a mouse or keyboard. Additionally, it can be configured as a hardware-based multi-factor authenticator or to carry out certain actions or transmit files when connected to a computer. In the image below, I have the Flipper connected through USB to act as a simple mouse jiggler.
+(Credit: Justyn Newman)
+Getting Started: 
+Your First Steps Into Flipper Territory
+Getting the Flipper Zero up and running is pretty straightforward. The first thing you need to do is format the SD card. This can be done directly on the Flipper by going to Settings > Storage> Format SD card. Formatting is required to install the required firmware.
+Once you have your card formatted, it’s time to get the Flipper Zero companion app (called Flipper) on your smartphone, or download qFlipper on your desktop. The documentation page for 
+qFlipper
+ has a detailed guide for all supported operating systems. I didn’t have any issues installing it on Windows or Android, but on Linux, it was a bit tricky. You may have to enable user permissions to access serial devices depending on your Linux distro.
+(Credit: PCMag/Flipper Zero)
+qFlipper will show you your device’s current version and other pertinent details. You can control your Flipper Zero remotely through the application and transfer files directly from your computer to it. The mobile version has an app store built in, where you can browse user-made applications and send them to your Flipper over Bluetooth. To do the same on a desktop, you need to close qFlipper and go to the 
+Flipper Lab page
+. There will be a button to connect your device, which will allow you to add apps.
+(Credit: PCMag/Flipper Zero)
+Flipper Lab showcases the same apps as on mobile, and you can download them directly to your device with a single click. You can filter the results by specific tool (GPIO, IR, NFC, etc.) or by games, built-in software tools, and media-based programs. Aside from utilities, there’s a small selection of games like chess and Snake. 
+You are ready to explore and tinker with your Flipper Zero once you’ve formatted your SD card and installed qFlipper. The entire platform is open source, allowing any user to build tools for the Flipper Zero without restrictions. 
+Who the Flipper Zero Is Actually For
+The Flipper Zero is the most accessible tool of its kind. Last year, I tried building the project that inspired it—the 
+Pwnagotchi
+. While the build was fun and absolutely worth the time and effort, the final cost wasn't much lower than the base price of a Flipper Zero, and the feature set was far more limited. By comparison, the Flipper offers significantly more functionality right out of the box, which is why I'd recommend it to anyone interested in control systems or open-source hardware platforms.
+At a minimum, it's a practical device that can replicate many household devices like remotes and keycards, making it a solid backup if something goes missing. But if you want to go further, the Flipper Zero opens the door to much deeper exploration, making it an excellent starting point for learning how the signals around you actually work and interacting with them.
+What Our Ratings Mean
+5.0 - Exemplary: Near perfection, ground-breaking
+4.5 - Outstanding: Best in class, acts as a benchmark for measuring competitors
+4.0 - Excellent: A performance, feature, or value leader in its class, with few shortfalls
+3.5 - Good: Does what the product should do, and does so better than many competitors
+3.0 - Average: Does what the product should do, and sits in the middle of the pack
+2.5 - Fair: We have some reservations, buy with caution
+2.0 - Subpar: We do not recommend, buy with extreme caution
+1.5 - Poor: Do not buy this product
+1.0 - Dismal: Don't even think about buying this product
+
+                  Read Our
+                  
+Editorial Mission Statement
+
+                  and
+                  
+Testing Methodologies
+.
+              
+About Our Expert
+Justyn Newman
+Senior Writer, Security
+My Experience
+My writing journey started in 2012 and has taken me through various niches, but my main focus has always been on tech. I contributed to several growing PC hardware and software sites, focusing on gaming, peripherals, and privacy.
+As the amount of information we put out on the internet has grown, so have the threats and the tools we use to combat them. With VPNs gaining traction in the late 2010s as a tool for the public instead of just an option for business security, I found myself reviewing countless options in this continuously changing landscape. 
+This led to my role before PCMag over at WizCase, where I honed my knowledge of VPNs and privacy tools and eventually oversaw all of the content produced. I led a talented team of fellow writers and editors to evaluate VPNs, password managers, antivirus, and parental controls. 
+The Technology I Use
+I love small-form-factor PCs. My current ITX build uses an ASRock B650i motherboard, 32GB of RAM, a Ryzen 5 7600X, and an EVGA 3060 Ti, all nestled within the beautiful LZX-8 case by Lazer3D. 
+I have that connected to an MSI 34-inch ultrawide as my primary monitor. My second monitor is an older Acer 24-inch that only houses Discord and YouTube Music. Since I spend most of my time writing, I value a good keyboard. I use a Neo65 with Gazzew U4T Silent Bobas. My mouse is a Logitech MX Master 3S. For audio, I have a set of Edifier R1280Ts, or I’ll wear my trusty Sennheiser HD 6XXs. 
+For work, I use a Lenovo P14s connected to everything mentioned above. If I'm taking personal work or studying on the go, I use a sticker-bombed Framework 13 powered by a Ryzen 5 7640U. Specifically for drafting fiction, I built a writing ‘cyberdeck’ that connects to my Neo 65 for a Raspbian-powered writing setup with minimal distractions. Regarding mobile devices, I’ve been on the Pixel train since the first one launched, and I am currently using a Pixel 9 Pro. 
+Outside of computing, I always carry a few key pieces of tech on my person. I have a Kindle Scribe that I use for note-taking and reading the latest speculative fiction. For music, I carry a Walkman NW-A55 with a pair of Rose Technics QuietSea IEMs. I do some light gaming on my re-shelled PSP 3000 running Infinity 2.0 CFW. When I'm not at the computer, you’ll usually find me lugging around my Pentax K1000 with a couple of rolls of Ektar 100 on standby.
+Read the latest from Justyn Newman
+The Best VPNs for Pornhub in 2026
+The Best VPNs With Free Trials in 2026
+Your ISP Is Watching You. Here's How a VPN Can Help
+Is Incognito Enough? 6 Ways to Protect Your Privacy When Watching Porn Online
+Testing the Flipper Zero: From Unboxing to Hacking Just About Anything in Under 60 Minutes
+More from Justyn Newman
+Read full bio
+Comments
+Please enable JavaScript to view the comments.
+PCMag Newsletters
+Our Best Stories in Your Inbox 
+Follow PCMag
+(Opens in a new window)
+facebook
+(Opens in a new window)
+X
+(Opens in a new window)
+flipboard
+(Opens in a new window)
+google
+(Opens in a new window)
+instagram
+(Opens in a new window)
+pinterest
+Honest, Objective, Lab-Tested Reviews
+PCMag.com is a leading authority on technology, delivering lab-based, independent reviews of the latest products and services. Our expert industry analysis and practical solutions help you make better buying decisions and get more from technology.
+How We Test
+Editorial Principles
+Best Picks
+/
+Reviews
+/
+News
+/
+How-To
+/
+Security
+Business
+Software
+Deals
+About PCMagazine
+Privacy Policy
+Terms of Use
+Advertise
+ AdChoices
+For over 40 years, PCMag has been a trusted authority on technology, delivering independent, labs-based reviews of the latest products and services. With expert analysis and practical solutions across consumer electronics, software, security, and more, PCMag helps consumers make informed buying decisions and get the most from their tech. From in-depth reviews to the latest news and how-to guides, PCMag is the go-to source for staying ahead in the digital world.
+
+      © 1996-2026 © 1996-2026 Ziff Davis, LLC., a Ziff Davis company. All Rights Reserved. PCMag, PCMag.com and PC Magazine are among the federally registered trademarks of Ziff Davis and may not be used by third parties without explicit permission. The display of third-party trademarks and trade names on this site does not necessarily indicate any affiliation or the endorsement of PCMag. If you click an affiliate link and buy a product or service, we may be paid a fee by that merchant.
+    
+International Editions:
+PCMag USA
+Canada
+United Kingdom
+Australia
+Greece
+Israel
+Middle East

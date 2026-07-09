@@ -1,0 +1,981 @@
+5 tasks where an ancient 1GB thumb drive actually beats modern storage
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+Networking
+Storage and NAS
+Components
+Peripherals
+Operating Systems
+Submenu
+Linux
+Windows
+Software
+Submenu
+Programming
+Applications
+Mobile
+Submenu
+Android
+iPhone
+Carriers
+New Tech
+Submenu
+Hobbies
+Smart Home
+Homelab
+Single-Board Computers (SBCs)
+Cutting Edge
+Streaming
+Submenu
+Streaming Content
+Streaming Platforms
+Audio/Video
+Automotive
+Reviews
+Buying Guides
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+14
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Storage
+Streaming
+Linux
+Open Source
+Microsoft Excel
+Android
+Windows
+Close
+5 tasks where an ancient 1GB thumb drive actually beats modern storage
+Credit: Ismar Hrnjicevic / How-To Geek
+By 
+Ismar Hrnjicevic
+Published
+ Apr 30, 2026, 10:59 AM EDT
+Ismar is a Senior Author at How-To Geek. He previously worked as a writer, editor, and general manager at a content agency before joining the How-To Geek team in 2023.
+
+Ismar has been around Windows PCs since the age of three, so his friends and family chose him as the resident tech support. His projects often involve tinkering, such as disassembling mechanical keyboards and gaming mice to mod his beloved gear. He also enjoys pushing his hardware to the max through overclocking while staying on a reasonable budget.
+
+An avid gamer, Ismar has logged thousands of hours across various genres, including first-person shooters, RPGs, car racing games, and roguelites.
+
+When he is not at his desk, he is probably exploring other people’s phones to discover their quirks and features. He also keeps up with the latest tech and actively follows the latest AI trends.
+
+He began his writing career in 2021 after completing a BA in English Language and Literature. To keep up with his workload, he relies on up to three cups of coffee a day. His love for the beverage inspired him to create a 
+blog showcasing his favorite coffee mugs
+.
+
+Beyond How-To Geek, Ismar has contributed to Red Stag Fulfillment and Authority Hacker. He has also worked on various SEO projects to help clients improve their search engine visibility.
+
+In his free time, Ismar enjoys spending time with his wife, working out at the gym, playing guitar and bass, cooking gourmet meals, and traveling. But most important of all, he’s a proud cat owner. 
+Sign in to your 
+How-To Geek
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+14
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+A lot of us still have a few decade-old USB flash drives with tiny amounts of storage lying around the house. If we're being realistic, these flash drives are way too small for modern use and too old to be reliable, yet somehow, it's hard to justify throwing away a functioning USB flash drive.
+✕
+ Remove Ads
+The good news is that these small drives can still be surprisingly useful when you give them the right job. Whether it's storing a handful of essential files and tools or carrying an entire OS installation, here are some practical ways to put your old flash drives back to work.
+
+                        It's all the space you need for BIOS/UEFI updates
+               
+
+            Small and simple does the trick
+    
+Updating your BIOS
+ is one of those tasks that's best handled by a USB flash drive. Fortunately, BIOS images are under 32MB in size, which means a 1GB flash drive has enough space to comfortably store several BIOS images at once.
+When it's time to flash a new BIOS update on my PC, I rarely grab one of my "good" flash drives—they're all large drives formatted as NTFS, and many modern UEFI implementations (including mine) can't read them. Instead, they require FAT32, and the only FAT32 flash drive I've got in my house that isn't already full is the 17-year-old 1GB Apacer I bought as a kid. Since it's always sitting empty, it means I won't accidentally grab the wrong file, either.
+✕
+ Remove Ads
+Quiz
+8 Questions · Test Your Knowledge
+Weird and quirky storage drives
+Trivia challenge
+From hybrid SSHDs to bizarre form factors — how well do you really know the oddest corners of storage technology?
+Hybrid Drives
+Form Factors
+History
+Hardware
+Oddities
+Begin
+01 / 8
+Hybrid Drives
+What does the acronym SSHD stand for in the context of hybrid storage drives?
+A
+Solid State Hard Drive
+B
+Solid State Hybrid Drive
+C
+Sequential Storage High-Density
+D
+Static Spinning Hard Disk
+Correct! SSHD stands for Solid State Hybrid Drive. These drives combine a traditional spinning hard disk with a small amount of NAND flash memory to accelerate frequently accessed data, giving users a middle ground between HDD capacity and SSD-like speed.
+Not quite — SSHD stands for Solid State Hybrid Drive. While 'Solid State Hard Drive' sounds convincing, it's actually a common misconception. The 'hybrid' part is key, since these drives merge both spinning magnetic platters and flash memory into a single unit.
+Continue
+02 / 8
+History
+Which company is widely credited with popularizing the consumer SSHD by releasing the Momentus XT in 2010?
+A
+Western Digital
+B
+Toshiba
+C
+Seagate
+D
+Samsung
+Correct! Seagate's Momentus XT was a landmark product that brought the SSHD concept to mainstream consumers. It combined a 500GB spinning platter with 4GB of SLC NAND flash and used adaptive memory technology to learn which data to cache for faster access.
+Not quite — it was Seagate that popularized the consumer SSHD with its Momentus XT in 2010. The drive used a modest 4GB of SLC NAND flash alongside a traditional 500GB platter, and it was groundbreaking enough to turn many heads in the enthusiast storage community.
+Continue
+03 / 8
+Oddities
+What was unusual about the Intel Optane Memory H10, released in 2019?
+A
+It combined a 3D XPoint Optane cache with a QLC NAND SSD on a single M.2 card
+B
+It used a spinning platter alongside Optane memory in a 2.5-inch chassis
+C
+It was the first drive to use PCIe 5.0 alongside SATA flash storage
+D
+It embedded Optane memory directly into a USB thumb drive casing
+Correct! The Intel Optane Memory H10 crammed both 3D XPoint Optane cache and QLC NAND storage onto a single M.2 2280 card. This meant the Optane portion acted as a super-fast buffer for the slower QLC NAND, all within one slot — a genuinely clever hybrid approach for thin laptops.
+Not quite. The Intel Optane Memory H10 was unusual because it placed 3D XPoint Optane cache and QLC NAND SSD storage together on one M.2 card. This dual-storage-on-one-stick design was highly unconventional and required special Intel RST drivers to function correctly, making it a quirky product indeed.
+Continue
+04 / 8
+Form Factors
+The Sony Microvault and similar tiny USB drives once came in novelty shapes like food items and cartoon characters. What is the technical term for this category of novelty drives?
+A
+Promotional flash drives
+B
+Swag drives
+C
+Designer USBs
+D
+Custom-molded drives
+Correct! The industry term most commonly used is 'promotional flash drives.' They are widely produced as branded giveaways and collectibles, molded into virtually any shape imaginable — from sushi rolls to rubber ducks. Some rare novelty drives have become genuine collector's items over the years.
+Not quite — the most widely recognized industry term for novelty-shaped USB drives is 'promotional flash drives.' These quirky drives are manufactured in bulk for marketing campaigns and giveaways, and the moldable casings mean manufacturers have produced everything from mini pizza slices to tiny LEGO-style bricks.
+Continue
+05 / 8
+Hardware
+Apple's Fusion Drive, introduced in 2012, is a type of hybrid storage. How does it differ from a traditional SSHD?
+A
+It uses proprietary Apple flash chips soldered directly to the HDD circuit board
+B
+It combines a separate SSD and HDD into a single logical volume managed by software
+C
+It is a single physical unit with flash embedded in the same enclosure as the platter
+D
+It caches only the operating system boot files using a dedicated firmware controller
+Correct! Apple's Fusion Drive is two separate physical drives — an SSD and an HDD — that macOS presents as a single unified volume using Core Storage (later APFS). Unlike an SSHD where everything is in one enclosure, Fusion Drive relies entirely on software-level management to decide what lives on the flash and what goes on the platter.
+Not quite. The key difference is that Apple's Fusion Drive consists of two separate physical drives — an SSD and an HDD — merged into one logical volume by macOS software. A traditional SSHD is a single self-contained unit with its own firmware controller managing the flash cache, making them architecturally quite different despite achieving similar goals.
+Continue
+06 / 8
+Oddities
+What was the primary purpose of the Robson cache technology Intel developed before eventually pivoting toward SSDs?
+A
+To use a small NAND chip on the motherboard to accelerate hard drive performance
+B
+To embed flash memory inside RAM DIMMs for faster boot times
+C
+To create a PCIe-attached SSD that could cache optical disc data
+D
+To use CPU-integrated storage for caching OS page files
+Correct! Intel's Robson technology — which became Intel Turbo Memory — placed a small NAND flash cache on a mini-PCIe card inside laptops to speed up hard drive access. It worked alongside Windows ReadyBoost and ReadyDrive but was largely underwhelming in real-world performance, and the project was quietly shelved as SSDs took over.
+Not quite. Intel's Robson/Turbo Memory technology used a small NAND flash chip on a mini-PCIe card to cache hard drive data on laptops. It leveraged Windows Vista's ReadyBoost and ReadyDrive features but never lived up to the hype, and it was eventually abandoned as standalone SSDs became cheaper and far more effective.
+Continue
+07 / 8
+History
+The iomega Zip drive was a popular removable storage medium in the late 1990s. What was the original storage capacity of the first Zip disks released in 1994?
+A
+250MB
+B
+100MB
+C
+750MB
+D
+50MB
+Correct! The original Iomega Zip disk launched in 1994 with a 100MB capacity, which was enormous compared to the 1.44MB floppy disks it aimed to replace. Later iterations pushed capacity to 250MB and even 750MB, but the original 100MB version was the one that captured the imagination of consumers and creative professionals alike.
+Not quite — the first Iomega Zip disks released in 1994 held 100MB, a staggering amount at the time when standard floppy disks only held 1.44MB. Later versions expanded to 250MB and 750MB, but it was that original 100MB capacity that made the Zip drive a cultural phenomenon in offices and design studios throughout the late 1990s.
+Continue
+08 / 8
+Hardware
+Western Digital's Black² drive was a quirky dual-drive product released around 2013. What made it so unusual?
+A
+It contained both a 120GB SSD and a 1TB HDD in a single standard 2.5-inch form factor
+B
+It used dual spinning platters rotating in opposite directions to reduce vibration
+C
+It featured two separate SATA connectors, one for flash and one for the platter
+D
+It combined SSD storage with a built-in PCIe controller on a 2.5-inch board
+Correct! Western Digital's Black² squeezed a 120GB SSD and a full 1TB HDD into a single 2.5-inch, 9.5mm-thick drive — the same size as a standard laptop hard drive. The catch was that it required special WD software to unlock the HDD portion, and it appeared as two separate drives to the operating system rather than one seamless volume.
+Not quite — the Western Digital Black² was remarkable because it packed a 120GB SSD and a 1TB HDD into one standard 2.5-inch laptop-sized enclosure. Unusually, users had to install WD's own software to unlock and access the HDD portion, and the two storage sections appeared as separate drives rather than being merged transparently like Apple's Fusion Drive.
+See My Score
+Challenge Complete
+Your Score
+/ 8
+Thanks for playing!
+Try Again
+Now, whether using a drive that's this old to do such a crucial task as updating a BIOS is up for debate. My stick never saw much use and still works just fine, plus my motherboard supports BIOS flashback, which allows me to recover it if anything goes wrong.
+Of course, if your small flash drive isn't all that old and comes from a reputable brand, there's no reason you shouldn't trust it over some other flash drive to handle your BIOS updates.
+
+    						Wooolken 1GB USB 2.0 Thumb Drives
+			
+Capacity
+
+									
+										
+											1GB
+
+										
+																	
+Connection
+
+									
+										
+											USB 2.0
+
+										
+																	
+This 20-pack of Wooolken 1GB USB 2.0 flash drives is a cheap and practical way to stock up on small-capacity drives for BIOS updates, rescue tools, or quick file transfers. With mixed colors, LED indicators, and included lanyards, they’re easy to organize and keep track of when you’re juggling multiple tasks or systems.
+$49 at Amazon
+Expand
+Collapse
+
+                        Assign it as your “dirty work” USB drive for sketchy or untrusted machines
+               
+
+            A sacrificial drive that keeps your other drives safe
+    
+Credit: Ismar Hrnjicevic / How-To Geek
+ While transferring files from one PC to another has largely moved to cloud-based alternatives, sometimes a flash drive is still the simplest and most reliable option. You wouldn’t want an important work or school presentation to go missing just because the internet is down in the building, and you have no other quick alternative.
+✕
+ Remove Ads
+That’s the perfect scenario for when you’d want to use one of your throwaway 1GB flash drives that don’t have anything else important stored on them. It makes transferring files to and from a public PC significantly safer, with none of the fuss.
+However, this is only one part of the solution. When you're done transferring files to the risky computer, don’t just plug that potentially infected flash drive into your machine. Instead, isolate it in a virtual machine or some other 
+virtual environment
+ to perform a low-level wipe and format before using it again.
+
+                        Turn it into a powerful all-in-one rescue toolkit
+               
+
+            Essential tools ready to deploy
+    
+Credit: Lucas Gouveia/How-To Geek
+ A "
+rescue USB
+" is essentially a USB flash drive loaded with lightweight diagnostic and PC repair tools. If you don’t already have one, trust me, it can quickly become your go-to one-stop shop for fixing your and your family’s machines.
+✕
+ Remove Ads
+While 1GB isn’t all that much to work with, there are still plenty of useful tools you can store within that limited amount of space.
+To create your very own rescue USB, focus on standalone apps that can store their configuration data directly on the drive. Some of the most useful utilities include 
+HWiNFO Portable
+ (a 
+powerful Windows hardware analysis and monitoring tool
+), 
+CrystalDiskInfo
+ for checking the health of storage drives, 
+CPU-Z
+ and 
+GPU-Z
+ for verifying CPU and graphics card specs (especially useful when buying used hardware), 
+WizTree
+ for identifying which files are taking up disk space, 
+7-Zip Portable
+ for handling archives, and 
+DDU
+ for 
+clean driver uninstalls
+, among others.
+Related
+
+			Your Windows storage is full of garbage—this free app shows you where it's hiding
+		
+WizTree scans your drive in seconds and reveals what’s taking up space, helping you quickly find and remove large hidden files.
+Posts
+By 
+Rich Hein
+Mar 22, 2026
+
+                        Use it as a secure offline vault for passwords and recovery codes
+               
+
+            Sensitive data stays isolated and under your control
+    
+Credit: Patrick Campanale / How-To Geek
+✕
+ Remove Ads
+Password managers
+ provide an easy, convenient, and, most importantly, safe solution to managing all those login credentials you've created over the years. While you can 
+self-host a password manager on your homelab device
+, it’s not always the most practical or reliable solution.
+So, if you want to use a password manager but avoid both third-party cloud services and self-hosting it on a server, a strictly offline password manager that lives on your USB flash drive could be exactly what you’re looking for.
+
+                    Subscribe to the newsletter for practical USB reuse tips
+                
+Discover more by subscribing to the newsletter for practical how-tos on repurposing old USB flash drives and simple tech hacks you can try at home. The newsletter focuses on hands-on guidance that helps you make aged gadgets useful again.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+There are several password manager tools you can use. 
+KeePassXC Portable
+ is among the most popular. It stores all your passwords in an encrypted database that you can access with a master password. Alternatively, you can use KeePassXC to store recovery codes for your cloud-based password manager (and other services).
+Related
+
+			Why KeePassXC is the only password manager I trust on Linux
+		
+It's about as offline as you can get when managing online accounts.
+Posts
+4
+By 
+Jordan Gloor
+Nov 15, 2025
+✕
+ Remove Ads
+
+                        Keep your most important documents in an encrypted offline vault
+               
+
+            Critical files deserve multiple copies
+    
+Credit: Hannah Stryker / How-To Geek
+ If you want to keep digital copies of your most important documents, like your driver’s license, ID, passport, and various work and school documents on a portable drive, you should encrypt them to prevent unauthorized access. However, you might not want to go through the process of encrypting a 256GB flash drive that you’re also using for other files, and you probably don’t want to keep all that sensitive data stored alongside your media library anyway.
+So, a good solution is to turn your 1GB flash drive into a dedicated, 
+encrypted storage medium
+ using a tool like 
+VeraCrypt
+. It’s a practical backup option when traveling, and if you end up losing that flash drive, your data will remain secure.
+✕
+ Remove Ads
+
+            1GB USB flash drives can still be surprisingly useful
+    
+While 1GB isn’t much in today’s day and age, the fact that a USB flash drive is a standalone external device you can plug into almost any machine makes it an extremely handy and versatile storage solution. Whether you’re using it to carry essential, encrypted data like your passwords and documents, or plugging it into a potentially infected computer before wiping it clean, it’s time to take that flash drive out of your drawer and finally put it to good use again.
+USB
+Backup & Recovery
+Desktop
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. 
+Read More
+.
+Close
+✕
+ Remove Ads
+
+                                                    Desktop
+                                            
+
+                                                    Mobile
+                                            
+
+			Why Linux is my IDE
+		
+40 minutes ago
+
+			Windows Fast Start-up is still causing problems in 2026, and everyone should disable it
+		
+3 hours ago
+
+			KDE Dolphin does file management better than GNOME—here's why
+		
+5 hours ago
+See More
+
+			8 Google Messages features I wish someone had told me about sooner
+		
+45 minutes ago
+
+			5 hidden Motorola gestures that make other Android phones feel basic
+		
+2 hours ago
+
+			This open-source app suite replaced 6 closed-source apps and tools on my Android phone
+		
+4 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			You don’t need to dual-boot anymore, there’s a better way to try another OS
+		
+
+			How to Update Your Graphics Drivers for Maximum Gaming Performance
+		
+
+			Google's $3 USB stick turns your old PC into a ChromeOS machine
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+14
+Sign in to your 
+How-To Geek
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Jim
+Jim
+Jim
+#SL802500
+Member since 2024-08-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+1gb are perfect size for true image, clonezilla, memtest86+ and other utilities.
+As for documents, I haven't seen too many over 1gb  (though I did encounter my first 1gb pdf file recently, my biggest document- ever) so they should be sufficient for at least some things a person wants the occasional 3rd backup for in their 321 scheme.
+I have a 32mb USB flash drive that boots memtest86+ and a 1gb for true image and a couple of 2gb kicking around for Linux live ISOs and sysrescuecd etc.  I think sergei strelec win pe might fit on a 4gb or an 8gb for sure
+One can still put small USB flash drives to various uses.
+And your point is right on about risky systems.  I wouldn't use my nice portable hynix tube 1tb USB ssd for such things for certain 
+2026-04-30 20:52:25
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+Yndril
+Yndril
+Yndril
+#SL059455
+Member since 2024-07-11
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Storage size aside, you also mentioned reliability. Old flashdrives are more prone to bitrot and corruption, yet you suggest using them for encrypted password storage and critical updates to BIOS? You are either brave or stupid. And who would format their flashdrives with NTFS? If you have a bunch of large files, just use exFAT.
+2026-05-01 09:04:31
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+
+                        2
+                    
+Copy
+        
+Cathy
+Cathy
+Cathy
+#AR567970
+Member since 2026-03-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+There should be 2 or 3 flash drives.  One backup is good; 2 are better; 3 (or better) best.
+May sound paranoid but after graduating from the School of Herd Knocks and Broken drives, I have learned that there is no such thing as too many backups.
+2026-05-01 23:39:54
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+JimT777
+JimT777
+JimT777
+#VH419765
+Member since 2023-12-16
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Cathy
+ in case you aren't aware, the School of Hard Knocks is a lifelong commitment.  One does not graduate until they assume room temperature.  LOL
+2026-05-04 18:57:55
+Upvote
+Downvote
+Reply
+Copy
+        
+Mike
+Mike
+Mike
+#US875549
+Member since 2025-07-06
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Brand names matter if you're doing a bios  update as the cheap ones may have issues. For the really important jobs get the top tier with minimum 16 gb as 8 8gb are not alway reliable. But for serious backup get a real backup drive.
+2026-05-02 12:05:07
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Picdriver
+Picdriver
+Picdriver
+#ZK773355
+Member since 2025-08-31
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I was too distracted by the constant ads inbetween for 'Easy girls for screwing' with a nice pic. Not something you expect from a site like this lol.
+2026-05-03 08:39:15
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        2
+                    
+Copy
+        
+Chris
+Chris
+Chris
+#TZ162002
+Member since 2024-08-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+1  Follower 
+View
+I saw no such adverts, it must be something that was found in your internet search history.
+2026-05-03 18:49:15
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Picdriver
+Picdriver
+Picdriver
+#ZK773355
+Member since 2025-08-31
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Chris
+ I doubt it I cover my screen with my hands.
+2026-05-03 19:12:21
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Hock Chye
+Hock Chye
+Hock Chye
+#TZ621921
+Member since 2026-05-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Small pendrive are very much in demand.We keep our Line Dance and Exercise music in a group of 10+ and play them for group dancing. Use them on portable mp3 amp outdoor. My group alone has 50+ of this pendrive. Though it now hard to find good quality 16Gig pendrive. Lowest avaliable is HP 64G.
+2026-05-02 19:33:03
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+JimT777
+JimT777
+JimT777
+#VH419765
+Member since 2023-12-16
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I keep all my diagnostic tools on a Ventoy 64GB USB stick, along with numerous ISOs for various OSes, both Linux and Window$.  Although, since I am now fully retired, I've been seriously considering removing the Window$ based ISOs, including Hiren's Boot ISO, because I never use them any more.
+2026-05-04 18:55:16
+Upvote
+Downvote
+Reply
+Copy
+        
+Federico
+Federico
+Federico
+#UU271422
+Member since 2025-11-16
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I used to need a smallish (the smaller I got were 8GB) flash drives for collecting employee attendance from cheap biometric clocks. 
+The ones we had 1 needed flash drives to be empty and 2 formatted with a weird propietary file system, so it couldn't be used for something else at the same time. 
+2026-05-07 17:21:54
+Upvote
+Downvote
+Reply
+Copy
+        
+Hipno
+Hipno
+Hipno
+#WS389671
+Member since 2025-04-28
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+So never, got it
+These can work with an old 1GB, but old means slower technology and 1GB means even if you want to put small stuff relatively you won't be able to have much on it at a time
+2026-04-30 17:13:33
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        2
+                    
+Copy
+        
+JordanTyler
+JordanTyler
+JordanTyler
+#CC972337
+Member since 2024-08-19
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+That's because he calls them "ancient" in the title but 1 GB doesn't mean it's old, they're still in production today. The point is what can you do with a small USB that isn't much good for anything else. Some things like updating bios and a password key are perfect for 1 GB USB and you aren't going to worry about using too much space with them. It's just saying that using like a 16 GB, for example, would be overkill when you probably just have a 1 GB lying around. 
+2026-05-01 10:13:34
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Ismar
+Ismar
+Ismar
+#EQ826427
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+1  Follower 
+View
+JordanTyler
+ Correct 👍🏼
+2026-05-03 08:49:21
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 26, 2026
+
+                                    You're using HDMI wrong on your smart TV: Here’s how to fix the mistake once and for all
+                            
+Apr 25, 2026
+
+                                    Your phone's Bluetooth audio quality depends on one hidden setting nobody knows about
+                            
+Apr 24, 2026
+
+                                    Ready to graduate from Linux Mint? These 3 distros are perfect for intermediate users
+                            
+Apr 24, 2026
+
+                                    3 essential Linux apps to try this weekend (April 17 - 19)
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+How-To Geek
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

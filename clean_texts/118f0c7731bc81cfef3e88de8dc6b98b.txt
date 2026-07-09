@@ -1,0 +1,442 @@
+The open-source Notion alternative that you've never heard of
+Menu
+Sign in now
+Close
+PC & Mobile
+Submenu
+Windows2
+Linux
+Android
+Apple
+Technical
+Submenu
+Tech Explained
+Security
+Software
+Submenu
+Productivity
+Internet
+Creative
+Screen
+Submenu
+Entertainment
+Streaming
+Home
+Submenu
+Smart Home
+Home
+News
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+1
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+Productivity
+Android
+Smart TVs
+Networking
+Windows 11
+Entertainment
+Close
+The open-source Notion alternative that you've never heard of
+Afam Onyimadu / MUO
+By 
+Afam Onyimadu
+Published
+ Mar 9, 2026, 10:30 AM EDT
+Afam's experience in tech publishing dates back to 2018, when he worked for Make Tech Easier. Over the years, he has built a reputation for publishing high-quality guides, reviews, tips, and explainer articles, covering Windows, Linux, and open source tools. His work has been featured on top websites, including Technical Ustad, Windows Report, Guiding Tech, Alphr, and Next of Windows.
+
+He holds a first degree in Computer Science and is a strong advocate for data privacy and security, with several tips, videos, and tutorials on the subject published on the Fuzo Tech YouTube channel.
+
+When he is not working, he loves to spend time with his family, cycling, or tending to his garden.  
+Sign in to your 
+MakeUseOf
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+1
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Most wikis and documentation platforms I've used are flexible. The downside, though, is that they tend to become messy very quickly. If you work across machines, it's easy to lose track of documentation when there are several nested pages, databases, and scattered notes.
+✕
+ Remove Ads
+However, when I tried using BookStack, there was a key difference rooted in a philosophy that lets you organize knowledge like real books. This design forces me to structure my thinking clearly, making it easier to store and organize information. 
+I have used several open-source knowledge management tools
+, but BookStack stands out.
+
+                        The four-level structure that quietly fixes messy documentation
+               
+
+            The shelves-books-chapters-pages model changes how you organize knowledge
+    
+You'll notice what makes 
+BookStack
+ stand out when you create your first note. It organizes content into a strict hierarchy: Shelves, Books, Chapters, then Pages. These categorizations function just as you expect. Shelves are at the top and can hold multiple books. I use them for broad topics.
+Then Books come next and may hold major subjects. I use Chapters to divide my Books into multiple sections, while my actual documentation entries go into Pages. Because chapters are optional, I can skip that level for very small topics and create a page directly.
+BookStack handles topic overlap by allowing books to span multiple Shelves. This is a practical feature that eliminates duplication. For example, my Docker Setup Guide appears on both my Linux and Home Lab Shelves. Once you understand the BookStack segmentation below, organization is easy:
+✕
+ Remove Ads
+Level
+What it represents
+Shelves
+Broad topic collections
+Books
+Major subjects or systems
+Chapters
+Subsections within a topic
+Pages
+Individual documentation entries
+This structure is the key difference between BookStack and several other apps, like Notion. It avoids the endless nested folders and makes it harder to keep dumping notes into just one knowledge base. Even months after creating an entry, it's easy to locate because entries are stored in a predictable structure.
+
+                        Writing documentation becomes easier when the editor disappears
+               
+
+            The WYSIWYG editor makes technical documentation easier to maintain
+    
+Documenting and formatting can often conflict, and good documentation tools separate these two layers. That's what BookStack does. If you navigate to 
+Settings ->
+Customization
+, under the 
+Default Page Editor
+ section, you can choose
+ WYSIWYG
+, 
+Markdown
+, or the 
+New WYSIWYG (in beta)
+.
+WYSIWYG is the default option and offers an interface similar to what you get on many standard word processors. It's handy because I can paste screenshots and commands. It allows me to worry less about formatting syntax as I build structured documentation. Markdown, on the other hand, allows a plain text workflow.
+✕
+ Remove Ads
+However, the integration with 
+diagrams.net
+ is one element that makes documentation with this tool come to life. 
+Diagrams.net
+ lets me create diagrams right from the editor. This is great when I'm designing network layouts or creating simple workflows.
+You can also enable a changelog for your pages, which I find super helpful for keeping track of minor details. A tiny note in my change log records my last edits and ensures that even when I return to my page after several months, I do not lose context.
+
+                        The features that make it viable as a real knowledge base
+               
+
+            Built-in permissions, search, and revisions make collaboration possible
+    
+Afam Onyimadu / MUO
+ Although I use BookStack for personal notes, the real advantage is the ease of scaling it into a shared knowledge base. It includes full-text search across the entire system. This makes finding solutions easy, as all you have to do is search for a command or error message.
+I get the best out of related documentation by linking pages to other pages or to specific paragraphs within a page. Also, the version history is an integral fail-safe. When I accidentally remove an item or if something breaks, restoring an earlier version typically fixes the problem. It also includes a comprehensive image management system that keeps my screenshots organized and easily retrievable. However, one standout feature for teams is its role and permission system. I control who has access to different Books, Chapters, and Pages by giving flexible access rights to team members.
+✕
+ Remove Ads
+Deploying BookStack is quite straightforward, even though it may require some comfort with the command line. You can choose to install it directly on a server or run it through Docker. It has lightweight requirements, making self-hosting an option to 
+repurposing an old laptop
+.
+
+                        Where BookStack fits among other knowledge tools
+               
+
+            Not every note-taking app solves the same problem
+    
+Afam Onyimadu / MUO
+ BookStack is unique and addresses a different problem than most note-taking apps. Notion is a flexible workspace for task databases, and project planning. 
+Obsidian, which is one of my favorite note-taking apps
+, builds its system around linking ideas together. But BookStack focuses on being a structured documentation system.
+
+                    Subscribe for practical BookStack tips and guides
+                
+Explore actionable BookStack strategies by subscribing to the newsletter—practical organization approaches, editor workflows, permission and deploy tips, and concise comparisons with other knowledge tools. Ideal for readers seeking focused BookStack and knowledge-management notes.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+When you compare it to 
+Wiki.js
+, which offers deep customization for technical teams, BookStack's focus on usability gives it an edge. And even though DokuWiki is a reliable, battle-tested option, it stores content in flat files, has no built-in WYSIWYG editor by default, and requires plugins to match what BookStack offers out of the box. Additionally, BookStack is self-hostable, which gives it the advantage of control. Your data isn't sitting on a cloud you do not totally control.
+Related
+
+			I'm done with OneNote — here's what I'm using now
+		
+I left OneNote not for something better, but for something that fit how I think and work today.
+Posts
+5
+By 
+Kanika Gogia
+Feb 9, 2026
+✕
+ Remove Ads
+
+            Structure forces clarity
+    
+In the end, the big win for BookStack is the discipline its structure creates. What may have been a scattered troubleshooting note on some platforms became a well-organized and easily accessible note. It may not sound like a big shift, but it pushes you to document in a way someone else might read later.
+
+    						BookStack
+			
+OS
+
+									
+										
+											Windows, Linux, macOS
+
+										
+																	
+Developer
+
+									
+										
+											Dan Brown
+
+										
+																	
+Price model
+
+									
+										
+											Free, Open-source
+
+										
+																	
+BookStack is an open-source documentation platform that organizes content into books, chapters, and pages, making structured knowledge easy to create and maintain.
+See at BookStack
+Expand
+Collapse
+Productivity
+Note-Taking Apps
+Open Source
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+
+                                                    Technology Explained
+                                            
+
+                                                    PC & Mobile
+                                            
+
+			CPU-Z shows more than PC specs if you know where to look
+		
+36 minutes ago
+
+			Your CPU is throttling itself, and one BIOS toggle will fix it
+		
+21 hours ago
+
+			I stopped buying random USB-C cables after learning what three numbers actually mean
+		
+1 day ago
+See More
+
+			I switched to Gentoo Linux and now I get why it's worth the headache
+		
+4 hours ago
+
+			Windows has been hoarding old drivers on your SSD — here's how to clear them out
+		
+16 hours ago
+
+			Motorola's Razr 2026 software finally matches the hardware's flair
+		
+18 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			Your SSD is getting slower, and here's how to fix it
+		
+
+			Tablets are fine, but serious notetakers use this instead
+		
+
+			I use Markdown instead of PowerPoint to make slideshows and it's fantastic
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+1
+Sign in to your 
+MakeUseOf
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Sohil
+Sohil
+Sohil
+#AG757617
+Member since 2026-03-14
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Looks good but can we share Books and shelves to someone and they can edit too.
+2026-03-14 09:44:33
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Mar 7, 2026
+
+                                    I deleted 3 productivity apps for this one open-source tool, and I love it
+                            
+Mar 6, 2026
+
+                                    Google apps just got a lot easier to use with OpenClaw
+                            
+Mar 6, 2026
+
+                                    I installed LineageOS for Android 16 and immediately regretted it
+                            
+Mar 5, 2026
+
+                                    I tested Google and Microsoft Authenticator plus 3 others — this is the best for 2FA
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+MakeUseOf
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

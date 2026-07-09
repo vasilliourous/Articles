@@ -1,0 +1,868 @@
+Zscaler ThreatLabz 2026 VPN Risk Report
+This site uses JavaScript to provide a number of functions, to use this site please enable JavaScript in your browser.
+Join us at Zenith Live 2026, the premier learning conference where experts converge, focusing on modernizing security with the AI Security platform built on zero trust.
+Learn more
+Close
+Open
+Search
+ThreatLabz
+Customer Success Stories
+Careers
+Partners
+Support
+Show
+Contact Us
+Get in touch
+1-408-533-0288
+Show
+Sign In
+Zscaler Cloud Portal | Admin
+Zscaler Cloud Portal One | Admin
+Zscaler Cloud Portal Two | Admin
+Zscaler Cloud Portal Three | Admin
+Zscaler Cloud Portal Beta | Admin
+admin.zscloud.net
+Zscaler Private Access Cloud Portal One | Admin
+Zscaler Private Access Cloud Portal Two | Admin
+Show
+English
+Français
+Deutsch
+Italiano
+日本語
+Castellano - Mexico
+Castellano - España
+Portugues - Brasil
+Home
+Platform
+Products
+Solutions
+Resources
+Company
+Take a product tour
+Request a demo
+Secure the Workforce
+Provide users with seamless, secure, reliable access to applications and data.
+Secure the Cloud
+Build and run secure cloud apps, enable zero trust cloud connectivity, and protect workloads from data center to cloud.
+Secure IoT/OT
+Provide zero trust connectivity for IoT and OT devices and secure remote access to OT systems.
+Secure B2B
+Provide zero trust site-to-site connectivity and reliable access to B2B apps for partners.
+Zscaler Platform
+Why Zscaler
+Leadership in AI
+Zscaler SASE
+Zscaler SSE
+Analyst Recognition
+Zero Trust Automation
+Customer Stories
+Partner Ecosystem
+Reduce Your Carbon Footprint
+Industry Report
+Zscaler: A Leader in the 2025 Gartner® Magic Quadrant™ for Security Service Edge (SSE)
+Get the full report
+Zero Trust SASE
+Secure Internet Access (ZIA)
+Secure Private Access (ZPA)
+Digital Experience (ZDX)
+Zero Trust Firewall
+Cloud Sandbox
+Zero Trust Browser
+Zero Trust Branch
+Zero Trust SD-WAN
+IoT/OT Segmentation
+Privileged Remote Access
+Zscaler Cellular
+AI Security
+AI Asset Management
+AI Access Security
+AI Red Teaming
+AI Guardrails
+Zero Trust Cloud
+Secure Ingress and Egress Traffic
+Secure East-West Traffic
+Microsegmentation
+Zero Trust Gateway
+Data Security
+Web and Email DLP
+Endpoint DLP
+BYOD Security
+Multi-Mode CASB
+Unified SaaS Security
+DSPM
+Microsoft Copilot Data Protection
+Security Operations
+Data Fabric for Security
+Asset Exposure Management
+Unified Vulnerability Management
+Deception
+Managed Detection and Response
+Managed Threat Hunting
+USE CASES
+Zero Trust + AI
+Business Insights
+Replace VPN
+Cyberthreat Protection
+Stop Ransomware
+VDI Alternative 
+Secure Your Data
+Optimize Digital Experiences
+Deploy BYOD Securely
+Reduce Cyber Risk
+Security Operations
+Continuous Threat Exposure Management
+Accelerate M&A and Divestitures
+INDUSTRY & MARKET SOLUTIONS
+Healthcare
+Banking & Financial Services
+Manufacturing
+Education
+Australia Government
+China Government
+US Public Sector
+US Federal Government
+US State & Local Government
+APJ Mid-Market / Commercial
+PARTNERS
+Explore Our Partners
+Become a Partner
+Partner Portal
+TECHNOLOGY PARTNERS
+Explore Technology Partners
+Microsoft
+CrowdStrike
+AWS
+Okta
+Rubrik
+SAP
+USE CASES
+Zero Trust + AI
+Business Insights
+Replace VPN
+Cyberthreat Protection
+Stop Ransomware
+VDI Alternative 
+Secure Your Data
+Optimize Digital Experiences
+Deploy BYOD Securely
+Reduce Cyber Risk
+Security Operations
+Continuous Threat Exposure Management
+Accelerate M&A and Divestitures
+INDUSTRY & MARKET SOLUTIONS
+Healthcare
+Banking & Financial Services
+Manufacturing
+Education
+Australia Government
+China Government
+US Public Sector
+US Federal Government
+US State & Local Government
+APJ Mid-Market / Commercial
+PARTNERS
+Explore Our Partners
+Become a Partner
+Partner Portal
+TECHNOLOGY PARTNERS
+Explore Technology Partners
+Microsoft
+CrowdStrike
+AWS
+Okta
+Rubrik
+SAP
+Resource Center
+Resource Library
+Blog
+Customer Success Stories
+Webinars
+Zpedia
+Events & Trainings
+Upcoming Events
+Zenith Live
+Zscaler Cyber Academy
+Security Research & Services
+ThreatLabz Analytics
+Security Advisory Updates
+Zero Trust SASE Resources
+Tools
+Security Preview
+Security and Risk Assessment
+Disclose a Vulnerability
+Executive Insights App
+Ransomware Protection ROI Calculator
+Community & Support
+Customer Success Center
+Zenith Community
+CXO Revolutionaries
+Zscaler Help Portal
+CXO REVOLUTIONARIES
+Amplifying the voices of real-world digital and zero trust pioneers
+Visit now
+Resource Center
+Resource Library
+Blog
+Customer Success Stories
+Webinars
+Zpedia
+Events & Trainings
+Upcoming Events
+Zenith Live
+Zscaler Cyber Academy
+Security Research & Services
+ThreatLabz Analytics
+Security Advisory Updates
+Zero Trust SASE Resources
+Tools
+Security Preview
+Security and Risk Assessment
+Disclose a Vulnerability
+Executive Insights App
+Ransomware Protection ROI Calculator
+Community & Support
+Customer Success Center
+Zenith Community
+CXO Revolutionaries
+Zscaler Help Portal
+About Zscaler
+Discover how it began and where it’s going
+Partners
+Meet our partners and explore system integrators and technology alliances
+News & Announcements
+Stay up to date with the latest news
+Leadership Team
+Meet our management team
+Partner Integrations
+Explore our technology partner integrations
+Investor Relations
+See news, stock information, and quarterly reports
+Careers
+Join our mission
+Compliance
+Understand our adherence to rigorous standards
+Press Center
+Find everything you need to cover Zscaler
+Culture
+Our values, leadership principles, and ways of working
+Zenith Ventures
+Learn about our strategic startup investments
+Corporate Responsibility
+Learn about our approach
+Home
+Take a product tour
+Request a demo
+Platform
+Products
+Solutions
+Resources
+Company
+Take a product tour
+Request a demo
+ThreatLabz
+Customer Success Stories
+Careers
+Partners
+Support
+Show
+Contact Us
+Get in touch
+1-408-533-0288
+Show
+Sign In
+Zscaler Cloud Portal | Admin
+Zscaler Cloud Portal One | Admin
+Zscaler Cloud Portal Two | Admin
+Zscaler Cloud Portal Three | Admin
+Zscaler Cloud Portal Beta | Admin
+admin.zscloud.net
+Zscaler Private Access Cloud Portal One | Admin
+Zscaler Private Access Cloud Portal Two | Admin
+Show
+English
+Français
+Deutsch
+Italiano
+日本語
+Castellano - Mexico
+Castellano - España
+Portugues - Brasil
+Platform
+Secure the Workforce
+Provide users with seamless, secure, reliable access to applications and data.
+Secure the Cloud
+Build and run secure cloud apps, enable zero trust cloud connectivity, and protect workloads from data center to cloud.
+Secure IoT/OT
+Provide zero trust connectivity for IoT and OT devices and secure remote access to OT systems.
+Secure B2B
+Provide zero trust site-to-site connectivity and reliable access to B2B apps for partners.
+Zscaler Platform
+Why Zscaler
+Leadership in AI
+Zscaler SASE
+Zscaler SSE
+Analyst Recognition
+Zero Trust Automation
+Customer Stories
+Partner Ecosystem
+Reduce Your Carbon Footprint
+Industry Report
+Zscaler: A Leader in the 2025 Gartner® Magic Quadrant™ for Security Service Edge (SSE)
+Get the full report
+Products
+Zero Trust SASE
+Secure Internet Access (ZIA)
+Secure Private Access (ZPA)
+Digital Experience (ZDX)
+Zero Trust Firewall
+Cloud Sandbox
+Zero Trust Browser
+Zero Trust Branch
+Zero Trust SD-WAN
+IoT/OT Segmentation
+Privileged Remote Access
+Zscaler Cellular
+AI Security
+AI Asset Management
+AI Access Security
+AI Red Teaming
+AI Guardrails
+Zero Trust Cloud
+Secure Ingress and Egress Traffic
+Secure East-West Traffic
+Microsegmentation
+Zero Trust Gateway
+Data Security
+Web and Email DLP
+Endpoint DLP
+BYOD Security
+Multi-Mode CASB
+Unified SaaS Security
+DSPM
+Microsoft Copilot Data Protection
+Security Operations
+Data Fabric for Security
+Asset Exposure Management
+Unified Vulnerability Management
+Deception
+Managed Detection and Response
+Managed Threat Hunting
+Solutions
+USE CASES
+Zero Trust + AI
+Business Insights
+Replace VPN
+Cyberthreat Protection
+Stop Ransomware
+VDI Alternative 
+Secure Your Data
+Optimize Digital Experiences
+Deploy BYOD Securely
+Reduce Cyber Risk
+Security Operations
+Continuous Threat Exposure Management
+Accelerate M&A and Divestitures
+INDUSTRY & MARKET SOLUTIONS
+Healthcare
+Banking & Financial Services
+Manufacturing
+Education
+Australia Government
+China Government
+US Public Sector
+US Federal Government
+US State & Local Government
+APJ Mid-Market / Commercial
+PARTNERS
+Explore Our Partners
+Become a Partner
+Partner Portal
+TECHNOLOGY PARTNERS
+Explore Technology Partners
+Microsoft
+CrowdStrike
+AWS
+Okta
+Rubrik
+SAP
+USE CASES
+Zero Trust + AI
+Business Insights
+Replace VPN
+Cyberthreat Protection
+Stop Ransomware
+VDI Alternative 
+Secure Your Data
+Optimize Digital Experiences
+Deploy BYOD Securely
+Reduce Cyber Risk
+Security Operations
+Continuous Threat Exposure Management
+Accelerate M&A and Divestitures
+INDUSTRY & MARKET SOLUTIONS
+Healthcare
+Banking & Financial Services
+Manufacturing
+Education
+Australia Government
+China Government
+US Public Sector
+US Federal Government
+US State & Local Government
+APJ Mid-Market / Commercial
+PARTNERS
+Explore Our Partners
+Become a Partner
+Partner Portal
+TECHNOLOGY PARTNERS
+Explore Technology Partners
+Microsoft
+CrowdStrike
+AWS
+Okta
+Rubrik
+SAP
+Resources
+Resource Center
+Resource Library
+Blog
+Customer Success Stories
+Webinars
+Zpedia
+Events & Trainings
+Upcoming Events
+Zenith Live
+Zscaler Cyber Academy
+Security Research & Services
+ThreatLabz Analytics
+Security Advisory Updates
+Zero Trust SASE Resources
+Tools
+Security Preview
+Security and Risk Assessment
+Disclose a Vulnerability
+Executive Insights App
+Ransomware Protection ROI Calculator
+Community & Support
+Customer Success Center
+Zenith Community
+CXO Revolutionaries
+Zscaler Help Portal
+CXO REVOLUTIONARIES
+Amplifying the voices of real-world digital and zero trust pioneers
+Visit now
+Resource Center
+Resource Library
+Blog
+Customer Success Stories
+Webinars
+Zpedia
+Events & Trainings
+Upcoming Events
+Zenith Live
+Zscaler Cyber Academy
+Security Research & Services
+ThreatLabz Analytics
+Security Advisory Updates
+Zero Trust SASE Resources
+Tools
+Security Preview
+Security and Risk Assessment
+Disclose a Vulnerability
+Executive Insights App
+Ransomware Protection ROI Calculator
+Community & Support
+Customer Success Center
+Zenith Community
+CXO Revolutionaries
+Zscaler Help Portal
+Company
+About Zscaler
+Discover how it began and where it’s going
+Partners
+Meet our partners and explore system integrators and technology alliances
+News & Announcements
+Stay up to date with the latest news
+Leadership Team
+Meet our management team
+Partner Integrations
+Explore our technology partner integrations
+Investor Relations
+See news, stock information, and quarterly reports
+Careers
+Join our mission
+Compliance
+Understand our adherence to rigorous standards
+Press Center
+Find everything you need to cover Zscaler
+Culture
+Our values, leadership principles, and ways of working
+Zenith Ventures
+Learn about our strategic startup investments
+Corporate Responsibility
+Learn about our approach
+Industry Report
+Zscaler ThreatLabz 2026 VPN Risk Report with Cybersecurity Insiders
+Discover how AI collapsed the human response window and turned remote access into the fastest path to breach
+Get the full report today
+By clicking the “Download Now” button below, you agree to our 
+privacy policy
+*
+Yes, please keep me updated on Zscaler news, events, webcast and special offers.
+*
+*
+*
+*
+*
+Select Country
+Afghanistan
+Albania
+Algeria
+American Samoa
+Andorra
+Angola
+Anguilla
+Antarctica
+Antigua and Barbuda
+Argentina
+Armenia
+Aruba
+Australia
+Austria
+Azerbaijan
+Bahamas
+Bahrain
+Bangladesh
+Barbados
+Belarus
+Belgium
+Belize
+Benin
+Bermuda
+Bhutan
+Bolivia
+Bosnia and Herzegovina
+Botswana
+Brazil
+British Indian Ocean Territory
+British Virgin Islands
+Brunei
+Bulgaria
+Burkina Faso
+Burundi
+Cambodia
+Cameroon
+Canada
+Cape Verde
+Cayman Islands
+Central African Republic
+Chad
+Chile
+China
+Christmas Island
+Cocos Islands
+Colombia
+Comoros
+Cook Islands
+Costa Rica
+Croatia
+Cuba
+Curaçao
+Cyprus
+Czech Republic
+Democratic Republic of the Congo
+Denmark
+Djibouti
+Dominica
+Dominican Republic
+Ecuador
+Egypt
+El Salvador
+Equatorial Guinea
+Eritrea
+Estonia
+Ethiopia
+Falkland Islands
+Faroe Islands
+Fiji
+Finland
+France
+French Polynesia
+Gabon
+Gambia
+Gaza Strip
+Georgia
+Germany
+Ghana
+Gibraltar
+Greece
+Greenland
+Grenada
+Guam
+Guatemala
+Guinea
+Guinea-Bissau
+Guyana
+Haiti
+Holy See
+Honduras
+Hong Kong
+Hungary
+Iceland
+India
+Indonesia
+Invalid Country
+Iran
+Iraq
+Ireland
+Isle of Man
+Israel
+Italy
+Ivory Coast
+Jamaica
+Japan
+Jersey
+Jordan
+Kazakhstan
+Kenya
+Kiribati
+Kosovo
+Kuwait
+Kyrgyzstan
+Laos
+Latvia
+Lebanon
+Lesotho
+Liberia
+Libya
+Liechtenstein
+Lithuania
+Luxembourg
+Macau
+Macedonia
+Madagascar
+Malawi
+Malaysia
+Maldives
+Mali
+Malta
+Marshall Islands
+Mauritania
+Mauritius
+Mayotte
+Mexico
+Micronesia
+Moldova
+Monaco
+Mongolia
+Montenegro
+Montserrat
+Morocco
+Mozambique
+Myanmar
+Namibia
+Nauru
+Nepal
+Netherlands
+Netherlands Antilles
+New Caledonia
+New Zealand
+Nicaragua
+Niger
+Nigeria
+Niue
+Norfolk Island
+North Korea
+Northern Mariana Islands
+Norway
+Oman
+Pakistan
+Palau
+Palestine
+Panama
+Papua New Guinea
+Paraguay
+Peru
+Philippines
+Pitcairn Islands
+Poland
+Portugal
+Puerto Rico
+Qatar
+Republic of the Congo
+Romania
+Russia
+Rwanda
+Saint Barthélemy
+Saint Helena
+Saint Kitts and Nevis
+Saint Lucia
+Saint Martin
+Saint Pierre and Miquelon
+Saint Vincent and the Grenadines
+Samoa
+San Marino
+Sao Tome and Principe
+Saudi Arabia
+Senegal
+Serbia
+Seychelles
+Sierra Leone
+Singapore
+Slovakia
+Slovenia
+Solomon Islands
+Somalia
+South Africa
+South Korea
+South Sudan
+Spain
+Sri Lanka
+Sudan
+Suriname
+Svalbard
+Swaziland
+Sweden
+Switzerland
+Syria
+Taiwan
+Tajikistan
+Tanzania
+Thailand
+Timor-Leste
+Togo
+Tokelau
+Tonga
+Trinidad and Tobago
+Tunisia
+Turkey
+Turkmenistan
+Turks and Caicos Islands
+Tuvalu
+Uganda
+Ukraine
+United Arab Emirates
+United Kingdom
+United States
+Uruguay
+US Virgin Islands
+Uzbekistan
+Vanuatu
+Venezuela
+Vietnam
+Wallis and Futuna
+West Bank
+Western Sahara
+Yemen
+Zambia
+Zimbabwe
+*
+Download now
+Key VPN Risk Report stats
+61%
+of organizations reported AI-enabled attacks in the last 12 months
+54%
+Need a week or more to patch a critical VPN vulnerability
+77%
+say they can’t contain lateral movement after compromise
+Your VPN is Helping Attackers Move as Fast as AI
+The 
+Zscaler ThreatLabz 2026 VPN Risk Report
+ reveals a dangerous disconnect: while attackers use AI to move at machine speed, legacy VPNs are leaving defenders blind and exposed. When you can’t see what’s happening, response time collapses and the odds of containment drop with it.
+The reality of VPN risk in 2026:
+#1 Fear is Attacker Speed: 
+79% of survey respondents say AI lets attackers exploit vulnerabilities faster than patches can be deployed.
+They Can’t See AI-Driven Attack Signals:
+ 70% of survey respondents admit to limited or no visibility into AI threats moving over their VPN.
+Attackers are Outpacing Patch Cycles:
+ 61% of organizations believe adversaries move faster than their patching process.
+VPNs are Acting like Blind “Encrypted Pipes”: 
+1 in 3 organizations inspect 0% of encrypted VPN traffic.
+Slow Access Leads to Workarounds: 
+63% of users bypass VPN controls to reach apps faster, creating unmanaged risk.
+Together, these gaps create the exact conditions attackers rely on: time, access, and limited detection.
+Read the full report to benchmark your organization and learn how Zscaler Private Access™ (ZPA) delivers user-to-app, least-privileged access designed to reduce exposure and limit blast radius.
+Platform
+Zscaler Platform
+AI Security
+Data Security
+SecOps
+Product & Solutions
+Product Tours
+Industries
+Partners
+Carbon
+Company
+About Zscaler
+Zscaler FAQ
+Leadership
+Careers
+Investors
+Press
+Responsibility
+Contact
+Pricing
+Popular Links
+Red Canary
+Community
+Analysts
+News
+Zenith Live 
+Events
+Executive Insights App
+RESOURCES
+ThreatLabz Research
+Resource Library
+Blog
+Webinars
+Zpedia Articles
+Cyber Academy
+Customer Stories
+Customer Success Center
+Support
+Contact Support
+Help Portal
+Security Advisories
+Disclose a Vulnerability
+Security Risk Assessments
+Compliance
+Partner Portal
+Home
+Zscaler is universally recognized as the leader in zero trust. Leveraging the largest security cloud on the planet, Zscaler anticipates, secures, and simplifies the experience of doing business for the world's most established companies.
+English
+Français
+Deutsch
+Italiano
+日本語
+Castellano - Mexico
+Castellano - España
+Portugues - Brasil
+*
+Subscribe
+Visit us on Facebook
+(opens in a new tab)
+Find us on LinkedIn
+(opens in a new tab)
+Follow us on X
+(opens in a new tab)
+Subscribe our Youtube Channel
+(opens in a new tab)
+Follow us on Instagram
+(opens in a new tab)
+Sitemap
+Privacy
+Legal
+Security
+Cookie preferences
+© 2026 Zscaler, Inc.
+All rights reserved. Zscaler™ and other trademarks listed at zscaler.com/legal/trademarks are either (i) registered trademarks or service marks or (ii) trademarks or service marks of Zscaler, Inc. in the United States and/or other countries. Any other trademarks are the properties of their respective owners.
+. Zscaler uses cookies, pixels, and other tools to collect information you provide to us and to capture and record your interaction with our site. We use this information to enhance site navigation, personalize content, analyze your use of our website, and assist in our marketing efforts and customer service. To deliver the best experience and to assist with our efforts, Zscaler social media, advertising, analytics, and hosting service providers may have access to the information that you provide to us.  By clicking "Accept All," you consent to our collection, use, and disclosure of such information and to our Terms of Service. For more information about our data processing practices, please see our Privacy Policy.
+Zscaler uses cookies, pixels, and other tools to collect information you provide to us and to capture and record your interaction with our site. We use this information to enhance site navigation, personalize content, analyze your use of our website, and assist in our marketing efforts and customer service. To deliver the best experience and to assist with our efforts, Zscaler social media, advertising, analytics, and hosting service providers may have access to the information that you provide to us.  By clicking "Accept All," you consent to our collection, use, and disclosure of such information and to our 
+Terms of Service
+. For more information about our data processing practices, please see our 
+Privacy Policy
+.
+Manage Preferences
+Accept All
+Reject All

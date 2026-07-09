@@ -1,0 +1,495 @@
+I use Claude Code to set up Claude Code better, and I wouldn't have it any other way
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+3
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I use Claude Code to set up Claude Code better, and I wouldn't have it any other way
+By 
+Mahnoor Faisal
+Published
+ Apr 27, 2026, 4:30 PM EDT
+Mahnoor Faisal is a tech journalist covering AI and productivity tools with bylines at 
+XDA
+, 
+SlashGear
+, 
+MakeUseOf
+, 
+Laptop Mag
+, and 
+Android Police
+.
+
+She's been writing professionally since she was sixteen, and has since penned hundreds of articles. This includes in-depth coverage of AI tools like NotebookLM to breaking news across the AI space. Her passion for technology started when she received her first iPod Touch (4th generation) on her 8th birthday, and she's been deep in the tech world ever since.
+
+Currently pursuing a degree in computer science, Mahnoor brings both a journalist's eye and a technical foundation to her coverage of how AI is reshaping the way we work and learn. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+3
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Claude Code is simply my favorite AI tool right now. Period. I've been using it daily to build random stuff I never thought I needed, and I'm not entirely sure how I got by without it. I've also been relying on it extensively for 
+use cases that have absolutely nothing to do with coding
+, and it's massively helped me rethink what an AI tool can actually do for your productivity.
+✕
+ Remove Ads
+All that said, I know there are thousands of users subscribed to Claude plans yet they refuse to give Claude Code a proper shot. Some of the excuses I've heard are that "it's for developers only," "working in the terminal is terrifying," "setting it up is too complicated," or "I set it up and had no idea what to do next." Fair enough — I used to think the same thing. For the longest time, I thought navigating to a folder, typing 
+claude
+ in the terminal, and prompting was the best I could do. That is, until I realized Claude Code could help me set itself up properly.
+Want to stay in the loop with the latest in AI? The XDA AI Insider newsletter drops weekly with deep dives, tool recommendations, and hands-on coverage you won't find anywhere else on the site. Subscribe by 
+modifying your newsletter preferences
+!
+
+                        I first asked Claude Code to audit my existing configuration
+               
+
+            Let Claude Code judge you first
+    
+When you're using a GUI-based tool, it's fairly easy to see what settings you already have enabled and what you've disabled. After all, there's a clear toggle or checkbox staring right at you. With terminal-based tools like Claude Code, though, it's not always obvious what you've configured and what you haven't. While one option is going through the documentation or slash commands and trying to piece it all together yourself, there's a much easier way — just ask Claude Code to tell you. Here's the exact prompt I used:
+Hey, can you audit my current Claude Code setup and tell me which settings or configurations I'm missing that would actually make a difference? 
+✕
+ Remove Ads
+Now, keep in mind that I created an empty folder for just this purpose instead of working within an existing project, so some of Claude's findings weren't really applicable since I do use those features, just not within that empty project. For instance, the missing 
+CLAUDE.md
+ and GitHub repo weren't really applicable here since I already use those in my actual projects. The audit did surface features I had no idea existed or just hadn't bothered setting up, though.
+For instance, 
+claude-memory is a feature I've heard about a lot
+, and while I have it set up on the standard Claude chat interface, I never configured it for Claude Code. It also recommended the /fewer-permission-prompts slash command, which I had no idea existed and which cuts down on those constant permission pop-ups that slow you down! Another setting it told me power users benefit from is custom keybindings, which are basically keyboard shortcuts for slash commands you use all the time so you're not typing them out every session.
+Now, the cool part is I didn't need to bother figuring out how to set these recommendations up later. Given Claude Code's agentic abilities, it can actually do the setup for you right there in the same session. I asked it to set up memory and run the /fewer-permission-prompts command. It also flagged how my global settings only had two commands allowlisted and recommended broadening those patterns to reduce friction across projects. So, I asked Claude Code to fix that too.
+✕
+ Remove Ads
+
+                        I ask Claude Code to set up MCP servers too
+               
+
+            Plug it in, I'm not going to
+    
+If you think all Claude Code can do is spin up lines of code and turn them into impressive-looking tools, then I need to break it to you: you're seriously underestimating it. Claude gets a lot more powerful when you begin connecting it to the tools you rely on daily, and the easiest way to do that within Claude Code is through MCP servers. If you aren't familiar with MCP servers, they're an open standard that lets AI tools connect directly to external services like GitHub, Slack, Notion, and basically anything with an API.
+Given that it's an open standard, you'll find a mix of MCP servers built by the companies themselves and others built by the community. That said, despite how powerful these servers are and the possibilities you can unlock when you pair them with Claude, they can sometimes be a pain to set up and configure. You might need to edit some JSON files here and there to ensure the MCP server works properly. In fact, hunting for the right server or finding out if an official one even exists for the tool you have in mind can be annoying too.
+Related
+
+			I switched from Claude Code to Codex for a week, and the trade-offs surprised me
+		
+One week, two tools, a lot of opinions.
+Posts
+28
+By 
+Mahnoor Faisal
+Apr 21, 2026
+✕
+ Remove Ads
+So, instead of doing all that, I simply tell Claude Code which service I want to connect and ask it to handle it. It finds the relevant GitHub repo, installs the server, and configures everything, all without me touching a single config file. For instance, I asked it to connect the 
+NotebookLM MCP server for me
+ (an unofficial one) and it found the GitHub repo and set the entire thing up. When it ran into an issue, it even troubleshot the problem and resolved it automatically.
+
+                        Claude Code also sets up Skills for me
+               
+
+            Teaching the teacher to teach itself
+    
+Skills is one of the most underrated Claude features
+, and I genuinely don't remember the last time I set one up myself. If you aren't familiar with what Claude Skills are, they're basically saved instructions that tell the tool exactly how you want certain tasks done every time. Similar to MCP servers, there are a few skills built by Anthropic itself and a bunch you can find online on X, GitHub, and other places where the Claude community hangs out.
+Setting up a custom Claude Skill within the Claude interface is fairly simple, but within Claude Code, you need to create a markdown file, add certain fields to it in the right format, and save it in the right directory. Not hard, but not something I want to bother with. Similarly, if you want to download a skill someone else created, you need to find it, download the file, and manually place it in the right folder. Again, not difficult, but not something I want to bother with.
+✕
+ Remove Ads
+
+                    Subscribe for in-depth Claude Code and AI tool coverage
+                
+Get the newsletter to unlock hands-on coverage: practical setup guides, MCP server connections, Skill installations, and 
+CLAUDE.md
+ workflows explained and curated so you can replicate what works. Subscribe to receive focused AI tool coverage.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+So, you guessed it — I just ask Claude Code to do it for me. Whether I want to create a custom skill from scratch or install one I found online, I just describe what I need, and Claude Code creates the markdown file, formats it correctly, and drops it in the right directory. The best part is when I find a skill someone shared on X or GitHub, all I need to do is paste the link, tell Claude Code to install it, and it's done in seconds.
+
+                        Claude Code helps me write CLAUDE.MD files too
+               
+
+            Dear diary, here's how I work
+    
+I mentioned above that Claude Code advised me to set up a 
+CLAUDE.md
+ file when I conducted the audit, and while that wasn't applicable to my empty test folder, it got me thinking about how I write them in general. Honestly, I used to just run /init, let Claude generate a basic one, maybe tweak a line or two, and call it a day. But I started asking Claude Code to actually read through my codebase and write a proper 
+CLAUDE.md
+ based on what it found.
+Related
+
+			I set up Claude Code the way its creator does, and the difference is night and day
+		
+Who better to learn from than the person who made it?
+Posts
+18
+By 
+Mahnoor Faisal
+Mar 16, 2026
+It made a bigger difference than I would've thought! It picked up on patterns I didn't really think about, and the sessions that followed were significantly smoother because Claude already understood my project's conventions going in. Now, whenever I start a new project, the first thing I do is ask Claude Code to write the 
+CLAUDE.md
+ for me based on instructions I've shared. And as a project goes on, I ask it to update the file to reflect whatever's changed.
+✕
+ Remove Ads
+
+            Best way to set up Claude Code? Ask Claude Code
+    
+If a tool is good enough to build with, it should be good enough to build itself with. After all, if Claude Code is being used to build Claude Code, it can definitely handle setting itself up for you.
+AI tools
+Claude
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			Forget Cursor and Claude Code, Google Antigravity is the perfect example of vibe coding
+		
+
+			I replaced the expensive Claude Pro subscription with these local models, and my productivity didn’t drop a bit
+		
+
+			My favorite alternative to Office 365 isn’t LibreOffice – it’s something way cooler
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+3
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Ивайло
+Ивайло
+Ивайло
+#EZ346434
+Member since 2023-11-06
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Sorry but I stopped reading on your first prompt - "Hey, can you...". This and this alone means you know absolutely nothing of how LLMs and the scripts around them work and thus invalidating most of what you said after that...
+2026-04-30 11:09:44
+Upvote
+Downvote
+Reply
+
+                        2
+                    
+Copy
+        
+Beya
+Beya
+Beya
+#QG239319
+Member since 2026-05-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Stop hating bro
+2026-05-02 13:29:39
+Upvote
+Downvote
+Reply
+Copy
+        
+waqas
+waqas
+waqas
+#ST356566
+Member since 2024-05-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Casual phrasing doesn't change how the model parses the request, instruction-tuned models like Claude handle natural language fine. Anthropic's own Claude Code docs and Boris Cherny's demos use the same conversational style
+2026-05-03 05:45:33
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 26, 2026
+
+                                    I cancelled expensive subscriptions by using these amazing free alternatives
+                            
+Apr 26, 2026
+
+                                    KDE Plasma 6.7 is bringing better performance and battery life to Intel laptops
+                            
+Apr 25, 2026
+
+                                    You weren't imagining it — Claude Code really did get worse, and Anthropic just explained why
+                            
+Apr 24, 2026
+
+                                    Claude wants to rule your personal life now
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            Windows XP's Secret Themes
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:32
+
+                            Mac OS X launch: 25 years later
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:26
+
+                            Id Software's Quake turns 30
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:10
+Skip Ad
+5

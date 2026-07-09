@@ -1,0 +1,328 @@
+OpenAI CEO Sam Altman warns ‘AI washing’ is real, but tech-related job displacement is on the way | Fortune
+Search
+Subscribe for $1
+Subscribe for $1
+Sign in
+Home
+Latest
+Fortune 500
+Finance
+Tech
+Leadership
+Lifestyle
+Rankings
+Multimedia
+AI
+Labor
+Sam Altman says the quiet part out loud, confirming some companies are ‘AI washing’ by blaming unrelated layoffs on the technology
+By 
+Sasha Rogelberg
+Sasha Rogelberg
+Reporter
+Down Arrow Button Icon
+By 
+Sasha Rogelberg
+Sasha Rogelberg
+Reporter
+Down Arrow Button Icon
+May 3, 2026, 8:27 AM ET
+Add us on
+OpenAI CEO Sam Altman said “AI washing” is a reality for some companies, but real displacement from the technology is on its way.
+Prakash Singh—Bloomberg/Getty Images
+As debate continues over AI’s true impact on the labor force, OpenAI CEO Sam Altman said some companies are engaging in “
+AI washing
+” when it comes to layoffs, or falsely attributing workforce reductions to the technology’s impact.
+Recommended Video
+“I don’t know what the exact percentage is, but there’s some AI washing where people are blaming AI for layoffs that they would otherwise do, and then there’s some real displacement by AI of different kinds of jobs,” Altman 
+told CNBC-TV18
+ at the India AI Impact Summit in February.
+AI washing has gained traction as emerging data about the tech’s impact on the labor market tells a muddied, inconclusive story about how the technology is destroying human jobs—or if it has yet to touch them. 
+A 
+study
+ published in February by the National Bureau of Economic Research, for example, found that of thousands of surveyed C-suite executives across the U.S., the U.K., Germany, and Australia, 
+nearly 90% said AI had no impact
+ on workplace employment over the past three years following the late-2022 release of ChatGPT. 
+However, prominent tech leaders like Anthropic CEO Dario Amodei have warned of a white-collar bloodbath, with AI potentially 
+wiping out 50% of entry-level office jobs
+. Others like 
+Snap
+ CEO Evan Spiegel have already made workforce reductions citing AI, announcing in April the company would 
+lay off about 1,000 staff members
+, or about 16% of its workforce. Around 40% of employers expect to follow Spiegel’s lead in culling staff down the line as a result of AI, according to the 2025 
+World Economic Forum Future of Jobs Report
+. 
+Altman clarified he anticipates more job displacement as a result of AI, as well as the emergence of new roles complementing the technology.
+“We’ll find new kinds of jobs, as we do with every tech revolution,” he said. “But I would expect that the real impact of AI doing jobs in the next few years will begin to be palpable.”
+What are the signs of AI washing?
+Data from a recent 
+Yale Budget Lab report
+ suggests Altman and Amodei’s vision of mass worker displacement from AI is not certain and is not yet here. Using data from the Bureau of Labor Statistics’ Current Population Survey, the research found no significant differences in the rate of change of occupations’ mix or length of unemployment for individuals with jobs that have high exposure to AI from the release of ChatGPT through March 2026. The numbers suggested no significant AI-related labor changes at this juncture.
+“No matter which way you look at the data, at this exact moment, it just doesn’t seem like there’s major macroeconomic effects here,” Martha Gimbel, executive director and cofounder of the Yale Budget Lab, recently 
+told 
+Fortune
+.
+Gimbel attributed the practice of AI washing to companies passing off diminished margins and revenue from a failure to effectively navigate cautious consumers and geopolitical tensions to AI. WebAI founder and CEO David Stout also wrote in a 
+commentary piece for 
+Fortune
+ tech founders are facing increased pressure to justify exorbitant and continued investment in AI, which is the reason why many have created narratives of AI disrupting labor and the economy through predictions of mass worker displacement.
+This era of toe-tapping in wait for the effects of AI to take hold 
+rhymes with the 1980s IT boom
+, according to 
+Apollo Global Management
+ chief economist Torsten Slok. Nearly 40 years ago, economist and Nobel laureate Robert Solow observed little productivity gains in the PC age, despite prognostications of a productivity surge, and Slok sees a similar pattern today.
+“AI is everywhere except in the incoming macroeconomic data,” he wrote in a 
+blog post
+.
+Is there evidence of AI’s impact on jobs?
+Slok also said this lull in AI-driven economic impact could follow a J-curve of an initial slowdown in performance obscured by early mass spending before an exponential surge in productivity and labor changes.
+Economist and Stanford University’s Digital Economy Lab director Erik Brynjolfsson said in a 
+Financial Times
+ op-ed
+ recent labor data may be telling a new story of AI indeed impacting productivity and labor. He noted a 
+decoupling of job growth and GDP growth
+ reflected in the latest revised job numbers: Last week’s jobs report revised down job gains to just 181,000, despite fourth-quarter GDP tracking up 3.7%. Brynjolfsson’s own analysis revealed a 2.7% year-over-year productivity jump last year, which he attributed to AI’s productivity benefits beginning to peek through.
+Brynjolfsson published a 
+landmark study
+ last year showing a 13% relative decline in employment for early-career employees with jobs with high levels of AI exposure. Most experienced workers, meanwhile, saw employment levels that remained stable or grew. 
+“The updated 2025 U.S. data suggests we are now transitioning out of this investment phase into a harvest phase,” he wrote in the 
+FT
+, “where those earlier efforts begin to manifest as measurable output.”
+A version of this story was published on Fortune.com on Feb. 19, 202
+6.
+More on AI and jobs:
+A 
+160-year-old paradox
+ explains why AI will create more lawyers and accountants—not fewer, top economist says
+Salesforce
+ CEO Marc Benioff says 
+AI won’t kill entry-level jobs
+. He’s hiring 1,000 new grads to prove it
+AI is 
+cutting 16,000 U.S. jobs a month
+—and Gen Z is taking the brunt, Goldman Sachs says
+In 2001, Fortune first convened the smartest people we know, bringing together CEOs and founders, builders and investors, thinkers and doers. Since then, 
+Fortune Brainstorm Tech
+ has been the place where bold ideas collide. From 
+June 8–10
+, we will return to 
+Aspen
+—where it all began—to mark 25 years of Brainstorm. 
+Register now
+.
+About the Author
+By 
+Sasha Rogelberg
+Reporter
+LinkedIn icon
+Twitter icon
+Sasha Rogelberg is a reporter and former editorial fellow on the news desk at 
+Fortune
+, covering retail and the intersection of business and popular culture.
+See full bio
+Right Arrow Button Icon
+Latest in AI
+AI
+Qualcomm
+Qualcomm’s CEO is working with ‘pretty much all’ major AI players on top-secret devices—and powering OpenAI’s first push into hardware
+By 
+Eva Roytburg
+May 9, 2026
+11 hours ago
+Commentary
+Retirement
+Tim Cook and Reed Hastings just showed every CEO how to leave gracefully
+By 
+Paul Hardart
+May 9, 2026
+13 hours ago
+Future of Work
+Tech
+Companies are abandoning ‘peanut butter’ raises as pay-for-performance takes over the workplace in the AI era
+By 
+Marco Quiroz-Gutierrez
+May 9, 2026
+14 hours ago
+AI
+Banks
+Goldman Sachs’ tech boss says tracking individual AI usage isn’t useful. He just watches how fast his 12,000 engineers move from idea to production
+By 
+Marco Quiroz-Gutierrez
+May 8, 2026
+1 day ago
+Economy
+Jobs
+The job market is healing for everyone—except in the office
+By 
+Eva Roytburg
+May 8, 2026
+1 day ago
+AI
+Anthropic
+Anthropic grew 80-fold in a single quarter. Now it’s renting Elon Musk’s data center to cope
+By 
+Marco Quiroz-Gutierrez
+May 8, 2026
+1 day ago
+Most Popular
+North America
+California farmers must destroy 420,000 peach trees after Del Monte closes its canneries and cancels more than $550 million in long-term contracts
+By 
+Sasha Rogelberg
+May 7, 2026
+2 days ago
+Magazine
+A Michigan farm town voted down plans for a giant OpenAI-Oracle data center. Weeks later, construction began
+By 
+Sharon Goldman
+May 6, 2026
+4 days ago
+Energy
+The CEO of Maersk, which ships 14% of everything you buy, said the Iran war is adding $500 million in monthly costs it's trying not to pass down
+By 
+Sasha Rogelberg
+May 8, 2026
+1 day ago
+Personal Finance
+Current price of oil as of May 8, 2026
+By 
+Joseph Hostetler
+May 8, 2026
+1 day ago
+Arts & Entertainment
+'Blue dot fever' plagues musicians like Post Malone, Meghan Trainor, and Zayn as a growing list of artists cancel tours due to lagging ticket sales
+By 
+Dave Lozo
+ and 
+Morning Brew
+May 7, 2026
+2 days ago
+Politics
+You're probably safe from the Hantavirus outbreak, but here's what you absolutely must not do, experts say
+By 
+Catherina Gioino
+May 8, 2026
+1 day ago
+Fortune Secondary Logo
+Rankings
+100 Best Companies
+Fortune 500
+Global 500
+Fortune 500 Europe
+Most Powerful Women
+World's Most Admired Companies
+See All Rankings
+Lists Calendar
+Sections
+Finance
+Fortune Crypto
+Features
+Leadership
+Health
+Commentary
+Success
+Retail
+Mpw
+Tech
+Lifestyle
+CEO Initiative
+Asia
+Politics
+Conferences
+Europe
+Newsletters
+Personal Finance
+Environment
+Magazine
+Education
+Customer Support
+Frequently Asked Questions
+Customer Service Portal
+Privacy Policy
+Terms Of Use
+Single Issues For Purchase
+International Print
+Commercial Services
+Advertising
+Fortune Brand Studio
+Fortune Analytics
+Fortune Conferences
+Business Development
+Group Subscriptions
+About Us
+About Us
+Press Center
+Work At Fortune
+Terms And Conditions
+Site Map
+Rankings
+Sections
+Customer Support
+Commercial Services
+About Us
+Press Center
+Work At Fortune
+Terms And Conditions
+Site Map
+Facebook icon
+Twitter icon
+LinkedIn icon
+Instagram icon
+Pinterest icon
+© 2026 Fortune Media IP Limited. All Rights Reserved. Use of this site constitutes acceptance of our 
+Terms of Use
+ and 
+Privacy Policy
+ | 
+CA Notice at Collection and Privacy Notice
+ | 
+Do Not Sell/Share My Personal Information
+
+FORTUNE is a trademark of Fortune Media IP Limited, registered in the U.S. and other countries. FORTUNE may receive compensation for some links to products and services on this website. Offers may be subject to change without notice.
+Your Privacy Rights 
+When you visit our website, we may place cookies or other tracking technologies, such as pixels, on your computer, phone, device or browser, as applicable. These technologies may collect information from you, including your personal information, such as your IP address or device identifier. We use these technologies to make the site work as you expect it to, to provide a more personalized web experience, to analyze activity on our site, and in some cases, for targeted advertising. You can manage your cookie settings below. You cannot opt-out of Strictly Necessary Cookies.
+
+To opt out of sales of personal information, please click 
+here
+.
+
+Allow All
+ Manage Consent Preferences
+Strictly Necessary Cookies
+Always Active
+These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work.
+Sharing of Personal Information for Targeted Advertising
+Sharing of Personal Information for Targeted Advertising
+You may exercise your right to opt out of the sale or sharing of personal information by using this toggle switch. We collect this data for analytics and to personalize your experience, allowing us to show you tailored offers, ads or content. Note that if you opt out, this may affect our ability to personalize ads according to your preferences. You may still see ads, but they may not be personalized to you.
+Social Media Cookies
+Switch Label
+label
+These cookies are set by a range of social media services that we have added to the site to enable you to share our content with your friends and networks. They are capable of tracking your browser across other sites and building up a profile of your interests. This may impact the content and messages you see on other websites you visit. If you do not allow these cookies you may not be able to use or see these sharing tools.
+Targeting Cookies
+Switch Label
+label
+Cookies of this category may be set on our website and are used to display personalized content to you that is believed to be in line with your interests. They are based on uniquely identifying your browser and internet device. For example, these cookies help us to provide information to you that is especially relevant to you.
+Performance Cookies
+Switch Label
+label
+These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. If you do not allow these cookies, we will not know when you have visited our site and will not be able to monitor its performance.
+Back Button
+Cookie List
+Search Icon
+Filter Icon
+Clear
+checkbox label
+label
+Apply
+Cancel
+Consent
+Leg.Interest
+checkbox label
+label
+checkbox label
+label
+checkbox label
+label
+Reject All
+Confirm My Choices
+search by queryly 
+Advanced Search

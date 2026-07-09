@@ -1,0 +1,736 @@
+I turned off three browser defaults, and my ISP suddenly couldn't track my web history anymore
+Menu
+Sign in now
+Close
+PC & Mobile
+Submenu
+Windows2
+Linux
+Android
+Apple
+Technical
+Submenu
+Tech Explained
+Security
+Software
+Submenu
+Productivity
+Internet
+Creative
+Screen
+Submenu
+Entertainment
+Streaming
+Home
+Submenu
+Smart Home
+Home
+News
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+4
+More Action
+Sign in now
+Productivity
+Android
+Smart TVs
+Networking
+Windows 11
+Entertainment
+Close
+I turned off three browser defaults, and my ISP suddenly couldn't track my web history anymore
+By 
+Gavin Phillips
+Published
+ Apr 29, 2026, 11:00 AM EDT
+Gavin is the Segment Lead for the Technology Explained, Security, Internet, Streaming, and Entertainment verticals, former co-host on the Really Useful Podcast, and a frequent product reviewer. He has a degree in Contemporary Writing pillaged from the hills of Devon, more than a decade of professional writing experience, and his work has appeared on 
+How-To Geek
+, 
+Expert Reviews
+, 
+Trusted Reviews
+, 
+Online Tech Tips
+, and 
+Help Desk Geek
+, among others. Gavin has attended CES, IFA, MWC, and other tech-trade shows to report directly from the floor, racking up hundreds of thousands of steps in the process. He's reviewed more headphones, earbuds, and mechanical keyboards than he cares to remember, and enjoys copious amounts of tea, board games, and football. 
+Sign in to your 
+MakeUseOf
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+4
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Your ISP can see everything you do online. Every site, search, and click is diligently logged by the company that provides your internet connection, logging your online presence. Maybe it's for analysis, but maybe it's waiting to be sold to the highest bidder at a later date.
+✕
+ Remove Ads
+The good news is that you don't always need to do a great deal to claw back some privacy, and it doesn't involve downloading any more software. Instead, there are a few browser-based privacy settings you can tweak to stop your ISP from snooping on most of what you do online.
+Related
+
+			I ran a DNS speed test and Google's 8.8.8.8 wasn't even in the top two
+		
+The only way to find the fastest DNS is to test it yourself.
+Posts
+21
+By 
+Pankil Shah
+Apr 23, 2026
+
+                        What your ISP can see when you're browsing the internet
+               
+
+            Everywhere you go, your ISP will know
+    
+To get online, you typically need an Internet Service Provider (ISP) to connect you. You're basically asking a telecoms provider to hook you up to the World Wide Web and everything that comes with it. But that comes with some trade-offs, not least that they log pretty much everything you do.
+That's not always because your ISP is hell-bent on exposing your data. Often, the powers-that-be demand ISPs log data because it turns out that tracking everything we do online is a really easy way to keep general tabs on the population. And in certain countries, that tracking goes even further.
+Without protection or changing any settings, your ISP can see a broad spectrum of your online activity.
+Data Type
+Can Your ISP See It?
+What It Reveals
+Privacy Impact
+DNS requests
+Yes (by default)
+Exact websites you visit (e.g., 
+example.com
+)
+🔴 High
+Full URLs (HTTPS)
+No
+Specific pages (e.g.,/account/settings) are hidden
+🟢 Low
+Website content
+No
+What you read, type, or watch is encrypted
+🟢 Low
+IP addresses you connect to
+Yes
+General idea of which service/platform you're using
+🟡 Medium
+Unencrypted HTTP traffic
+Yes
+Everything (rare, but still exists)
+🔴 High
+Data usage
+Yes
+How much data you use and rough activity patterns
+🟡 Medium
+Connection timestamps
+Yes
+When you’re online, and for how long
+🟡 Medium
+Search queries
+Sometimes
+Can leak via DNS or browser features
+🔴 High
+Encrypted DNS (DoH/DoT)
+No
+Hides domain lookups from your ISP
+🟢 Low
+✕
+ Remove Ads
+That's why making tweaks to your browser is so worthwhile. You won't become completely invisible, but it cuts off some of the biggest and easiest ways your browsing is tracked.
+Quiz
+8 Questions · Test Your Knowledge
+MUO's Wi-Fi security features and myths quiz
+Think you know how to keep your network safe? Separate fact from fiction in this WiFi security quiz.
+Encryption
+Myths
+Protocols
+Networks
+Threats
+Begin
+01 / 8
+Protocols
+Which WiFi security protocol is considered the most secure for home networks as of 2024?
+A
+WEP
+B
+WPA
+C
+WPA2
+D
+WPA3
+Correct! WPA3 is the latest and most robust WiFi security protocol, introduced by the Wi-Fi Alliance in 2018. It offers stronger encryption and better protection against brute-force attacks compared to its predecessors.
+Not quite — the answer is WPA3. While WPA2 is still widely used and reasonably secure, WPA3 brings significant improvements including 192-bit encryption and Simultaneous Authentication of Equals (SAE), making it the gold standard for modern networks.
+Continue
+02 / 8
+Myths
+Hiding your WiFi network's SSID (making it not broadcast its name) is an effective security measure. Is this true or false?
+A
+True — hidden networks are invisible to attackers
+B
+False — hidden SSIDs can still be detected with basic tools
+C
+True — it prevents all unauthorized connections
+D
+False — hiding the SSID disables encryption entirely
+Correct! Hiding your SSID is largely a myth as a security measure. Tools like Wireshark or Kali Linux can easily detect hidden networks by capturing probe requests from connected devices, making this a false sense of security.
+Not quite — hiding your SSID is actually a security myth. Any attacker using freely available network scanning tools can detect hidden networks within seconds, so relying on SSID hiding instead of strong encryption is a dangerous mistake.
+Continue
+03 / 8
+Encryption
+What does WEP stand for in the context of WiFi security?
+A
+Wireless Encryption Protocol
+B
+Wired Equivalent Privacy
+C
+Wide Encryption Privacy
+D
+Wireless Equivalence Protection
+Correct! WEP stands for Wired Equivalent Privacy, introduced in 1997 as part of the original 802.11 standard. Despite its name implying strong security, WEP was cracked and officially deprecated by the IEEE in 2004 due to serious vulnerabilities.
+Not quite — WEP stands for Wired Equivalent Privacy. The name was meant to suggest it offered security on par with a wired connection, but it fell far short of that goal and was broken by researchers, leading to its replacement by WPA.
+Continue
+04 / 8
+Myths
+Does enabling MAC address filtering on your router reliably prevent unauthorized users from joining your network?
+A
+Yes — MAC addresses are unique and cannot be duplicated
+B
+Yes — routers can verify MAC addresses at the hardware level
+C
+No — MAC addresses can be spoofed using software tools
+D
+No — MAC filtering only works on wired connections
+Correct! MAC address filtering is another widely believed security myth. Attackers can sniff the network to identify approved MAC addresses and then spoof (clone) one using simple software, bypassing the filter entirely within minutes.
+Not quite — the correct answer is that MAC addresses can be spoofed. While MAC filtering adds a minor layer of inconvenience, a determined attacker can capture legitimate MAC addresses from network traffic and impersonate them, rendering this protection largely ineffective.
+Continue
+05 / 8
+Threats
+What type of attack involves a hacker setting up a fake WiFi hotspot to intercept users' data?
+A
+Brute-force attack
+B
+Evil twin attack
+C
+Deauth flood attack
+D
+ARP poisoning attack
+Correct! An evil twin attack involves creating a rogue access point that mimics a legitimate WiFi network. Unsuspecting users connect to it thinking it's real, allowing the attacker to intercept credentials, browsing data, and sensitive communications.
+Not quite — the attack described is called an evil twin attack. It's particularly dangerous in public places like cafes and airports, where attackers clone the name of a trusted network. Always verify network authenticity and use a VPN on public WiFi.
+Continue
+06 / 8
+Protocols
+What major vulnerability was discovered in WPA2 in 2017 that shook the cybersecurity world?
+A
+The POODLE exploit
+B
+The Heartbleed bug
+C
+The KRACK attack
+D
+The BEAST exploit
+Correct! KRACK, which stands for Key Reinstallation Attack, was discovered by researcher Mathy Vanhoef in 2017. It exploited a flaw in the WPA2 four-way handshake, potentially allowing attackers to decrypt encrypted traffic on nearly any WPA2-protected network.
+Not quite — the answer is KRACK, short for Key Reinstallation Attack. This discovery was alarming because WPA2 had been considered secure for over a decade. Most device manufacturers released patches shortly after the disclosure to mitigate the vulnerability.
+Continue
+07 / 8
+Networks
+Which frequency band generally offers faster speeds but a shorter range on modern dual-band routers?
+A
+2.4 GHz
+B
+5 GHz
+C
+900 MHz
+D
+6 GHz
+Correct! The 5 GHz band offers significantly faster data speeds but has a shorter range and struggles more with walls and obstacles compared to 2.4 GHz. From a security perspective, its limited range can also mean fewer opportunities for distant attackers to intercept signals.
+Not quite — the 5 GHz band is the one that offers faster speeds with shorter range. The 2.4 GHz band travels farther and penetrates walls better, but is more congested and slower. Knowing which band to use for which device is key to balancing speed and coverage.
+Continue
+08 / 8
+Myths
+Is it true that using a VPN on public WiFi makes you completely immune to all network-based attacks?
+A
+Yes — a VPN encrypts all traffic and eliminates every threat
+B
+Yes — VPNs also protect against malware on public networks
+C
+No — VPNs reduce risks but don't protect against all attack types
+D
+No — VPNs actually make you more visible on public networks
+Correct! VPNs are a powerful tool for protecting data in transit on public WiFi, but they are not a silver bullet. They don't protect against malware, phishing, attacks targeting your VPN client itself, or DNS leaks if the VPN is misconfigured — so additional precautions are still necessary.
+Not quite — the right answer is that VPNs reduce risk but don't eliminate all threats. While a VPN encrypts your internet traffic and hides it from snoopers on the same network, it won't stop malware infections, phishing attempts, or vulnerabilities in the VPN software itself.
+See My Score
+Challenge Complete
+Your Score
+/ 8
+Thanks for playing!
+Try Again
+
+                        Stop using your ISP's default DNS settings
+               
+
+            You can easily change this in browser
+    
+Every time you visit a website, your device sends a DNS (Domain Name System) request. It’s basically asking: “What’s the IP address for this domain?” By default, that request goes through your ISP’s DNS servers, which means they can log every domain you look up.
+So, even if your browsing traffic is encrypted with HTTPS (like most web traffic now), your ISP can still see the sites you visited.
+The fix is switching to an encrypted DNS provider
+ (DNS over HTTPS — DoH), which you can enable in your browser. Instead of sending all of your DNS requests in plaintext, DoH encrypts your requests so that they're unreadable by outside sources. DoH uses the same encryption standards as those that protect your web traffic, as part of the HTTPS standard that secures most of the web.
+
+            How to enable DoH in your browser
+    
+✕
+ Remove Ads
+ Giving steps for every single browser out there would be very time-consuming, but we have a simple workaround: most browsers are Chromium-based, which means the settings and menus are very similar. I tracked down the DoH settings in the most popular browsers (Chrome, Edge, Firefox, Opera, and Vivaldi — Safari doesn't support DoH at the browser level, but it is available in macOS), and the following steps worked each time:
+
+                                        Open your browser and head to the 
+Settings
+ menu.
+                        
+
+                                        Input 
+DNS
+ in the search bar.
+                        
+
+                                        Scroll through and find the highlighted DNS sections, then toggle either 
+secure DNS
+ or 
+DNS over HTTPS
+.
+                        
+Most browsers have a dropdown menu with DoH providers, such as OpenDNS, CleanBrowsing, Google's Public DNS, Cloudflare, and more. If you're unsure, Cloudflare is always a good option.
+TIP: Don't stop with your browser DNS, as this only applies to in-browser data. 
+Applying encrypted DNS to your entire operating system
+ boosts your privacy even more.
+
+                        Turn off page preloading, network prediction, and more
+               
+
+            Send as little data as possible
+    
+ Modern browsers use a few different techniques to speed up the browsing process, such as page preloading and network prediction, which help load pages in advance so they open instantly when you click.
+The problem is that this often means your browser is making connections in the background without you explicitly visiting a site. That can include DNS lookups, preconnections to servers, and even partial page loads based on what your browser thinks you’re about to do.
+✕
+ Remove Ads
+You’re effectively generating extra browsing data that doesn’t reflect your actual activity, which can muddy the waters and leak more information than necessary. While this isn’t as directly visible to your ISP as standard DNS requests, it still increases the number of external connections your device makes.
+You can disable this with a few steps, which are applicable across Chromium browsers:
+
+                                        Head to 
+Settings > Performance
+
+                                        Scroll down to 
+Speed
+
+                                        Disable 
+Preload pages
+Your browser will stop preloading pages, giving you a tiny privacy boost.
+However, you have to consider the privacy boost versus your browsing experience feeling slower. Preloading pages in either the 
+Standard preloading
+ or more advanced 
+Extended preloading
+ modes does speed up browsing; it's down to your priorities.
+
+                        Switch on HTTPS in every situation
+               
+
+            Different names in different browsers
+    
+ Even after locking down your DNS and disabling prefetched pages, there is still one small gap left: 
+not every connection automatically uses encryption
+.
+Most modern websites support HTTPS, which encrypts the data between your device and the site you’re visiting. But in some cases—especially with older links, redirects, or mistyped URLs—your browser might still attempt to connect over HTTP first. When that happens, the connection isn’t encrypted, and your ISP can see far more than you’d expect, including the full page you’re visiting.
+
+                    Subscribe to the newsletter for practical browser privacy tips
+                
+Get clearer guidance by subscribing to our newsletter: step-by-step browser privacy fixes—encrypted DNS, stop preloading, HTTPS-only settings—practical coverage that helps reduce how much your ISP can log while using standard browser tools.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+✕
+ Remove Ads
+And that's exactly when you need a HTTPS Only Mode (Firefox) or Always use secure connections (Chrome and most Chromium-based browsers). It forces your browser to always try the secure HTTPS version of a site before anything else. If a secure connection isn’t available, your browser will either warn you or block the connection entirely, depending on your settings.
+
+                                        In Chrome, head to 
+Settings > Privacy and security > Security
+
+                                        Toggle 
+Always use secure connections
+Alternatively, if you're using Firefox:
+
+                                        Head to 
+Settings > Privacy & security
+
+                                        Then, under 
+Security
+, select 
+Enable HTTPS-Only mode in all windows
+Once enabled, your browser will automatically upgrade connections to HTTPS and alert you before connecting to a non-secure site.
+Related
+
+			I replaced my ISP's DNS without touching my router and got faster, safer browsing
+		
+You’re probably using the wrong DNS and don’t know it.
+Posts
+8
+By 
+Pankil Shah
+Apr 27, 2026
+
+                        This isn't a VPN replacement, but it's all worth doing
+               
+
+            You still need some extra security, but you're most of the way there
+    
+These changes are part of a wider focus on protecting your privacy from your ISP. In combination, they'll help to lock down your browser and protect your data, but unfortunately, it's not all you need.
+The browser changes don’t replace a VPN, and they don’t make you fully anonymous. If someone really wants to analyze your traffic, there are still ways to make educated guesses about what you’re doing.
+But most importantly, you're removing a huge amount of the default, passive tracking behavior that ISPs can pick up because 
+you do nothing at all
+.
+
+				Mozilla Firefox
+			
+OS
+
+									
+										
+											Windows, macOS, Linux, Android, iOS
+
+										
+																	
+Price model
+
+									
+										
+											Free
+
+										
+																	
+Download Firefox
+See at Google Play Store
+Expand
+Collapse
+✕
+ Remove Ads
+Security
+Browser Security
+Privacy Tips
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+
+                                                    Technology Explained
+                                            
+
+                                                    PC & Mobile
+                                            
+
+			3 tech companies that make your gadgets more expensive
+		
+2 hours ago
+
+			Your SSD does not wipe your deleted files — this is what TRIM actually does
+		
+4 hours ago
+
+			Wireless charging is finally worth using, but only if you know what to look for
+		
+5 hours ago
+See More
+
+			The Lenovo Yoga Pro 7i is a tough sell, but the display is insane
+		
+2 hours ago
+
+			I ran a Windows network reset and fixed problems I'd blamed on my router for months
+		
+6 hours ago
+
+			I switched to Gentoo Linux and now I get why it's worth the headache
+		
+10 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			I learned what Windows "Quick Format" actually does (and it’s terrifying)
+		
+
+			The USB trick that bypasses your smart TV's 100Mbps Ethernet limit
+		
+
+			I found a Windows 11 log that shows exactly what's making my PC slow — and most people don't know it exists
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+4
+Sign in to your 
+MakeUseOf
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Old
+Old
+Old
+#QT232784
+Member since 2026-04-29
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+From my decade long experience as an ISP developer, this article title is incorrect. They can still track you. Even with a VPN, the traffic still has to get directed to your area, you're only loosely masking your presence. TOR is the only truly untrackable process.
+2026-04-29 19:05:19
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Clem
+Clem
+Clem
+#OQ674170
+Member since 2026-04-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+With a VPN they know that you're doing something, not what you're doing.
+2026-04-30 08:32:15
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+Valentin
+Valentin
+Valentin
+#GH489392
+Member since 2026-05-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+And your provider still knows what you are doing, despite HTTPS encryption it has to specify SNI in handshake packet which represents clear text mane of a resource, so your provider still knows all the resources you visit
+2026-05-01 01:44:30
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+bill_nichols
+bill_nichols
+bill_nichols
+#MN365123
+Member since 2025-12-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Interesting; I did not know that. Tnx!
+2026-05-08 14:35:32
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 28, 2026
+
+                                    I stopped paying for file manager apps after discovering what Android already has
+                            
+Apr 28, 2026
+
+                                    Investment scams just cost Americans $2.1 billion — here are 4 tips to avoid them
+                            
+Apr 27, 2026
+
+                                    I disabled these Windows services Microsoft recommends – and everything works better
+                            
+Apr 27, 2026
+
+                                    I replaced my ISP's DNS without touching my router and got faster, safer browsing
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+MakeUseOf
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

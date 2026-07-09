@@ -1,0 +1,63 @@
+{
+  "article_title": "I ran a DNS speed test and Google's 8.8.8.8 wasn't even in the top two",
+  "core_thesis": "DNS performance is not universal; the fastest DNS server depends on location, ISP routing, and real-time network conditions. Relying on popular recommendations like Google DNS (8.8.8.8) or Cloudflare (1.1.1.1) without testing on your own connection can lead to suboptimal speed. The article advocates for running personalized DNS speed tests using browser-based tools like DNS Speed Test, which uses DNS-over-HTTPS and warms up servers to simulate real-world browsing. It also emphasizes that speed is not the only factor—privacy, security features (e.g., blocking malicious domains), and consistency matter when choosing a DNS provider.",
+  "detailed_summary": "The article describes the author's experience testing DNS servers using a browser-based tool called DNS Speed Test, which measures response times via DNS-over-HTTPS (DoH) from the user's actual network. The tool warms up each server before measuring to avoid penalizing cold starts. In the author's test, neither Google DNS (8.8.8.8) nor Cloudflare (1.1.1.1) topped the list, illustrating that DNS performance is highly dependent on local factors. The article advises running the test multiple times a day, clearing the DNS cache, and including less popular websites in the test list to get accurate results, as popular domains are aggressively cached by DNS servers. Beyond speed, the article highlights privacy benefits of switching from ISP DNS (which can log browsing history) and additional features like ad blocking and malware filtering offered by some providers. The comments section includes a mix of skepticism about the practical impact of DNS speed (with some arguing the difference is negligible) and support from network professionals who note that stability and security were the original reasons for recommending Google DNS, not speed. One commenter mentions using dnscrypt-proxy to automatically select the fastest DoH-capable server on each boot.",
+  "entities": [
+    {
+      "name": "Google DNS",
+      "type": "organization",
+      "role": "Public DNS resolver (8.8.8.8) commonly recommended for speed and reliability."
+    },
+    {
+      "name": "Cloudflare",
+      "type": "organization",
+      "role": "Public DNS resolver (1.1.1.1) known for speed and privacy."
+    },
+    {
+      "name": "DNS Speed Test",
+      "type": "software",
+      "role": "Browser-based tool that tests DNS response times using DoH from the user's network."
+    },
+    {
+      "name": "GRC DNS Benchmark",
+      "type": "software",
+      "role": "Downloadable DNS benchmarking tool mentioned as an alternative."
+    },
+    {
+      "name": "DNSPerf",
+      "type": "software",
+      "role": "Global DNS performance monitoring service."
+    },
+    {
+      "name": "Pankil Shah",
+      "type": "person",
+      "role": "Author of the article, a freelance technology writer."
+    }
+  ],
+  "key_data_points": [
+    "DNS performance varies by location, ISP routing, and network congestion; the fastest server for one user may not be fastest for another. (🟢 Relevant to Red Teaming: understanding DNS behavior can help in planning DNS-based attacks or evasion techniques.)",
+    "The DNS Speed Test tool uses DNS-over-HTTPS (DoH) and warms up each server before measuring to simulate real-world browsing conditions. (🟢 Relevant to homelab/DevOps: can be used to benchmark DNS performance in lab environments.)",
+    "The author found that Google DNS (8.8.8.8) was not in the top two fastest servers on their connection, contradicting common assumptions. (🟢 Relevant to general networking: highlights the need for empirical testing.)",
+    "Running the test only once is insufficient; multiple tests at different times are needed to account for network variability. (🟢 Relevant to students: applies to any performance measurement methodology.)",
+    "The default test list includes only popular websites (Google, YouTube, Facebook, ChatGPT, Reddit), which are aggressively cached; adding less popular sites yields more accurate results. (🟢 Relevant to homelab/DevOps: important for realistic benchmarking.)",
+    "Clearing the DNS cache before testing prevents skewed results from previously stored records. (🟢 Relevant to programming: cache invalidation is a common challenge.)",
+    "Switching DNS servers can improve privacy by preventing ISP logging, and some providers offer ad blocking and malware filtering. (🟢 Relevant to Red Teaming: privacy-focused DNS can hinder traffic analysis; also useful for securing homelab.)",
+    "A commenter notes that the original reason for recommending Google DNS was stability and security, not speed—a point often lost in marketing. (🟢 Relevant to Red Teaming: understanding historical context helps in threat modeling.)"
+  ],
+  "methodology_steps": [
+    "Open the DNS Speed Test tool in a browser (no download required).",
+    "Click 'Run Speed Test' to begin. The tool will warm up each DNS server by sending preliminary queries, then measure response times using DoH.",
+    "Wait for the test to complete (less than a minute). Review the top three DNS providers ranked by average response time in milliseconds.",
+    "Scroll down to see a table with minimum, maximum, median, and average speeds for each provider. Focus on consistency (low variance) as well as raw speed.",
+    "For more accurate results: run the test multiple times a day, clear your DNS cache before each run, and edit the list of test websites to include less popular domains you frequently visit.",
+    "To change DNS servers on your system, go to network settings and replace the default DNS with the IP addresses of the fastest server from your test (e.g., 1.1.1.1 for Cloudflare, 9.9.9.9 for Quad9)."
+  ],
+  "conclusions": [
+    "DNS speed is not one-size-fits-all; users should test on their own connection rather than relying on generic recommendations. The article's test showed that Google DNS was not the fastest, reinforcing the need for personalized benchmarking.",
+    "Speed is only one factor; privacy, security features (e.g., blocking malicious domains), and reliability are equally important when choosing a DNS provider. Switching from ISP DNS can prevent browsing history logging.",
+    "The comments reveal a divide: some argue the speed difference is negligible for typical browsing, while network professionals emphasize that stability and security were the original reasons for using public DNS. The article's methodology (using DoH, warming up servers) is sound but may not reflect all real-world scenarios."
+  ],
+  "personal_relevance_summary": "This article is directly relevant to your networking and homelab interests, as it provides a practical method for benchmarking DNS performance on your own connection. As a programmer and Red Teamer, understanding DNS behavior is crucial for both offensive operations (e.g., DNS tunneling, cache poisoning) and defensive hardening (e.g., choosing a secure, fast resolver). The article also touches on privacy and security features of DNS providers, which can be leveraged in your homelab to block malicious domains. The step-by-step testing methodology is easy to replicate and can be automated in scripts for continuous monitoring. Additionally, the discussion in the comments about the historical reasons for using Google DNS (stability over speed) offers valuable context for threat modeling.",
+  "extra_advice": "Consider automating DNS speed tests using a script that runs the DNS Speed Test tool (or a CLI alternative like `dnscrypt-proxy` with its built-in benchmarking) and logs results over time. This can help you identify patterns and choose the best DNS server for your homelab or Red Team infrastructure. Also, explore using a local DNS resolver like Pi-hole or Unbound to cache queries and reduce reliance on external DNS, which can improve both speed and privacy.",
+  "source_url": "https://www.makeuseof.com/run-dns-speed-test/"
+}

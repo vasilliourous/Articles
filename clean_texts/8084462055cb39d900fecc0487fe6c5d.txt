@@ -1,0 +1,621 @@
+New AirSnitch attack bypasses Wi-Fi encryption in homes, offices, and enterprises - Ars Technica
+Privacy Center
+Currently, only residents from GDPR countries and certain US states can opt out of Tracking Technologies through our Consent Management Platform. Additional options regarding these technologies may be available on your device, browser, or through industry options like AdChoices. Please see our Privacy Policy for more information.
+Social Media
+On
+These cookies are set by a range of social media services that we have added to the site to enable you to share our content with your friends and networks. They are capable of tracking your browser across other sites and building up a profile of your interests. This may impact the content and messages you see on other websites you visit.  If you do not allow these cookies you may not be able to use or see these sharing tools.
+Essential
+On
+This website uses essential cookies and services to enable core website features and provide a seamless user experience. These cookies and services are used to facilitate features such as navigation, remember user preferences, and ensure the security of the website.
+Targeted
+On
+These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.
+Performance
+On
+These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.
+Functional
+On
+This website uses functional cookies and services to remember your preferences and choices, such as language preferences, font sizes, region selections, and customized layouts. They enable this website to offer enhanced and personalized functionalities.
+Audience Measurement
+On
+We use audience measurement cookies in order to carry out aggregated traffic measurement and generate performance statistics essential for the proper functioning of the site and the provision of its content (for example to measure performance, to detect navigation problems, to optimization technical performance or ergonomics, to estimate server power needed and to analyse content performance). The use of these cookies is strictly limited to measuring the site's audience. These cookies do not allow the tracking of navigation on other websites and the data collected is not combined or shared with third parties. You can refuse the use of this cookie by switching off the slider to the right.
+OK
+English
+Deutsch
+Español
+Français
+Italiano
+日本語
+繁體中文
+en
+Privacy Policy
+Powered by
+
+  Skip to content
+
+Ars Technica home
+
+            Sections
+            
+
+                Forum
+              
+
+                  Subscribe
+                
+
+                Search
+              
+
+                    AI
+                  
+
+                    Biz & IT
+                  
+
+                    Cars
+                  
+
+                    Culture
+                  
+
+                    Gaming
+                  
+
+                    Health
+                  
+
+                    Policy
+                  
+
+                    Science
+                  
+
+                    Security
+                  
+
+                    Space
+                  
+
+                    Tech
+                  
+
+                  Feature
+                
+
+                  Reviews
+                
+
+            AI
+          
+
+            Biz & IT
+          
+
+            Cars
+          
+
+            Culture
+          
+
+            Gaming
+          
+
+            Health
+          
+
+            Policy
+          
+
+            Science
+          
+
+            Security
+          
+
+            Space
+          
+
+            Tech
+          
+
+      Forum
+    
+
+        Subscribe
+      
+Story text
+Size
+Small
+Standard
+Large
+Width
+      
+*
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+
+            Pin to story
+          
+Theme
+
+                HyperLight
+              
+
+                Day & Night
+              
+
+                Dark
+              
+
+                System
+              
+Search
+
+    Sign In
+  
+
+            Sign in dialog...
+          
+
+      Sign in
+    
+
+    CLOWNS TO THE LEFT, JOKERS TO THE RIGHT
+  
+
+      New AirSnitch attack bypasses Wi-Fi encryption in homes, offices, and enterprises
+    
+
+      That guest network you set up for your neighbors may not be as secure as you think.
+    
+
+    Dan Goodin
+  
+
+  –
+  
+Feb 26, 2026 3:45 PM
+|
+
+    167
+  
+
+          Credit:
+
+          
+          Getty Image | BlackJack3D
+
+                  
+
+          Credit:
+
+          
+          Getty Image | BlackJack3D
+
+                  
+Text
+        settings
+Story text
+Size
+Small
+Standard
+Large
+Width
+      
+*
+Standard
+Wide
+Links
+Standard
+Orange
+* Subscribers only
+Learn more
+
+            Minimize to nav
+          
+It’s hard to overstate the role that Wi-Fi plays in virtually every facet of life. The organization that shepherds the wireless protocol 
+says
+ that more than 48 billion Wi-Fi-enabled devices have shipped since it debuted in the late 1990s. One 
+estimate
+ pegs the number of individual users at 6 billion, roughly 70 percent of the world’s population.
+Despite the dependence and the immeasurable amount of sensitive data flowing through Wi-Fi transmissions, the history of the protocol has been 
+littered
+ with security landmines stemming both from the inherited confidentiality weaknesses of its networking predecessor, Ethernet (it was once possible for anyone on a network to 
+read and modify
+ the traffic sent to anyone else), and the ability for anyone nearby to receive the radio signals Wi-Fi relies on.
+Ghost in the machine
+In the early days, public Wi-Fi networks often resembled the Wild West, where 
+ARP spoofing
+ attacks that allowed renegade users to read other users’ traffic were common. The solution was to build cryptographic protections that prevented nearby parties—whether an authorized user on the network or someone near the AP (access point)—from reading or tampering with the traffic of any other user.
+New research shows that behaviors that occur at the very lowest levels of the network stack make encryption—in any form, not just those that have been broken in the past—incapable of providing client isolation, an encryption-enabled protection promised by all router makers, that is intended to block direct communication between two or more connected clients.
+Ars Video
+How The Callisto Protocol's Gameplay Was Perfected Months Before Release
+The isolation can effectively be nullified through AirSnitch, the name the researchers gave to a series of attacks that capitalize on the newly discovered weaknesses. Various forms of AirSnitch work across a broad range of routers, including those from Netgear, D-Link, Ubiquiti, Cisco, and those running DD-WRT and OpenWrt.
+AirSnitch “breaks worldwide Wi-Fi encryption, and it might have the potential to enable advanced cyberattacks,” Xin’an Zhou, the lead author of the research paper, said in an interview. “Advanced attacks can build on our primitives to [perform] cookie stealing, DNS and cache poisoning. Our research physically wiretaps the wire altogether so these sophisticated attacks will work. It’s really a threat to worldwide network security.” Zhou presented his research on Wednesday at the 2026 
+Network and Distributed System Security Symposium
+.
+Paper co-author Mathy Vanhoef, 
+said
+ a few hours after this post went live that the attack may be better described as a Wi-Fi encryption “bypass,” “in the sense that we can bypass client isolation. We don’t break Wi-Fi authentication or encryption. Crypto is often bypassed instead of broken. And we bypass it ;)” People who don’t rely on client or network isolation, he added, are safe.
+Previous Wi-Fi attacks that overnight broke existing protections such as 
+WEP
+ and 
+WPA
+ worked by exploiting vulnerabilities in the underlying encryption they used. AirSnitch, by contrast, targets a previously overlooked attack surface—the lowest levels of the networking stack, a hierarchy of architecture and protocols based on their functions and behaviors.
+The lowest level, Layer-1, encompasses physical devices such as cabling, connected nodes, and all the things that allow them to communicate. The highest level, Layer-7, is where applications such as browsers, email clients, and other Internet software run. Levels 2 through 6 are known as the Data Link, Network, Transport, Session, and Presentation layers, respectively.
+Identity crisis
+Unlike previous Wi-Fi attacks, AirSnitch exploits core features in Layers 1 and 2 and the failure to bind and synchronize a client across these and higher layers, other nodes, and other network names such as SSIDs (Service Set Identifiers). This cross-layer identity desynchronization is the key driver of AirSnitch attacks.
+The most powerful such attack is a full, bidirectional 
+machine-in-the-middle (MitM) attack
+, meaning the attacker can view and modify data before it makes its way to the intended recipient. The attacker can be on the same SSID, a separate one, or even a separate network segment tied to the same AP. It works against small Wi-Fi networks in both homes and offices and large networks in enterprises.
+With the ability to intercept all link-layer traffic (that is, the traffic as it passes between Layers 1 and 2), an attacker can perform other attacks on higher layers. The most dire consequence occurs when an Internet connection isn’t encrypted—something that Google 
+recently estimated
+ occurred when as much as 6 percent and 20 percent of pages loaded on Windows and Linux, respectively. In these cases, the attacker can view and modify all traffic in the clear and steal authentication cookies, passwords, payment card details, and any other sensitive data. Since many company intranets are sent in plaintext, traffic from them can also be intercepted.
+Even when HTTPS is in place, an attacker can still intercept domain look-up traffic and use DNS cache poisoning to corrupt tables stored by the target’s operating system. The AirSnitch MitM also puts the attacker in the position to wage attacks against vulnerabilities that may not be patched. Attackers can also see the external IP addresses hosting webpages being visited and often correlate them with the precise URL.
+Given the range of possibilities it affords, AirSnitch gives attackers capabilities that haven’t been possible with other Wi-Fi attacks, including KRACK from 
+2017
+ and 
+2019
+ and more recent Wi-Fi attacks that, like AirSnitch, inject data (known as frames) into remote 
+GRE tunnels
+ and 
+bypass network access control lists
+.
+“This work is impressive because unlike other frame injection methods, the attacker controls a bidirectional flow,” said HD Moore, a security expert and the founder and CEO of 
+runZero
+.
+He continued:
+This research shows that a wireless-connected attacker can subvert client isolation and implement full relay attacks against other clients, similar to old-school ARP spoofing. In a lot of ways, this restores the attack surface that was present before client isolation became common. For folks who lived through the chaos of early wireless guest networking rollouts (planes, hotels, coffee shops) this stuff should be familiar, but client isolation has become so common, these kinds of attacks may have fallen off people’s radar.
+Stuck in the middle with you
+The MitM targets Layers 1 and 2 and the interaction between them. It starts with 
+port stealing
+, one of the earliest attack classes of Ethernet that’s adapted to work against Wi-Fi. An attacker carries it out by modifying the Layer-1 mapping that associates a network port with a victim’s 
+MAC
+—a unique address that identifies each connected device. By connecting to the 
+BSSID
+ that bridges the AP to a radio frequency the target isn’t using (usually a 2.4GHz or 5GHz) and completing a Wi-Fi 
+four-way handshake
+, the attacker replaces the target’s MAC with one of their own.
+
+              The attacker spoofs the victim’s MAC address on a different NIC,
+causing the internal switch to mistakenly associate the victim’s address with the attacker’s port/BSSID. As a result, frames intended for the victim are
+forwarded to the attacker and encrypted using the attacker’s PTK.
+                              
+
+                  Credit:
+                                      Zhou et al.
+                                  
+
+      The attacker spoofs the victim’s MAC address on a different NIC,
+causing the internal switch to mistakenly associate the victim’s address with the attacker’s port/BSSID. As a result, frames intended for the victim are
+forwarded to the attacker and encrypted using the attacker’s PTK.
+
+              
+
+          Credit:
+
+          
+          Zhou et al.
+
+                  
+In other words, the attacker connects to the Wi-Fi network using the target’s MAC and then receives the target’s traffic. With this, an attacker obtains all downlink traffic (data sent from the router) intended for the target. Once the switch at Layer-2 sees the response, it updates its MAC address table to preserve the new mapping for as long as the attacker needs.
+This completes the first half of the MitM, allowing all data to flow to the attacker. That alone would result in little more than a denial of service for the target. To prevent the target from noticing—and more importantly, to gain the bidirectional MitM capability needed to perform more advanced attacks—the attacker needs a way to restore the original mapping (the one assigning the victim’s MAC to the Layer-1 port). An attacker performs this restoration by sending an 
+ICMP ping
+ from a random MAC. The ping, which must be wrapped in a Group Temporal key shared among all clients, triggers replies that cause the Layer-1 mapping (i.e., port states) to revert back to the original one.
+“In a normal Layer-2 switch, the switch learns the MAC of the client by seeing it respond with its source address,” Moore explained. “This attack confuses the AP into thinking that the client reconnected elsewhere, allowing an attacker to redirect Layer-2 traffic. Unlike Ethernet switches, wireless APs can’t tie a physical port on the device to a single client; clients are mobile by design.”
+The back-and-forth flipping of the MAC from the attacker to the target, and vice versa, can continue for as long as the attacker wants. With that, the bidirectional MitM has been achieved. Attackers can then perform a host of other attacks, both related to AirSnitch or ones such as the cache poisoning discussed earlier. Depending on the router the target is using, the attack can be performed even when the attacker and target are connected to separate SSIDs connected by the same AP. In some cases, Zhou said, the attacker can even be connected from the Internet.
+“Even when the guest SSID has a different name and password, it may still share parts of the same internal network infrastructure as your main Wi-Fi,” the researcher explained. “In some setups, that shared infrastructure can allow unexpected connectivity between guest devices and trusted devices.”
+No, enterprise defenses won’t protect you
+Variations of the attack defeat the client isolation promised by makers of enterprise routers, which typically use credentials and a master encryption key that are unique to each client. One such attack works across multiple APs when they share a wired distribution system, as is common in enterprise and campus networks.
+In their paper, 
+AirSnitch: Demystifying and Breaking Client Isolation in Wi-Fi Networks
+, the researchers wrote:
+Although port stealing was originally devised for hosts on the same switch, we show that attackers can hijack MAC-to-port mappings at a higher layer, i.e., at the level of the distribution switch—to intercept traffic to victims associated with different APs. This escalates the attack beyond its traditional limits, breaking the assumption that separate APs provide effective isolation.
+This discovery exposes a blind spot in client isolation: even physically separated APs, broadcasting different SSIDs, offer ineffective isolation if connected to a common distribution system. By redirecting traffic at the distribution switch, attackers can intercept and manipulate victim traffic across AP boundaries, expanding the threat model for modern Wi-Fi networks.
+The researchers demonstrated that their attacks can enable the breakage of 
+RADIUS
+, a centralized authentication protocol for 
+enhanced security
+ in enterprise networks. “By spoofing a gateway MAC and connecting to an AP,” the researchers wrote, “an attacker can steal uplink RADIUS packets.” The attacker can go on to crack a message authenticator that’s used for integrity protection and, from there, learn a shared passphrase. “This allows the attacker to set up a rogue RADIUS server and associated rogue WPA2/3 access point, which allows any legitimate client to connect, thereby intercepting their traffic and credentials.”
+The researchers tested the following 11 devices:
+Netgear Nighthawk x6 R8000
+Tenda RX2 Pro
+D-LINK DIR-3040
+TP-LINK Archer AXE75
+ASUS RT-AX57
+DD-WRT v3.0-r44715
+OpenWrt 24.10
+Ubiquiti AmpliFi Alien Router
+Ubiquiti AmpliFi Router HD
+LANCOM LX-6500
+Cisco Catalyst 9130
+As noted earlier, every tested router was vulnerable to at least one attack. Zhou said that some router makers have already released updates that mitigate some of the attacks, and more updates are expected in the future. But he also said some manufacturers have told him that some of the systemic weaknesses can only be addressed through changes in the underlying chips they buy from silicon makers.
+The hardware manufacturers face yet another challenge: The client isolation mechanisms vary from maker to maker. With no industry-wide standard, these one-off solutions are splintered and may not receive the concerted security attention that formal protocols are given.
+So how bad is AirSnitch, really?
+With a basic understanding of AirSnitch, the next step is to put it into historical context and assess how big a threat it poses in the real world. In some respects, it resembles the 2007 
+PTW attack
+ (named for its creators Andrei Pyshkin, Erik Tews, and Ralf-Philipp Weinmann) that completely and immediately broke WEP, leaving Wi-Fi users everywhere with no means to protect themselves against nearby adversaries. For now, client isolation is similarly defeated—almost completely and overnight—with no immediate remedy available.
+At the same time, the bar for waging WEP attacks was significantly lower, since it was available to anyone within range of an AP. AirSnitch, by contrast, requires that the attacker already have some sort of access to the Wi-Fi network. For many people, that may mean steering clear of public Wi-Fi networks altogether.
+If the network is properly secured—meaning it’s protected by a strong password that’s known only to authorized users—AirSnitch may not be of much value to an attacker. The nuance here is that even if an attacker doesn’t have access to a specific SSID, they may still use AirSnitch if they have access to other SSIDs or BSSIDs that use the same AP or other connecting infrastructure.
+Yet another difference to the PTW attack—and others that have followed breaking WPA, WPA2, and WPA3 protections—is that they were limited to hacks using terrestrial radio signals, a much more limited theater than the one AirSnitch uses. Ultimately, the AirSnitch attacks are broader but less severe.
+Also unlike those previous attacks, firewall mitigations may be more problematic.
+“We expand the threat model showing an attacker can be on another channel or port, or can be from the Internet,” Zhou said. “Firewalls are also networking devices. We often say a firewall is a Layer-3 device because it works at the IP layer. But fundamentally, it’s connected by wire to different network elements. That wire is not secure.”
+Some of the threat can be mitigated by using VPNs, but this remedy has all the usual drawbacks that come with them. For one, VPNs are notorious for leaking metadata, DNS queries, and other traffic that can be useful to attackers, making the protection limited. And for another, finding a reputable and trustworthy VPN provider has historically proven to be 
+vexingly difficult
+, though things have 
+improved
+ more recently. Ultimately, a VPN shouldn’t be regarded as much more than a bandage.
+Another potential mitigation is using wireless 
+VLANs
+ to isolate one SSID from another. Zhou said such options aren’t universally available and are also “super easy to be configured wrong.” Specifically, he said VLANs can often be implemented in ways that allow “hopping vulnerabilities.” Further, Moore 
+has argued
+ why “VLANs are not a practical barrier” against all AirSnitch attacks
+The most effective remedy may be to adopt a security stance known as 
+zero trust
+, which treats each node inside a network as a potential adversary until it provides proof it can be trusted. This model is challenging for even well-funded enterprise organizations to adopt, although it’s becoming easier. It’s not clear if it will ever be feasible for more casual Wi-Fi users in homes and smaller businesses.
+Probably the most reasonable response is to exercise measured caution for all Wi-Fi networks managed by people you don’t know. When feasible, use a trustworthy VPN on public APs or, better yet, tether a connection from a cell phone.
+Wi-Fi has always been a risky proposition, and AirSnitch only expands the potential for malice. Then again, the new capabilities may mean little in the real world, where 
+evil twin
+ attacks accomplish many of the same objectives with much less hassle.
+Moore said the attacks possible before client isolation were often as simple as running 
+ettercap
+ or similar tools as soon as a normal Wi-Fi connection was completed. AirSnitch attacks require considerably more work, at least until someone writes an easy-to-use script that automates it.
+“It will be interesting to see if the wireless vendors care enough to resolve these issues completely and if attackers care enough to put all of this together when there might be easier things to do (like run a fake AP instead),” Moore said. “At the least it should make pentesters’ lives more interesting since it re-opens a lot of exposure that many folks may not have any experience with.”
+Headline updated to change “breaks” with “bypasses.”
+
+                  Dan Goodin
+              
+Senior Security Editor
+
+                  Dan Goodin
+              
+Senior Security Editor
+
+      Dan Goodin is Senior Security Editor at Ars Technica, where he oversees coverage of malware, computer espionage, botnets, hardware hacking, encryption, and passwords. In his spare time, he enjoys gardening, cooking, and following the independent music scene. Dan is based in San Francisco. Follow him at 
+here
+ on Mastodon and 
+here
+ on Bluesky. Contact him on Signal at DanArs.82.
+    
+
+    167 Comments
+  
+Staff Picks
+J
+Jeff S
+Wait, I am having a very hard time understanding the severity of this potential attack.
+
+Does it require Physical access to anything? If so, it's kind of odd to think of a someone who works with network stuff. I can't wrap my head around how this isn't just easily thwarted by proper VLAN management.
+
+No exposed data ports should have the same VLAN as any of the access points, and especially any of the SSIDs. I don't get how the man in the middle in this case would work. Seems like several things need to be wrongly configured to make this attack work well.
+
+Does this potentially break WIFI encryption? Yeah. But it seems like the traditional "If the attacker can get this exploit done, then you've had bigger problems before" type of exploit.
+
+I just need to know how easy it is to get this exploit done on a properly configured enterprise level network, with VLANs and other security measures set. Just because you splice into a cable physically doesn't mean Layers 2 to 7 suddenly become vulnerable...
+What is 
+physical access
+ to Wi-Fi? I mean, yes, you have to be in range of the wifi devices. But that might be having a nearby repeater device outside the premises.
+
+Keeping in mind that this IS about Wi-Fi and not ethernet, but, perhaps your confusion is because of some things the article said about ethernet. If I'm understanding correctly, the references to Ethernet are because, Wi-Fi at a low level, basically is Ethernet over radio, with a few tweaks like SSIDs, and then encryption layered on top of that.
+
+But the very lowest level of the stack, that goes out over the radio waves, isn't encrypted and validated against known keys. So MAC address spoofing can happen, which it sounds like is the basis of this attack - that the malicious device spoofs another device, then forwards traffic as a machine-in-the-middle.
+
+Any traffic that gets decrypted at the router, normally, like DNS, can thus be decrypted by the MITM using the MITM's provided keys, I think is what's being said here. Which is yet another argument to use encrypted DNS.
+
+What we really need, I think, though, is a modern Wi-Fi replacement/updated version that uses strong key-based encryption/authentication at Level 1 of the network stack? Is that the right takeaway here?
+          
+Feb 26, 2026 at 4:53 PM
+E
+ERIFNOMI
+Thanks to you and Afidel. I had wondered about that. My guest network is already setup as WAN access only for my guest network. I'll admit I don't have VLANs setup (but I can, my switch and AP support VLANs).
+If guest devices are on the same subnet as everything else, it sounds like you'd be vulnerable to this. This sounds like spoofing at layers 1 and 2. 
+
+Just turning on VLANs doesn't do anything. You have to segment your network. VLANs are a tool that allow you to segment your network without duplicating every switch and AP on your network for each subnet.
+          
+Feb 26, 2026 at 5:02 PM
+M
+Martin Blank
+What is 
+physical access
+ to Wi-Fi? I mean, yes, you have to be in range of the wifi devices. But that might be having a nearby repeater device outside the premises.
+Repeaters add delay. Most attackers will use an antenna. A 9 dBi yagi antenna is inexpensive and can get you several hundred meters of distance with a little practice.
+What we really need, I think, though, is a modern Wi-Fi replacement/updated version that uses strong key-based encryption/authentication at Level 1 of the network stack? Is that the right takeaway here?
+Wi-Fi has the same basic problem as SMTP: it has fundamental weaknesses that are extremely hard to fix without utterly shattering backward compatibility that too many things rely on. It's good enough for most things, and there are a pile of fixes to address the problem.
+
+My first thought on this was increasing the security of the perceived reconnection. Require it to be encrypted by the last key used or signed by the last DH key negotiated. If it's not, don't let it connect and don't put it in the CAM table. Require a timeout from the last known good connection before letting it reconnect. However, this could affect devices that sleep for long periods and could set up a DoS attack by connecting with a known MAC address that one wants to block.
+          
+Feb 26, 2026 at 5:14 PM
+h
+hdmoore
+
+            Hi folks! Great comments and questions on whether VLAN isolation helps here.
+
+Edit: Original comment indicated that VLANs didn't help, I had misread the cross-BSSID attack details.
+
+The paper is clear that the inject/MITM is cross-BSSID but not cross-VLAN (assuming the device isolates correctly).
+
+Thanks for the feedback!
+          
+Feb 26, 2026 at 5:41 PM
+d
+dangoodin
+The article seems to claim that the attacker spoofing the victim's MAC address on another radio allows for "bidirectional" MitM, but doesn't explain how. The key in a MitM attack is to be in the middle, between the victim and their network. How does messing with an AP's forwarding table coerce the victim to send their traffic to the attacker? Also as soon as the victim sends any data to the AP that will fix the forwarding table so at best the attacker is going to only see some of the data.
+I'm sorry I'm having such a hard time explaining this process in a clear way. I just updated the section following the "Stuck in the Middle with You" subhed in an attempt to do better. The attacker intercepts the target's downlink traffic by replacing the target's MAC with the attacker's MAC. This is essentially a classic port stealing attack from the early Ethernet days, except it has been adapted for Wi-Fi. It completes the first half of the MitM.
+
+To make the MitM bidirectional the attacker needs a way to redirect the intercepted frames back to the target. To do this, the attacker restores the MAC > port mapping to the original one, i.e. the one that associated the target's MAC to the port. The attacker does this by sending a ping from a random (i.e. not the attacker's) MAC . This ping must be wrapped in the Group Temporal Key.
+
+Then, the attacker repeats these two steps over and over, in rapid succession.  Please also see the diagram that I added.
+
+Does any of this help clarify?
+          
+Feb 26, 2026 at 6:53 PM
+H
+Hecuba
+I haven't read the paper (I will if I find some time later today), but this made me go re-read the description of the attack here.
+
+If there wasn't too much lost in the game of telephone, it looks like the attack is MAC spoofing to get the traffic from another client and...that's it? And you're suggesting these APs are happy to send traffic tagged for VLAN100 to a client connected via BSSIS tagged VLAN200?
+Yes.  The broad top-line conclusion of the paper on this topic is:
+[The paper:]
+ Specifically, we find that many APs fail to enforce strict
+
+separation between these virtual BSSIDs’ associated ports. We
+
+forge layer-2 frames targeting other clients under the same AP,
+
+and found that all tested APs allow some degree of unintended
+
+switching that violates client isolation between these virtual
+
+BSSIDs.
+
+The most fundamental, basic element of the attack is happening at layer one (the shared radio medium).
+
+From the paper, that's this part:
+[The paper:]
+ We introduce novel MitM primitives that break client
+
+isolation, which was commonly believed to protect Wi-Fi
+
+clients from one another, enabling MitM attacks relating
+
+to both uplink and downlink traffic.
+
+From there, they were able to pivot to other attacks that facilitated hopping over to a protected BSSID and (for example) carrying out attacks against the RADIUS authentication.
+
+They had to add a rogue AP and rogue RADIUS server to demonstrate an attack that pivoted from a guest SSID to a WPA2/3 enterprise SSID, but that's easy enough to build into an attack kit that it's still viable.
+So what mitigations are actually viable?
+
+Well, the vendors will probably patch stuff, which will help.  But there are also other important elements to consider.
+Separate APs
+
+The only perfect solution would seem to be isolating the SSIDs on different APs.  Notably, however, they did demonstrate attacks against different APs sharing the same distribution network.  Piecemeal won't cut it.
+Separate internal/virtual bridges
+
+At a step short of that, the DD-WRT and Open-WRT deployments tested demonstrated resilience against several elements of the attack by isolating the different SSIDs on separate internal bridges.  I expect that, or something very similar, will feature prominently in how the other vendors approach resolving many of these elements.
+Rogue detection
+
+As a detective control, rogue AP detection would be 
+very
+ effective here.  I'm not seeing any significant portion of the attack chain that can be carried out without a rogue AP.   That's not practical for (most) home deployments, but it's a common feature in enterprise tooling.
+WPA3 Enterprise Public Key
+
+I 
+think
+ WPA3 enterprise in public key mode is safe, but I'd need to go over it in more detail to say that for certain.
+
+They explicitly note that the data link attack primitives won't work there directly.
+
+The demonstrated a pivot from an attack on guest SSID to an attack on an Enterprise SSID specifically attacked the RADIUS setup. And I can't think of a way to do the equivalent for a PubKey setup. 
+(edit: spelling, clarity in final paragraph)
+Feb 26, 2026 at 6:58 PM
+h
+hdmoore
+If there wasn't too much lost in the game of telephone, it looks like the attack is MAC spoofing to get the traffic from another client and...that's it? And you're suggesting these APs are happy to send traffic tagged for VLAN100 to a client connected via BSSIS tagged VLAN200?
+
+The AirSnitch MITM works best when targeting a victim on the same SSID (and likely VLAN), but separate SSIDs/VLANs may not be enough depending on how the WAP handles the traffic, and even with VLAN isolation an attacker can still drop frames into the victim VLAN, even if they can't do a full MITM.
+
+WAPs handle VLAN tags (typically by SSID), but not the same way as a physical ethernet switch; there isn't a physical port to lock a client to. The AirSnitch bugs let an attacker stuff traffic into the "port" for a target client. The bidirectional MITM might be trickier to across SSIDs or VLANs, but its likely going to depend on the specific device behavior.
+
+Separate from the MITM, there are other ways to abuse the injection issue. An attacker can inject a UDP request for something like NetBIOS/mDNS/SSDP/SNMP that bounces a response back to the internet, instead of to the attacker's wireless client, and be able to extract useful data this way.
+          
+Feb 26, 2026 at 7:03 PM
+c
+cynrh
+
+            Hi folks, I think the key to understanding the bidirectional nature is summarized in these paragraphs from the paper.  A big salute to Dan, for your efforts trying to explain all this.
+Second, we observe that many vendors only enforce client isolation at Layer-2 (MAC and link), but do not carry it over to Layer-3 (IP layer). 
+Thus, we find that an attacker can inject packets to a victim, by using the AP’s gateway MAC address as the layer 2 destination, but the victim’s IP address as the layer 3 destination.
+ These packets are typically accepted by the AP and forwarded to the gateway. If the gateway does not enforce client isolation at the IP layer, it will forward the datagram to its destination i.e., the victim client on the Wi-Fi network, allowing the attacker to reach the “layer-2 isolated” victim clients. We call this the gateway bouncing attack.
+
+Third, we find that 
+spoofing the victim’s MAC address while connecting to the same network (but possibly a different AP) as the victim, enables the attacker to intercept downlink frames meant for the victim.
+ Although it is known that Wi-Fi clients can use any MAC address to connect, it is surprising that this alone can be used to intercept another client’s traffic, even with client isolation. We study under exactly which conditions our attack is possible, i.e., we investigate the impact of Wi-Fi features such as encryption, management frame protection, one physical AP broadcasting different network names, etc. When combined with the injection attacks to return intercepted traffic back to the victim, this allows the attacker to be a MitM on the downlink path.
+
+Lastly, to obtain a full bi-directional MitM, we introduce techniques to intercept uplink traffic sent by clients as well.  To achieve this, 
+we found that it is possible to impersonate internal backend devices (e.g., the gateway) in the Wi-Fi network by spoofing their MAC addresses while connecting as a legitimate Wi-Fi client. By using this approach, an attacker can intercept uplink traffic sent by all other Wi-Fi clients.
+  Surprisingly, even though this results in client-to-client traffic, it is often allowed by the network. Combined with our other techniques, this results in a full bi-directional MitM.
+Reference: 
+https://www.ndss-symposium.org/wp-content/uploads/2026-f1282-paper.pdf
+, p1-2
+          
+Feb 26, 2026 at 10:06 PM
+
+    Comments
+  
+Forum view
+
+      Loading comments...
+    
+Prev story
+Next story
+
+        Most Read
+1.
+Engineers at NASA's Jet Propulsion Lab make a breakthrough in rotor technology
+2.
+Mozilla says 271 vulnerabilities found by Mythos have "almost no false positives"
+3.
+SpaceX is starting to move on from the world's most successful rocket
+4.
+The US military just released a bunch of UAP files, but there's no there there
+5.
+Everyone’s a loser in Strait of Hormuz game that simulates global crisis
+Customize
+Ars Technica has been separating the signal from
+          the noise for over 25 years. With our unique combination of
+          technical savvy and wide-ranging interest in the technological arts
+          and sciences, Ars is the trusted source in a sea of information. After
+          all, you don’t need to know everything, only what’s important.
+More
+          from Ars
+        
+About Us
+Staff Directory
+Ars Newsletters
+General FAQ
+Posting Guidelines
+AI Policy
+RSS Feeds
+Contact
+Contact us
+Advertise with us
+Reprints
+
+            Manage Preferences
+          
+
+      
+      © 2026 Condé Nast. All rights reserved. Use of and/or
+      registration on any portion of this site constitutes acceptance of our 
+User Agreement
+ and
+      
+Privacy Policy and
+        Cookie Statement
+ and 
+Ars
+        Technica Addendum
+ and 
+Your
+        California Privacy Rights
+. Ars Technica may earn compensation on
+      sales from links on this site. 
+Read our
+        affiliate link policy
+. The material on this site may not be
+      reproduced, distributed, transmitted, cached or otherwise used, except
+      with the prior written permission of Condé Nast. 
+Ad
+        Choices
+
+            Sign in dialog...
+          
+
+      Sign in
+    

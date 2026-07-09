@@ -1,0 +1,726 @@
+I replaced Claude Pro with a local 9B model for a week, and finally found out what I was paying $20 a month for
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+11
+Threads
+7
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I replaced Claude Pro with a local 9B model for a week, and finally found out what I was paying $20 a month for
+By 
+Nolen Jonker
+Published
+ May 1, 2026, 6:00 AM EDT
+Nolen began their writing career in 2019, with three years dedicated to editing the Creative section at 
+MakeUseOf
+. Their expertise lies at the crossroads of technology and creativity, covering areas like photography, video editing, and graphic design.
+
+Outside of work, you'll often find Nolen diving into a good book, writing their own stories, or playing video games. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+11
+
+                            Like
+                                        
+11
+
+								Thread
+																										
+7
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+I’ve been using Claude Pro long enough that I don’t even really give much thought to what I gained from the subscription. The five-hour reset on the free tier was getting old, 
+so I upgraded
+, and that was kind of the end of the internal debate. What I didn’t have a clear answer for at first was what exactly I was getting for it beyond longer sessions - not in the feature-list sense, I know what the features are. More like which of those features I’d actually miss if they went away, and how they made my workflow possible.
+✕
+ Remove Ads
+I’ve been running Qwen 3.5 9B locally for a minute now and it’s not a side experiment anymore - it’s a daily tool at this point. So I swapped it in for a week and used it the same way I’d normally use Claude, so same workflow, just a different model. Most of the overlap was closer than I expected - right up until one thing completely wasn’t.
+Related
+
+			I finally found a local LLM I want to use every day (and it's not for coding)
+		
+Local AI that actually fits into my day
+Posts
+19
+By 
+Nolen Jonker
+Apr 17, 2026
+
+                        What I actually use Claude for
+               
+
+            Well, what I thought I used it for
+    
+ I had a pretty confident answer to this going in: document drops, image analysis, long research sessions, Projects for keeping context loaded across chats, 
+the interactive visuals
+ that came out last month. I use all of it daily and I’d have told you I knew exactly which parts of that I’d miss if they went away.
+That turned out to be wrong - not completely, but enough. When you actually swap the tool out and run your real workflow through something else, the thing you thought was load-bearing isn’t always the thing that actually is. Some of what I was reaching for Claude for was more habit than necessity. Some of it Qwen covered better than I expected, or at least well enough that the gap didn’t really matter in practice. The thing I’m actually paying for has a more specific shape than just "a Claude feature".
+✕
+ Remove Ads
+
+                        My local setup
+               
+
+            The quick rundown
+    
+ If you’ve read anything else 
+I’ve written about local LLMs
+, then you know my setup already so I’ll keep this short. 
+Qwen 3.5 9B
+, running through LM Studio on an RTX 3070 with 8GB VRAM, sitting at a 60k context window. The reason it can do that on modest hardware is GDN - a hybrid architecture that keeps memory usage mostly flat as context grows instead of climbing with every token the way a standard transformer would. That’s the whole reason 
+I switched to it from gpt-oss 20B
+ a while back.
+The other thing worth mentioning is that this isn’t a fresh install. I’ve been running this model for a while now so I have a feel for where it hits walls and how to prompt it properly (though I’m still discovering better local AI habits every day). Point is that I didn’t walk into the comparison blind, and already had an idea of how to handle Qwen.
+
+                        Where my local LLM held up, and where it didn’t
+               
+
+            It went better than I expected, but also worse than I expected
+    
+✕
+ Remove Ads
+Image analysis was the first real surprise. I use this in Claude constantly - instead of writing a long and tedious prompt, I just 
+show 
+Claude what I’m working with by adding some screenshots to the chat. Qwen handles it just as well - as in, really well. It can read software from interface screenshots even without context, describe scenes accurately, flag design inconsistencies, all of it.
+Back-and-forth 
+research and document handling are fine too
+. The biggest difference here is in how you formulate your prompts. With Claude, I can get messy and it will know what I mean. Local models don’t give you much room to get as messy because they interpret your prompts more literally, so you will need to 
+adopt a prompting habit around clarity
+. But once you do, it can handle more than you realize. I’m talking day-to-day thinking-partner type of stuff like working through a concept you’re stuck on or having it summarize something long. It understood every angle I was throwing at it and gave me the explanations and comparisons I needed. I still like Claude’s more personable and conversational style, but that’s just preference and not a reflection of Qwen’s capability.
+Of course, something where any local LLM will pull ahead is freedom. There’s no rolling window usages watching over your shoulder or additional charges to your card, or concern that your conversation might be retained on an unknown server for years. This makes you less guarded in your workflow.
+Then there was the render loop when it came to visualizing and prototyping.
+Quiz
+8 Questions · Test Your Knowledge
+How much do you know about Claude?
+Trivia challenge
+Think you know Anthropic's AI assistant? Put your knowledge of Claude to the test.
+Origins
+Capabilities
+Safety
+Features
+Design
+Begin
+01 / 8
+Origins
+Which company created Claude?
+A
+OpenAI
+B
+Google DeepMind
+C
+Anthropic
+D
+Meta AI
+Correct! Claude was created by Anthropic, an AI safety company founded in 2021. Anthropic was co-founded by Dario Amodei and Daniela Amodei, among others who previously worked at OpenAI.
+Not quite. Claude is made by Anthropic, not to be confused with OpenAI, which makes ChatGPT. Anthropic was founded in 2021 with a strong focus on AI safety research.
+Continue
+02 / 8
+Safety
+What is the name of the safety and values framework Anthropic developed to guide Claude's behavior?
+A
+RLHF Protocol
+B
+Constitutional AI
+C
+SafeGuard Framework
+D
+Alignment Core
+Correct! Anthropic developed Constitutional AI (CAI), a technique that trains Claude using a set of principles — a 'constitution' — to guide its responses toward being helpful, harmless, and honest.
+Not quite. The framework is called Constitutional AI (CAI). It is a novel training approach pioneered by Anthropic that uses a written set of principles to help the model self-critique and improve its own outputs.
+Continue
+03 / 8
+Origins
+What is the name most commonly associated with inspiring Claude's name?
+A
+Claude Shannon, the father of information theory
+B
+Claude Monet, the French impressionist painter
+C
+Claude Lévi-Strauss, the anthropologist
+D
+Claude Bernard, the physiologist
+Correct! Claude Shannon is widely cited as the inspiration behind the name. Shannon founded information theory, which is foundational to all modern computing and digital communication — a fitting namesake for an AI.
+Not quite. The name Claude is most commonly associated with Claude Shannon, the mathematician and electrical engineer who founded information theory. His pioneering work laid the groundwork for the digital age.
+Continue
+04 / 8
+Capabilities
+Which of the following best describes Claude's context window capability in its more advanced versions?
+A
+Up to 4,000 tokens
+B
+Up to 16,000 tokens
+C
+Up to 100,000 tokens or more
+D
+Up to 32,000 tokens
+Correct! Advanced versions of Claude support context windows of 100,000 tokens or more, allowing it to process entire books, lengthy codebases, or large documents in a single conversation — a standout feature at the time of its release.
+Not quite. Claude's advanced versions support context windows of 100,000 tokens or more. This was a significant leap beyond many contemporaries and allows Claude to reason over very large amounts of text in one session.
+Continue
+05 / 8
+Design
+Which of the following principles is NOT part of Anthropic's core goal for Claude?
+A
+Helpful
+B
+Harmless
+C
+Honest
+D
+Hierarchical
+Correct! Anthropic's guiding principles for Claude are to be Helpful, Harmless, and Honest — often called the 'three H's.' Hierarchical is not part of this framework. The goal is to make AI that is safe and beneficial for everyone.
+Not quite. Anthropic's three guiding principles for Claude are Helpful, Harmless, and Honest. 'Hierarchical' is not one of them. These three H's shape how Claude is trained to interact with users responsibly.
+Continue
+06 / 8
+Features
+What was a key distinguishing feature of Claude 2 when it launched compared to many rival models at the time?
+A
+It could generate images natively
+B
+It had a 100,000-token context window
+C
+It could browse the internet in real time
+D
+It supported voice conversations out of the box
+Correct! Claude 2 launched with a 100,000-token context window, which was remarkable at the time. This allowed users to feed in entire books or massive codebases for analysis, setting Claude apart from many competing models.
+Not quite. The standout feature of Claude 2 was its 100,000-token context window. Claude does not natively generate images, and real-time browsing and built-in voice were not launch features of Claude 2.
+Continue
+07 / 8
+Safety
+Anthropic describes itself primarily as which type of company?
+A
+A consumer electronics company
+B
+An AI safety and research company
+C
+A cloud infrastructure provider
+D
+A social media and AI hybrid company
+Correct! Anthropic describes itself as an AI safety and research company. Unlike some competitors who lead with products or platforms, Anthropic's founding mission centers on building AI systems that are safe, interpretable, and steerable.
+Not quite. Anthropic is primarily an AI safety and research company. Its founding mission is rooted in making AI that is safe and understandable, which is why safety-focused training methods like Constitutional AI are central to its work.
+Continue
+08 / 8
+Features
+Which of the following tasks is Claude specifically designed to handle well?
+A
+Rendering 3D graphics in real time
+B
+Long-form writing, summarization, and complex reasoning
+C
+Executing system-level operating commands autonomously
+D
+Streaming live video content analysis
+Correct! Claude excels at long-form writing, summarization, coding assistance, and complex reasoning tasks. Its large context window and nuanced language understanding make it particularly well suited for handling detailed, multi-step text-based work.
+Not quite. Claude is designed for text-based tasks like writing, summarization, analysis, and reasoning. It does not render graphics, autonomously execute system commands, or perform live video analysis — it is a large language model at its core.
+See My Score
+Challenge Complete
+Your Score
+/ 8
+Thanks for playing!
+Try Again
+✕
+ Remove Ads
+Qwen can write the HTML and I can open it in my browser; that’s not the wall. The wall is that rendering a visual and interactive version of it locally means either wrestling with Open WebUI to render the code, which doesn’t connect to LM studio cleanly, or rebuilding my whole local setup around Ollama, which is the preferred backend for Open WebUI. Even if setup was smooth, Open WebUI’s artifacts depend on the model responding in exactly the right format to trigger the render panel, and a general-purpose local model like 3.5 isn’t tuned for that the way Claude is.
+Claude just does it every time. I drop in a screenshot or a brief, it builds something interactive in the artifacts panel without me having to ask, and I can iterate cleanly from there. For someone primarily 
+using Claude as a design learning tool
+, that reliability without setup is what I’m paying for.
+
+            The subscription makes more sense now
+    
+The context window is the other gap worth mentioning, though I saw it coming. I can’t push Qwen to even half of Claude’s context on my hardware. This just means my chats got cut short earlier than I’d hoped. Not a surprise, just a real limit that’s worth being upfront about.
+The render workflow is the thing I couldn’t get around. Everything else was close enough to make it a bit harder justifying the subscription on those things alone. But that one design workflow, working reliably every time without setup, is what twenty dollars a month actually buys.
+
+				Claude
+			
+OS
+
+									
+										
+											Windows, macOS
+
+										
+																	
+Individual pricing
+
+									
+										
+											Free plan available; $17/month Pro plan
+
+										
+																	
+Group pricing
+
+									
+										
+											$100/month per person for the Max plan
+
+										
+																	
+See at Claude
+Expand
+Collapse
+✕
+ Remove Ads
+AI tools
+Claude
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+11
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I used Claude Code, Antigravity, and Perplexity Computer to build a portfolio — there was a clear winner
+		
+
+			I tested Claude Code against 3 open-source alternatives, and one came surprisingly close
+		
+
+			I switched from Claude Code to Codex for a week, and the trade-offs surprised me
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+7
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Daniel
+Daniel
+Daniel
+#NU244016
+Member since 2026-05-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Try using Gemma 4. It's more updated and you will get a better context window. I use it for a discord bot to be AI on there and it's been great. Now I did add turboquant to gemma4 E4B myself and it's be faster 
+2026-05-01 16:45:58
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+Andres
+Andres
+Andres
+#NU968802
+Member since 2026-05-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I agreed with the document to certain points, but in a couple of months I have been running a 14b code model on a 24 vram and it has been flawless, I still use Claude to draft the code but majority of the time it Is developing locally, also continue to use chatgpt for prompt optimization and breaking sessions a bit smaller making the workflow a bliss, I am also using aider to code, and ollama in the backend. I believe a local setup makes great sense to finish the code, workout bug and features, so I believe you can complement workflow with both open and paid solutions.
+2026-05-01 19:57:57
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+Alek
+Alek
+Alek
+#EZ941547
+Member since 2026-05-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Really nice article! I've been trying to install a local LLM too recently and ran into hardware constraints. How's your 9B model performing on 8 GB of VRAM, and how did you optimize it? I have a 12B_Q4 model on 16 GB of VRAM and the speed is good, but anything above that tanks the tok/sec 🤔
+2026-05-02 01:03:16
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+Mako
+Mako
+Mako
+#PT162769
+Member since 2025-04-20
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Great article. I am in a similar boat. Use the Claude month plan with a MCP service so it can easily access my home system, but all that convenience, while increasing velocity, also eats into usage that much faster. My goal is to use Claude to train up a local Qwen 3.6 27B model that can do much of the daily grunt work, and Claude can be more of and advisor and work on truly novel problems. 
+2026-05-01 11:56:04
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+Xdamember13
+Xdamember13
+Xdamember13
+#NI470012
+Member since 2025-07-23
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Did you try a setup with couple 3070' - let's say 4? Will this work better? Or some 12-16GB cards as 4070/7800XT?
+2026-05-02 08:17:24
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+lonz
+lonz
+lonz
+#CE361921
+Member since 2025-08-29
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Try Bolt.diy for your render workflow then. It'll blow your mind. To me, it still has limitations, such as being mainly js/node/py stack based. You quickly find it's limitations if you're working on enterprise-grade architecture involving languages that compile to near native machine code like C#, Rust, C++ etc. But like most open source projects, its features will depend on popularity and contributors. 
+2026-05-06 09:00:54
+Upvote
+Downvote
+Reply
+Copy
+        
+Lukasz
+Lukasz
+Lukasz
+#FK689887
+Member since 2024-07-18
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+is it a joke? you compare 9B model to  500x bigger model ...
+at least try Qwen3.6 27B (dense)...
+also there is a lot of models in 30B-400B range ...
+2026-05-02 08:09:52
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 30, 2026
+
+                                    Steam Deck restocks are coming, but Valve is battling memory shortages and global supply chaos to make it happen
+                            
+Apr 30, 2026
+
+                                    Someone built the PlayStation controller PC dongle that Sony refuses to make
+                            
+Apr 29, 2026
+
+                                    Valve isn't ditching Windows or x86, but it's quietly making both optional
+                            
+Apr 28, 2026
+
+                                    Your old Nintendo 64 games are finally getting unofficial PC ports, and they run better than emulators
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:04
+
+                            MacBook Neo: an iPhone 16 Pro in laptop form
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:07
+
+                            The end of affordable PCs?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:03
+
+                            Now you can buy fake RAM for your gaming PC
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            Snapdragon X2 Elite Extreme benchmarks: RIP Panther Lake?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

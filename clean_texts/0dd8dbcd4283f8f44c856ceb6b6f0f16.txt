@@ -1,0 +1,563 @@
+6 self-hosted services I set up once and never think about
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+5
+More Action
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+6 self-hosted services I set up once and never think about
+By 
+Abhishek Kumar Mishra
+Published
+ Mar 1, 2026, 4:00 PM EST
+Abhishek is an author at XDA who covers computing. 
+
+He has loved computers since he got the Lenovo G570 in 2012. Abhishek holds a master's degree in computer applications and began his writing career in 2018. He loves writing how-to articles, listicles, and informational posts on popular operating systems and web services.
+
+He closely follows the Windows Insider program and tests new Insider builds to discover upcoming experimental features and upgrades. His past work includes long-term collaborations with reputed publications like 
+Tom's Hardware
+, and 
+Windows Latest
+.
+
+When not writing anything, he is busy watching new episodes of One Piece or searching for something binge-worthy. 
+Sign in to your 
+XDA
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+5
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Self-hosting demands constant attention and maintenance. It sounds easy because most of us think that we need to just buy a mini PC, a bunch of Raspberry Pis, or use an old laptop, and the road ahead is easy. However, not all self-hosted tools are simple to run and manage. Some need continuous tweaking, adjustments, and monitoring to get the desired experience.
+✕
+ Remove Ads
+In my self-hosting journey, I've used a lot of media streaming servers, 
+local cloud storage
+ solutions, remote file access and download servers, toolkits, and monitoring software. However, a few of them have never been replaced and work flawlessly without any daily efforts. Let's explore some of these.
+
+                        Vaultwarden
+               
+
+            A competent password manager
+    
+Vaultwarden is an underrated gem that I host on a Raspberry Pi Zero 2W. It's the most lightweight implementation of a password manager that I host in my home. At the core, I use 
+DietPi
+, which makes the Vaultwarden warden install a one-click task.
+Thereafter, this self-hosted password manager doesn't need anything more than a one-time password import and setup. Last month, 
+I migrated from LastPass to Vaultwarden in one night
+, and it's been smooth sailing since day one. I use the browser extension to access my passwords on the local network and often use the random password generator present in the toolkit.
+You'll be surprised when comparing the features with a paid password manager service. I do complete system backups of DietPi to a USB drive as a fail-safe method because data redundancy is crucial when you locally host something sensitive like passwords.
+✕
+ Remove Ads
+
+                        Tailscale
+               
+
+            Remote access and security
+    
+ It's the silent network protector of my home server that runs on each device and lets me connect to them when I'm outside. Home networks make accessing my self-hosted services extremely easy, but if I want to do so on someone else's Wi-Fi or mobile data, Tailscale helps me with it.
+Setting up Tailscale
+ hardly takes a few minutes, as I only need to install the app or package on the device and add it to the network. Thereafter, I only need to replace the IP of the server device with the Tailscale IP and specify the appropriate port number to view the web interface.
+Most services play nicely with Tailscale, including Jellyfin and NextCloud. I've not had success with Plex while trying to do remote playback using Tailscale. It boots up with the OS, consumes unnoticeable memory in the background, and never falters.
+Related
+
+			9 Docker containers that run 24/7 on my $100 mini PC
+		
+Maximum value budget homelab.
+Posts
+15
+By 
+Samir Makwana
+Feb 9, 2026
+
+                        Uptime Kuma and Dockge
+               
+
+            Docker monitoring and deployment
+    
+Uptime Kuma
+ is a container monitoring tool and does a fantastic job in my workflow. Ever since its deployment, I've added monitoring items for all of my containers individually. It pings the services frequently and reports the status in a pictorial format.
+✕
+ Remove Ads
+Since it has no control over the containers and can only do tracking and push notifications, you don't need to do much after the initial setup.
+The same developer is the brains behind Dockge, which lets me create stacks using compose files. I don't like using the terminal for Docker compose files, and 
+Dockge offers a simple interface to define the stack items and environment variables
+. It can control container activity, but has limited control if you create containers using other tools like Portainer.
+
+                        OmniTools
+               
+
+            A bunch of useful tools
+    
+ I've been a fan of 
+OmniTools
+ from the day I found that it could do a lot of tasks that would otherwise need a web tool. Since it is self-hosted, I don't have to upload any files to a server I don't know about. OmniTools works flawlessly as a Docker container and can easily convert my files into different formats, perform PDF edits and video file conversions, or do compression tasks.
+I rarely need to worry about updating it or fiddling with settings after its deployment. The tool doesn't need any permissions, stores everything locally, and saves me the effort of visiting web tools or buying Adobe Acrobat for minor edits. I also used Stirling PDF in the past, but OmniTools has enough features for my use case and is extremely conservative about system resources.
+✕
+ Remove Ads
+So, you can use a lower-end SBC to host it instead of deploying it on a mini PC or a powerful SBC like a Raspberry Pi 5.
+
+                        Pi-hole
+               
+
+            Personal DNS resolver and ad blocker
+    
+Credit: 
+ The invisible shield of my home network is Pi-hole, and it works 24/7 in the background without hiccups. Pi-hole is one of the most deployed DNS resolvers with built-in ad blocking and tracking prevention features. I evade my invasive ISP tracking and route all my requests via the Pi-hole server.
+
+                    Subscribe to the newsletter for reliable self-hosting picks
+                
+Curated self-hosting guidance: subscribe to the newsletter for handpicked tools, deployment tips, and practical maintenance notes focused on low-effort, dependable home-server setups and container monitoring.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+Pi-hole acts as an intermediary between what websites I want to open and the ads and tracking implemented on them. I can even switch 
+Pi-hole
+ lists that contain the details of known trackers. It's one of those services that a Raspberry Pi Zero 2W can handle with ease, but the lack of a dedicated Ethernet port makes it a bit problematic.
+Still, I don't need to use anything while browsing the web or opening apps, as Pi-hole takes care of everything. It doesn't allow any ads to load or trackers to snoop on me, but it can sometimes break connections. The idea is to switch to updated lists and add a backup DNS resolver for your devices. However, the elaborate dashboard, lightweight memory profile, and simple setup are the reasons I prefer it over AdGuard.
+✕
+ Remove Ads
+
+            Not all self-hosted services demand attention
+    
+I'm a fan of Pi-hole and Uptime Kuma, as both work incredibly well after the first deployment. Vaultwarden is another gem that I never had to worry about after I began using it instead of a paid password manager.
+Resource-heavy tools like NextCloud and Paperless-ngx need frequent tweaks to work correctly. I use them in combination with Immich for photos, but I cannot call them “deploy once and forget” tools.
+Software and Services
+Self-Hosting
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			Why I stopped buying official ESP32 developer boards, and what I use instead
+		
+
+			Soldered RAM is here for laptops, and desktops are next
+		
+
+			I finally found a local LLM I actually want to use for coding
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+5
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Benjamin
+Benjamin
+Benjamin
+#AY580017
+Member since 2023-10-24
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I recently migrated from Pi-hole to Technitium for my DNS. I don't know why I didn't do it years ago, honestly. It is so far superior. It has DoT / DoH built in without having to set up dnscrypt-proxy, and my two servers sync settings and lists without needing a separate docker container to run Nebula Sync. That's not even taking into account how much faster it is. 
+Edit: Also WireGuard is just the superior, privacy respecting remote access option. Tailscale is less secure and relies on third party servers that you need to trust, and I do not. 
+2026-03-02 20:34:51
+Upvote
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Daniel15
+Daniel15
+Daniel15
+#RT296994
+Member since 2024-08-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Tailscale only uses a third-party server for configuration and UDP hole punching. The actual VPN connections are peer-to-peer - Tailscale used Wireguard for that. You can self-host Headscale if you want to host a coordination server yourself rather than using Tailscale's one. 
+You can get a similar mesh network with Wireguard, but you need to manually configure it - every node needs to have every other node listed in its config. Tailscale does that for you automatically, plus it uses UDP hole punching so you don't need to open ports, plus each device on your Tailnet (Tailscale network) automatically gets a subdomain so you don't need to memorize IP addresses, plus the Tailscale IPs work both on your LAN (where it'll connect directly to the other device via the LAN) and over the internet, avoiding the need to use split horizon DNS (just use the Tailscale IP everywhere), plus you get ACLs which let you share a VPN node with a friend but only allow them to access particular ports.
+Plenty of advantages of Tailscale, and the client code is all open source. The server is the only part that's closed-source, but like I mentioned, you can self-host Headscale which is an alternative implementation. 
+2026-03-03 03:55:21
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Derek
+Derek
+Derek
+#WI799331
+Member since 2024-07-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Vault warden has been a pain for me. I'm about to blow it away and start again. First, the normal hassle with pass keys. Before vw, I could only have passkeys on my phone, now I only seem able to have them in vw, yet VW is demanding I use my phone! Since I had to factory reset the phone, it doesn't have any. 
+I've never found where to set a password hint--if you forget your password, you can ask it to mail you a hint, but then I just get told I don't have any hints!
+And I could never get it to auto fill in Vivaldi on Android (no problem on the desktop)
+2026-03-03 15:58:59
+Upvote
+Downvote
+Reply
+Copy
+        
+Yashwanth
+Yashwanth
+Yashwanth
+#RK372383
+Member since 2025-07-17
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Tbh i use tailscale like literally every day, i have a media server running debian 13 with xfce, and I have tailscale setup on it, and the same account on my phone, and with that I can access jellyfin without "Port forwarding" Which is a big W for me, and puts my paranoid brain at ease, since I'm not exposing my router. 
+And as for kuma, i don't use that or didn't even know about it until I read this post, but yea docker setup on linux is a bit of pain, and that's when i discovered portainer, which is like this GUI for docker management and ever since I set it up, I haven't touched portainer settings or tweaked anything and it just works everytime and anytime (except during power outages 😅)
+And I'm happy that I'm using pi hole on my pi 0 2 w which was sitting in the drawer biting dust, bcz ut literally blocks each and every pesky ad while visiting websites and some new unknown or fishy websites, tho it can't block the ads on yt tho. 
+And yea ever since I started using tailscale and docker combo, and I've been able to access media and heck even manage each and every container and services running on my docker and linux isn't too bad, but it'll punish accordingly if I do mess stuff up 😅😭, so I'm still green with some stuff in linux and I'm dependent on reddit, google and yt for any and all kind of problems 😅, 
+Maybe, just maybe, someday I'll try out arch Linux maybe, since I don't understand what "I use arch btw" mean yet
+2026-03-02 06:39:27
+Upvote
+Downvote
+Reply
+Copy
+        
+Ron
+Ron
+Ron
+#XW351913
+Member since 2024-06-20
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Cloudflare works great with Plex if you have your own domain to use. And its for free.
+2026-03-04 20:06:31
+Upvote
+Downvote
+Reply
+Copy
+        
+Rashid
+Rashid
+Rashid
+#KV409999
+Member since 2026-03-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Hey , in order to make tailscale work with plex, what you can do is to create a dummy interface with a private ip from the private ip cidr  (say 192.168.100.10) and advertise the submet from tailscale. now plex client  will be able to detect the plex server in the “private ip” range and can work without remote pass
+2026-03-03 01:23:58
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Feb 28, 2026
+
+                                    Hyprland 0.54 is out, and it can give you a "50% to 500%" performance boost
+                            
+Feb 27, 2026
+
+                                    The Steam Deck OLED is in stock right now on Steam
+                            
+Feb 27, 2026
+
+                                    I ditched HDDs for an all-SSD NAS — here’s why I went back
+                            
+Feb 27, 2026
+
+                                    I hacked into this "AI NAS" after it blocked SSH, but it had nothing to hide
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 28, 2026
+1:12
+
+                            Why are we so nostalgic for Windows XP?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 28, 2026
+1:17
+
+                            Android for Desktop has leaked
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 22, 2026
+1:11
+
+                            The closest we'll ever get to Windows Phone 11
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 12, 2026
+1:17
+
+                            Razer made a holographic AI anime Assistant
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 10, 2026
+0:59
+
+                            When will the RAM crisis actually end?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement
+Skip Ad
+5

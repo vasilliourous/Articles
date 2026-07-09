@@ -1,0 +1,65 @@
+{
+  "article_title": "This tiny tool shows everything happening with my Docker containers in real time",
+  "core_thesis": "Glances is a lightweight, real-time Docker monitoring tool that provides a single-page, htop-like interface for viewing container resource usage (CPU, memory, network, uptime) without the complexity of Grafana/Prometheus or the limitations of Uptime Kuma. It prioritises simplicity and low overhead over container management features.",
+  "detailed_summary": "The article introduces Glances as a Docker monitoring solution for home lab enthusiasts who find tools like Grafana/Prometheus too resource-intensive and complex, and Uptime Kuma too limited (only uptime, no resource stats). Glances is deployed via a single Docker run command or compose file, exposing a web UI on port 61208. Its interface resembles htop, showing system hardware details, CPU/memory/swap usage, network and disk I/O, and a real-time list of running Docker containers sorted by CPU consumption. Each container displays status, uptime, CPU%, memory%, network I/O, and port mappings. The tool uses about 80–100 MB of RAM and updates data in real time. However, it lacks container management features (start/stop/restart) and does not show stopped containers. The author recommends it as a no-nonsense monitoring tool that complements but does not replace Portainer or terminal-based management.",
+  "entities": [
+    {
+      "name": "Glances",
+      "type": "software",
+      "role": "Lightweight Docker monitoring tool with web UI and CLI interface"
+    },
+    {
+      "name": "Abhishek Kumar Mishra",
+      "type": "person",
+      "role": "Author of the article, XDA writer covering computing and self-hosting"
+    },
+    {
+      "name": "Grafana",
+      "type": "software",
+      "role": "Complex monitoring dashboard tool, contrasted as overkill for simple Docker monitoring"
+    },
+    {
+      "name": "Prometheus",
+      "type": "software",
+      "role": "Metrics collection system, part of the Grafana stack deemed too heavy for low-end servers"
+    },
+    {
+      "name": "Uptime Kuma",
+      "type": "software",
+      "role": "Uptime monitoring tool, limited to checking container availability without resource stats"
+    },
+    {
+      "name": "Portainer",
+      "type": "software",
+      "role": "Container management UI, mentioned as a tool for controlling containers (start/stop/restart)"
+    },
+    {
+      "name": "htop",
+      "type": "software",
+      "role": "System process monitor, used as a visual comparison for Glances' interface"
+    }
+  ],
+  "key_data_points": [
+    "Glances is deployed with a single Docker run command or compose file, mapping port 61208 for web UI access (🟢 relevant to your homelab: extremely easy to set up, no complex stack required).",
+    "The web UI shows real-time CPU, memory, network, and disk I/O for the host, plus a per-container list with status, uptime, CPU%, memory%, network usage, and port numbers (🟢 relevant to your Red Teaming: quick visibility into container resource usage can help identify anomalous activity or resource exhaustion attacks).",
+    "Glances uses approximately 80–100 MB of RAM, making it suitable for low-resource servers (🟢 relevant to your homelab: minimal footprint leaves more resources for other services).",
+    "The tool automatically sorts containers by CPU consumption but can be re-sorted by memory or name (🟢 relevant to your DevOps: helps quickly identify resource-hungry containers).",
+    "Glances does not provide container management (start/stop/restart) and does not show stopped containers (🟢 relevant to your homelab: you still need Portainer or CLI for control, but monitoring is sufficient for observation).",
+    "The author prefers Glances over Grafana/Prometheus for simplicity and over Uptime Kuma for richer data (🟢 relevant to your student productivity: choosing the right tool saves time and reduces complexity)."
+  ],
+  "methodology_steps": [
+    "Deploy Glances using Docker: run `docker run -d --name glances -p 61208:61208 -v /var/run/docker.sock:/var/run/docker.sock:ro --pid host nicolargo/glances:latest` (or use a compose file). This mounts the Docker socket for container stats and uses host PID mode for system metrics.",
+    "Access the web UI by navigating to `http://<server-ip>:61208` in a browser. No further configuration is needed.",
+    "View real-time container stats: the right panel lists all running Docker containers with CPU%, memory%, network I/O, uptime, and port mappings. Sorting can be changed by clicking column headers.",
+    "Optionally, use Glances as a CLI tool by running `glances` directly on the host (if installed) for a terminal-based view without the web UI.",
+    "To force-start the Glances container on every access (optional), set `restart: always` in the compose file or use `--restart always` in the run command."
+  ],
+  "conclusions": [
+    "Glances is an ideal monitoring tool for home lab users who want a simple, real-time overview of Docker container resource usage without the overhead of Grafana/Prometheus. Its single-page interface and low memory footprint make it practical for low-end servers.",
+    "The tool's lack of container management features is a trade-off, but the author considers it acceptable because other monitoring tools also lack this, and Portainer or terminal commands can fill the gap.",
+    "For users who need quick visibility into container health and resource consumption, Glances provides a 'no-nonsense' solution that is easier to set up and use than alternatives like Uptime Kuma (limited data) or Grafana (complex)."
+  ],
+  "personal_relevance_summary": "This article is directly relevant to your homelab and DevOps interests, offering a lightweight, easy-to-deploy Docker monitoring tool that provides real-time resource stats without the complexity of Grafana/Prometheus. As a programmer and Red Teamer, you can use Glances to quickly observe container behaviour, spot anomalies, or monitor resource usage during penetration testing. Its minimal setup and low overhead make it a practical addition to any home server, freeing up time for more ambitious projects. The article also reinforces the principle of choosing the right tool for the job—a valuable lesson for your student productivity and study methods.",
+  "extra_advice": "Consider integrating Glances with a notification system (e.g., via webhook or custom script) to alert you when container resource usage spikes—this can be useful for both homelab capacity planning and Red Team detection of resource exhaustion attacks. Also, explore Glances' REST API (enabled by default) to programmatically fetch container stats for automation or dashboards.",
+  "source_url": "https://www.xda-developers.com/glances-shows-activity-of-my-docker-containers-in-real-time/"
+}

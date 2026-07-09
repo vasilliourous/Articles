@@ -1,0 +1,416 @@
+Backing up isn’t enough: A modern guide to ZFS on Linux
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+Networking
+Storage and NAS
+Components
+Peripherals
+Operating Systems
+Submenu
+Linux
+Windows
+Software
+Submenu
+Programming
+Applications
+Mobile
+Submenu
+Android
+iPhone
+Carriers
+New Tech
+Submenu
+Hobbies
+Smart Home
+Homelab
+Single-Board Computers (SBCs)
+Cutting Edge
+Streaming
+Submenu
+Streaming Content
+Streaming Platforms
+Audio/Video
+Automotive
+Reviews
+Buying Guides
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+2
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Storage
+Streaming
+Linux
+Open Source
+Microsoft Excel
+Android
+Windows
+Close
+Backing up isn’t enough: A modern guide to ZFS on Linux
+Credit: 
+Lucas Gouveia/How-To Geek
+By 
+Arol Wright
+Published
+ Mar 26, 2026, 8:30 AM EDT
+Arol is a tech journalist who currently works as a contributor at How-To Geek since 2022. He first began writing online for the short-lived portal of Spanish-language gaming forum Emudesc in 2013. Years later, in 2017, he got his true start in tech journalism working for a small Google-focused site called Pixel Spot. He transitioned to a news and feature writer role at XDA Developers that same year, where he worked until 2021 before making the jump to other websites.
+
+Arol brings nearly a decade of writing experience, and the occasional hot take, to his writings. While he's a technology lover at heart, he holds computer hardware and smartphones particularly close to heart. You'll normally find him covering news, although he has also written the occasional deal, buyer's guide, how-to post, and round-up. He's also written for Android Police and MakeUseOf. He's also a Political Science student. When he's not writing, you'll probably find him hitting the gym, trying to ace a new hobby, reading his textbooks, or traveling. You can reach him at me@
+arolwright.com
+. 
+Sign in to your 
+How-To Geek
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+2
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+By using Linux, you're opening yourself up to a variety of different filesystems, each of them good at their very own thing. One of them is ZFS—and it's a dream for long-term data storage.
+Here's what ZFS is all about—and why I'd love it if it were simpler to use.
+
+                        What's ZFS?
+               
+
+            Your best weapon against bit rot
+    
+Credit: Jordan Gloor / How-To Geek
+✕
+ Remove Ads
+ ZFS, originally an acronym for Zettabyte File System, is an advanced, combined file system and logical volume manager designed by Sun Microsystems. Currently maintained by the OpenZFS project, it's pretty distinct from traditional storage architectures in that it integrates the roles of file management and disk management into a single, cohesive entity.
+In conventional setups, a file system sits on top of a hardware or software RAID controller, oblivious to the underlying physical disks. ZFS, however, directly manages the raw disks, allowing it to have complete visibility and control over the entire storage stack.
+This direct access is the foundation for many of its most powerful capabilities. At its core, ZFS is built on a transactional, copy-on-write object model. When data is modified, ZFS does not overwrite the existing data in place. Instead, it writes the new data to a new block and then updates the pointers to reference the new location once the write is successfully completed. This mechanism ensures that the file system is never in an inconsistent state, virtually eliminating the need for time-consuming file system checks after an unexpected power loss or system crash.
+✕
+ Remove Ads
+Furthermore, ZFS employs a robust 256-bit checksumming system using a Merkle tree structure. Every block of data and metadata is checksummed, and these checksums are stored securely in the parent block, propagating all the way up to the root node of the tree. When data is subsequently read, ZFS calculates the checksum on the fly and compares it against the stored value. This allows it to detect and repair silent data corruption automatically if redundant data parity is available. This end-to-end data integrity verification makes ZFS surprisingly robust compared to older, legacy file systems like ext4 or XFS that assume the underlying hardware is infallible.
+
+                        What is it good for?
+               
+
+            For any long-term data storage needs, it's a boon
+    
+ZFS is primarily renowned for its uncompromising approach to data integrity, making it exceptionally well-suited for enterprise storage, network-attached storage devices, and any environment where data loss is unacceptable. The built-in software RAID functionality, known as RAID-Z, offers single, double, and triple parity options, providing comprehensive protection against multiple simultaneous drive failures without the traditional write hole vulnerability found in hardware RAID controllers.
+Because ZFS manages both the file system and the volume simultaneously, it can rebuild degraded arrays much faster by only resilvering the actual stored data rather than indiscriminately copying every sector on the disk.
+✕
+ Remove Ads
+Beyond redundancy, ZFS is incredibly effective for managing historical data states through its near-instantaneous snapshot feature. Due to the underlying copy-on-write architecture, taking a snapshot requires no initial storage space and causes no performance degradation. Users can create thousands of snapshots to preserve the exact state of the file system at specific moments in time, allowing for rapid rollbacks in the event of accidental deletion, malicious ransomware attacks, or botched software updates.
+Furthermore, the built-in send and receive capabilities allow these snapshots to be serialized and transferred efficiently over a network to remote backup servers, transferring only the exact byte-level changes made since the last synchronization. Additionally, ZFS natively supports transparent inline data compression. Modern algorithms like LZ4 and ZSTD compress data before it is written to the physical disks, which not only saves physical storage space but frequently increases overall input and output performance because less physical data needs to be transferred across the drive interfaces.
+And its 128-bit architecture theoretically allows it to address storage capacities far beyond current physical limitations, making it an ideal foundation for sprawling databases, virtualization hosts, and massive media archives.
+
+                        Should I use ZFS?
+               
+
+            You might not want to—but I really wish everyone could
+    
+Credit: Lucas Gouveia/How-To Geek | Rvector/Shutterstock
+✕
+ Remove Ads
+ Keep in mind that while it offers unparalleled data protection, it is not a lightweight file system and demands appropriate resources to function optimally. ZFS heavily relies on system memory for its Adaptive Replacement Cache, a sophisticated read cache that significantly accelerates performance by keeping frequently accessed data in RAM. Consequently, a common recommendation is to have at least one gigabyte of RAM for every terabyte of storage, although modern implementations can function adequately on less memory for basic home usage. Still, with how expensive RAM is these days, maybe not a lot of people are willing to sacrifice precious RAM.
+
+                    Subscribe to the newsletter for ZFS and storage deep dives
+                
+Joining the newsletter connects you to in-depth coverage of ZFS and Linux storage: practical guides on RAID-Z, snapshots, send/receive, memory and ECC trade-offs, pool topology examples, and clear explanations to inform your storage decisions.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+Furthermore, while not strictly mandatory, the use of ECC memory is highly recommended when deploying ZFS. Because ZFS completely trusts the system memory to hold accurate checksums before writing them to disk, a bad RAM module can theoretically corrupt data before ZFS has a chance to protect it.
+You must also be prepared for a steeper learning curve compared to standard 
+Linux
+ file systems. Expanding a ZFS storage pool is not as straightforward as simply appending a single disk to an existing array; it requires understanding the concepts of virtual devices and proper pool topology to maintain performance and redundancy. From a software perspective, ZFS is not included in the mainline 
+Linux kernel
+ due to licensing incompatibilities between its Common Development and Distribution License and the kernel's General Public License. As a result, it is typically installed via Dynamic Kernel Module Support, which means it must be recompiled whenever the 
+Linux
+ kernel is updated.
+✕
+ Remove Ads
+
+    						Laptop With Linux Clevo NL41PU
+			
+See at Laptop With Linux
+Expand
+Collapse
+ For those of you managing large media libraries, critical business backups, or homelab servers who are willing to invest in robust hardware, ZFS is arguably the best file system available. However, for a simple low-resource desktop, standard file systems remain the more practical choice.
+Linux
+Linux
+Storage
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. 
+Read More
+.
+Close
+✕
+ Remove Ads
+
+                                                    Desktop
+                                            
+
+                                                    Mobile
+                                            
+
+			This open-source project brings the best part of Linux to Windows
+		
+18 minutes ago
+
+			These 6 Linux command defaults make the terminal much less frustrating
+		
+57 minutes ago
+
+			PowerShell isn't scary—these everyday commands prove it
+		
+3 hours ago
+See More
+
+			I don't use Google Maps in Android Auto anymore—this navigation app took its place
+		
+27 minutes ago
+
+			Please stop typing on your Google Pixel—these 3 voice commands are a game changer
+		
+18 hours ago
+
+			Google Maps has a power-saving mode that extends battery life by 4 hours—but there's a catch
+		
+20 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			If your external drive is always plugged in, it isn't a backup
+		
+
+			Switching From Windows to Linux: A Step-by-Step Migration Guide
+		
+
+			You probably don't need a NAS: Why a DAS is better for most people
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+2
+Sign in to your 
+How-To Geek
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Marius
+Marius
+Marius
+#PT939672
+Member since 2025-12-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Where is the guide?
+I expected commands how to setup ZFS, troubleshooting tips, etc.. 
+This article is nothing but a general introduction to ZFS.. completely misleading title
+2026-03-29 11:02:56
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Baxter
+Baxter
+Baxter
+#JW924613
+Member since 2024-07-31
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Its not wrong, this is just Class Linux feel overkill xD 
+TimeShift locally and a separate storage that can use ZFX is more than enough for regular users and their desktops. And for enterprise you "should" use a OS like Fedora SilverBlue there any change is handled with Ansible and not with "local admin". There for you won't save much data on the desktop client but instead on a server stack with storage and/or SAN.
+2026-03-28 10:07:48
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Mar 18, 2026
+
+                                    Linux on Apple Silicon Mac computers gets better with Fedora Asahi Remix 43
+                            
+Mar 12, 2026
+
+                                    These 4 open-source apps fixed Windows' biggest problems
+                            
+Mar 11, 2026
+
+                                    Deepin is the best-looking Linux distro—here's why I don’t use it
+                            
+Mar 6, 2026
+
+                                    Stop trusting Windows drive alerts: How to pull your SSD's raw NVMe error log with smartctl
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+How-To Geek
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

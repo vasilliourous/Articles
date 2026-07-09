@@ -1,0 +1,600 @@
+Why log file analysis matters for AI crawlers and search visibility
+
+			Is your organic traffic disappearing?
+		  
+
+			See why competitors are outranking you and take back your visibility with Semrush.
+		  
+Identify traffic-stealing competitors
+Find untapped keyword opportunities
+Create content that ranks higher
+Input
+Instant analysis, no credit card needed.
+sel logo
+Articles
+Guides
+Tools
+Resources
+Events
+Search the Search Engine Land site
+Search
+Search scope
+All
+Webinars
+White Papers
+Intelligence Reports
+search icon
+Search the Search Engine Land site
+Search
+Search scope
+All
+Webinars
+White Papers
+Intelligence Reports
+Check my site's SEO
+Articles
+← Back
+Popular
+→
+SEO
+→
+PPC
+→
+AI
+→
+Content & Strategy
+→
+Google to no longer support FAQ rich results
+May 8, 2026
+How to build SEO agent skills that actually work
+May 1, 2026
+7 tools for doing AEO right now
+May 4, 2026
+Google Ads adds cross-campaign testing with new Mix Experiments beta
+Jan 22, 2026
+Veronika Höller talks on a perfectly set-up but poor performing campaign
+May 8, 2026
+The latest jobs in search marketing
+May 8, 2026
+Google to no longer support FAQ rich results
+May 8, 2026
+How to run prompt-level SEO experiments for AI search
+May 8, 2026
+The latest jobs in search marketing
+May 8, 2026
+Google Ads surfaces Tag Manager controls inside its interface
+May 8, 2026
+Microsoft Ads expands custom columns to include all conversion metrics
+May 7, 2026
+AI Max vs DSA: Advertisers question control as Google responds
+May 7, 2026
+How to run prompt-level SEO experiments for AI search
+May 8, 2026
+SEO’s new goal in 2026: Recognition, not rankings
+May 8, 2026
+8 GEO metrics to track in 2026
+May 7, 2026
+Microsoft: AI answers need a smarter search index
+May 6, 2026
+Why brand authority beats topical authority in AI search
+May 4, 2026
+What blog posts should you write to be mentioned in ChatGPT?
+Apr 30, 2026
+Searchers just want you to be helpful
+Apr 29, 2026
+Why more content is no longer a reliable way to grow SEO
+Apr 28, 2026
+Top Categories
+SEO
+→
+Google
+→
+PPC
+→
+Content
+→
+Google Ads
+→
+Link building
+→
+Google SEO
+→
+Apple
+→
+View All Articles
+Guides
+← Back
+Popular
+→
+SEO
+→
+PPC
+→
+AI SEO
+→
+Content Marketing
+→
+Advanced technical SEO tips: 14 technical SEO issues you’re missing
+May 1, 2026
+What Is SEO – Search Engine Optimization?
+Sep 23, 2024
+How to optimize a website for AI crawlers and AI agents
+May 7, 2026
+What is PPC – Pay-Per-Click marketing?
+Feb 1, 2023
+Tools and software to manage AI crawlers accessing your site
+May 7, 2026
+How to optimize a website for AI crawlers and AI agents
+May 7, 2026
+What are AI crawlers and bots?
+May 7, 2026
+Advanced technical SEO tips: 14 technical SEO issues you’re missing
+May 1, 2026
+BOFU keywords: The search terms that drive marketing success and profit
+Aug 21, 2025
+Organic search vs paid search: Which should you choose?
+Jul 10, 2025
+Retargeting: How brands stay top of mind after you bounce
+Jun 26, 2025
+Your guide to easy affiliate marketing for beginners
+Apr 15, 2025
+Tools and software to manage AI crawlers accessing your site
+May 7, 2026
+How to optimize a website for AI crawlers and AI agents
+May 7, 2026
+What are AI crawlers and bots?
+May 7, 2026
+Query fan-out tools and software to optimize content and track results
+Apr 21, 2026
+SEO gap analysis: How to find content and keyword gaps
+Dec 18, 2025
+Entity-first SEO: How to align content with Google’s Knowledge Graph
+Nov 25, 2025
+Semantic depth in SEO: Go beyond keywords to rank higher
+Nov 12, 2025
+AI-generated content: Benefits, risks & SEO best practices
+Oct 30, 2025
+Top Categories
+SEO
+→
+SEO Guides
+→
+AI SEO
+→
+Local
+→
+Technical optimization
+→
+Content
+→
+AI SEO Guides
+→
+Marketing
+→
+View All Guides
+Tools
+← Back
+Keyword Intelligence
+→
+Competitive Analysis
+→
+Rank Tracking
+→
+Site & Link Analysis
+→
+
+Keyword Research Tool
+Discover valuable keywords from the 26.6B terms people actually search for.
+
+Keyword Generator
+Find keyword ideas based on seed terms to guide your content strategy.
+
+Keyword Difficulty Checker
+Assess ranking difficulty and identify low hanging fruit targetable keywords.
+
+Keyword Rank Checker
+Monitor keyword rankings and your growth in the SERPs across 100+ geographies.
+
+Ecommerce Keyword Tool
+Find product-focused keywords that drive purchase intent and conversions.
+
+Competitor Analysis Tool
+Discover your competitors' top keywords, backlinks, and traffic sources instantly.
+
+AI Visibility Checker
+See if AI recommends your brand when users search your category.
+
+Google Ads Competitor Analysis
+See competitors' paid search strategies, ad copy, and estimated budgets.
+
+Website Traffic Checker
+Analyze website traffic patterns and performance metrics for any domain.
+
+SEO Competitor Analysis
+Analyze competitors' organic strategies, rankings, and content gaps.
+
+Website Rank Tracker
+Track your website's overall search visibility and ranking trends over time.
+
+Google Rank Checker
+Check exactly where your pages rank in Google for any target keyword.
+
+Reddit Traffic Finder
+Find Reddit discussions driving traffic and identify engagement opportunities.
+
+SERP Checker
+Analyze any SERP to see ranking factors and what it takes to hit #1.
+
+Backlink Research
+Review any site's backlink profile and identify link-building opportunities.
+
+Website Authority Checker
+Check your site's Authority Score to understand your domain strength.
+Resources
+← Back
+Webinars
+Live training sessions with industry experts for latest strategies and tactics.
+White Papers
+In-depth industry research and comprehensive analysis reports.
+Intelligence Reports
+Data-driven insights and market intelligence for strategic planning.
+Advertising Glossary
+Essential terms and definitions every marketer should know.
+The latest news and insights delivered right to your inbox
+Get your daily recap of the hottest search news, advice, and trends.
+*
+Sign me up!
+Events
+← Back
+SMX Master Classes
+→
+SMX Advanced
+→
+SMX Next
+→
+AI Prompting with Christopher Penn
+Available On-Demand
+GEO with Will Scott
+Available On-Demand
+Complete April Lineup
+Available On-Demand
+SMX Advanced
+June 3-5, 2026 | Boston
+SMX Next
+November 18, 2026 | Online
+Table of contents
+Back to top
+Some visibility is emerging — just not from AI platforms
+Not all AI crawlers behave the same way
+What AI crawler behavior actually tells you
+How to analyze AI crawler behavior with log files
+How to scale: Continuous log retention
+Getting closer to a complete view
+SEO
+ » 
+Article
+Why log file analysis matters for AI crawlers and search visibility
+Published:
+ April 16, 2026 at 9:00 am
+Read Time:
+ 14 minutes
+Published:
+ Apr 16, 2026, 9:00 am · 
+						14 min read
+					
+
+								Written by 
+Lauren Busby
+
+																	, Edited by 
+Angel Niñofranco
+
+																									, Reviewed by 
+Danny Goodwin
+Share
+
+							Written by
+						
+
+							Lauren Busby						
+Edited by 
+Angel Niñofranco
+Reviewed by 
+Danny Goodwin
+Table of Contents
+Table of Contents
+Some visibility is emerging — just not from AI platforms
+Not all AI crawlers behave the same way
+What AI crawler behavior actually tells you
+How to analyze AI crawler behavior with log files
+How to scale: Continuous log retention
+Getting closer to a complete view
+Track how AI crawlers access your site, identify crawl gaps, and understand what content gets missed using log file data.
+One of the biggest challenges in AI search is that visibility is being shaped by systems you can’t directly observe.
+Nothing like 
+Google Search Console
+ exists for ChatGPT, Claude, or Perplexity. No reporting layer showing what’s crawled, how often, or whether your content is considered at all.
+Yet these systems are actively crawling the web, building datasets, powering retrieval, and generating answers that shape discovery — often without sending traffic back to the source.
+This creates a gap. In traditional 
+SEO
+, performance and behavior are connected. You can see impressions, clicks, indexing, and some level of crawl data. In AI search, that feedback loop doesn’t exist.
+Log files are the closest thing to that missing layer. They don’t summarize or interpret activity. They record it — every request, every URL, every crawler. 
+For AI systems, that raw data is often the only way to understand how your site is actually being accessed.
+Some visibility is emerging — just not from AI platforms
+That lack of visibility hasn’t gone entirely unaddressed. 
+Bing is one of the first platforms to introduce this natively. Through Bing Webmaster Tools, 
+Copilot-related insights
+ are beginning to show how AI-driven systems interact with websites. It’s still early, but it’s a meaningful shift — and the first real example of an AI system exposing even part of its behavior to site owners.
+Beyond that, a new category of tools is emerging. Platforms like Scrunch, Profound, and others focus on AI visibility, tracking how content appears in AI-generated responses and how different agents interact with a site. 
+In some cases, they connect directly to sources like Cloudflare or other traffic layers, making it easier to monitor crawler activity without manually exporting and analyzing raw logs.
+That visibility is useful, especially as AI systems evolve quickly. But it isn’t complete. 
+Most of these tools operate within a defined window. Some only surface a limited timeframe of agent activity, making them effective for near-term monitoring, but less useful for understanding longer-term patterns or changes in crawl behavior.
+AI crawler activity isn’t consistent. Unlike Googlebot, which crawls continuously, many AI agents appear sporadically or in bursts. Without historical data, it’s difficult to determine whether a change in activity is meaningful or normal variation.
+Log files solve for that. They provide a complete, unfiltered record of crawler behavior — every request, every URL, every user agent. With continuous retention, they enable analysis of patterns over time and revisiting data when something changes.
+Dig deeper: 
+Log file analysis for SEO: Find crawl issues & fix them fast
+
+        Your customers search everywhere. Make sure your brand 
+shows up
+.
+      
+
+        The SEO toolkit you know, plus the AI visibility data you need.
+      
+Start Free Trial
+Get started with
+Not all AI crawlers behave the same way
+In log files, everything appears as a user agent string. On the surface, it’s easy to treat them the same, but they represent different systems with different objectives. That distinction matters, because it directly affects how they access and interact with your site.
+AI-related crawlers generally fall into two groups: training and retrieval.
+Training crawlers
+Training crawlers, such as 
+GPTBot
+, ClaudeBot, CCBot, and Google-Extended, collect content for large-scale datasets and model development. 
+Their activity isn’t tied to real-time queries, and they don’t behave like traditional search crawlers. You’ll typically see them less frequently, and when they do appear, their crawl patterns are broader and less targeted.
+Because of that, their presence – or absence – carries a different implication. If these crawlers don’t appear in your logs at all, it’s not just a crawl issue. It raises the question of whether your content is included in the datasets that influence how AI systems understand topics over time.
+At the same time, it’s important to consider how much data you’re analyzing. Training crawlers don’t operate on a continuous crawl cycle like Googlebot. 
+Their activity is often sporadic, which means a short log window (a few hours, or even a single day) can be misleading. You may not see them simply because they haven’t crawled within that timeframe.
+That’s why analyzing log data over a longer period matters. It helps distinguish between true absence and normal variation in how these systems crawl.
+Retrieval and answer crawlers
+Retrieval crawlers operate differently. Agents like ChatGPT-User and PerplexityBot are more closely tied to live, or near-real-time, responses. Their activity tends to be event-driven and more targeted, often limited to a small number of URLs.
+That makes their behavior less predictable and easier to misinterpret. You won’t see the same volume or consistency you would from Googlebot, but patterns still matter. 
+If these crawlers never reach deeper content, or consistently stop at top-level pages, it can indicate limitations in how your site is discovered or accessed.
+Traditional crawlers still matter, but they’re no longer the full picture
+Googlebot and Bingbot still provide the baseline. Their crawl behavior is consistent and typically gives a reliable view of how well your site can be discovered and indexed.
+The difference is that AI crawlers don’t always follow the same paths. It’s common to see strong, deep crawl coverage from Googlebot alongside much lighter, or more shallow, interaction from AI systems. That gap doesn’t show up in Search Console, but becomes clear in log files.
+What AI crawler behavior actually tells you
+Once you isolate AI crawlers in your log files, the goal isn’t just to confirm they exist. It’s to understand how they interact with your site – and what that behavior implies about visibility.
+AI systems crawl the web to train models, build retrieval indexes, and support generative answers. But unlike Googlebot, there’s very little direct visibility into how that activity plays out.
+Log files make that behavior observable. There are a few key patterns to focus on.
+Discovery: Are you being accessed at all?
+Start by checking whether AI crawlers appear in your logs.
+In many cases, they don’t — or appear far less frequently than traditional search crawlers. That doesn’t always indicate a technical issue, but highlights how differently these systems discover and access content.
+If AI crawlers are completely absent, they may be blocked in robots.txt, rate-limited at the server or CDN level, or simply not discovering your site.
+Presence alone is a signal. Absence is one too.
+Crawl depth: How far into your site do they go?
+When AI crawlers do appear, the next question is how far they get.
+It’s common to see them limited to top-level pages – the homepage, primary navigation, and a small number of high-level URLs. Deeper content, including long-tail pages, or location-specific content, is often untouched.
+If crawlers aren’t reaching those sections, they’re not seeing the full structure of your site. That limits how much context they can build and reduces the likelihood that deeper content is surfaced in AI-generated responses.
+Crawl paths: How AI systems actually see your site
+When AI crawlers access a site, they don’t build a comprehensive map the way traditional search engines do. 
+Their behavior is more selective and influenced by what’s immediately accessible, which means your site structure plays a larger role in what they reach.
+In log files, this appears as concentrated activity around a small set of URLs. 
+Requests are typically clustered around the homepage, primary navigation, and pages that are directly linked, or easy to discover. 
+As you move deeper into the site, crawl activity often drops off, sometimes sharply, even when those pages are important from a business, or SEO, perspective.
+The practical implication: pages buried behind JavaScript-heavy navigation, or weak internal linking, are significantly less likely to be accessed.
+As a result, the version of your site AI systems interact with is often incomplete. Entire sections can be effectively invisible because they sit outside the paths these crawlers can follow. 
+This is where log file analysis becomes particularly useful, because it exposes the difference between what exists and what’s actually accessed.
+Crawl friction: Where access breaks down
+Log files also surface where crawlers encounter issues. This includes:
+403 responses (blocked requests).
+429 responses (rate limiting).
+Redirects and redirect chains.
+Unexpected status codes.
+For AI crawlers, these issues can have an outsized impact. Their activity is already limited, and failed requests reduce the likelihood they continue deeper into the site.
+Cross-system comparison: How does this differ from Googlebot?
+Comparing AI crawler behavior to Googlebot provides useful context.
+Googlebot typically shows consistent, deep crawl coverage across a site. AI crawlers often behave differently – appearing less frequently, accessing fewer pages, and stopping at shallower levels.
+That difference highlights where your site is accessible for traditional search, but not necessarily for AI-driven systems. As those systems become more influential in discovery, crawl accessibility becomes a multi-system concern – not just a Google one.
+Get the newsletter search marketers rely on.
+*
+Sign me up!
+See terms.
+How to analyze AI crawler behavior with log files
+You don’t need a complex setup to start getting value from log files. Most hosting platforms retain access logs by default, even if only for a short window.
+You’ll find that retention varies across hosting providers, but it’s often limited to anywhere from a few hours to a few days. Kinsta, for example, typically retains logs for a short rolling window, which is enough to get started but not for long-term analysis.
+Start with the logs you already have
+The first step is simply to export access logs from your hosting environment.
+Even a small dataset can surface useful patterns, particularly when you’re looking for presence, crawl paths, and obvious gaps. At this stage, you’re not trying to build a complete picture over time. You’re looking for directional insight into how different crawlers are interacting with your site right now.
+Use a log analysis tool to make the data usable
+Raw log files are difficult to work with directly, especially at scale.
+Tools like Screaming Frog Log File Analyzer make it possible to process that data quickly. Logs can be uploaded in their raw format and broken down by user agent, URL, and response code, allowing you to move from raw requests to structured analysis without additional preprocessing.
+This is where the data becomes usable.
+Segment by crawler type
+Once the logs are loaded, segmentation becomes the priority. Start by isolating user agents so you can compare AI crawlers, Googlebot, and Bingbot.
+This is critical, because behavior varies significantly across systems. Without segmentation, everything blends together. With it, patterns start to emerge.
+To filter your views by bot, select your bot at the top right of the Log File Analyser. This will update all subsequent analysis to the bot you’ve selected.
+You can begin to see:
+Whether AI crawlers appear at all.
+How their activity compares to traditional search.
+Whether their behavior aligns or diverges.
+Analyze crawl behavior against your site structure
+From there, shift from presence to behavior.
+Look at which URLs are being accessed, how frequently they appear, and how that maps to your site structure. This is where the earlier analysis becomes practical.
+You’re not just asking what was crawled. You’re asking:
+Are crawlers reaching deeper content?
+Which sections of the site are being skipped entirely?
+Does this align with how your site is structured and linked?
+This is where crawl paths, accessibility, and prioritization start to surface as real, observable patterns.
+Use response codes to identify friction
+Filtering by response code adds another layer of insight.
+This helps surface where crawlers are encountering issues, including:
+Blocked requests.
+Rate limiting.
+Redirect chains.
+Unexpected responses.
+For AI crawlers, these issues can have a greater impact. Their activity is already limited, so failed requests reduce the likelihood that they continue further into the site.
+Cross-reference crawlable vs. crawled
+One of the most valuable steps is comparing what can be crawled with what is actually being crawled.
+Running a standard crawl alongside your log analysis allows you to identify this gap directly. Pages that are accessible in theory, but never appear in logs, represent missed opportunities for discovery.
+Understand what your logs don’t show
+As you work through log data, it’s also important to understand its limitations.
+Server-level logs only capture requests that reach your origin. In environments that include a CDN, or security layer like Cloudflare, some requests may be filtered before they ever reach the site. That means certain crawler activity, particularly blocked, or rate-limited, requests, won’t appear in your logs at all.
+This becomes relevant when interpreting absence. If specific AI crawlers don’t appear in your data, it doesn’t always mean they aren’t attempting to access the site. In some cases, they may be getting filtered upstream.
+How to scale: Continuous log retention
+Log file analysis breaks down quickly if you’re only looking at short timeframes.
+A few hours of data, or even a single day, can show you what happened. It can also make it look like nothing is happening at all. With AI crawlers, that distinction matters.
+Their activity isn’t continuous. Training crawlers may appear intermittently, and retrieval agents are often tied to specific events or queries. 
+A short log window can easily lead you to the wrong conclusion. A crawler that doesn’t appear in your data may still be active. It just hasn’t shown up within that window.
+This is where retention changes the analysis. Once you’re working with a longer dataset, you’ll see how often it appears, where it shows up, and whether that behavior is consistent over time. What looked like absence starts to resolve into patterns.
+Moving beyond your hosting limits
+At that point, the limitation isn’t analysis. It’s access to data over time.
+Most hosting environments aren’t designed for long-term log retention. Even when logs are available, they’re typically tied to a short rolling window. That makes it difficult to revisit behavior, compare time periods, or understand how crawler activity evolves.
+To get beyond that, you need to store logs outside of your hosting environment. Log storage options include: 
+Amazon S3 is one of the most common approaches. It provides flexible, low-cost storage that allows you to retain logs continuously and query them when needed. If the goal is to build a historical view of crawler behavior, it’s a practical and widely supported option.
+Cloudflare R2 serves a similar purpose and can be a better fit for sites already using Cloudflare. It keeps storage within the same ecosystem and simplifies how log data is handled, particularly when edge-level logging is part of the setup.
+The specific platform matters less than the shift itself. You’re moving from whatever your host happened to keep to a dataset you control.
+Bridging the gap with automation
+Not every setup supports continuous streaming, and most teams aren’t going to build that infrastructure upfront.
+If your retention window is limited, automation becomes the practical way to extend it.
+Instead of manually downloading logs, you can schedule the process. Many hosting providers expose logs over SFTP, which makes it possible to pull them at regular intervals before they expire.
+A scheduled SFTP job – whether built in a workflow tool like n8n, or scripted – is enough to turn a short retention window into something you can actually analyze over time. That’s often the difference between one-off analysis and something repeatable.
+
+        See the 
+complete picture
+ of your search visibility.
+      
+
+        Track, optimize, and win in Google and AI search from one platform.
+      
+Start Free Trial
+Get started with
+Getting closer to a complete view
+As your dataset grows, so does the need to understand its boundaries. Log files show you what reached your site. They don’t always show you what tried to.
+In environments that include a CDN, or security layer, some requests may be filtered before they reach your origin. That becomes more noticeable over time, particularly when certain crawlers appear less frequently than expected.
+At that point, edge-level logging becomes a useful addition. It provides visibility into requests that are blocked or filtered upstream and helps explain gaps in origin-level data.
+It’s not required to get value from log analysis, but it becomes relevant once you’re trying to build a more complete picture of crawler behavior across systems.
+Log files show you what reached your site. They don’t show everything, but they’re the only place this interaction becomes visible at all.
+You’re not optimizing for one crawler anymore. And the teams that start measuring this now won’t be guessing later.
+Topics on this page
+Artificial intelligence
+Bing Webmaster Tools
+Bingbot
+CCBot
+ChatGPT
+Claude
+Cloudflare
+Data logger
+Generative AI
+Google
+Google Search Console
+Googlebot
+JavaScript
+Microsoft
+Microsoft Bing
+Perplexity AI
+Screaming Frog SEO Spider
+Search engine optimization
+URL
+Web analytics
+Web crawler
++16 more
+Contributing authors are invited to create content for Search Engine Land and are chosen for their expertise and contribution to the search community. Our contributors work under the oversight of the 
+editorial staff
+ and contributions are checked for quality and relevance to our readers. Search Engine Land is owned by 
+Semrush
+. Contributor was not asked to make any direct or indirect mentions of 
+Semrush
+. The opinions they express are their own.
+About the Author
+Lauren Busby
+
+			Lauren Busby is the Co-Founder of 
+Trebletree
+, a boutique SEO and web design agency, where she leads the SEO/web teams in building websites for SEO success. She has worked in the SEO field since 2009, driving organic growth for a range of medium-sized to enterprise-level brands, including
+			
+… 
+[Read more]
+
+			Lauren Busby is the Co-Founder of 
+Trebletree
+, a boutique SEO and web design agency, where she leads the SEO/web teams in building websites for SEO success. She has worked in the SEO field since 2009, driving organic growth for a range of medium-sized to enterprise-level brands, including Carpet One and Urban Air. Lauren specializes in keyword strategy, technical SEO, and large-scale franchise/enterprise SEO.
+			
+[Read less]
+Get the newsletter search marketers rely on.
+*
+Sign me up!
+Find Your SEO Issues in 
+30 Seconds
+Free technical audit shows what's blocking your search visibility.
+Audit My Site
+ Powered by Semrush • Try 
+TechCrunch
+Webinar
+Your customers have outsmarted your marketing. Learn how to keep pace.
+Report
+Enterprise Digital Asset Management Platforms: A Marketer’s Guide
+Whitepaper
+The AEO Divide: Why strategy and execution aren’t matching up
+Related Articles
+SEO
+Veronika Höller talks on a perfectly set-up but poor performing campaign
+Anu Adegbola
+SEO
+The latest jobs in search marketing
+Anu Adegbola
+SEO
+Google to no longer support FAQ rich results
+Barry Schwartz
+Webinars
+Your customers have outsmarted your marketing. Learn how to keep pace.
+The Automation Drift and How to Correct Course
+Link Building in the Age of AI Search: How To Build Links That Establish Legitimacy
+View all Webinars
+Intelligence Reports
+Enterprise Digital Asset Management Platforms: A Marketer’s Guide
+Email Marketing Platforms: A Marketer’s Guide
+Identity Resolution Platforms: A Marketer’s Guide
+View all Intelligence Reports
+White Papers
+The AEO Divide: Why strategy and execution aren’t matching up
+Choosing an enterprise CMS
+2026 Direct Mail Marketing Benchmark Report
+View all White Papers
+Get the newsletter search marketers rely on.
+*
+Sign me up!
+Find Your SEO Issues in 
+30 Seconds
+Free technical audit shows what's blocking your search visibility.
+Audit My Site
+ Powered by Semrush • Try 
+TechCrunch
+Topics
+SEO
+PPC
+Platforms
+All topics
+Our events
+Search Marketing Expo - SMX
+MarTech
+Semrush
+Semrush coupon
+Semrush offer
+About
+About us
+Contact
+Privacy
+Terms
+AI policy
+Marketing opportunities
+Staff
+Login
+Follow us
+Facebook
+X (formerly Twitter)
+LinkedIn
+Newsletters
+RSS
+YouTube
+© 2026 Search Engine Land is a Trademark of Semrush Inc.
+Third Door Media operates business-to-business media properties and produces events, including SMX. It is the publisher of Search Engine Land, the leading digital publication covering the latest search engine optimization (SEO) and pay-per-click (PPC) marketing news, trends and advice. The company headquarters is 800 Boylston Street, Suite 2475, Boston, MA USA 02199.

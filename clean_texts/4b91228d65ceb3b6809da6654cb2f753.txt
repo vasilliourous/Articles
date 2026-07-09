@@ -1,0 +1,606 @@
+Caddy handles reverse proxying so well that I ditched my entire toolchain
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+7
+More Action
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+Caddy handles reverse proxying so well that I ditched my entire toolchain
+By 
+Joe Rice-Jones
+Published
+ May 1, 2026, 10:00 AM EDT
+Maker, meme-r, and unabashed geek, Joe has been writing about technology since starting his career in 2018 at KnowTechie. He's covered everything from Apple to apps and crowdfunding and loves getting to the bottom of complicated topics. In that time, he's also written for SlashGear and numerous corporate clients before finding his home at XDA in the spring of 2023.
+
+He was the kid who took apart every toy to see how it worked, even if it didn't exactly go back together afterward. That's given him a solid background for explaining how complex systems work together, and he promises he's gotten better at the putting things back together stage since then. 
+Sign in to your 
+XDA
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+7
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Self-hosting services is always neater when you use a 
+reverse proxy like Caddy
+, whether you want to reach them from anywhere or are only testing things out on your home network. I like Caddy partly because 
+it has a prebuilt Proxmox LXC
+, but also because it has a powerful and modular construction where I can add the features I want without having to deal with ones I don't.
+✕
+ Remove Ads
+Plus, it generates TLS certificates for you, so you can have HTTPS on all your services with very little effort. To do that when it's behind your home network needs Cloudflare's DNS challenge, but that one module makes your reverse proxy so much better, while teaching you how modules work with Caddy. 
+Related
+
+			A reverse proxy tied my entire home lab together, and I should have set it up first
+		
+Honestly, setting it up was way easier than I'd anticipated
+Posts
+By 
+Ayush Pande
+Feb 26, 2026
+
+                        Caddy can be incredibly powerful
+               
+
+            Modules are the spice of life
+    
+Caddy was built as a web server
+, but the modular construction makes it great for a whole variety of specialized tasks, like setting up an encrypted reverse proxy. Exposing multiple self-hosted services can turn into a complex management game, but it doesn't have to be that way. Caddy's single-file management method makes it easier, as it takes a few minutes to set up, and you can easily add to it as your home lab grows.
+And if you find you need a new feature, Caddy lets you rebuild the image easily with the new module(s), so you can have the reverse proxy of your dreams. I don't have a ton of modules activated on mine, partly because I keep changing things, but the one module I never go without is the Cloudflare module so I can use my own domain, and handle DNS challenges for Let's Encrypt certificates for every service I run.
+✕
+ Remove Ads
+
+    						Caddy
+			
+See at Caddy
+Expand
+Collapse
+
+                        Building custom Caddy images is simple
+               
+
+            And you can do it in multiple ways
+    
+To use modules in Caddy, you have to rebuild the image to add the new features. The good news is that there are a ton of features you can add, but it's also complicated because you don't want to add too many modules and end up with something hard to manage. You can always rebuild the image whenever you want to add more.
+For example, adding these non-standard modules by building a new Caddy image with xcaddy would look like:
+xcaddy build \
+ --with 
+github.com/caddy-dns/cloudflare
+ \
+ --with 
+github.com/mholt/caddy-dynamicdns
+ \
+ --with 
+github.com/corazawaf/coraza-caddy/v2
+ \
+ --with 
+github.com/caddyserver/cache-handler
+ \
+ --with 
+github.com/ueffel/caddy-brotli
+Then, once you've got the list of modules you like, bake it into a Dockerfile like so, then call that in your docker-compose file by using "
+build: ."
+ instead of 
+"image:"
+.
+FROM caddy:builder AS builder
+RUN caddy-builder \
+github.com/caddy-dns/cloudflare
+github.com/mholt/caddy-dynamicdns
+ \
+FROM caddy:latest
+COPY --from=builder /usr/bin/caddy /usr/bin/caddy
+Caddy also has a 
+web configurator
+ where you can select the modules you need, and download a fully built package for use on your machine. It's much easier to do things this way, especially when you're just starting out learning how Caddy works. Copy the URL from the Download button, and use 
+sudo curl -o /usr/bin/caddy [url]
+ to get it downloaded, then make it executable with 
+sudo chmod 755 /usr/bin/caddy
+.
+
+            Adding services is easier still
+    
+✕
+ Remove Ads
+Once you've got your Caddyfile, it's time to fill things like your Cloudflare API, so you can use it for DNS challenges and get HTTPS to your self-hosted services:
+export CLOUDFLARE_API_TOKEN="your-api-token"
+caddy run --config /etc/caddy/Caddyfile --adapter
+
+                    Subscribe to the newsletter for deeper Caddy reverse-proxy insight
+                
+Get focused Caddy guidance by subscribing to the newsletter: curated deep-dives, practical config patterns, module recommendations, and rebuild tips to help you iterate on your reverse-proxy and improve your self-hosting setup.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+Then, to add the reverse proxy part:
+example.com
+ {
+reverse_proxy http://:
+}
+It's that simple, and every service forward that you add will be seen by Caddy, which will query Let's Encrypt for an SSL certificate, and use the Cloudflare DNS challenge API to prove ownership of your domain.
+Related
+
+			Why I ditched Cloudflare Tunnels for Tailscale and Caddy on my homelab
+		
+Private beats public, always. 
+Posts
+9
+By 
+Samir Makwana
+Apr 22, 2026
+
+            Caddy modules let you customize your reverse proxy to your needs
+    
+Now, I've used the big names in reverse proxy tools, and they're all managed a little differently. Caddy gives you a pre-install routine to add the features you want to a basic Caddyfile, so you can add your own domain and DNS challenge for TLS certificates, or any other plugins you want. And because of how customizable it is, Caddy is at home with
+✕
+ Remove Ads
+Networking
+Home Lab
+Self-Hosting
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			Claude Code works best when you stop asking it to code
+		
+
+			Claude Code's creator keeps sharing tips, and they all made my experience better
+		
+
+			My favorite alternative to Office 365 isn’t LibreOffice – it’s something way cooler
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+7
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+A_Nemo
+A_Nemo
+A_Nemo
+#RO195411
+Member since 2025-12-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+The article isn't done. And why are the referenced modules not even explained, a little? 
+2026-05-02 00:04:27
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Derek
+Derek
+Derek
+#WI799331
+Member since 2024-07-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I haven't used Caddy, but always hear how simple it is to set up. That's pretty complicated compared to Traefik. 
+And what "toolchain" did you ditch?
+2026-05-02 19:52:19
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+PkSRbX
+PkSRbX
+PkSRbX
+#SW904678
+Member since 2025-04-23
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Exactly, traefik is just deploy and voila it works.
+And you if you want to do an upgrade to traefik check pangolin it uses traefik as it's reverse proxy but adds a layer of ui to set your endpoints, and comes with a VPN like connection if you want to expose a docker that live in another another network without exposing ports.
+2026-05-03 06:37:56
+Upvote
+Downvote
+Reply
+Copy
+        
+Denis
+Denis
+Denis
+#JZ638530
+Member since 2026-05-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Btw if HTTP-01 challenge is used the cloudflare API key is not needed for managing txt DNS records. A quick question does caddy also create A records for your sites, or the cloudflare integration is purely for DNS challenge?
+2026-05-02 01:42:18
+Upvote
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Bryan
+Bryan
+Bryan
+#GV148562
+Member since 2026-05-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Pretty sure HTTP-01 and DNS-01 challenges are for SSL/TLS and not for DNS management. The txt record is required for DNS-01 challenges, and caddy and most reverse proxies that support DNS-01 challenges will integrate with the DNS provider to create the txt record.
+2026-05-02 02:53:16
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+PkSRbX
+PkSRbX
+PkSRbX
+#SW904678
+Member since 2025-04-23
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+In a world where pangolin exists, talking about other reverse proxy's is kind of irrelevant.
+Its not even a competition.
+2026-05-03 06:33:47
+Upvote
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+XDAMember
+XDAMember
+XDAMember
+#GQ553690
+Member since 2026-05-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+What happened to nginx lol. Neither caddy nor pangolin are needed. Write your apps properly. Reverse proxy via nginx and done. No one can tell me a new nginx conf takes longer than 5 min in the age of chatgippities
+2026-05-03 06:41:10
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 29, 2026
+
+                                    Valve isn't ditching Windows or x86, but it's quietly making both optional
+                            
+Apr 28, 2026
+
+                                    Your old Nintendo 64 games are finally getting unofficial PC ports, and they run better than emulators
+                            
+Apr 28, 2026
+
+                                    I built my first home server for under $200, and it replaced 4 monthly subscriptions
+                            
+Apr 28, 2026
+
+                                    Before your router even connects to the internet, change these 6 settings
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:07
+
+                            The end of affordable PCs?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:32
+
+                            Mac OS X launch: 25 years later
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            How much data does Steam use in a year?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

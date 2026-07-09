@@ -1,0 +1,552 @@
+Stop reading raw server logs: These terminal tools turn them into visual dashboards
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+6
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+Stop reading raw server logs: These terminal tools turn them into visual dashboards
+By 
+Anurag Singh
+Published
+ Mar 23, 2026, 4:30 PM EDT
+Anurag is an experienced journalist and author who’s been covering tech for the past 5 years, with a focus on Windows, Android, and Apple. He’s written for sites like Android Police, Neowin, Dexerto, and MakeTechEasier. Anurag’s always pumped about tech and loves getting his hands on the latest gadgets. When he's not procrastinating, you’ll probably find him catching the newest movies in theaters or scrolling through Twitter from his bed. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+6
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+If you’ve ever stared at a wall of server logs trying to find one useful line, you already know how painful it gets. You end up endlessly scrolling, dealing with timestamps that don’t line up, while important errors stay buried in noise, which makes the whole process harder than it should be. The problem isn’t just the logs themselves; it’s how you’re forced to read them.
+✕
+ Remove Ads
+That’s where modern terminal tools change things. There are a lot of tools out there that, instead of dumping raw text, turn logs and system data into something you can actually understand. Tools like lnav and K9s take the same underlying data and present it as timelines, dashboards, filtered views, and live metrics.
+Related
+
+			I turned a Steam Deck into my living room home lab terminal
+		
+It went so much better than you'd expect.
+Posts
+2
+By 
+Jasmine Mannan
+Mar 15, 2026
+
+                        Inav
+               
+
+            Turns raw logs into something you can query
+    
+lnav (Log Navigator) is an interactive log file viewer that merges multiple logs into a single chronological stream, so you don’t have to open files side by side. It uses color-coding to show where each line comes from, making it easier to follow events across different sources.
+Its timeline view includes a histogram of log activity over time, with errors and warnings clearly highlighted, so spikes and incidents stand out immediately instead of forcing you to scan thousands of lines. You can jump to any point in the timeline with a quick keypress and land directly in the relevant section of the logs.
+As you scroll through entries, you can apply regex-based filters on the fly, which lets you hide debug logs or focus only on errors without reloading anything.
+✕
+ Remove Ads
+One of its most useful features is the built-in SQL interface. lnav treats logs like SQLite tables, so you can run queries directly on them. For example, you can run a query to group requests by client IP and quickly identify the most active sources without exporting the data elsewhere.
+
+                        K9s
+               
+
+            A live dashboard for navigating logs in Kubernetes
+    
+ K9s gives you a live, terminal-based dashboard for your Kubernetes cluster, so you can see what’s happening without constantly jumping between kubectl commands. It continuously watches the cluster and updates in real time, showing metrics for pods, containers, and nodes as things change.
+The interface is built around views that make cluster state easier to understand at a glance. The Pulses view acts as a high-level health dashboard, showing node usage, pod counts, and recent events, while the XRay view maps relationships between resources, such as how a Deployment connects to ReplicaSets and Pods. This makes it much easier to trace issues across the stack without manually piecing things together.
+You can browse live lists of resources like Deployments, Pods, and Services, along with their current status and resource usage. CPU and memory metrics are surfaced directly in the UI, so you can quickly spot spikes or bottlenecks as they happen.
+✕
+ Remove Ads
+K9s also lets you take action without leaving the interface. You can exec into containers, port-forward services, scale deployments, or open a live log stream for any pod. If something goes wrong, like a pod entering CrashLoopBackOff, you can immediately spot it in the list and jump straight into its logs from the same screen.
+
+                        MultiTail
+               
+
+            Watch multiple logs at once without losing context
+    
+ MultiTail splits your terminal into multiple panes so you can monitor several logs or command outputs at the same time. You might keep Apache’s 
+access.log
+ in one pane, 
+error.log
+ in another, and even run something like netstat alongside them.
+It adds visual structure to what would otherwise be raw, scrolling text. You can define regex-based rules to highlight or suppress specific patterns, so important entries stand out immediately. For example, you can color all “ERROR” lines in red, highlight warnings, or even trigger a beep or screen flash when a critical pattern appears.
+MultiTail can also merge multiple logs into a single unified view with labels, so you can correlate events across files without manually aligning timestamps. At the same time, you still have the flexibility to keep logs in separate panes if that suits your workflow better.
+Beyond just viewing logs, it can act as a kind of visual pipeline. You can filter specific lines and forward them to other processes, write them to a file, or use them to trigger alerts while continuing to monitor everything live.
+✕
+ Remove Ads
+
+                        Glances
+               
+
+            Combines logs and system metrics into one view
+    
+ Glances is a system-wide monitoring tool rather than a log parser, but it serves a similar purpose by turning raw system data into something you can actually read and act on. You get a live, unified view of CPU usage, memory, disk I/O, network activity, running processes, and more, all in one place.
+
+                    Subscribe to the newsletter for practical terminal tool guides
+                
+Unlock deeper terminal tooling know-how: subscribe to the newsletter for curated tips, command recipes, and practical workflows that make logs, Kubernetes, and system metrics readable and actionable. Ideal for engineers wanting better terminal tools and r
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+It can run directly in your terminal using a curses interface or spin up a web-based dashboard that you can access from a browser. The layout adapts to the available space, so you get a dense but readable overview without needing multiple tools or windows.
+Glances also works in a client-server setup, which means you can run it on one machine and monitor it remotely from another. This is useful if you’re managing a server and want visibility without constantly SSHing in.
+Where it becomes especially powerful is in how it handles metrics export. Glances can push data to backends like InfluxDB, Prometheus, Graphite, Elasticsearch, or even simple CSV files and messaging systems like RabbitMQ. There is also a ready-to-use Grafana dashboard, so you can plug the data into Grafana and get long-term, polished visualizations of system performance.
+✕
+ Remove Ads
+
+            Do more with the terminal
+    
+Terminal is more useful than most people think. Once you start using it to its full potential, you can save a lot more time than you would with GUI tools. If you don’t know where to start, check out these 
+four terminal tools that you can install on every new machine
+. While you’re at it, see how doing 
+certain tasks in the terminal can save you even more time
+. And if you want to take things further, check out these five 
+terminal tools that make learning commands easier
+.
+Related
+
+			5 open-source dashboards I use that make monitoring my NAS fun
+		
+If you want to monitor your NAS in a fun and interesting way, these are some of the best open-source dashboards to do just that.
+Posts
+1
+By 
+Adam Conway
+Apr 7, 2025
+Software and Services
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			Zigbee 4.0 supports more than 2.4 GHz, and it might finally end the smart home protocol war
+		
+
+			I don't pay for ChatGPT, Perplexity, Gemini, or Claude – I stick to my self-hosted LLMs instead
+		
+
+			I bought a $30 KVM switch, and it did more for my desk than any monitor upgrade
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+6
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Matt
+Matt
+Matt
+#DE903258
+Member since 2026-03-24
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Who reads logs anymore, any failures are automatically sent to an llm chatbot for  parsing with explanation and feedback based on previous similiar issues.
+2026-03-24 06:43:54
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Oleh
+Oleh
+Oleh
+#MW506057
+Member since 2026-03-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Bad idea, you are growing project knowledge debt, which you will be unavailable to resolve because your don't know how is your code working, slop operator 
+2026-03-25 03:21:39
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+XDAMember
+XDAMember
+XDAMember
+#QT363789
+Member since 2026-03-24
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Really helpful overview. For anyone browsing logs, Fast Log Viewer is another option I’ve found useful. It’s private and fast.
+2026-03-24 06:02:32
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Piotr
+Piotr
+Piotr
+#SC168266
+Member since 2026-03-24
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+It is lnav not iNav
+2026-03-24 04:03:32
+Upvote
+Downvote
+Reply
+Copy
+        
+Amr
+Amr
+Amr
+#JP651888
+Member since 2026-03-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Well not a full fledged mutli file logging tool, peco is really good for querying. It  can even query live by piping through it
+2026-03-25 04:46:57
+Upvote
+Downvote
+Reply
+Copy
+        
+Rasheed
+Rasheed
+Rasheed
+#CA852826
+Member since 2024-11-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Didn't know k9s could do all that, I only ever used it for port forwarding! Thanks
+2026-03-24 00:14:35
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Mar 23, 2026
+
+                                    Linus Torvalds says Linux 7.0 is finally looking normal again
+                            
+Mar 20, 2026
+
+                                    I reverse engineered my NAS's dead touchscreen and built an open-source dashboard from scratch
+                            
+Mar 20, 2026
+
+                                    5 of the best self-hosted services to automate your life
+                            
+Mar 18, 2026
+
+                                    Smart TVs have gotten so bad that a $35 streaming stick does everything better now
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            How much data does Steam use in a year?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            Windows XP's Secret Themes
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:07
+
+                            The end of affordable PCs?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

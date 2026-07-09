@@ -1,0 +1,495 @@
+I finally set up Neovim, and it's the terminal editor I didn't know I needed
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+3
+More Action
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I finally set up Neovim, and it's the terminal editor I didn't know I needed
+By 
+Adam Conway
+Published
+ May 6, 2026, 6:01 PM EDT
+I’m Adam Conway, an Irish technology fanatic with a BSc in Computer Science and I'm XDA’s Lead Technical Editor. My Bachelor’s thesis was conducted on the viability of benchmarking the non-functional elements of Android apps and smartphones such as performance, and I’ve been working in the tech industry in some way or another since 2017.
+
+In my spare time, you’ll probably find me playing Counter-Strike or VALORANT, and you can reach out to me at 
+adam@xda-developers.com
+, on Twitter as 
+@AdamConwayIE
+, on Instagram as 
+AdamConwayIE
+, or u/AdamConwayIE on Reddit. 
+Sign in to your 
+XDA
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+3
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+For years, my terminal editor of choice was nano. It came preinstalled on most of the Linux machines I touched, the keybindings were printed at the bottom of the screen, and I could open a config file, change a value, and be on my way. It worked, and that was about as much thought as I gave it. Neovim was always lurking in the background as a thing for terminal weirdos who'd memorized hieroglyphs, and I was perfectly content not being one of them.
+✕
+ Remove Ads
+Then a friend showed me his Neovim setup recently, and I realized I'd been thinking about this completely wrong. Neovim turned out to be the editor tier I didn't know I was missing, one that sits neatly as an in-between workflow. It's not replacing nano for the quick thirty-second edits I need to make to a file, and it's not replacing VS Code for everything serious either. However, it adds a nice middle ground that I've come to rely on.
+I'm not going to pretend Neovim is a perfect tool, and the setup is quite fiddly, especially more than the evangelists typically let on. Even so, it has given me an additional option that I use a lot more than I thought I would when I first set it up. Honestly, I've been kind of kicking myself for waiting so long to make the switch, and I should have done it a lot sooner.
+
+                        I already knew enough vim to make the jump painless
+               
+
+            Doing it the hard way made it easier in the long-run
+    
+ The thing that I think holds a lot of people back from Neovim is the assumption that they have to learn Vim from scratch first, and that doing so is some massive undertaking. I somewhat fell into that category, as the modal editing is strange the first time you encounter it and the keybindings feel like noise if you've never seen them before. But if you've spent any amount of time SSH'd into a barebones server, edited a config inside a Docker container, or used any device where nano wasn't included, then you've probably already learned more Vim than you realize.
+✕
+ Remove Ads
+That's exactly how I got to where I am with Vim; I never sat down to 
+learn
+ Vim, I just got tired of not knowing how to edit a file on the systems where nano wasn't an option, like the     
+Milk-V Duo-S
+ or inside of a Docker container. The basics are actually 
+basic, 
+at least: "i" to insert, "Esc" to leave insert mode, ":wq" to save and quit, "dd" to delete a line, and "/" to search. That's not very much, but it turns out it's enough to actually use the thing. By the time I sat down to set up Neovim, I was surprised by how much I already knew and was familiar with.    
+The truth is, well, the controls aren't even the hard part once you've used them in frustration a few times. The harder part is getting comfortable with the idea that the keys do different things in different modes, and once that clicks, everything else is just memorization, which happens automatically the more you use it.
+
+                        What I actually installed, and what I left out
+               
+ I deliberately didn't start with a full Neovim distribution like LazyVim, NvChad, AstroNvim, or even 
+Kickstart.nvim
+, because I wanted to understand what every plugin was doing rather than inherit someone else's idea of a good editor. The downside is more typing up front. The upside is that nothing in my config is mysterious, and when something breaks I know where to look.
+✕
+ Remove Ads
+The essentials for the setup I wanted were a plugin manager, fuzzy finding, structural syntax highlighting, and language server support. 
+lazy.nvim
+ is the plugin manager, 
+telescope.nvim
+ handles fuzzy finding files and searching across a codebase, and nvim-treesitter gives me better highlighting, indentation, and structural awareness. The 
+mason.nvim
+, 
+mason-lspconfig.nvim
+, and nvim-lspconfig trio covers language servers: 
+mason.nvim
+ installs and manages the tooling, nvim-lspconfig configures Neovim's built-in LSP client, and 
+mason-lspconfig.nvim
+ is the glue between the two. Those are the bones that make my setup feel like more than just a souped-up Vim.
+The nice-to-haves are quality-of-life on top of that floor. 
+neo-tree.nvim
+ for a sidebar file explorer, 
+gitsigns.nvim
+ for inline diff markers, 
+lualine.nvim
+ for a status bar that tells me which mode I'm in, 
+indent-blankline.nvim
+ for vertical indent guides, and 
+trouble.nvim
+ for a friendlier diagnostics list. None of these are required, and you can absolutely live without any single one of them, but each one is designed to make my life just a little bit easier.
+Then there's the rabbit hole I deliberately haven't gone down for now. While I found getting started to be 
+okay
+, stuff like fancier keymaps, snippets, debug adapters, the various AI completion plugins, embedded terminal workflows beyond the basics, and so much more felt like a step ahead of where I was comfortable. Even my relatively modest setup has quite a few plugins at this point.
+✕
+ Remove Ads
+There's one more thing about the setup that's great, and it's what makes all of this 
+really
+ useful. Your config can sit in a dotfiles repo, making the whole environment portable. You pull in the config and the plugin manager rebuilds the rest.
+
+                        The plugin ecosystem is what makes Neovim feel like a real editor
+               
+
+            Plain Vim isn't the comparison anymore
+    
+ Plain Vim and a fully configured Neovim setup are different propositions. Vim has its own plugin ecosystem too, but Neovim's Lua-first APIs and built-in LSP client mean a lot of the modern terminal-editor stack is built around it. Many plugins are written in Lua rather than Vimscript, the LSP client ships with the editor instead of being bolted on, and the result feels surprisingly close to a modern editor such as     
+Sublime
+ or Notepad++. The whole thing is a few hundred lines of Lua spread across a handful of files, and once the moving parts were in place it mostly got out of my way.    
+A lot of this actually overlaps with what I'd reach for in VS Code. I get autocomplete from language servers, I can jump to a function definition, get inline diagnostics, and there's a fuzzy file finder that makes navigating a codebase easy. Tree-sitter on top of that gives me parsing-aware selection, smarter indentation, code folding, and highlighting that actually understands the structure of the file rather than guessing from regex. The difference is that all of this lives inside the terminal, which means I can use it over SSH, inside a tmux session, or on a remote machine that I'd never want to set up a full IDE on. The editor goes wherever the terminal goes.
+✕
+ Remove Ads
+On top of that, the configuration is totally mine. I know what every line in my init does, I chose every plugin I'm using, and if something annoys me, I can change it. That isn't unique to Neovim, but 
+with heavier editors
+ I tend to live with the defaults because customizing them is more effort than it's worth.
+
+                        It scales better than nano
+               
+
+            Muscle memory does a lot of heavy lifting
+    
+ Nano is fine for what it is, and I don't want to come across as if I'm saying that nano is useless. It has search, it has line jumps, it has cut and paste, and it even has syntax highlighting if you enable it. For a quick one-off edit on an unfamiliar machine, it's genuinely hard to beat. However, nano scales linearly with how much you ask of it, and Neovim scales much, much better.
+The way that shows up in practice is in the small stuff that I always assumed nano was best at. In nano, if I want to change a single value somewhere in a file, I'm arrowing my way down or hitting Ctrl and W to search, then arrowing across, then deleting or replacing the value manually, then pressing Ctrl+X, Y, and Enter to save my changes. In Neovim, I can search to the line, change the word with "cw", type the new value, and ":wq". On any single edit the difference is tiny, but if you make a bunch of small edits, Neovim is a lot nicer.
+✕
+ Remove Ads
+That's before you get to the things Vim's grammar lets you do that nano simply doesn't have a path to. Text objects like "ci"" to change everything inside the nearest pair of double quotes, file-wide substitutions like ":%s/old/new/g", and jumps like "gg", "G", or ":42" to land on a specific line without scrolling. Visual block mode, triggered with "Ctrl+V", is great too, as it lets me select a column across a dozen lines and edit them all at once. That's a feature I never really thought about having in a terminal, but it makes perfect sense.
+Tree-sitter highlighting is the other thing nano can't really compete with. Nano has highlighting too, but Tree-sitter is parsing the file into a syntax tree rather than relying only on pattern-based highlighting, and the result is that even a complex file feels readable in the terminal. For anything more involved than a one-line edit I'd rather read it in Neovim now, which has been... kind of surprising, honestly.
+
+                        Some parts still aren't perfect
+               
+
+            Some things can get... weird
+    
+ I don't want to pretend the experience was friction-free, because it wasn't. The very first problem to keep on top of is ensuring that you're using a recent Neovim build. Distro repositories can lag behind what many newer plugins expect, and trying to wire up a modern config on top of an old binary is the fastest way to get weird, cryptic errors that nobody on the internet recognizes.
+✕
+ Remove Ads
+Plugin documentation varies wildly in quality, and some of the most popular plugins assume you already know things they don't bother to explain. Lua configuration can quietly become a hobby in itself, and if you're not careful, you'll spend more time tweaking your Neovim configuration than actually editing the files you installed it for. Copy and paste between Neovim and the rest of your system, particularly over SSH, is fiddlier as well. You'll probably end up with 
+vim.opt.clipboard
+ = "unnamedplus" in your config and a few extra workarounds on top, depending on your terminal, your remote setup, and other factors. By default, Neovim mostly works with its own registers rather than behaving like a normal GUI app that always talks to your system clipboard. unnamedplus makes that feel more natural locally, but over SSH the "system" clipboard may be the remote machine's clipboard, not the one on your device. There are workarounds, but that's the point: something as basic as copy and paste can get surprisingly complex.
+As well, some of Vim's default keybindings are unfriendly until you remap them. "Ctrl+v" means visual block mode instead of paste, and keybinds like these are what makes Vim feel hostile at first. The basic save and quit gestures aren't intuitive if you've never seen them, and a handful of plugins ship with mappings that actually conflict with each other. Even debugging an LSP that won't attach is not a beginner-friendly experience. None of it totally 
+breaks
+ Neovim, and most of it is solvable with a few minutes of research, but it all adds up.
+✕
+ Remove Ads
+Neovim wants you to give up some of your time upfront in exchange for a tool you'll use for years, and that time is genuinely worth giving up if you actually do use it. If you don't, the truth is that the time spent isn't worth it, and there's no shame in still using nano or another, heavier editor for that reason.
+
+                        I still keep nano around, but I barely touch it
+               
+
+            Some defaults are hard to argue with
+    
+ To be clear, I haven't stopped using nano or purged it from any of my machines, and I never will. There are still moments when it makes more sense, mostly on systems I'm only going to touch once, or when I want to make a quick edit to a small file. On a remote server, especially for a quick edit, nano is still the path of least resistance.
+With that said, for anything I do regularly on the machines that I've actually set up, Neovim is now my go-to. Both my PC and my laptop have my config, and Neovim is where I edit shell scripts, Python files, configs for other applications, and so much more. It's an incredibly powerful editor that I didn't expect to love so much, but here I am.
+I'd heard of Neovim for years, and despite that, I never made the switch. My perception of it was built on the assumption that the love for it was mostly cultish, yet I'm forced to walk that perception back. It's one of the best terminal-based applications that I've ever used. It didn't replace every editor I use, and I'm not going to pretend that it could, but what it replaced was the mental category I had reserved for "quick terminal edits." From there, though, it just kept expanding.
+✕
+ Remove Ads
+Productivity & Creativity Tools
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I connected Claude to my terminal, and now it does things I used to script by hand
+		
+
+			5 open-source developer tools that are better than their well-funded competitors
+		
+
+			Ollama is still the easiest way to start local LLMs, but it's the worst way to keep running them
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+3
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Atilla
+Atilla
+Atilla
+#ND281540
+Member since 2026-01-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+So much bla bla just to say nothing with substance 
+2026-05-08 23:59:45
+Upvote
+Downvote
+Reply
+Copy
+        
+Garkech
+Garkech
+Garkech
+#DD509280
+Member since 2026-01-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+"indent-blankline.nvim for vertical indent guides"
+Isn't this built in?  Or does the plug-in just make it better?
+2026-05-07 19:26:05
+Upvote
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Adam
+Adam
+Adam
+#MN479559
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+10  Followers 
+View
+If I'm understanding you right (I might be wrong!) this plugin adds function-level indentation. So rather than just highlighting vertical indentation, it's based on the actual code scope and what's accessible on a key/value or function level. 
+2026-05-08 07:40:24
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+3 days ago
+
+                                    Your old GPU can still run big LLMs – you just need the right tweaks
+                            
+4 days ago
+
+                                    I set up Claude Code's newest model the way its creator does, and it makes a bigger difference than I imagined
+                            
+4 days ago
+
+                                    Most people ignore their router's USB port, but it's perfect for one surprisingly useful thing
+                            
+4 days ago
+
+                                    I ditched Claude Pro for free tools for a week — and one of them had no right being this good
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+May 5, 2026
+1:19
+
+                            4 reasons Windows 7 was iconic
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+May 5, 2026
+1:19
+
+                            Top PC tech anniversaries from 2006
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+May 5, 2026
+1:09
+
+                            Windows XP: 25 Years Later
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+May 5, 2026
+1:06
+
+                            Google Pixel Laptop (2026): What we know so far
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+May 5, 2026
+1:24
+
+                            Remembering the Galaxy Note 7 debacle
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:06
+Skip Ad
+5

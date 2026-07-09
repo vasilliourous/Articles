@@ -1,0 +1,62 @@
+{
+  "article_title": "Stop accepting smart home downtime—here's how I built mine to never fail",
+  "core_thesis": "The author argues that smart home downtime caused by single points of failure (e.g., a single server running Home Assistant) is unacceptable and can be eliminated by deploying a Proxmox high-availability (HA) cluster. By using three mini PCs as Proxmox nodes and enabling HA for the Home Assistant VM, the smart home remains online even during maintenance or node failure, with automatic VM migration ensuring minimal disruption.",
+  "detailed_summary": "The author describes a common frustration: when their single homelab server needed maintenance, Home Assistant (and thus the entire smart home) went offline, causing inconvenience for the household. To solve this, they built a three-node Proxmox high-availability cluster using inexpensive mini PCs (e.g., GEEKOM A5, KAMRUI Hyper H2/H1). With three nodes, the cluster can tolerate the failure of one node while maintaining quorum. The Home Assistant VM is configured for HA, so if the primary node goes down, the VM automatically migrates to another node and back when the primary recovers. This setup ensures that as long as at least two nodes are online, the smart home stays operational. The author notes that the same HA capability can be extended to other VMs (e.g., Docker VMs), making the entire homelab resilient. The article includes practical advice: use cheap used office PCs for nodes, and perform maintenance by gracefully migrating VMs before taking a node offline.",
+  "entities": [
+    {
+      "name": "Patrick Campanale",
+      "type": "person",
+      "role": "Author and homelab enthusiast who built the HA cluster"
+    },
+    {
+      "name": "Home Assistant",
+      "type": "software",
+      "role": "Smart home platform that was made highly available"
+    },
+    {
+      "name": "Proxmox",
+      "type": "software",
+      "role": "Hypervisor used to create the high-availability cluster"
+    },
+    {
+      "name": "GEEKOM A5",
+      "type": "product",
+      "role": "Example mini PC used as a Proxmox node"
+    },
+    {
+      "name": "KAMRUI Hyper H2",
+      "type": "product",
+      "role": "Example mini PC used as a Proxmox node"
+    },
+    {
+      "name": "KAMRUI Hyper H1",
+      "type": "product",
+      "role": "Example mini PC used as a Proxmox node"
+    }
+  ],
+  "key_data_points": [
+    "A single point of failure (one server running Home Assistant) causes smart home downtime during maintenance. (🟢 Relevant to your homelab/DevOps: highlights the need for redundancy in critical services.)",
+    "A three-node Proxmox cluster is required for proper high availability; two nodes plus a 'ghost' quorum node can work as a minimum. (🟢 Relevant to your homelab: provides a concrete architecture for HA.)",
+    "The Home Assistant VM automatically migrates between nodes when the primary fails, with seamless failback when the primary recovers. (🟢 Relevant to your Red Teaming: understanding VM migration can help in planning attacks or defenses against HA environments.)",
+    "Cheap used office PCs from Facebook Marketplace or eBay are suitable for building Proxmox nodes. (🟢 Relevant to your homelab: cost-effective hardware advice.)",
+    "The HA setup can be extended to any VM, making the entire homelab resilient to single-node failure. (🟢 Relevant to your DevOps: scalability of HA configuration.)"
+  ],
+  "methodology_steps": [
+    "Acquire at least three mini PCs or old office desktops to serve as Proxmox nodes.",
+    "Install Proxmox VE on each node and configure networking so they can communicate.",
+    "Create a Proxmox cluster by joining all nodes together (using the datacenter view in Proxmox GUI).",
+    "Ensure quorum is maintained: with three nodes, the cluster can tolerate one failure; with two nodes, add a third 'ghost' node (e.g., a Raspberry Pi running a quorum device) to avoid split-brain.",
+    "Deploy Home Assistant as a virtual machine on one of the nodes.",
+    "Enable high availability for the Home Assistant VM via the Proxmox HA menu: add the VM to the HA group and set the desired state (e.g., 'started').",
+    "Test failover by shutting down the primary node; verify that the VM automatically migrates to another node and starts within a minute or two.",
+    "For maintenance, gracefully migrate the VM to another node before taking a node offline, then migrate back after maintenance."
+  ],
+  "conclusions": [
+    "Building a three-node Proxmox HA cluster eliminates smart home downtime caused by single-server maintenance, providing seamless automatic VM migration. The author confirms that the effort is worthwhile for households reliant on smart devices, and the same HA can be applied to other VMs for overall homelab resilience.",
+    "The approach is cost-effective: using cheap used mini PCs or office desktops makes HA accessible to hobbyists. The author's experience shows that even with mixed hardware, the cluster functions reliably.",
+    "While some commenters argue that a single powerful server with quick maintenance windows is simpler, the author's solution offers true zero-downtime for critical services, which is valuable for those who cannot schedule maintenance during off-hours."
+  ],
+  "personal_relevance_summary": "This article directly addresses your homelab and DevOps interests by providing a step-by-step guide to building a high-availability Proxmox cluster using inexpensive hardware. As a programmer and cybersecurity enthusiast, you can apply these techniques to ensure critical services (e.g., development VMs, testing environments) remain online during maintenance. The VM migration concept is also relevant to Red Teaming: understanding how HA clusters handle failover can help you identify attack surfaces or design resilient infrastructure. The article's practical advice on hardware sourcing and cluster configuration is immediately actionable for your own homelab projects.",
+  "extra_advice": "Consider extending the HA cluster to run a lightweight Kubernetes or Docker Swarm on top of the Proxmox VMs for container orchestration. This would give you a resilient platform for deploying and testing applications, and you can practice failover scenarios to deepen your understanding of distributed systems—valuable for both DevOps and Red Teaming.",
+  "source_url": "https://www.howtogeek.com/stop-accepting-smart-home-downtime-heres-how-i-built-mine-to-never-fail/"
+}

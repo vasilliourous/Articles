@@ -1,0 +1,477 @@
+3 modern Linux apps to try this weekend (April 10 - 12)
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+Networking
+Storage and NAS
+Components
+Peripherals
+Operating Systems
+Submenu
+Linux
+Windows
+Software
+Submenu
+Programming
+Applications
+Mobile
+Submenu
+Android
+iPhone
+Carriers
+New Tech
+Submenu
+Hobbies
+Smart Home
+Homelab
+Single-Board Computers (SBCs)
+Cutting Edge
+Streaming
+Submenu
+Streaming Content
+Streaming Platforms
+Audio/Video
+Automotive
+Reviews
+Buying Guides
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+1
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Storage
+Streaming
+Linux
+Open Source
+Microsoft Excel
+Android
+Windows
+Close
+3 modern Linux apps to try this weekend (April 10 - 12)
+Credit: Lucas Gouveia/How-To Geek
+By 
+Dibakar Ghosh
+Published
+ Apr 10, 2026, 12:45 PM EDT
+Dibakar Ghosh is a tech journalist at How-To Geek, where he focuses on Linux, Windows, and productivity tools. His goal is simple—help readers at every skill level get more done with the tech they use every day.
+
+He began his writing career in 2016 with WordPress tutorials, later moving into digital marketing, where he spent years reviewing complex tools for marketers. His work has also appeared on 
+Authority Hacker
+, where he’s shared in-depth guides on digital workflows and online productivity. That experience now shapes his journalism, blending analytical depth with practical, real-world advice. 
+
+When he’s not writing or testing software, Dibakar is usually watching movies or playing video games. He’s a huge Christopher Nolan fan and a strong proponent of the theater experience. In gaming, he has sunk hundreds of hours into Insomniac’s Spider-Man series, Returnal, Prototype, Darksiders, and Final Fantasy titles.
+Sign in to your 
+How-To Geek
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+1
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+If your mental image of Linux apps is still grey windows and command-line dependency hell, this week's picks might update that. The three I’m covering 
+this weekend
+ represent what a new generation of Linux software actually looks like—a Flatpak storefront built like a real app store, an offline transcription tool powered by local AI, and a terminal file manager that's fast, clean, and genuinely thoughtful. Linux has always been powerful; it's finally starting to look the part too.
+✕
+ Remove Ads
+
+                        Bazaar
+               
+
+            One place to find, install, and manage all your Flatpaks
+    
+The usual way of installing 
+Flatpaks
+ can be a bit clunky. You open the browser, visit 
+Flathub
+, search for the app you want to download, grab its installation command, and finally run that in your terminal. Wouldn't it be better to just have a proper graphical storefront where you can find and install apps in one place? Well, that's exactly what you get with 
+Bazaar
+.
+The app offers a clean and modern storefront for discovering and downloading Flatpaks. It's really fast, and you can queue up as many apps to install as you like without the app choking up. It also doubles as a management frontend, allowing you to update and delete all your Flatpaks—even the ones you didn't explicitly download through Bazaar. Another nice touch is that each app page includes all the relevant links you need to research the app and its developer, including a donation link (if provided) in case you want to support the developer for their contributions.
+✕
+ Remove Ads
+Now, yes, technically, you can add a plugin or flip a toggle in most software stores—like GNOME Software or KDE Discover—and that would let you install Flatpaks graphically. However, in my experience, Bazaar feels a lot smoother and snappier than any other Linux storefront. In fact, I'd go as far as saying that Bazaar should become the default option for graphically installing all apps on Linux—both Flatpaks and regular packages from the official repos.
+To install Bazaar, you first need to 
+install and set up Flatpak
+ on your system and then run this command:
+flatpak install flathub io.github.kolunmi.Bazaar
+Related
+
+			I always install these 7 Flatpak apps on my Linux PCs
+		
+Make your Linux system awesome with these seven Flatpaks.
+Posts
+6
+By 
+Dibakar Ghosh
+Nov 2, 2025
+
+                        Buzz
+               
+
+            Transcribe local audio files and YouTube links—no cloud needed
+    
+✕
+ Remove Ads
+Buzz
+ is a local speech-to-text transcription tool. You get a simple graphical interface where you pick a Whisper-based AI model, download it, and then let it process your audio entirely on your own hardware—no cloud, no subscription, no audio leaving your machine. You can load a local audio file, paste a URL, or even drop in a YouTube link and it'll pull the audio and transcribe it directly.
+Buzz can also 
+translate
+ your audio before the transcription process, but I personally haven't had much luck with this feature. I believe it failed for me because I was missing the necessary language packs on my PC. For straight English transcription though, it's been flawless.
+Personally, I have Buzz monitoring a folder on my computer. Whenever I record audio on my phone, I use 
+Syncthing
+ to automatically send that recording to that specific PC folder. When a new file shows up, Buzz automatically transcribes it and creates a text file for me.
+There's also a live transcription mode where Buzz transcribes speech in real time as you talk. It works, but it's been a bit iffy in my testing. It would cut me off mid-sentence to transcribe what I said and then start listening again, causing chunks of audio to get lost. So I personally prefer using it for transcribing full audio files.
+✕
+ Remove Ads
+How fast it transcribes depends entirely on your hardware. With my RTX 3060, Buzz can transcribe 20 minutes of audio in under 20 seconds. The model I use is Faster Whisper Large v3—it strikes a great balance between speed and accuracy. You can go with a smaller, lighter model if you want faster results, but you'll take a hit on accuracy. It also supports Whisper, 
+Whisper.cpp
+, and any compatible model hosted on Hugging Face.
+Without a GPU, transcription will still work using the CPU, but it'll be painfully slow. In those situations, you can 
+plug in an OpenAI API key
+ and offload the processing to OpenAI's servers. It's faster, but it does mean your audio is leaving your machine—something worth keeping in mind if privacy matters to you.
+Buzz is available as both a 
+Flatpak
+ and a 
+Snap
+, so if you've already got Bazaar set up, you can install it from there.
+Related
+
+			I’m a professional writer, but I barely touch my keyboard—here’s what I use instead
+		
+Writing is about sharing your thoughts—not using a particular tool!
+Posts
+6
+By 
+Dibakar Ghosh
+Nov 30, 2025
+✕
+ Remove Ads
+
+                        Yazi
+               
+
+            A terminal file manager that's actually a pleasure to use
+    
+If you're tired of 
+ls-ing and cd-ing
+ your way through the Linux terminal, 
+Yazi
+ is exactly what you need. It's one of the 
+best terminal-based file managers
+ I've personally used. It looks clean and modern—but that's not just cosmetic. Yazi is thoughtfully designed to be as functional as it is good-looking.
+By default, it opens in a 
+Miller columns
+ layout, which shows you where you came from, where you are, and what's inside the selected directory all at once. It makes navigating a deep filesystem feel natural rather than disorienting. For navigation, you have 
+Vim-style
+ shortcuts—use H-J-K-L to move around—as well as mouse-support. There's even a built-in cheat sheet behind F1, so you're not expected to memorize everything upfront.
+
+                    Subscribe to the newsletter for curated Linux app picks
+                
+Thinking of subscribing? This newsletter curates standout Linux applications, offers clear install guidance, and highlights privacy-aware tools—so you'll get vetted app recommendations and practical notes that make choosing and running software easier.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+✕
+ Remove Ads
+Where Yazi really stands out is its feature set. You get in-pane image previews that actually render inside the terminal, file previews without having to open anything, and tabs so you can keep multiple directories open at the same time. Bulk renaming is built in, and there's a Lua plugin system if you want to extend its functionality further. It also integrates natively with 
+ripgrep
+, 
+fzf
+, and 
+zoxide
+.
+Here are the 
+download instructions for Yazi
+.
+Related
+
+			These 3 Simple Tools Helped Me Quickly Learn the Linux Terminal
+		
+Less is more, and more is less. Cheating is how the pros win.
+Posts
+By 
+Graeme Peacock
+Oct 25, 2025
+
+            Come back next week for three more cool apps
+    
+Modern Linux app development is in a genuinely good place right now, and these three are just a small slice of what's out there. If any of them stood out, check back next weekend—there's always more worth finding.
+
+    						Kubuntu Focus M2 Gen 6
+			
+8
+/10
+Operating System
+
+									
+										
+											Kubuntu 24.04 LTS
+
+										
+																	
+CPU
+
+									
+										
+											Intel Core Ultra 9 275HX (2.7GHz up to 5.4GHz)
+
+										
+																	
+This laptop is purpose-built for developers and professionals who want a Kubuntu Linux-powered portable workstation and gaming platform. It features an Intel processor capable of hitting 5.4GHz and both integrated graphics and a dedicated NVIDIA 5070 Ti GPU for when you need extra power for machine learning or games.
+$2895 at Kubuntu Focus
+Expand
+Collapse
+✕
+ Remove Ads
+Linux
+Apps & Web Apps
+Linux & macOS Terminal
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. 
+Read More
+.
+Close
+✕
+ Remove Ads
+
+                                                    Desktop
+                                            
+
+                                                    Mobile
+                                            
+
+			Dirty Frag vulnerability in Linux lets hackers do more damage—here's how to protect yourself
+		
+13 hours ago
+
+			Intel will make chips for Apple—what does that mean for Windows PCs?
+		
+16 hours ago
+
+			3 life-improving Linux apps to try this weekend (May 8th–11th)
+		
+17 hours ago
+See More
+
+			Please stop typing on your Google Pixel—these 3 voice commands are a game changer
+		
+14 hours ago
+
+			Google Maps has a power-saving mode that extends battery life by 4 hours—but there's a catch
+		
+15 hours ago
+
+			6 ways to repurpose your old Motorola phone
+		
+16 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			5 Android Auto settings you should change before your next drive
+		
+
+			Microsoft has a new plan for Windows 11, and it actually sounds great
+		
+
+			I tested 6 Google Maps alternatives—this is the one I'm sticking with
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+1
+Sign in to your 
+How-To Geek
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+madan
+madan
+madan
+#WP498047
+Member since 2026-04-11
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I found a torrent streaming client this week, so I'm busy playing with it. It's called Orion, if you're into torrenting.
+2026-04-11 14:05:09
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 10, 2026
+
+                                    This hidden Windows 11 tool shows what your PC is really doing
+                            
+Apr 9, 2026
+
+                                    5 open-source projects that secretly power the world
+                            
+Apr 9, 2026
+
+                                    This Linux distro will give your old Windows 10 PC a new lease on life
+                            
+Apr 9, 2026
+
+                                    The storage format that costs $5 per terabyte—but requires a $10,000 drive
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+How-To Geek
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

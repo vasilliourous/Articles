@@ -1,0 +1,498 @@
+Someone Built an App to Fight Surveillance Pricing With a Flipper Zero... for Research Purposes
+
+  Skip to content
+
+Gizmodo
+Latest
+News
+Reviews
+io9
+Science
+Deals
+Downloads
+
+              Newsletters
+            
+
+            Privacy & Security
+          
+
+          Someone Built an App to Fight Surveillance Pricing With a Flipper Zero… for Research Purposes
+        
+
+            Electronic shelf labels are surprisingly easy to hack.
+          
+
+        By
+      
+
+      Tom Hawking      
+
+          Published May 7, 2026, 1:20 pm ET
+      
+
+                Reading time 3 minutes
+      
+TagTinker on ESL displaying "Nice"
+ © TagTinker
+              
+Read Later
+Read Later
+Comments
+
+          (46)
+        
+You’ll never believe it, but despite the endless promises of 
+prosperity
+ and 
+liberation from the tyranny of work
+, late capitalism is proving—for ordinary workers and consumers, anyway—to be an ongoing exercise in basking in the freedom to choose from a smorgasbord of shit sandwiches.
+1/1
+00:07
+Gizmodo Top Stories
+Skip 
+Ad
+Continue watching
+Can You Find the UFOs in These Newly Released Pentagon Videos?
+after the ad
+Visit Advertiser website
+GO TO PAGE
+One of the more odious developments on this front over the last couple of years has been the phenomenon of retailers using personal data to adjust the price a person—or a given demographic—is charged for goods or services. This practice—often called “surveillance pricing”—has begun to spread from its origins online into IRL locations like grocery stores, becoming such a concern that some US states have tried to 
+ban it
+. Oh, you loved the experience of getting a personalized price increase on that flight you wanted? Just wait and see how much you’ll adore the same thing happening to your weekly groceries!
+The practice manages to combine several of the most dystopian technologies of recent years. The price change algorithms are powered by AI and rely on crunching the vast swathes of personal data that big tech has been cheerfully accumulating for most of the 21
+st
+ century. Such data can be used to extract money from consumers in all sorts of delightful ways—one recent 
+example
+ was the possibility of ride-sharing services quoting higher prices to people whose phone batteries were running low. Freedom of choice between price gouging and personal safety, delivered straight to you by the last vestiges of your smartphone’s power reserves!
+In stores, however, your special, personalized, and not so low, low price is delivered by a much more prosaic technology: an electronic shelf label (or ESL). And if you’ve been monitoring the development of surveillance pricing, you might be interested to hear about 
+TagTinker
+, a new app for the ever-useful 
+Flipper Zero
+ hackng that can interface with those shelf labels.
+It turns out that some varieties of ESL, at least, don’t use Bluetooth, Wifi, or anything modern and reasonably secure. Nope, all you need to communicate with those devices is a plain old infrared signal—which, as the project’s 
+Github page
+ notes, is “the same [signal] that you use in TV remotes.” The page goes on to point out that “the whole security [system] was relying on obscurity of protocol.” (For those interested, Furrtek.org has 
+a pretty exhaustive breakdown of ESL security
+, or lack thereof, as well as progress on reverse engineering various ESL devices.)
+TagTinker communicates with these little infrared devices. 
+So what can you do once you’re in? Well, the most amusing use comes from the app’s facility for displaying a suitably sized and formatted image on the screen. As per the GitHub page, TagTinker can also “display text … and test patterns,” while Flippers with a WiFi Dev Board can also “unlock live, network-rendered tag designs.”
+As you might expect, there’s a whopping great disclaimer on the GitHub page, making it clear that Tag Tinker is “an independent project intended strictly for educational research, security curiosity, and displaying digital art on hardware that you legally own,” and warning against using it for “illegal activities.” We endorse this warning wholeheartedly and absolutely advise against doing things like knocking multiple zeroes off the end of a number or replacing a price with a picture of a comically large penis.
+Explore more on these topics
+
+          electronic shelf labels
+        
+
+          flipper zero
+        
+
+          surveillance pricing
+        
+
+          TagTinker
+        
+
+  Share this story
+
+Copied!
+Sign up for our newsletters
+
+        Subscribe and interact with our community, get up to date with our customised Newsletters and much more.
+      
+Gizmodo
+io9
+Earther
+The Next Interface
+Subscribe now
+Leave this field empty if you're human: 
+The Weirdest Wearables From 100 Years Ago
+
+            Latest news
+          
+May 9
+5:35 pm
+
+                  Forget Sonos, Amazon Sells This Fire TV Soundbar for the Price of a No-Name Speaker
+                
+May 9
+5:15 pm
+
+                  Dyson Clears Spring Stock on Its Iconic V8, Now Priced Like a No-Name Vacuum on Amazon
+                
+May 9
+4:45 pm
+
+                  Forget Paying iPhone Prices, the Google Pixel 10a Does Everything for Half the Cost
+                
+May 9
+4:15 pm
+
+                  ‘The Boys’ Got Even More Meta With Its ‘Supernatural’ Reunion
+                
+May 9
+2:50 pm
+
+                  The ‘Sekiro’ Anime Will Hit Theaters…in Japan
+                
+May 9
+1:39 pm
+
+                  Europe May Soon Get a Non-U.S. Alternative to Unreal Engine
+                
+May 9
+12:25 pm
+
+                  ‘Rogue One’ Becomes a True ‘Andor’ Finale With This Fan Project
+                
+May 9
+12:10 pm
+
+                  Amazon Drops This Roborock Robot Vacuum to Less Than Five Hours of a House Cleaner
+                
+
+    Show All Latest news
+    
+
+            Latest Reviews
+          
+May 8
+7:00 am
+
+                  JBL Live 780NC Review: Solid Wireless Headphones You Can Live Without
+                
+May 7
+1:30 pm
+
+                  Acer’s Swift 16 AI (2026) Gets a Lot Right, But I Can’t Get Past the Trackpad
+                
+May 5
+6:00 am
+
+                  Samsung Galaxy A57 5G Review: Not Worth It at Full Price
+                
+May 3
+9:00 am
+
+                  Logitech G G512 X Review: The Tasting Menu of a Pro Gaming Keyboard
+                
+May 3
+7:00 am
+
+                  Ecovacs Deebot X12 OmniCyclone Review: AI Can’t Save This Robot Vacuum
+                
+May 1
+11:30 am
+
+                  The Best Tech Gifts for Mother’s Day 2026
+                
+May 1
+6:00 am
+
+                  Asus’ Dual-Display Gaming Laptop Will Ruin Your Single-Screen Lifestyle
+                
+Apr 27
+1:03 pm
+
+                  Steam Controller Review: Trackpads Change Everything for PC Gaming
+                
+
+    Show All Latest Reviews
+    
+
+            Related Articles
+          
+
+          The Weirdest Wearables From 100 Years Ago
+        
+
+          The shockwatch of 1927 walked so Apple Watch could run.
+        
+
+    Gadgets
+  
+
+      Matt Novak      
+
+  May 6
+
+
+          Maryland Just Banned Surveillance Pricing on Groceries. Critics Say It’s Basically Toothless
+        
+
+          Other states like New York, New Jersey, and Illinois are considering similar bills.
+        
+
+    Artificial Intelligence
+  
+
+      Matt Novak      
+
+  May 1
+
+
+          How the First Surveillance Pricing Ban in America Falls Short
+        
+
+          The bill prohibits surveillance pricing at grocery stores, but experts warn there are loopholes.
+        
+
+    Commerce
+  
+
+      Matt Novak      
+
+  Apr 23
+
+
+          JetBlue Responds to Accusations of Using Surveillance Pricing After Viral Tweet
+        
+
+          Surveillance pricing or not, the airline is probably offering good advice.
+        
+
+    Privacy & Security
+  
+
+      Matt Novak      
+
+  Apr 20
+
+
+          Flipper Zero, Everyone’s Favorite Legally Dubious Hacker Tool, Gets an AI Upgrade
+        
+
+          Old-school Flipper fans don't appear to be thrilled about the project.
+        
+
+    Artificial Intelligence
+  
+
+      AJ Dellinger      
+
+  Mar 23
+
+
+          Walmart Wins Patents for AI-Powered Price Changes
+        
+
+          The retailer denies it's engaging in dynamic pricing.
+        
+
+    Artificial Intelligence
+  
+
+      Matt Novak      
+
+  Mar 20
+
+©2026 GIZMODO USA LLC.
+All rights reserved.
+𝕏
+About Us
+Other editions
+Deutsch
+Español
+Français
+Português
+Product Review
+Newsletters
+Your Privacy Choices
+Privacy Policy
+Terms of Use
+Accessibility
+Advertising & Licensing
+𝕏
+
+            We may earn a commission when you buy through links on our sites.
+            
+          
+Search
+
+              Sign up for our newsletters
+            
+
+                Latest
+              
+
+                      Tech News
+                    
+
+                                Artificial Intelligence
+                              
+
+                                Commerce
+                              
+
+                                Crime
+                              
+
+                                Cryptocurrencies
+                              
+
+                                Culture
+                              
+
+                                Gadgets
+                              
+
+                                Internet
+                              
+
+                                Politics
+                              
+
+                                Privacy & Security
+                              
+
+                                Robots
+                              
+
+                                Social Media
+                              
+
+                                Sploid
+                              
+
+                                Tech Policy
+                              
+
+                                Transportation
+                              
+
+                      Reviews
+                    
+
+                                Smartphones
+                              
+
+                                Laptops
+                              
+
+                                Headphones
+                              
+
+                                Gaming
+                              
+
+                                Home Entertainment & Smart Home
+                              
+
+                                Other Gadgets
+                              
+
+                                Tablets
+                              
+
+                                Accessories & Wearables
+                              
+
+                                Desktops
+                              
+
+                      Deals
+                    
+
+                                Buying Guides
+                              
+
+                      Science
+                    
+
+                                Biology
+                              
+
+                                Health
+                              
+
+                                Human History
+                              
+
+                                Physics & Chemistry
+                              
+
+                                Space & Spaceflight
+                              
+
+                      Earther
+                    
+
+                                Climate Change
+                              
+
+                                Conservation
+                              
+
+                                Earth Science
+                              
+
+                                Energy
+                              
+
+                                Environmental Justice
+                              
+
+                      io9
+                    
+
+                                io9 Reviews
+                              
+
+                                Movies
+                              
+
+                                Trailers
+                              
+
+                                Television
+                              
+
+                                Books & Comics
+                              
+
+                                Anime
+                              
+
+                                Toys & Collectibles
+                              
+
+                                Games
+                              
+
+                                Corporate Culture
+                              
+
+                                Theme Parks & Destinations
+                              
+Software
+Best VPN
+Free VPN
+Cheap VPN
+NordVPN Review
+ExpressVPN Review
+Best eSIM
+Cloud Storage
+Free Cloud Storage
+pCloud Review
+Web Hosting
+Hostinger Review
+Best Antivirus
+Compare Antivirus
+Download Hub
+About Us
+Other editions
+Deutsch
+Español
+Français
+Português
+Product Review
+Newsletters
+Your Privacy Choices
+Privacy Policy
+Terms of Use
+Accessibility
+Advertising & Licensing
+𝕏
+
+                  Bookmarks
+                
+Cookies settings

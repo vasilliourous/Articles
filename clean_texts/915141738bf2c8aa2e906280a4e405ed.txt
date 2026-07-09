@@ -1,0 +1,369 @@
+You need this free self-hosted tool if you're using Proxmox
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+You need this free self-hosted tool if you're using Proxmox
+By 
+Ayush Pande
+Published
+ Feb 20, 2026, 2:30 PM EST
+Ayush Pande is a PC hardware and gaming writer. When he's not working on a new article, you can find him with his head stuck inside a PC or tinkering with a server operating system. Besides computing, his interests include spending hours in long RPGs, yelling at his friends in co-op games, and practicing guitar. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																						
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Proxmox
+ has been my go-to virtualization platform for the last couple of years, and the massive collection of companion tools is one of the many reasons why I adore it. For the record, I’m not just talking about the 
+Backup Server
+ and 
+Datacenter Manager
+ utilities released by the talented folks at Proxmox. Unlike most of its rivals, PVE has a thriving community of tinkerers, so there are plenty of cool scripts that can take my home lab’s utility to the next level.
+✕
+ Remove Ads
+Capable of spinning up virtual machines and containers with a single command, the Proxmox VE Helper-Scripts repository is the most popular utility of its kind. Don’t get me wrong: I wouldn’t recommend running its commands on your home server blindly. But if you’re willing to read the scripts before using the repo to bring your next virtual guest into existence, it’s a handy repository to bookmark. The best part? There’s a self-hosted tool that adds extra quality-of-life features when running scripts from the Proxmox VE Helper-Scripts repository.
+Related
+
+			5 common Proxmox mistakes everyone makes when starting fresh (and how to avoid them)
+		
+Yeah, I've made some of these mistakes in my early Proxmox days
+Posts
+1
+By 
+Ayush Pande
+Jan 17, 2026
+
+                        Proxmox VE Local makes LXC and VM deployment a cakewalk
+               
+
+            It’s much more than a locally-hosted Proxmox VE Helper Scripts repo
+    
+On the surface, 
+Proxmox VE Local
+ may seem like an app designed to cache PVE Helper Scripts, and well, that is one of its features. However, its biggest advantage is the ability to execute scripts on remote nodes from its centralized UI, and it’s pretty useful when you’ve got a bunch of standalone (or clustered) PVE systems.
+✕
+ Remove Ads
+Once you’ve downloaded a template and paired Proxmox VE Local with your PVE node(s), it lets you run the VM/LXC scripts via SSH on the right workstation, so you don’t have to cycle through multiple web UIs for all your Proxmox systems. It also lets you choose between versions of the template, which is really handy for containers and VMs with Debian and Alpine variants. Better yet, you can also set the advanced configuration options before deploying them, and Proxmox VE Local’s menu-like interface makes modifying these settings a lot easier than the conventional CLI route.
+
+            Its live output facility is a game-changer
+    
+The session persistence, or the lack thereof, of the Proxmox shell is my biggest issue when deploying multiple virtual guests via the PVE Helper-Scripts repository. Let’s say you’ve got a script installing all the dependencies in your LXC when one of your VMs crashes out of nowhere. Or perhaps, you end up switching tabs on your Proxmox web UI. Although the PVE Helper-Script will continue to run, you won’t be able to access its session anymore – and that’s a royal pain when a script takes too long or ends up failing.
+While there are certain ways to get past this issue (including my beloved Tmux), PVE Local sidesteps it entirely. Since the tool executes scripts over an SSH connection, it can pin a live output of the terminal – one that remains at the top of the PVE Local page even when I switch between different tabs. Plus, PVE Local can track logs of failed installations, making troubleshooting just as simple.
+✕
+ Remove Ads
+
+            It can even manage virtual guests that bear the community-script tag
+    
+Besides deploying LXCs and VMs, Proxmox VE Local can automatically detect virtual guests deployed via the PVE Helper-Scripts repo, and it lets you tweak them without requiring you head back to your Proxmox node's web UI. My favorite is the update facility, which installs the latest packages associated with the template, and it’s a godsend for LXCs designed specifically for self-hosting FOSS utilities.
+
+                    Subscribe to our newsletter for Proxmox tips & tools
+                
+Unlock deeper Proxmox coverage—subscribe to the newsletter for curated deployment tips, vetted helper-script workflows, template guidance, and practical configuration notes to streamline VM and LXC management.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+It can also modify the CPU, memory, storage, and network settings, on top of letting me access FUSE, Keyctl, nesting, mount features, and other optional tweaks that aren’t available in the Proxmox web UI. Proxmox VE Local can back up the virtual guests, and since the tool pairs directly with PVE workstations, it can pull the local pool, PBS datastore, and other storage devices you’ve configured on your server node. The only major complaint I have is that the Backups tab on Proxmox VE Local doesn’t show the snapshots I’ve stored on my PBS servers.
+
+                        You can use a simple script to run Proxmox VE Local
+               
+
+            It also supports custom GitHub repositories
+    
+✕
+ Remove Ads
+Considering that Proxmox VE Local is essentially a tool for deploying (and to a major extent, managing) other virtual guests, it’s only fitting that it’s just as easy to set up. While you can technically create a new LXC, arm it with npm, and build Proxmox VE Local manually, the most straightforward procedure involves running
+ bash -c "$(curl -fsSL 
+https://raw.githubusercontent.com/community-scripts/ProxmoxVE/main/ct/debian.sh
+)"
+ within your PVE node’s 
+Shell
+ tab to spin up a container equipped with the necessary packages. Then, you can simply run the URL generated by the script, pair it with the underlying server (and other nodes in your arsenal), download some templates, and spin up virtual guests to your heart’s content.
+Related
+
+			I use this free backup tool with my Proxmox and PBS instances, and it's a game-changer
+		
+It can back up all the essential PVE and PBS config files!
+Posts
+4
+By 
+Ayush Pande
+Nov 12, 2025
+✕
+ Remove Ads
+Linux
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			Don't throw out your old CPU – turn it into a home server
+		
+
+			I love Proxmox community scripts, but a single command executes 8 remote scripts as root
+		
+
+			Nvidia stopped supporting my GPU, so I started self-hosting LLMs with it
+		
+
+                                                
+                
+                                                    
+                                    Thread
+                                                    
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Be the first to post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+This space is open for discussion.
+Be the first to share your thoughts.
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Feb 19, 2026
+
+                                    You, too, can install this cute open-source tamagotchi on your ESP32
+                            
+Feb 19, 2026
+
+                                    Linux 7.0 is preparing fixes for a Wi-Fi driver...from 2017
+                            
+Feb 18, 2026
+
+                                    I deployed Windows 11 in a Proxmox VM with GPU passthrough, and most games run well
+                            
+Feb 18, 2026
+
+                                    6 iconic games that made us all upgrade our PCs
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 28, 2026
+1:17
+
+                            Android for Desktop has leaked
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 28, 2026
+1:12
+
+                            Why are we so nostalgic for Windows XP?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 22, 2026
+1:11
+
+                            The closest we'll ever get to Windows Phone 11
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 12, 2026
+1:17
+
+                            Razer made a holographic AI anime Assistant
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 10, 2026
+0:59
+
+                            When will the RAM crisis actually end?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

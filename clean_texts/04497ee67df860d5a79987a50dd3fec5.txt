@@ -1,0 +1,457 @@
+This open-source AI app cleans out my inbox, and doesn't steal my data
+Menu
+Sign in now
+Close
+PC & Mobile
+Submenu
+Windows2
+Linux
+Android
+Apple
+Technical
+Submenu
+Tech Explained
+Security
+Software
+Submenu
+Productivity
+Internet
+Creative
+Screen
+Submenu
+Entertainment
+Streaming
+Home
+Submenu
+Smart Home
+Home
+News
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+2
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+Productivity
+Android
+Smart TVs
+Networking
+Windows 11
+Entertainment
+Close
+This open-source AI app cleans out my inbox, and doesn't steal my data
+Credit: Bryan M. Wolfe / MakeUseOf
+By 
+Shaun Cichacki
+Published
+ May 1, 2026, 7:00 AM EDT
+From the first time Shaun laid eyes on a DOS computer, he's been obsessed with tech to an unhealthy degree. After spending 4+ years in the Games Journalism field, it was time for him to take his passions to the next level. Working with companies such as Prima Games and The Escapist, Shaun decided it was time to let his true colors shine and spread his love, positivity, and excitement about the world of tech. 
+
+While tech may be a massive part of his daily life, Shaun has also been an avid Gamer since the mid-90s. From the first time he picked up an SNES controller, a lifelong hobby was born. Outside of the realm of gaming, he loves to spend time with his wife, building up his collection of Metal Gear Solid merchandise in his "Metal Geario Cabinet", and squishing on his three adorable kitties. 
+Sign in to your 
+MakeUseOf
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+2
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+It doesn't matter if it's for work, business, or pleasure; I have way too many unnecessary emails clogging up my inbox. I've had the same email address for over a decade, and one of my biggest faults is forgetting to unsubscribe from newsletters and companies I may once have been enamored with. In an increasingly busy digital world, the last thing I want to do is sift through roughly 20,000 unread emails that I may or may not need in the future. Plus, I don't feel like
+ getting scammed by someone in my emails
+, either.
+✕
+ Remove Ads
+After discovering Inbox Zero, an open-source AI assistant intended to clean up my inbox and get it back to basics, I was a little skeptical. But once I researched it further and discovered what it was capable of, I decided to give it a spin. A squeaky-clean inbox and no worry of my data being stolen. I'm over the moon with it.
+Related
+
+			5 useful things I do with a local LLM on my phone
+		
+Privacy aside, a local LLM is just really convenient.
+Posts
+5
+By 
+Oluwademilade Afolabi
+Apr 16, 2026
+
+                        Privacy first, and self-hosting options
+               
+
+            The code is available for audit, and SOC 2 Type 2 certification keeps me feeling good
+    
+Credit: Shaun Cichacki/MUO
+ The first thing I want to mention about Inbox Zero is that, while open source, there may be a subscription cost. While tools like CleanFox are completely free, they offset the cost of cleaning up your inbox by scanning your emails and selling data to help build market research reports. I'm not about that, and if you don't have the hardware to self-host your own Inbox Zero instance, you could be looking at roughly $20 a month for an AI assistant to clean out your emails.
+✕
+ Remove Ads
+However, for those who have the hardware and capabilities, Inbox Zero offers the option to self-host at no cost. Seeing as I have a Mini-PC on my desk that I'm using to host game servers, I may as well include the option to zip through my emails and clean them up, too. Seeing as the code for Inbox Zero is also open source, it's meticulously audited to ensure there is nothing "phoning home," and the cloud version is SOC 2 Type 2 certified, meaning it's passed independent audits for managing data securely. There is also automatic PII detection, so you don't need to worry about things like passwords being displayed in plain text. If you self-host, you're the captain. Plus, they promise this AI won't be scraping your info to train newer models, which is a plus.
+
+                        Great at catching "cold" emails
+               
+
+            I wish my phone knew how to block "Cold" calls as well as this does
+    
+Credit: Shaun Cichacki/MUO
+ One thing that genuinely impressed me is how well Inbox Zero does at catching a "cold" email, rather than something that has specifically been sent to you. I was worried at first that it would catch emails from friends and family that I don't speak to as regularly as I likely should, and start automatically archiving them. Instead, it scans the language in an email and catches sales pitches, advertisements, and outreaches that don't apply to my daily life, helping me filter them out.
+Spam filters work well, but they don't always catch the bad actors that are trying to get into my inbox. And seeing as I had well over 20,000 emails just sitting there, it did a great job of scanning through those, finding the "cold" openings and the sales lingo, and figuring out where they needed to go from there. Many places are using AI to draft emails, and it does a surprisingly good job of catching them in the act and disposing of them when it deems necessary. Plus, you can always adjust how Inbox Zero works, and you'll be set if something ends up in the wrong folders. Just set a "Cold Outreach" folder, and you can scan from there.
+✕
+ Remove Ads
+
+                        Data Dashboard for personal reflection
+               
+
+            I can see how many emails I got, how many I read, and what I replied to
+    
+I get a lot of emails in a day, and there are plenty that I, admittedly, completely forget to open or reply to. Using Inbox Zero, I can access a comprehensive Data Dashboard in the web client that shows how many emails I've received, which I've opened, and which I've ignored for too long. It's a great way to keep myself accountable, and shows me who I really should be replying to more often.
+It's also surprisingly in-depth, giving me the option to check between last week, last month, last three months, and last year. This gives a ton of additional insight into how I use my email and what I could be doing better. As I work on getting my emails cleaned up, it's also a great chance for me to reflect and see what types of deals I may have missed, or if an email came flying into my inbox in the early morning that I absolutely shouldn't have missed. Bulk Unsubscribe and Bulk Archive options are also available, so I can clean up everything that I no longer need.
+
+                        Self-Hosting is complicated
+               
+
+            Prepare to spend some time to save some money
+    
+Credit: Shaun Cichacki/MUO
+✕
+ Remove Ads
+ Many folks on 
+MUO love self-hosting their own instances of things
+. Seeing as I'm incredibly new to the concepts of self-hosting, Docker, and related things, setting this up felt like a nightmare rather than a dream. But, after many hours of experimenting, finding what I needed to change in a Linux Mint installation and getting accustomed to how the terminal worked, I finally have my own self-hosted variant of Inbox Zero up and running. Granted, a local LLM on a mini-PC running an Intel HD 530 is going to be slower compared to an OpenAI API key, but to save some additional cash each month? I can be a little forgiving.
+
+                    Subscribe to the newsletter for smarter inbox cleanup
+                
+Want practical how-tos and privacy-first guidance? Subscribe to the newsletter for hands-on coverage of inbox-cleaning tools, self-hosting walkthroughs, and clear tips to protect and tidy your email setup.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+Why?
+ Because I can run a local LLM like Ollama running a smaller Llama 3 8B model
+, alongside a Docker container with Inbox Zero snuggled up inside to save myself $20 a month. To be fair, in the time it took me to set everything up properly on the same mini-PC I host my RUST servers on, I could have likely cleared out my email. But seeing as I want to clean it up and keep it consistent? This was a fantastic, frustrating, and honestly fun little experiment. I learned a lot about Linux, and I'm hoping I never have to see a terminal window again. But I already know I'll be back.
+
+    						Inbox Zero
+			
+OS
+
+									
+										
+											Windows / Linux / macOS
+
+										
+																	
+Developer
+
+									
+										
+											elie222
+
+										
+																	
+Individual Pricing
+
+									
+										
+											Free 7-Day Trail / Free Open-Source Hosting / Plans starting at $20 per month
+
+										
+																	
+Free Trial
+
+									
+										
+											Yes
+
+										
+																	
+Useage
+
+									
+										
+											AI Email Assistant
+
+										
+																	
+Inbox Zero GitHub Page
+Inbox Zero Main Page
+Expand
+Collapse
+
+            Inbox Zero has helped a ton already, and can only get better from here
+    
+Inbox Zero has been surprisingly helpful, and it shows me that I really need to start checking my email a bit more often. After going through the hassle of setting up my own self-hosted instance of it, I'll happily let this little robot clean out my clutter. Plus, knowing that I'm in control of the privacy and the data that it sees? It helps me sleep a little better at night.
+✕
+ Remove Ads
+Productivity
+Inbox Zero
+Email Tips
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+
+                                                    Technology Explained
+                                            
+
+                                                    PC & Mobile
+                                            
+
+			3 tech companies that make your gadgets more expensive
+		
+2 hours ago
+
+			Your SSD does not wipe your deleted files — this is what TRIM actually does
+		
+5 hours ago
+
+			Wireless charging is finally worth using, but only if you know what to look for
+		
+6 hours ago
+See More
+
+			The Lenovo Yoga Pro 7i is a tough sell, but the display is insane
+		
+3 hours ago
+
+			I ran a Windows network reset and fixed problems I'd blamed on my router for months
+		
+7 hours ago
+
+			I switched to Gentoo Linux and now I get why it's worth the headache
+		
+11 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			The $0 upgrade that made my smart TV so much better
+		
+
+			I switched to Hyprland and now I get why Linux users are obsessed with it
+		
+
+			7 devices in your home that really shouldn’t be on Wi-Fi
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+2
+Sign in to your 
+MakeUseOf
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Elie
+Elie
+Elie
+#TH377722
+Member since 2026-05-06
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Elie from Inbox Zero here. Love the article!
+Great to hear that Llama 3 8B model performed well enough for you.
+We'd love to make self-hosting easier for people. What did you find to be the biggest pain point?
+2026-05-05 23:58:51
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Leeann
+Leeann
+Leeann
+#SL795603
+Member since 2026-05-06
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+thanks for this! I’ll check it out, seems really helpful 
+2026-05-06 00:42:33
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 29, 2026
+
+                                    The DHL link you just received could steal your password if it looks like this
+                            
+Apr 29, 2026
+
+                                    I started using Claude instead of these 5 apps — and I'm not going back
+                            
+Apr 29, 2026
+
+                                    "Lossless audio" doesn't mean what you think it means
+                            
+Apr 29, 2026
+
+                                    I turned off three browser defaults, and my ISP suddenly couldn't track my web history anymore
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+MakeUseOf
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:05
+Skip Ad
+5

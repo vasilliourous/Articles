@@ -1,0 +1,278 @@
+Open source models can find bugs as well as Mythos
+Jump to main content
+Search
+TOPICS
+Security
+All Security
+Cyber-crime
+Patches
+Research
+CSO
+Off-Prem
+All Off-Prem
+Edge + IoT
+Channel
+PaaS + IaaS
+SaaS
+On-Prem
+All On-Prem
+Systems
+Storage
+Networks
+HPC
+Personal Tech
+Cx0
+Public Sector
+Software
+All Software
+AI + ML
+Applications
+Databases
+DevOps
+OSes
+Virtualization
+Offbeat
+All Offbeat
+Columnists
+Science
+BOFH
+Legal
+Bootnotes
+Site News
+About Us
+Special Features
+All Special Features
+HPE: AI Explainers
+RSA Conference
+Agentic AI
+The Future of the Datacenter
+AWS:Reinvent
+Nvidia GTC
+SC25
+Supercomputing Month
+Vendor Voice
+All Vendor Voice
+Infinidat
+Everpure
+Rubrik
+Make it real with Capgemini and AWS
+Money Movement Hub
+ZTE
+Nutanix: Scale Kubernetes. Not Chaos.
+AWS New Horizon
+Resources
+Intelligence
+Webinars & Events
+Newsletters
+Search
+Sign in
+Datacenter
+Security
+Microsoft
+AWS
+Developer
+Open Source
+IT Careers
+Columnists
+Who, Me?
+On Call
+REG AD
+Security
+It's a myth that you need Mythos to find bugs: Open source models can do it just as well
+OpenAI's first security hire, Ari Herbert-Voss, thinks more automated bug finding will improve security without costing jobs
+Simon Sharwood
+Simon
+Sharwood
+10
+Published
+Fri 24 Apr 2026 
+//
+ 11:41 UTC
+BLACK HAT ASIA
+ Open source models can find bugs as effectively as Anthropic's Mythos, according to Ari Herbert-Voss, CEO of AI-powered security startup RunSybil and OpenAI's first security hire.
+Speaking at the Black Hat Asia conference in Singapore today, Herbert-Voss said Mythos excels at finding both "shallow" bugs - well-described flaws that are and easy to validate - and more complex vulnerabilities.
+In his talk, he attributed this to "supralinear scaling": where researchers assumed LLM capability would improve linearly, evidence now suggests a model trained on twice the data, compute, and time produces something four times more capable.
+REG AD
+He hinted supralinear scaling might produce even better multipliers but could not say more due to a non-disclosure agreement.
+REG AD
+Anthropic has kept access to Mythos tghtly restricted, citing fears of misuse.
+However Herbert-Voss argues attackers and defenders alike can achieve comparable results with open source models by building "scaffolding" to run several of them in harness. That approach also improves defense in depth, as different models tend to catch different flaws — a useful hedge against any single model's blind spots.
+Cost is another driver. Mythos is expensive to build and run, and may never be publicly available, making open source alternatives not just viable but necessary for many organizations.
+MORE CONTEXT
+Weak security means attackers could disable all of a city's public EV chargers
+EV charger biz ELECQ zapped by ransomware crooks, customer contact data stolen
+Hybrid clouds have two attack surfaces and you’re not paying enough attention to either
+Mythos found 271 Firefox flaws – but none a human couldn’t spot
+Herbert-Voss feels human expertise is still needed to orchestrate open source models so they together deliver Mythos-grade performance, and to assess the bug reports AI generates.
+He then noted that 
+fuzzing
+, the testing technique which injects random or near-random data into software to see if doing so produces bugs, also creates so many warnings that it can make extra work for humans.
+AI bug-hunters already produce the same problem, and he expects it will persist.
+Herbert-Voss therefore thinks infosec workers will have plenty on their plates for the foreseeable future, and the economic incentive to use AI – someone's got to use services that pay for all those GPUs and datacenters – will act as a forcing function that makes infosec teams adopt AI and as a result improve their proactive and defensive work. ®
+security
+ai
+anthropic
+black hat asia
+open source
+10
+REG AD
+
+Software
+
+macOS 27 threatens to bury Time Capsule, FOSS brings a shovel
+
+
+    Apple's old backup boxes only speak AFP and SMB1, but NetBSD under the hood gives them one last shot
+
+
+Offbeat
+
+London’s BT Tower to get rooftop swimming pool
+
+
+    Imagine taking a dip 177m above the streets of London’s West End
+
+
+AI + ML
+
+AI inference just plays by different rules
+
+
+    Why no cloud storage architecture was designed for what agentic AI is about to demand
+
+
+Networks
+
+Akamai surges on big LLM deal as Cloudflare dims
+
+
+    Good times, bad times
+
+
+AI + ML
+
+Trump jumps from 'anything goes' to 'strict regulation' AI policy
+
+
+    In a word, 'Huh?'
+
+
+AI and ML
+
+GPT-5.5 may burn fewer tokens, but it always burns more cash
+
+
+    It’s not just gas prices skyrocketing. Frontier-model pricing keeps climbing too
+
+
+                    MOST POPULAR
+                
+Cyber-crime
+Taiwan cops say student's radio kit brought bullet trains to a standstill
+off-prem
+IBM Cloud evaporates as datacenter loses power
+AI + ML
+Chrome silently installs a 4 GB local LLM on your computer
+AI + ML
+Brit mathematician lets AI agent loose with credit card – cue password leaks, CAPTCHA chaos and more
+Software
+Firefox integrates an ad-blocker, but not to block ads
+EVENTS
+Securing the Untrusted Agentic Development Layer
+Join us to learn how to architect a development environment where your builders and their agents can move fast and securely.
+Toxic Flows: When Your AI Agent Skill Becomes a Supply Chain Attack
+When a developer installs an AI agent skill – granting it access to secured IT resources and data – they make a significant trust decision.
+The Hardware Crunch: How Supply Chain Turbulence Is Forcing a New IT Playbook
+Infrastructure teams are facing a perfect storm: extended hardware lead times, rising costs driven by AI demand, and accelerated platform timelines.
+Identity Resilience: The New Mandate for Cyber Survival
+Join Druva experts for a compelling deep dive into what it takes to build an identity-first recovery strategy in this new threat landscape.
+Identity Resilience: The New Mandate for Cyber Survival
+Join Druva experts for a compelling deep dive into what it takes to build an identity-first recovery strategy in this new threat landscape.
+Unfriendly Followers: The Black Market For Your Identity
+They’ll reveal how attackers use your profile as intel and show you how to make yourself harder to target
+AI Found the Problem. Now What?
+AI is transforming the software development lifecycle, helping teams identify and remediate vulnerabilities before they reach production.
+
+            EXPLORE ALL OF OUR EVENTS
+        
+AI
+Software
+macOS 27 threatens to bury Time Capsule, FOSS brings a shovel
+Apple's old backup boxes only speak AFP and SMB1, but NetBSD under the hood gives them one last shot
+Offbeat
+London’s BT Tower to get rooftop swimming pool
+Imagine taking a dip 177m above the streets of London’s West End
+Public Sector
+UK wants fresh fingerprints on £300M biometrics platform
+Home Office probes supplier interest as core police and immigration system heads for support shake-up
+Add section name here
+Akamai surges on big LLM deal as Cloudflare dims
+Good times, bad times
+ai and ml
+GPT-5.5 may burn fewer tokens, but it always burns more cash
+It’s not just gas prices skyrocketing. Frontier-model pricing keeps climbing too
+Infosec
+Software
+macOS 27 threatens to bury Time Capsule, FOSS brings a shovel
+Apple's old backup boxes only speak AFP and SMB1, but NetBSD under the hood gives them one last shot
+Offbeat
+London’s BT Tower to get rooftop swimming pool
+Imagine taking a dip 177m above the streets of London’s West End
+Public Sector
+UK wants fresh fingerprints on £300M biometrics platform
+Home Office probes supplier interest as core police and immigration system heads for support shake-up
+Add section name here
+Akamai surges on big LLM deal as Cloudflare dims
+Good times, bad times
+ai and ml
+GPT-5.5 may burn fewer tokens, but it always burns more cash
+It’s not just gas prices skyrocketing. Frontier-model pricing keeps climbing too
+FOSS
+macOS 27 threatens to bury Time Capsule, FOSS brings a shovel
+Apple's old backup boxes only speak AFP and SMB1, but NetBSD under the hood gives them one last shot
+London’s BT Tower to get rooftop swimming pool
+Imagine taking a dip 177m above the streets of London’s West End
+UK wants fresh fingerprints on £300M biometrics platform
+Home Office probes supplier interest as core police and immigration system heads for support shake-up
+Akamai surges on big LLM deal as Cloudflare dims
+Good times, bad times
+GPT-5.5 may burn fewer tokens, but it always burns more cash
+It’s not just gas prices skyrocketing. Frontier-model pricing keeps climbing too
+Tech is now rolling out the old grievance grift
+Not just for hated US Presidents, now even tech bros lament their foes
+FEATURES
+GNOME may rule Ubuntu Resolute Raccoon, but X.org isn't roadkill yet
+OpenClaw, but in containers: Meet NanoClaw
+Open source registries don't have enough money to implement basic security
+Contain your Windows apps inside Linux Windows
+The Linux mid-life crisis that's an opportunity for Tux-led transformation
+Too much AI for some, too little for others: Why AMD can't win with investors
+How agentic AI can strain modern memory hierarchies
+'Ralph Wiggum' loop prompts Claude to vibe-clone commercial software for $10 an hour
+How one developer used Claude to build a memory-safe extension of C
+No one talking about a datacenter could be a sign one is coming
+✕
+Biting the hand that feeds IT
+About Us
+
+Contact us
+Advertise with us
+Who we are
+Our Websites
+
+The Next Platform
+DevClass
+Blocks and Files
+Situation Publishing
+Your Privacy
+
+Cookies Policy
+Privacy Policy
+Ts & Cs
+Do not share my personal information
+Your Consent Options
+Archives
+27 years of articles
+
+        Copyright. All rights reserved © 1998-2026.
+    

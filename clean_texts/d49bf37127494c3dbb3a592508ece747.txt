@@ -1,0 +1,836 @@
+I replaced my local LLM with a model half its size and got better results — And it wasn't about the parameters
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+16
+More Action
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I replaced my local LLM with a model half its size and got better results — And it wasn't about the parameters
+By 
+Nolen Jonker
+Published
+ Apr 8, 2026, 1:00 PM EDT
+Nolen began their writing career in 2019, with three years dedicated to editing the Creative section at 
+MakeUseOf
+. Their expertise lies at the crossroads of technology and creativity, covering areas like photography, video editing, and graphic design.
+
+Outside of work, you'll often find Nolen diving into a good book, writing their own stories, or playing video games. 
+Sign in to your 
+XDA
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+16
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+The first thing many people look at when picking a local model is the parameter count. The logic is usually that a bigger number equals a better model. I thought that too once 
+getting started with self-hosting LLMs
+, and it’s not entirely wrong. But after running my go-to 20B model into a wall with longer prompts, I switched to a 9B model and got better results. Not because it’s inherently better than 20B, but because the one I switched to was built for a much larger context window, and that ended up mattering more for how I actually use LLMs.
+✕
+ Remove Ads
+Context window is basically your model’s working memory. Everything in your conversation, your prompt, and the response it generates has to fit inside it. If your model has a massive parameter count but a tiny context window, it’s going to choke on anything longer than a few paragraphs. Another thing I hadn’t considered was how badly the default settings were getting in my way, and how much of the “limitation” I’d been blaming on my hardware was actually just 
+a settings problem
+ I hadn’t looked at yet.
+
+                        What I’m working with
+               
+
+            I switched to something smaller but more capable
+    
+ My 
+setup is pretty basic and modest
+. I’m running a GPU with 8GB of VRAM, and I’m running everything through LM Studio - it was the first runner I tried and I liked the GUI, so it just stuck. Up until recently, OpenAI’s 
+gpt-oss 20B
+ was my go-to model. With STEM and general knowledge as its strong suit, 20 billion parameters, and up to 128k tokens, I figured it was a strong middle ground between something that could actually run on my hardware and something capable enough to be useful. It ran smoothly on my setup through GPU offloading, even though it’s officially designed for 16GB of VRAM.
+✕
+ Remove Ads
+For most things, it was fine. I would primarily prompt it for quick bursts of information or a bit of brainstorming. But the problem showed up when I started throwing longer prompts at it. Its context limits as well as my limited VRAM became more apparent when I put it up against Claude, tasked with creating a short UX design self-study curriculum - it kept hitting the context wall.
+So a colleague pointed me towards the Qwen family of models specifically because of 
+GDN (Gated DeltaNet)
+, a hybrid architecture that handles context very differently to a standard transformer like gpt-oss. Basically, standard transformers grow a KV (key value) cache for every token in your context - the longer a conversation, the more VRAM it eats. GDN replaces most of those layers with a fixed-size memory state, so VRAM usage stays mostly constant even with longer context length.
+Now, I’m working with 
+Qwen 3.5 9B (q4_k_m)
+, which is significantly smaller than my gpt-oss 20B, about half the size. But it has a much larger context window (up to 262k) and uses context more efficiently without eating up VRAM, thanks to GDN. So whereas I 
+could 
+previously bump up context length to around 30K for gpt, my PC could barely handle it, but I can go far above that with Qwen and my PC is fine.
+Related
+
+			Qwen3.5-9B tops every AI benchmark right now, but that's not how you should pick a model
+		
+There's a lot more to a model than just benchmarks.
+Posts
+7
+By 
+Adam Conway
+Mar 12, 2026
+
+                        Qwen 3.5 9B has a much larger context window
+               
+
+            It didn’t work well at first, but that was on me
+    
+✕
+ Remove Ads
+I first attempted Qwen with the same long prompt I wrote about in 
+this LLM comparison article
+ - a prompt for a UX research study guide. And it didn’t go much better than it did with gpt-oss as it couldn’t generate the full course. Keep in mind that the context length was set to 16k at this point. My first instinct was that 
+Thinking Mode
+ was the culprit - Qwen runs Thinking by default, so it burns through a chunk of your token budget just reasoning before it even gets started on the response. So I turned it off… and it still failed.
+At this point I went into LM Studio’s settings. I noticed 
+Limit Response Length
+ was ticked on and capped at 1,643 tokens, which meant Qwen was being cut off mid-response regardless of anything else. I messed around with the sliders the night before when writing 
+this article about prompting tips
+ and completely forgot I turned it on! After turning that off, it was smooth sailing, with one thing worth noting: Qwen has a tendency to overthink and over-explain, even with Thinking turned off. But a 
+system prompt
+ can keep that in check - instruct it to be concise, skip the preamble, stick to what you actually asked for, and not narrate its reasoning process.
+Beyond the system prompt, it’s also worth tweaking a few parameters in your runner. The ones that matter most for reining in Qwen’s verbosity are the 
+presence
+ and 
+repetition penalties
+ (nudged up), and 
+min-p
+ (keep low). 
+Temperature
+ depends on what you’re doing - lower for precision, higher for general use. With context length bumped up to 30k, Thinking turned off, and my parameters tweaked, Qwen generated a really practical and actionable study guide. It turned out to be much more comprehensive than anything gpt-oss ever gave me.
+✕
+ Remove Ads
+
+            And then I started to push the context limits
+    
+After seeing what Qwen was capable of with the same context length, and my fans weren’t even ramping up, I wanted to see how far I could push it. It didn’t necessarily generate better results with a higher context length apart from being a bit more detail-oriented. So the real test was going to be how much of the context it actually remembers as the chat got longer, which is also more realistic for how I use AI - lots of back-and-forth.
+So I decided to try the 
+needle in a haystack test
+. Basically, you take a massive wall of text (haystack), hide a specific piece of information inside it (needle), and ask the model to retrieve the needle. I generated a long wall of text that would equal to around 50k tokens, and hid some key phrases in there. When Qwen was set to 30k context length, it couldn’t find it, but at 60k, it was able to find it. This pretty much confirmed that the context window was working as expected. It wasn't just a setting I'd bumped up and hoped for the best, the model was genuinely attending to content across the full 60k tokens, early, middle, and late in the text. For a 9B model running on 8GB of VRAM, that's pretty solid.
+✕
+ Remove Ads
+Based on the needle test, I can run much longer sessions than I ever could with gpt-oss without the model losing the thread. I’ve been using it for UX and design search queries, study sessions, and general back-and-forth where context tends to accumulate. I’m sitting comfortably at 60k and nothing has cut off or gone sideways yet - though it puts me at 7.6 out of 8GB dedicated VRAM used, so that's close to the ceiling. For a 9B model on modest hardware, this headroom feels genuinely different to what I was working with before.
+Related
+
+			7 things I wish I knew when I started self-hosting LLMs
+		
+I've been self-hosting LLMs for quite a while now, and these are all of the things I learned over time that I wish I knew at the start.
+Posts
+12
+By 
+Adam Conway
+Jul 22, 2025
+
+            The model size isn’t the whole story
+    
+I honestly avoided the Qwen family for a while because every time I saw it come up, it was in the 
+context of coding benchmarks
+ - and I don’t code. So I swore it off as a developer tool and stuck to general-purpose models. Turns out that reputation sells it badly for everything else it’s capable of. If context window matters to your workflow - studying, research, coursework, and so on - architecture is worth paying attention to before parameter count. The B number isn’t nothing, but it’s not the whole story either.
+✕
+ Remove Ads
+AI tools
+Artificial Intelligence
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			My favorite alternative to Office 365 isn’t LibreOffice – it’s something way cooler
+		
+
+			Wine 11 rewrites how Linux runs Windows games at the kernel level, and the speed gains are massive
+		
+
+			I tried Gemini, ChatGPT, and Copilot for a month and I have a clear winner for you
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+16
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+TeD
+TeD
+TeD
+#EK297142
+Member since 2026-02-17
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Qwen 3.5 9b should be better than the model you used before regardless of context window improvements even. As that 9b model managed to even perform similar in quality and accuracy of results to the 120b version of the old 20b model you used before,  and this is still exclusing the much better content window options and the much higher speed and smaller file size and lower ram useage.
+Multi level AI systems have always been way more fast light weight, accurate, etc. Than single level AI systems(multi level as a combination of one or more specialized AI networks/sections/modules and often also some linking logic(more similar to a brain) but was less general purpose and required more development, but that is how they could make esp32 powered self driving cars which where actually quitr safe quite a while ago despite modern self driving cars having high end pc's build in and still not really being completely relyable, single level AI is like chatgtp, one network trying to do/mimick all, general purpose low development needed but very slow, heavy, big, unaccurate/unreliable, etc.)
+Multi level AI has mostly disapeared from the world since the first chat-gtp went online.
+Qwen 3.5 essentially is the first big  general purpose model bringing it back. Though more in a hybride form still more leaning towards single level AI, but even those small things to make it a bit like multi level AI made it that much more efficient and accurate despite still remaining general purpose.
+With low development I meant a model where the people using it use it as is mostly and don't need to make it or have it made speciffically for their use. 
+With qwen 3.5 working so well, perhaps we might start seeing more development in multi level AI hybrides. Could make models way more efficient and still quite much general purpose
+2026-04-09 03:15:55
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+Smoke007
+Smoke007
+Smoke007
+#ZP364576
+Member since 2025-05-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I've also been testing qwen 3.5 9b on my old amd rx580 8gb GPU in lm studio and having fun testing openclaw running in docker using lm studio as the server. Check out the new Gemma 4 E4B model. It will run great for too for you. I've got 64gb ram in the computer, so I can offload there to make up for lack of vram. Nicely written article. Cheers 
+2026-04-10 06:49:29
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Rdub77
+Rdub77
+Rdub77
+#PY696605
+Member since 2026-04-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I love the content Nolen. I agree I have found that bigger models aren't always better. Would you ever consider a stand alone windows app for your LLM or pretty set on what you found works?
+2026-04-08 20:56:42
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+David
+David
+David
+#HM383741
+Member since 2026-02-24
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Local LLMs are incredible; even Claude and Gemini admit that the latest open-source models beat or exceed them under almost any benchmarks. And you don't pay one cent in API or cloud fees, allowing you all the time in the world to test and iterate without the penalty of "failure," an essential part of the learning process.
+Unfortunately, the hardware costs for "prosumer" hardware (i.e., "gaming PCs") that can run extremely capable LLMs have skyrocketed in recent months as data centers have been buying all the VRAM and DDR5 RAM they can find, increasing the costs of top-end "prosumer" computers by about 50% since July 2025, if you can even find one. 
+I define a prosumer model as having one of the newest/fastest AMD or Intel CPUs; at least 64gb DDR5 RAM (the price of RAM has gone up by 500% in recent months, so manufacturers are trying to sell supercomputers with only 32gb RAM and that's just not enough); a 2TB or larger NVME; and ideally an Nvidia 5090 GPU with 32gb VRAM (the 5090 is faster than anything you'll find in a data center; an absolute rocket). Full builds in this category approach and sometimes eclipse $6k, with no signs of relief. If you want 128gb RAM and larger hard drives, add a few grand.
+While getting a 5080 instead of a 5090 will save you about $2k, the 5080 only has half the VRAM as the 5099—16gb—and that's just not enough to run today's best LLMs, let alone future ones, unless you also invest in an Nvidia DGX Spark with 128gb unified memory. The Spark is more of a tug boat than a speed boat: it's about 1/6 as fast in raw througput as the 5090, but it has four times the capacity. And since the 5090 is so fast, the Spark's 1/6 speed isn't even slow at all: I get 40-80 tokens/second on some of the largest LLMs like gpt-oss:120b and Nemotron-3 Super.
+Billed as the world's smallest supercomputer, the DGX Spark is an incredible machine that makes a perfect sidekick to your main computer: it handles the heavy lifting required by huge LLMs, video edit
+2026-04-09 00:30:21
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        4
+                    
+Copy
+        
+g
+g
+g
+#XR742175
+Member since 2025-02-10
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+4090 runs qwen 3.5 9b fine
+2026-04-09 17:22:11
+Upvote
+Downvote
+Reply
+Copy
+        
+Mabakay
+Mabakay
+Mabakay
+#AZ584956
+Member since 2025-07-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+g
+ Intel Arc B570 runs it fine as well.
+2026-04-10 11:40:03
+Upvote
+Downvote
+Reply
+Copy
+        
+Peter
+Peter
+Peter
+#AO866885
+Member since 2025-10-12
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+g
+ so does the 5060 16 GB
+2026-04-12 05:56:40
+Upvote
+Downvote
+Reply
+Copy
+        
+V
+V
+V
+#RS943265
+Member since 2026-04-21
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Nice ad, NVIDIA bot. was trying to understand the point of this post until the last two paragraphs.
+2026-04-21 07:49:57
+Upvote
+Downvote
+Reply
+Copy
+        
+Nous
+Nous
+Nous
+#ZP618645
+Member since 2026-04-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Something you don’t mention that is worth it to point out is the oss 20b model is actually a mixture of experts.  So only some like 3b parameters are active at a time. So while your qwen model is smaller, all 9b are active. 
+2026-04-08 23:36:24
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Rick
+Rick
+Rick
+#ST959820
+Member since 2026-04-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+You should try AnythingLLM.    Same but different to the LM studio your using.   Although lm studio does allow you to tweak models more.   Anything llm does alow context window  sizing, and it's workspace set up is stronger
+2026-04-09 00:05:49
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Mabakay
+Mabakay
+Mabakay
+#AZ584956
+Member since 2025-07-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Did you read the article? LM Studio also has option to set context window size.
+2026-04-10 11:42:06
+Upvote
+Downvote
+Reply
+Copy
+        
+hyprZ
+hyprZ
+hyprZ
+#CX137109
+Member since 2025-10-24
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I've been daily driving Qwen3.5 9B as well,it is certainly good at remaining a lot and performs way better, I've a 8GB card too with only 16GB RAM, so far I've done 55K context being highest with 0 model offloading, still does paragraphs of answers in seconds and remembers old info well. But it is more suited as an assistant for Agentic workflow than as even a chatbot
+2026-04-09 20:54:17
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Peter
+Peter
+Peter
+#AO866885
+Member since 2025-10-12
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Qwen-3.5-9b won a test over even the 120B version of gpt-oss.
+2026-04-12 05:55:25
+Upvote
+Downvote
+Reply
+Copy
+        
+Matthew M.
+Matthew M.
+Matthew M.
+#WL276218
+Member since 2026-04-11
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+My test for AI models is to feed it a decompilation of an Amnesia Rebirth function in assembly and  ask it to identify the object pointer. Matches and oil aren't a simple pointer that survives game restart but built into an object list.
+2026-04-11 12:49:37
+Upvote
+Downvote
+Reply
+Copy
+        
+Travis
+Travis
+Travis
+#SR975282
+Member since 2026-04-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+What about Gemma 4 ?  
+2026-04-09 08:09:29
+Upvote
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Peter
+Peter
+Peter
+#AO866885
+Member since 2025-10-12
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Not sure if it wins over qwen-3.5-9b if you mean the 8b variant, but it will be really close.
+2026-04-12 05:58:08
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 7, 2026
+
+                                    Microsoft plans to fix Windows 11’s unpredictable Start menu search
+                            
+Apr 7, 2026
+
+                                    Intel Quick Sync is the reason I will never buy another Nvidia card for my Jellyfin server
+                            
+Apr 7, 2026
+
+                                    Your TV's contrast problem isn't the panel, it's the wall behind it
+                            
+Apr 7, 2026
+
+                                    4 reasons the Pixel 10a is the only mid-range phone I recommend
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:07
+
+                            The end of affordable PCs?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:03
+
+                            Now you can buy fake RAM for your gaming PC
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            Snapdragon X2 Elite Extreme benchmarks: RIP Panther Lake?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:01
+Skip Ad
+5

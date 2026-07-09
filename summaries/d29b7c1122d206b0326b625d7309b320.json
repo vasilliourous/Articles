@@ -1,0 +1,43 @@
+{
+  "article_title": "OpenSSH Flaw Allowing Full Root Shell Access Lurked for 15 Years",
+  "core_thesis": "A critical vulnerability (CVE-2026-35414, dubbed SplitSSHell) in OpenSSH versions released over the past 15 years allows an attacker with a valid certificate from a trusted CA to gain full root shell access by exploiting a code reuse error that misinterprets commas in certificate principal names as list separators, bypassing access controls without leaving log traces.",
+  "detailed_summary": "The vulnerability, discovered by Cyera and tracked as CVE-2026-35414 with a CVSS score of 8.1, stems from a code reuse issue in OpenSSH's handling of the authorized_keys principals option when certificate authorities (CAs) use comma characters. Specifically, a function that processes cipher and key-exchange list negotiation splits comma-separated values, causing a principal like 'deploy,root' to be interpreted as two separate principals, granting root access if the attacker holds a valid certificate from a trusted CA. A second authorization function treats the same principal as a single string and denies access, but if the string matches, subsequent options skip principal validation entirely. Cyera demonstrated the exploit in about twenty minutes. The attack does not register authentication failures in logs, making detection via logs unreliable. The flaw was patched in OpenSSH version 10.3 released in early April 2026. Organizations are urged to audit and update immediately.",
+  "entities": [
+    {
+      "name": "Cyera",
+      "type": "organization",
+      "role": "Data security firm that discovered and disclosed the vulnerability, naming it SplitSSHell."
+    },
+    {
+      "name": "CVE-2026-35414",
+      "type": "event",
+      "role": "The vulnerability identifier assigned to the OpenSSH flaw, with a CVSS score of 8.1."
+    },
+    {
+      "name": "OpenSSH",
+      "type": "organization",
+      "role": "The software project affected by the vulnerability; versions over the past 15 years are vulnerable."
+    },
+    {
+      "name": "Ionut Arghire",
+      "type": "person",
+      "role": "SecurityWeek correspondent who authored the article."
+    }
+  ],
+  "key_data_points": [
+    "The vulnerability CVE-2026-35414 (CVSS 8.1) allows an attacker with a valid certificate from a trusted CA to gain root shell access by inserting a comma in the certificate principal name (🟢 relevant to your Red Teaming: can be weaponised for privilege escalation from low-privilege to root).",
+    "The flaw is a code reuse error: a function that splits comma-separated cipher lists is reused for parsing certificate principals, causing 'deploy,root' to grant root access (🟢 relevant to your Red Teaming: demonstrates how subtle parsing bugs can lead to full compromise).",
+    "The attack does not generate authentication failure logs, making log-based detection ineffective (🟢 relevant to your Red Teaming: enables stealthy exploitation without triggering alarms).",
+    "Cyera developed a working exploit in about twenty minutes, highlighting the ease of exploitation (🟢 relevant to your Red Teaming: indicates low barrier to weaponisation).",
+    "The vulnerability was patched in OpenSSH version 10.3 in early April 2026; organizations must update immediately (🟢 relevant to your Red Teaming: patch analysis can reveal exploitation vectors for unpatched systems)."
+  ],
+  "methodology_steps": [],
+  "conclusions": [
+    "The SplitSSHell vulnerability is a critical, stealthy privilege escalation vector in OpenSSH that has existed for 15 years, allowing attackers with a valid CA certificate to gain root access without log traces. This underscores the importance of rigorous input validation and code reuse audits in security-critical software.",
+    "For Red Teaming, this vulnerability is highly valuable: it provides a reliable, low-detectability path to root on any server running a vulnerable OpenSSH version, provided the attacker has a certificate from a trusted CA. The exploit's simplicity (comma injection) makes it easy to integrate into attack chains.",
+    "Organizations should prioritize patching to OpenSSH 10.3 and audit certificate authority trust models to limit the blast radius of such flaws."
+  ],
+  "personal_relevance_summary": "This article is directly relevant to your Red Teaming and cybersecurity interests, detailing a high-impact OpenSSH vulnerability (CVE-2026-35414) that allows root shell access via a simple comma injection in certificate principals. The exploit is stealthy (no log failures) and easy to weaponise, making it a potent tool for offensive operations. As a programmer, understanding the code reuse error that caused the bug provides insight into secure coding practices. You can use this knowledge to test your own or client environments for the vulnerability, and to develop detection rules that look for anomalous certificate principal patterns rather than relying on logs.",
+  "extra_advice": "Consider building a proof-of-concept exploit for CVE-2026-35414 to test in your lab environment. This will deepen your understanding of SSH certificate handling and provide a reusable tool for Red Team engagements. Additionally, audit any OpenSSH servers you manage to ensure they are patched to version 10.3 or later.",
+  "source_url": "https://www.securityweek.com/openssh-flaw-allowing-full-root-shell-access-lurked-for-15-years/"
+}

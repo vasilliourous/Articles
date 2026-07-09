@@ -1,0 +1,644 @@
+I put this open-source reader on my Kindle, and I wish I had done it sooner
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+Networking
+Storage and NAS
+Components
+Peripherals
+Operating Systems
+Submenu
+Linux
+Windows
+Software
+Submenu
+Programming
+Applications
+Mobile
+Submenu
+Android
+iPhone
+Carriers
+New Tech
+Submenu
+Hobbies
+Smart Home
+Homelab
+Single-Board Computers (SBCs)
+Cutting Edge
+Streaming
+Submenu
+Streaming Content
+Streaming Platforms
+Audio/Video
+Automotive
+Reviews
+Buying Guides
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+7
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Storage
+Streaming
+Linux
+Open Source
+Microsoft Excel
+Android
+Windows
+Close
+I put this open-source reader on my Kindle, and I wish I had done it sooner
+Credit: Faisal Rasool / How-To Geek
+By 
+Faisal Rasool
+Published
+ Apr 22, 2026, 9:16 AM EDT
+Faisal Rasool has been a feature writer at How-to Geek since early 2024. He brings five years of professional experience in simplifying technology for his readers on topics like mobile devices, PCs, and online privacy. He tries to help people get the most out of their gadgets and software with the least effort.
+
+In his teenage years, he spent hours every day tinkering with Android phones and Linux builds. Faisal started his career at WhatMobile in 2019 (mostly out of his obsession with Android) where he published over 2,000 news stories. Currently, he contributes to the news section over at AndroidHeadlines.
+
+He also authored more than 100 feature articles for SlashGear, covering Android, iOS, Web, Chromebooks, online privacy/security, and PC content. 
+
+Faisal is also pursuing a Bachelor's in English literature to build up his writing chops. He enjoys watercolors, classic video games, animated films, and conversations with strangers. 
+Sign in to your 
+How-To Geek
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+7
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+The open-source eReader community has developed an alternative to the default Kindle interface. It's called KOReader, and it turns the standard Amazon interface into something magical.
+
+                        Why bother replacing the default Kindle reader?
+               
+
+            Short answer: Amazon
+    
+I dislike the default Amazon interface as much as I love my Kindle. It's 
+bloated with ads
+, and the main page is just an Amazon shopping screen. The ads I can tolerate, but a Kindle owner has no control over their own library.
+✕
+ Remove Ads
+The books you buy on a Kindle are stored in the Amazon cloud, and Amazon can remotely delete books from your Kindle if they want to (and they actually have done so in the past). Even if you can somehow get the files off the Kindle and move them to another device, you will not be able to read them because they're 
+locked with DRM
+.
+Credit: Alexandra Ramos
+I think if someone can decide to erase books from my library or prevent me from reading them on another device, they're the ones who actually own the library, not me. If Amazon disables my account, I'll lose my entire library. Amazon can even break my entire Kindle just by pushing an update.
+
+                        What makes KOReader special
+               
+
+            It serves you, the reader, not Amazon
+    
+Mostly, I just wanted my Kindle to become a local-first device and cut out the Amazon cloud entirely. That way, I would have total control over my library and all the ebooks inside. As a happy byproduct, an offline Kindle wouldn't show ads either. I started using 
+Calibre to copy books directly to the Kindle
+, so I could read them offline. It didn't stop the lock screen ads that my Kindle had already loaded, but other than that, Calibre was helping me bypass the Amazon ecosystem entirely.
+✕
+ Remove Ads
+Learning to use Calibre and interacting with the community led me down the rabbit hole that is Kindle jailbreaking. Turns out, you can "jailbreak" a Kindle (just like you can a smartphone) and completely de-Amazon it. My warranty was already up, so I decided to jailbreak it, and I could not be happier with that choice. I followed a simple guide on 
+kindlemodding.org
+, and it took about 30–40 minutes to complete the jailbreak.
+The first thing I did after jailbreaking the Kindle was to install KOReader on it. It's an open-source reader that replaces the default Kindle reader. And it blew me away.
+You can set a jailbroken Kindle to boot directly into KOReader, so you never have to see the Amazon interface again unless you quit KOReader. It also works completely offline.
+
+                        All the file formats you could ever ask for, and then some
+               
+
+            KOReader can load all the file formats that Kindle can't
+    
+Firstly, KOReader supports way more formats than the default Kindle reader. It can read EPUBs natively (no conversion required). It even loads digital comic book formats like CBZ and CBR natively, which Kindle doesn't. Office formats like DOC, DOCX, RTF, TXT, and HTML also work. PDF files work on both, but on KOReader you can enable "text reflow" to make the PDF intelligently fit the screen or even crop margins. On Kindle, extra PDF margins have always bothered me.
+✕
+ Remove Ads
+
+                        Set the book cover as the lock screen
+               
+
+            My Kindle lock screen is no longer an eyesore
+    
+This is probably my favorite feature so far. With KOReader, you can set the lock screen to display the cover of your current book. Before KOReader, it would just display random ads and offers from Kindle Unlimited, which made it an eyesore. Now, whenever I look at the Kindle or pick it up, it reminds me to continue reading.
+You can even use it to display custom wallpapers on the lock screen. I downloaded a few wallpapers optimized for e-ink screens. Then I set KOReader to cycle between them.
+Credit: Faisal Rasool / How-To Geek
+
+                        Customize absolutely everything
+               
+
+            I really do mean everything
+    
+I'd like to start by clarifying that I've always liked the Kindle reader app. It gets the job done, and I'm particularly fond of the dictionary feature. So I never gave customization much thought until I used KOReader. If you're someone who loves tinkering and customizing things just to your liking, you'll love KOReader. It showed me just how flexible and customizable an eReader can be.
+✕
+ Remove Ads
+Let's start with the layout and viewer customization. You can change the orientation of the text in four ways. You can even toggle a dual-column view, which looks great on bigger Kindles.
+You can switch to continuous mode instead of flipping through pages. You can change the contrast and font weight of text (which I've tried and failed to do on the regular Kindle reader). It makes the text more visible, especially in lower light. All these settings can be saved as a style profile. You can choose a default profile to apply to all books, or use different profiles for different books.
+You can set custom gestures for tapping and swiping on corners and edges. For example, I've set the left corner to instantly toggle the front light on and off. And long-pressing the same corner turns the night mode on or off. Swiping up from the left and right edges increases the front light intensity and font size, respectively.
+You can load custom fonts. You can even customize the status bar and decide exactly what items go in it. You can choose to display a reading progress bar. Every little thing, like the width and height of the progress bar, can be tweaked and customized.
+There are even more customization features which I haven't covered and (I'm sure) haven't discovered yet.
+✕
+ Remove Ads
+
+                        Some other neat features
+               
+
+            More quality-of-life features that Kindle is missing
+    
+It has all the features that a regular Kindle has: dictionary support (you can add more dictionaries), Wikipedia lookup, vocabulary builder, highlights, notes, and even a text editor.
+
+                    KOReader mastery: subscribe for e-reader customization tips
+                
+Subscribe to the newsletter to unlock step-by-step guides, troubleshooting tips, curated configuration files, and community-sourced tweaks for mastering KOReader and customizing your e-reader experience with practical, hands-on help.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+KOReader integrates directly with Calibre, so you can send books from your PC or server to Calibre using a wired or wireless connection.
+It has a 
+built-in RSS feed
+, which lets you build news feeds and automatically sync them. You can open the news folder to read your daily news.
+You can also see detailed reading stats for your current book and all your reading activity in one place. This is one feature I always wish Kindle had by default, but I'm very happy to have found it in KOReader.
+
+    						Amazon Kindle (2024)
+			
+Storage
+
+									
+										
+											16GB
+
+										
+																	
+Screen Size
+
+									
+										
+											6-inches
+
+										
+																	
+Even in the budget department, the Amazon Kindle is a stellar value, from its light and compact design, to its adjustable front light and 6-inch display.
+$130 at Amazon
+Expand
+Collapse
+
+    						Amazon Kindle Paperwhite (2024)
+			
+Brand
+
+									
+										
+											Amazon
+
+										
+																	
+Screen
+
+									
+										
+											7-inch, 300 ppi, 16-level gray scale
+
+										
+																	
+With a 7-inch display, high contrast, and sharp image quality, the Amazon Kindle Paperwhite will help you fall in love with eReaders. It even supports Bluetooth devices for setting aside the eReader and enjoying audiobooks through headphones or earbuds.
+$160 at Amazon
+$160 at Best Buy
+Expand
+Collapse
+✕
+ Remove Ads
+
+            My only regret is not installing KOReader sooner
+    
+This barely scratches the surface of what KOReader can do, but it should give you some idea of how powerful it is. I've been using e-readers and e-reader apps for more than 10 years and I can confidently say I've never seen a more flexible or customizable e-reader app. The only feature I actually miss is the Kindle internet browser. KOReader doesn't have anything like that.
+Hobbies
+Kindle
+eReaders
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. 
+Read More
+.
+Close
+✕
+ Remove Ads
+
+                                                    Desktop
+                                            
+
+                                                    Mobile
+                                            
+
+			KDE Dolphin does file management better than GNOME—here's why
+		
+33 minutes ago
+
+			This open-source project brings the best part of Linux to Windows
+		
+2 hours ago
+
+			These 6 Linux command defaults make the terminal much less frustrating
+		
+3 hours ago
+See More
+
+			This open-source app suite replaced 6 closed-source apps and tools on my Android phone
+		
+17 minutes ago
+
+			I don't use Google Maps in Android Auto anymore—this navigation app took its place
+		
+2 hours ago
+
+			Please stop typing on your Google Pixel—these 3 voice commands are a game changer
+		
+20 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			I've used Linux for 6 years—this is the simplest way to run virtual machines
+		
+
+			4 useful Android widgets that actually deserve space on your home screen
+		
+
+			I tried to ditch cloud storage for self-hosting. Three drives and a mini PC later, I gave up
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+7
+Sign in to your 
+How-To Geek
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Richard
+Richard
+Richard
+#KP119940
+Member since 2024-07-30
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+As my wife and I are avid readers, we take a lot of advantage of Kindle Unlimited. From one of your screenshots we got the impression it was still available and we're curious if you happen to know.
+2026-04-22 15:01:33
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Tom
+Tom
+Tom
+#NT869285
+Member since 2026-04-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I have an older Kindle Paperwhite which is no longer supported by Amazon since it has 3g internet.  
+I have shared my phone's internet connection thru wifi and been able to download very few books 
+Would this be feasible ?
+2026-04-22 13:32:23
+Upvote
+Downvote
+Reply
+Copy
+        
+RickHan
+RickHan
+RickHan
+#AL037979
+Member since 2026-02-26
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+KOSync replaces Whispersync. I have KOReader/KOSync running on both my Kobos, all my Android devices, and on Windows via BlueStacks (don't use the Linux version on Windows). KOReader is under active development and others are writing add-ons to make it even more usable.
+Calibre (desktop) is a must for setting up and heavy duty editing ebooks and the library. Calibre-Web and Calibre-Web-Automated allows you to deliver books to your ereaders over the Web. CWA is the newest and has lots of wonderful features (what I use).
+I need physical page turn buttons so when my Oasis dies, it'll be my last Kindle.
+Unfortunately, Amazon has locked most of my favorite authors to Amazon only contracts with DRM. In the past, no big problem. Load to Calibre and convert to whatever format. Let's see how long the community takes to break the new DRM. Fair use allows me to read content on whatever device I choose.
+2026-04-22 13:12:39
+Upvote
+Downvote
+Reply
+Copy
+        
+BobbyB444
+BobbyB444
+BobbyB444
+#NG943096
+Member since 2026-05-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I never rec'd the Amaz email about downloading my Fire 7 (9th ver) ebook. If I attempt KOreader, that means these books are forever lost (as well as the $$$$$ I spent for them!!!
+2026-05-03 19:06:33
+Upvote
+Downvote
+Reply
+Copy
+        
+Michelle
+Michelle
+Michelle
+#SG669189
+Member since 2026-04-23
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I can't stand Kindle. The lock screen thing was exactly why I went back to Kobo after having just one Kindle. I sooooo missed having my current book cover on the lock screen. And ads????? Wtfbis that??? There are NO ads on a Kobo. It's just the best, most readers oriented readers out there.
+2026-04-23 02:54:12
+Upvote
+Downvote
+Reply
+Copy
+        
+Tim
+Tim
+Tim
+#TC742790
+Member since 2026-04-23
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I have a huge Amazon library. Will it still work on KOReader?
+2026-04-22 21:10:49
+Upvote
+Downvote
+Reply
+Copy
+        
+Michelle
+Michelle
+Michelle
+#SG669189
+Member since 2026-04-23
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+You might also wanna try Ocean of PDF, free books for a donation of your choice, loads straight into Google Play books.
+2026-04-23 02:57:53
+Upvote
+Downvote
+Reply
+Copy
+        
+Orlin
+Orlin
+Orlin
+#MH074339
+Member since 2026-04-23
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Can you still use Amazon send to kindle feature and current Amazon reading interface after jailbreaking and installing ko reader ? I’m yet to dislike current convenience of not using calibre anymore just throwing epubs towards “send to kindle” and having them poped on both my kindle and scribe. 
+2026-04-22 22:07:52
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 21, 2026
+
+                                    Framework finally has a modular laptop with a touchscreen
+                            
+Apr 21, 2026
+
+                                    Here's an open-source Google Circle To Search alternative that works offline
+                            
+Apr 20, 2026
+
+                                    Android's most trusted launcher is now harvesting your data
+                            
+Apr 20, 2026
+
+                                    Plex kept making it harder to stream my media, so I replaced it with its open-source rival
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+How-To Geek
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

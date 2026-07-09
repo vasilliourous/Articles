@@ -1,0 +1,693 @@
+Stop running these homelab apps 24/7—here's why they should run on a schedule instead
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+Networking
+Storage and NAS
+Components
+Peripherals
+Operating Systems
+Submenu
+Linux
+Windows
+Software
+Submenu
+Programming
+Applications
+Mobile
+Submenu
+Android
+iPhone
+Carriers
+New Tech
+Submenu
+Hobbies
+Smart Home
+Homelab
+Single-Board Computers (SBCs)
+Cutting Edge
+Streaming
+Submenu
+Streaming Content
+Streaming Platforms
+Audio/Video
+Automotive
+Reviews
+Buying Guides
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+7
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Storage
+Streaming
+Linux
+Open Source
+Microsoft Excel
+Android
+Windows
+Close
+Stop running these homelab apps 24/7—here's why they should run on a schedule instead
+Credit: Patrick Campanale / How-To Geek
+By 
+Adam Davidson
+Published
+ Mar 21, 2026, 1:45 PM EDT
+Adam has a degree in Engineering and has a life-long interest in technology. He has been writing for over a decade for various print and online publications, with a focus on consumer tech. He joined How-To Geek in 2024 while working at 
+Pocket-lint
+.
+
+As well as being a long-term fan of Apple products, he also has a strong interest in smart home tech, running a Home Assistant server at home to automate all his smart home devices. He believes that the ideal smart home should work with minimal interaction from the user, with automations running as if by magic rather than requiring you to push buttons on a control panel. You can find more of his work on 
+Muck Rack
+. 
+Sign in to your 
+How-To Geek
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+7
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Some people treat self-hosted apps as permanent infrastructure. Once installed, they leave them running forever, waiting to be used, even if in reality many apps are only actually needed for a few hours a week.
+✕
+ Remove Ads
+Always-on uptime is necessary for things that actually need it, such as smart home services and networking tools, but there are plenty of apps that you can run on a schedule. Using options such as cron jobs or GUI-based schedulers, apps can run only when you actually need them.
+Related
+
+			3 Self-Hosted Services I'm Running in My Homelab and Use Every Day
+		
+Plus, which ones I'm looking to try next.
+Posts
+6
+By 
+Jordan Gloor
+Jul 20, 2025
+
+                        Calibre-Web
+               
+
+            You don't need a new book at 4 AM
+    
+Credit: Patrick Campanale / How-To Geek
+Calibre-Web
+ is one of those self-hosted apps that you read about, set up, use twice, and then often forget about. The temptation with self-hosting is to install all the things, leaving you with apps that run unused for weeks at a time.
+I struggle to fit in half an hour of reading in bed at night before I fall asleep, so a lengthy book can take me a while to get through. While I'm reading my current book, Calibre-Web is going completely untouched, but keeps chugging away in the background anyway.
+✕
+ Remove Ads
+Aside from the unnecessary waste of resources running a service you're not actively using, security vulnerabilities have been found in Calibre-Web in the past. Running Calibre-Web on a more limited schedule can reduce the 
+attack surface
+, especially if it's exposed for 
+remote Kindle uploads
+.
+
+                        Jellyfin
+               
+
+            Schedule your media server around your watching habits
+    
+Credit: Lucas Gouveia/How-To Geek | Kaspars Grinvalds/Shutterstock
+ At first, running 
+Jellyfin
+ at specific times sounds like a crazy idea. The whole point is to have access to content that you can watch at any time. If Jellyfin isn't running, you can't access your media.
+It's not as crazy as it sounds, however. If you work all day, you're not going to be using your 
+Jellyfin server
+ from 9 to 5. It's unlikely that you'll need it in the middle of the night either. You can set it up so that Jellyfin is only running at the times you actually need it.
+✕
+ Remove Ads
+The question is: why bother? The most obvious reason is the cost. Jellyfin is often run on hardware that consumes a reasonable amount of electricity, especially if you're using multiple hard drives or a high-TDP processor. While you're not going to notice your energy bills plummeting if you run Jellyfin on a schedule, those savings can add up over the course of a year.
+If Jellyfin is exposed outside your home network, it's also another attack surface for exploits, and the less it's up, the smaller your window of vulnerability. Another reason to run it on a schedule is that having some dedicated "media off" time could be 
+beneficial for your mental health
+.
+
+                        Paperless-ngx
+               
+
+            Ingestion is sometimes a batch job
+    
+Credit: Paperless-ngx
+✕
+ Remove Ads
+Paperless-ngx
+ is a great app for 
+digitizing your documents
+ so that you don't have to hold on to mounds of paperwork. For some, ingestion can happen through watched folders and incoming emails, but if you tend to upload documents manually in batches, then you really don't need Paperless-ngx to be running all the time. If you set aside time on a Sunday afternoon to upload the documents from the week, then having the service running Monday through Saturday is major overkill.
+Paperless-ngx feels like it should be an "always-on" app. However, you may find that the way you use it means that it rarely needs to be on at all.
+
+                        Nextcloud
+               
+
+            Sync clients can be patient
+    
+This is probably the point where most people are going to raise their eyebrows. 
+Nextcloud
+ is a 
+self-hosted cloud storage service
+, and the entire point is that it lets you access your files whenever you need them. If any app feels like it should be running 24/7, it's Nextcloud.
+✕
+ Remove Ads
+If you're using Nextcloud for personal use, however, then there may be long periods where you never upload or access files. For some people, while instant synchronization is nice to have, it's not something that's vital; Nextcloud's sync client on desktop can handle server unavailability, queuing changes locally, and syncing when the server comes back online.
+You may not use Nextcloud during your workday and almost certainly won't use it when you're asleep. Nextcloud often runs on hardware that's more capable than it needs to be, and if you're not using it, turning it off during the day is an easy win. You only need it to be running when you need to use it, and keeping the server offline reduces the risk of opportunistic scans, login attacks, or exposure to security vulnerabilities.
+If you use Nextcloud constantly, running on a schedule is not a good idea. For some people, however, their personal use may mean that it's not a service that needs to run all the time.
+
+                        Duplicati
+               
+
+            Backups happen on a schedule
+    
+✕
+ Remove Ads
+Taking backups
+ is one of the golden rules of any good homelab. If you're not using a proper 
+3-2-1 backup system
+, you could be at risk of losing important data. Backups are almost always run on a schedule, so you don't necessarily need your backup software to be running outside these times.
+
+                    Subscribe for practical self-hosting scheduling tips
+                
+Take control of idle homelab services: subscribe to the newsletter for actionable scheduling strategies, security-minded practices, and real-world configuration ideas to help you run apps only when you actually need them.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+If you always take a backup at 3 AM, for example, then having a backup app such as 
+Duplicati
+ running all day and night is pointless. For the rest of the time, it's doing nothing but using up resources for no good reason.
+Backup apps are the perfect candidates for running on a schedule because you know exactly when you need them and when you don't. Fire them up when you want to take your backup and shut them down again when they're done.
+
+    						Synology DS425+
+			
+7
+/10
+Brand
+
+									
+										
+											Synology
+
+										
+																	
+CPU
+
+									
+										
+											Intel Celeron J4125
+
+										
+																	
+This four-bay NAS works great for home and small office use, and it comes with a three-year warranty from Synology.
+Memory
+
+									
+										
+											2GB DDR4 non-ECC
+
+										
+																	
+Drive Bays
+
+									
+										
+											4
+
+										
+																	
+Expansion
+
+									
+										
+											N/A
+
+										
+																	
+Ports
+
+									
+										
+											1 x 2.5GbE LAN, 1 x 1GbE LAN, 2 x USB 3.2 Gen 1 Type-A
+
+										
+																	
+Caching
+
+									
+										
+											2 x M.2 NVMe
+
+										
+																	
+OS
+
+									
+										
+											DiskStation Manager
+
+										
+																	
+Dimensions
+
+									
+										
+											8.78"D x 7.83"W x 6.54"H
+
+										
+																	
+Weight
+
+									
+										
+											‎4.81 pounds
+
+										
+																	
+$520 at B&H Photo Video
+$520 at Amazon
+$520 at Walmart
+Expand
+Collapse
+
+            24/7 uptime is important, but not for every app
+    
+Some of your homelab apps need to run 24/7. You don't want your house to flood because you stopped 
+Home Assistant
+ running for the night, and your 
+water leak automation
+ didn't run. You may have very solid reasons for needing 24/7 access to some of the apps listed above, too.
+✕
+ Remove Ads
+The likelihood is, however, that there are some apps in your homelab that spend the vast majority of their time doing nothing at all. If this is the case, give them a rest and only run them when you need them.
+Applications
+Homelab
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. 
+Read More
+.
+Close
+✕
+ Remove Ads
+
+                                                    Desktop
+                                            
+
+                                                    Mobile
+                                            
+
+			This open-source project brings the best part of Linux to Windows
+		
+9 minutes ago
+
+			These 6 Linux command defaults make the terminal much less frustrating
+		
+48 minutes ago
+
+			PowerShell isn't scary—these everyday commands prove it
+		
+3 hours ago
+See More
+
+			I don't use Google Maps in Android Auto anymore—this navigation app took its place
+		
+18 minutes ago
+
+			Please stop typing on your Google Pixel—these 3 voice commands are a game changer
+		
+18 hours ago
+
+			Google Maps has a power-saving mode that extends battery life by 4 hours—but there's a catch
+		
+20 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			Floppy disk hack: How a pair of scissors doubled your storage in 1992
+		
+
+			Why a cheap USB-C hub is a must-have accessory for every Samsung Galaxy owner
+		
+
+			Homelab projects to try this weekend (February 13 - 15)
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+7
+Sign in to your 
+How-To Geek
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Lucas
+Lucas
+Lucas
+#XR670789
+Member since 2026-03-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+There's no reason to make the home lab more complex by managing all of these rules when these services do not use much CPU when idle, unless you're homelab has lower RAM.
+2026-03-22 07:24:10
+Upvote
+
+                                    6
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Michiel
+Michiel
+Michiel
+#PV072817
+Member since 2024-06-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Everything runs 24/7 here. With all apps running i barely hit 40% memory use and that's when they are doing something. Idle barely 20% memory (32GB, 16 would've been enough). And I agree why make it complicated it runs without issues.
+And I run everything on older Dell desktops .main apps/virtualization runs on my Supermicro which does have a schedule but for power/noise reasons. 
+2026-03-23 04:00:10
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+david
+david
+david
+#GD217694
+Member since 2026-01-16
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+This article reads like a solution was invented to a problem that was coincidentally invented for this article. There’s no data in here at all. How much did all this effort actually save? Are you running all these services on their own devices? If so, I think you’re doing home labbing kinda wrong. The only way you’re going to notice a meaningful reduction in power consumption is by shutting devices down not making apps “on demand”. These apps are idle (as the article’s apparent problem statement is idle apps are unnecessarily drawing power) but they aren’t really the major power draw this article seems to be suggesting unless they are doing something you want them to be doing (like, you know, serving content or running maintenance jobs). Show us the data that justifies adding this additional layer of complexity to a home lab and maybe this makes sense. 
+2026-03-22 10:28:02
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+Robert
+Robert
+Robert
+#LW501833
+Member since 2026-02-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+really guys? So instead of 16W usage you will use 14,5W?
+2026-03-22 07:53:05
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Baxter
+Baxter
+Baxter
+#JW924613
+Member since 2024-07-31
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Not against being smart with the power consumption, I am all in then to do what here at home. I only change out two plug-in hybrids then we produce a lot of solar power for example and only at night time during the winter then we don't have any solar production for 3 months and only charge then the price is low and not on a "power tariff" as we have in Sweden due to wind power sucks and we don't have enough power on the grid. But my server and storage setup including my PC are not even 1kwh I avragt per hour, the IT environment with the printer is only 300watt I average on my smart meters. It's nothing. And my server is a AMD threadripper Gen 2. And it barely draws any power. Sure you can save some but it won't barely show on the bill. Or you have many different devices for every feature and that adds up more in total consumption. And if that's the case you should start looking into building a server that you host Fedora server 43 on and run VM and container's and fill that mother board with storage that will save you more power than having many devices like NAS boxes and so on.
+2026-03-22 14:08:09
+Upvote
+Downvote
+Reply
+Copy
+        
+TJ
+TJ
+TJ
+#QO788110
+Member since 2023-11-05
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Is there any benefit to this? 
+2026-03-22 00:04:27
+Upvote
+Downvote
+Reply
+Copy
+        
+Destroyer
+Destroyer
+Destroyer
+#OB347293
+Member since 2026-03-21
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+If your nics support it you could use WoL
+2026-03-21 17:30:54
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Mar 13, 2026
+
+                                    Google Home devices are vanishing, but a fix is coming
+                            
+Mar 12, 2026
+
+                                    Dolphin emulator’s new update fixes many emulation and NAS problems
+                            
+Mar 12, 2026
+
+                                    7 essential keyboard shortcuts every Linux Mint user should know
+                            
+Mar 12, 2026
+
+                                    These 4 open-source apps fixed Windows' biggest problems
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+How-To Geek
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:10
+Skip Ad
+5

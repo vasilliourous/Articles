@@ -1,0 +1,292 @@
+Iran claims US used backdoors in networking equipment
+Jump to main content
+Search
+TOPICS
+Security
+All Security
+Cyber-crime
+Patches
+Research
+CSO
+Off-Prem
+All Off-Prem
+Edge + IoT
+Channel
+PaaS + IaaS
+SaaS
+On-Prem
+All On-Prem
+Systems
+Storage
+Networks
+HPC
+Personal Tech
+Cx0
+Public Sector
+Software
+All Software
+AI + ML
+Applications
+Databases
+DevOps
+OSes
+Virtualization
+Offbeat
+All Offbeat
+Columnists
+Science
+BOFH
+Legal
+Bootnotes
+Site News
+About Us
+Special Features
+All Special Features
+HPE: AI Explainers
+RSA Conference
+Agentic AI
+The Future of the Datacenter
+AWS:Reinvent
+Nvidia GTC
+SC25
+Supercomputing Month
+Vendor Voice
+All Vendor Voice
+Infinidat
+Everpure
+Rubrik
+Make it real with Capgemini and AWS
+Money Movement Hub
+ZTE
+Nutanix: Scale Kubernetes. Not Chaos.
+AWS New Horizon
+Resources
+Intelligence
+Webinars & Events
+Newsletters
+Search
+Sign in
+Datacenter
+Security
+Microsoft
+AWS
+Developer
+Open Source
+IT Careers
+Columnists
+Who, Me?
+On Call
+REG AD
+Security
+Iran claims US used backdoors to knock out networking equipment during war
+And China is loving it
+Simon Sharwood
+Simon
+Sharwood
+140
+Published
+Tue 21 Apr 2026 
+//
+ 06:21 UTC
+Iranian media is claiming that the US used backdoors and/or botnets to disable networking equipment during the current war, and Chinese state media is dining out on the allegations.
+Reports from Iran 
+claim
+ hardware made by Cisco, Juniper, Fortinet, and MikroTik either rebooted or disconnected during recent attacks on Iran – despite the regime disconnecting the nation from the global internet.
+The reports suggest that’s only possible because someone – probably the US – can sabotage the equipment at will.
+REG AD
+The report linked to above hypothesizes that a hidden backdoor in firmware or bootloader allows remote attacks at a pre-determined time or can be activated by a signal from a satellite. In either scenario, the US uses the backdoor to bring down networks at the most inconvenient moment for Iran.
+REG AD
+The thrust of the Iranian stories we’ve seen is that US-based vendors are complicit in the installation of backdoors.
+Another scenario Iranian reports float is that someone has installed a botnet on networking equipment and has therefore been able to target devices from Cisco – and from MikroTik, the Latvian networking equipment vendor that emphasizes its product development takes place within the European Union.
+As Iran’s internet is currently mostly closed – more on that later – it’s almost impossible to verify reports of a mass outage.
+That the USA possesses the ability to conduct attacks in cyberspace is not in doubt. After the US takeover of Venezuela, president Trump and general Dan Caine, chairman of the Joint Chiefs of Staff, 
+alluded
+ to online action being one element of the operation. Caine also 
+said
+ US Cyber Command assisted with the June 2025 “Operation Midnight Hammer” attack on Iran, without elaborating on the agency’s role.
+Whatever is going on, Chinese state media has seized on the Iranian reports to restate Beijing’s position that China is a pacifist in cyberspace and the US is the real cyber-villain.
+China’s National Computer Virus Emergency Response Center (CVERC) regularly posts a 
+theory
+ that information leaked by Edward Snowden shows the US embeds backdoors in networking equipment, and that all allegations that Beijing conducts cyberattacks is therefore just a sham to shift the blame to the Middle Kingdom. CVERC has even 
+argued
+ that the Volt Typhoon attacks – which the Five Eyes nations agree was a Chinese attack on critical infrastructure – were a false flag operation run by US intelligence community to give it credibility when smearing China.
+Chinese state media has given credence to the Iranian reports and even 
+published
+ the cartoon below to express Beijing’s feelings on the alleged events in Iran.
+Chinese State Media cartoon
+While these propaganda shenanigans play out, outage-watching outfit NetBlocks 
+says
+ Iran has maintained its internet blockade for 52 days, but adds “authorities continue efforts to segregate users and provide selective access to favored groups.”
+REG AD
+That may be a reference to 
+reports
+ that Iran’s government has created a service called “Internet Pro” that allows some citizens to access a subset of the global internet.
+Activists 
+claim
+ Iran’s government also issues “White SIMs” that allow unrestricted internet access to select officials. ®
+security
+united states of america
+iran
+china
+140
+REG AD
+
+Software
+
+macOS 27 threatens to bury Time Capsule, FOSS brings a shovel
+
+
+    Apple's old backup boxes only speak AFP and SMB1, but NetBSD under the hood gives them one last shot
+
+
+Offbeat
+
+London’s BT Tower to get rooftop swimming pool
+
+
+    Imagine taking a dip 177m above the streets of London’s West End
+
+
+AI + ML
+
+AI inference just plays by different rules
+
+
+    Why no cloud storage architecture was designed for what agentic AI is about to demand
+
+
+Networks
+
+Akamai surges on big LLM deal as Cloudflare dims
+
+
+    Good times, bad times
+
+
+AI + ML
+
+Trump jumps from 'anything goes' to 'strict regulation' AI policy
+
+
+    In a word, 'Huh?'
+
+
+AI and ML
+
+GPT-5.5 may burn fewer tokens, but it always burns more cash
+
+
+    It’s not just gas prices skyrocketing. Frontier-model pricing keeps climbing too
+
+
+                    MOST POPULAR
+                
+Cyber-crime
+Taiwan cops say student's radio kit brought bullet trains to a standstill
+off-prem
+IBM Cloud evaporates as datacenter loses power
+AI + ML
+Chrome silently installs a 4 GB local LLM on your computer
+AI + ML
+Brit mathematician lets AI agent loose with credit card – cue password leaks, CAPTCHA chaos and more
+Software
+Firefox integrates an ad-blocker, but not to block ads
+EVENTS
+Securing the Untrusted Agentic Development Layer
+Join us to learn how to architect a development environment where your builders and their agents can move fast and securely.
+Toxic Flows: When Your AI Agent Skill Becomes a Supply Chain Attack
+When a developer installs an AI agent skill – granting it access to secured IT resources and data – they make a significant trust decision.
+The Hardware Crunch: How Supply Chain Turbulence Is Forcing a New IT Playbook
+Infrastructure teams are facing a perfect storm: extended hardware lead times, rising costs driven by AI demand, and accelerated platform timelines.
+Identity Resilience: The New Mandate for Cyber Survival
+Join Druva experts for a compelling deep dive into what it takes to build an identity-first recovery strategy in this new threat landscape.
+Identity Resilience: The New Mandate for Cyber Survival
+Join Druva experts for a compelling deep dive into what it takes to build an identity-first recovery strategy in this new threat landscape.
+Unfriendly Followers: The Black Market For Your Identity
+They’ll reveal how attackers use your profile as intel and show you how to make yourself harder to target
+AI Found the Problem. Now What?
+AI is transforming the software development lifecycle, helping teams identify and remediate vulnerabilities before they reach production.
+
+            EXPLORE ALL OF OUR EVENTS
+        
+AI
+Software
+macOS 27 threatens to bury Time Capsule, FOSS brings a shovel
+Apple's old backup boxes only speak AFP and SMB1, but NetBSD under the hood gives them one last shot
+Offbeat
+London’s BT Tower to get rooftop swimming pool
+Imagine taking a dip 177m above the streets of London’s West End
+Public Sector
+UK wants fresh fingerprints on £300M biometrics platform
+Home Office probes supplier interest as core police and immigration system heads for support shake-up
+Add section name here
+Akamai surges on big LLM deal as Cloudflare dims
+Good times, bad times
+ai and ml
+GPT-5.5 may burn fewer tokens, but it always burns more cash
+It’s not just gas prices skyrocketing. Frontier-model pricing keeps climbing too
+Infosec
+Software
+macOS 27 threatens to bury Time Capsule, FOSS brings a shovel
+Apple's old backup boxes only speak AFP and SMB1, but NetBSD under the hood gives them one last shot
+Offbeat
+London’s BT Tower to get rooftop swimming pool
+Imagine taking a dip 177m above the streets of London’s West End
+Public Sector
+UK wants fresh fingerprints on £300M biometrics platform
+Home Office probes supplier interest as core police and immigration system heads for support shake-up
+Add section name here
+Akamai surges on big LLM deal as Cloudflare dims
+Good times, bad times
+ai and ml
+GPT-5.5 may burn fewer tokens, but it always burns more cash
+It’s not just gas prices skyrocketing. Frontier-model pricing keeps climbing too
+FOSS
+macOS 27 threatens to bury Time Capsule, FOSS brings a shovel
+Apple's old backup boxes only speak AFP and SMB1, but NetBSD under the hood gives them one last shot
+London’s BT Tower to get rooftop swimming pool
+Imagine taking a dip 177m above the streets of London’s West End
+UK wants fresh fingerprints on £300M biometrics platform
+Home Office probes supplier interest as core police and immigration system heads for support shake-up
+Akamai surges on big LLM deal as Cloudflare dims
+Good times, bad times
+GPT-5.5 may burn fewer tokens, but it always burns more cash
+It’s not just gas prices skyrocketing. Frontier-model pricing keeps climbing too
+Tech is now rolling out the old grievance grift
+Not just for hated US Presidents, now even tech bros lament their foes
+FEATURES
+GNOME may rule Ubuntu Resolute Raccoon, but X.org isn't roadkill yet
+OpenClaw, but in containers: Meet NanoClaw
+Open source registries don't have enough money to implement basic security
+Contain your Windows apps inside Linux Windows
+The Linux mid-life crisis that's an opportunity for Tux-led transformation
+Too much AI for some, too little for others: Why AMD can't win with investors
+How agentic AI can strain modern memory hierarchies
+'Ralph Wiggum' loop prompts Claude to vibe-clone commercial software for $10 an hour
+How one developer used Claude to build a memory-safe extension of C
+No one talking about a datacenter could be a sign one is coming
+✕
+Biting the hand that feeds IT
+About Us
+
+Contact us
+Advertise with us
+Who we are
+Our Websites
+
+The Next Platform
+DevClass
+Blocks and Files
+Situation Publishing
+Your Privacy
+
+Cookies Policy
+Privacy Policy
+Ts & Cs
+Do not share my personal information
+Your Consent Options
+Archives
+27 years of articles
+
+        Copyright. All rights reserved © 1998-2026.
+    

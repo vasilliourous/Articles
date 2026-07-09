@@ -1,0 +1,454 @@
+There's a Linux command that shows you exactly what any running process is doing
+Menu
+Sign in now
+Close
+PC & Mobile
+Submenu
+Windows2
+Linux
+Android
+Apple
+Technical
+Submenu
+Tech Explained
+Security
+Software
+Submenu
+Productivity
+Internet
+Creative
+Screen
+Submenu
+Entertainment
+Streaming
+Home
+Submenu
+Smart Home
+Home
+News
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+Productivity
+Android
+Smart TVs
+Networking
+Windows 11
+Entertainment
+Close
+There's a Linux command that shows you exactly what any running process is doing
+Afam Onyimadu / MUO
+By 
+Afam Onyimadu
+Published
+ Apr 25, 2026, 6:00 PM EDT
+Afam's experience in tech publishing dates back to 2018, when he worked for Make Tech Easier. Over the years, he has built a reputation for publishing high-quality guides, reviews, tips, and explainer articles, covering Windows, Linux, and open source tools. His work has been featured on top websites, including Technical Ustad, Windows Report, Guiding Tech, Alphr, and Next of Windows.
+
+He holds a first degree in Computer Science and is a strong advocate for data privacy and security, with several tips, videos, and tutorials on the subject published on the Fuzo Tech YouTube channel.
+
+When he is not working, he loves to spend time with his family, cycling, or tending to his garden.  
+Sign in to your 
+MakeUseOf
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																						
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+I have noticed from experience that when my Linux programs fail, it's often a subtle event that can leave you confused or unsure of what actually went wrong. When I have fallen back to top, htop, or 
+even the more preferred iotop
+, the best I get is data relating to CPU and memory usage, with no real insight into what the failing process is actually doing.
+✕
+ Remove Ads
+At such times, it's not enough to know that something is wrong. I usually want to see why. The strace -p command has made a real difference. Once I attach it to a running process, it shows every call that process makes.
+
+                        See what a process is doing in real time
+               
+
+            Attaching strace and reading the first lines of output
+    
+If you really need to understand 
+strace
+, you just have to use it. 
+It's an observability tool, but quite different from inotifywait
+. Attach it to a running process using this format: 
+sudo strace -p 
+. And if you don't have the PID, any of the commands below will help you find it. I use Firefox in the examples:
+pidof firefox
+pgrep -a firefox
+ps aux | grep firefox
+The strace -p command almost instantly starts to produce results, and running it on an actual Firefox process can produce this result:
+epoll_wait(5, [], 1024, 999) = 0
+futex(0x7f3a2c0, FUTEX_WAIT, 1, NULL) = 0
+openat(AT_FDCWD, "/proc/self/maps", O_RDONLY) = 7
+read(7, "...", 4096) = 4096
+Each line shows a call name first, then its arguments, and finally a return value. The lines represent requests Firefox makes to the kernel. From the above result, here's what I deduce:
+
+                                        epoll_wait(...) = 0: The process is waiting for an event, but nothing has arrived.
+                        
+
+                                        futex(...) = 0: The process is coordinating between threads.
+                        
+
+                                        openat(...) = 7: After the process opened a file, it got file descriptor 7 back.
+                        
+
+                                        read(...) = 4096: The process read 4096 bytes from that file.
+                        
+✕
+ Remove Ads
+If your output is constantly changing, it tells you that the process is active. Error returns such as ENOENT or EACCES indicate file errors; repeated epoll_wait or poll calls with no progress indicate the process is idle and waiting. After examining the process, using
+ Ctrl + C
+ will cleanly detach strace.
+Add the -f flag to get results from threads and child processes. This can be useful for monitoring browsers and package managers.
+
+                        What strace is actually showing you
+               
+
+            Understanding syscalls without getting lost in theory
+    
+Afam Onyimadu / MUO
+ A program's actions typically go through the kernel. These can include file opening, network requests, or memory allocation. Since the program cannot perform these tasks directly, it must make system calls that allow the kernel to execute them.
+strace can print all these calls because it operates between the application and the kernel. Its position makes it accurate. Rather than inferring, it's showing you exactly how the program asks the system to execute an action. Major categories often look like this:
+Category
+Common syscalls
+What you're seeing
+File I/O
+openat, read, write
+App reading or writing configuration files
+Network
+connect, recvfrom, sendto
+App communicating with a server or socket
+Process
+clone, execve
+App spawning subprocesses
+Memory
+mmap, brk
+App allocating or releasing memory
+Waiting
+poll, epoll_wait, select
+App idle, waiting for an external event
+Thread sync
+futex
+Threads coordinating with each other
+✕
+ Remove Ads
+strace doesn't show source code or application logic, but these aren't always the defining elements for finding what's broken. It shows what a program does at the system level, which can be more significant for troubleshooting what's broken.
+It uses ptrace, which is similar to the mechanism 
+gdb
+ and other debuggers use, and sometimes requires sudo to run
+.
+Related
+
+			Linux has a built-in crash recovery trick, and more people should use it
+		
+Make your Linux system reboot itself and fix crashes automatically. 
+Posts
+By 
+Afam Onyimadu
+Apr 19, 2026
+
+                        Making strace output useful
+               
+
+            Filtering noise so the problem becomes obvious
+    
+Afam Onyimadu / MUO
+ If the process is busy, you may not be able to read the raw strace output because of how fast it moves. Narrowing results down even before they appear on the screen will help. You can achieve this either by using the built-in category filters or by piping to grep. The exact option to go with depends on the specific problem.
+Here are a few examples:
+File issue — app can't find or open something:
+ strace -p 
+ -e trace=file 2>&1 | grep "openat\|ENOENT"
+In this case, I include 2>&1 because it redirects stderr to stdout, so the pipe sees strace output. It gives the pipe something to work with and exposes only file-related calls, ensuring failed open attempts get immediately surfaced by ENOENT (file not found).
+Network issue — app failing to connect:
+strace -p 
+ -e trace=network 2>&1 | grep "connect\|ECONNREFUSED\|ETIMEDOUT"
+The above command reveals the exact ports and hosts the app targets. It indicates if requests are being refused or timing out.
+✕
+ Remove Ads
+Stuck app — figuring out why nothing is happening:
+
+                    Subscribe for hands-on system debugging tips
+                
+Joining the newsletter offers focused coverage of system-level debugging tools, practical command patterns, and real-world troubleshooting examples so you can apply techniques like strace with confidence. Subscribe to keep building these focused skills.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+strace -p 
+ 2>&1 | grep "futex\|poll\|epoll_wait\|nanosleep"
+Without strace, processes blocked on epoll_wait and those blocked on a futex timeout can appear identical to other tools. However, none of these is the same as crashing.
+With different patterns, you should know what to look for. The guide below will help:
+Output pattern
+What it means
+ENOENT on openat
+File or path doesn't exist
+EACCES on openat
+File exists but process lacks read permission
+ECONNREFUSED on connect
+Target port is closed or service isn't running
+ETIMEDOUT on connect
+Host is unreachable or firewall is dropping packets
+epoll_wait / poll with no return
+Process is idle, waiting on I/O or a client
+futex blocking for a long time
+Thread is waiting on a lock held by another thread
+read(0, ...) with no return
+Process is waiting on stdin—it needs user input
+
+            What I found when I attached strace to real apps
+    
+The first app I attached strace to was Firefox, and it showed a continuous cycle of epoll_wait, futex, and openat on /proc/self/maps. This indicated constant internal-state checks between wake and sleep. Without strace, it would be hard to believe that an idle browser can still issue several syscalls per second.
+Attaching strace to apt showed me a lot about what happens mid-install. By including the -f flag, I could see each subprocess appear as a new PID. It was an interesting process: the parent spawns a child via execve, the child writes to /var/lib/dpkg/, and the next subprocess starts. My package install suddenly became a visible chain of steps.
+✕
+ Remove Ads
+After weeks of using strace, I would recommend it for diagnosing hangs, file errors, and network failures. However, because it adds overhead, it's not ideal for production monitoring. 
+I use it alongside common troubleshooting tools
+, though it's not suitable for continuous production monitoring due to overhead.
+
+				Linux Mint
+			
+OS
+
+									
+										
+											Linux
+
+										
+																	
+Minimum CPU Specs
+
+									
+										
+											64-bit Single-core
+
+										
+																	
+Minimum RAM Specs
+
+									
+										
+											1.5 GB
+
+										
+																	
+Linux Mint is a popular, free, and open-source operating system for desktops and laptops. It is user-friendly, stable, and functional out of the box.
+See at Linux Mint
+Expand
+Collapse
+Linux
+Linux Commands
+Troubleshooting
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+
+                                                    Technology Explained
+                                            
+
+                                                    PC & Mobile
+                                            
+
+			Your SSD does not wipe your deleted files — this is what TRIM actually does
+		
+2 hours ago
+
+			Wireless charging is finally worth using, but only if you know what to look for
+		
+3 hours ago
+
+			CPU-Z shows more than PC specs if you know where to look
+		
+5 hours ago
+See More
+
+			I ran a Windows network reset and fixed problems I'd blamed on my router for months
+		
+4 hours ago
+
+			I switched to Gentoo Linux and now I get why it's worth the headache
+		
+8 hours ago
+
+			Windows has been hoarding old drivers on your SSD — here's how to clear them out
+		
+20 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			I found a Windows 11 log that shows exactly what's making my PC slow — and most people don't know it exists
+		
+
+			Your NVMe SSD might be running at half speed because of this BIOS setting
+		
+
+			I stopped using LM Studio once I found this open-source alternative
+		
+
+                                                
+                
+                                                    
+                                    Thread
+                                                    
+Sign in to your 
+MakeUseOf
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Be the first to post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+This space is open for discussion.
+Be the first to share your thoughts.
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 24, 2026
+
+                                    GPT-5.5 beats Claude at the one task that actually matters
+                            
+Apr 23, 2026
+
+                                    I ran a DNS speed test and Google's 8.8.8.8 wasn't even in the top two
+                            
+Apr 22, 2026
+
+                                    I replaced Google's search bar with Samsung Finder and I'm never going back
+                            
+Apr 22, 2026
+
+                                    5 USB-C tricks that feel wrong until you try them
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+MakeUseOf
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

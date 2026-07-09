@@ -1,0 +1,589 @@
+Local LLMs didn't save me time until I gave them a job they're actually good at
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+8
+More Action
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+Local LLMs didn't save me time until I gave them a job they're actually good at
+By 
+Ayush Pande
+Published
+ Mar 11, 2026, 6:01 PM EDT
+Ayush Pande is a PC hardware and gaming writer. When he's not working on a new article, you can find him with his head stuck inside a PC or tinkering with a server operating system. Besides computing, his interests include spending hours in long RPGs, yelling at his friends in co-op games, and practicing guitar. 
+Sign in to your 
+XDA
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+8
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+AI tools have been around for a while now, but I’d largely strayed away from them. Rather, I began looking into local LLMs a few years ago, and even configured my old PC to serve as a 
+Pop_OS!-based Ollama server
+. But it didn’t take me long to wipe out that installation and replace it with typical home lab platforms (including my beloved Proxmox), as I failed to see the point in running large language models.
+✕
+ Remove Ads
+Once I’d built a reliable arsenal of self-hosted apps, I figured I could give local LLMs another shot. And truth be told, I’m absolutely floored by how well they mesh with my current setup.
+Related
+
+			I use my local LLMs with this self-hosted tool to manage documents in Paperless-ngx
+		
+It's a powerful companion utility for my Paperless-ngx container
+Posts
+By 
+Ayush Pande
+Feb 17, 2026
+
+                        I thought local LLMs were just glorified chatbots 
+               
+
+            And they seemed like incompetent agents for vibe-coding tasks
+    
+When I first dabbled in Ollama (and by extension, ChatGPT and other cloud-based AI providers), LLMs didn’t fit into my workflow in any shape or form. Don’t get me wrong: I’d witnessed their reasoning capabilities firsthand, so I understood why everybody was hyping them up. But I had little to no reason to rely on random chatbots to answer my questions. Let’s say I wanted to research a specific topic. An AI model that recites false information with the confidence of a rambling madman becomes pointless when I want cold facts. 
+Likewise, I never saw the point in using LLMs to create content, partly because of my pride, and also because I could never trust a clanker with professional journaling tasks. I’ve also had people try to sell me on using AIs for coding, especially since ChatGPT started growing in popularity around the same time I joined my uni. 
+✕
+ Remove Ads
+Now, you might argue that modern-day LLMs can generate fully-functional programs, apps, and websites. But I’ve never been one to board the vibe-coding train. And even when I tried to come up with code snippets on local LLMs, the results were anywhere between somewhat feasible syntax to a complete code spaghetti with random unmet dependencies and inefficient functions. At that point, I’d end up rewriting most of the code or, if it was well beyond my skillset, ditching the project altogether. 
+Not to mention, I’ve had a bone to pick with cloud-based models and their paywalled features, constant reliance on external servers, and (most importantly) privacy-intrusive nature, leaving local LLMs as the sole AI providers for my projects. However, I recently began using LLMs differently, and they’re now an essential part of my productivity stack.
+
+                        Anything involving data extraction and analysis is fair game for local LLMs 
+               
+
+            Pair them with the right tools, and LLMs can skyrocket your productivity
+    
+One of the biggest gripes with managing my own media is that I need to perform everything manually, not just the initial setup sequence. Let’s say I wanted to bulk upload bookmarks, documents, or notes to my self-hosted apps. If I’ve already got hundreds of webpages, images, and PDF files stored on these tools, I’ll need to manually create tags to the newly-imported additions, or risk making everything more disorganized. That’s where my AI tools come in handy. Since I’ve got Ollama models capable of sifting through text, I can use them to create tags instantly for the files without doing all the grunt work myself. And that’s pretty much how I’ve been using 
+Blinko
+, 
+Karakeep
+, and 
+Paperless AI
+ (and by extension Paperless-ngx) with my Ollama models for the last couple of months.
+✕
+ Remove Ads
+You see, LLMs excel at processing documents, spreadsheets, and other media files – to the point where I can feed some random files into them and have them summarize their contents. If I had to extract text from some finance-related PDFs, I could just upload them to my Paperless-ngx server, have Paperless GPT leverage my Ollama LLMs, and voilà, I’d get a mostly accurate OCR analysis of the files. Similarly, I can use them to create short summaries of my bookmarks and notes, so I’ll have an easier time finding specific resources when I need them. 
+
+            They’re just as useful for querying private data
+    
+When it comes to researching specific topics, LLM responses (especially those from weaker models running locally) devolve into a hallucinated mess. However, everything changes when I start adding my own data sources to the mix. Take my 
+Open WebUI
+ server, for instance. If I wanted to query LLMs about specific files, I can just upload them to the FOSS container and have them come up with precise information every time. The same applies to my 
+Open Notebook instance
+, where I’ve added several links to official documentation for my DevOps research – and I’ve yet to encounter anything factually incorrect during my questioning sessions. 
+
+                    Subscribe to the newsletter for hands-on local LLM guides
+                
+Gain hands-on local LLM workflows, subscribe to the newsletter for privacy-first setups, repurposing old GPUs, document OCR and automated tagging, plus practical integrations with self-hosted tools like Paperless-ngx and Home Assistant.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+✕
+ Remove Ads
+This doesn’t just apply to spreadsheets or PDFs, either. I may not use my LLMs to generate vibe coded apps, but I’ve started incorporating them into my programming tasks. For example, I can feed log files with thousands of lines to my LLMs, have them pinpoint the blocks where everything went south, and even ask them for troubleshooting advice. Likewise, hooking my LLMs up with Home Assistant lets me chat with them about all the services connected to my smart home hub.
+
+            LLMs can be pretty beneficial once you use them the right way
+    
+Now, I wouldn’t say that my local LLMs can hold a candle to the reasoning capabilities of high-end AI platforms. But for tedious tasks involving hours of manual effort, local LLMs can be a godsend. And the fact that I can repurpose old GPUs for this task and not worry about paying multiple AI providers is just the cherry on top.
+Related
+
+			I finally found a local LLM I actually want to use for coding
+		
+Qwen3-Coder-Next is a great model, and it's even better with Claude Code as a harness.
+Posts
+24
+By 
+Adam Conway
+Feb 18, 2026
+✕
+ Remove Ads
+AI tools
+Self-Hosting
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			5 unconventional Raspberry Pi projects
+		
+
+			I love Proxmox community scripts, but a single command executes 8 remote scripts as root
+		
+
+			I turned my ROG Ally into a ROG Enemy with this one simple trick and a lot of Claude
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+8
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+autonomos-logos
+autonomos-logos
+autonomos-logos
+#LH151070
+Member since 2026-03-14
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+In my experiences CodeX has the tendency to make everything in a web page a huge JavaScript app. The code it generates certainly surpasses my capacity, it immediatly starts planning a large-scale project. It created helper functions for securing encoding normalization, device compatibility asf, it made few mistakes, the code grew so large quickly it is difficult to maintain. Opus 4.6 burnt through my set balance without finishing the task, once I had wrapped it up to a working state the result was satisfying. Free Gemini has also created some satisfying results but like DeepSeek it also failed completely several times to the point where its useless because you need to redo it all.
+Thanks for those tips I'm now running KaraKeep and Open Notebook on my homeserver.
+2026-03-14 04:38:53
+Upvote
+Downvote
+Reply
+Copy
+        
+David
+David
+David
+#OG635958
+Member since 2024-06-16
+Following
+1
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+1  Follower 
+View
+I've only just got myself a dishwasher because I was getting fed up with the tedious filling up the sink adding liquid and then soaking the plates etc before wiping them down and putting in the draining board to dry. I may look into running a LLM so I can do some automated stuff I use Plex for.... Renaming files properly and converting certain video files to h265 from h264, but if I can't get it to do that, for me what's the use of AI other than another way I can get moaned at by a machine instead of my partner of 9 years! 
+My kids are using it daily, which is scary, and I know my son has had it doing Minecraft stuff for him. I just see AI as a means to getting the boaring stuff done which in my eyes is the most productive work, and people are still getting paid for it! No this isn't an anti AI rant, I'm just trying to see what I can actually use it for meaningfully....
+2026-03-13 09:11:41
+Upvote
+Downvote
+Reply
+Copy
+        
+Timucin
+Timucin
+Timucin
+#YA083210
+Member since 2025-01-14
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Will very much disagree on AI cannot code , it certainly can, at least for initial functioning concepts. Most just try to get to the result too quickly, an experienced programmer feeding small problems to AI can get far much quicker than simply writing every bit of class manually. It's much more efficient if the user builds a framework first and start implementing with proper process , utilizing agent skills , context caching etc.
+I am not a programmer by trade, self learner etc, due to AI , I am able to design UI or websites much much faster, most of the time they are not mission critical. 
+It's also very useful as a project planner/ organizer and a much much better search engine.
+2026-03-12 19:18:52
+Upvote
+Downvote
+Reply
+Copy
+        
+The
+The
+The
+#GL893303
+Member since 2025-06-29
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Sorry, they aren't good at anything...
+2026-03-12 09:38:53
+Upvote
+Downvote
+Reply
+
+                        4
+                    
+Copy
+        
+Floom
+Floom
+Floom
+#NA334689
+Member since 2025-07-12
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I disagree. At work, I have two types of cognitive load - the productive kind, that I'm actually paid to be there for, and the toxic kind. Dealing with bullshit. Writing a business case why I need access to a system to do my job. It's this toxic cognitive load that I use the AI for, so I can focus on the bits I wouldn't trust an LLM for.
+2026-03-12 11:14:17
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+Jose
+Jose
+Jose
+#AY240537
+Member since 2026-03-12
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Average AI hater response lmao. 
+Would you like to expand on that or do you just like complaining? 
+2026-03-12 11:28:24
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+yuval
+yuval
+yuval
+#IJ862421
+Member since 2026-03-12
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+perhaps it is a case of GIGO. an old term I am not sure if it is still around. gemini pro antigravity model has blown my mind. since December I have created 13 logic engines that scan the stock market, SEC, and CBOE and return results based on formulas AG created.
+maybe you need to be more creative with what you ask it?
+2026-03-12 14:03:19
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Ben
+Ben
+Ben
+#ET806288
+Member since 2026-03-12
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Is this a bot posting? Such a short-sighted worthless comment
+2026-03-12 16:35:40
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Mar 10, 2026
+
+                                    Intel did something for old Arc GPU owners that Nvidia has refused to do for RTX 30 owners
+                            
+Mar 10, 2026
+
+                                    I don’t use Obsidian or Google Keep after I came across this self-hosted LLM-powered note-taker
+                            
+Mar 9, 2026
+
+                                    I use local LLMs and self-hosted apps to manage my documents instead of relying on ChatGPT
+                            
+Mar 7, 2026
+
+                                    I tried Gemini, ChatGPT, and Copilot for a month and I have a clear winner for you
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 28, 2026
+1:17
+
+                            Android for Desktop has leaked
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 28, 2026
+1:12
+
+                            Why are we so nostalgic for Windows XP?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 22, 2026
+1:11
+
+                            The closest we'll ever get to Windows Phone 11
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 12, 2026
+1:17
+
+                            Razer made a holographic AI anime Assistant
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 10, 2026
+0:59
+
+                            When will the RAM crisis actually end?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

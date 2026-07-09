@@ -1,0 +1,431 @@
+I used NotebookLM wrong for months, here’s the setup that actually works
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+2
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I used NotebookLM wrong for months, here’s the setup that actually works
+By 
+Parth Shah
+Published
+ Feb 18, 2026, 1:00 PM EST
+Parth, a seasoned tech writer, wields the keyboard (or pen) with finesse to unravel the intricacies of both Windows and Mac operating systems. He has covered evergreen content on mobile devices and computers for multiple publications over the last six years. You can find his work on AndroidPolice, GuidingTech and TechWiser. Whether it’s demystifying system updates, deciphering error codes, or exploring hidden features, Parth’s prose guides readers through the binary maze. When not immersed in tech jargon, you’ll find him sipping chai, pondering the next software review, and occasionally indulging in a friendly debate about mechanical keyboards. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+2
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+I treated NotebookLM like just another AI sandbox – a place to dump a few PDFs and glance over at the summaries. I thought I was using it, but in reality, I was just scratching the surface of a tool I didn’t actually understand.
+✕
+ Remove Ads
+But instead of walking away, I decided to overhaul my entire approach to source grounding and note organization. Now, I have finally landed on a system that transforms NotebookLM from a digital junk drawer into a true 
+personalized search engine
+.
+Related
+
+			I replaced my complex note-taking workflow with a single NotebookLM instance, and it's been a game changer
+		
+This single tool transformed my note-taking
+Posts
+9
+By 
+Parth Shah
+Aug 4, 2025
+
+                        Deselect sources
+               
+
+            Speed up the process
+    
+ In my early days with NotebookLM, I would treat a notebook like a digital landfill. I would dump in twenty different PDFs, long-form YouTube transcripts, and a dozen web links.
+I thought that more data equalled a smarter AI. I would make sure every single box was checked, hit the prompt bar, and then wonder why the responses felt slow.
+I thought I was giving the AI a massive brain to work with, but I was actually just giving it a massive amount of noise to filter through. The breakthrough came when I realized the power of the selective toggle.
+Now, my workflow is much more precise. Even if I have thirty sources in a notebook for a complex project, I rarely have more than three or four selected at a time.
+If I’m writing a section about ‘Performance Benchmarks,’ I deselect ‘Marketing Strategy’ and ‘User Feedback’ documents. The result of this ‘Less is More’ approach was immediate.
+✕
+ Remove Ads
+Now, the AI doesn’t have to parse through 100,000 words to find one specific data point. It’s snappy and direct. The citations also become much more manageable.
+
+                        Be specific with questions
+               
+
+            It’s not a chatbot
+    
+Coming from months of using ChatGPT and Gemini, I had been conditioned to treat every AI text box like a search engine.
+I would jump into a notebook and ask broad questions and expect the AI to pull from its vast training data to give me an answer.
+I realized I was using it wrong when I started getting generic fluff. I stopped viewing it as an ‘AI that knows everything’ and started viewing it as a ‘private expert on my specific data.’
+Thanks to better and focused prompts, NotebookLM finally became the precision research engine it was meant to be.
+
+                        Customize NotebookLM features
+               
+
+            Get the best out of them
+    
+ One of the biggest mistakes I made early on was treating the Studio features like a ‘black box’ – I would click ‘Generate’ and just hope for the best.
+I finally stopped settling for the default outputs when I discovered that almost every feature has a pencil icon hidden right next to it. Now, my process is simple: never click generate without clicking that pencil first.
+✕
+ Remove Ads
+For example, in 
+Audio Overviews
+, I used to get long 10-minute deep dives that covered everything. Now, I use the custom instructions to narrow the scope.
+If I’m on a quick coffee break, I set the length to Shorter. If I’m commuting, I go for Longer. I can also ask it to focus on a specific aspect. For instance, I prompt the AI hosts to ‘Focus exclusively on the pricing models and ignore the technical architecture.’
+It turns a generic summary into a targeted briefing. The same goes for when I’m generating video overviews or creating infographics with minute details.
+The lesson I learned the hard way: if you aren’t clicking that pencil icon, you are letting the AI decide your narrative. A few seconds of tweaking the complexity and focus is the difference between a generic AI summary and a professional output.
+
+                        Use the ‘Save to Note’ feature
+               
+
+            Avoid copy-pasting the AI summary
+    
+ After using NotebookLM for a while, I realized that when you let the AI have the final word, the output loses that personal touch.
+Now, I have stopped copy-pasting raw responses into my CMS. Instead, I use the ‘Save to Note’ feature. I will generate three or four different perspectives on a topic, save them all as notes, and then manually synthesize them.
+This lets me ensure that the technical accuracy is 100% - especially important when I’m explaining something complex like Docker networking or privacy-first apps.
+✕
+ Remove Ads
+AI is great at facts, but it’s terrible at opinion. Once the AI gives me the data, I go back in and add the personal touch to the story. That’s the human element that the AI can’t simulate.
+
+                        NotebookLM is now 10x more powerful
+               
+Productivity is all about building the perfect system around your preferred tool. NotebookLM is a generational shift in how we process information, but it requires a shift in our own habits to match.
+If you are 
+new to NotebookLM
+, make sure to follow my setup to get the best out of it. And if you are an existing user, clear out your old notebooks, reorganize your primary sources, and try this setup for just one week.
+Productivity & Creativity Tools
+NotebookLM
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I replaced 4 paid subscriptions with one open-source tool
+		
+
+			I replaced cloud storage with a local NAS and learned this the hard way
+		
+
+			5 open-source apps that are so good their premium versions are worth paying for
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+2
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Piransu
+Piransu
+Piransu
+#IX147210
+Member since 2026-02-20
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+All you did was list down the features and workings of Notebook LM, none of it really enhanced the experience.
+I was expecting more useful tips like creating a Gemini Gem with NotebookLM as a source. But well, these days any AI content sells.
+2026-02-20 07:41:46
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+Anthony
+Anthony
+Anthony
+#AS078060
+Member since 2025-11-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I mean you can use the deep research function within notebookLM to search the web or your own Google drive for a specific request to build knowledge on a topic question or issue.
+ This can be condensed with a custom persona instruction saved in the chat settings of The Notebook, a set of specific prompts and this custom persona instruction can be acquired from a request in Gemini or search AI mode, with the specific instruction and prompt set custom crafted to your specific situation.
+ The output from this custom notebook generation can be used as a knowledge document in a Gemini session to create a custom gem with a knowledge document based on this output. This custom gem can have access to specific notebooks and documents from Google drive, it can also be customized for specific chat sessions in multiple ways and aspects. 
+I refer to this process as megalo-prompting, certainly more convoluted than meta prompting, it is however effective at getting a highly effective gem-based agent for a very specific conversation or task, it can also be shaped to build applications and tools (try using it to build your instructions for Gemini personal intelligence account settings) from a variety of technical sources. -Anthony MacFadyen 
+2026-02-23 15:16:44
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Feb 17, 2026
+
+                                    6 features I immediately disable on my Google Pixel
+                            
+Feb 17, 2026
+
+                                    Tailscale's new tool ensures people aren't feeding sensitive data to AI
+                            
+Feb 17, 2026
+
+                                    Gentoo begins its exodus from GitHub as it settles into Codeberg
+                            
+Feb 17, 2026
+
+                                    I served a 200 billion parameter LLM from a Lenovo workstation the size of a Mac Mini
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 28, 2026
+1:17
+
+                            Android for Desktop has leaked
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 28, 2026
+1:12
+
+                            Why are we so nostalgic for Windows XP?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 22, 2026
+1:11
+
+                            The closest we'll ever get to Windows Phone 11
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 12, 2026
+1:17
+
+                            Razer made a holographic AI anime Assistant
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 10, 2026
+0:59
+
+                            When will the RAM crisis actually end?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:06
+Skip Ad
+5

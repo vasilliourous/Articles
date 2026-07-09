@@ -1,0 +1,864 @@
+How to Build a Production-Ready Claude Code Skill | Towards Data Science
+We value your privacy
+We use cookies to enhance your browsing experience, serve personalised ads or content, and analyse our traffic. By clicking "Accept All", you consent to our use of cookies.
+Customise
+Reject All
+Accept All
+Customise Consent Preferences
+We use cookies to help you navigate efficiently and perform certain functions. You will find detailed information about all cookies under each consent category below.
+The cookies that are categorised as "Necessary" are stored on your browser as they are essential for enabling the basic functionalities of the site. ... 
+Show more
+Necessary
+Always Active
+Necessary cookies are required to enable the basic features of this site, such as providing secure log-in or adjusting your consent preferences. These cookies do not store any personally identifiable data.
+Cookie
+BCTempID
+Duration
+10 minutes
+Description
+No description available.
+Cookie
+__cf_bm
+Duration
+1 hour
+Description
+This cookie, set by Cloudflare, is used to support Cloudflare Bot Management. 
+Cookie
+AWSALBCORS
+Duration
+7 days
+Description
+Amazon Web Services set this cookie for load balancing.
+Cookie
+_cfuvid
+Duration
+session
+Description
+Cloudflare sets this cookie to track users across sessions to optimize user experience by maintaining session consistency and providing personalized services
+Cookie
+li_gc
+Duration
+6 months
+Description
+Linkedin set this cookie for storing visitor's consent regarding using cookies for non-essential purposes.
+Cookie
+__hssrc
+Duration
+session
+Description
+This cookie is set by Hubspot whenever it changes the session cookie. The __hssrc cookie set to 1 indicates that the user has restarted the browser, and if the cookie does not exist, it is assumed to be a new session.
+Cookie
+__hssc
+Duration
+1 hour
+Description
+HubSpot sets this cookie to keep track of sessions and to determine if HubSpot should increment the session number and timestamps in the __hstc cookie.
+Cookie
+wpEmojiSettingsSupports
+Duration
+session
+Description
+WordPress sets this cookie when a user interacts with emojis on a WordPress site.  It helps determine if the user's browser can display emojis properly.
+Cookie
+BCSessionID
+Duration
+1 year 1 month 4 days
+Description
+Blueconic sets this cookie as a unique identifier for the BlueConic profile.
+Cookie
+_octo
+Duration
+1 year
+Description
+No description available.
+Cookie
+logged_in
+Duration
+1 year
+Description
+No description available.
+Cookie
+__Secure-YEC
+Duration
+past
+Description
+YouTube sets this cookie to stores the user's video player preferences using embedded YouTube video
+Cookie
+__eoi
+Duration
+6 months
+Description
+Description is currently not available.
+Cookie
+AWSALBTGCORS
+Duration
+7 days
+Description
+No description available.
+Cookie
+login-status-p
+Duration
+past
+Description
+Description is currently not available.
+Cookie
+AWSALBTG
+Duration
+7 days
+Description
+No description available.
+Cookie
+csrf_token
+Duration
+session
+Description
+No description available.
+Cookie
+token_v2
+Duration
+1 day
+Description
+Description is currently not available.
+Cookie
+D
+Duration
+1 year
+Description
+Description is currently not available.
+Cookie
+PHPSESSID
+Duration
+session
+Description
+This cookie is native to PHP applications. The cookie stores and identifies a user's unique session ID to manage user sessions on the website. The cookie is a session cookie and will be deleted when all the browser windows are closed.
+Cookie
+VISITOR_PRIVACY_METADATA
+Duration
+6 months
+Description
+YouTube sets this cookie to store the user's cookie consent state for the current domain.	
+Cookie
+cookietest
+Duration
+session
+Description
+The cookietest cookie is typically used to determine whether the user's browser accepts cookies, essential for website functionality and user experience.
+Cookie
+__Host-airtable-session
+Duration
+1 year
+Description
+This cookie is used to enable us to integrate the services of Airtable.
+Cookie
+__Host-airtable-session.sig
+Duration
+1 year
+Description
+This cookie is used to enable us to integrate the services of Airtable.
+Cookie
+m
+Duration
+1 year 1 month 4 days
+Description
+Stripe sets this cookie for fraud prevention purposes. It identifies the device used to access the website, allowing the website to be formatted accordingly.
+Cookie
+BIGipServer*
+Duration
+session
+Description
+Marketo sets this cookie to collect information about the user's online activity and build a profile about their interests to provide advertisements relevant to the user.	
+Cookie
+__cfruid
+Duration
+session
+Description
+Cloudflare sets this cookie to identify trusted web traffic.
+Cookie
+_GRECAPTCHA
+Duration
+6 months
+Description
+Google Recaptcha service sets this cookie to identify bots to protect the website against malicious spam attacks.
+Cookie
+__Secure-YNID
+Duration
+6 months
+Description
+Google cookie used to protect user security and prevent fraud, especially during the login process.
+Cookie
+cookieyes-consent
+Duration
+1 year
+Description
+CookieYes sets this cookie to remember users' consent preferences so that their preferences are respected on subsequent visits to this site. It does not collect or store any personal information about the site visitors.
+Functional
+Functional cookies help perform certain functionalities like sharing the content of the website on social media platforms, collecting feedback, and other third-party features.
+Cookie
+lidc
+Duration
+1 day
+Description
+LinkedIn sets the lidc cookie to facilitate data center selection.
+Cookie
+brw
+Duration
+1 year
+Description
+No description available.
+Cookie
+brwConsent
+Duration
+5 minutes
+Description
+Description is currently not available.
+Cookie
+WMF-Uniq
+Duration
+1 year
+Description
+Description is currently not available.
+Cookie
+loom_anon_comment
+Duration
+1 year
+Description
+No description available.
+Cookie
+loom_referral_video
+Duration
+session
+Description
+Description is currently not available.
+Cookie
+VISITOR_INFO1_LIVE
+Duration
+6 months
+Description
+A cookie set by YouTube to measure bandwidth that determines whether the user gets the new or old player interface.
+Cookie
+yt-remote-connected-devices
+Duration
+Never Expires
+Description
+YouTube sets this cookie to store the user's video preferences using embedded YouTube videos.
+Cookie
+ytidb::LAST_RESULT_ENTRY_KEY
+Duration
+Never Expires
+Description
+The cookie ytidb::LAST_RESULT_ENTRY_KEY is used by YouTube to store the last search result entry that was clicked by the user. This information is used to improve the user experience by providing more relevant search results in the future.
+Cookie
+yt-remote-device-id
+Duration
+Never Expires
+Description
+YouTube sets this cookie to store the user's video preferences using embedded YouTube videos.
+Cookie
+yt-remote-session-name
+Duration
+session
+Description
+The yt-remote-session-name cookie is used by YouTube to store the user's video player preferences using embedded YouTube video.
+Cookie
+yt-remote-fast-check-period
+Duration
+session
+Description
+The yt-remote-fast-check-period cookie is used by YouTube to store the user's video player preferences for embedded YouTube videos.
+Cookie
+yt-remote-session-app
+Duration
+session
+Description
+The yt-remote-session-app cookie is used by YouTube to store user preferences and information about the interface of the embedded YouTube video player.
+Cookie
+yt-remote-cast-available
+Duration
+session
+Description
+The yt-remote-cast-available cookie is used to store the user's preferences regarding whether casting is available on their YouTube video player.
+Cookie
+yt-remote-cast-installed
+Duration
+session
+Description
+The yt-remote-cast-installed cookie is used to store the user's video player preferences using embedded YouTube video.
+Cookie
+cp_session
+Duration
+3 months
+Description
+Codepen sets this cookie for Help systems found in the website.
+Cookie
+loid
+Duration
+1 year 1 month 4 days
+Description
+This cookie is set by the Reddit. The cookie enables the sharing of content from the website onto the social media platform.
+Analytics
+Analytical cookies are used to understand how visitors interact with the website. These cookies help provide information on metrics such as the number of visitors, bounce rate, traffic source, etc.
+Cookie
+__hstc
+Duration
+6 months
+Description
+Hubspot set this main cookie for tracking visitors. It contains the domain, initial timestamp (first visit), last timestamp (last visit), current timestamp (this visit), and session number (increments for each subsequent session).
+Cookie
+hubspotutk
+Duration
+6 months
+Description
+HubSpot sets this cookie to keep track of the visitors to the website. This cookie is passed to HubSpot on form submission and used when deduplicating contacts.
+Cookie
+_ga
+Duration
+1 year 1 month 4 days
+Description
+Google Analytics sets this cookie to calculate visitor, session and campaign data and track site usage for the site's analytics report. The cookie stores information anonymously and assigns a randomly generated number to recognise unique visitors.
+Cookie
+_ga_*
+Duration
+1 year 1 month 4 days
+Description
+Google Analytics sets this cookie to store and count page views.
+Cookie
+__Host-psifi.analyticsTrace
+Duration
+6 hours
+Description
+Description is currently not available.
+Cookie
+__Host-psifi.analyticsTraceV2
+Duration
+6 hours
+Description
+Description is currently not available.
+Cookie
+_gh_sess
+Duration
+session
+Description
+GitHub sets this cookie for temporary application and framework state between pages like what step the user is on in a multiple step form.
+Cookie
+YSC
+Duration
+session
+Description
+YSC cookie is set by Youtube and is used to track the views of embedded videos on Youtube pages.
+Cookie
+ajs_anonymous_id
+Duration
+1 year
+Description
+This cookie is set by Segment to count the number of people who visit a certain site by tracking if they have visited before.
+Cookie
+vuid
+Duration
+1 year 1 month 4 days
+Description
+Vimeo installs this cookie to collect tracking information by setting a unique ID to embed videos on the website. 
+Performance
+Performance cookies are used to understand and analyse the key performance indexes of the website which helps in delivering a better user experience for the visitors.
+Cookie
+AWSALB
+Duration
+7 days
+Description
+AWSALB is an application load balancer cookie set by Amazon Web Services to map the session to the target.
+Cookie
+acq
+Duration
+past
+Description
+Description is currently not available.
+Cookie
+acq.sig
+Duration
+past
+Description
+Description is currently not available.
+Cookie
+ptc
+Duration
+2 years
+Description
+No description available.
+Advertisement
+Advertisement cookies are used to provide visitors with customised advertisements based on the pages you visited previously and to analyse the effectiveness of the ad campaigns.
+Cookie
+muc_ads
+Duration
+1 year 1 month 4 days
+Description
+Twitter sets this cookie to collect user behaviour and interaction data to optimize the website.
+Cookie
+guest_id_marketing
+Duration
+1 year 1 month 4 days
+Description
+Twitter sets this cookie to identify and track the website visitor.
+Cookie
+guest_id_ads
+Duration
+1 year 1 month 4 days
+Description
+Twitter sets this cookie to identify and track the website visitor.
+Cookie
+personalization_id
+Duration
+1 year 1 month 4 days
+Description
+Twitter sets this cookie to integrate and share features for social media and also store information about how the user uses the website, for tracking and targeting.
+Cookie
+guest_id
+Duration
+1 year 1 month 4 days
+Description
+Twitter sets this cookie to identify and track the website visitor. It registers if a user is signed in to the Twitter platform and collects information about ad preferences.
+Cookie
+bcookie
+Duration
+1 year
+Description
+LinkedIn sets this cookie from LinkedIn share buttons and ad tags to recognize browser IDs.
+Cookie
+__Secure-ROLLOUT_TOKEN
+Duration
+6 months
+Description
+YouTube sets this cookie to manage feature rollout and experimentation. It helps Google control which new features or interface changes are shown to users as part of testing and staged rollouts, ensuring consistent experience for a given user during an experiment.
+Cookie
+yt.innertube::nextId
+Duration
+Never Expires
+Description
+YouTube sets this cookie to register a unique ID to store data on what videos from YouTube the user has seen.
+Cookie
+yt.innertube::requests
+Duration
+Never Expires
+Description
+YouTube sets this cookie to register a unique ID to store data on what videos from YouTube the user has seen.
+Cookie
+session_tracker
+Duration
+session
+Description
+This cookie is set by the Reddit. This cookie is used to identify trusted web traffic. It also helps in adverstising on the website.
+Cookie
+edgebucket
+Duration
+session
+Description
+Reddit sets this cookie to save the information about a log-on Reddit user, for the purpose of advertisement recommendations and updating the content.
+Cookie
+did
+Duration
+1 year
+Description
+Arbor sets this cookie to show targeted ads to site visitors.This cookie expires after 2 months or 1 year.
+Uncategorised
+Other uncategorised cookies are those that are being analysed and have not been classified into a category as yet.
+No cookies to display.
+Reject All
+Save My Preferences
+Accept All
+Skip to content
+Publish AI, ML & data-science insights to a global community of data professionals.
+Sign in
+Submit an Article
+Latest
+Editor’s Picks
+Deep Dives
+Newsletter
+Write For TDS
+Toggle Mobile Navigation
+LinkedIn
+X
+Toggle Search
+Search
+
+					Agentic AI				
+How to Build a Production-Ready Claude Code Skill
+
+			What I learned building and distributing my first Skill from scratch		
+Hajime Takeda
+Mar 16, 2026
+
+	11 min read
+
+		Share	
+Photo
+ by Quino Al on Unsplash
+1. 
+Introduction
+The Claude Code Skill ecosystem is expanding rapidly. As of March 2026, the anthropics/skills repository reached over 87,000 stars on GitHub and more people are building and sharing Skills every week.
+How can we build a Skill from scratch in a structured way? This article walks through designing, building, and distributing a Skill from scratch. I’ll use my own experience shipping an e-commerce review Skill (
+Link
+) as a running example throughout.
+2. What Is a Claude Skill?
+A Claude skill is a set of instructions that teaches Claude how to handle specific tasks or workflows. Skills are one of the most powerful ways to customize Claude to your specific needs.
+Skills are built around progressive disclosure. Claude fetches information in three stages:
+Metadata (name + description):
+ Always in Claude’s context. About 100 tokens. Claude decides whether to load a Skill based on this alone.
+SKILL.md body:
+ Loaded only when triggered.
+Bundled resources (scripts/, references/, assets/):
+ Loaded on demand when needed.
+With this structure, you can install many Skills without blowing up the context window. If you keep copy-pasting the same long prompt, just turn it into a Skill.
+3. Skills vs MCP vs Subagents
+Before building a Skill, let me walk you through how Skills, MCP, and Subagents are different, so you can make sure a Skill is the right choice.
+Skills
+ teach Claude how to behave — analysis workflows, coding standards, brand guidelines.
+MCP servers
+ give Claude new tools — sending a Slack message, querying a database.
+Subagents
+ let Claude run independent work in a separate context.
+Image Generated with Gemini
+An analogy that helped me: MCP is the kitchen — knives, pots, ingredients. A Skill is the recipe that tells you how to use them. You can combine them. Sentry’s code review Skill, for example, defines the PR analysis workflow in a Skill and fetches error data via MCP. But in many cases a Skill alone is enough to start.
+4. Planning and Design
+I jumped straight into writing SKILL.md the first time and ran into problems. If the description is not well designed, the Skill will not even trigger. I’d say spend time on design before you write the prompts or code.
+4a. Start with Use Cases
+The first thing to do is define 2–3 concrete use cases. Not “a helpful Skill” in the abstract, but actual repetitive work that you observe in practice.
+Let me share my own example. I noticed that many colleagues and I were repeating the same monthly and quarterly business reviews. In e-commerce and retail, the process of breaking down KPIs tends to follow a similar pattern.
+That was the starting point. Instead of building a generic ‘data analysis Skill,’ I defined it like this: “A Skill that takes order CSV data, decomposes KPIs into a tree, summarizes findings with priorities, and generates a concrete action plan.”
+Here, it is important to imagine how users will actually phrase their requests:
+“run a review of my store using this orders.csv”
+“analyze last 90 days of sales data, break down why revenue dropped”
+“compare Q3 vs Q4, find the top 3 things I should fix”
+When you write concrete prompts like these first, the shape of the Skill becomes clear. The input is CSV. The analysis axis is KPI decomposition. The output is a review report and action plan. The user is not a data scientist — they are someone running a business and they want to know what to do next.
+That level of detail shapes everything else: Skill name, description, file formats, output format.
+Questions to ask when defining use cases:
+Who will use it?
+In what situation?
+How will they phrase their request?
+What is the input?
+What is the expected output?
+4b. YAML Frontmatter
+Once use cases are clear, write the name and description. It decides whether your Skill actually triggers.
+As I mentioned earlier, Claude only sees the metadata to decide which Skill to load. When a user request comes in, Claude decides which Skills to load based on this metadata alone. If the description is vague, Claude will never reach the Skill — no matter how good the instructions in the body are.
+To make things trickier, Claude tends to handle simple tasks on its own without consulting Skills. It defaults to not triggering. So your description needs to be specific enough that Claude recognizes “this is a job for the Skill, not for me.”
+So the description needs to be somewhat “pushy.” Here is what I mean.
+# Bad — too vague. Claude does not know when to trigger.
+name
+:
+ data
+-
+helper
+
+description
+:
+ Helps with data tasks
+
+
+# Good — specific trigger conditions, slightly "pushy"
+name
+:
+ sales
+-
+data
+-
+analyzer
+
+description
+:
+>
+
+  Analyze sales/revenue CSV and Excel files to find patterns,
+  calculate metrics, and create visualizations. Use when user
+  mentions sales data, revenue analysis, profit margins, churn,
+  ad spend, or asks to find patterns in business metrics.
+  Also trigger when user uploads xlsx/csv with financial or
+  transactional column headers.
+The most important thing is being explicit about what the Skill does and what input it expects — “Analyze sales/revenue CSV and Excel files” leaves no ambiguity. After that, list the trigger keywords. Go back to the use case prompts you wrote in 4a and pull out the words users actually say: sales data, revenue analysis, profit margins, churn. Finally, think about the cases where the user doesn’t mention your Skill by name. “Also trigger when user uploads xlsx/csv with financial or transactional column headers” catches those silent matches.
+The constraints are: name up to 64 characters, description up to 1,024 characters (per the Agent Skills API spec). You have room, but prioritize information that directly affects triggering.
+5. Implementation Patterns
+Once the design is set, let’s implement. First, understand the file structure, then pick the right pattern.
+5a. File Structure
+The physical structure of a Skill is simple:
+my-skill/
+├── SKILL.md              
+# Required. YAML frontmatter + Markdown instructions
+
+├── scripts/              
+# Optional. Python/JS for deterministic processing
+
+│   ├── analyzer.py
+│   └── validator.js
+├── references/           
+# Optional. Loaded by Claude as needed
+
+│   ├── advanced-config.md
+│   └── error-patterns.md
+└── assets/               
+# Optional. Templates, fonts, icons, etc.
+
+    └── report-template.docx
+Only SKILL.md is required. That alone makes a working Skill. Try to keep SKILL.md under 500 lines. If it gets longer, move content into the references/ directory and tell Claude in SKILL.md where to look. Claude will not read reference files unless you point it there.
+For Skills that branch by domain, the variant approach works well:
+cloud-deploy/
+├── SKILL.md              
+# Shared workflow + selection logic
+
+└── references/
+    ├── aws.md
+    ├── gcp.md
+    └── azure.md
+Claude reads only the relevant reference file based on the user’s context.
+5b. Pattern A: Prompt-Only
+The simplest pattern. Just Markdown instructions in SKILL.md, no scripts.
+Good for:
+ brand guidelines, coding standards, review checklists, commit message formatting, writing style enforcement.
+When to use:
+ If Claude’s language ability and judgment are enough for the task, use this pattern.
+Here is a compact example:
+---
+name: commit-message-formatter
+description: >
+  Format git commit messages using Conventional Commits.
+  Use when user mentions commit, git message, or asks to
+  format/write a commit message.
+---
+#
+ Commit Message Formatter
+
+
+Format all commit messages following Conventional Commits 1.0.0.
+
+
+##
+ Format
+<
+type
+>
+(
+<
+scope
+>
+): 
+<
+description
+>
+##
+ Rules
+-
+ Imperative mood, lowercase, no period, max 72 chars
+
+-
+ Breaking changes: add 
+`!`
+ after type/scope
+
+
+##
+ Example
+
+Input: "added user auth with JWT"
+Output: 
+`feat(auth): implement JWT-based authentication`
+That’s it. No scripts, no dependencies. If Claude’s judgment is enough for the task, this is all you need.
+5c. Pattern B: Prompt + Scripts
+Markdown instructions plus executable code in the scripts/ directory.
+Good for:
+ data transformation/validation, PDF/Excel/image processing, template-based document generation, numerical reports.
+Supported languages
+: Python and JavaScript/Node.js. Here is an example structure:
+data-analysis-skill/
+├── SKILL.md
+└── scripts/
+    ├── analyze.py          
+# Main analysis logic
+
+    └── validate_schema.js  
+# Input data validation
+In the SKILL.md, you specify when to call each script:
+##
+ Workflow
+1.
+ User uploads a CSV or Excel file
+
+2.
+ Run 
+`scripts/validate_schema.js`
+ to check column structure
+
+3.
+ If validation passes, run 
+`scripts/analyze.py`
+ with the file path
+
+4.
+ Present results with visualizations
+
+5.
+ If validation fails, ask user to clarify column mapping
+The SKILL.md defines the “when and why.” The scripts handle the “how.”
+5d. Pattern C: Skill + MCP / Subagent
+This pattern calls MCP servers or Subagents from within the Skill’s workflow. Good for workflows involving external services — think create issue → create branch → fix code → open PR. More moving parts mean more things to debug, so I’d recommend getting comfortable with Pattern A or B first.
+Choosing the Right Pattern
+If you are not sure which pattern to pick, follow this order:
+Need real-time communication with external APIs? → Yes → 
+Pattern C
+Need deterministic processing like calculations, validation, or file conversion? → Yes → 
+Pattern B
+Claude’s language ability and judgment handle it alone? → Yes → 
+Pattern A
+When in doubt, start with Pattern A. It is easy to add scripts later and evolve into Pattern B. But simplifying an overly complex Skill is harder.
+6. Testing
+Writing the SKILL.md is not the end. What makes a Skill good is how much you test and iterate.
+6a. Writing Test Prompts
+“Testing” here does not mean unit tests. It means throwing real prompts at the Skill and checking whether it behaves correctly.
+The one rule for test prompts: write them the way real users actually talk.
+#
+ Good test prompt (realistic)
+
+"ok so my boss just sent me this XLSX file (its in my downloads,
+called something like 'Q4 sales final FINAL v2.xlsx') and she wants
+me to add a column that shows the profit margin as a percentage.
+The revenue is in column C and costs are in column D i think"
+
+
+#
+ Bad test prompt (too clean)
+
+"Please analyze the sales data in the uploaded Excel file
+and add a profit margin column"
+The problem with clean test prompts is that they do not reflect reality. Real users make typos, use casual abbreviations, and forget file names. A Skill tested only with clean prompts will break in unexpected ways in production.
+6b. The Iteration Loop
+The basic testing loop is simple:
+Run the Skill with test prompts
+Evaluate whether the output matches what you defined as good output in 4a
+Fix the SKILL.md if needed
+Go back to 1
+You can run this loop manually, but Anthropic’s skill-creator can help a lot. It semi-automates test case generation, execution, and review. It uses a train/test split for evaluation and lets you review outputs in an HTML viewer.
+6c. Optimizing the Description
+As you test, you may find the Skill works well when triggered but doesn’t trigger often enough. The skill-creator has a built-in optimization loop for this: it splits test cases 60/40 into train/test, measures trigger rate, generates improved descriptions, and picks the best one by test score.
+One thing I learned: Claude rarely triggers Skills for short, simple requests. So make sure your test set includes prompts with enough complexity.
+7. Distribution
+Once your Skill is ready, you need to get it to users. The best method depends on whether it is just for you, your team, or everyone.
+Getting Your Skill to Users
+For most people, two methods cover everything:
+ZIP upload (claude.ai):
+ ZIP the Skill folder and upload via Settings > Customize > Skills. One gotcha — the ZIP must contain the folder itself at the root, not just the contents.
+.claude/skills/ directory (Claude Code):
+ Place the Skill in your project repo under .claude/skills/. When teammates clone the repo, everyone gets the same Skill.
+Beyond these, there are more options as your distribution needs grow: the Plugin Marketplace for open-source distribution, the Anthropic Official Marketplace for broader reach, Vercel’s 
+npx skills add
+ for cross-agent installs, and the Skills API for programmatic management. I won’t go into detail on each here — the docs cover them well.
+Before sharing, check three things: the ZIP has the folder at root (not just contents), the frontmatter has both name and description within the character limits, and there are no hardcoded API keys.
+And one more thing — bump the version field when you update. Auto-update won’t kick in otherwise. Treat user feedback like “it didn’t trigger on this prompt” as new test cases. The iteration loop from Section 6 doesn’t stop at launch.
+Conclusion
+A Skill is a reusable prompt with structure. You package what you know about a domain into something others can install and run.
+The flow: decide whether you need a Skill, MCP, or Subagent. Design from use cases and write a description that actually triggers. Pick the simplest pattern that works. Test with messy, realistic prompts. Ship it and keep iterating.
+Skills are still new and there is plenty of room. If you keep doing the same analysis, the same review, the same formatting work over and over, that repetition is your Skill waiting to be built.
+If you have questions or want to share what you built, find me on 
+LinkedIn
+.
+Written By
+Hajime Takeda
+See all from Hajime Takeda
+AI coding assistants
+, 
+Claude Code
+, 
+claude skills
+, 
+Data Science
+, 
+Deep Dives
+Share This Article
+
+			Share on Facebook		
+
+			Share on LinkedIn		
+
+			Share on X		
+Towards Data Science is a community publication. Submit your insights to reach our global audience and earn through the TDS Author Payment Program.
+Write for TDS
+Related Articles
+LangGraph + SciPy: Building an AI That Reads Documentation and Makes Decisions
+
+					Agentic AI				
+Stop guessing your statistical test. Let this AI do it for you. 
+Gustavo Santos
+August 11, 2025
+
+	11 min read
+LangChain for EDA: Build a CSV Sanity-Check Agent in Python
+
+					Agentic AI				
+A practical LangChain tutorial for data scientists to inspect CSVs 
+Sarah Schürch
+September 9, 2025
+
+	19 min read
+Generalists Can Also Dig Deep
+
+		Author Spotlights	
+Ida Silfverskiöld on AI agents, RAG, evals, and what design choice ended up mattering more… 
+TDS Editors
+September 12, 2025
+
+	6 min read
+The Rise of Semantic Entity Resolution
+
+					Agentic AI				
+Semantic entity resolution uses language models to bring an increased level of automation to schema… 
+Russell Jurney
+September 14, 2025
+
+	22 min read
+How to Connect an MCP Server for an AI-Powered, Supply-Chain Network Optimization Agent
+
+					Agentic AI				
+From prompt to strategic decision-making: MCP-powered agents for cost-efficient, reliable and sustainable supply chain network… 
+Samir Saci
+September 22, 2025
+
+	22 min read
+MCP in Practice
+
+					Agentic AI				
+Mapping power, concentration, and usage in the emerging AI developer ecosystem 
+Sruly Rosenblat
+September 29, 2025
+
+	14 min read
+How to Build Effective Agentic Systems with LangGraph
+
+					Agentic AI				
+Create AI workflows with agentic frameworks 
+Eivind Kjosbakken
+September 30, 2025
+
+	12 min read
+YouTube
+X
+LinkedIn
+Threads
+Bluesky
+
+				Your home for data science and Al. The world’s leading publication for
+				data science, data analytics, data engineering, machine learning, and
+				artificial intelligence professionals.
+			
+
+		©
+	
+Insight Media Group, LLC
+
+		2026	
+
+			Subscribe to Our Newsletter		
+Write For TDS
+About
+Advertise
+Privacy Policy
+Terms of Use
+Some areas of this page may shift around if you resize the browser window. Be sure to check heading and document order.
+ Recommended Articles 
+Close
+Bayesian Thinking for People Who Hated Statistics
+memweave: Zero-Infra AI Agent Memory with Markdown and SQLite — No Vector Database Required
+How to Study the Monotonicity and Stability of Variables in a Scoring Model using Python
+Why Data Scientists Should Care About Quantum Computing

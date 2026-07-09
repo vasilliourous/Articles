@@ -1,0 +1,579 @@
+I used Claude to build a Raspberry Pi project I had no idea how to start
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+Networking
+Storage and NAS
+Components
+Peripherals
+Operating Systems
+Submenu
+Linux
+Windows
+Software
+Submenu
+Programming
+Applications
+Mobile
+Submenu
+Android
+iPhone
+Carriers
+New Tech
+Submenu
+Hobbies
+Smart Home
+Homelab
+Single-Board Computers (SBCs)
+Cutting Edge
+Streaming
+Submenu
+Streaming Content
+Streaming Platforms
+Audio/Video
+Automotive
+Reviews
+Buying Guides
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+5
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Storage
+Streaming
+Linux
+Open Source
+Microsoft Excel
+Android
+Windows
+Close
+I used Claude to build a Raspberry Pi project I had no idea how to start
+Credit: Adam Davidson / How-To Geek
+By 
+Adam Davidson
+Published
+ May 1, 2026, 9:31 AM EDT
+Adam has a degree in Engineering and has a life-long interest in technology. He has been writing for over a decade for various print and online publications, with a focus on consumer tech. He joined How-To Geek in 2024 while working at 
+Pocket-lint
+.
+
+As well as being a long-term fan of Apple products, he also has a strong interest in smart home tech, running a Home Assistant server at home to automate all his smart home devices. He believes that the ideal smart home should work with minimal interaction from the user, with automations running as if by magic rather than requiring you to push buttons on a control panel. You can find more of his work on 
+Muck Rack
+. 
+Sign in to your 
+How-To Geek
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+5
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+I recently bought a new accessory for my Raspberry Pi on a whim, with no real idea of what to use it for. When I finally came up with an idea, I had no clue how to make it a reality. Using Claude, I was able to get it working incredibly quickly.
+
+                        I picked up a cheap OLED screen for my Pi
+               
+
+            I had no real plans for what to do with it
+    
+Credit: Adam Davidson / How-To Geek
+✕
+ Remove Ads
+ I recently ordered some smart home devices online and needed to bump up the total cost of my order to take advantage of a discount code and free shipping. After browsing through the available products, I ended up buying a 
+small OLED display
+ for my Raspberry Pi. I had no idea what I was going to use it for, but the price was just enough to get my discount and free shipping, so I figured I'd decide how to use it once it arrived.
+When the screen arrived, it was easy to hook up to my Raspberry Pi. The hardest part was deciding exactly how I was going to use it. I thought about a few different options, such as using it to give visual feedback for a 
+Pi-hole instance
+ or for displaying 
+smart home notifications
+, but these were all fairly boring ideas.
+Then I spotted one of my kids' 
+Tamagotchis
+ lying on my desk, waiting for me to change the battery. It made me think that the low-resolution display was quite similar to the screen of a Tamagotchi, and that maybe I could use the Raspberry Pi to make a Tamagotchi of my own.
+I'm always trying to find ways to be more productive, and I thought that I could gamify my work life using my own Pi-based Tamagotchi. I could earn XP by completing work and ticking items off my to-do list, and have the Tamagotchi evolve each time I earned enough XP.
+
+    						Raspberry Pi 5
+			
+Brand
+
+									
+										
+											Raspberry Pi
+
+										
+																	
+Storage
+
+									
+										
+											8GB
+
+										
+																	
+It's only recommended for tech-savvy users, but the Raspberry Pi 5 is a tinkerer's dream. Cheap, highly customizable, and with great onboard specs, it's a solid base for your next mini PC.
+CPU
+
+									
+										
+											Cortex A7
+
+										
+																	
+Memory
+
+									
+										
+											8GB
+
+										
+																	
+Operating System
+
+									
+										
+											Raspbian
+
+										
+																	
+Ports
+
+									
+										
+											4 USB-A
+
+										
+																	
+$130 at Spark Fun
+$172 at Amazon
+$175 at CanaKit
+Expand
+Collapse
+✕
+ Remove Ads
+
+                        Describing the project to Claude
+               
+
+            I got working proof-of-concept code
+    
+The first thing I wanted to know was whether the display would work for the idea I had in mind. The screen is only 32 pixels high and 128 pixels wide, so I wanted to make sure that I could fit everything I needed onto the screen.
+I had no idea how to get things to display on the screen, and although the display came with documentation and example code, I decided to 
+ask Claude
+ instead. I knew that creating a working Tamagotchi that could track my productivity would be complex, so I thought getting help from an AI chatbot would be the best option.
+Related
+
+			The Raspberry Pi's 15-year reign is quietly ending—here's why
+		
+The Raspberry Pi is starting to feel like a square peg in a round hole.
+Posts
+36
+By 
+Tim Brookes
+Apr 14, 2026
+I outlined my idea: a Tamagotchi-style game running on my Raspberry Pi. The screen would display the current character, along with XP and other stats. As I completed work tasks and my to-do list, I would gain points, and with enough points, my Tamagotchi would evolve, but if I failed to complete what I should, I would lose XP, and my Tamagotchi would revert to an earlier form.
+I decided that I wanted the Tamagotchi to be inspired by pop culture characters. It would start off as a Z-list celebrity and gradually evolve into A-list celebrities and then eventually, living legends. 
+Home Assistant
+ would provide all the key information that the Raspberry Pi needed.
+✕
+ Remove Ads
+Claude immediately came up with code for a proof-of-concept image that I could display on the Raspberry Pi display to see if it was good enough to move on to building the rest of the project. I sent the code to the Raspberry Pi, and immediately had a prototype image of my Tamagotchi on the display. With a couple of tweaks to the font size, it looked exactly how I wanted it.
+
+                        Working with Claude to make the Tamagotchi work
+               
+
+            A fun way to boost productivity
+    
+Credit: Adam Davison / How-To Geek
+ Once I knew that my productivity Tamagotchi would look reasonable on the small screen, it was time to figure out how it was going to work. Claude was incredibly helpful here, too.
+We had a back-and-forth discussion about different ways I could earn XP, and how this information could be accessed by the Raspberry Pi. I decided that I wanted to track three metrics that would contribute to the Tamagotchi evolving: Work, Body, and Mind. Work would track things such as how many articles I submitted; Body would track metrics such as how long I 
+remained sedentary in my office chair
+; and Mind would track how much time I spent on distracting apps when I should be working.
+One of the biggest challenges was creating the sprite images loosely inspired by celebrity archetypes. Claude even helped here. It built a small web app that let me upload images, convert them to 32x32 pixel art, and then edit them to suit my needs. While the resolution was incredibly small, using the app, I was able to create some reasonable images for my Tamagotchi.
+✕
+ Remove Ads
+
+                        Tinkerers no longer need to be coders
+               
+
+            Personal projects are where vibe coding makes sense
+    
+Credit: Patrick Campanale / How-To Geek
+ Once I'd created my images, Claude gave me everything I needed to get the Tamagotchi working. It told me the 
+Home Assistant helpers
+ I'd need to create, built the standing/sitting and focus tracking automations, and even helped me set up an 
+n8n workflow
+ that would update my article count every time I marked an article as completed in 
+Notion
+.
+
+                    Subscribe for more Raspberry Pi & AI project guides
+                
+Join the newsletter to get more Raspberry Pi and AI-assisted tinkering projects, step-by-step guides, code snippets and automation workflows so you can build your own productivity gadgets, templates, and creative prototypes.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+It then gave me the code that would get the Raspberry Pi to poll Home Assistant and pull the relevant stats, and allow the Tamagotchi to evolve as I reached my goals. It wasn't perfect on the first try, but with a few tweaks here and there, I have a working custom Tamagotchi that evolves as I reach my productivity goals. Using has made me complete tasks that I wouldn't have completed otherwise, just because I was close to unlocking the next celebrity.
+Vibe coding
+ rightly gets a lot of bad press when used for 
+important production code
+, but this is exactly the type of project where it makes sense. It allowed me to complete a project I would never have had time to complete otherwise, and if the code fails, it's not hurting anyone other than myself. It shows that you don't need to be a coder to be able to create some impressively complex tinkering projects.
+✕
+ Remove Ads
+
+            Claude can help you get stuff done
+    
+Vibe coding isn't suitable for everything. However, it can help you to complete projects that you might not even have been able to start yourself. I now have an awesome productivity aid that I never would have built otherwise.
+AI & Machine Learning
+Raspberry Pi
+AI (Artificial Intelligence)
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. 
+Read More
+.
+Close
+✕
+ Remove Ads
+
+                                                    Desktop
+                                            
+
+                                                    Mobile
+                                            
+
+			Why Linux is my IDE
+		
+1 hour ago
+
+			Windows Fast Start-up is still causing problems in 2026, and everyone should disable it
+		
+4 hours ago
+
+			KDE Dolphin does file management better than GNOME—here's why
+		
+5 hours ago
+See More
+
+			8 Google Messages features I wish someone had told me about sooner
+		
+1 hour ago
+
+			5 hidden Motorola gestures that make other Android phones feel basic
+		
+3 hours ago
+
+			This open-source app suite replaced 6 closed-source apps and tools on my Android phone
+		
+5 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			Why I ditched Samsung's default keyboard for Gboard (and never looked back)
+		
+
+			Building Cyberdecks Is the Geek Hobby You Need to Check Out
+		
+
+			DietPi just made it easy to host your own Google Photos on a Raspberry Pi
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+5
+Sign in to your 
+How-To Geek
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Allan
+Allan
+Allan
+#TB590238
+Member since 2024-05-05
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+What does XP mean in this article? Never heard of the acronym, well apart from Windows XP, where I believe it meant experience - but in this articles saying "I could earn experience" makes no sense. 
+2026-05-05 07:22:59
+Upvote
+Downvote
+Reply
+Copy
+        
+v0ydVela4r
+v0ydVela4r
+v0ydVela4r
+#LK593194
+Member since 2026-05-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+It's good to use help to understand what is happening, but read carefully in the communities.  I guess what I mean is history is important in this realm.  Unix is where this will started.  The idea behind free software is the foundation of the community.  It's more then just the idea of who controls what.  It's the community, and the culture behind some certain personalities is and should be maintained as I only watch, then if I am stick or can't solve I'll seek help.  I urge you to RTFM.  I mean that in a nice way.  This project worked, and maybe using Claude, you'll always get it right.  But what oI ask you do you think you learned about Linux Or Raspypi?  Technically, but more you learned about AI promoting.  Quite different.  Remember, what some see as struggle some see as a game or a challenge.  The core of the community is about asking others to r help but reading between the lines as to follow the structure.  I'm happy you ventured this route.  Free software is of the utmost importance for all humans.
+2026-05-01 23:20:03
+Upvote
+Downvote
+Reply
+Copy
+        
+night
+night
+night
+#EU133479
+Member since 2024-06-29
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Because googling and reading is too hard?
+2026-05-01 19:12:32
+Upvote
+Downvote
+Reply
+
+                        2
+                    
+Copy
+        
+Andrew
+Andrew
+Andrew
+#ER689972
+Member since 2025-12-07
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Ain't nobody got time for that 
+2026-05-02 05:40:14
+Upvote
+Downvote
+Reply
+Copy
+        
+H
+H
+H
+#IY362450
+Member since 2026-05-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+My thoughts exactly... Claude learned from the same communities people ask and read from
+2026-05-02 13:33:35
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 26, 2026
+
+                                    Your Android phone has a built-in scanner, fax machine, and measuring tape
+                            
+Apr 26, 2026
+
+                                    You're using HDMI wrong on your smart TV: Here’s how to fix the mistake once and for all
+                            
+Apr 24, 2026
+
+                                    3 essential Linux apps to try this weekend (April 17 - 19)
+                            
+Apr 23, 2026
+
+                                    You can now tell Claude your mood and it will create a Spotify playlist to match
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+How-To Geek
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

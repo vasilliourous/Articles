@@ -1,0 +1,570 @@
+Stop accepting smart home downtime—here's how I built mine to never fail
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+Networking
+Storage and NAS
+Components
+Peripherals
+Operating Systems
+Submenu
+Linux
+Windows
+Software
+Submenu
+Programming
+Applications
+Mobile
+Submenu
+Android
+iPhone
+Carriers
+New Tech
+Submenu
+Hobbies
+Smart Home
+Homelab
+Single-Board Computers (SBCs)
+Cutting Edge
+Streaming
+Submenu
+Streaming Content
+Streaming Platforms
+Audio/Video
+Automotive
+Reviews
+Buying Guides
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+4
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Storage
+Streaming
+Linux
+Open Source
+Microsoft Excel
+Android
+Windows
+Close
+Stop accepting smart home downtime—here's how I built mine to never fail
+Credit: Patrick Campanale / How-To Geek
+By 
+Patrick Campanale
+Published
+ Mar 27, 2026, 1:30 PM EDT
+Patrick Campanale has been in the tech space for well over a decade, specializing in PC/gaming news and reviews, as well as maker-focused products to build small businesses.
+
+With a start in technology back in 2010 surrounding the Palm/webOS ecosystem, Patrick spent his formative years developing mobile applications as well as blogging for various publications, eventually leading to starting his own website in 2014. After running a technology blog for a few years, he stepped out of that role and into the world of high-end custom PC manufacturing and building, with a focus on YouTube video production and overclocking. Then, six years ago, Patrick joined the 
+9to5Toys 
+team as an editor/writer/reviewer with over 14,000 articles being published there there, ranging from deals and roundups to in-depth reviews on the latest technology, video games, 3D printers, and more.
+
+In his free time, Patrick loves to 
+create projects from wood
+ using various robots and methods, including leveraging the technologies of CNCs and lasers. If Patrick isn't working on a computer or playing video games, he's likely in his 2-car garage workshop creating something unique. In addition to all this, Patrick is also a youth pastor at his local church where he feels God has called him to serve, and he loves every minute of it. 
+Sign in to your 
+How-To Geek
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+4
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+I got tired of my smart home going offline every time I needed to perform maintenance on a server in my homelab, so I decided to fix it by building a high availability cluster. It might not have been all that simple, but the effort was worth it to have a smart home that never goes down.
+✕
+ Remove Ads
+
+                        When Home Assistant goes down, my smart home goes down
+               
+
+            A single point of failure brings nothing but frustration
+    
+Credit: Corbin Davenport / How-To Geek / Home Assistant
+ I’ve used 
+Home Assistant
+ for a few years now, and I’ve always been plagued by one particular problem: a single point of failure. Originally, my homelab had just one server in it and that server handled everything, including Home Assistant.
+Often, when I had to perform maintenance on that server, my wife would go to use something in our smart home only to say “The lights aren’t working” because, well, Home Assistant was down. This is a story as old as homelabbing—maintenance causing downtime.
+Since I don’t have a dedicated system running Home Assistant (like a 
+Home Assistant Green
+ or Yellow), I’ve had to learn to work with this limitation. Typically, I try to perform maintenance during the day now, as our smart lighting sees the most use at night.
+However, now that I have my 
+Proxmox
+ high availability cluster set up, I no longer have to worry about Home Assistant downtime.
+
+    						Home Assistant Green
+			
+Dimensions (exterior)
+
+									
+										
+											4.41"L x 4.41"W x 1.26"H
+
+										
+																	
+Weight
+
+									
+										
+											12 Ounces
+
+										
+																	
+Home Assistant Green is a pre-built hub directly from the Home Assistant team. It's a plug-and-play solution that comes with everything you need to set up Home Assistant in your home without needing to install the software yourself. 
+$179 at Amazon
+Expand
+Collapse
+
+                        Proxmox high availability made my smart home resilient
+               
+
+            You need multiple nodes, but it’s worth it
+    
+I recently deployed 
+a high availability three-node Proxmox cluster
+ in my homelab. You technically need three nodes to run a high availability cluster, but it’s possible to do it with two nodes and a third “ghost” node that just simply votes for quorum.
+✕
+ Remove Ads
+My homelab runs on three mini PCs
+ and a few NAS systems. The mini PCs really run the show though, as that’s what I use for my Proxmox nodes. I have a mixture of hardware for the mini PCs in my homelab, but you can really use any type of system for it. In fact, finding a few cheap old office PCs on Facebook Marketplace or eBay is a great starting point if you want to dabble with high availability.
+Once the high availability cluster was fully deployed, I was able to enable my Home Assistant virtual machine for high availability. What happens now is the Home Assistant virtual machine migrates from the primary node it runs on to one of the other nodes in the cluster if the primary one goes down.
+Then, whenever that primary node comes back online, the Home Assistant node migrates back to the original node it was on. It’s a seamless process that happens completely automatically without me having to do anything at all.
+
+                        Now my smart home stays online—even during maintenance
+               
+
+            So long as two of my three nodes are online, so is my smart home
+    
+Credit: Patrick Campanale / How-To Geek
+ This might seem like a lot of work for some smart lights or plugs, but it’s entirely worth it to me. I’ve moved my homelab’s location multiple times over the years, and each time my smart home would go down for hours at a time. This meant routines would stop running, lights or plugs would stop responding, and chaos would ensue. Okay, maybe not full-blown chaos, but mild chaos would definitely arise when smart devices stopped working.
+✕
+ Remove Ads
+Almost all of the lighting in the house
+ is controlled by a smart device in one way or another, and the household is simply used to being able to say voice commands to turn on or off lights. We also use routines and automations all the time for turning off entire portions of the house with one simple voice command.
+Knowing that I should have only a minute or two of downtime from here on out when it comes to doing maintenance in my homelab. There are definitely times when I need to move things around to add new hardware, pull old hardware out, or upgrade something.
+
+                    Subscribe to the newsletter for homelab HA guidance
+                
+Get more homelab high-availability know-how by subscribing to the newsletter: step-by-step HA setups, VM migration strategies, troubleshooting tips, and practical homelab case studies to help you build resilient systems.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+Now, my routine is going to be taking the Home Assistant server down first and plugging it in somewhere else. The VM will simply migrate from the primary server to one of the backups and then back again, providing minimal downtime. Then, once everything is moved around, I can do the same thing in reverse and everything will simply go back where it should be without me having to manually move any virtual machines.
+✕
+ Remove Ads
+
+    						GEEKOM A5 mini PC
+			
+Brand
+
+									
+										
+											GEEKOM
+
+										
+																	
+CPU
+
+									
+										
+											AMD Ryzen 5 7430U
+
+										
+																	
+The GEEKOM A5 mini PC packs 16GB of user-replaceable RAM, a user-swappable NVMe SSD, plus two other storage slots, giving you plenty of user-upgradability in this compact system. The Ryzen 5 processor packs plenty of power for general tasks, and it's even great at lightweight gaming and CAD work too.
+$439 at Amazon
+$439 at Best Buy
+$439 at GEEKOM
+Expand
+Collapse
+
+    						KAMRUI Hyper H2 Mini PC
+			
+Brand
+
+									
+										
+											KAMURI
+
+										
+																	
+CPU
+
+									
+										
+											i5-14450HX
+
+										
+																	
+The KAMRUI Hyper H2 Mini PC features an Intel Core i5-14450HX 10-core 16-thread processor and 16GB of DDR4 RAM. The included 512GB NVMe SSD comes with Windows 11 pre-installed so the system is ready to go out of the box.
+$479 at Amazon
+Expand
+Collapse
+
+    						KAMRUI Hyper H1 Mini PC
+			
+Brand
+
+									
+										
+											KAMRUI
+
+										
+																	
+CPU
+
+									
+										
+											AMD Ryzen 7 7735HS
+
+										
+																	
+The KAMRUI Hyper H1 mini PC is perfect for setups that need a high-performance desktop without spending an arm and a leg. It boasts the AMD Ryzen 7 7735HS 8-core 16-thread processor and 16GB of LPDDR5 RAM (which is not user-upgradable). The pre-installed 512GB NVMe drive can be swapped out for a larger one though, and there's a second NVMe slot for extra storage if needed.
+$369 at Amazon
+Expand
+Collapse
+
+            I’m now able to make more than just Home Assistant highly available
+    
+While this venture started out with a goal of making Home Assistant highly available, I’m now able to make any VM I want resilient, just like Home Assistant. For example, I have three Docker virtual machines running in my homelab—one on each Proxmox node.
+Now that I’ve taken the time to solve high availability for Home Assistant, it’s trivial to make the other virtual machines highly available, too. This means that my entire homelab setup can handle losing one node and my services will still stay online.
+It’s definitely a good bit of work and time investment to get a high availability setup like this up and going, but it’s so worth it in the end.
+✕
+ Remove Ads
+Smart Home
+Homelab
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. 
+Read More
+.
+Close
+✕
+ Remove Ads
+
+                                                    Desktop
+                                            
+
+                                                    Mobile
+                                            
+
+			This open-source project brings the best part of Linux to Windows
+		
+25 minutes ago
+
+			These 6 Linux command defaults make the terminal much less frustrating
+		
+1 hour ago
+
+			PowerShell isn't scary—these everyday commands prove it
+		
+3 hours ago
+See More
+
+			I don't use Google Maps in Android Auto anymore—this navigation app took its place
+		
+34 minutes ago
+
+			Please stop typing on your Google Pixel—these 3 voice commands are a game changer
+		
+19 hours ago
+
+			Google Maps has a power-saving mode that extends battery life by 4 hours—but there's a catch
+		
+20 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			Deepin is the best-looking Linux distro—here's why I don’t use it
+		
+
+			Self-hosting isn't always the answer—why Home Assistant is no longer powering my home
+		
+
+			8 open-source tools that secretly power the world
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+4
+Sign in to your 
+How-To Geek
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+ASUSfreak
+ASUSfreak
+ASUSfreak
+#HL900833
+Member since 2026-03-29
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Do what you find is best. ANYTHING you do, people will have comments and try to find a way to break it down. It's a hobby, fun, learning stuff thing... is it necessary? Hell no ( at least in my case at home lol...) I try to do similar things with my 2 NASses... 1 at home, 1 with my family in another city. Just in case of a storm, fire, water, burglar, damage, power grid overvolt, etc... I don't want to loose my vods and pictures etc... Then again, what if the power is down? Not so HA anymore... Oh well, hobbies 😁 Greetz from Belgium 🤪 
+2026-03-29 06:36:26
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Marcin
+Marcin
+Marcin
+#SM581441
+Member since 2025-11-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+So, what happens when your HA VM fails and you aren't around to fix it?
+2026-03-27 20:19:47
+Upvote
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Patrick
+Patrick
+Patrick
+#CB808864
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+2  Followers 
+View
+On the rare times that happens, it's no worse off than the VM failing for other reasons and I'm not around to fix it. Chances of it having to go into HA and migrate with me not being around, however, are fairly low.
+2026-03-28 13:47:22
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Elad
+Elad
+Elad
+#CY682376
+Member since 2026-02-11
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Instead of investing in relatively shitty mini pc, invest in one atrong one and the update will take 5 seconds,
+In addition if the whole issue is the home assistant goes down, have 3 instances of that vm on the same proxmox,
+If the issue is the upgrade of your proxmox, which takes at most 30 minutes for full installation and reatoring all the guests, do it in time where ppl lives with you going to sleep,
+Saving the High Availability will get your more time to sleep instead of chasing 3 servers at home
+2026-03-28 12:31:25
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Mar 26, 2026
+
+                                    Samsung's new phone has a screen that goes dark when someone looks over your shoulder
+                            
+Mar 25, 2026
+
+                                    This modular Android tablet can easily be upgraded and repaired with a Phillips screwdriver
+                            
+Mar 25, 2026
+
+                                    Stop mounting your TV above the fireplace—it's ruining your viewing experience
+                            
+Mar 24, 2026
+
+                                    Android’s clipboard history is one of its best hidden features
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+How-To Geek
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:09
+Skip Ad
+5

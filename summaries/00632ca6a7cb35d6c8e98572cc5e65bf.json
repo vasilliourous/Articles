@@ -1,0 +1,69 @@
+{
+  "article_title": "5 Mistakes I Made Building My Proxmox Cluster (So You Don’t Have To)",
+  "core_thesis": "Building a Proxmox cluster in a home lab is a valuable learning experience, but common mistakes—such as using non-standardized hardware, neglecting out-of-band management, using consumer-grade drives and slow networking with Ceph, misconfiguring jumbo frames and network segmentation, and assuming changes can be easily made later—can lead to significant performance issues, troubleshooting headaches, and technical debt. The author shares these mistakes to help readers avoid them and build a more stable, performant cluster from the start.",
+  "detailed_summary": "The article details five key mistakes the author made while building a Proxmox cluster in his home lab, along with the lessons learned and recommended fixes. First, using non-standardized nodes (different mini PCs with varying CPUs, memory, and storage) led to uneven performance, especially when introducing Ceph, which expects hardware consistency. The fix was to standardize on identical MS-01 mini PCs, which improved predictability and troubleshooting. Second, the author initially lacked out-of-band management (OOBM), relying on physically moving a TinyPilot KVM between nodes. This became a major inconvenience when nodes failed to boot or network misconfigurations occurred. He recommends integrating OOBM (e.g., Intel vPro) from the start. Third, using consumer-grade SSDs and sub-10GbE networking with Ceph resulted in high latencies and poor write performance. Upgrading to enterprise drives (Micron 7300 MAX) and 10GbE networking dramatically improved performance, achieving nearly 1 million IOPS. Fourth, careless implementation of jumbo frames (MTU 9000) without end-to-end validation caused packet fragmentation and intermittent connectivity, especially across VLANs routed through a firewall not configured for jumbo frames. The author advises careful validation and separating storage, cluster, and VM traffic using VLANs or dedicated interfaces. Fifth, the author assumed he could easily change configurations later, but once workloads were running (23 VMs), changes like network restructuring or Ceph pool redesign required maintenance windows and data migration. He recommends planning core decisions (compute, storage, networking) carefully upfront to minimize rework.",
+  "entities": [
+    {
+      "name": "Brandon Lee",
+      "type": "person",
+      "role": "Author and senior writer/engineer at Virtualization Howto; shares personal mistakes building a Proxmox cluster."
+    },
+    {
+      "name": "Proxmox",
+      "type": "organization",
+      "role": "Open-source virtualization platform used to build the cluster; the article focuses on best practices for Proxmox clusters."
+    },
+    {
+      "name": "Ceph",
+      "type": "organization",
+      "role": "Distributed storage system used with Proxmox; sensitive to hardware consistency and network performance."
+    },
+    {
+      "name": "Minisforum MS-01",
+      "type": "product",
+      "role": "Standardized mini PC used as cluster nodes after initial heterogeneous hardware caused issues."
+    },
+    {
+      "name": "Micron 7300 MAX",
+      "type": "product",
+      "role": "Enterprise SSD that dramatically improved Ceph performance over consumer drives."
+    },
+    {
+      "name": "Intel vPro",
+      "type": "technology",
+      "role": "Out-of-band management solution recommended for remote console access to cluster nodes."
+    },
+    {
+      "name": "TinyPilot",
+      "type": "product",
+      "role": "KVM-over-IP device initially used for console access; deemed inconvenient compared to integrated OOBM."
+    }
+  ],
+  "key_data_points": [
+    "Non-standardized nodes (different CPUs, memory, storage) cause uneven performance and complicate troubleshooting; Ceph especially suffers from hardware inconsistency. (🟢 Relevant to homelab: if you plan to use Ceph, standardize hardware to avoid performance bottlenecks.)",
+    "Out-of-band management (e.g., Intel vPro) should be integrated from the start; retrofitting it is more difficult and less convenient than using a dedicated KVM like TinyPilot. (🟢 Relevant to homelab: saves time and frustration when nodes become unreachable.)",
+    "Consumer SSDs lack power loss protection and sustained write performance, leading to high latencies in Ceph; enterprise drives (Micron 7300 MAX) and 10GbE networking achieved nearly 1 million IOPS. (🟢 Relevant to homelab: if performance matters, invest in enterprise drives and 10GbE for Ceph.)",
+    "Jumbo frames (MTU 9000) must be validated end-to-end across all devices (switches, bridges, VLANs, firewall); misconfiguration causes packet fragmentation, drops, and performance degradation. (🟢 Relevant to homelab: always test with ping -s 8972 and ensure consistent MTU across the path.)",
+    "Separating storage, cluster, and VM traffic using VLANs or dedicated interfaces prevents network contention and improves predictability. (🟢 Relevant to homelab: design network segmentation early to avoid disruptive reconfiguration later.)",
+    "Assuming changes can be easily made later leads to technical debt; once workloads are running, modifications (e.g., network redesign, Ceph pool changes) require maintenance windows and data migration. (🟢 Relevant to homelab: plan core decisions upfront to minimize rework.)"
+  ],
+  "methodology_steps": [
+    "Standardize cluster nodes: Use identical hardware (same CPU, memory, storage, network) to ensure consistent performance and easier troubleshooting. If using Ceph, hardware uniformity is critical.",
+    "Integrate out-of-band management: Choose nodes with IPMI/vPro or add a dedicated KVM-over-IP device (e.g., TinyPilot) from the start. Configure the management interface (e.g., vPro on a dedicated 2.5GbE port) during initial setup.",
+    "Use enterprise-grade drives for Ceph: Select SSDs with power loss protection and sustained write performance (e.g., Micron 7300 MAX). Pair with 10GbE networking (or faster) to avoid bottlenecks during rebalance and heavy write workloads.",
+    "Configure jumbo frames carefully: Set MTU to 9000 on all switch ports, network interfaces, and Linux bridges. Validate end-to-end using ping with large packet sizes (e.g., ping -s 8972 -M do <target>). Ensure every device in the path (including firewalls) supports jumbo frames.",
+    "Segment network traffic: Create separate VLANs or use dedicated interfaces for storage (Ceph), cluster communication, and VM traffic. Keep Ceph traffic isolated from general VM traffic to avoid contention.",
+    "Plan core decisions upfront: Before deploying workloads, finalize node hardware, storage layout, network design, and MTU settings. Document the design and resist the urge to 'fix it later'—changes become disruptive once VMs are running."
+  ],
+  "conclusions": [
+    "Standardizing cluster nodes on identical hardware eliminates performance discrepancies and simplifies troubleshooting, especially when using Ceph. The author's move to uniform MS-01 mini PCs stabilized the cluster and made behavior predictable.",
+    "Out-of-band management is essential for remote troubleshooting and should be part of the initial design, not an afterthought. The author's reliance on a shared TinyPilot was cumbersome; integrated vPro provided always-available console access.",
+    "Ceph performance is highly dependent on disk and network quality. Consumer SSDs and sub-10GbE networking cause high latencies and poor write performance; upgrading to enterprise drives (Micron 7300 MAX) and 10GbE yielded dramatic improvements (nearly 1M IOPS).",
+    "Jumbo frames require careful end-to-end validation; misconfiguration leads to packet fragmentation and intermittent issues. The author recommends testing with large ping packets and ensuring all devices (including firewalls) support the same MTU.",
+    "Network segmentation (VLANs/dedicated interfaces) for storage, cluster, and VM traffic prevents contention and improves performance. Retrofitting segmentation after workloads are running is disruptive and should be avoided.",
+    "Planning core decisions (hardware, storage, networking) upfront reduces technical debt. The author's experience shows that 'fix it later' often leads to more work and downtime than doing it right the first time."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your homelab and DevOps interests, as it provides concrete, actionable advice for building a Proxmox cluster—a common project for learning infrastructure and high availability. The mistakes and fixes directly apply to your goal of setting up a robust, performant cluster. For your Red Teaming work, a well-architected cluster can host isolated lab environments for testing exploits and simulating attacks. The emphasis on network segmentation and out-of-band management also aligns with security best practices. As a student, the article's structured approach to planning and avoiding technical debt is a valuable lesson in project management. You can apply these principles to any multi-node deployment, whether for homelab, DevOps, or security research.",
+  "extra_advice": "Consider using your Proxmox cluster to host a dedicated 'attack range' with isolated VLANs for Red Team exercises. Leverage the cluster's snapshot and migration capabilities to quickly reset compromised VMs. Also, explore Ceph's erasure coding for efficient storage of large datasets (e.g., packet captures or malware samples).",
+  "source_url": "https://www.virtualizationhowto.com/2026/03/5-mistakes-i-made-building-my-proxmox-cluster-so-you-dont-have-to/"
+}

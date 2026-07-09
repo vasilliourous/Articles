@@ -1,0 +1,1368 @@
+You can now 3D print your own Noctua fans and accessories, but you can't build a full clone — CAD files available as free downloads for Noctua's top-rated products | Tom's Hardware
+Skip to main content
+Open menu
+Tom's Hardware
+UK Edition
+UK
+
+US
+
+Australia
+
+Canada
+
+RSS
+
+Subscribe
+
+Sign in
+View Profile
+Sign out
+Search
+Search Tom's Hardware
+
+Best Picks
+
+
+CPU Buying Advice
+
+
+CPU Best Picks
+
+
+CPU Reviews
+
+
+GPU Buying Advice
+
+
+GPU Best Picks
+
+
+GPU Reviews
+
+
+Laptop Buying Advice
+
+
+Laptop Best Picks
+
+
+Laptop Reviews
+
+
+More Buying Advice
+
+
+Keyboard Best Picks
+
+
+Gaming Monitor Best Picks
+
+
+Gaming Headset Best Picks
+
+
+3D Printer Best Picks
+
+
+Webcam Best Picks
+
+
+Mice Best Picks
+
+
+How We Test
+
+
+CPUs
+
+
+CPU Brands
+
+
+AMD Ryzen
+
+
+Intel Lunar Lake
+
+
+Nvidia
+
+
+Qualcomm
+
+
+Apple
+
+
+Benchmarking
+
+
+Platforms
+
+
+X86
+
+
+ARM
+
+
+Panther Lake
+
+
+Zen 5
+
+
+AM5
+
+
+Chipmaking
+
+
+DUV
+
+
+EUV
+
+
+Rare Earth Metals
+
+
+GPUs
+
+
+GPU Brands
+
+
+Nvidia Blackwell
+
+
+Nvidia Geforce
+
+
+AMD Radeon
+
+
+Intel Arc
+
+
+Snapdragon X
+
+
+Benchmarking
+
+
+Memory Tech
+
+
+GDDR7
+
+
+GDDR8
+
+
+HBM
+
+
+AI Architecture
+
+
+Nvidia Vera Rubin
+
+
+Meta MTIA
+
+
+Google TPU
+
+
+AMD Instinct
+
+
+Microsoft Maia
+
+
+Drivers
+
+
+PC Components
+
+
+Memory
+
+
+RAM
+
+
+DRAM
+
+
+DDR5
+
+
+Storage
+
+
+HDDs
+
+
+SSDs
+
+
+Cooling
+
+
+Air Cooling
+
+
+Liquid Cooling
+
+
+Thermal Paste
+
+
+Networking
+
+
+Routers
+
+
+Motherboards
+
+
+Overclocking
+
+
+PC Cases
+
+
+PC Building
+
+
+Power Supplies
+
+
+News
+
+
+Tech Industry News
+
+
+CPU News
+
+
+GPU News
+
+
+Chips Act
+
+
+Semiconductors
+
+
+Cybersecurity
+
+
+Supercomputers
+
+
+Quantum Computing
+
+
+Company News
+
+
+AMD
+
+
+Intel
+
+
+Nvidia
+
+
+Radeon
+
+
+Microsoft
+
+
+TSMC
+
+
+Ryzen
+
+
+IBM
+
+
+Newsletter
+
+
+Laptops
+
+
+Gaming Laptops
+
+
+Ultrabooks
+
+
+MacBooks
+
+
+Laptop Brands
+
+
+Asus
+
+
+Razer
+
+
+HP
+
+
+MSI
+
+
+Desktops
+
+
+PC Building
+
+
+PC Cases
+
+
+Gaming PCs
+
+
+Monitors
+
+
+Gaming Monitors
+
+
+Peripherals
+
+
+Keyboards
+
+
+Mice
+
+
+3D Printers
+
+
+Headphones
+
+
+Desktop Brands
+
+
+Alienware
+
+
+Corsair
+
+
+GeForce
+
+
+Intel Arc
+
+
+Gigabyte
+
+
+Acer
+
+
+Software & AI
+
+
+Artificial Intelligence
+
+
+Machine Learning
+
+
+R&D
+
+
+Intel Gaudi
+
+
+Cerebras
+
+
+xAI
+
+
+LLMs
+
+
+OpenAI
+
+
+Anthropic
+
+
+DeepSeek
+
+
+Gemini
+
+
+Grok
+
+
+Operating Systems
+
+
+Windows
+
+
+MacOS
+
+
+iOS
+
+
+ChromeOS
+
+
+Linux
+
+
+Software
+
+
+Programming
+
+
+Applications
+
+
+Microsoft Office
+
+
+Web Browsers
+
+
+Coupons
+
+
+Laptop and PC Coupons
+
+
+Dell Coupon Codes
+
+
+Asus Coupon Codes
+
+
+Logitech Promo Codes
+
+
+Samsung Promo codes
+
+
+Hardware Coupons
+
+
+Newegg Promo Codes
+
+
+Corsair Discount Codes
+
+
+Razer Promo Codes
+
+
+Anycubic Discount codes
+
+
+Software Coupons
+
+
+Bitdefender Coupons
+
+
+Simplisafe Coupons
+
+
+MacPaw Coupons
+
+
+Squarespace Coupon Codes
+
+
+Gaming Coupons
+
+
+Kinguin Discount Codes
+
+
+Loaded Discount Codes
+
+
+Logitech G Promo Codes
+
+
+SteelSeries Coupons
+
+
+More
+
+
+Premium
+
+
+Forums
+
+Home
+
+Best Picks
+
+
+View Best Picks
+
+
+CPU Buying Advice 
+
+CPU Best Picks
+
+
+CPU Reviews
+
+
+GPU Buying Advice 
+
+GPU Best Picks
+
+
+GPU Reviews
+
+
+Laptop Buying Advice 
+
+Laptop Best Picks
+
+
+Laptop Reviews
+
+
+More Buying Advice 
+
+Keyboard Best Picks
+
+
+Gaming Monitor Best Picks
+
+
+Gaming Headset Best Picks
+
+
+3D Printer Best Picks
+
+
+Webcam Best Picks
+
+
+Mice Best Picks
+
+
+How We Test
+
+
+CPUs
+
+
+View CPUs
+
+
+CPU Brands 
+
+AMD Ryzen
+
+
+Intel Lunar Lake
+
+
+Nvidia
+
+
+Qualcomm
+
+
+Apple
+
+
+Benchmarking
+
+
+Platforms 
+
+X86
+
+
+ARM
+
+
+Panther Lake
+
+
+Zen 5
+
+
+AM5
+
+
+Chipmaking 
+
+View Chipmaking
+
+
+DUV
+
+
+EUV
+
+
+Rare Earth Metals
+
+
+GPUs
+
+
+View GPUs
+
+
+GPU Brands 
+
+Nvidia Blackwell
+
+
+Nvidia Geforce
+
+
+AMD Radeon
+
+
+Intel Arc
+
+
+Snapdragon X
+
+
+Benchmarking
+
+
+Memory Tech 
+
+GDDR7
+
+
+GDDR8
+
+
+HBM
+
+
+AI Architecture 
+
+Nvidia Vera Rubin
+
+
+Meta MTIA
+
+
+Google TPU
+
+
+AMD Instinct
+
+
+Microsoft Maia
+
+
+Drivers
+
+
+PC Components
+
+
+View PC Components
+
+
+Memory 
+
+RAM
+
+
+DRAM
+
+
+DDR5
+
+
+Storage 
+
+View Storage
+
+
+HDDs
+
+
+SSDs
+
+
+Cooling 
+
+View Cooling
+
+
+Air Cooling
+
+
+Liquid Cooling
+
+
+Thermal Paste
+
+
+Networking 
+
+View Networking
+
+
+Routers
+
+
+Motherboards
+
+
+Overclocking
+
+
+PC Cases
+
+
+PC Building
+
+
+Power Supplies
+
+
+News
+
+
+View News
+
+
+Tech Industry News 
+
+View Tech Industry News
+
+
+CPU News
+
+
+GPU News
+
+
+Chips Act
+
+
+Semiconductors
+
+
+Cybersecurity
+
+
+Supercomputers
+
+
+Quantum Computing
+
+
+Company News 
+
+AMD
+
+
+Intel
+
+
+Nvidia
+
+
+Radeon
+
+
+Microsoft
+
+
+TSMC
+
+
+Ryzen
+
+
+IBM
+
+
+Newsletter
+
+
+Laptops
+
+
+View Laptops
+
+
+Gaming Laptops
+
+
+Ultrabooks
+
+
+MacBooks
+
+
+Laptop Brands 
+
+Asus
+
+
+Razer
+
+
+HP
+
+
+MSI
+
+
+Desktops
+
+
+View Desktops
+
+
+PC Building 
+
+View PC Building
+
+
+PC Cases
+
+
+Gaming PCs
+
+
+Monitors 
+
+View Monitors
+
+
+Gaming Monitors
+
+
+Peripherals 
+
+View Peripherals
+
+
+Keyboards
+
+
+Mice
+
+
+3D Printers
+
+
+Headphones
+
+
+Desktop Brands 
+
+Alienware
+
+
+Corsair
+
+
+GeForce
+
+
+Intel Arc
+
+
+Gigabyte
+
+
+Acer
+
+
+Software & AI
+
+
+View Software & AI
+
+
+Artificial Intelligence 
+
+View Artificial Intelligence
+
+
+Machine Learning
+
+
+R&D
+
+
+Intel Gaudi
+
+
+Cerebras
+
+
+xAI
+
+
+LLMs 
+
+View LLMs
+
+
+OpenAI
+
+
+Anthropic
+
+
+DeepSeek
+
+
+Gemini
+
+
+Grok
+
+
+Operating Systems 
+
+View Operating Systems
+
+
+Windows
+
+
+MacOS
+
+
+iOS
+
+
+ChromeOS
+
+
+Linux
+
+
+Software 
+
+View Software
+
+
+Programming
+
+
+Applications
+
+
+Microsoft Office
+
+
+Web Browsers
+
+
+Coupons
+
+
+View Coupons
+
+
+Laptop and PC Coupons 
+
+View Laptop and PC Coupons
+
+
+Dell Coupon Codes
+
+
+Asus Coupon Codes
+
+
+Logitech Promo Codes
+
+
+Samsung Promo codes
+
+
+Hardware Coupons 
+
+View Hardware Coupons
+
+
+Newegg Promo Codes
+
+
+Corsair Discount Codes
+
+
+Razer Promo Codes
+
+
+Anycubic Discount codes
+
+
+Software Coupons 
+
+View Software Coupons
+
+
+Bitdefender Coupons
+
+
+Simplisafe Coupons
+
+
+MacPaw Coupons
+
+
+Squarespace Coupon Codes
+
+
+Gaming Coupons 
+
+View Gaming Coupons
+
+
+Kinguin Discount Codes
+
+
+Loaded Discount Codes
+
+
+Logitech G Promo Codes
+
+
+SteelSeries Coupons
+
+
+Premium
+
+
+Forums
+
+No offers found
+Don't miss these
+3D Printing
+Developer re-enables 3D printer features that Bambu Lab disabled, firm promptly threatens legal action
+PC Building
+Enthusiast builds a PC big enough to live in
+3D Printing
+Hacktivists share a guide on making working electronics PCBs made from natural clay with prehistoric technique
+PC Cases
+Best PC Cases 2026: Our Tested Picks for Your Next Build
+3D Printing
+New metal 3D printer shrinks industrial tech down to workbench size with laser powder bed fusion system
+Cooling
+Best AIO Coolers 2026
+PC Cases
+Best Mini-ITX Cases 2026: Our Tested Picks for Compact PC Builds
+3D Printing
+3D printing community organizes against California law that would restrict sales to state-approved models to prevent printing gun parts
+CPUs
+AMD to resurrect Ryzen 7 5800X3D AM4 with 10th anniversary edition, leaker claims
+3D Printing
+Enthusiast builds 3D-printed retro PC case and shares the files so you can print it yourself
+3D Printing
+Bambu Lab Settles with Pop Mart over Labubu IP Theft, publicly apologizes
+Cooling
+Premium Build: Greyscale — building a custom-looped ITX PC that pushes the form factor to its limits
+3D Printing
+California sues websites hosting 3D printed gun files
+Cryptomining
+Inventor showcases 3D printer filament dryer that mines Bitcoins and dries filament with waste heat, capable of 6 TH/s
+Air Cooling
+15 tiny 3D-printed fans fit inside a domed Noctua NF-A12x25 frame to form the "Fanhattan Project" 
+Tom's Hardware
+Stay On the Cutting Edge: Get the Tom's Hardware Newsletter
+Get Tom's Hardware's best news and in-depth reviews, straight to your inbox.
+
+Contact me with news and offers from other Future brands
+
+
+Receive email from us on behalf of our trusted partners or sponsors
+
+There was a problem. Please refresh the page and try again.
+
+By submitting your information you agree to the 
+Terms & Conditions
+ and 
+Privacy Policy
+ and are aged 16 or over.
+
+You are now subscribed
+Your newsletter sign-up was successful
+ An account already exists for this email address, please log in.
+Trending
+🔥TH Premium Deal
+Where to buy AMD's 9950X3D2
+Intel Xeon 600
+RAM Combo Deals
+DLSS 5
+Bartlett Lake
+RAM Shortage
+3D Printing
+You can now 3D print your own Noctua fans and accessories, but you can't build a full clone — CAD files available as free downloads for Noctua's top-rated products
+News
+
+By
+
+Bruno Ferreira
+
+published
+
+27 April 2026
+Don't forget the bespoke beige-and-brown filaments, too.
+
+When you purchase through links on our site, we may earn an affiliate commission. 
+Here’s how it works
+.
+
+(Image credit: Noctua)
+
+Copy link
+
+
+Facebook
+
+
+X
+
+
+Whatsapp
+
+
+Reddit
+
+
+Pinterest
+
+
+Flipboard
+
+
+Email
+
+
+Share this article
+
+
+4
+
+
+Join the conversation
+
+
+Follow us
+
+
+Add us as a preferred source on Google
+
+
+Newsletter
+
+
+Subscribe to our newsletter
+
+3D-printin' folks and hobbyists of various stripes can rejoice. The highly-regarded folks at 
+Noctua
+ have released pitch-perfect CAD models of many of the company's fans, including the NF-A12x25 G2, which currently ranks at the top of our 
+best PC fans
+ roundup.
+Go deeper with TH Premium: CPU
+(Image credit: Tom's Hardware)
+CPU scaling with DLSS
+Ryzen to the top: How AMD innovated in the gaming CPU market
+How ARM is working its way into PCs
+AMD CES 2026 gaming trends press Q&A roundtable transcript
+Noctua revealed the news in 
+a simple blog post
+, pointing interested techies to the 
+downloads section
+ of its website. The Austrian beige-and-brown firm says that the files in question accurately match the mounting dimensions and external dimensions of its fans, a boon for enthusiasts everywhere who may have had previous trouble with inaccurate official models. This bit of news dovetails nicely with the availability of the official 
+Noctua-colored filament
+ from Prusa, announced last December.
+Some folks may find it concerning that Noctua would be freely offering their proverbial golden goose, but the CAD files don't include the internal frame structure, and the fan impeller geometries have been slightly tweaked, as forms of IP protection.
+Article continues below 
+Latest Videos From Tom's Hardware
+
+            You may like
+        
+15 tiny 3D-printed fans fit inside a domed Noctua NF-A12x25 frame to form the "Fanhattan Project" 
+Noctua celebrates its 500,000th CPU cooler mounting upgrade kit
+Analyzing Noctua's roadmap — new PSUs, fan-equipped mice, the elusive Thermosiphon, and disappearing prototypes
+It bears remarking that high-precision manufacturing and tight tolerances are one key reason why Noctua's fans are so effective (and pricey, too), and that's a feature that is exceedingly hard to simulate in a home laboratory and, we'd wager, most factories. If nothing else, you'll be able to replace some parts of an existing fan, or use Noctua's files as a basis for creating your own system fans.
+Noctua naturally notes that users are free to do as they with with the files, but that they cannot be used for selling or manufacturing the depicted products — assuming one would be able to reproduce the entire product accurately to begin with.
+Response from the community was immediate and joyous. The tweet announcing the files had 
+a bevy of happy replies
+, with one commenter noting that "every model [they] used online for 120mm mounting specs so far has ALWAYS been just the slightest bit off." While most enthusiasts are sensibly enthused, the availability of the bespoke filament and Noctua's cooperation with the maker community has already given way to some 
+truly cursed designs
+.
+If you're interested in downloading the CAD files and starting on your own creations, check out our roundup of the 
+best 3D printers
+ for recommendations. We've seen a rapid increase in quality 
+and 
+decrease in price across 3D printers over the last couple of years.
+Stay On the Cutting Edge: Get the Tom's Hardware Newsletter
+Get Tom's Hardware's best news and in-depth reviews, straight to your inbox.
+Contact me with news and offers from other Future brands
+Receive email from us on behalf of our trusted partners or sponsors
+By submitting your information you agree to the 
+Terms & Conditions
+ and 
+Privacy Policy
+ and are aged 16 or over.
+Follow
+ Tom's Hardware on Google News
+, or
+ add us as a preferred source
+, to get our latest news, analysis, & reviews in your feeds.
+TOPICS
+
+Noctua
+
+See all comments (4)
+Bruno Ferreira
+Social Links Navigation
+Contributor
+Bruno Ferreira is a contributing writer for Tom's Hardware. He has decades of experience with PC hardware and assorted sundries, alongside a career as a developer. He's obsessed with detail and has a tendency to ramble on the topics he loves. When not doing that, he's usually playing games, or at live music shows and festivals.
+Read more
+Air Cooling
+15 tiny 3D-printed fans fit inside a domed Noctua NF-A12x25 frame to form the "Fanhattan Project" 
+Air Cooling
+Noctua celebrates its 500,000th CPU cooler mounting upgrade kit
+Cooling
+Analyzing Noctua's roadmap — new PSUs, fan-equipped mice, the elusive Thermosiphon, and disappearing prototypes
+PC Cases
+Noctua teases upcoming PC case with brown color scheme and bundled fans
+PC Cases
+Endgame: What’s it Like to build the Noctua-everything PC inside the Antec Flux Pro Noctua-Edition
+3D Printing
+Enthusiast builds 3D-printed retro PC case and shares the files so you can print it yourself
+Latest in 3D Printing
+3D Printing
+Developer re-enables 3D printer features that Bambu Lab disabled, firm promptly threatens legal action
+3D Printing
+Hacktivists share a guide on making working electronics PCBs made from natural clay with prehistoric technique
+3D Printing
+New metal 3D printer shrinks industrial tech down to workbench size with laser powder bed fusion system
+3D Printing
+Enthusiast builds 3D-printed retro PC case and shares the files so you can print it yourself
+3D Printing
+Your Walmart might be 3D printed; firm building more than a dozen 3D-printed Walmart expansions
+3D Printing
+3D printing community organizes against California law that would restrict sales to state-approved models to prevent printing gun parts
+Latest in News
+Tech Industry
+AMD expects 20% decline in gaming revenue from 'higher component costs' in the second half of 2026
+Artificial Intelligence
+Google, Microsoft, and xAI agree to let US government test AI models before public release
+Artificial Intelligence
+Palantir co-founder Peter Thiel backs $140M wave-powered AI data center startup Panthalassa,
+Tech Industry
+JSR to build first Taiwan photoresist plant to co-develop advanced resists with TSMC
+Artificial Intelligence
+Nvidia CEO Jensen Huang says China should not have Blackwell or Rubin AI GPUs
+Semiconductors
+Apple considering Intel and Samsung for US chip production, report claims
+4 Comments
+Comment from the forums
+thrus
+
+The company knows that all it takes is someone with time and some calipers and the models are out. By releasing them they ensure the models will be good quality to represent them and they make goodwill with the community. This means when people need the motors they are more likely to buy from them as a trusted source and a friendly source. Honestly a good pr move.
+
+Reply
+bit_user
+The article
+ said:
+the CAD files don't include the internal frame structure,
+Huh? It seems to me that the main value of this would be integrating the frame design into some 3D-printed case or housing. It seems like you'd need the full frame design, for that.
+thrus
+ said:
+The company knows that all it takes is someone with time and some calipers and the models are out.
+You can use calipers to accurately measure the fan blade geometry? No, those would require precision laser scanning.
+thrus
+ said:
+This means when people need the motors they are more likely to buy from them as a trusted source and a friendly source. Honestly a good pr move.
+Actually, no. For their motors to be of much use, you'd also need their impellers. That's because they had to specially formulate the plastic to withstand the forces subjected to them, or else they'd deform and rub against the frame.
+
+There's no way anyone is 3D printing impellers that perform close enough to Noctua's own that they'd be a worthwhile substitute. Not only the plastic formulation, but also the precision and finishing they'd need is certainly beyond what I think it's worth to anyone. For a lot less trouble and expense, you can just buy fans from someone like Artic that would still outperform any knock-off Noctuas you could fabricate yourself.
+
+Reply
+TechieTwo
+
+If only the bolt pattern and outside dimensions are provided then there is no IP being provided. Obviously the internal dimensions and fan are the real IP. The only reason to 3D print this is if you are bored... ;)
+
+Reply
+bit_user
+TechieTwo
+ said:
+Obviously the internal dimensions and fan are the real IP.
+According to Noctua, their IP also includes:
+
+the formulation of the impeller plastic
+
+the motor design
+
+the PWM & motor controller design
+
+the bearings
+
+My take is that they're providing it mainly to assist folks who want to integrate their fans into 3D-printed housings or custom frames. It's also a PR win for them.
+
+Reply
+View All 4 Comments
+Advertisement
+Advertisement
+Advertisement
+
+Tom's Hardware is part of Future plc, an international media group and leading digital publisher. 
+Visit our corporate site
+.
+
+Add as a preferred source on Google
+Terms and conditions
+Contact Future's experts
+Privacy policy
+Cookies policy
+Accessibility Statement
+Advertise with us
+About us
+Coupons
+Careers
+©
+Future Publishing Limited Quay House, The Ambury,
+Bath
+BA1 1UA. All rights reserved. England and Wales company registration number 2008885. 
+×

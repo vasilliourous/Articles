@@ -1,0 +1,225 @@
+Every Old Vulnerability Is Now an AI Vulnerability
+TechTarget and Informa Tech’s Digital Business Combine.
+TechTarget and Informa
+TechTarget and Informa Tech’s Digital Business Combine.
+Together, we power an unparalleled network of 220+ online properties covering 10,000+ granular topics, serving an audience of 50+ million professionals with original, objective content from trusted sources. We help you gain critical insights and make more informed decisions across your business priorities.
+Dark Reading Resource Library
+Black Hat News
+Omdia Cybersecurity
+Advertise
+Newsletter Sign-Up
+Newsletter Sign-Up
+Cybersecurity Topics
+Related Topics
+Application Security
+Cybersecurity Careers
+Cloud Security
+Cyber Risk
+Cyberattacks & Data Breaches
+Cybersecurity Analytics
+Cybersecurity Operations
+Data Privacy
+Endpoint Security
+ICS/OT Security
+Identity & Access Mgmt Security
+Insider Threats
+IoT
+Mobile Security
+Perimeter
+Physical Security
+Remote Workforce
+Threat Intelligence
+Vulnerabilities & Threats
+Recent in Cybersecurity Topics
+Сloud Security
+After Replacing TeamPCP Malware, 'PCPJack' Steals Cloud Secrets
+After Replacing TeamPCP Malware, 'PCPJack' Steals Cloud Secrets
+by
+Nate Nelson
+May 7, 2026
+5 Min Read
+Application Security
+'TrustFall' Convention Exposes Claude Code Execution Risk
+'TrustFall' Convention Exposes Claude Code Execution Risk
+by
+Jai Vijayan
+May 7, 2026
+6 Min Read
+World                   
+Related Topics
+DR Global
+Middle East & Africa
+Asia Pacific
+Latin America
+See All
+The Edge
+DR Technology
+Events
+Related Topics
+Upcoming Events
+Podcasts
+Webinars
+SEE ALL
+Resources
+Related Topics
+Resource Library
+Newsletters
+Podcasts
+Reports
+Videos
+Webinars
+White Papers
+Partner Perspectives
+Dark Reading Resource Library
+Vulnerabilities & Threats
+Cyber Risk
+Threat Intelligence
+Commentary
+Every Old Vulnerability Is Now an AI Vulnerability
+AI's danger isn't that it's creating new bugs, it's that it's amplifying old ones.
+Nik Kale,
+Principal Engineer,
+Coalition for Secure AI
+April 17, 2026
+4 Min Read
+Source: Martin Bergsma via Alamy Stock Photo
+OPINION
+On March 10, 2026, Microsoft patched 
+CVE-2026-26144
+, a cross-site scripting (XSS) vulnerability in Excel. XSS in Office isn't anything new, but what makes this XSS different is what happens after the script executes.
+The vulnerability chains with Copilot Agent mode. An attacker embeds a malicious payload in an Excel file. After a user opens it, the XSS fires without the user ever clicking anything. However, unlike most XSS attacks, which aim to steal a session cookie or redirect the user to a phishing site, this attack hijacks the Copilot Agent and silently exfiltrates data from the spreadsheet to an attacker-controlled endpoint: no user interaction, no visual prompt to indicate that anything had happened. The AI does the exfiltration for you.
+Zero Day Initiative's 
+Dustin Childs
+ called it "a fascinating bug" and warned that this attack scenario will become more common. While that is true, it is an understatement. This is not merely a single bug; it marks the start of a new wave of exploits that leverage AI agents' capabilities.
+Related:
+Why Security Leadership Makes or Breaks a Pen Test
+For 30 years, we have categorized vulnerabilities by type, such as XSS, SQL injection, buffer overflow, and path traversal. Based on those classifications, we build detection rules, set patch priorities, and train developers on them. The mental model is that the vulnerability category determines the impact: an XSS steals cookies, an SSRF leaks internal data, and a command injection grants shell access.
+AI agents have broken this model. When an AI agent operates inside the application, every traditional vulnerability gains a new capability: autonomous action. The XSS that previously stole a cookie can now instruct Copilot to read every cell in the workbook and post the contents to an external URL. The potential damage is no longer bounded by what the exploit code can do. It is bounded by the permissions granted to the AI agent.
+The hardest lesson from production I learned is that the trust boundary between an application and its AI agent is effectively non-existent. Copilot Agent in Excel can read, analyze, and transmit data because that is what Excel does. There is no separate permission layer between "what Excel can access," and "what Copilot can do with that access." When the application is compromised, the AI inherits the compromise automatically.
+This concept is what I call "privilege amplification." The bug serves as the entry point, while AI acts as the weapon. The blast radius is determined by the AI agent's access scope rather than the exploit's technical capabilities.
+Related:
+How Dark Reading Lifted Off the Launchpad in 2006
+What to do Beyond Patching
+You should patch CVE-2026-26144. That's the minimum required to close the hole. The architectural problem persists across every application that embeds an AI agent or assistant.
+Restrict outbound network access from AI-enabled applications. If Excel with Copilot Agent does not require the ability to make arbitrary HTTP requests, block all egress traffic at the network layer to prevent unknown endpoints from being contacted. This single control would limit the exfiltration path for CVE-2026-26144.
+Monitor AI-initiated network activity as a distinct detection category. Your DLP and network monitoring tools probably treat user-initiated file uploads and AI-initiated data transfers as the same thing. They should not. Any Excel process that makes HTTP POST requests to unfamiliar endpoints is worth alerting on, especially if the request originated from the AI subsystem rather than a user action.
+Reassess AI Assistant permissions in your threat model. When you assessed the risks of installing Copilot, you likely evaluated it as a productivity tool. Look at it again as a privileged agent with both read and network access to everything the host application can access. If this application is compromised, what can the AI agent do with the attacker's commands? If you can't answer that question, your threat model has a gap.
+Modify your prioritization for AI-enabled application vulnerabilities. An XSS in Excel might score as medium severity under traditional CVSS. An XSS that can commandeer an AI agent to exfiltrate your entire financial database is a completely different risk. Unless your scoring models are updated to account for AI amplification, security teams will need to increase the priority of vulnerabilities in AI-enabled applications manually.
+Related:
+Another AI-Assisted Software Scan Yields 9-Year-Old Linux Bug
+CVE-2026-26144 will get patched. People will move on. The pattern won't. Every application shipping an embedded AI agent is creating a new class of post-exploitation capability that our taxonomies, detection rules, and risk models were not designed to address. The Agentic AI era did not create new types of vulnerabilities; instead, it amplified all existing ones. The security teams that recognize this trend will reprioritize accordingly. The ones that don't will keep triaging AI-amplified exploits as medium-severity XSS.
+Don't miss the latest Dark Reading Confidential podcast, 
+Security Bosses Are All in on AI: Here's Why
+, where Reddit CISO Fredrick Lee and Omdia analyst Dave Gruber discuss AI and machine learning in the SOC, how successful deployments have (or haven't) been, and what the future holds for AI security products. 
+Listen now!
+Read more about:
+Opinion
+About the Author
+Nik Kale
+Principal Engineer, Coalition for Secure AI
+Nik Kale is a Principal Engineer and member of the Coalition for Secure AI (CoSAI) specializing in AI platforms, cloud security, and enterprise-scale multi-agent systems. He also contributes to IETF working groups on AI agent identity and authorization, and serves on the ACM AISec and CCS Program Committee.
+See more from Nik Kale
+Want more Dark Reading stories in your Google search results?
+Add Us Now
+More Insights
+Industry Reports
+How Enterprises Are Developing Secure Applications
+Inside RSAC 2026: security leaders reveal the risks redefining your defense strategy
+How Enterprises Are Harnessing Emerging Technologies in Cybersecurity
+Ditch the Data Center: Understanding Flexible Cloud Infrastructure Security Management
+2025 State of Malware
+Access More Research
+Webinars
+The New Attack Surface: How Attackers Are Exploiting OAuth to Own Your Cloud Workspace
+Prompt Injection Is Just the Start: Securing LLMs in AI Systems
+Anatomy of a Data Breach: What to Do if it Happens to You
+How Well Can You See What's in Your Cloud?
+Implementing CTEM: Beyond Vulnerability Management
+More Webinars
+You May Also Like
+Vulnerabilities & Threats
+Cheap Hardware Module Bypasses AMD, Intel Memory Encryption  
+by 
+Rob Wright
+Nov 25, 2025
+Vulnerabilities & Threats
+Patch Now: Microsoft Flags Zero-Day & Critical Zero-Click Bugs
+by 
+Jai Vijayan, Contributing Writer
+Nov 11, 2025
+Vulnerabilities & Threats
+Microsoft Issues Emergency Patch for Critical Windows Server Bug
+by 
+Rob Wright
+Oct 24, 2025
+Vulnerabilities & Threats
+350M Cars, 1B Devices Exposed to 1-Click Bluetooth RCE
+by 
+Nate Nelson, Contributing Writer
+Jul 11, 2025
+Editor's Choice
+Threat Intelligence
+From Stuxnet to ChatGPT: 20 News Events That Shaped Cyber
+From Stuxnet to ChatGPT: 20 News Events That Shaped Cyber
+by
+Dark Reading Editorial Team
+May 6, 2026
+31 Min Read
+Cyber Risk
+Physical Cargo Theft Gets a Boost From Cybercriminals
+Physical Cargo Theft Gets a Boost From Cybercriminals
+by
+Robert Lemos
+May 4, 2026
+5 Min Read
+Cyber Risk
+NSA Chief During Snowden Affair Shares Regrets, Reflections 13 Years Later
+NSA Chief During Snowden Affair Shares Regrets, Reflections 13 Years Later
+by
+Dark Reading Editorial Team
+Apr 28, 2026
+Want more Dark Reading stories in your Google search results?
+Keep up with the latest cybersecurity threats, newly discovered vulnerabilities, data breach information, and emerging trends. Delivered daily or weekly right to your email inbox.
+Subscribe
+Webinars
+The New Attack Surface: How Attackers Are Exploiting OAuth to Own Your Cloud Workspace
+Wed, June 24,2026 at 1pm EST
+Prompt Injection Is Just the Start: Securing LLMs in AI Systems
+Tues, May 26, 2026, at 1pm EST
+Anatomy of a Data Breach: What to Do if it Happens to You
+June 18th, 2026 | 11:00am -5:00pm ET | Doors Open at 10:30am ET
+How Well Can You See What's in Your Cloud?
+Thurs, June 4, 2026 at 1:00pm EST
+Implementing CTEM: Beyond Vulnerability Management
+Thurs, May 21, 2026 at 1pm EST
+More Webinars
+Black Hat USA | Mandalay Bay, Las Vegas
+The premier cybersecurity event of the year returns to Mandalay Bay with a re‑engineered, six‑day program built to ignite innovation, push boundaries, and bring the global security community together like never before. Use code: DARKREADING to save $200 on a Briefings pass or $100 on a Business pass.
+GET YOUR PASS
+Discover More
+Black Hat
+Omdia
+Working With Us
+About Us
+Advertise
+Reprints
+Join Us
+Newsletter Sign-Up
+Follow Us
+Copyright © 2026 TechTarget, Inc. d/b/a Informa TechTarget. This website is owned and operated by Informa TechTarget, part of a global network that informs, influences and connects the world’s technology buyers and sellers. All copyright resides with them. Informa PLC’s registered office is 5 Howick Place, London SW1P 1WG. Registered in England and Wales. TechTarget, Inc.’s registered office is 275 Grove St. Newton, MA 02466.
+Home
+|
+Cookie Policy
+|
+Privacy
+|
+Terms of Use
+Your Privacy Choices
+×
+×
+Get breaking cybersecurity news covering the latest threats, breaches and trends — straight to your inbox.
+I want to subscribe to the free Dark Reading 
+daily newsletter
+
+							THANK YOU
+						

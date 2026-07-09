@@ -1,0 +1,54 @@
+{
+  "article_title": "AI agents are running wild on developer machines. Incredibuild has a fix.",
+  "core_thesis": "Incredibuild's Islo sandbox addresses the security and operational risks of running AI coding agents on developer laptops by providing each agent with its own persistent, isolated cloud environment with policy-governed network, filesystem, and credential controls, enabling safe, continuous agent operation without human supervision.",
+  "detailed_summary": "The article highlights a growing problem in enterprise AI development: AI coding agents are increasingly capable but are typically run on developers' laptops, leading to security vulnerabilities (agents inherit all developer credentials) and operational issues (agents die when the laptop closes). Incredibuild, known for its build acceleration platform, introduces Islo, a sandbox that gives each AI agent its own dedicated, persistent cloud VM. Unlike ephemeral containers or cloud dev environments like GitHub Codespaces, Islo is designed for agents as the primary user, with long-running sessions, scoped credentials, and a policy layer enforced at specific choke points (network gateway, filesystem boundaries, audit logging). Credentials never reside inside the sandbox; a host-side proxy injects them per request based on agent identity and policy. Islo offers three pricing tiers: free (up to 5 concurrent sandboxes), Team ($0.07/CPU-hour, $0.04/GB-hour, up to 50 sandboxes), and Enterprise. It is available now at islo.dev, with a private beta underway.",
+  "entities": [
+    {
+      "name": "Incredibuild",
+      "type": "organization",
+      "role": "Company that developed Islo sandbox for AI agents; known for build acceleration platform."
+    },
+    {
+      "name": "Islo",
+      "type": "product",
+      "role": "Sandbox environment that gives each AI agent its own isolated, persistent cloud VM with policy controls."
+    },
+    {
+      "name": "Adam Gold",
+      "type": "person",
+      "role": "Director of Product Engineering at Incredibuild, quoted on the need for agent-specific environments."
+    },
+    {
+      "name": "Shimon Hason",
+      "type": "person",
+      "role": "CEO of Incredibuild, quoted on Islo's role in safe AI shipping."
+    },
+    {
+      "name": "Harbor Framework",
+      "type": "organization",
+      "role": "Open-source infrastructure project for agent benchmarks; partnered with Incredibuild for AI research workflows."
+    }
+  ],
+  "key_data_points": [
+    "AI coding agents currently run on developer laptops, causing them to die when the lid closes and giving them access to all developer credentials (SSH keys, AWS profiles, browser cookies) without judgment. (🟢 Relevant to Red Teaming: this credential inheritance is a major security risk; an attacker compromising an agent could pivot to all linked resources.)",
+    "Islo provides each agent with a persistent, addressable cloud VM that does not depend on human supervision, solving the lifecycle mismatch. (🟢 Relevant to DevOps/homelab: persistent environments with running services, databases, and build caches are essential for continuous integration workflows.)",
+    "Islo enforces policy at specific choke points: a network gateway outside the VM with allowlists for hosts/ports/methods, filesystem read/write rules per path, and an audit log of all commands, file changes, and network calls. (🟢 Relevant to Red Teaming: understanding these choke points helps in assessing bypass potential; the gateway is outside agent control, making it a strong control.)",
+    "Credentials never live inside the sandbox; a host-side proxy injects them at the network boundary per request based on agent identity and policy. (🟢 Relevant to security: credential-blind design reduces blast radius; for Red Teaming, this means credential theft from the agent is not possible.)",
+    "Islo pricing: free tier (up to 5 concurrent sandboxes), Team tier ($0.07/CPU-hour, $0.04/GB-hour, up to 50 sandboxes), Enterprise tier (custom). (🟢 Relevant to homelab/student: free tier allows experimentation with agent sandboxing at no cost.)"
+  ],
+  "methodology_steps": [
+    "1. Identify the need: AI coding agents require persistent, isolated environments with scoped credentials and policy enforcement, unlike human-centric cloud dev environments or ephemeral containers.",
+    "2. Deploy Islo sandbox: Each agent gets its own VM with a lifecycle independent of the developer's machine. The sandbox is credential-blind; credentials are injected by a host-side proxy at the network boundary.",
+    "3. Configure policy at choke points: Set network allowlists (hosts, ports, methods) via the external gateway, define filesystem read/write rules per path (e.g., allow /workspace, block ~/.ssh), and enable audit logging for all agent actions.",
+    "4. Run agents continuously: Agents operate in persistent environments with warm caches, running services, and databases. The sandbox does not idle out like human-oriented IDEs.",
+    "5. Integrate with CI/CD: Islo can be used alongside Incredibuild's acceleration technology to speed up build, test, and CI/CD workflows. For AI research, integrate with Harbor Framework for agent benchmarks."
+  ],
+  "conclusions": [
+    "The current practice of running AI agents on developer laptops is unsustainable due to security risks (credential exposure) and operational issues (agent downtime). Islo provides a dedicated, policy-governed environment that addresses both concerns, enabling safe, continuous agent operation.",
+    "Islo's credential-blind design and external policy enforcement at choke points represent a significant security improvement over traditional agent execution, as agents cannot exfiltrate credentials or bypass network/filesystem controls.",
+    "The product's pricing tiers make it accessible for small teams (free tier) and scalable for enterprises, with a focus on persistent, long-running sessions rather than ephemeral containers, aligning with real-world agent workflows."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your Red Teaming and DevOps interests. From a Red Teaming perspective, it details a new security product that isolates AI agents, limiting their blast radius—understanding its architecture (credential-blind design, external policy enforcement) helps you assess potential bypass techniques or identify gaps in similar implementations. For DevOps/homelab, Islo's persistent, policy-controlled environments offer a blueprint for running automated agents safely; you can experiment with the free tier to learn agent sandboxing. As a programmer, the concept of scoped credentials and lifecycle management for agents is directly applicable to building secure CI/CD pipelines or automated testing frameworks.",
+  "extra_advice": "Consider setting up a small homelab experiment using Islo's free tier to run a coding agent (e.g., a simple script that performs file operations and API calls) and test the policy enforcement. This hands-on experience will deepen your understanding of agent security controls and provide practical insights for both Red Teaming (evaluating sandbox effectiveness) and DevOps (designing secure automation workflows).",
+  "source_url": "https://thenewstack.io/incredibuild-ai-agents-sandbox-coding/"
+}

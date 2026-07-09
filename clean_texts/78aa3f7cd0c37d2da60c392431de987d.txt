@@ -1,0 +1,284 @@
+Cisco Wi-Fi boxes writing 5MB of undeletable data daily
+Jump to main content
+Search
+TOPICS
+Security
+All Security
+Cyber-crime
+Patches
+Research
+CSO
+Off-Prem
+All Off-Prem
+Edge + IoT
+Channel
+PaaS + IaaS
+SaaS
+On-Prem
+All On-Prem
+Systems
+Storage
+Networks
+HPC
+Personal Tech
+Cx0
+Public Sector
+Software
+All Software
+AI + ML
+Applications
+Databases
+DevOps
+OSes
+Virtualization
+Offbeat
+All Offbeat
+Columnists
+Science
+BOFH
+Legal
+Bootnotes
+Site News
+About Us
+Special Features
+All Special Features
+HPE: AI Explainers
+RSA Conference
+Agentic AI
+The Future of the Datacenter
+AWS:Reinvent
+Nvidia GTC
+SC25
+Supercomputing Month
+Vendor Voice
+All Vendor Voice
+Infinidat
+Everpure
+Rubrik
+Make it real with Capgemini and AWS
+Money Movement Hub
+ZTE
+Nutanix: Scale Kubernetes. Not Chaos.
+AWS New Horizon
+Resources
+Intelligence
+Webinars & Events
+Newsletters
+Search
+Sign in
+Datacenter
+Security
+Microsoft
+AWS
+Developer
+Open Source
+IT Careers
+Columnists
+Who, Me?
+On Call
+REG AD
+Networks
+Cisco Wi-Fi boxes are filling their disks with 5MB of undeletable data every day
+Fix for critical flaw is an OS update you may not be able to make because the junk data uses all memory
+Simon Sharwood
+Simon
+Sharwood
+11
+Published
+Fri 17 Apr 2026 
+//
+ 04:35 UTC
+More than 230 different models of Cisco Wi-Fi access points may be writing 5MB a day of nonessential data, filling their onboard flash memory to the point at which they lack space for future software updates.
+The networking giant revealed the mess earlier this week in an 
+advisory
+ that warns “Certain Cisco Access Points (APs) may fail to download new software images or Access Point Service Packs.”
+The reason for the mess is an updated library in Cisco IOS XE – specifically versions 17.12.4, 17.12.5, 17.12.6, and 17.12.6a – which sees access points generate a log file named 
+cnssdaemon.log
+.
+REG AD
+Cisco says that file grows by 5MB every day and can’t be deleted from the command line interface.
+REG AD
+“The longer an AP runs the affected software, the higher the probability that a software download will fail due to insufficient disk space,” Cisco warns.
+Moving to a version of IOS XE that doesn’t write the log file is the obvious fix, but Cisco warns it’s not that simple because if your Wi-Fi box has filled its flash with junk, it may not have enough internal storage space to hold the updated OS.
+If that’s the case, Cisco warns you could end up with a bootloop.
+MORE CONTEXT
+Cisco turns to titanium spoons and sand dunes to build a better … box?
+Cisco set to release home-brew hypervisor as a VMware alternative
+Cisco hikes prices to cover memory cost rises, says you don’t much care
+Cisco challenges Broadcom, Nvidia with a 102.4T switch of its own
+Cisco’s advisory therefore includes a procedure to test for the presence of the offending IOS XE releases, and instructions on how to sort things out.
+The advisory also lists over 230 models of Cisco access points that run the rotten versions of IOS XE.
+The Register
+ is certain all readers running Cisco Wi-Fi kit will have accurate and recently-updated inventories of your access point fleets and can therefore swiftly identify and remediate hardware that needs attention. Those of you who don’t have that info at hand doubtless inherited a mess from a slovenly predecessor and now get to be the hero who tidies things up.
+While you’re at it, you may also wish to consider another issue Cisco identified which 
+relates to voicemail synching issues
+ that may arise once Microsoft 
+shuts down
+ Exchange Web Services. ®
+wi-fi
+on_prem
+networks
+network
+cisco
+11
+REG AD
+
+Networks
+
+Akamai surges on big LLM deal as Cloudflare dims
+
+
+    Good times, bad times
+
+
+AI and ML
+
+GPT-5.5 may burn fewer tokens, but it always burns more cash
+
+
+    It’s not just gas prices skyrocketing. Frontier-model pricing keeps climbing too
+
+
+AI + ML
+
+AI inference just plays by different rules
+
+
+    Why no cloud storage architecture was designed for what agentic AI is about to demand
+
+
+CxO
+
+Tech is now rolling out the old grievance grift
+
+
+    Not just for hated US Presidents, now even tech bros lament their foes
+
+
+AI + ML
+
+Trump jumps from 'anything goes' to 'strict regulation' AI policy
+
+
+    In a word, 'Huh?'
+
+
+Security
+
+Worm rubs out competitor's malware, then takes control
+
+
+    All your compromised credentials are belong to us now instead of the other gang
+
+
+                    MOST POPULAR
+                
+Cyber-crime
+Taiwan cops say student's radio kit brought bullet trains to a standstill
+off-prem
+IBM Cloud evaporates as datacenter loses power
+AI + ML
+Chrome silently installs a 4 GB local LLM on your computer
+AI + ML
+Brit mathematician lets AI agent loose with credit card – cue password leaks, CAPTCHA chaos and more
+Software
+Firefox integrates an ad-blocker, but not to block ads
+EVENTS
+Securing the Untrusted Agentic Development Layer
+Join us to learn how to architect a development environment where your builders and their agents can move fast and securely.
+Toxic Flows: When Your AI Agent Skill Becomes a Supply Chain Attack
+When a developer installs an AI agent skill – granting it access to secured IT resources and data – they make a significant trust decision.
+The Hardware Crunch: How Supply Chain Turbulence Is Forcing a New IT Playbook
+Infrastructure teams are facing a perfect storm: extended hardware lead times, rising costs driven by AI demand, and accelerated platform timelines.
+Identity Resilience: The New Mandate for Cyber Survival
+Join Druva experts for a compelling deep dive into what it takes to build an identity-first recovery strategy in this new threat landscape.
+Identity Resilience: The New Mandate for Cyber Survival
+Join Druva experts for a compelling deep dive into what it takes to build an identity-first recovery strategy in this new threat landscape.
+Unfriendly Followers: The Black Market For Your Identity
+They’ll reveal how attackers use your profile as intel and show you how to make yourself harder to target
+AI Found the Problem. Now What?
+AI is transforming the software development lifecycle, helping teams identify and remediate vulnerabilities before they reach production.
+
+            EXPLORE ALL OF OUR EVENTS
+        
+AI
+Public Sector
+UK wants fresh fingerprints on £300M biometrics platform
+Home Office probes supplier interest as core police and immigration system heads for support shake-up
+Add section name here
+Akamai surges on big LLM deal as Cloudflare dims
+Good times, bad times
+ai and ml
+GPT-5.5 may burn fewer tokens, but it always burns more cash
+It’s not just gas prices skyrocketing. Frontier-model pricing keeps climbing too
+CxO
+Tech is now rolling out the old grievance grift
+Not just for hated US Presidents, now even tech bros lament their foes
+Security
+Worm rubs out competitor's malware, then takes control
+All your compromised credentials are belong to us now instead of the other gang
+Infosec
+Add section name here
+Akamai surges on big LLM deal as Cloudflare dims
+Good times, bad times
+ai and ml
+GPT-5.5 may burn fewer tokens, but it always burns more cash
+It’s not just gas prices skyrocketing. Frontier-model pricing keeps climbing too
+CxO
+Tech is now rolling out the old grievance grift
+Not just for hated US Presidents, now even tech bros lament their foes
+Security
+Worm rubs out competitor's malware, then takes control
+All your compromised credentials are belong to us now instead of the other gang
+cyber-crime
+Disgraced US gov software contractor found guilty of database destruction
+Twin brother still faces trial over broader cybercrime allegations
+FOSS
+UK wants fresh fingerprints on £300M biometrics platform
+Home Office probes supplier interest as core police and immigration system heads for support shake-up
+Akamai surges on big LLM deal as Cloudflare dims
+Good times, bad times
+GPT-5.5 may burn fewer tokens, but it always burns more cash
+It’s not just gas prices skyrocketing. Frontier-model pricing keeps climbing too
+Tech is now rolling out the old grievance grift
+Not just for hated US Presidents, now even tech bros lament their foes
+Worm rubs out competitor's malware, then takes control
+All your compromised credentials are belong to us now instead of the other gang
+Disgraced US gov software contractor found guilty of database destruction
+Twin brother still faces trial over broader cybercrime allegations
+FEATURES
+GNOME may rule Ubuntu Resolute Raccoon, but X.org isn't roadkill yet
+OpenClaw, but in containers: Meet NanoClaw
+Open source registries don't have enough money to implement basic security
+Contain your Windows apps inside Linux Windows
+The Linux mid-life crisis that's an opportunity for Tux-led transformation
+Too much AI for some, too little for others: Why AMD can't win with investors
+How agentic AI can strain modern memory hierarchies
+'Ralph Wiggum' loop prompts Claude to vibe-clone commercial software for $10 an hour
+How one developer used Claude to build a memory-safe extension of C
+No one talking about a datacenter could be a sign one is coming
+✕
+Biting the hand that feeds IT
+About Us
+
+Contact us
+Advertise with us
+Who we are
+Our Websites
+
+The Next Platform
+DevClass
+Blocks and Files
+Situation Publishing
+Your Privacy
+
+Cookies Policy
+Privacy Policy
+Ts & Cs
+Do not share my personal information
+Your Consent Options
+Archives
+27 years of articles
+
+        Copyright. All rights reserved © 1998-2026.
+    

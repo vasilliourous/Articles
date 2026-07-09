@@ -1,0 +1,371 @@
+I rebuilt my home server after 3 years, and these mistakes nearly cost me everything
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+More Action
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I rebuilt my home server after 3 years, and these mistakes nearly cost me everything
+By 
+Ayush Pande
+Published
+ Apr 29, 2026, 7:00 AM EDT
+Ayush Pande is a PC hardware and gaming writer. When he's not working on a new article, you can find him with his head stuck inside a PC or tinkering with a server operating system. Besides computing, his interests include spending hours in long RPGs, yelling at his friends in co-op games, and practicing guitar. 
+Sign in to your 
+XDA
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																						
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+As someone who has been a part of the home lab ecosystem for almost a decade, I’ve cycled between several devices over the years. Heck, I’ve switched distributions, container runtimes, and virtualization platforms a bunch of times before I ended up with my current software arsenal. However, one thing that has remained consistent all this time is the amount of experience I gained from my tinkering misadventures and botched experiments.
+✕
+ Remove Ads
+In fact, I still remember some of the fatal mistakes I made when I switched to my current Xeon workstation after using my old Ryzen build for almost three years. While I’ve come a long way since then, here’s a quick overview of everything I did wrong when I rebuilt my primary home server, so you don’t repeat the same mistakes as my amateur self.
+Related
+
+			I used an old gaming laptop as a home server, and it beats most entry-level mini-PCs
+		
+My outdated behemoth of a laptop doubles as a powerful server node
+Posts
+4
+By 
+Ayush Pande
+Jan 3, 2026
+
+                        Forgetting to tweak the virtual guests I’d armed with GPUs
+               
+
+            Or even the CPU host setting, for that matter
+    
+I’ve always loved being able to pass PCI devices to my virtual guests. So much so that I’d configured GPU passthrough for a bunch of LXCs on my Ryzen-based Proxmox node, and even set up provisions to quickly wipe out the config files and move my graphics card to my virtual machines if I wanted to work on demanding projects.
+Well, what I failed to realize was that my virtual guests wouldn’t work unless I modified their configs and removed the old GPU drivers to accommodate my Team Blue (specifically the Intel Arc A750) card. For reference, I had a Proxmox Backup Server in charge of housing the snapshots, but never quite realized I could use it to migrate my virtual guests. Instead, I used the ol’ method of creating vzdump backups, moving them to my PC, and using an SCP tool to migrate my LXCs and VMs over to the other node (which is one heck of a dumb move on its own).
+✕
+ Remove Ads
+As you’d expect, attempting to boot my virtual guests either resulted in them stopping immediately or running into driver issues every once in a while. Worse still, I’d realized I could slap the host CPU setting on every VM to boost its performance, which further complicated things post-migration. Luckily, I had ample documentation to realize my mistake and make things right with the CPU setting, though the GPU passthrough problem was only resolved after I uninstalled the drivers on the affected LXCs (and in some cases, after spinning up new ones).
+
+                        Clustering everything on a 2-node setup… without a Q-Device
+               
+
+            In hindsight, I didn’t even need a cluster back then
+    
+Building clusters when you don’t really require them is something I always caution new home labbers from doing, especially since I speak from experience. You see, once I’d finished moving the virtual guests and gotten accustomed to the Xeon node, I still had my old PC in a functioning state. So, I did what any tinkerer would do in this situation – continue using it for my server experiments. And once I’d stumbled upon the cluster provisions on Proxmox, I figured I could configure them on my 2-node home lab.
+✕
+ Remove Ads
+Now, there’s nothing wrong with a cluster comprising only two nodes. Heck, my current PVE cluster (which coincidentally uses the same Ryzen system) includes two systems in a 
+ZFS replication-powered high-availability setup
+. But I have a third Raspberry Pi acting as the Quorum Device, meaning my cluster will still remain online even if either device goes offline. Without my pint-sized companion, my cluster would lose the tie-breaker device to maintain quorum if either node goes down. That’s pretty much what happened a few weeks later after I’d deployed my first two-node cluster. Since I wanted to check what 
+XCP-ng
+ was all about, I removed the Proxmox drive on my Ryzen system and began installing the platform, blissfully unaware that my main PVE node had also gone down. Fortunately, I’d only swapped the SSD on the former; otherwise, I would’ve had to reset everything and spend hours restoring snapshots from my PBS server.
+
+                        Overprovisioning the system resources
+               
+
+            Some habits die hard
+    
+Truth be told, this isn’t something I realized immediately after I upgraded my server, as I was too busy enjoying the extra computational resources at my disposal thanks to the ex-enterprise rig. For starters, I began allocating RAM to my virtual guests with reckless abandon, and would often run GUI-heavy VMs even for projects that didn’t need them. Over time, I’d overprovisioned my memory resources so much that my system had started to feel sluggish, a situation that wasn’t helped by the fact that I was using ZFS pools on my storage server. Once I ended up crashing the server, I realized my folly and began optimizing my resource allocation habits, and even started moving away from intensive VMs to lightweight LXCs.
+✕
+ Remove Ads
+
+                    Subscribe to our newsletter for smarter home-lab fixes
+                
+Level up your home-lab skills by subscribing to the newsletter for hands-on lessons on migrations, GPU passthrough, clustering pitfalls, and resource tuning. Practical, real-world tips to help you avoid repeat mistakes.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+That wasn’t the worst part, though. Besides assigning too much RAM to my virtual guests, I’d also gone overboard when giving them virtual SCSI disks, to the point where my VMs and LXCs occupied over twice the max storage capacity of my server. The thing is, they didn’t end up consuming all that space, so my local-lvm and ZFS pools reported a lot of free space. But I didn’t realize this mistake until after I tried upgrading to 
+PVE 9 last year
+. After successfully updating to the new Proxmox version, my node threw an error mentioning my storage pools were offline. After a lot of panicked searches, I came across a forum post highlighting the same problem, and running the commands a kind tinkerer had mentioned in the thread helped resolve this issue. But it taught me about the importance of keeping my resource allocation tendencies under control.
+Related
+
+			Your Proxmox 8 server stops getting security updates in August, and upgrading to PVE 9 isn't straightforward
+		
+Whatever you do, remember to back up your virtual guests
+Posts
+4
+By 
+Ayush Pande
+Mar 25, 2026
+
+            Home labbing is all about trial and error, anyway
+    
+Although I can’t stop smirking while I type this article, I’d say it’s worth documenting my mistakes. If not for newcomers, then at least for myself. Every issue I’ve encountered so far has made me a little more proficient in the fine art of home labbing. And that’s pretty much what home servers are meant for – making new mistakes frequently and learning valuable lessons... occasionally.
+✕
+ Remove Ads
+
+    						Proxmox
+			
+Proxmox is an open-source platform built on Debian Linux designed for server virtualization.
+See at Proxmox
+Expand
+Collapse
+Other Hardware
+Home Lab
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			Self-hosted LLM took my personal knowledge management system to the next level
+		
+
+			I installed Immich Power Tools to fix my 170,000-photo library, and it saved me weeks of work
+		
+
+			I finally found a local LLM I want to use every day (and it's not for coding)
+		
+
+                                                
+                
+                                                    
+                                    Thread
+                                                    
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Be the first to post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+This space is open for discussion.
+Be the first to share your thoughts.
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 27, 2026
+
+                                    Phew: turns out that Claude Code Pro members are keeping Opus after all
+                            
+Apr 27, 2026
+
+                                    These motherboard headers do something most PC builders never discover
+                            
+Apr 27, 2026
+
+                                    I tested Claude Code, Codex, Lovable, and Replit side by side, and only one felt ready for real work
+                            
+Apr 24, 2026
+
+                                    Fedora is becoming the default Linux recommendation, and Ubuntu did this to itself
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:07
+
+                            The end of affordable PCs?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:32
+
+                            Mac OS X launch: 25 years later
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:14
+
+                            3 PC gaming anniversaries from 1996
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            How much data does Steam use in a year?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:04
+Skip Ad
+5

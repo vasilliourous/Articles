@@ -1,0 +1,157 @@
+Cisco Webex Services Vulnerability Let Remote Attacker Impersonate Any User
+Linkedin
+Naver
+RSS
+Twitter
+Home
+Threats
+Cyber Attacks
+Vulnerabilities
+Breaches
+Top 10
+Search
+Cyber Security News
+Latest Cyber Security News
+Saturday, May 9, 2026
+Linkedin
+RSS
+Twitter
+Google News
+Google News
+Cyber Security News
+Latest Cyber Security News
+Home
+Threats
+Cyber Attacks
+Vulnerabilities
+Breaches
+Top 10
+Follow on LinkedIn
+Search
+Home
+Cyber Security News
+Cisco Webex Services Vulnerability Let Remote Attacker Impersonate Any User
+By
+Abinaya
+April 16, 2026
+Cisco has issued a critical security advisory warning of a severe vulnerability in its cloud-based Webex Services. Tracked as CVE-2026-20184, this flaw carries a maximum Common Vulnerability Scoring System (CVSS) base score of 9.8 out of 10
+According to the advisory published on April 15, 2026, the vulnerability enables an unauthenticated, remote threat actor to completely 
+bypass authentication mechanisms 
+and impersonate any legitimate user on the platform.
+The vulnerability specifically affects organizations that use 
+single sign-on (SSO) integration in the Webex Control Hub
+.
+Because Webex is a widely used enterprise collaboration tool, the ability for an outsider to seamlessly impersonate users poses a massive risk to corporate data, internal communications, and meeting privacy.
+Cisco Webex Services Vulnerability
+The core issue stems from 
+improper certificate validation 
+within the Webex service’s SSO implementation, categorized as weakness CWE-295.
+When integrating an Identity Provider (IdP) for SSO, the system failed to correctly validate the security certificates used to authenticate incoming connection requests.
+According to the technical details provided by Cisco, threat actors can weaponize this weakness through a relatively straightforward attack path:
+An unauthenticated attacker connects directly to a vulnerable Cisco Webex service endpoint.
+The attacker supplies a specially crafted authentication token.
+Due to the improper validation process, 
+the system accepts the malicious token
+ as legitimate.
+The attacker is instantly granted unauthorized access and fully impersonates the targeted user account.
+While Cisco has already applied a 
+patch to the backend of its cloud-based Webex Services
+, patching the cloud infrastructure alone is not enough to resolve the issue for end-users.
+Cisco has explicitly stated that no temporary workarounds are available for this vulnerability.
+To fully secure their environments and avoid sudden service interruptions, affected customers must take immediate manual action.
+Administrators of organizations using SSO integration must 
+upload a new SAML certificate for the Identity Provider (IdP)
+ directly to the Webex Control Hub.
+Organizations that fail to update their SAML certificates risk ongoing exposure to potential impersonation attacks and disrupted connectivity to their Webex services.
+Active Threat Status
+Fortunately, this critical flaw was discovered during internal security testing conducted by Cisco’s own engineers. The Cisco Product Security Incident Response Team (PSIRT) confirmed that, at the time of publication, there are no known public announcements regarding the flaw.
+Furthermore, threat intelligence indicates there is currently no evidence of malicious exploitation or 
+zero-day attacks
+ leveraging CVE-2026-20184 in the wild.
+Despite the lack of active exploitation, the 9.8 CVSS score indicates that organizations should treat this vulnerability as a top priority.
+Administrators are strongly 
+advised to review the official Cisco Security Advisory (cisco-sa-webex-cui-cert-8jSZYhWL)
+ and follow the official documentation to manage their single sign-on integration in Control Hub immediately.
+Follow us on 
+Google News
+, 
+LinkedIn
+, and 
+X
+ for daily cybersecurity updates. 
+Contact us
+ to feature your stories.
+Tags
+cyber security
+cyber security news
+Copy URL
+Linkedin
+Twitter
+ReddIt
+Telegram
+Abinaya
+https://cybersecuritynews.com/
+Abi is a Security Editor and fellow reporter with Cyber Security News. She is covering various cyber security incidents happening in the Cyber Space.
+Trending News
+Critical Apache HTTP Server Flaw Exposes Millions of Servers to RCE Attacks
+28 Fake Call History Apps on Google Play with 7.3M+ Downloads Trick Users to Steal Payments
+Let’s Encrypt Halts Certificate Issuance After Cross-Signed Root Certificate Incident
+Apache MINA Vulnerabilities Enables Remote Code Execution Attacks
+DOJ Sentences Two Americans to Prison for ALPHV BlackCat Attacks on U.S. Victims
+Load more
+Latest News
+Cyber Security News
+NVIDIA Data Breach Reportedly Exposes Personal Information of GeForce Users
+Cyber Security
+Let’s Encrypt Halts Certificate Issuance After Cross-Signed Root Certificate Incident
+Cyber Security
+Critical Microsoft 365 Copilot Vulnerabilities Expose sensitive Information
+Cyber Security News
+New PamDOORa Backdoor Attacking Linux Systems to Steal SSH Credentials
+Cyber Security News
+Hackers Deploy Modular RAT With Credential Theft and Screenshot Capture Capabilities
+Follow us
+Cyber Security News is a Dedicated News Platform For Cyber News, Cyber Attack News, Hacking News & Vulnerability Analysis.
+Linkedin
+RSS
+Twitter
+Google News
+Google News
+Cybersecurity News
+Home
+About Us
+Contact Us
+Privacy Policy
+Latest news
+TCLBANKER Malware Targets Users Through Self-Propagating WhatsApp and Outlook Worm Modules
+Cyber Security News
+May 9, 2026
+
+A highly sophisticated Brazilian banking trojan named TCLBANKER, tracked...
+NVIDIA Data Breach Reportedly Exposes Personal Information of GeForce Users
+Cyber Security News
+May 9, 2026
+
+A data breach at GFN.AM, an authorized NVIDIA GeForce...
+Let’s Encrypt Halts Certificate Issuance After Cross-Signed Root Certificate Incident
+Cyber Security
+May 9, 2026
+
+Let's Encrypt temporarily suspended all certificate issuance on May...
+CISO Corner
+DarkMoon AI-Powered Autonomous Penetration Testing Platform With 50+ Tools
+Cyber Security News
+May 8, 2026
+
+A new open-source cybersecurity platform called DarkMoon has emerged...
+CVE MCP Server Turns Claude Into a Fully Capable Security Analyst With 27 Tools Across 21 APIs
+Cyber Security News
+April 30, 2026
+
+A new open-source project called CVE MCP Server is...
+pentest-ai-agents – 28 Claude Code Subagents for Penetration Testing
+Cyber Security
+April 27, 2026
+
+A new open-source toolkit called pentest-ai-agents is redefining how...
+© Copyright 2026 - Cyber Security News

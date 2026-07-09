@@ -1,0 +1,822 @@
+Claude Code with a local LLM running offline is the hybrid setup I didn't know I needed
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+12
+More Action
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+Claude Code with a local LLM running offline is the hybrid setup I didn't know I needed
+By 
+Joe Rice-Jones
+Published
+ May 3, 2026, 6:00 AM EDT
+Maker, meme-r, and unabashed geek, Joe has been writing about technology since starting his career in 2018 at KnowTechie. He's covered everything from Apple to apps and crowdfunding and loves getting to the bottom of complicated topics. In that time, he's also written for SlashGear and numerous corporate clients before finding his home at XDA in the spring of 2023.
+
+He was the kid who took apart every toy to see how it worked, even if it didn't exactly go back together afterward. That's given him a solid background for explaining how complex systems work together, and he promises he's gotten better at the putting things back together stage since then. 
+Sign in to your 
+XDA
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+12
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+I've been 
+using Claude Code 
+for all kinds of things lately
+, but I'm always worried about my token usage
+, even on the Max plan. Especially with Opus 4.7, where my allocation seems to get burned through on simple tasks it used to handle quickly. I've also been moving into locally hosting LLMs, after getting a couple of 
+DGX Spark units from Asus to play with
+, which has enabled me to run much larger models, and hence 
+more capable ones
+.
+✕
+ Remove Ads
+And while 
+Nvidia's cloud has plenty of free-to-use models
+, it still requires a constant internet connection. The problem I've had with local LLMs is twofold — the ones small enough to run on consumer hardware were barely better than autocomplete, and the hardware needed to run the larger models cost as much as a second-hand car.
+That's changing (somewhat) with hardware like the Nvidia DGX Spark. Sure, they're still expensive, but compared to Claude Max plans or API usage, it looks like an investment that will start saving money after just over a year. And as a business expense, it's a line item. It's not perfect and isn't a full replacement for Claude or other cloud LLMs, but they're getting closer, and having a local LLM to handle the tasks helps save my cloud tokens for the ones it can't handle.
+Related
+
+			Claude Code works best when you stop asking it to code
+		
+Claude Code became far more useful once I stopped treating it like a code generator and started using it to understand projects and terminal chaos.
+Posts
+10
+By 
+Jeff Butts
+Apr 23, 2026
+
+                        Why use a local LLM with Claude Code?
+               
+
+            Burning through cloud tokens only gets you so far
+    
+ Okay, while I could use 
+Pi or OpenCode
+ and still switch between the local LLM and Claude, Anthropic has already restricted use of my Claude subscription on third-party tools, and I'd rather not pay the API costs for things I'm just creating for myself. If work was paying, then I'd have no worries about going API-first, but that's not the case. To do the same tasks on API, it would be several times, if not an order of magnitude more expensive than my Max plan.
+✕
+ Remove Ads
+And that's also why the local LLM helps. Claude Code already has a switch between Opus, Sonnet, and Haiku, and setting up an Anthropic API-capable local LLM slots in as a fourth. It's more complicated to switch between multiple local LLMs, but honestly, the only one right now that's capable enough for coding is Qwen3-Coder-Next, and until that changes, I don't need another running.
+That fourth slot gets used by Claude Code when I'm pulling apart existing code for malware and other analysis, or when I'm doing sanity checks on the code that Opus plans and executes. I've found it struggles with building things from scratch, but if it has existing code, the local model is great at figuring out what is going on inside the program.
+
+            INT8 precision for a very reasonable cost
+    
+ Asus happened to send me two GX10s on an extended loan because I wanted to play with connecting them as a cluster. Getting models to run across the cluster has so far eluded me, but I'm getting closer by pulling together little nuggets of knowledge from GitHub comments and forum posts.
+That means I've been running Qwen3-Coder-Next FP8 on a single box, which uses about 88 GiB of GPU memory in active use. That still gives plenty of memory for context and for the OS and CPU, while staying stable. It's stable with a 32K context, but can be pushed out a little bit more to 40K for some tasks.
+✕
+ Remove Ads
+
+    						Asus Ascent GX10
+			
+$3500 at Amazon
+$3500 at Asus
+$3561 at Newegg
+Expand
+Collapse
+
+                        The unified RAM on DGX Spark units makes this possible
+               
+
+            Larger models need extraordinary amounts of VRAM
+    
+Nvidia's GB10 Grace Blackwell Superchip is a mini supercomputer in a Mac mini sized box. With 128GB of LPDDR5x memory shared between the Arm CPU and the Blackwell GPU, these are capable of running around 80 billion parameters at any time without taking the RAM that the system needs to keep running.
+Honestly, the only thing that's been holding me back somewhat on these specific Asus GX10s is that they have only 1TB of SSD storage. That makes training larger tasks like Nanochat difficult, as its training data is over 800 GB. But for pretrained LLM models? It's more than enough, and plenty of space to have several models available.
+Quiz
+8 Questions · Test Your Knowledge
+How much do you know about Claude?
+Trivia challenge
+Think you know Anthropic's AI assistant? Put your knowledge of Claude to the test.
+Origins
+Capabilities
+Safety
+Features
+Design
+Begin
+01 / 8
+Origins
+Which company created Claude?
+A
+OpenAI
+B
+Google DeepMind
+C
+Anthropic
+D
+Meta AI
+Correct! Claude was created by Anthropic, an AI safety company founded in 2021. Anthropic was co-founded by Dario Amodei and Daniela Amodei, among others who previously worked at OpenAI.
+Not quite. Claude is made by Anthropic, not to be confused with OpenAI, which makes ChatGPT. Anthropic was founded in 2021 with a strong focus on AI safety research.
+Continue
+02 / 8
+Safety
+What is the name of the safety and values framework Anthropic developed to guide Claude's behavior?
+A
+RLHF Protocol
+B
+Constitutional AI
+C
+SafeGuard Framework
+D
+Alignment Core
+Correct! Anthropic developed Constitutional AI (CAI), a technique that trains Claude using a set of principles — a 'constitution' — to guide its responses toward being helpful, harmless, and honest.
+Not quite. The framework is called Constitutional AI (CAI). It is a novel training approach pioneered by Anthropic that uses a written set of principles to help the model self-critique and improve its own outputs.
+Continue
+03 / 8
+Origins
+What is the name most commonly associated with inspiring Claude's name?
+A
+Claude Shannon, the father of information theory
+B
+Claude Monet, the French impressionist painter
+C
+Claude Lévi-Strauss, the anthropologist
+D
+Claude Bernard, the physiologist
+Correct! Claude Shannon is widely cited as the inspiration behind the name. Shannon founded information theory, which is foundational to all modern computing and digital communication — a fitting namesake for an AI.
+Not quite. The name Claude is most commonly associated with Claude Shannon, the mathematician and electrical engineer who founded information theory. His pioneering work laid the groundwork for the digital age.
+Continue
+04 / 8
+Capabilities
+Which of the following best describes Claude's context window capability in its more advanced versions?
+A
+Up to 4,000 tokens
+B
+Up to 16,000 tokens
+C
+Up to 100,000 tokens or more
+D
+Up to 32,000 tokens
+Correct! Advanced versions of Claude support context windows of 100,000 tokens or more, allowing it to process entire books, lengthy codebases, or large documents in a single conversation — a standout feature at the time of its release.
+Not quite. Claude's advanced versions support context windows of 100,000 tokens or more. This was a significant leap beyond many contemporaries and allows Claude to reason over very large amounts of text in one session.
+Continue
+05 / 8
+Design
+Which of the following principles is NOT part of Anthropic's core goal for Claude?
+A
+Helpful
+B
+Harmless
+C
+Honest
+D
+Hierarchical
+Correct! Anthropic's guiding principles for Claude are to be Helpful, Harmless, and Honest — often called the 'three H's.' Hierarchical is not part of this framework. The goal is to make AI that is safe and beneficial for everyone.
+Not quite. Anthropic's three guiding principles for Claude are Helpful, Harmless, and Honest. 'Hierarchical' is not one of them. These three H's shape how Claude is trained to interact with users responsibly.
+Continue
+06 / 8
+Features
+What was a key distinguishing feature of Claude 2 when it launched compared to many rival models at the time?
+A
+It could generate images natively
+B
+It had a 100,000-token context window
+C
+It could browse the internet in real time
+D
+It supported voice conversations out of the box
+Correct! Claude 2 launched with a 100,000-token context window, which was remarkable at the time. This allowed users to feed in entire books or massive codebases for analysis, setting Claude apart from many competing models.
+Not quite. The standout feature of Claude 2 was its 100,000-token context window. Claude does not natively generate images, and real-time browsing and built-in voice were not launch features of Claude 2.
+Continue
+07 / 8
+Safety
+Anthropic describes itself primarily as which type of company?
+A
+A consumer electronics company
+B
+An AI safety and research company
+C
+A cloud infrastructure provider
+D
+A social media and AI hybrid company
+Correct! Anthropic describes itself as an AI safety and research company. Unlike some competitors who lead with products or platforms, Anthropic's founding mission centers on building AI systems that are safe, interpretable, and steerable.
+Not quite. Anthropic is primarily an AI safety and research company. Its founding mission is rooted in making AI that is safe and understandable, which is why safety-focused training methods like Constitutional AI are central to its work.
+Continue
+08 / 8
+Features
+Which of the following tasks is Claude specifically designed to handle well?
+A
+Rendering 3D graphics in real time
+B
+Long-form writing, summarization, and complex reasoning
+C
+Executing system-level operating commands autonomously
+D
+Streaming live video content analysis
+Correct! Claude excels at long-form writing, summarization, coding assistance, and complex reasoning tasks. Its large context window and nuanced language understanding make it particularly well suited for handling detailed, multi-step text-based work.
+Not quite. Claude is designed for text-based tasks like writing, summarization, analysis, and reasoning. It does not render graphics, autonomously execute system commands, or perform live video analysis — it is a large language model at its core.
+See My Score
+Challenge Complete
+Your Score
+/ 8
+Thanks for playing!
+Try Again
+
+            It's important to know what the limitations are
+    
+Currently, no local LLM model can rival the reasoning of the large cloud models. I'm not entirely sure if that will ever change, but given how fast the field is changing, it won't be long before local LLMs reach the level of current cloud models. Not for general tasks, probably, but for specialized coding tasks? Sure, especially if models start getting trained for specific coding languages.
+✕
+ Remove Ads
+Qwen3-Coder-Next is a non-reasoning model, so it behaves very differently from the models Claude Code uses by default. That's no digital pausing before it gives me a direct answer, which reduces the anthropomorphic nature cloud LLMs have taken on. To some degree, that makes it feel similar to how fast Opus is on Claude Code, since the cloud model pauses to 'think' before answering.
+Related
+
+			I finally found a local LLM I actually want to use for coding
+		
+Qwen3-Coder-Next is a great model, and it's even better with Claude Code as a harness.
+Posts
+24
+By 
+Adam Conway
+Feb 18, 2026
+
+            Being able to switch to a local LLM for tasks saves my subscription for the hard stuff
+    
+This hybrid model of using a hyperscaler cloud model for deep thinking, planning, and executing, and a capable local LLM for diving into existing code, is the best of two worlds. I have a local LLM that's capable of real work, that runs on hardware that doesn't cost a second mortgage. And that keeps my cloud tokens for the thinking and planning tasks that larger models excel at.
+✕
+ Remove Ads
+AI tools
+Claude
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I switched from Claude Code to Codex for a week, and the trade-offs surprised me
+		
+
+			I tried Cursor, Claude Code, and Google Antigravity for a month and I have a clear winner for you
+		
+
+			I gave Claude Code control of my desktop for a week, and it automated things I didn't think were possible
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+12
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Steven
+Steven
+Steven
+#DT586834
+Member since 2025-07-11
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I love these articles that say "I took my AI usage offline" while simultaneously shilling $5000 hardware solutions the average person will never justify the cost of owning. These articles are getting ridiculous. Show me an AI model running on consumer hardware that can do full agentic coding without dropping $$$$ and I'll be impressed. 
+2026-05-03 11:03:16
+Upvote
+
+                                    10
+                            
+Downvote
+Reply
+
+                        6
+                    
+Copy
+        
+Glenn
+Glenn
+Glenn
+#WC190768
+Member since 2024-12-27
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+More like $7k or $8k for two of those so yeah. Plus it seems that he was given them as freebies because of journo credentials. 🤨
+2026-05-03 13:15:20
+Upvote
+Downvote
+Reply
+Copy
+        
+ModernXDASucks
+ModernXDASucks
+ModernXDASucks
+#QN655918
+Member since 2024-11-21
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+"After getting $5K+ equipment for the cost of nothing to due to my position as a reviewer in order to save a few dollars on API costs"
+These people are so tone-deaf, it's not even funny to point out anymore.
+2026-05-03 13:17:00
+Upvote
+Downvote
+Reply
+Copy
+        
+Nic
+Nic
+Nic
+#OP090401
+Member since 2026-04-27
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I have a 5yo gaming PC that runs a lot of models just fine. Decompose coding challenges to manageable chunks and it saves me hours of code-generation time, have a general query and it gets it right, customise for a particular application using RAG and it can be spectacular.
+I think this is the direction of travel. On premise and even using consumer hardware, the landscape of LLm usage is going to change dramatically.
+2026-05-03 17:02:15
+Upvote
+Downvote
+Reply
+Copy
+        
+B
+B
+B
+#UI704790
+Member since 2026-05-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+For us to get consumer-level hardware at reasonable prices, we first had to finance mainframes that took up an entire room. These machines are first generation, and finding a consumer fir as a viable business model for local AI, we need pioneers to find use case to with expensive machinery.
+Your mileage may vary, but I run an agent that works pretty well on an NVIDIA 3070TI and falling back to the gemini API when it needs to be "smarter".  
+2026-05-03 22:08:16
+Upvote
+Downvote
+Reply
+Copy
+        
+Noah
+Noah
+Noah
+#QP407845
+Member since 2026-05-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I have a qwen3.5 4b in a custom harness and TUI I built that codes just fine with 256k context on 6gb of ram offline. And an Autonomous cognitive substrate that runs offline and it's portable, works on any windows machine. It thinks, learns, proactively initiates conversation, evolves and has a perfect permanent memory that runs on 8gb of ram. These guys are wasting money for real lol. 
+2026-05-04 04:06:40
+Upvote
+Downvote
+Reply
+Copy
+        
+Steven
+Steven
+Steven
+#DT586834
+Member since 2025-07-11
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+ I gotta have more info. Do you have a Github repo for it?
+2026-05-04 16:59:17
+Upvote
+Downvote
+Reply
+Copy
+        
+Eric
+Eric
+Eric
+#JM732227
+Member since 2026-05-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I have great results on a 64GB MacBook Pro until I don't. Server and model configuration doesn't get talked about enough. I'm happily coding away getting performance that is not slow enough to drive me back to a paid subscription and then the server stops responding. The server I am using mlx_lm doesn't have the right options to dial it in between compact way too often, or stop responding without any details. At least I can max the memory it's allowed to use to avoid all out crashes.
+Until I can solve this narcolepsy issue I won't be able to use it for bigger projects.
+A side note: I have the same issue on some hosted models. It something the industry still needs to solve. 
+2026-05-03 13:37:30
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+jesterly
+jesterly
+jesterly
+#YH490206
+Member since 2024-11-26
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+The big question is, with the amount of money you think you're saving, how many months would it take for you to recoup the $3500 you spent to get the local setup? And by the end of that X number of months, would that hardware still be relevant?
+2026-05-03 12:53:35
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Dan
+Dan
+Dan
+#MW289092
+Member since 2026-03-21
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+For anyone interested in actually doing this, I'd suggest a secondhand PC with either unified memory (and as much RAM as you can afford) or with a previous-generation GPU (and as much VRAM as you can afford). If doing the latter, you can skimp on most other PC specs like CPU and RAM to keep cost down. You won't be able to run the same models as the literal supercomputers mentioned in this article, but you can still run models useful for the average consumer.
+2026-05-03 20:14:46
+Upvote
+Downvote
+Reply
+Copy
+        
+Reginald
+Reginald
+Reginald
+#IG978523
+Member since 2026-05-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+What's the advantage over switching to something like opencode that's actually designed for different apis and models? Also, give Nemotron 3 Super a shake, it does a pretty good job writing code. I'm looking forward to DeepSeek v4 Flash getting to a stable point on Spark to give it a try, too.
+2026-05-03 10:22:44
+Upvote
+Downvote
+Reply
+Copy
+        
+phinn
+phinn
+phinn
+#RH699396
+Member since 2026-05-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I'm setting up a local only right now too... $$$$ are just beyond what this broke grad student can afford, yet I also need. Funny catch 22 here. I'm in the triage my current hardware stage so I can optimize my student loan debt choices for the upgrade path. I'm thinking dual 3090s, which means a bigger mobo. I have the ssd (got lucky there), RAM is ddr4. But I have "enough" if I stay or if I have to/can afford to go ddr5 etc :(.. So I'm watching /reading closely the updates here! 
+2026-05-03 10:46:21
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+May 1, 2026
+
+                                    I replaced ChatGPT and Claude with this powerful local LLM and saved over $20 a month while gaining full control
+                            
+May 1, 2026
+
+                                    After six months, Microsoft's Auto SR finally gives the ROG Xbox Ally X what it needed all along
+                            
+May 1, 2026
+
+                                    Someone installed an e-ink stat display in their PC, and it looks gorgeous
+                            
+May 1, 2026
+
+                                    Laptop makers are sacrificing ports and repairability for designs nobody asked for
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            Windows XP's Secret Themes
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            Snapdragon X2 Elite Extreme benchmarks: RIP Panther Lake?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

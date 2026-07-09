@@ -1,0 +1,598 @@
+10 tools every homelabber should try at least once
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+Networking
+Storage and NAS
+Components
+Peripherals
+Operating Systems
+Submenu
+Linux
+Windows
+Software
+Submenu
+Programming
+Applications
+Mobile
+Submenu
+Android
+iPhone
+Carriers
+New Tech
+Submenu
+Hobbies
+Smart Home
+Homelab
+Single-Board Computers (SBCs)
+Cutting Edge
+Streaming
+Submenu
+Streaming Content
+Streaming Platforms
+Audio/Video
+Automotive
+Reviews
+Buying Guides
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+3
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Storage
+Streaming
+Linux
+Open Source
+Microsoft Excel
+Android
+Windows
+Close
+10 tools every homelabber should try at least once
+Credit: Patrick Campanale / How-To Geek
+By 
+Patrick Campanale
+Published
+ Apr 1, 2026, 1:41 PM EDT
+Patrick Campanale has been in the tech space for well over a decade, specializing in PC/gaming news and reviews, as well as maker-focused products to build small businesses.
+
+With a start in technology back in 2010 surrounding the Palm/webOS ecosystem, Patrick spent his formative years developing mobile applications as well as blogging for various publications, eventually leading to starting his own website in 2014. After running a technology blog for a few years, he stepped out of that role and into the world of high-end custom PC manufacturing and building, with a focus on YouTube video production and overclocking. Then, six years ago, Patrick joined the 
+9to5Toys 
+team as an editor/writer/reviewer with over 14,000 articles being published there there, ranging from deals and roundups to in-depth reviews on the latest technology, video games, 3D printers, and more.
+
+In his free time, Patrick loves to 
+create projects from wood
+ using various robots and methods, including leveraging the technologies of CNCs and lasers. If Patrick isn't working on a computer or playing video games, he's likely in his 2-car garage workshop creating something unique. In addition to all this, Patrick is also a youth pastor at his local church where he feels God has called him to serve, and he loves every minute of it. 
+Sign in to your 
+How-To Geek
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+3
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Are you looking for fun (or unique) pieces of software to expand your homelab with? I’ve been on the hunt for new software lately, and found 10 tools that everyone should try at least once. In no particular order, here are tools that have (or will) change how I run my homelab.
+✕
+ Remove Ads
+Each of these tools are something that I have currently running, or I have run in the past. You'll find things ranging from full-blown operating systems to small network tools and everything in-between, giving you quite a few new things to try out in your homelab this summer.
+
+                        Proxmox
+               
+Credit: ProxMox
+ I have known about 
+Proxmox
+ for years, but I hadn’t actually used it until recently. I wish I had started using it far sooner.
+If you’ve never heard of Proxmox, it’s a 
+virtual machine
+ manager. You could liken it to VMware ESXi, but free and open source.
+Once deployed, Proxmox simply runs as a hypervisor. You can 
+spin up as many virtual machines as you want
+ to run on your hardware. Multiple Proxmox instances can be linked together in a high-availability cluster to keep your services live even when a machine goes down for maintenance.
+Proxmox allows you to not just 
+run traditional operating systems
+, like Linux or Windows, but also specialized operating systems like 
+TrueNAS
+. You’re able to use PCIe pass-through (if your host system supports it) to pass devices directly through to the virtual machine.
+Using this functionality, an operating system like TrueNAS can directly access each drive instead of a virtualized copy of the drive, allowing it to function properly.
+✕
+ Remove Ads
+Another use in PCIe pass-through is passing a graphics card to a host operating system, like Ubuntu or Windows. I use this to pass my GTX 1650 through to an Ubuntu virtual machine, where the GPU functions to help my Scrypted server run AI workloads as well as handle Plex transcoding.
+At this point, I couldn’t run my homelab without Proxmox, and I definitely think you should give it a try.
+Related
+
+			6 Reasons to Ditch the Desktop and Run a Headless Server
+		
+No monitor? No problem.
+Posts
+18
+By 
+Patrick Campanale
+Apr 26, 2025
+
+                        Pi-hole
+               
+Credit: 
+Pi-hole
+Pi-hole
+ is definitely more well-known than Proxmox, but not everyone uses it. I know there are other content blockers out there, but 
+Pi-hole has my heart
+ as it’s the first one I used, and also it handles my local DNS requests.
+I like the interface of Pi-hole and the fact that I can 
+keep both of my instances in sync automatically
+. Pi-hole makes it easy to bypass the block list for certain domains if something isn’t working right, and it does its job as a content blocker very well. You can also set up Pi-hole in just a few minutes through various methods, making it easy to deploy, which is another reason I love it.
+
+                        Portainer
+               
+✕
+ Remove Ads
+ While I started out my Docker journey on Unraid, I now 
+run all of my containers through Portainer
+ because it’s just simpler and more versatile. If you’ve not heard of 
+Portainer
+, it’s a web interface for Docker that runs as a container itself, meaning you can use it on almost any host.
+Portainer makes deploying and managing Docker containers extremely simple, and is 
+something that anyone using Docker should try out
+ at least once. In fact, just like Proxmox, Portainer supports high availability clusters through Docker Swarm.
+High availability Docker means that your containers stay online even if one of your servers goes down. The only downside is that you’ll need three servers running for this to work, but if reliability is something that you need, then Portainer can help you out.
+Related
+
+			Why I Quit Docker-CLI and Switched to Portainer
+		
+I love the Linux terminal, but there are better ways to manage your Docker containers.
+Posts
+2
+By 
+Patrick Campanale
+Jun 7, 2025
+
+                        Home Assistant
+               
+It’s hard to imagine, but there are homelabbers out there that haven’t used 
+Home Assistant
+ yet. The self-hosted smart home platform is so versatile and powerful that anyone into homelabbing and self-hosting should definitely use it.
+At its core, Home Assistant is a smart home platform that integrates with a large number of smart devices on the market today. It also works as a way to integrate smart devices into other smart home platforms where they might not be compatible.
+✕
+ Remove Ads
+The way that I use Home Assistant is to expand my HomeKit setup 
+to devices without native HomeKit support
+. It’s worked great for me, and I couldn’t run my smart home without Home Assistant at this point. If you’ve not tried Home Assistant, give it a shot today.
+Related
+
+			What Is Home Assistant? And Why Isn't Everyone Using It? 
+		
+Get to know this open-source locally-controlled smart home platform.
+Posts
+By 
+Derrik Diener
+Jun 5, 2024
+
+                        Nextcloud
+               
+Credit: monticello/Shutterstock.com
+Nextcloud
+ is a service that I’ve tried (and failed) to run in my own homelab as I have a bit of a complicated setup and like to do things the hard way. I’m determined to get it set up how I need it at some point, but I do think that Nextcloud is something everyone should try at least once.
+If you’ve not heard of Nextcloud, 
+it’s a Google Drive/Dropbox replacement
+ for your cloud storage needs. 
+It runs on your own hardware
+ and can be accessible either on LAN exclusively or also available externally if you open the necessary ports.
+If you’re trying to cut down on subscriptions, Nextcloud could be a solid way to stop paying for cloud storage, so you should give it a try.
+Related
+
+			After Switching to Linux, This App Helped Me Drop Google for Good
+		
+One self-hosted app to replace them all?
+Posts
+6
+By 
+JT McGinty
+May 18, 2025
+
+                        Syncthing
+               
+Credit: 
+
+Lucas Gouveia/How-To Geek | Macrovector/
+Shutterstock
+✕
+ Remove Ads
+ I put off using 
+Syncthing
+ for years, and I regret it. I always thought that Syncthing was trying to be a Google Drive replacement, but that’s far from the truth. Syncthing simply aims to 
+keep the files on two (or more) computers in sync
+.
+I use it to back up my photos from my external SSD to my NAS automatically. Syncthing simply takes all the files inside my photos folder and 
+copies it to my NAS
+. I have it also running on the NAS to copy the files from my NAS to my laptop in case anything happens. Everything is kept up-to-date automatically without paying a dime.
+However, Syncthing can also work outside your local network. So, you could set up two-way syncing between your laptop and NAS, as well as your desktop and NAS.
+Syncthing can, whether on your home network or not, upload files from your laptop to NAS, and then download them to your desktop. At home, files would upload from your desktop to NAS, and then back down to your laptop.
+The functionality of Syncthing can’t be denied, especially for free. Try it out if you’ve not used it yet.
+
+                        Scrypted
+               
+Credit: Scrypted
+ I used to pay quite a bit every month for cloud recordings on my various home security cameras. At one point, I had a 
+Ring
+, 
+Arlo
+, and 
+Wyze
+ subscription active. This equaled $5 per month for Ring, $20 per month for Arlo, and another $3 per month for Wyze. All together, I was spending over $300 per year to record my smart home cameras. Something had to change.
+✕
+ Remove Ads
+That’s where 
+Scrypted
+ comes in. While I have stopped using some of those cameras, I now have more functionality at a fraction of the price. 
+Scrypted’s NVR functionality
+ costs as little as $0.83/month per camera. Scrypted runs on your own hardware, provides AI notification and detection, and stores the footage on your own server.
+Yes, there are those that think all self-hosted services should be free, but I’m willing to support the development of an app that I love and rely on. A few bucks a month is well worth it to me, and I think you’ll find the same if you give it a try.
+If you don’t need the recording functionality, Scrypted is still great software to run in your homelab. One of the best things Scrypted does is 
+bring non-HomeKit cameras into HomeKit Secure Video
+, which means you could record those cameras without paying anything extra if you have an iCloud+ subscription.
+Scrypted is simply a fantastic security camera hub for your home, and I definitely think you should give it a try, even without the NVR functionality.
+Related
+
+			Why and How I'm Switching to Local Storage for My Security Camera Setup
+		
+I’m done renting space in the sky.
+
+Posts
+5
+By 
+Patrick Campanale
+Apr 17, 2025
+
+                        Audiobookshelf
+               
+Plex
+ is already at the top of almost all “you should self-host this” lists, but I rarely see Audiobookshelf mentioned. However, I feel that 
+Audiobookshelf
+ is just as important as Plex when it comes to hosting a media server.
+✕
+ Remove Ads
+
+                    Subscribe for More Homelab Tool Picks and Tips
+                
+Joining the newsletter gives you curated homelab tool recommendations, practical setup tips, and real-world configuration notes that make it easier to explore, test, and adopt new software in your lab.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+Yes, Plex can handle running an audiobook server, but I’ve used it and the features are pretty lackluster. However, 
+Audiobookshelf completely replaced Audible for me
+.
+Launching an Audiobookshelf server is as simple as creating a Plex server, and takes just a few minutes to get up and going. If you listen to audiobooks at all, then you should consider self-hosting your own server—it’s easy and brings one more thing in-house.
+
+                        Paperless-NGX
+               
+Credit: Paperless-ngx
+ I used to use 
+Neat
+ to keep all of my scanned documents organized. This worked, but Neat is simply expensive. At almost $17 per month, you’d pay $200 per year to use Neat just to keep some PDFs organized.
+Instead of that, just deploy 
+Paperless-NGX
+ in your homelab. The software is designed to organize and index your scanned documents, using optical character recognition (OCR) on the scanned documents to enable searching the contained text.
+Paperless-NGX is extremely powerful and even does all of its processing locally on your system, which makes it a privacy-focused piece of software, too. If you’re still paying someone to keep track of documents, or simply throwing all of your scanned documents into a folder on your desktop, spin up Paperless-NGX and give it a try.
+✕
+ Remove Ads
+
+                        Calibre / Calibre-Web
+               
+Credit: Calibre / Lydia Pike / How-To Geek
+ Along the same lines as Plex and Audiobookshelf comes 
+Calibre
+ (and 
+Calibre-Web
+). Designed to be your own eBook server, 
+Calibre offers plenty of functionality
+, though it can be a bit difficult to configure and set up.
+Overall, Calibre is a fantastic piece of software. Calibre-Web gives you a web frontend interface for the Calibre database, allowing you to interact with, read, and upload new eBooks to the server.
+I personally use Calibre as a way to get eBooks to my Kindle that I purchase elsewhere. Whether it’s a PDF or EPUB file, I can upload it to Calibre, have it fetch all the metadata for the book, then send it to my Kindle.
+If the above services are ones that you’re already running (or have no interest in), then check out these 
+10 Docker containers I think every homelabber should be running
+.
+✕
+ Remove Ads
+Applications
+Homelab
+Open Source
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. 
+Read More
+.
+Close
+✕
+ Remove Ads
+
+                                                    Desktop
+                                            
+
+                                                    Mobile
+                                            
+
+			PowerShell isn't scary—these everyday commands prove it
+		
+6 minutes ago
+
+			Dirty Frag vulnerability in Linux lets hackers do more damage—here's how to protect yourself
+		
+15 hours ago
+
+			Intel will make chips for Apple—what does that mean for Windows PCs?
+		
+18 hours ago
+See More
+
+			Please stop typing on your Google Pixel—these 3 voice commands are a game changer
+		
+16 hours ago
+
+			Google Maps has a power-saving mode that extends battery life by 4 hours—but there's a catch
+		
+17 hours ago
+
+			6 ways to repurpose your old Motorola phone
+		
+18 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			Visual Studio Code's latest update is a big deal for web development
+		
+
+			Self-hosting isn't always the answer—why Home Assistant is no longer powering my home
+		
+
+			Home Assistant 2026.3 has arrived: Here’s what’s new
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+3
+Sign in to your 
+How-To Geek
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Steve
+Steve
+Steve
+#BQ064158
+Member since 2026-04-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I had nextcloud installed for awhile but was only using it for notes, which isn't it's strong suite and pretty heavy as well. Replaced it with Joplin server/notes and am much happier. Immich is great as a Google photos replacement. For the security cameras I'm using Frigate in my Home Assistant stack to capture security camera footage, no charges & everything sits on my servers with no fees. Thumbs up to pi hole, paperless ngx & portainer. Add in tailscale and you can access everything from anywhere, safely & easily.
+2026-04-01 23:43:24
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Greywulff
+Greywulff
+Greywulff
+#MF999641
+Member since 2025-12-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+ESXi may not be open source, but it is free.
+2026-04-05 14:44:47
+Upvote
+Downvote
+Reply
+Copy
+        
+John_Musbach
+John_Musbach
+John_Musbach
+#CS776958
+Member since 2026-03-29
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+The first two suggestions have been out for years so it's amazing you just discovered them lol
+2026-04-12 09:58:19
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Mar 25, 2026
+
+                                    This modular Android tablet can easily be upgraded and repaired with a Phillips screwdriver
+                            
+Mar 24, 2026
+
+                                    Intel is artificially boosting CPU benchmark tests, says Geekbench
+                            
+Mar 24, 2026
+
+                                    Linux-powered PinePhone might not get a sequel, and postmarketOS is one reason
+                            
+Mar 24, 2026
+
+                                    Plex's confusing new "Lists" feature actually solves a major mobile problem
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+How-To Geek
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

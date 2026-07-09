@@ -1,0 +1,52 @@
+{
+  "article_title": "I built an app with both Codex and Claude Code, and only one made me want to keep using it",
+  "core_thesis": "The article compares OpenAI's Codex and Anthropic's Claude Code by building the same personal productivity app—a focus tool that blocks distractions until the user pastes proof of writing a target word count. The author concludes that Claude Code is superior for this task because it asked clarifying questions before building, produced a working web-based tool on the first try, and included unexpected features like duplicate detection. Codex, while offering a desktop app and customizable word count from the start, suffered from a broken text input that required multiple fixes, and its 'smarter proof' check accepted gibberish. The article argues that for non-expert users building personal tools, Claude Code's proactive communication and reliability outweigh Codex's assumptions and bugs.",
+  "detailed_summary": "The author, a tech journalist and computer science student, tested Claude Code and Codex by building a focus app that blocks distracting apps/websites (WhatsApp Desktop, Instagram, X, LinkedIn) until the user pastes proof of writing a target word count. The prompt was intentionally vague to see how each tool handled ambiguity. Claude Code asked clarifying questions (which apps to block, word count goal, whether to save writing) before building a web-based tool in under 10 minutes that worked on the first run. Codex built a terminal-based tool without questions, then offered to add a GUI and smarter proof checks. After the author accepted, Codex's GUI had a broken text input that took three fix attempts to work. Claude Code's version defaulted to 1000 words (requiring a follow-up to make it configurable) but included duplicate detection without being asked. Codex allowed custom word count from the start but accepted gibberish as valid writing. The author declares Claude Code the winner due to reliability and proactive features, though Codex's desktop app approach was appreciated. The article's comments section includes debate: some argue the test methodology was flawed (vague prompts favor Claude's guessing ability), while others share experiences that Codex is better for complex, long-running tasks and Claude is more prone to shortcuts. A principal engineer comment suggests using both: Codex for backend/functionality, Claude for UI, and always starting with a documented plan.",
+  "entities": [
+    {
+      "name": "Mahnoor Faisal",
+      "type": "person",
+      "role": "Author and tester; tech journalist and computer science student who built the focus app."
+    },
+    {
+      "name": "Claude Code",
+      "type": "organization",
+      "role": "Anthropic's AI coding assistant; tested and preferred by the author for this task."
+    },
+    {
+      "name": "Codex",
+      "type": "organization",
+      "role": "OpenAI's AI coding assistant; tested and found less reliable for this task."
+    },
+    {
+      "name": "Foqos",
+      "type": "organization",
+      "role": "Open-source app using NFC tags to block phone distractions; inspired the author's laptop focus tool."
+    }
+  ],
+  "key_data_points": [
+    "Claude Code asked clarifying questions before building, leading to fewer issues; Codex made assumptions and produced a broken text input that required three fix attempts. (🟢 Relevant to programming: when using AI coding assistants, providing a clear spec or allowing the tool to ask questions can save debugging time.)",
+    "Claude Code built a web-based tool that worked on the first run; Codex built a terminal tool first, then added a GUI after the author agreed. (🟢 Relevant to homelab/devops: web-based tools are easier to integrate into existing workflows, but desktop apps may feel more native.)",
+    "Claude Code included duplicate detection without being prompted, while Codex accepted gibberish as valid writing. (🟢 Relevant to Red Teaming: understanding how AI tools handle input validation can inform testing of AI-integrated systems.)",
+    "Codex allowed custom word count from the start; Claude Code defaulted to 1000 words and required a follow-up prompt to make it configurable. (🟢 Relevant to programming: trade-off between out-of-the-box assumptions and configurability.)",
+    "The author used a vague prompt intentionally; commenters argued this biased the test toward Claude Code, which is better at guessing unstated preferences, while Codex excels with detailed specs. (🟢 Relevant to productivity: when using AI tools, investing time in a clear spec upfront can yield better results.)",
+    "A principal engineer comment recommended using Codex for backend/functionality and Claude for UI, and always starting with a documented plan and requirements. (🟢 Relevant to devops: treating AI agents like junior engineers—documentation and clear specs are critical.)"
+  ],
+  "methodology_steps": [
+    "Define a personal problem: build a tool that blocks distracting apps/websites until the user pastes proof of writing a target word count.",
+    "Use an intentionally vague prompt to test how each AI handles ambiguity: 'hey! is it possible to make a tool where like....it blocks certain apps and websites...until i paste in proof that i've done my work and written like 1000 words...'",
+    "Run the same prompt in both Claude Code and Codex. Observe whether the AI asks clarifying questions or proceeds directly.",
+    "After initial build, ask both AIs to add 'smarter proof checks' (e.g., detect gibberish, require real sentences) to keep the comparison fair.",
+    "Test each tool by pasting real writing, gibberish, and lorem ipsum text. Note any bugs, unexpected features (e.g., duplicate detection), and overall reliability.",
+    "Evaluate based on first-run functionality, bug frequency, and alignment with the original goal."
+  ],
+  "conclusions": [
+    "Claude Code outperformed Codex for this specific personal productivity app because it asked clarifying questions, built a working tool on the first try, and included proactive features like duplicate detection. The author recommends Claude Code for non-expert users building personal tools where reliability and ease of use are paramount.",
+    "Codex's approach of making assumptions without questions led to a broken text input that required multiple fixes, undermining the tool's core functionality. However, Codex's desktop app approach and early configurability of word count were noted as strengths.",
+    "The test methodology (vague prompt) was criticized by commenters as favoring Claude Code's guessing ability. For complex or professional projects, a detailed spec and iterative refinement are recommended, and some commenters reported Codex being superior for long-running, complex tasks.",
+    "A hybrid approach—using Codex for backend/functionality and Claude for UI, with thorough documentation and planning—was suggested by a principal engineer as the most effective strategy for leveraging both tools' strengths."
+  ],
+  "personal_relevance_summary": "This article is directly relevant to your programming and AI-assisted development interests. It provides a hands-on comparison of two leading AI coding assistants, highlighting practical differences in how they handle ambiguity, ask questions, and produce working code. As a programmer, you can apply the lesson that investing time in a clear spec (or letting the AI ask questions) reduces debugging later. The article also touches on building personal productivity tools, which aligns with your homelab and devops interests—you could replicate the focus app or adapt the methodology to test other AI tools. The comment section offers additional insights from experienced developers, including a hybrid workflow using both tools, which you can experiment with in your own projects.",
+  "extra_advice": "Consider running your own comparison test with a project you're currently working on. Use a detailed spec for one run and a vague prompt for another, then document the number of iterations needed to get a working result. This will give you a personal benchmark for which AI coding assistant fits your workflow best. Additionally, try the hybrid approach suggested by the principal engineer: use Codex for backend logic and Claude for UI, and always start by having the AI write a plan and requirements document before coding.",
+  "source_url": "https://www.xda-developers.com/built-an-app-with-both-codex-and-claude-code/"
+}

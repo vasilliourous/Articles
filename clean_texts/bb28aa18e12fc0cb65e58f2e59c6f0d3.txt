@@ -1,0 +1,490 @@
+Updating my SSD's firmware fixed a chronic Windows problem that nothing else did
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+1
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+Updating my SSD's firmware fixed a chronic Windows problem that nothing else did
+By 
+Tanveer Singh
+Published
+ Apr 15, 2026, 5:00 PM EDT
+After a 7-year corporate stint, Tanveer found his love for writing and tech too much to resist. An MBA in Marketing and the owner of a PC building business, he writes on PC hardware, technology, and Windows. When not scouring the web for ideas, he can be found building PCs, watching anime, or playing Smash Karts on his RTX 3080 (sigh). 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+1
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+I've been using Windows 10 on my main PC since 2017, and I've been mostly satisfied, so much so that 
+I plan to stick with it a little longer
+. That said, until last year, I couldn't get rid of OS corruption issues that kept recurring every few months. My SSD was obviously the first thing I suspected, but everything seemed to check out. The one thing I glossed over was the drive's firmware, which I had never thought of updating. When I finally did it, it fixed all my Windows corruption issues overnight. I haven't had to revert to a system image in well over a year. I suspect many of you have never updated your SSD's firmware, assuming it didn't need updating. While these updates can be rare, 
+skipping them can be detrimental to your SSD's performance, stability, and data integrity
+, as I found out the hard way.
+✕
+ Remove Ads
+Related
+
+			Your GPU, RAM, and SSD all have firmware you've never updated, and it can actually matter
+		
+Your system might have firmware updates that you never knew about.
+Posts
+4
+By 
+Adam Conway
+Apr 13, 2026
+
+                        I had given up fixing frequent file corruption on Windows 10
+               
+
+            The root cause eluded me for years
+    
+For about 2 years, my Windows 10 PC used to give me the 
+dreaded black screen of death
+ every 3–4 months. Nothing I did could fix the OS whenever this happened — not Startup Repair, not System Restore, not 
+SFC and DISM
+ scans. Until last year, my go-to solution was to use a week-old Macrium Reflect system image to revert the PC to a functioning state. I used to create weekly images on an automated schedule, and used this "fix" whenever the OS got corrupted.
+Of course, I suspected that my SSD was faulty, although it was a new drive that I got with the new PC. Still, I ran a few tests to 
+check the drive health
+, but found nothing noteworthy. I also ran a deep malware scan, and eventually installed a fresh copy of Windows 10 to eliminate the possibility of errors in the system image itself. Still, I was no closer to discovering the root cause of the frequent OS corruption. In a nutshell, I had resigned myself to the problem.
+Related
+
+			6 crucial PC maintenance tasks I don't ignore anymore (and you shouldn't either)
+		
+PC maintenance can be time-consuming, but it'll benefit you in more ways than one
+Posts
+3
+By 
+Tanveer Singh
+Dec 9, 2025
+
+                        I updated the SSD firmware one fine day, which finally fixed the issue
+               
+
+            I should have done it sooner
+    
+✕
+ Remove Ads
+For close to three years, I never thought about updating my SSD's firmware. It isn't something most people think about, to be fair. Your GPU has driver updates, your OS has feature and security updates, and your motherboard has 
+BIOS updates
+. Beyond that, it's easy to ignore things like SSD firmware, especially when everything seems to be running fine. In my case, things were clearly not fine, but my troubleshooting never suspected the SSD firmware.
+Then, one day, out of the blue, I launched the WD Dashboard (now SanDisk Dashboard) to 
+check the SSD's remaining lifespan
+. I was writing an article on the same, and was curious about how much of my SSD's lifespan I had used in three years. The answer was 1%, but what caught my eye was a notification at the top of the window alerting me that a new firmware was available. That's when I finally realized that I was missing a crucial piece of the puzzle. Updating the firmware was the only change I made to the SSD, and it got rid of the OS corruption issue. I haven't seen the black screen of death or any other major BSOD in over a year, so the new firmware must have fixed a bug in the data handling logic of the SSD. Given enough time, incorrectly written data can lead to system corruption, which is what I suspect was going on with my drive.
+Related
+
+			SSD firmware is the most underrated performance fix nobody installs
+		
+It's not always the drive, it's also what controls it. 
+Posts
+6
+By 
+Ali Tauseef
+Feb 16, 2026
+✕
+ Remove Ads
+
+                        SSD firmware updates have been known to fix critical issues
+               
+
+            The track record is far from spotless
+    
+Firmware sounds like a low-level microcode update that isn't as flashy as a major Windows update or a Game Ready Nvidia driver. However, it can greatly impact your SSD's day-to-day performance and reliability, while also ensuring data integrity. Everything from 
+garbage collection
+ and wear leveling to caching behavior and power states is governed by the SSD firmware. Any deficiencies or delayed updates mean your SSD is exposed to slow speeds, stability issues, and even file corruption.
+SSD manufacturers often patch firmware bugs silently, so you may not know what changes a particular firmware will bring to your system. It's always recommended to update your SSD to the latest firmware if your drive's software has an update available. 
+Checking for firmware updates
+ every 4–6 months is all you need to ensure your SSD stays updated. Besides performance and stability improvements, some firmware versions even save your SSD from failure or at least prevent fatal errors.
+For instance, firmware-linked drive failures were seen on Samsung's 980 Pro SSDs during the drive's early days. The older firmware was rapidly degrading the drives, causing them to fail prematurely. Samsung released a major firmware update that got rid of the issue and showed the impact that firmware can have on an SSD. 
+
+                    Subscribe for SSD firmware insights and PC tips
+                
+Get the newsletter for focused SSD firmware coverage—how-to guidance, update checklists, vendor tool walkthroughs, and practical troubleshooting to help maintain drive reliability and protect data integrity, plus related PC maintenance topics.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+✕
+ Remove Ads
+Another notable instance occurred on several WD SSDs when the Windows 11 24H2 update caused BSODs on PCs running these models. The new Windows update made changes to how SSDs handle the Host Memory Buffer (HMB), and before the firmware patch released by WD, some models were failing to update to the new Windows version. Users had to update their SSD firmware using the company's Dashboard tool to allow the 24H2 update to be installed. SSD failures were also reported on models with the Phison E16/E18 controllers during the Windows 11 24H2 rollout. Investigation revealed that these drives were running pre-release firmware instead of the stable retail version. This firmware behaved unpredictably under sustained workloads, and the 24H2 update possibly exacerbated the issue, bringing it to light. 
+
+    						Samsung 990 EVO Plus
+			
+8
+/10
+Storage capacity
+
+									
+										
+											1TB, 2TB, 4TB
+
+										
+																	
+Hardware Interface
+
+									
+										
+											PCIe Gen 4 x4 / Gen 5 x2
+
+										
+																	
+TBW
+
+									
+										
+											600TB per TB
+
+										
+																	
+DRAM
+
+									
+										
+											N/A
+
+										
+																	
+$500 at Amazon
+$359 at Newegg
+Expand
+Collapse
+
+            Stay on top of your SSD's firmware
+    
+You don't need to update your SSD firmware as frequently as your OS and drivers, but don't delay it for too long. Skipping crucial firmware versions can deprive your drive of performance improvements, stability fixes, and upgrades to background maintenance. On my system, a firmware update fixed a longstanding file corruption issue, and on many others, it saved the SSDs from BSODs and premature failure. The firmware is an integral part of your SSD, which shouldn't be ignored. 
+✕
+ Remove Ads
+Storage
+SSD
+Windows 10
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I let the NVIDIA App overclock my GPU, and it left me impressed
+		
+
+			5 mods and upgrades you can make to your Steam Deck
+		
+
+			You have probably never updated your BIOS — that's why your PC is struggling
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+1
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+eXpired56k
+eXpired56k
+eXpired56k
+#MS798759
+Member since 2024-08-07
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+In this day and age where even cables have firmware, it's generally a good idea and almost a necessary to also routinely update firmware. It not only could help improve stability but also with security.
+2026-04-16 10:14:15
+Upvote
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+XDAMember
+XDAMember
+XDAMember
+#GJ641536
+Member since 2026-04-23
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Hi, 
+I would like to learn more about this. Do you have any links?
+2026-04-23 16:16:04
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 14, 2026
+
+                                    Google Antigravity supports VS Code extensions, but I found myself needing fewer of them
+                            
+Apr 12, 2026
+
+                                    GTA VI developer Rockstar hacked again — this time for ransom
+                            
+Apr 10, 2026
+
+                                    Microsoft says Windows' Secure Lock screen clock deliberately runs up to 30 seconds behind
+                            
+Apr 8, 2026
+
+                                    I stopped treating my old 250GB SATA SSD as e-waste, and now I can't live without it
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:15
+
+                            What was the best version of Windows?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:32
+
+                            Mac OS X launch: 25 years later
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:07
+
+                            The end of affordable PCs?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:09
+
+                            The surprising history of the 'Windows 11 phone'
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:15
+
+                            3Dfx: How 3D PC gaming began, 30 years ago
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

@@ -1,0 +1,75 @@
+{
+  "article_title": "I rebuilt my home server after 3 years, and these mistakes nearly cost me everything",
+  "core_thesis": "The author recounts three critical mistakes made when migrating and upgrading a home server from an old Ryzen build to a Xeon workstation, emphasizing that proper planning, resource management, and cluster configuration are essential to avoid data loss and downtime. The article serves as a cautionary tale for homelab enthusiasts, highlighting that even experienced tinkerers can overlook fundamental practices.",
+  "detailed_summary": "The author, a long-time homelabber, describes rebuilding his home server after three years and the costly errors he made. First, he failed to adjust GPU passthrough configurations and CPU host settings when migrating virtual guests (LXCs and VMs) from his old Ryzen Proxmox node to a new Xeon workstation. This caused boot failures and driver issues, which he resolved only after removing old GPU drivers and correcting CPU settings. Second, he created a two-node Proxmox cluster without a Quorum Device (Q-Device), leading to a cluster outage when one node went offline while he experimented with XCP-ng on the other. He now uses a Raspberry Pi as a Q-Device to maintain quorum. Third, he overprovisioned RAM and virtual SCSI disks, allocating more storage than physically available, which caused ZFS pool errors after upgrading to PVE 9. He resolved this by following community forum advice. The article concludes that these mistakes, while frustrating, provided valuable learning experiences.",
+  "entities": [
+    {
+      "name": "Ayush Pande",
+      "type": "person",
+      "role": "Author and homelab enthusiast who shares his server migration mistakes."
+    },
+    {
+      "name": "Proxmox",
+      "type": "organization",
+      "role": "Open-source virtualization platform used for the home server."
+    },
+    {
+      "name": "Xeon workstation",
+      "type": "hardware",
+      "role": "New server hardware replacing the old Ryzen build."
+    },
+    {
+      "name": "Ryzen build",
+      "type": "hardware",
+      "role": "Old server hardware that was replaced."
+    },
+    {
+      "name": "Intel Arc A750",
+      "type": "hardware",
+      "role": "GPU used for passthrough in virtual guests."
+    },
+    {
+      "name": "Proxmox Backup Server (PBS)",
+      "type": "software",
+      "role": "Backup solution for snapshots and migrations."
+    },
+    {
+      "name": "Raspberry Pi",
+      "type": "hardware",
+      "role": "Used as a Quorum Device for the Proxmox cluster."
+    },
+    {
+      "name": "XCP-ng",
+      "type": "software",
+      "role": "Alternative virtualization platform the author experimented with."
+    },
+    {
+      "name": "ZFS",
+      "type": "software",
+      "role": "Filesystem used for storage pools, which caused issues due to overprovisioning."
+    }
+  ],
+  "key_data_points": [
+    "GPU passthrough configurations must be updated when migrating VMs/LXCs to new hardware with a different GPU; failing to remove old drivers causes boot failures (🟢 relevant to homelab: ensures smooth hardware transitions).",
+    "Setting the host CPU type on VMs can improve performance but complicates migration; documentation is crucial to revert settings (🟢 relevant to homelab: highlights need for careful VM configuration).",
+    "A two-node Proxmox cluster without a Quorum Device (Q-Device) loses quorum if one node goes offline, causing cluster downtime; a third node or Q-Device (e.g., Raspberry Pi) is essential for high availability (🟢 relevant to homelab: critical for cluster reliability).",
+    "Overprovisioning RAM and virtual disks beyond physical capacity can lead to system sluggishness and storage pool errors; ZFS pools are particularly sensitive to over-allocation (🟢 relevant to homelab: emphasizes resource monitoring and conservative allocation).",
+    "After upgrading to PVE 9, overprovisioned storage pools may go offline; community forum commands can resolve the issue, but prevention is better (🟢 relevant to homelab: shows importance of proper resource limits before upgrades)."
+  ],
+  "methodology_steps": [
+    "When migrating virtual guests to new hardware, first remove old GPU drivers from the guests and update the GPU passthrough configuration to match the new GPU.",
+    "For CPU settings, avoid using 'host' CPU type on VMs if migration is planned; instead, use a common baseline CPU type to ensure compatibility.",
+    "To maintain cluster quorum in a two-node Proxmox setup, add a third node or configure a Quorum Device (e.g., a Raspberry Pi) to act as a tie-breaker.",
+    "When allocating resources to VMs/LXCs, monitor actual usage and avoid overprovisioning RAM and virtual disks beyond physical capacity; use thin provisioning cautiously with ZFS.",
+    "Before upgrading Proxmox (e.g., to PVE 9), ensure storage pools are not overcommitted; check disk allocation vs. actual usage and reduce virtual disk sizes if necessary."
+  ],
+  "conclusions": [
+    "Proper migration planning, including updating GPU passthrough and CPU settings, prevents boot failures and driver conflicts when moving virtual guests to new hardware.",
+    "A Quorum Device is essential for two-node Proxmox clusters to avoid downtime; without it, taking one node offline can crash the entire cluster.",
+    "Overprovisioning resources, especially RAM and virtual disks, leads to performance degradation and storage errors; conservative allocation and regular monitoring are key to stability.",
+    "Homelab mistakes are valuable learning opportunities; documenting errors and seeking community solutions (e.g., forum posts) can resolve issues and improve future setups."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your homelab interests as it provides concrete, real-world examples of common pitfalls in server migration and cluster management. You can apply the lessons on GPU passthrough, cluster quorum, and resource overprovisioning directly to your own Proxmox or virtualization setups. The author's emphasis on documentation and community troubleshooting aligns with your ambition to learn from mistakes and optimize your infrastructure. Additionally, the technical details (e.g., ZFS pool issues, Q-Device configuration) offer actionable insights for improving reliability in your homelab.",
+  "extra_advice": "Consider implementing a monitoring solution (e.g., Prometheus + Grafana) to track resource usage across your VMs/LXCs and set alerts for overprovisioning. Also, automate backups with Proxmox Backup Server and test restoration regularly to ensure data integrity during migrations.",
+  "source_url": "https://www.xda-developers.com/i-rebuilt-my-home-server-and-these-mistakes-nearly-cost-me-everything/"
+}

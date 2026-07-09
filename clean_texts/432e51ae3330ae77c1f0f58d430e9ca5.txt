@@ -1,0 +1,525 @@
+Please stop overcomplicating your notes — these lightweight apps do everything Obsidian does
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+5
+More Action
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+Please stop overcomplicating your notes — these lightweight apps do everything Obsidian does
+By 
+Nolen Jonker
+Published
+ Apr 2, 2026, 4:30 PM EDT
+Nolen began their writing career in 2019, with three years dedicated to editing the Creative section at 
+MakeUseOf
+. Their expertise lies at the crossroads of technology and creativity, covering areas like photography, video editing, and graphic design.
+
+Outside of work, you'll often find Nolen diving into a good book, writing their own stories, or playing video games. 
+Sign in to your 
+XDA
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+5
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Obsidian is great, but it also seems like a tool that asks for a lot upfront. Before you’ve written a single note, you’re already making decisions about the vault location, folder structures, and which plugins you need. There’s also a whole ecosystem of guides and YouTube tutorials on how to set up Obsidian the “right way”. It can get overwhelming fast. If you’re the type of person like me who gets stuck in setup mode before doing any actual work, this can be a problem.
+✕
+ Remove Ads
+Obsidian isn’t actually that complicated to use and you don’t need to be a power user to get value from it - 
+my setup
+ ended up being extremely simple. But I can see how it’s 
+not everyone’s cup of tea
+, and I also don’t think it has the most amazing UI, which probably 
+drives some people away
+. There are other options out there that have the same core features and principles as Obsidian, however, and they’re also much easier to navigate. So if Obsidian doesn’t seem like it would be your thing, I recommend checking out these tools…
+
+                        QOwnNotes
+               
+
+            Lightweight, but not barebones
+    
+I’m starting off with the least minimalistic option on this list, though it is still quite light and easy to use. QOwnNotes is an 
+open-source cross-platform note-taking app
+ that stores everything in plain text Markdown files on your device. It’s built in C++, making it super lightweight compared to most modern note-takers, and it was originally built around ownCloud integration, though that’s fully optional.
+Feature-wise, it covers more ground than most on this list. You get Markdown editing with live preview, tagging, subfolders, full-text search, AES 256 encryption, distraction-free mode, and a browser extension for web clipping. There’s also a scripting engine if you want to customize behavior, and the optional Nextcloud integration for syncing and note versioning across devices. It even has Vim mode if that’s your thing.
+✕
+ Remove Ads
+Overall, it’s almost as feature-rich as Obsidian but not quite, so there’s less to navigate and you can just focus on creating and managing your notes.
+
+    						QOwnNotes
+			
+See at QOwnNotes
+Expand
+Collapse
+
+                        FocusWriter
+               
+
+            A truly minimalist note-taking experience
+    
+I’ve 
+covered FocusWriter several times
+ already because I just adore it for how distraction-free and easy it is to use. Plus, the aesthetic vibe doesn’t hurt. It’s an open-source word processor developed and maintained by one person, named Graeme Gott. It’s available on Mac, Windows, and Linux and runs locally. The biggest appeal is that the entire interface disappears until you run your cursor to the edge of the screen - it’s just a blank page until then.
+The feature set is intentionally minimal. You get autosave, spellcheck, find and replace, daily word and time goals with streak tracking, timers, and real-time stats. By default, it saves your files in ODT format, but it also supports plain text. There’s also a major focus on the look and feel of the app, and you can customize the theme, fonts, colors, and so on.
+✕
+ Remove Ads
+You’ll probably notice that the functionality is more geared to getting you to focus and write rather than build a knowledge base. So it’s worth keeping that in mind if you’re working with heavy research stacks, in which case, FocusWriter is not the best candidate. But it is an excellent drafting space that makes it easy to focus on whatever it is you’re writing or noting down.
+
+    						FocusWriter
+			
+See at Official Site
+Expand
+Collapse
+
+                        Simplenote
+               
+
+            It stays true to its name
+    
+Despite being almost two decades old, I only discovered Simplenote several months ago, but I’ve been raving about it since. It’s open-source and available on everything, including Windows, Linux, Mac, iOS, Android, and the web. This is a cloud-synced app rather than a local-first one, so you need an account to use it, but it syncs fast and also works offline.
+The features are genuinely barebones, which is the whole point. You get a two-pane layout - note list left, editor right - with no toolbar, folders, or formatting buttons. It’s just a blank space to write in. There is Markdown support if you want it but it doesn’t have a live preview that renders the syntax. Tags work for organization if you need them, and version history is pretty solid.
+Overall, a very different app from Obsidian. If you’re someone who just needs a simple space for your notes and don’t care about extras like backlinking or dashboard plugins, then Obsidian probably isn’t for you, and something like Simplenote is a much better fit.
+✕
+ Remove Ads
+
+    						Simplenote
+			
+See at Simplenote
+Expand
+Collapse
+
+                        Joplin
+               
+
+            The closest Obsidian alternative
+    
+You’ve probably already heard of Joplin, but if not, it’s basically the closest alternative you’ll get to Obsidian. It prioritizes ownership and open standards the same way with its local-first and open standard nature. The look and feel is a little different from Obsidian; its layout is much simpler to navigate and also looks a bit neater.
+All your basics are covered. You get tags, notebooks, full-text search, a web clipper, to-do lists with reminders, end-to-end encryption, sync options, and a ton of plugins if you want them (including ones for backlinking and graph views like in Obsidian). It also supports a split Markdown view and live preview mode.
+
+    						Joplin
+			
+See at Joplin
+Expand
+Collapse
+
+            Notes shouldn’t be complicated
+    
+Obsidian is worth learning if you want to build a proper knowledge hub, but not every note needs a second brain behind it. These tools all solve the same basic problems in a slightly different way, and they keep the note-taking process simple.
+✕
+ Remove Ads
+Productivity & Creativity Tools
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+2:59
+
+			How to install ADB on Windows, macOS, and Linux
+		
+
+			I tested Claude’s new interactive visuals, and they’re changing how I explain things
+		
+
+			4 top-tier open-source apps you can self-host
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+5
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Karl
+Karl
+Karl
+#TO330069
+Member since 2025-05-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Why would one want a separate note-taking app if there are extremely powerful and extensible (and scalable) native text processors like VS Code and Zed.  The latter being a code editor alternative written in Rust…
+You can then start also to version manage your notes (based on txt) via a git repository as well.
+2026-04-03 09:23:10
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        2
+                    
+Copy
+        
+nightsent
+nightsent
+nightsent
+#LJ588479
+Member since 2026-01-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+This article isn't aimed at us. 
+If you read the article, it starts off addressing a reader who finds choosing a location for their files and how to organize those files to be asking for 
+"a lot up front."
+ This is not a person who is going to be interested in 
+"extensible (and scalable) native text processors" 
+or version control or git repositories or even know what any of that means.  
+You make a valid argument, but you can't expect everyone to be on the same technical level (or even want to be). 
+2026-04-03 13:25:33
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Adam
+Adam
+Adam
+#KT755297
+Member since 2025-11-07
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+nightsent
+ xda isn't the first place I would expect non-nerds to be reading.  I can't think of any non-nerds I know of who have ever heard of obsidian or xda
+2026-04-04 04:01:07
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Kamil
+Kamil
+Kamil
+#DL077985
+Member since 2026-04-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+at this point just use .txt smh
+2026-04-03 19:30:45
+Upvote
+Downvote
+Reply
+Copy
+        
+Adam
+Adam
+Adam
+#KT755297
+Member since 2025-11-07
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+How many times can we collectively object to "stop" titles before you begin to listen 
+2026-04-03 10:49:32
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 1, 2026
+
+                                    3 reasons Google's Pixel still feels unlike any other Android phone
+                            
+Mar 31, 2026
+
+                                    I ditched Firefox for Google Chrome years ago, but the latest productivity update changed my mind
+                            
+Mar 29, 2026
+
+                                    This cute ESP32 project is like a Tamagotchi that listens to you
+                            
+Mar 29, 2026
+
+                                    Wayland is getting a 6-year-long fix for its most annoying quirk, and KDE and GNOME are already implementing it
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:04
+
+                            MacBook Neo: an iPhone 16 Pro in laptop form
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            How much data does Steam use in a year?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            Windows XP's Secret Themes
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

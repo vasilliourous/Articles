@@ -1,0 +1,192 @@
+n8n Webhooks Abused Since October 2025 to Deliver Malware via Phishing Emails
+sudo apt-get update cyber_news
+Followed by 5.70+ million
+
+
+
+
+
+
+ Get the Latest News
+Home
+Newsletter
+Webinars
+Home
+Threat Intelligence
+Vulnerabilities
+Cyber Attacks
+Webinars
+Expert Insights
+Awards
+
+
+
+Resources
+Webinars
+Awards
+Free eBooks
+About Site
+About THN
+Jobs
+Advertise with us
+Contact/Tip Us
+
+Reach out to get featured—contact us to send your exclusive story idea, research, hacks, or ask us a question or leave a comment/feedback!
+Follow Us On Social Media
+
+
+
+
+
+
+ RSS Feeds
+
+ Email Alerts
+n8n Webhooks Abused Since October 2025 to Deliver Malware via Phishing Emails
+
+Ravie Lakshmanan
+
+Apr 15, 2026
+Threat Intelligence / Cloud Security
+Threat actors have been observed weaponizing 
+n8n
+, a popular artificial intelligence (AI) workflow automation platform, to facilitate sophisticated phishing campaigns and deliver malicious payloads or fingerprint devices by sending automated emails.
+"By leveraging trusted infrastructure, these attackers bypass traditional security filters, turning productivity tools into delivery vehicles for persistent remote access," Cisco Talos researchers Sean Gallagher and Omid Mirzaei 
+said
+ in an analysis published today.
+N8n is a workflow automation platform that allows users to connect various web applications, APIs, and AI model services to sync data, build agentic systems, and run repetitive rule-based tasks.
+Users can register for a developer account at no extra cost to avail a managed cloud-hosted service and run automation workflows without having to set up their own infrastructure.Doing so, however, creates a unique custom domain that goes by the format – <account name>.app.n8n.cloud – from where a user can access their applications.
+The platform also supports the ability to 
+create webhooks
+ to receive data from apps and services when certain events are triggered.Thismakes it possible to initiate a workflow after receiving certain data.The data, in this case, is sent via a unique webhook URL.
+According to Cisco Talos, it's these URL-exposed webhooks – which make use of the same *.app.n8n[.]cloud subdomain – that has been abused in phishing attacks as far back as October 2025.
+"A webhook, often referred to as a 'reverse API,' allows one application to provide real-time information to another. These URLs register an application as a 'listener' to receive data, which can include programmatically pulled HTML content," Talos explained.
+"When the URL receives a request, the subsequent workflow steps are triggered, returning results as an HTTP data stream to the requesting application. If the URL is accessed via email, the recipient's browser acts as the receiving application, processing the output as a web page."
+What makes this significant is that it opens a new door for threat actors to propagate malware while maintaining a veneer of legitimacy by giving the impression that they are originating from a trusted domain.
+Threat actors have wasted no time taking advantage of the behavior to set up n8n webhook URLs for malware delivery and device fingerprinting. The volume of email messages containing these URLs in March 2026 is said to have been about 686% higher than in January 2025.
+In one campaign observed by Talos, threat actors have been found to embed an n8n-hosted webhook link in emails that claimed to be a shared document. Clicking the link takes the user to a web page that displays a CAPTCHA, which, upon completion, activates the download of a malicious payload from an external host.
+"Because the entire process is encapsulated within the JavaScript of the HTML document, the download appears to the browser to have come from the n8n domain," the researchers noted.
+The end goal of the attack is to deliver an executable or an MSI installer that serves as a conduit for modified versions of legitimate Remote Monitoring and Management (RMM) tools like Datto and ITarian Endpoint Management, and use them to establish persistence by establishing a connection to a command-and-control (C2) server.
+A second prevalent case concerns the abuse of n8n for fingerprinting. Specifically, this entails embedding in emails an invisible image or tracking pixel that's hosted on an n8n webhook URL. As soon as the digital missive is opened via an email client, it automatically sends an HTTP GET request to the n8n URL along with tracking parameters, like the victim's email address, thereby enabling the attackers to identify them.
+"The same workflows designed to save developers hours of manual labor are now being repurposed to automate the delivery of malware and fingerprinting devices due to their flexibility, ease of integration, and seamless automation," Talos said. "As we continue to leverage the power of low-code automation, it’s the responsibility of security teams to ensure these platforms and tools remain assets rather than liabilities."
+Found this article interesting?  Follow us on 
+Google News
+, 
+Twitter
+ and 
+LinkedIn
+ to read more exclusive content we post.
+SHARE
+
+
+
+
+
+Tweet
+
+Share
+
+Share
+
+Share
+
+
+Share on Facebook
+
+Share on Twitter
+
+Share on Linkedin
+
+Share on Reddit
+
+Share on Hacker News
+
+Share on Email
+
+Share on WhatsApp
+Share on Facebook Messenger
+
+Share on Telegram
+SHARE 
+
+Cisco Talos
+, 
+Cloud security
+, 
+cybersecurity
+, 
+email security
+, 
+Malware
+, 
+Phishing
+, 
+Threat Intelligence
+, 
+Workflow Automation
+Get the Latest News in Your Inbox
+Get the latest news, expert insights, exclusive resources, and strategies from industry leaders, all for free.
+Email
+Cybersecurity Webinars
+Building Stronger Defenses
+Stop Patient Zero Attacks Before They Bypass Detection
+Learn how to stop patient zero attacks before they bypass detection and compromise your systems at entry points.
+Watch Free Now
+Reduce AppSec Risk
+Validate Real Attack Paths Before Attackers Exploit Them
+Learn how to validate real attack paths and reduce exploitable risk with continuous agentic security validation.
+Join the Session
+⚡ Latest News
+Cybersecurity Resources
+The Room Where Security Actually Gets Done — SANSFIRE 2026
+D.C., July 13–18. Elite instructors, 50+ courses, NetWars, and peers who operate at your level.
+Earn a Master's in Cybersecurity Risk Management
+Lead the future of cybersecurity risk management with an online Master’s from Georgetown.
+Your VPN is Helping Attackers Move as Fast as AI
+AI collapsed human response window and turned remote access into fastest path to breach.
+ROI Calculator: See the Value of IAM Automation
+Calculate your savings on audits, app onboarding, and discovery. Try it now.
+Expert Insights 
+Articles
+Videos
+From Phishing to Recovery: Breaking the Ransomware Attack Chain
+
+May 04, 2026
+Read ➝
+Mythos is Coming: What the Next Six Months Require
+
+May 04, 2026
+Read ➝
+Your Biggest Security Risk Isn’t Malware — It's What You Already Trust
+
+May 04, 2026
+Read ➝
+CTM360 Exposes Global GovTrap Campaign With 11,000+ Fake Government Portals Targeting Citizens Worldwide
+
+April 27, 2026
+Read ➝
+Connect with us!
+
+1,300,000 Followers
+
+710,100 Followers
+
+25,500 Subscribers
+
+157,500 Followers
+
+1,990,000 Followers
+55,500 Followers
+Company
+About THN
+Advertise with us
+Contact
+Pages
+Webinars
+Awards
+Privacy Policy
+
+ RSS Feeds
+
+ Contact Us
+© 2026 The Hacker News. All Rights Reserved.

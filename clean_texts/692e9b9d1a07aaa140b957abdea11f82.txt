@@ -1,0 +1,458 @@
+This simple DNS switch is always my first privacy recommendation
+Menu
+Sign in now
+Close
+PC & Mobile
+Submenu
+Windows2
+Linux
+Android
+Apple
+Technical
+Submenu
+Tech Explained
+Security
+Software
+Submenu
+Productivity
+Internet
+Creative
+Screen
+Submenu
+Entertainment
+Streaming
+Home
+Submenu
+Smart Home
+Home
+News
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+2
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+Productivity
+Android
+Smart TVs
+Networking
+Windows 11
+Entertainment
+Close
+This simple DNS switch is always my first privacy recommendation
+Afam Onyimadu / MUO
+By 
+Afam Onyimadu
+Published
+ Apr 23, 2026, 2:30 PM EDT
+Afam's experience in tech publishing dates back to 2018, when he worked for Make Tech Easier. Over the years, he has built a reputation for publishing high-quality guides, reviews, tips, and explainer articles, covering Windows, Linux, and open source tools. His work has been featured on top websites, including Technical Ustad, Windows Report, Guiding Tech, Alphr, and Next of Windows.
+
+He holds a first degree in Computer Science and is a strong advocate for data privacy and security, with several tips, videos, and tutorials on the subject published on the Fuzo Tech YouTube channel.
+
+When he is not working, he loves to spend time with his family, cycling, or tending to his garden.  
+Sign in to your 
+MakeUseOf
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+2
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+I've been in conversations where people assume privacy starts with apps, browsers, or VPNs, and 
+I wonder why DNS is not thrown into these conversations
+.
+✕
+ Remove Ads
+It's a system that constantly runs in the background to translate web addresses into IP addresses, and changing it is my first suggestion when it comes to privacy. By changing it, especially to a privacy-focused option like Quad9, you change a major default behavior, altering what the network can expose even before other components load.
+Related
+
+			I stopped using browser VPNs after this—and you should too
+		
+You should avoid browser VPNs for security and performance reasons. 
+Posts
+4
+By 
+Afam Onyimadu
+Sep 19, 2025
+
+                        DNS is the invisible layer shaping everything you do online
+               
+
+            Why every website you open starts with a request you don't see
+    
+Tashreef Shareef / MakeUseOf
+Credit: Tashreef Shareef / MakeUseOf
+ When you open a website, one of the first things your device does is query a DNS server to determine the site's IP address. This seemingly routine task has one of the most consistent metadata trails. But it's different from most other forms of tracking because it happens even before a page loads.
+Intent is an element people don't always bother to protect. Even though you rely on HTTPS for content protection, ISPs and default DNS providers may be able to build a picture of your searches, website visits, and what you read. This still holds even if the page is encrypted. This isn't pointing to an exotic surveillance scheme, but just the default structure of the internet.
+Visibility typically sits on these three layers:
+✕
+ Remove Ads
+Layer
+What is exposed
+HTTPS
+Page content is encrypted and hidden from third parties
+DNS query
+The domain name (e.g., 
+mentalhealth.org
+) is visible to your DNS resolver
+IP connection
+The destination server address remains visible to your ISP
+While DNS doesn't expose everything, it can consistently point to the destination even if it's not seeing actual content. This becomes more significant on public Wi-Fi, where DNS requests may not be encrypted and are passed through public default resolvers. This gives the network provider visibility into domain lookups you make in real time. 
+Quad9
+ helps mitigate this default behavior.
+
+                        Quad9 replaces your default DNS with a security-first resolver
+               
+
+            A nonprofit structure built so there's nothing to monetize
+    
+Tashreef Shareef / MakeUseOf
+Credit: Tashreef Shareef / MakeUseOf
+The main idea of Quad9 is to stop your DNS traffic from being used for profiling or commercial gain
+. It's different from Google and Cloudflare in the sense that it's not affiliated with any advertising business or adjacent businesses that may benefit from knowing your browsing habits.
+Quad9's privacy policy
+ is also more tangible than most of the competition. Quad9 does not log IP addresses for DNS queries. Architecturally, this information is dropped at the network edge. However, it retains city-level aggregate geographic information for network capacity planning. Quad9 DNS is stripped of any mechanism that can store or collect personally identifiable DNS data.
+✕
+ Remove Ads
+Functionally, it operates differently from standard resolvers. It ensures any connection with flagged domains is never completed. This is possible due to its security partners and blocked domains that host malware, phishing pages, or botnet infrastructure. This is an important security point because many phishing attacks succeed after an accidental click.
+But it runs deeper. In 2021, when Sony Music tried to use a Hamburg court injunction to compel Quad9 to block domains globally, 
+Quad9 fought back
+ and won the case. The fact that a DNS company was willing to go to court and defend its operational neutrality is a significant credibility signal. The core of Quad9 is to change the defaults of what internet connections allow through.
+
+                        Switching to Quad9 takes minutes and covers your entire network
+               
+
+            Router-level setup is the only step most people actually need
+    
+The primary addresses are:
+
+                                        9.9.9.9 - secure, malware-blocking (recommended default)
+                        
+
+                                        149.112.112.112 - secondary
+                        
+For best results, set up Quad9 on your router. This ensures devices connected to that network automatically use Quad9 without needing individual tweaks. However, you will have to fall back to a device-level setup if you need to use devices outside your home network. This could be Windows' manual DNS, macOS' network settings, Android's Private DNS mode, or iOS' per-network Wi-Fi DNS settings.
+With Quad9, you may choose between three distinct service options:
+✕
+ Remove Ads
+Address
+What it does
+When to use it
+9.9.9.9
+Secure DNS with malware and phishing blocking
+Default choice for most users
+9.9.9.10
+Unfiltered DNS, no blocking of any kind
+Use for debugging or when you want pure DNS resolution
+9.9.9.11
+Secure DNS with ECS enabled for CDN optimization
+If you notice slower loading on major streaming or CDN-heavy sites
+Some routers require HTTP/2 to use DNS-over-HTTPS with Quad9; if your router only supports HTTP/1.1 the connection may fail without error messages. If this happens, switching to DNS-over-TLS will fix it. Confirm the fix by running a leak test and checking for Quad9 IP addresses.
+
+            Quad9 compared to mainstream DNS providers
+    
+Google Public DNS and Cloudflare 1.1.1.1 are the more common alternatives to Quad9. These are core differences I noticed when using them:
+Quad9
+Cloudflare 1.1.1.1
+Google 8.8.8.8
+Organization type
+Nonprofit foundation
+Commercial CDN company
+Commercial advertising company
+Malware blocking
+Yes, on by default
+Optional — requires switching to 1.1.1.2
+No
+IP address logging
+Never stored
+Deleted within 24 hours, KPMG-audited
+Anonymized after two weeks
+Legal jurisdiction
+Switzerland
+United States
+United States
+Primary purpose
+Security and privacy
+Speed and reliability
+Ecosystem performance
+There are structural differences between these options. Cloudflare is also a good privacy option and a favorite for anyone who prioritizes raw speed. However, the position of Quad9 is narrower. It resolves DNS, blocks known threats, and has no commercial incentive to monetize DNS data.
+✕
+ Remove Ads
+Even though it doesn't anonymize browsing or 
+encrypt your full traffic
+, it can significantly reduce phishing and malware exposure.
+DNS
+Network Tips
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+
+                                                    Technology Explained
+                                            
+
+                                                    PC & Mobile
+                                            
+
+			Your SSD does not wipe your deleted files — this is what TRIM actually does
+		
+56 minutes ago
+
+			Wireless charging is finally worth using, but only if you know what to look for
+		
+2 hours ago
+
+			CPU-Z shows more than PC specs if you know where to look
+		
+4 hours ago
+See More
+
+			I ran a Windows network reset and fixed problems I'd blamed on my router for months
+		
+3 hours ago
+
+			I switched to Gentoo Linux and now I get why it's worth the headache
+		
+7 hours ago
+
+			Windows has been hoarding old drivers on your SSD — here's how to clear them out
+		
+19 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			Your Pixel can do 5 new things it couldn't do last month
+		
+
+			I replaced my paid VPN app with a feature Windows already had — and it works perfectly
+		
+
+			7 devices in your home that really shouldn’t be on Wi-Fi
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+2
+Sign in to your 
+MakeUseOf
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+AA40
+AA40
+AA40
+#NX683731
+Member since 2025-10-16
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+First most routers like xfinity won't let you change dns there. 
+Second I tested quad9 and is quite slower to display sites than 1111 or 8888
+2026-04-24 07:34:32
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+bill_nichols
+bill_nichols
+bill_nichols
+#MN365123
+Member since 2025-12-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+That was my next question -- how much of a speed hit do you take relative to Cloudflare.  Thanx!
+2026-04-24 11:47:01
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 23, 2026
+
+                                    Your passwords are officially obsolete, according to Britain's top intelligence agency
+                            
+Apr 22, 2026
+
+                                    I replaced Google's search bar with Samsung Finder and I'm never going back
+                            
+Apr 22, 2026
+
+                                    5 USB-C tricks that feel wrong until you try them
+                            
+Apr 22, 2026
+
+                                    Google issues Pixel battery optimization tips that solve overnight drain
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+MakeUseOf
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

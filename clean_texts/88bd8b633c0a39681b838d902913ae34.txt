@@ -1,0 +1,568 @@
+Framework announces Laptop 13 Pro, ‘the MacBook Pro for Linux users’ | The Verge
+Skip to main content
+Sign up for Verge Daily so you never miss out on the tech news that matters most.
+close email sign up banner
+Let's keep it going
+Sign up for our daily newsletter
+to get all the tech news that matters most.
+Please enter above
+count me in!
+No, thanks
+By submitting your email, you agree to our 
+Terms
+ and 
+Privacy Notice
+. This site is protected by reCAPTCHA and the Google 
+Privacy Policy
+ and 
+Terms of Service
+ apply. 
+You're in! Want more Verge?
+For a limited time, get full access for just $4/month
+It's all yours: exclusive newsletters, RSS feeds, and fewer ads. 
+Subscribe now
+No, thanks
+close email sign up banner
+The homepage
+The Verge
+The Verge logo.
+Subscribe
+Sign In
+The Verge
+The Verge logo.
+Tech
+Reviews
+Science
+Entertainment
+AI
+Policy
+Hamburger Navigation Button
+The homepage
+The Verge
+The Verge logo.
+Subscribe
+Hamburger Navigation Button
+Navigation Drawer
+The Verge
+The Verge logo.
+Login
+ / 
+Sign Up
+close
+Close
+Search
+Tech
+Expand
+Amazon
+Apple
+Facebook
+Google
+Microsoft
+Samsung
+Business
+See all tech
+Reviews
+Expand
+Smart Home Reviews
+Phone Reviews
+Tablet Reviews
+Headphone Reviews
+See all reviews
+Science
+Expand
+Space
+Energy
+Environment
+Health
+See all science
+Entertainment
+Expand
+TV Shows
+Movies
+Audio
+See all entertainment
+AI
+Expand
+OpenAI
+Anthropic
+See all AI
+Policy
+Expand
+Antitrust
+Politics
+Law
+Security
+See all policy
+Gadgets
+Expand
+Laptops
+Phones
+TVs
+Headphones
+Speakers
+Wearables
+See all gadgets
+Verge Shopping
+Expand
+Buying Guides
+Deals
+Gift Guides
+See all shopping
+Gaming
+Expand
+Xbox
+PlayStation
+Nintendo
+See all gaming
+Streaming
+Expand
+Disney
+HBO
+Netflix
+YouTube
+Creators
+See all streaming
+Transportation
+Expand
+Electric Cars
+Autonomous Cars
+Ride-sharing
+Scooters
+See all transportation
+Features
+Verge Video
+Expand
+TikTok
+YouTube
+Instagram
+Podcasts
+Expand
+Decoder
+The Vergecast
+Version History
+Newsletters
+Archives
+Store
+Verge Product Updates
+Subscribe
+Facebook
+Threads
+Instagram
+Youtube
+RSS
+The Verge
+The Verge logo.
+Framework announces Laptop 13 Pro, ‘the MacBook Pro for Linux users’
+Comments
+130
+Comments Drawer
+Comments
+Gadgets
+Close
+Gadgets
+Posts from this topic will be added to your daily email digest and your homepage feed.
+Follow
+Follow
+See All Gadgets
+News
+Close
+News
+Posts from this topic will be added to your daily email digest and your homepage feed.
+Follow
+Follow
+See All News
+Tech
+Close
+Tech
+Posts from this topic will be added to your daily email digest and your homepage feed.
+Follow
+Follow
+See All Tech
+Framework announces Laptop 13 Pro, ‘the MacBook Pro for Linux users’
+Did Framework just catch up to premium laptops?
+If you buy something from a Verge link, Vox Media may earn a commission. 
+See our ethics statement.
+by
+Sean Hollister
+Close
+Sean Hollister
+Senior Editor
+Posts from this author will be added to your daily email digest and your homepage feed.
+Follow
+Follow
+See All by Sean Hollister
+Apr 21, 2026, 6:08 PM UTC
+Link
+Share
+Comments
+1
+3
+0
+130
+Comments (All New)
+If you buy something from a Verge link, Vox Media may earn a commission. 
+See our ethics statement.
+Gorilla arm who?
+|  Image: Framework
+Part Of
+Framework’s Laptop 13 Pro launch event
+see all updates 
+Sean Hollister
+Close
+Sean Hollister
+Posts from this author will be added to your daily email digest and your homepage feed.
+Follow
+Follow
+See All by Sean Hollister
+is a senior editor and founding member of The Verge who covers gadgets, games, and toys. He spent 15 years editing the likes of CNET, Gizmodo, and Engadget.
+Every time 
+we review a Framework laptop
+, we find familiar pros and cons. They’re truly upgradable, incredibly repairable, but we always wish the battery lasted longer. We always wish the build quality were top notch.
+Today, Framework is announcing what could be the answer: the Framework Laptop 13 Pro.
+I just tried it at Framework’s event in San Francisco, and the build quality feels like night and day compared to the somewhat piecemeal designs the company’s released before.
+Sleek.
+Image: Framework
+It’s the company’s first laptop to be fully machined out of blocks of 6000-series aluminum, its first with a haptic trackpad, and its first with a fully custom 13.5-inch, 3:2, 2.8K, variable refresh rate (30-120Hz) IPS screen that comes color-calibrated right out of the box.
+This content isn't visible due to your cookie preferences. To load this content, click the Allow button below to opt in to "Social Media & Embedded Content" cookies. These cookies are set and controlled by the third party sources from which the embedded content originates.
+Allow
+View and Manage all cookie consent preferences
+With the option to order it preloaded with Ubuntu instead of only Windows, Framework CEO Nirav Patel says its goal for this computer is to be “the MacBook Pro for Linux users.” And — especially in anodized black, though it also comes in silver — it looks like it could play the part!
+With a 22 percent higher capacity battery (74Wh), an 
+Intel Core Ultra Series 3 “Panther Lake” chip
+, and 
+LPCAMM2 compression-mounted memory
+, Framework even claims it can (barely) beat the 
+14-inch M5 MacBook Pro
+ in battery life — at least when it comes to streaming 20 hours of 4K Netflix at a go.
+And while we can’t test that quite yet, Framework let us tear down the entire machine today, play with the keyboard, touchpad, touchscreen, and chassis. It largely feels premium in a way Framework laptops haven’t felt before. The machined aluminum chassis and keyboard have so little flex, the touchpad feels incredibly smooth with nice haptic taps. And, like Apple’s MacBooks, the hinge is properly tensioned so you can open the lid with a single finger. I show that off in our video above!
+Here are some photos from my colleague Victoria Barrios, too including us pulling out a LPCAMM2 memory module:
+Previous
+Next
+1/11
+Gallery: Hands-on with the Framework Laptop 13 Pro.
+The Laptop 13 Pro is Framework’s first 13-inch laptop with a touchscreen (though no stylus), its first with PCIe 5.0 for up to 8TB of 14,000MB/s SSD storage, and its first with Dolby Atmos certification for its newly side-firing speakers. (“Mid at best” is how Antonio described the speakers 
+in the last 13-inch model
+, so we’re genuinely hoping for an improvement there.)
+Previous
+Next
+1/10
+Here’s a gallery full of Framework Laptop 13 Pro images.
+Image: Framework
+And unlike the MacBooks, of course, you can easily replace the M.2 2280 storage and even the RAM, assuming you can find and afford its newfangled LPCAMM2 modules 
+once RAMageddon has subsided
+.
+For what it’s worth, Patel tells us Framework will be able to stock 16GB, 32GB and 64GB modules in its own marketplace after working carefully with memory suppliers like Micron, and Framework has been 
+one of the most transparent companies
+ about the RAM crisis thus far. For now, 
+RAM is priced
+ at $239 for 16GB, $439 for 32GB, and $849 for 64GB of LPCAMM2 LPDDR5X.
+Inserting the new compression-mounted memory.
+Image: Framework
+For modular gadget lovers, though, the most exciting part might be that 
+you don’t need to buy a whole laptop
+ to get many of these benefits, because the Laptop 13 Pro doesn’t break compatibility with the existing Framework Laptop 13. The Laptop 13 Pro has the same dimensions, including the same 15.85mm thickness, though it weighs slightly more at 1.4kg (3.08lb) vs 1.3kg (2.86lb). You can swap just the new Intel Core Ultra Series 3 into an existing Laptop 13, or just the display, or just the keyboard and trackpad. Or you can buy the new chassis. Or just a new bottom cover and the bigger battery for your existing machine.
+We didn’t yet have component prices at publish time to tell whether part swaps are cost-effective. But in a world where a single component (RAM) is driving up the price of practically every computer, upgrades that 
+don’t
+ involve RAM might be quite interesting. Speaking of which, you can also configure the Laptop 13 Pro with last year’s AMD Ryzen AI 300 boards if Intel or LPCAMM isn’t your thing.
+Some customization options for the Framework Laptop 13 Pro.
+Image: Framework
+The Framework Laptop 13 Pro itself is of course priced higher than previous 13-inch models. It 
+starts at $1,499
+ for a prebuilt with an Intel Core Ultra 5 325, 16GB of LPCAMM2 memory, and 512GB of storage, or 
+$1,199 for DIY
+.
+That prebuilt price is $400 more than Framework has charged for a Ryzen AI 5 340 with 16GB of RAM and 256GB storage, but you’re theoretically getting a lot more for the cash — and not just in terms of performance, battery life, and doubled storage. There’s also a faster 100W GaN charger and a smoother screen, at up to 120Hz compared to the 60Hz that Framework’s 13-inch display was stuck at previously.
+Patel says that after six years in business, “There is essentially no technology that’s theoretically possible where we’re not at a scale we can get it,” and its first fully custom display is an example of that. Patel says Framework went blank slate, including a new backlight, in-cell touch, and a new antiglare coating for higher contrast in ambient lighting.
+Framework Laptop 13 Pro (Intel Core Ultra Series 3)
+$1199
+$1199
+$1199 at Framework (DIY Edition)
+$1499 at Framework (Pre-built Edition)
+The 2880 x 1920 screen still leaves room for improvement, though. I like the matte coating in person, though it could be brighter; its 700-nit brightness isn’t anything special these days. Patel admits that Framework capped its color gamut at 100 percent of the less comprehensive sRGB color space (not Adobe RGB or DCI-P3) to prioritize the specs that’d lead to better battery. When I ask what “Pro” means if not the visual designer pros who buy MacBooks, Patel says it’s about building “the ultimate developer laptop,” one that developers will compare to the MacBook Pro.
+“If you’re a developer who’s coding all day long, we want this to be the perfect laptop for you,” he says.
+Framework is opening preorders for the Framework Laptop 13 Pro today, and while we didn’t have full pricing at publish time, it seems that prices go up fast. The next step up from the $1,499 model is a $2,099 Core Ultra X7 358H model with double the CPU cores (16 vs 8), double the RAM (32GB vs 16GB), double the storage (1TB vs 512GB), and triple the integrated graphics cores (12 vs 4). That’s definitely MacBook Pro pricing.
+We did see one with a higher-end chip playing Cyberpunk 2077 at around 70fps, admittedly with a lot of help from adaptive upscaling. The company plans to ship the first batch of laptops in June, and said it’d only have a small batch of Intel X9 to start — it sold out by the time we checked back this afternoon.
+If you purchase 
+the Laptop 13 Pro mainboards
+ for your existing Laptop 13, you’ll pay $449 for the Ultra 5 325 version, or $799 for an Ultra X7 358H. The X9 isn’t available separately right now.
+Update, April 21st: 
+Added hands-on impressions and photos from Framework’s event in San Francisco, and additional pricing. 
+130
+ Comments
+Follow topics and authors
+ from this story to see more like this in your personalized homepage feed and to receive email updates.
+Sean Hollister
+Close
+Sean Hollister
+Senior Editor
+Posts from this author will be added to your daily email digest and your homepage feed.
+Follow
+Follow
+See All by Sean Hollister
+Gadgets
+Close
+Gadgets
+Posts from this topic will be added to your daily email digest and your homepage feed.
+Follow
+Follow
+See All Gadgets
+Laptops
+Close
+Laptops
+Posts from this topic will be added to your daily email digest and your homepage feed.
+Follow
+Follow
+See All Laptops
+News
+Close
+News
+Posts from this topic will be added to your daily email digest and your homepage feed.
+Follow
+Follow
+See All News
+Tech
+Close
+Tech
+Posts from this topic will be added to your daily email digest and your homepage feed.
+Follow
+Follow
+See All Tech
+Featured Videos From The Verge
+We rank Apple’s top 10 products | Vergecast Clips
+1/1
+Skip 
+Ad
+Continue watching
+after the ad
+Visit Advertiser website
+GO TO PAGE
+The Verge asked its audience to rank the best products of all time. In this clip from The Vergecast, hosts David Pierce and Nilay Patel react to the audience’s ranking and reveal their personal top 10 lists.
+More in: 
+Framework’s Laptop 13 Pro launch event
+Framework now offers Nvidia’s new 12GB RTX 5070 laptop GPU for the Laptop 16.
+Jay Peters
+Apr 28
+Framework couch keyboard, meet Logitech couch keyboard.
+Sean Hollister
+Apr 23
+Comments
+Comment Icon Bubble
+15
+Turns out Framework’s eGPU is even more powerful than I thought.
+Sean Hollister
+Apr 22
+Most Popular
+Most Popular
+Google Fitbit Air preorders come with a second band for free
+Tesla is recalling its cheaper Cybertruck because the wheels might fall off
+The future of game consoles is looking bleak
+Nintendo is raising Switch 2 prices
+Apple reportedly has a deal to use Intel-made chips again
+1/1
+Skip 
+Ad
+Continue watching
+after the ad
+Visit Advertiser website
+GO TO PAGE
+The Verge Daily
+A free daily digest of the news that matters most.
+Email (required)
+Sign Up
+By submitting your email, you agree to our 
+Terms
+ and 
+Privacy Notice
+. This site is protected by reCAPTCHA and the Google 
+Privacy Policy
+ and 
+Terms of Service
+ apply.
+Advertiser Content From
+This is the title for the native ad
+More in 
+Gadgets
+Someone out-Trumped the Trump phone
+The Steam Controller’s reservation queue is open
+The Verge’s 2026 Mother’s Day gift guide
+Teenage Engineering’s KO Sidekick is a mixer with fun performance effects
+Google Fitbit Air preorders come with a second band for free
+Everyone should follow Logitech and put extra USB ports on iPad keyboard cases
+Someone out-Trumped the Trump phone
+Dominic Preston
+May 8
+Comments
+Comment Icon Bubble
+17
+The Steam Controller’s reservation queue is open
+Cameron Faulkner
+May 8
+Comments
+Comment Icon Bubble
+24
+The Verge’s 2026 Mother’s Day gift guide
+Sheena Vasani
+May 8
+Comments
+Comment Icon Bubble
+3
+Teenage Engineering’s KO Sidekick is a mixer with fun performance effects
+Terrence O'Brien
+May 8
+Comments
+Comment Icon Bubble
+3
+Google Fitbit Air preorders come with a second band for free
+Cameron Faulkner
+May 8
+Comments
+Comment Icon Bubble
+3
+Everyone should follow Logitech and put extra USB ports on iPad keyboard cases
+Andrew Liszewski
+May 8
+Comments
+Comment Icon Bubble
+4
+Advertiser Content From
+This is the title for the native ad
+Top Stories
+12:00 PM UTC
+The game that makes me actually want to exercise
+12:00 PM UTC
+Quantum dot TVs beat RGB LED TVs, says the company that makes QDs for TVs
+Two hours ago
+Let it snow
+May 8
+Microsoft was worried OpenAI would run off to Amazon and ‘shit-talk’ Azure
+May 8
+The future of game consoles is looking bleak
+Two hours ago
+These great digital gifts will arrive just in time for Mother’s Day
+The Verge
+The Verge logo.
+Facebook
+Threads
+Instagram
+Youtube
+RSS
+Contact
+Tip Us
+Community Guidelines
+Archives
+About
+Ethics Statement
+How We Rate and Review Products
+Manage Privacy Settings
+Terms of Use
+Privacy Notice
+Cookie Policy
+Licensing FAQ
+Accessibility
+Platform Status
+© 2026 
+Vox Media
+, LLC. All Rights Reserved
+Privacy Notice
+We use cookies and personal data to enhance your experience and fund the production of content on our site. If you would like to customize the storing of cookies on your device to enhance site navigation, analyze site usage, and assist in our marketing efforts, you may click Manage Privacy Settings at any time. If you approve of our use of cookies and the collection of your data for the purposes described, you may click 'Accept.'
+Privacy Policy
+Manage Privacy Settings
+Accept
+Opt-Out Request Honored
+Privacy Preference Center
+When you visit any website, it may store or retrieve information on your browser, mostly in the form of cookies. This information might be about you, your preferences, or your device, and is mostly used to make the site work as you expect. The information does not usually identify you directly, but it can give you a more personalized web experience. Because we respect your right to privacy, you can choose not to allow some types of cookies. Click on the different category headings to learn more and change our default settings. Blocking some types of cookies may impact your experience of the site and the services we are able to offer.
+            
+Cookie Policy
+User ID: 
+ 8d23ef19-796b-4240-aaa3-f826646a8903
+This User ID will be used for storing and accessing your preferences for future.
+Timestamp: 
+ You have not consented yet
+Allow All
+ Manage Consent Preferences
+Strictly Necessary Cookies
+Essential
+These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work. These cookies do not store any personally identifiable information.
+View Vendor Details
+Functional and Performance Cookies
+Functional and Performance Cookies
+We use these cookies and trackers to enhance site functionality, to customize your experience and content, to learn about user behavior and interests, and to gather analytics about our sites and user activity.  
+Performance Cookies
+Switch Label
+These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. All information these cookies collect is aggregated and therefore anonymous. If you do not allow these cookies we will not know when you have visited our site, and will not be able to monitor its performance.
+Functional Cookies
+Switch Label
+These cookies enable the website to provide enhanced functionality and personalisation. They may be set by us or by third party providers whose services we have added to our pages. If you do not allow these cookies then some or all of these services may not function properly.
+View Vendor Details
+Targeting Cookies
+Targeting Cookies
+These cookies may be set through our site by our advertising partners. They may be used by those companies to build a profile of your interests and show you relevant adverts on other sites. They do not store directly personal information, but are based on uniquely identifying your browser and internet device. If you do not allow these cookies, you will experience less targeted advertising.
+View Vendor Details
+Social Media & Embedded Content
+Social Media & Embedded Content
+Content embedded on our sites (e.g. social media posts, video clips, polls and games) originates from third party sources such as social media platforms, video sharing sites, or other third party websites. When this content loads on pages you visit, any cookies or similar tracking technologies set by the third party source in connection with that content may also load. Vox Media doesn't set these cookies and doesn't control them. These cookies may be capable of tracking your browser across sites and/or building a profile of your interests. Not allowing these cookies will impact what content you can see and engage with on our sites.
+View Vendor Details
+Back Button
+Vendors List
+Search Icon
+Filter Icon
+Clear
+checkbox label
+label
+Apply
+Cancel
+Consent
+Leg.Interest
+checkbox label
+label
+checkbox label
+label
+checkbox label
+label
+Confirm My Choices
+Submit your email to Verge Daily so you never miss out on the tech news that matters most
+close email sign up dialog
+Let's keep it going
+Sign up for Verge Daily so you never miss out
+on the tech news that matters most.
+Please enter above
+Count me in!
+No, thanks
+By submitting your email, you agree to our 
+Terms
+ and 
+Privacy Notice
+. This site is protected by reCAPTCHA and the Google 
+Privacy Policy
+ and 
+Terms of Service
+ apply. 
+You're in! Want more Verge?
+For a limited time, get full access for just $4/month
+It's all yours: exclusive newsletters, RSS feeds, and fewer ads. 
+subscribe now
+No, thanks
+close email sign up dialog
+Sign up for Verge Daily so you never miss out on the tech news that matters most.
+close email sign up banner
+Let's keep it going
+Sign up for our daily newsletter
+to get all the tech news that matters most.
+Please enter above
+count me in!
+No, thanks
+By submitting your email, you agree to our 
+Terms
+ and 
+Privacy Notice
+. This site is protected by reCAPTCHA and the Google 
+Privacy Policy
+ and 
+Terms of Service
+ apply. 
+You're in! Want more Verge?
+For a limited time, get full access for just $4/month
+It's all yours: exclusive newsletters, RSS feeds, and fewer ads. 
+Subscribe now
+No, thanks
+close email sign up banner

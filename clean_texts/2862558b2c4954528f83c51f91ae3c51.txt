@@ -1,0 +1,871 @@
+Chrome Deleted Its Own Privacy Promise for Sneaky On-Device AI - Decrypt
+News
+English
+Sign Up
+Partner with us
+News
+Explorer
+Newsletter
+Coin Prices
+BTC
+$80,732.00
+0.63%
+ETH
+$2,328.87
+0.87%
+XRP
+$1.42
+0.45%
+BNB
+$650.86
+0.17%
+USDC
+$0.999934
+0.01%
+SOL
+$93.34
+1.33%
+TRX
+$0.350237
+0.01%
+FIGR_HELOC
+$1.029
+2.74%
+DOGE
+$0.109096
+-0.33%
+WBT
+$59.62
+0.71%
+USDS
+$0.999818
+0.00%
+HYPE
+$43.03
+-0.56%
+ADA
+$0.272219
+-0.81%
+ZEC
+$597.94
+-1.78%
+LEO
+$10.33
+0.17%
+BCH
+$449.92
+-0.21%
+XMR
+$411.72
+2.57%
+LINK
+$10.41
+0.27%
+TON
+$2.47
+-3.07%
+CC
+$0.156685
+6.36%
+XLM
+$0.163277
+-0.04%
+LTC
+$58.21
+-0.17%
+M
+$3.42
+-2.97%
+USD1
+$0.999688
+0.01%
+AVAX
+$9.99
+0.64%
+SUI
+$1.076
+5.37%
+HBAR
+$0.093131
+0.45%
+USDE
+$0.999388
+-0.01%
+SHIB
+$0.0000064
+-0.95%
+RAIN
+$0.00744267
+-1.34%
+PYUSD
+$0.999774
+-0.01%
+CRO
+$0.070847
+-0.51%
+USYC
+$1.12
+0.00%
+TAO
+$308.90
+-1.68%
+XAUT
+$4,710.56
+0.20%
+USDG
+$0.999826
+-0.03%
+BUIDL
+$1.00
+0.00%
+UNI
+$3.76
+2.04%
+DOT
+$1.35
+-1.84%
+MNT
+$0.685949
+0.51%
+WLFI
+$0.070251
+-6.67%
+PAXG
+$4,713.57
+0.15%
+ONDO
+$0.422069
+-5.51%
+NEAR
+$1.57
+-1.41%
+ICP
+$3.57
+1.37%
+SKY
+$0.079812
+-2.90%
+OKB
+$88.06
+1.18%
+PI
+$0.174063
+1.19%
+ASTER
+$0.699023
+1.35%
+PEPE
+$0.00000426
+-1.30%
+USDF
+$0.998841
+0.05%
+HTX
+$0.00000197
+0.28%
+RLUSD
+$0.999777
+-0.02%
+ETC
+$9.62
+-1.76%
+BGB
+$2.13
+-0.68%
+USDD
+$0.999712
+-0.04%
+AAVE
+$96.01
+0.21%
+MORPHO
+$2.12
+0.91%
+USDY
+$1.13
+-0.10%
+BFUSD
+$0.9992
+-0.03%
+JTRSY
+$1.10
+0.00%
+ENA
+$0.130081
+-1.72%
+ALGO
+$0.129963
+-2.80%
+KCS
+$8.42
+0.43%
+QNT
+$74.04
+0.69%
+POL
+$0.101139
+-1.00%
+RENDER
+$2.01
+-1.41%
+KAS
+$0.03753499
+3.17%
+U
+$0.999454
+-0.06%
+EUTBL
+$1.24
+-0.04%
+USTB
+$11.08
+0.00%
+ATOM
+$1.94
+-0.44%
+BCAP
+$105.77
+0.00%
+SIREN
+$1.32
+15.38%
+FIL
+$1.22
+-5.15%
+NEXO
+$0.911819
+0.65%
+WLD
+$0.272089
+-0.64%
+APT
+$1.11
+-0.78%
+ARB
+$0.142688
+0.06%
+GT
+$7.52
+1.48%
+JUP
+$0.250562
+1.81%
+PUMP
+$0.00216402
+0.32%
+STABLE
+$0.03400111
+3.83%
+VVV
+$16.32
+18.55%
+JST
+$0.083638
+1.45%
+FLR
+$0.0081741
+2.34%
+PENGU
+$0.01072921
+2.58%
+VET
+$0.00760917
+-4.21%
+BONK
+$0.00000726
+0.93%
+DASH
+$49.68
+0.10%
+USDTB
+$0.999351
+-0.01%
+BDX
+$0.079846
+0.04%
+SKYAI
+$0.613837
+1.09%
+VIRTUAL
+$0.931072
+-0.20%
+OUSG
+$115.18
+0.00%
+XDC
+$0.0303467
+-2.61%
+GHO
+$0.999706
+-0.01%
+TRUMP
+$2.46
+-0.10%
+HASH
+$0.01076703
+1.74%
+DEXE
+$11.98
+0.45%
+USD0
+$0.998217
+0.00%
+NIGHT
+$0.03258183
+-0.06%
+YLDS
+$0.999977
+0.01%
+FET
+$0.233229
+-0.24%
+LUNC
+$0.00009425
+1.64%
+A7A5
+$0.01298867
+0.34%
+CAKE
+$1.56
+-0.12%
+TUSD
+$0.999773
+0.02%
+STX
+$0.266447
+0.02%
+SEI
+$0.070842
+8.14%
+AERO
+$0.505463
+11.43%
+CHZ
+$0.04516806
+-0.37%
+EURC
+$1.18
+-0.03%
+EDGE
+$1.28
+-0.01%
+SPX
+$0.460081
+2.68%
+INJ
+$4.22
+0.10%
+XTZ
+$0.387473
+-1.75%
+ADI
+$4.02
+1.53%
+USDGO
+$1.00
+0.01%
+MON
+$0.03464628
+3.60%
+KITE
+$0.178296
+8.14%
+TIA
+$0.442815
+0.16%
+JAAA
+$1.031
+0.00%
+FDUSD
+$0.999279
+0.03%
+SUN
+$0.02027454
+0.26%
+币安人生
+$0.387055
+2.68%
+CRV
+$0.25141
+-2.08%
+USX
+$0.999806
+0.00%
+USDM
+$1.004
+0.45%
+ETHFI
+$0.446957
+-1.63%
+H
+$0.202551
+11.00%
+JASMY
+$0.00745553
+16.56%
+ZRO
+$1.46
+0.40%
+B
+$0.362333
+-5.10%
+LAB
+$4.72
+12.15%
+OP
+$0.165058
+-5.69%
+KAU
+$147.90
+-2.94%
+GNO
+$133.49
+-0.23%
+APXUSD
+$0.999959
+0.03%
+FLOKI
+$0.00003609
+-2.19%
+2Z
+$0.100048
+0.57%
+PENDLE
+$2.03
+-2.68%
+DCR
+$19.58
+0.60%
+ZBCN
+$0.00347606
+6.65%
+CFX
+$0.065527
+-2.16%
+LDO
+$0.399895
+-1.97%
+PYTH
+$0.058886
+-1.79%
+APEPE
+$0.00000161
+9.68%
+BTT
+$0.00000033
+1.63%
+BSV
+$16.24
+-1.11%
+PRIME
+$1.036
+0.04%
+STRK
+$0.05469
+-5.00%
+NFT
+$0.00000032
+0.66%
+BILL
+$0.125201
+32.30%
+KAG
+$79.72
+-2.02%
+SYRUP
+$0.255306
+0.23%
+GRT
+$0.02715833
+-1.32%
+OHM
+$19.11
+-0.14%
+UB
+$0.114185
+-0.15%
+KAIA
+$0.04826617
+-1.52%
+FRAX
+$0.994199
+0.11%
+IOTA
+$0.06152
+-0.64%
+ENS
+$6.81
+-1.88%
+XPL
+$0.107128
+-1.67%
+LIT
+$1.058
+-0.99%
+GWEI
+$0.12613
+-5.38%
+FARTCOIN
+$0.255606
+1.18%
+CRVUSD
+$0.999761
+0.01%
+REAL
+$0.079051
+0.77%
+EARNETH
+$2,343.51
+0.95%
+JTO
+$0.53765
+-6.38%
+AXS
+$1.44
+0.98%
+RUSD
+$1.00
+0.01%
+USDAI
+$0.999818
+-0.00%
+THETA
+$0.23454
+0.67%
+9BIT
+$0.02846048
+3.52%
+RAY
+$0.852211
+-0.25%
+WIF
+$0.226248
+-0.02%
+GRASS
+$0.384357
+3.14%
+AKT
+$0.765327
+3.93%
+COMP
+$22.92
+-0.61%
+USDA
+$0.984817
+0.00%
+NEO
+$3.07
+-1.63%
+SAND
+$0.080253
+-1.56%
+IP
+$0.5936
+4.81%
+RUNE
+$0.596884
+-0.17%
+TEL
+$0.00217614
+4.05%
+PC0000031
+$1.00
+0.00%
+XCN
+$0.00528745
+0.87%
+RAVE
+$0.810245
+15.23%
+S
+$0.052741
+-3.21%
+GALA
+$0.00410932
+-0.90%
+UDS
+$1.57
+-0.50%
+TWT
+$0.468269
+0.35%
+BORG
+$0.194245
+-1.31%
+WAL
+$0.081075
+1.61%
+GENIUS
+$0.560553
+-3.90%
+MANA
+$0.096758
+-0.46%
+ZK
+$0.01894856
+-4.64%
+WFI
+$2.15
+0.40%
+PIEVERSE
+$0.769762
+0.60%
+VSN
+$0.04779169
+-2.05%
+CFG
+$0.304247
+4.29%
+HNT
+$0.95126
+-1.50%
+REUSD
+$1.077
+0.06%
+ONYC
+$1.10
+0.02%
+USTBL
+$1.083
+0.00%
+ZANO
+$11.02
+8.79%
+AR
+$2.53
+-8.25%
+ULTIMA
+$3,149.16
+0.77%
+BAT
+$0.108858
+-1.63%
+APE
+$0.162712
+-1.14%
+PC0000033
+$1.00
+0.00%
+CRCLON
+$116.42
+0.66%
+MX
+$1.75
+0.49%
+SFP
+$0.318831
+-1.82%
+CVX
+$1.76
+-1.78%
+BTSE
+$0.976426
+-2.09%
+EIGEN
+$0.213772
+-2.74%
+IMX
+$0.187612
+0.00%
+SATUSD
+$0.991557
+-0.34%
+A
+$0.09549
+-1.37%
+TRAC
+$0.348718
+-0.26%
+USAT
+$0.9989
+-0.04%
+FDIT
+$1.00
+0.00%
+XEC
+$0.00000756
+-1.01%
+FF
+$0.064556
+-2.46%
+EURS
+$1.22
+-0.52%
+NUSD
+$0.999306
+-0.02%
+GUSD
+$1.00
+0.21%
+AB
+$0.00152357
+-0.26%
+ASTEROID
+$0.00034319
+-5.41%
+GLM
+$0.144238
+-0.56%
+DYDX
+$0.171509
+-4.60%
+TAG
+$0.00131694
+-5.59%
+1INCH
+$0.10212
+2.01%
+MEGA
+$0.125232
+1.57%
+TIBBIR
+$0.140367
+-3.58%
+FLUID
+$1.80
+2.52%
+FRXUSD
+$0.999796
+0.01%
+AUSD
+$0.999884
+0.01%
+EGLD
+$4.56
+-1.23%
+THBILL
+$1.012
+-0.20%
+PROS
+$0.99838
+15.75%
+BSB
+$0.602798
+-1.21%
+PC0000097
+$1.00
+0.00%
+ACRED
+$1,097.55
+0.01%
+CHIP
+$0.066387
+-6.74%
+Price data by
+Reading
+Chrome Deleted Its Own Privacy Promise for Sneaky On-Device AI
+Decrypt
+News
+Artificial Intelligence
+Chrome Deleted Its Own Privacy Promise for Sneaky On-Device AI
+Chrome is quietly installing a 4GB AI on your devices. And now, its latest version has removed the disclosure that promised to keep your data off Google’s servers.
+By 
+Jose Antonio Lanz
+Edited by 
+Guillermo Jimenez
+May 7, 2026
+May 7, 2026
+3 min read
+Google. Image: Shutterstock/Decrypt
+Create an account
+ to save your articles.
+Add on Google
+Add Decrypt as your preferred source to see more of our stories on Google.
+In brief
+Chrome 148 removed the phrase "without sending your data to Google servers" from the on-device AI settings description that appeared in Chrome 147.
+The change was first spotted by users on the Chrome subreddit and picked up by Hacker News within hours.
+The phrasing implies that Google sends users' data to its servers even for requests that used to be fully private before.
+Google Chrome's settings page made a quiet promise before its most recent update.
+In Chrome version 147, under Settings > System > On-device AI, the description read: "To power features like scam detection, Chrome can use AI models that run directly on your device without sending your data to Google servers."
+That line is gone in Chrome 148.0.7778.97, which 
+began rolling
+ out recently. The new text just says Chrome "can use AI models that run directly on your device. When this is off, these features might not work."
+The removal of the phrase, which first happened in April, was spotted yesterday by users on 
+the Chrome subreddit
+ and surfaced on 
+Hacker News
+, where it collected over 250 points in hours, sparking debate among privacy enthusiasts. “I'm just surprised people use Chrome at all. Google has proven over and over they can't be trusted and will exploit you every chance they get,” said one user. “It's on-device AI spyware, really,” another user argued. “It collects intelligence about the user, summarizes it and sends it to Google, all paid by the user's electricity bill. Deviously clever.”
+As we reported 
+yesterday
+, Chrome has been silently downloading a roughly 4GB file called weights.bin—the weight file for Gemini Nano—to any device that meets its minimum hardware requirements, with no opt-in prompt and no visible notification. The file lands in a folder called OptGuideOnDeviceModel inside Chrome's user data directory. Delete it, and Chrome downloads it again on the next restart.
+Privacy researcher Alexander Hanff confirmed the behavior using macOS kernel filesystem logs, and it has since been verified on Windows 11 and Ubuntu as well.
+<span style="display: inline-block; width: 0px; overflow: hidden; line-height: 0;" data-mce-type="bookmark" class="mce_SELRES_start">﻿</span>
+The deleted phrase in Chrome was doing real work. It was the primary in-product justification for why Chrome installs Gemini Nano without asking. Google’s 
+argument
+ was that on-device processing keeps your data off its servers, making the silent install of its Gemini Nano model a net privacy benefit.
+That argument already had a hole in it. Chrome 147's "AI Mode" pill in the address bar routes every query to Google's cloud, not the local Gemini Nano model.
+A Google spokesperson, however, told 
+Decrypt
+ that the removal of the phrase "doesn't reflect a change to how we handle on-device AI for Chrome. The data that is passed to the model is processed solely on device."
+According to Google, though, there are times when websites that use Nano in Chrome will be able to see the inputs and outputs of the AI model. In those instances, the data use is subject to the individual privacy policy of the website—so Google removed the explicit mention of Google servers to avoid the potential confusion, the spokesperson said.
+Hanff, whose forensic documentation of the silent install sparked the original story, has argued the download violates 
+Article 5(3) of the EU ePrivacy Directive
+, which requires explicit consent before storing data on a user's device.
+Chrome 148 is currently rolling out. Users still on version 147 will see the old text; anyone who has already updated will find the new language.
+Editor's note: This article was updated after publication to include comments from Google and for clarity.
+Daily Debrief Newsletter
+Start every day with the top news stories right now, plus original features, a podcast, videos and more.
+Your Email
+Get it!
+Get it!
+View on Walrus
+View on Walrus
+Recommended News
+ Artificial Intelligence
+TeraWulf's AI Compute Revenue Outpaces Bitcoin Mining Amid $427 Million Loss
+Shares in publicly traded Bitcoin miner TeraWulf (WULF) finished the trading day down 2.6% after the firm posted a quarterly net loss of more than $427 million in Q1 2026, compared to just a $61.4 million loss in Q1 2025. 
+During the quarter, the firm reported revenues of $34 million—60% of which, or $21 million worth, came from its transition to AI compute—a 117% increase from the previous quarter. On the other hand, its Bitcoin mining revenues shrank by 50% over the same period to approximate...
+News
+Markets
+2 min read
+Logan Hitchcock
+May 8, 2026
+May 8, 2026
+Create an account
+ to save your articles.
+Intel Stock Hits All-Time High After Preliminary Chip Deal With Apple
+Intel and Apple have reached a preliminary agreement for Intel to manufacture some of the chips powering Apple devices, The Wall Street Journal reported Friday. Talks between the two companies have been ongoing for more than a year.
+Markets did not wait for the fine print. Intel stock jumped over 13% on Friday, hitting an intraday high of $130.57—clearing the company's dot-com era closing high of $75.81, set back on the year 2000, by roughly 72%. For context: 365 days ago, Intel was trading ne...
+News
+Business
+3 min read
+Jose Antonio Lanz
+May 8, 2026
+May 8, 2026
+Create an account
+ to save your articles.
+Trump Admin Launches Pentagon UFO Website With Declassified Files
+The Donald Trump administration on Friday launched a new government website dedicated to unidentified anomalous phenomena, or UAPs, releasing what officials describe as the first wave of declassified files tied to decades of UFO investigations.
+The new portal includes videos, photographs, and government documents previously scattered across agencies or government classifications.
+According to the Department of Defense, the release marks the formal debut of the Presidential Unsealing and Reporti...
+News
+Space
+3 min read
+Jason Nelson
+May 8, 2026
+May 8, 2026
+Create an account
+ to save your articles.
+All 
+Your gateway into the world of Web3
+Partner
+News
+Deep Dives
+University
+Coins
+Videos
+News Explorer
+About
+Team
+Disclosures
+Manifesto
+Terms of Service
+Code of Conduct
+Privacy Policy
+Contact
+Careers
+Jobs
+SUBSCRIBE TO OUR NEWSLETTER
+The latest news, articles, and resources, sent to your inbox weekly.
+Subscribe
+© A next-generation media company. 2026 Decrypt Media, Inc.

@@ -1,0 +1,508 @@
+Someone built a tiny AI that lives next to your cursor, and it's the most useful thing I've tried in months
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+5
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+Someone built a tiny AI that lives next to your cursor, and it's the most useful thing I've tried in months
+By 
+Mahnoor Faisal
+Published
+ Apr 19, 2026, 3:00 PM EDT
+Mahnoor Faisal is a tech journalist covering AI and productivity tools with bylines at 
+XDA
+, 
+SlashGear
+, 
+MakeUseOf
+, 
+Laptop Mag
+, and 
+Android Police
+.
+
+She's been writing professionally since she was sixteen, and has since penned hundreds of articles. This includes in-depth coverage of AI tools like NotebookLM to breaking news across the AI space. Her passion for technology started when she received her first iPod Touch (4th generation) on her 8th birthday, and she's been deep in the tech world ever since.
+
+Currently pursuing a degree in computer science, Mahnoor brings both a journalist's eye and a technical foundation to her coverage of how AI is reshaping the way we work and learn. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+5
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+We've reached a point where practically every new AI tool or feature launching just feels the same. Every company is going after helping you build better presentations, write more "human" emails, or write code faster. I'm not saying these features and tools aren't helpful. I'm a 
+huge fan of NotebookLM's Slide Decks
+ and rely heavily on them for all the presentations I create, and I spend a good chunk of my days 
+building tools using Claude Code
+. Everything these companies are building is impressive, but at some point, the novelty just wears off.
+✕
+ Remove Ads
+While I know I likely tinker around with AI more than the average person since testing and writing about these tools is literally my job, I think the fatigue is pretty universal at this point. Your non-tech friends have stopped asking you about the latest ChatGPT update. Your coworkers glaze over when someone shares another AI productivity hack in Slack. We've all collectively settled into a kind of comfortable numbness around this stuff. The bar for making someone stop and pay attention to anything AI has gotten absurdly high. This is exactly why I was not expecting a tiny animated character sitting next to my cursor to be the thing that broke through and became my favorite AI tool I've tried in months.
+
+                        Clicky is an open-source AI buddy that lives next to your cursor
+               
+
+            Meet the little blue guy that won't leave your side
+    
+A few weeks ago, Farza Majeed, previously the founder of buildspace, 
+posted a short demo on X
+ that went completely viral. At the time of writing, the post has racked up 15,000 likes and has almost three million views. The demo showed a blue animated companion sitting right next to his cursor on his Mac. The companion moved with the cursor and could see his screen in real time, listen to him speak, and even respond back (and move around on the screen).
+✕
+ Remove Ads
+That's exactly what 
+Clicky
+ is. It's a free macOS app that sits in your menu bar and essentially turns your entire screen into shared context. You ask a question out loud, and Clicky (who can already see exactly what you're looking at) responds with a spoken answer. If it needs to show you where something is, it'll physically point at the button or menu item on your screen. I talked about Clicky in our dedicated AI newsletter last week (which you can subscribe to by modifying your newsletter preferences), and I described it as how a teacher in elementary school would hold your hand over the pencil to guide you through writing your first letters! That's essentially what Clicky does, but for any software at all.
+The creator of the tool demoed it using it to learn DaVinci Resolve! Under the hood, Clicky is powered by Claude for the AI, AssemblyAI for voice transcription, and ElevenLabs for text-to-speech. A day after posting the demo video and dropping a download link, Farza decided to open-source the entire project on GitHub! Unfortunately, it's only currently available on macOS, but the creator has confirmed that a Windows version is coming very soon. Community-built versions have already started popping up on GitHub and X though, so it's only a matter of time before an official Windows version drops.
+
+                        Clicky is excellent for learning by doing
+               
+
+            The tutorial you never have to tab away from
+    
+✕
+ Remove Ads
+Everyone, and I mean everyone, uses AI in some way or the other to learn. I'm a college student, trust me, I know. While there isn't a "right" way to learn by definition, there's definitely a frustrating way and most of us have been stuck in it for years. You find a YouTube tutorial or a Udemy course, press play, pause it three seconds in, switch to the app, try to find what they're talking about, switch back, rewind, pause again, and repeat for 45 minutes.
+If you take it up a notch, you might've moved on from YouTube videos and head to ChatGPT first to ask how you can do something. But you're still switching back and forth between the chatbot and the actual software, reading a wall of text, and trying to match step three to what's on your screen. Personally, I've gone even further and built a 
+full AI-powered learning stack
+, but even that doesn't solve the core problem: none of these tools are actually there with you inside the app while you're learning. Clicky is, and that's exactly why I've been obsessed with it.
+Related
+
+			I used Claude Code, Antigravity, and Perplexity Computer to build a portfolio — there was a clear winner
+		
+The results were surprising. 
+Posts
+27
+By 
+Mahnoor Faisal
+Apr 5, 2026
+I've found that the best way to learn anything is by just diving straight in and doing the opposite of what school and the traditional learning model has conditioned us to do. Don't study the manual first. Don't watch the full course before opening the app. Just open it, start clicking around, and ask for help when you get stuck. That's how most of us actually learn best. By doing, failing, and getting unstuck in real time. And Clicky is the first tool I've used that's genuinely built around that idea.
+✕
+ Remove Ads
+For instance, say I just installed CapCut and I don't really know how to work with keyframes. Normally, I'd search "how to use keyframes in CapCut," open a 12-minute tutorial, skip through the intro, and try to follow along. With Clicky, I just open CapCut, look at the timeline, and ask out loud: "How do I add a keyframe here?" Clicky sees the timeline, sees where my cursor is, and talks me through it while pointing at the exact buttons I need to hit. If I want to ease the animation, I ask. If I accidentally delete one, it sees that too. It's the difference between learning about the software and learning inside the software.
+The best part about Clicky is how easy it is to use. Once it's installed, and you've granted it the necessary permissions, all you need to do is simultaneously hit the Control and Option keys on your Mac and begin speaking. Clicky captures your screen the moment you activate it, listens to whatever you say, and responds almost immediately with a spoken answer. When you're done, you just let go of the keys! It's genuinely as close to tapping a friend on the shoulder and asking a question as an AI tool has ever gotten.
+
+            You need to try Clicky, seriously
+    
+Given how much love Clicky has gotten, you seriously need to give the tool a shot before everyone and their mother starts cloning the idea. Right now, it's free, it's open-source, and it's one guy's passion project that rightfully struck a nerve with hundreds of thousands of people. That doesn't stay small for long!
+✕
+ Remove Ads
+AI tools
+Claude
+Software
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			A popular Python library just became a backdoor to your entire machine
+		
+
+			I tested Claude Code against 3 open-source alternatives, and one came surprisingly close
+		
+
+			I used Claude Code, Google Antigravity and OpenAI Codex to develop an app, and found only one worth using
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+5
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Ernest
+Ernest
+Ernest
+#HD055978
+Member since 2026-03-06
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Clicky looks interesting, but I'll have to wait until it's available for Windows, or even better, GNU/Linux users, because I don't have a Mac!
+2026-04-20 16:32:55
+Upvote
+
+                                    5
+                            
+Downvote
+Reply
+
+                        3
+                    
+Copy
+        
+Yashwant K
+Yashwant K
+Yashwant K
+#ZV691113
+Member since 2026-04-20
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+There is an alternative version of clicky launched in github as an open source project , you can use it , Try searching clicky-windows
+2026-04-20 23:46:17
+Upvote
+Downvote
+Reply
+Copy
+        
+Ernest
+Ernest
+Ernest
+#HD055978
+Member since 2026-03-06
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Yashwant K
+Thank you for that! I'll see how it works, and maybe I'll respond back herw with something on my experience.
+Ernie
+2026-04-21 03:52:24
+Upvote
+Downvote
+Reply
+Copy
+        
+Ernest
+Ernest
+Ernest
+#HD055978
+Member since 2026-03-06
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Yashwant K
+ I just checked the GitHub site and there are no releases yet ...
+Ernie
+2026-04-21 03:58:21
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Ian
+Ian
+Ian
+#AQ104764
+Member since 2026-04-10
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+What Clippy for Windows wanted to be, back in the early 1990s. 
+2026-04-24 16:52:01
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 17, 2026
+
+                                    Claude Projects is the best productivity booster that you're not using
+                            
+Apr 13, 2026
+
+                                    Claude Code's creator keeps sharing tips, and they all made my experience better
+                            
+Apr 11, 2026
+
+                                    I connected these tools with Claude and my productivity doubled in no time
+                            
+Apr 10, 2026
+
+                                    I tried an OpenClaw-inspired AI assistant on a $10 ESP32 board, and it actually works
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:04
+
+                            MacBook Neo: an iPhone 16 Pro in laptop form
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:27
+
+                            3 big tech anniversaries from 1996
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            How much data does Steam use in a year?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:06
+Skip Ad
+5

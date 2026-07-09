@@ -1,0 +1,302 @@
+Curious About Claude? Try These 8 Beginner-Friendly Tasks First
+PCMag Australia
+Best Picks
+/
+Reviews
+/
+News
+/
+How-To
+/
+Security
+Business
+Software
+Deals
+Best Picks
+/
+Computer & Electronics
+Best Laptops
+Best Monitors
+Best Wireless Routers
+Best Ultrawide Monitors
+Best Printers
+Best Keyboards
+Best Robot Vacuums
+Best Outdoor Home Security Cameras
+Best Smart Locks
+Best TVs
+Best Noise-Cancelling Headphones
+Best Gaming Headsets
+Software
+Best VPN Services
+Best Antivirus Protection
+Best Malware Removal and Protection Software
+Best Password Managers
+ Best Web Hosting Services
+Best Mac Antivirus Protection
+Best Security Suites
+Best Streaming Services Australia
+Best Free Password Managers
+Business
+Best CRM Software
+Best Email Marketing Software
+Best Marketing Automation Software
+Best Dedicated Web Hosting Services
+Best Business Cloud Storage and File Sharing Providers
+Best Password Managers for Businesses
+Best Business Laptops
+Best Computer Monitors for Business
+Best Printers for Business
+Reviews
+/
+News
+/
+How-To
+/
+Security
+Business
+Software
+Deals
+Looking for a bargain? Shop the biggest tech deals in Australia here!
+PCMag Australia
+Explainers
+AI
+Curious About Claude? Try These 8 Beginner-Friendly Tasks First
+Updated Apr 19, 2026
+Whether you're looking for a ChatGPT alternative or just want to broaden your AI horizons, here's how to get started with Anthropic's AI.
+ &
+Lance Whitney
+Contributor
+
+                        Our team tests, rates, and reviews more than 1,500 products each year to help you make better buying decisions and get more from technology.
+                    
+
+                Our Expert
+            
+LOOK INSIDE PC LABS
+HOW WE TEST
+65
+EXPERTS
+43
+YEARS
+41,500+
+REVIEWS
+(Credit: gguy / Shutterstock)
+Table of Contents
+Compare Specs: Our Picks Side by Side
+1. Import Memories and Preferences
+2. Use Chat History to Personalize Responses
+3. Analyze Uploaded Photos and Files
+4. Analyze a Screenshot of Your Current Window
+5. Connect to Third-Party Services
+6. Turn Conversations Into Charts and Diagrams
+7. Generate Microsoft Office and PDF Files
+8. Export Your Chats
+While it may not be the best-known 
+AI chatbot
+, Anthropic’s Claude has received a lot of buzz over its research-focused capabilities. It also made headlines after the company 
+refused to play ball
+ with the Pentagon, resulting in an 
+ongoing lawsuit
+. All this may have you wondering what all the fuss is about. Here are eight ways to get started with Claude.
+1. Import Memories and Preferences
+Like many AI chatbots, Claude looks to personalize its responses to you based on details from previous conversations. But if you’re new to Claude, there is no memory or chat history for the AI to consult. This is why Anthropic has made it easy to 
+import your history
+ from ChatGPT or another service. To tackle this, head to 
+Claude's memory import page
+. If you're already logged in on the web, open 
+Settings > Privacy
+, then click the 
+Manage
+ button next to 
+Memory preferences
+ and select 
+Start import
+.
+(Credit: PCMag / Anthropic)
+A small window pops up, prompting you to import memory to Claude. Copy the prompt and then paste it into the other AI service from which you want to import your memories. The AI should then respond with a list of your saved memories and preferences.
+(Credit: PCMag / Anthropic)
+Copy the generated text, then switch back to Claude and paste the information into the appropriate field. Click the 
+Add to Memory
+ button to have Claude display a formatted list of everything it now knows about you.
+(Credit: PCMag / Anthropic)
+2. Use Chat History to Personalize Responses
+Maybe you’d like Claude to use the details from your conversations to tailor its responses to you. That’s easy enough to do. Click your account name on the left sidebar, choose 
+Settings >
+Privacy
+ setting and click the 
+Manage
+ button next to 
+Memory preferences
+. Turn on 
+Search and reference chats
+ and 
+Generate memory from chat history
+. You should also click the 
+Learn more links
+ for both settings to learn what they do. 
+(Credit: PCMag / Anthropic)
+If you ever have privacy concerns about Claude knowing too much about you, just turn off these settings. Don’t want your conversations being used to train Claude? If it's enabled, turn off 
+Help improve Claude
+.
+(Credit: PCMag / Anthropic)
+3. Analyze Uploaded Photos and Files
+Got a photograph of a landmark you want identified or a document you need summarized? Claude can easily tackle that task via its file upload feature. To try this with a photo, click the plus icon, select 
+Add files or photos
+, and then select the photo you want Claude to identify.
+(Credit: PCMag / Anthropic)
+At the prompt, ask Claude to identify the item in the photo. In response, the AI should provide details about the object, ideally pinpointing its location and other attributes.
+(Credit: PCMag / Anthropic)
+To try this with a different file, such as a PDF or Microsoft Office file, click the plus icon again, select 
+Add files or photos
+, and then select the file you want Claude to analyze or summarize.
+(Credit: PCMag / Anthropic)
+At the prompt, tell Claude to summarize the file or answer your specific question about it. Claude then displays the summary or answer to your query.
+Recommended by Our Editors
+ChatGPT’s New Emergency Contact Feature Looks Out for Unsafe Chats
+xAI Becomes SpaceXAI As Elon Musk's Company Files for Trademarks
+Google Shuts Down 'Project Mariner' Web Browsing AI
+(Credit: PCMag / Anthropic)
+4. Analyze a Screenshot of Your Current Window
+Beyond analyzing an uploaded file, Claude can also work with a screenshot of any open window on your computer. To try this, open a document, window, web page, or other screen that you want Claude to summarize or address any questions you may have. Back at Claude, click the plus icon and select 
+Take a Screenshot
+. Claude will ask for permission to see a specific window or your entire screen. Select the window you wish to use, and a screenshot of it automatically appears in the prompt.
+(Credit: PCMag / Anthropic)
+At the prompt, enter your question and submit it to Claude. You can ask it to summarize a page or other window, or ask for help with a specific task. For example, you might be looking to perform a specific action in a software program. Use a screenshot of that program and ask Claude how to achieve your goal. The AI should respond based on its knowledge of the program.
+(Credit: PCMag / Anthropic)
+5. Connect to Third-Party Services
+Want Claude to help you analyze, summarize, or just assist you with your files across Google or on GitHub? Connect the AI to a third-party service. Once a connection is established, ask Claude to search for and work with specific files and other data across the services.
+To set this up on your Claude web page, click 
+Customize
+ at the top of the left sidebar and choose 
+Connectors
+. By default, the following apps and services appear: 
+Box
+, GitHub, Gmail, Google Calendar, and 
+Google Drive
+. Click the plus icon at the top and select 
+Browser connectors
+ to see a host of other services.
+(Credit: PCMag / Anthropic)
+Select the service you want to use and then click 
+Connect
+. You’ll be asked to grant Claude permission to access your chosen service. Click 
+Continue
+ and then sign in with your account for that service. Follow the screens to complete the connection. Back at Claude, you can manage the read/write permissions for that service on a more granular scale.
+(Credit: PCMag / Anthropic)
+To access these services from the prompt window, submit a command that incorporates a file or other data in the connected service. For example, you could ask about a specific email stored in Gmail. Claude should then connect to the service to respond to your request.
+(Credit: PCMag / Anthropic)
+6. Turn Conversations Into Charts and Diagrams
+Sometimes a chart or diagram can address your question better than loads of text. To answer certain types of queries, Claude can generate images—even interactive ones. At the prompt, tell Claude to show you something, such as how compounded interest works. If you phrase your request properly, you’ll see some type of diagram or chart that displays the topic better than words alone could. If the image is interactive, you can modify the results by adjusting the parameters.
+(Credit: PCMag / Anthropic)
+7. Generate Microsoft Office and PDF Files
+Most AIs can 
+generate photos
+ based on your request, but Claude goes a step further with its ability to create Microsoft Office and PDF files. For example, you can tell Claude to generate a spreadsheet or a presentation from a file that you upload. To give this a shot, submit your request at the prompt. Allow Claude a few minutes to compile the information and create the file. You’ll then see the completed file displayed on the screen side-by-side with your chat window. You can then give Claude further instructions if you wish to make modifications.
+(Credit: PCMag / Anthropic)
+8. Export Your Chats
+Maybe you’ve been chatting with Claude for some time now, but want to add another AI to your repertoire. If you don’t want to start from scratch, you can export your chats to supply the new AI with the same conversations you’ve had with Claude. To do this, click your account name on the left sidebar, choose 
+Settings >
+Privacy,
+ and click the 
+Export data
+ button next to the 
+Export data
+ setting. At the Export data window, choose the period for the conversations and other data that you want to export—All, 30 days, 90 days, or a custom timeframe—and click 
+Export
+.
+You’ll receive an email when the exported file is ready. In the email, click the 
+Download data
+ button to save the exported data as a ZIP file, then segue to the new AI platform. The process for importing the data will vary slightly based on the product, though be aware that some programs don’t support this.
+(Credit: PCMag / Anthropic)
+What Our Ratings Mean
+5.0 - Exemplary: Near perfection, ground-breaking
+4.5 - Outstanding: Best in class, acts as a benchmark for measuring competitors
+4.0 - Excellent: A performance, feature, or value leader in its class, with few shortfalls
+3.5 - Good: Does what the product should do, and does so better than many competitors
+3.0 - Average: Does what the product should do, and sits in the middle of the pack
+2.5 - Fair: We have some reservations, buy with caution
+2.0 - Subpar: We do not recommend, buy with extreme caution
+1.5 - Poor: Do not buy this product
+1.0 - Dismal: Don't even think about buying this product
+
+                  Read Our
+                  
+Editorial Mission Statement
+
+                  and
+                  
+Testing Methodologies
+.
+              
+About Our Expert
+Lance Whitney
+Contributor
+My Experience
+I've been working for PCMag since early 2016 writing tutorials, how-to pieces, and other articles on consumer technology. Beyond PCMag, I've written news stories and tutorials for a variety of other websites and publications, including CNET, ZDNet, TechRepublic, Macworld, PC World, Time, US News & World Report, and AARP Magazine. I spent seven years writing breaking news for CNET as one of the site’s East Coast reporters. I've also written two books for Wiley & Sons—
+Windows 8: Five Minutes at a Time
+ and 
+Teach Yourself Visually LinkedIn
+.
+My Areas of Expertise
+I've used Windows, Office, and other Microsoft products for years so I'm well versed in that world. I also know the Mac quite well. I'm always working with iOS, iPadOS, watchOS, and Android on my various mobile devices. And these days, I write a lot about AI, so that's become another key area for me.
+The Tech I Use
+My wife always jokes about all the tech products we have around the house, but I manage to put them to good use for my articles. I like Lenovo computers, so I own a couple of Lenovo desktops and several laptops. I have three MacBooks and a Mac mini. For my mobile life and work, I use an iPhone 16 Pro, iPad Pro, and iPad mini as well as an Apple Watch. But since I write about Android, I own several Android phones and tablets. Like any tech person, I have a cabinet full of cables, wires, and assorted mysterious gadgets. And when it's time to take a break from writing, I have an old Xbox 360 and Nintendo Wii, both of which I use for exercise and fitness games.
+Read the latest from Lance Whitney
+Travel Smarter: How to Keep Your Laptop Safe With BitLocker Encryption
+Chrome Just Got Better. 5 Browser Tricks You Have to Try
+Gemini Has Access to More Than You Think. Change These 6 Settings Now to Protect Your Privacy
+6 Settings You Should Change to Turn the iPhone’s Most Frustrating Button Into Its Best Tool
+Curious About Claude? Try These 8 Beginner-Friendly Tasks First
+More from Lance Whitney
+Read full bio
+Comments
+Please enable JavaScript to view the comments.
+PCMag Newsletters
+Our Best Stories in Your Inbox 
+Follow PCMag
+(Opens in a new window)
+facebook
+(Opens in a new window)
+X
+(Opens in a new window)
+flipboard
+(Opens in a new window)
+google
+(Opens in a new window)
+instagram
+(Opens in a new window)
+pinterest
+Honest, Objective, Lab-Tested Reviews
+PCMag.com is a leading authority on technology, delivering lab-based, independent reviews of the latest products and services. Our expert industry analysis and practical solutions help you make better buying decisions and get more from technology.
+How We Test
+Editorial Principles
+Best Picks
+/
+Reviews
+/
+News
+/
+How-To
+/
+Security
+Business
+Software
+Deals
+About PCMagazine
+Privacy Policy
+Terms of Use
+Advertise
+ AdChoices
+For over 40 years, PCMag has been a trusted authority on technology, delivering independent, labs-based reviews of the latest products and services. With expert analysis and practical solutions across consumer electronics, software, security, and more, PCMag helps consumers make informed buying decisions and get the most from their tech. From in-depth reviews to the latest news and how-to guides, PCMag is the go-to source for staying ahead in the digital world.
+
+      © 1996-2026 © 1996-2026 Ziff Davis, LLC., a Ziff Davis company. All Rights Reserved. PCMag, PCMag.com and PC Magazine are among the federally registered trademarks of Ziff Davis and may not be used by third parties without explicit permission. The display of third-party trademarks and trade names on this site does not necessarily indicate any affiliation or the endorsement of PCMag. If you click an affiliate link and buy a product or service, we may be paid a fee by that merchant.
+    
+International Editions:
+PCMag USA
+Canada
+United Kingdom
+Australia
+Greece
+Israel
+Middle East

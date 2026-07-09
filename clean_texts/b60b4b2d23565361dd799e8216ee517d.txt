@@ -1,0 +1,169 @@
+Hackers Hide Backdoor in Trusted WordPress Plugins for 8 Months Before Activating Malware
+Linkedin
+Naver
+RSS
+Twitter
+Home
+Threats
+Cyber Attacks
+Vulnerabilities
+Breaches
+Top 10
+Search
+Cyber Security News
+Latest Cyber Security News
+Saturday, May 9, 2026
+Linkedin
+RSS
+Twitter
+Google News
+Google News
+Cyber Security News
+Latest Cyber Security News
+Home
+Threats
+Cyber Attacks
+Vulnerabilities
+Breaches
+Top 10
+Follow on LinkedIn
+Search
+Home
+Cyber Security News
+Hackers Hide Backdoor in Trusted WordPress Plugins for 8 Months Before Activating Malware
+By
+Tushar Subhra Dutta
+April 15, 2026
+A group of trusted WordPress plugins quietly carried a hidden backdoor for eight full months, and nobody noticed until the damage had already been done. 
+The attack, uncovered in April 2026, did not begin with a dramatic breach. It started with the silent purchase of a legitimate plugin business on a public marketplace, setting the stage for one of the most calculated supply chain attacks the WordPress world has seen in years.
+The business at the center of this incident was “Essential Plugin,” originally built by an India-based team under the name “WP Online Support” around 2015. 
+Over time, the team built a portfolio of more than 30 free WordPress plugins, covering tools such as countdown timers, image sliders, hero banners, and post grids. By late 2024, revenue had fallen by 35 to 45 percent, prompting founder Minesh Shah to list the entire business on Flippa. 
+Discover more
+Computer Security
+Hacking & Cracking
+Software
+A buyer known only as “Kris,” with a background in SEO, cryptocurrency, and online gambling marketing, acquired the portfolio for a six-figure sum, and Flippa published a case study about the deal in July 2025.
+Anchor analysts and researchers identified the attack
+ after a client reported a security notice inside their WordPress admin dashboard. 
+The warning came from the WordPress.org Plugins Team, flagging that a plugin called Countdown Timer Ultimate contained code allowing unauthorized third-party access. 
+A full security audit revealed the actual malware was not inside the plugin itself but buried deep in the site’s 
+wp-config.php
+ file, quietly injecting hidden spam links, fake pages, and redirects exclusively for Googlebot — staying completely invisible to site owners.
+wp-config.php file size across 8 backup snapshots (Source – Anchor)
+What made this attack particularly alarming was its reach. On April 7, 2026, WordPress.org permanently closed all 31 Essential Plugin plugins in a single day, affecting hundreds of thousands of active installations. 
+A forced auto-update to version 2.6.9.1 removed the phone-home mechanism from the plugin files. However, it never touched 
+wp-config.php
+, meaning compromised sites were still silently serving 
+hidden spam
+ to search engines long after the patch ran.
+This attack mirrors a 2017 incident where a buyer under the alias “Daley Tias” purchased the Display Widgets plugin and immediately injected payday loan spam across 200,000 sites. 
+Discover more
+Antivirus & Malware
+Network Security
+Programming
+Both cases followed the same approach — acquire a trusted plugin through a public marketplace, inherit commit access, and push malicious code. WordPress.org has no mechanism to flag or review ownership transfers, so there was no user notification and no 
+code audit
+ when the new committer took control.
+The Infection Mechanism: Eight Months of Silence
+The buyer’s very first commit after acquiring the business planted the backdoor. Version 2.6.7 of Countdown Timer Ultimate, released August 8, 2025, added 191 lines of code under a misleading changelog note that simply read, 
+“Check compatibility with WordPress version 6.8.2.”
+Hidden inside was a PHP deserialization backdoor — a remote execution mechanism that gave the attacker’s server control over function names, arguments, and execution entirely. 
+It sat dormant until April 5–6, 2026, when it was activated and 
+analytics.essentialplugin.com
+ began pushing malicious payloads to every affected site. T
+o make takedowns nearly impossible, the 
+malware resolved
+ its command-and-control domain through an Ethereum smart contract querying public blockchain RPC endpoints, letting the attacker redirect traffic to any new server simply by updating the contract. 
+WordPress site administrators should immediately search their installations for any of the 31 closed Essential Plugin plugins and remove or replace them. 
+They must manually inspect 
+wp-config.php
+ for any injected code near the 
+require_once
+ call for 
+wp-settings.php
+. 
+If the file runs roughly 6KB larger than expected, the site needs a full cleanup, not just a plugin update. WordPress.org should introduce a formal review process for plugin ownership transfers to prevent the same attack pattern from repeating.
+Follow us on 
+Google News
+, 
+LinkedIn
+, and 
+X
+ to Get More Instant Updates
+, 
+Set CSN as a Preferred Source in 
+Google
+.
+Tags
+cyber security
+cyber security news
+Copy URL
+Linkedin
+Twitter
+ReddIt
+Telegram
+Tushar Subhra Dutta
+Tushar is a senior cybersecurity and breach reporter. He specializes in covering cybersecurity news, trends, and emerging threats, data breaches, and malware attacks. With years of experience, he brings clarity and depth to complex security topics.
+Trending News
+Cerberus Stalkerware on Google Play Leverages Accessibility Abuse and Firebase for Remote Control
+Hackers Use Fake OpenClaw Installer to Steal Crypto Wallet and Password Manager Credentials
+New PamDOORa Backdoor Attacking Linux Systems to Steal SSH Credentials
+Microsoft Teams for Android Allow Users to Join Third-Party Meetings via SIP
+Microsoft Edge Stores All Saved Passwords in Cleartext Process Memory at Launch
+Load more
+Latest News
+Cyber Security News
+NVIDIA Data Breach Reportedly Exposes Personal Information of GeForce Users
+Cyber Security
+Let’s Encrypt Halts Certificate Issuance After Cross-Signed Root Certificate Incident
+Cyber Security
+Critical Microsoft 365 Copilot Vulnerabilities Expose sensitive Information
+Cyber Security News
+New PamDOORa Backdoor Attacking Linux Systems to Steal SSH Credentials
+Cyber Security News
+Hackers Deploy Modular RAT With Credential Theft and Screenshot Capture Capabilities
+Follow us
+Cyber Security News is a Dedicated News Platform For Cyber News, Cyber Attack News, Hacking News & Vulnerability Analysis.
+Linkedin
+RSS
+Twitter
+Google News
+Google News
+Cybersecurity News
+Home
+About Us
+Contact Us
+Privacy Policy
+Latest news
+TCLBANKER Malware Targets Users Through Self-Propagating WhatsApp and Outlook Worm Modules
+Cyber Security News
+May 9, 2026
+
+A highly sophisticated Brazilian banking trojan named TCLBANKER, tracked...
+NVIDIA Data Breach Reportedly Exposes Personal Information of GeForce Users
+Cyber Security News
+May 9, 2026
+
+A data breach at GFN.AM, an authorized NVIDIA GeForce...
+Let’s Encrypt Halts Certificate Issuance After Cross-Signed Root Certificate Incident
+Cyber Security
+May 9, 2026
+
+Let's Encrypt temporarily suspended all certificate issuance on May...
+CISO Corner
+DarkMoon AI-Powered Autonomous Penetration Testing Platform With 50+ Tools
+Cyber Security News
+May 8, 2026
+
+A new open-source cybersecurity platform called DarkMoon has emerged...
+CVE MCP Server Turns Claude Into a Fully Capable Security Analyst With 27 Tools Across 21 APIs
+Cyber Security News
+April 30, 2026
+
+A new open-source project called CVE MCP Server is...
+pentest-ai-agents – 28 Claude Code Subagents for Penetration Testing
+Cyber Security
+April 27, 2026
+
+A new open-source toolkit called pentest-ai-agents is redefining how...
+© Copyright 2026 - Cyber Security News

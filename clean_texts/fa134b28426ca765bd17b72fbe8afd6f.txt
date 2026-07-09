@@ -1,0 +1,1230 @@
+Leveraging Rust and the GPU to render user interfaces at 120 FPS — Zed's Blog
+Product
+Resources
+Extensions
+Docs
+Business
+Pricing
+Ctrl + Shift + P
+Sign up
+S
+Download
+D
+Leveraging Rust and the GPU to render user interfaces at 120 FPS
+Antonio Scandurra
+March 7th, 2023
+On This Page
+GPUI: Rendering
+Drawing rectangles
+Drop shadows
+Text Rendering
+Icons and Images
+GPUI: the `Element` trait
+Conclusion
+What's next for Zed?
+See our roadmap →
+A modern display's refresh rate ranges from 60 to 120 frames per second, which means an application only has 8.33ms per frame to push pixels to screen. This includes updating the application state, laying out UI elements, and finally writing data into the frame buffer.
+It's a tight deadline, and if you've ever built an application with Electron, it's a deadline that may feel impossible to consistently meet. Working on Atom, this is exactly how we felt: no matter how hard we tried, there was always something in the way of delivering frames on time. A random pause due to garbage collection and we missed a frame. An expensive DOM relayout and we missed another frame. The frame rate was never consistent, and many of the causes were beyond our control.
+Yet while we struggled to micro-optimize Atom's rendering pipeline consisting of simple boxes and glyphs, we stared in awe of computer games rendering beautiful, complex geometry at a constant rate of 120 frames per second. How could it be that rendering a few 
+<div>
+s was so much slower than drawing a three-dimensional, photorealistic character?
+When we set out to build Zed, we were determined to create a code editor so responsive it almost disappeared. Inspired by the gaming world, we realized that the only way to achieve the performance we needed was to build our own UI framework: GPUI.
+Zed is rendered like a videogame, which lets us explode all layers in the user interface and simulate a 3D camera rotating around them.
+GPUI: Rendering
+When we started building Zed, arbitrary 2D graphics rendering on the GPU was still very much a research project. We experimented with Patrick Walton's 
+Pathfinder
+ crate, but it wasn't fast enough to achieve our performance goals.
+So we took a step back, and reconsidered the problem we were trying to solve. While a library capable of rendering arbitrary graphics may have been nice, the truth was that we didn't really need it for Zed. In practice, most 2D graphical interfaces break down into a few basic elements: rectangles, shadows, text, icons, and images.
+Instead of worrying about a general purpose graphics library, we decided to focus on writing a custom shader for each specific graphical primitive we knew we'd need to render Zed's UI. By describing the properties of each primitive in a data-driven way on the CPU, we could delegate all of the heavy-lifting to the GPU where UI elements could be drawn in parallel.
+In the following sections, I am going to illustrate the techniques used in GPUI to draw each primitive.
+Drawing rectangles
+The humble rectangle is a fundamental building block of graphical UIs.
+To understand how drawing rectangles works in GPUI, we first need to take a detour into the concept of Signed Distance Functions (SDFs for short). As implied by the name, an SDF is a function that, given an input position, returns the distance to the edge of some mathematically-defined object. The distance approaches zero as the position gets closer to the object, and becomes negative when stepping inside its boundaries.
+Signed distance function of a circle.
+The list of known SDFs is extensive, mostly thanks to Inigo Quilez's 
+seminal work
+ on the subject. On his website, you can also find a never-ending series of techniques that allow distortion, composition and repetition of SDFs to generate the most complex and realistic 3D scenes. Seriously, 
+check it out
+. It's pretty amazing.
+Back to rectangles: let's derive a SDF for them. We can simplify the problem by centering the rectangle we want to draw at the origin. From here, it's relatively straightforward to see the problem is symmetric. In other words, calculating the distance for a point lying in one of the four quadrants is equivalent to calculating the distance for the mirror image of that point in any of the other three quadrants.
+Drawing the rectangle at the origin lets us use the absolute value and only worry about the positive quadrant.
+This means we only need to worry about the top-right portion of the rectangle. Taking the corner as a reference, we can distinguish three cases:
+Case 1), the point is both above and to the left of the corner. In this case, the shortest distance between the point and the rectangle is given by the vertical distance from the point to the top edge.
+Case 2), the point is both below and to the right of the corner. In this case, the shortest distance between the point and the rectangle is given by the horizontal distance from point to the right edge.
+Case 3), the point is above and to the right of the corner. In this case, we can use the Pythagorean theorem to determine the distance between the corner and the point.
+Case 3 can be generalized to cover the other two if we forbid the distance vector to assume negative components.
+A combination of the Pythagorean theorem and the max function lets us determine the shortest distance from the point to the rectangle.
+The rules we just sketched out are sufficient to draw a simple rectangle and, later in this post, we will describe how that translates to GPU code. Before we get to that though, we can make a simple observation that allows extending those rules to calculate the SDF of rounded rectangles too!
+Notice how in case 3) above, there are infinitely many points located at the same distance from the corner. In fact, those aren't just random points, they are the points that describe a circle originating at the corner and having a radius equal to the distance.
+Borders start to get smoother as we move away from the straight rectangle. That's the key insight to drawing rounded corners: given a desired corner radius, we can shrink the original rectangle by it, calculate the distance to the point and subtract the corner radius from the computed distance.
+Porting the rectangle SDF to the GPU is very intuitive. As a quick recap, the classic GPU pipeline consists of a vertex and a fragment shader.
+The vertex shader is responsible for mapping arbitrary input data into points in 3-dimensional space, with each set of three points defining a triangle that we want to draw on screen. Then, for every pixel inside the triangles generated by the vertex shader, the GPU invokes the fragment shader, which is responsible for assigning a color to the given pixel.
+In our case, we use the vertex shader to define the bounding box of the shape we want to draw on screen using two triangles. We won't necessarily fill every pixel inside this box. That is left to the fragment shader, which we'll discuss next.
+The following code is in Metal Shader Language, and is designed to be used with 
+instanced rendering
+ to draw multiple rectangles to the screen in a single draw call:
+struct
+ RectangleFragmentInput {
+    float4 position [[position]];
+    float2 origin [[flat]];
+    float2 size [[flat]];
+    float4 background_color [[flat]];
+    float
+ corner_radius [[flat]];
+};
+vertex RectangleFragmentInput 
+rect_vertex
+(
+    uint
+ unit_vertex_id [[vertex_id]]
+,
+    uint
+ rect_id [[instance_id]]
+,
+    constant float2 
+*
+unit_vertices [[
+buffer
+(GPUIRectInputIndexVertices)]]
+,
+    constant GPUIRect 
+*
+rects [[
+buffer
+(GPUIRectInputIndexRects)]]
+,
+    constant GPUIUniforms 
+*
+uniforms [[
+buffer
+(GPUIRectInputIndexUniforms)]]
+) {
+    float2 position 
+=
+ unit_vertex 
+*
+ rect
+.
+size
+ +
+ rect
+.
+origin
+;
+    // `to_device_position` translates the 2D coordinates into clip space.
+    float4 device_position 
+=
+ to_device_position
+(position, viewport_size);
+    return
+ RectangleFragmentInput {
+      device_position,
+      rect
+.
+origin
+,
+      rect
+.
+size
+,
+      rect
+.
+background_color
+,
+      rect
+.
+corner_radius
+    };
+}
+To determine the color to assign to each pixel within this bounding box, the fragment shader calculates the distance from the pixel to the rectangle and fills the pixel only when it lies inside the boundaries (i.e., when the distance is zero):
+float
+ rect_sdf
+(
+    float2 
+absolute_pixel_position
+,
+    float2 
+origin
+,
+    float2 
+size
+,
+    float
+ corner_radius
+) {
+    float2 half_size 
+=
+ size 
+/
+ 2.
+;
+    float2 rect_center 
+=
+ origin 
++
+ half_size;
+    // Change coordinate space so that the rectangle's center is at the origin,
+    // taking advantage of the problem's symmetry.
+    float2 pixel_position 
+=
+ abs
+(absolute_pixel_position 
+-
+ rect_center);
+    // Shrink rectangle by the corner radius.
+    float2 shrunk_corner_position 
+=
+ half_size 
+-
+ corner_radius;
+    // Determine the distance vector from the pixel to the rectangle corner,
+    // disallowing negative components to simplify the three cases.
+    float2 pixel_to_shrunk_corner 
+=
+ max
+(
+float2
+(
+0.
+, 
+0.
+), pixel_position 
+-
+ shrunk_corner_position);
+    float
+ distance_to_shrunk_corner 
+=
+ length
+(pixel_to_shrunk_corner);
+    // Subtract the corner radius from the calculated distance to produce a
+    // rectangle having the desired size.
+    float
+ distance 
+=
+ distance_to_shrunk_corner 
+-
+ corner_radius;
+    return
+ distance;
+}
+fragment float4 
+rect_fragment
+(
+RectangleFragmentInput input [[stage_in]]
+) {
+    float
+ distance 
+=
+ rect_sdf
+(
+        input
+.
+position
+.
+xy
+,
+        input
+.
+origin
+,
+        input
+.
+size
+,
+        input
+.
+corner_radius
+,
+    );
+    if
+ (distance 
+>
+ 0.0
+) {
+        return
+ float4
+(
+0.
+, 
+0.
+, 
+0.
+, 
+0.
+);
+    } 
+else
+ {
+        return
+ input
+.
+background_color
+;
+    }
+}
+Drop shadows
+To render drop shadows in GPUI, we adopted a 
+technique
+ developed by Evan Wallace, co-founder of Figma. For completeness, I will summarize the contents of the blog post here, but it's definitely worth reading the original article.
+Typically, drop shadows in applications are rendered using a Gaussian blur. For every output pixel, the Gaussian blur is the result of a weighted average of all the surrounding input pixels, with the weight assigned to each pixel decreasing for farther pixels in a way that follows a Gaussian curve.
+Applying a Gaussian blur to the Zed logo.
+If we move to the continuous realm, we can think of the process above as the convolution of an input signal (in the discrete case, the pixels of an image) with a 
+Gaussian function
+ (in the discrete case, a matrix representing the values of a Gaussian probability distribution). Convolution is a special mathematical operator that produces a new function by taking the integral of the product of two functions, where one of the functions (it doesn't matter which) is mirrored about the y axis. On an intuitive level, it works as if we are sliding the Gaussian curve all over the image, calculating for every pixel a moving, weighted average that samples from the Gaussian curve to determine the weight of the surrounding pixels.
+One interesting aspect of Gaussian blurs is that they are separable. That is, the blur can be applied separately along the x and y axes and the resulting output pixel is the same as applying a single blur in two dimensions.
+In the case of a rectangle, there exists a closed-form solution to draw its blurred version without sampling neighboring pixels. This is because rectangles are also separable, and can be expressed as the intersection of two 
+Boxcar functions
+, one for each dimension:
+Intersecting two Boxcar functions produces a rectangle.
+The convolution of a Gaussian with a step function is equivalent to the integral of the Gaussian, which yields the 
+error function
+ (also called 
+erf
+). Therefore, generating a blurred straight rectangle is the same as blurring each dimension separately and then intersecting the two results:
+float
+ rect_shadow
+(
+float2 
+pixel_position
+,
+ float2 
+origin
+,
+ float2 
+size
+,
+ float
+ sigma
+) {
+    float2 bottom_right 
+=
+ origin 
++
+ size;
+    float2 x_distance 
+=
+ float2
+(
+pixel_position
+.
+x
+ -
+ origin
+.
+x
+, 
+pixel_position
+.
+x
+ -
+ bottom_right
+.
+x
+);
+    float2 y_distance 
+=
+ float2
+(
+pixel_position
+.
+y
+ -
+ origin
+.
+y
+, 
+pixel_position
+.
+y
+ -
+ bottom_right
+.
+y
+);
+    float2 integral_x 
+=
+ 0.5
+ +
+ 0.5
+ *
+ erf
+(x_distance 
+*
+ (
+sqrt
+(
+0.5
+) 
+/
+ sigma));
+    float2 integral_y 
+=
+ 0.5
+ +
+ 0.5
+ *
+ erf
+(y_distance 
+*
+ (
+sqrt
+(
+0.5
+) 
+/
+ sigma));
+    return
+ (
+integral_x
+.
+x
+ -
+ integral_x
+.
+y
+) 
+*
+ (
+integral_y
+.
+x
+ -
+ integral_y
+.
+y
+);
+}
+A closed-form solution like the one above, however, doesn't exist for the 2D convolution of a rounded rectangle with a Gaussian, because the formula for a rounded rectangle is not separable. The cleverness of Evan Wallace's approximation comes from performing a closed-form, exact convolution along one axis, and then manually sliding the Gaussian along the opposite axis a finite amount of times:
+float
+ blur_along_x
+(
+float
+ x
+,
+ float
+ y
+,
+ float
+ sigma
+,
+ float
+ corner
+,
+ float2 
+half_size
+) {
+    float
+ delta 
+=
+ min
+(
+half_size
+.
+y
+ -
+ corner 
+-
+ abs
+(y), 
+0.
+);
+    float
+ curved 
+=
+ half_size
+.
+x
+ -
+ corner 
++
+ sqrt
+(
+max
+(
+0.
+, corner 
+*
+ corner 
+-
+ delta 
+*
+ delta));
+    float2 integral 
+=
+ 0.5
+ +
+ 0.5
+ *
+ erf
+((x 
++
+ float2
+(
+-
+curved, curved)) 
+*
+ (
+sqrt
+(
+0.5
+) 
+/
+ sigma));
+    return
+ integral
+.
+y
+ -
+ integral
+.
+x
+;
+}
+float
+ shadow_rounded
+(
+float2 
+pixel_position
+,
+ float2 
+origin
+,
+ float2 
+size
+,
+ float
+ corner_radius
+,
+ float
+ sigma
+) {
+    float2 half_size 
+=
+ size 
+/
+ 2.
+;
+    float2 center 
+=
+ origin 
++
+ half_size;
+    float2 point 
+=
+ pixel_position 
+-
+ center;
+    float
+ low 
+=
+ point
+.
+y
+ -
+ half_size
+.
+y
+;
+    float
+ high 
+=
+ point
+.
+y
+ +
+ half_size
+.
+y
+;
+    float
+ start 
+=
+ clamp
+(
+-
+3.
+ *
+ sigma, low, high);
+    float
+ end 
+=
+ clamp
+(
+3.
+ *
+ sigma, low, high);
+    float
+ step 
+=
+ (end 
+-
+ start) 
+/
+ 4.
+;
+    float
+ y 
+=
+ start 
++
+ step 
+*
+ 0.5
+;
+    float
+ alpha 
+=
+ 0.
+;
+    for
+ (
+int
+ i 
+=
+ 0
+; i 
+<
+ 4
+; i
+++
+) {
+        alpha 
++=
+ blur_along_x
+(
+point
+.
+x
+, 
+point
+.
+y
+ -
+ y, sigma, corner_radius, half_size) 
+*
+ gaussian
+(y, sigma) 
+*
+ step;
+        y 
++=
+ step;
+    }
+    return
+ alpha;
+}
+Text Rendering
+Rendering glyphs efficiently is crucial for a text-intensive application like Zed. At the same time, it is equally important to produce text that matches the look and feel of the target operating system. To understand how we solved both problems in GPUI, we need to understand how text shaping and font rasterization work.
+Text shaping
+ refers to the process of determining which glyphs should be rendered and where they should be positioned given some sequence of characters and a font. There are 
+several
+open-source
+shaping
+engines
+, and operating systems usually provide similar APIs out of the box (e.g., CoreText on macOS). Shaping is generally regarded as quite expensive, even more so when dealing with languages that are 
+inherently harder
+ to typeset, such as Arabic or Devanagari.
+One key observation about the problem is that text normally doesn't change much across frames. For example, editing a line of code doesn't affect the surrounding lines, so it would be unnecessarily expensive to shape those again.
+As such, GPUI uses the operating system's APIs to perform shaping (this guarantees that text looks consistent with other native applications) and maintains a cache of text-font pairs to shaped glyphs. When some piece of text is shaped for the first time, it gets inserted into the cache. If the subsequent frame contains the same text-font pair, the shaped glyphs get reused. Vice versa, if a text-font pair disappears from the subsequent frame, it gets deleted from the cache. This amortizes the cost of shaping and limits it only to text that changes from one frame to the other.
+Font rasterization
+, on the other hand, refers to the process of converting a glyph's vector representation into pixels. There are several ways to implement a rasterizer, with classic CPU rasterizers such as the one provided by the operating system (e.g., CoreText on macOS) or 
+FreeType
+, and with some more recent research projects doing so mostly on the GPU using 
+compute shaders
+ (e.g., 
+Pathfinder
+, 
+Forma
+, or 
+Vello
+).
+As mentioned before, however, our hypothesis with GPUI was that we could achieve maximal performance by writing shaders for specific primitives as opposed to having a single engine capable of rendering arbitrary vector graphics. For text specifically, our goal was to render largely static content without interactive transformations that matched the platform's native visual style. Moreover, the set of glyphs that needs to be rendered is finite and can be cached quite effectively, so rendering on the CPU doesn't really become a bottleneck.
+A screenshot of a glyph atlas produced by Zed.
+Just like with text shaping, we let the operating system handle glyph rasterization so that text perfectly matches other native applications. In particular, we rasterize only the alpha component (the opacity) of the glyph: we'll get into why in a little bit. We actually render up to 16 different variants of each individual glyph to account for sub-pixel positioning, since CoreText subtly adjusts antialiasing of glyphs to give them the visual appearance of being shifted slightly in the X and Y direction.
+The resulting pixels are then cached into an 
+atlas
+, a long-lived texture stored on the GPU. The location of each glyph in the atlas is stored on the CPU, and glyphs are accurately positioned in the atlas to use as little space as possible using the bin-packing algorithm provided by 
+etagere
+.
+Finally, using the previously-computed shaping information, those glyphs are assembled together to form the original piece of text that the application wanted to render.
+The above is done in a single, instanced draw call that describes the target location of the glyph along with its position in the atlas:
+typedef
+ struct
+ {
+  float2 target_origin;
+  float2 atlas_origin;
+  float2 size;
+  float4 color;
+} GPUIGlyph;
+Notice how 
+GPUIGlyph
+ allows specifying a color for the glyph. This is the reason why we previously rasterized the glyph using only its alpha channel. By only storing the glyph's opacity, we can fill it with any color we want using a simple multiplication and avoid storing one copy of the glyph in the atlas for each color used.
+struct
+ GlyphFragmentInput {
+    float4 position [[position]];
+    float2 atlas_position;
+    float4 color [[flat]];
+};
+vertex GlyphFragmentInput 
+glyph_vertex
+(
+    uint
+ unit_vertex_id [[vertex_id]]
+,
+    uint
+ glyph_id [[instance_id]]
+,
+    constant float2 
+*
+unit_vertices [[
+buffer
+(GPUIGlyphVertexInputIndexVertices)]]
+,
+    constant GPUIGlyph 
+*
+glyphs [[
+buffer
+(GPUIGlyphVertexInputIndexGlyphs)]]
+,
+    constant GPUIUniforms 
+*
+uniforms [[
+buffer
+(GPUIGlyphInputIndexUniforms)]]
+) {
+    float2 unit_vertex 
+=
+ unit_vertices
+[unit_vertex_id];
+    GPUIGlyph glyph 
+=
+ glyphs
+[glyph_id];
+    float2 position 
+=
+ unit_vertex 
+*
+ glyph
+.
+size
+ +
+ glyph
+.
+origin
+;
+    float4 device_position 
+=
+ to_device_position
+(position, 
+uniforms
+->
+viewport_size
+);
+    float2 atlas_position 
+=
+ (unit_vertex 
+*
+ glyph
+.
+size
+ +
+ glyph
+.
+atlas_origin
+) 
+/
+ uniforms
+->
+atlas_size
+;
+    return
+ GlyphFragmentInput {
+        device_position,
+        atlas_position,
+        glyph
+.
+color
+,
+    };
+}
+fragment float4 
+glyph_fragment
+(
+    GlyphFragmentInput input [[stage_in]]
+,
+    texture2d
+<
+float
+>
+ atlas [[ 
+texture
+(GPUIGlyphFragmentInputIndexAtlas) ]]
+) {
+    constexpr sampler 
+atlas_sampler
+(mag_filter::linear, min_filter::linear);
+    float4 color 
+=
+ input
+.
+color
+;
+    float4 sample 
+=
+ atlas
+.
+sample
+(atlas_sampler, 
+input
+.
+atlas_position
+);
+    color
+.
+a
+ *=
+ sample
+.
+a
+;
+    return
+ color;
+}
+It's interesting to note how the performance of composing text using the glyph atlas approximates the bandwidth of the GPU, as we are literally copying bytes from one texture to the other and performing a multiplication along the way. It doesn't get any faster than that.
+Icons and Images
+Rendering icons and images in GPUI follows a similar technique as the one described in text rendering, so we won't be spending too much time covering that here. Exactly like text, SVG icons are parsed and then rasterized into pixels on the CPU using only their alpha channel, so that they can be tinted. On the other hand, images don't need tinting and so they are uploaded on a separate texture while preserving their color.
+Icons and images are finally assembled back into their target position using a shader similar to the glyph one illustrated above.
+GPUI: the 
+Element
+ trait
+So far we've discussed the low-level details of how rendering is implemented. That concern, however, is completely abstracted away when creating an application with GPUI. Instead, users of the framework interact with the 
+Element
+ trait when they need to create new graphical affordances that can't be already expressed as a composition of existing elements:
+pub
+ trait
+ Element
+ {
+    fn
+ layout
+(&
+mut
+ self
+, 
+constraint
+: 
+SizeConstraint
+) -> 
+Size
+;
+    fn
+ paint
+(&
+mut
+ self
+, 
+origin
+: (
+f32
+, 
+f32
+), 
+size
+: 
+Size
+, 
+scene
+: &
+mut
+ Scene
+);
+}
+Layout in GPUI was heavily inspired by 
+Flutter
+. Specifically, elements nest into a tree structure where constraints flow down and sizes flow up. A constraint specifies the minimum and maximum size a given element can take:
+pub
+ struct
+ SizeConstraint
+ {
+    pub
+ min
+: 
+Size
+,
+    pub
+ max
+: 
+Size
+,
+}
+pub
+ struct
+ Size
+ {
+    pub
+ width
+: 
+f32
+,
+    pub
+ height
+: 
+f32
+,
+}
+Depending on the nature of an element, the 
+layout
+ method can decide to produce a new set of constraints for its children to account for any extra visual details that the element is adding. For example, if an element wants to draw a 1px border around its child, it should shrink the 
+max.width
+ and 
+max.height
+ supplied by the parent by 1px and supply the shrunk constraint to its child:
+pub
+ struct
+ Border
+ {
+    child
+: 
+Box
+<
+dyn
+ Element
+>,
+    thickness
+: 
+f32
+,
+    color
+: 
+Color
+,
+}
+impl
+ Element
+ for
+ Border
+ {
+    fn
+ layout
+(&
+mut
+ self
+, 
+mut
+ constraint
+: 
+SizeConstraint
+) -> 
+Size
+ {
+        constraint
+.max.x 
+-=
+ self
+.thickness;
+        constraint
+.max.y 
+-=
+ self
+.thickness;
+        let
+ (
+width
+, 
+height
+) 
+=
+ self
+.child.
+layout
+(
+constraint
+);
+        Size
+ {
+            width
+: 
+width
+ + 
+self
+.thickness,
+            height
+: 
+height
+ + 
+self
+.thickness,
+        }
+    }
+    fn
+ paint
+(&
+mut
+ self
+, 
+origin
+: (
+f32
+, 
+f32
+), 
+size
+: 
+Size
+, 
+scene
+: &
+mut
+ Scene
+) {
+        // ...
+    }
+}
+Once the size of elements has been established, the element tree can be finally painted. Painting consists of positioning an element's children according to the layout as well as drawing visual affordances belonging to the element itself. At the end of this process, all the elements will have pushed their own graphical components to a platform-neutral 
+Scene
+ struct, a collection of the primitives described in the rendering section above:
+pub
+ struct
+ Scene
+ {
+    layers
+: 
+Vec
+<
+Layer
+>
+}
+struct
+ Layer
+ {
+    shadows
+: 
+Vec
+<
+Shadow
+>,
+    rectangles
+: 
+Vec
+<
+Rectangle
+>,
+    glyphs
+: 
+Vec
+<
+Glyph
+>,
+    icons
+: 
+Vec
+<
+Icon
+>,
+    image
+: 
+Vec
+<
+Image
+>
+}
+The renderer follows a specific order when drawing primitives. It starts by drawing all shadows, followed by all rectangles, then all glyphs, and so on. This prevents some primitives from being painted in front of others: for example, a rectangle could never be rendered on top of a glyph.
+There are cases, however, where that behavior is not desirable. For instance, an application may want to paint a tooltip element in front of a button, and so the background of the tooltip needs to be rendered on top of the button's text. To address this, elements can push a 
+Layer
+ to the scene, which ensures their graphical elements will be rendered on top of their parent.
+GPUI also supports creating new stacking contexts, which allows for arbitrary z-index positioning in a way that closely resembles the 
+painter's algorithm
+.
+Continuing the example of the border above, the 
+paint
+ method should first push a 
+Rectangle
+ containing the border it wants to draw and then position the child to not overlap with the newly-drawn border:
+impl
+ Element
+ for
+ Border
+ {
+    fn
+ layout
+(&
+mut
+ self
+, 
+mut
+ constraint
+: 
+SizeConstraint
+) -> 
+Size
+ {
+        // ...
+    }
+    fn
+ paint
+(&
+mut
+ self
+, 
+origin
+: (
+f32
+, 
+f32
+), 
+mut
+ size
+: 
+Size
+, 
+scene
+: &
+mut
+ Scene
+) {
+        scene
+.
+push_rectangle
+(
+Rectangle
+ {
+            origin
+,
+            size
+,
+            border_color
+: 
+self
+.color,
+            border_thickness
+: 
+self
+.thickness,
+        });
+        let
+ (
+mut
+ child_x
+, 
+mut
+ child_y
+) 
+=
+ origin
+;
+        child_x
+ +=
+ self
+.thickness;
+        child_y
+ +=
+ self
+.thickness;
+        let
+ mut
+ child_size
+ =
+ size
+;
+        child_size
+.width 
+-=
+ self
+.thickness;
+        child_size
+.height 
+-=
+ self
+.thickness;
+        self
+.child.
+paint
+((
+child_x
+, 
+child_y
+), 
+child_size
+, 
+scene
+);
+    }
+}
+GPUI offers several elements out of the box to produce a rich visual experience. Some elements only change the position and size of their children (e.g., 
+Flex
+ which implements the flex-box model), whereas other elements add new graphical affordances (e.g., 
+Label
+ which renders a piece of text with the given style).
+Conclusion
+This post was a whirlwind tour of GPUI's rendering engine and how it gets packaged into an API that allows encapsulation of layout and painting. Another big role GPUI serves is reacting to user events, maintaining application state, and translating that state into elements.
+We are looking forward to talking about that in a future post, so stay tuned to hear more about it soon!
+Related Posts
+Check out similar blogs from the Zed team.
+Introducing Theme Builder
+Feb 12, 2026
+Add some color to your life, with icon themes
+Feb 05, 2025
+User themes now in Preview
+|
+Featured
+|
+Jan 31, 2024
+Looking for a better editor?
+You can try Zed today on macOS, Windows, or Linux. 
+Download now
+!
+We are hiring!
+If you're passionate about the topics we cover on our blog, please consider 
+joining our team
+ to help us ship the future of software development.
+Zed Industries © 2026
+Sign Up
+ · Have an account? 
+Sign In
+Terms of Service
+ · 
+Attributions
+Manage Site Cookies
+Product
+Download
+Pricing
+Business
+Releases
+Extensions
+Roadmap
+Docs
+GitHub
+↗
+Status
+↗
+Resources
+FAQ
+CLA
+Community
+Support
+Discussions
+↗
+Privacy
+Subscribe
+Theme Builder
+Yearly Recaps
+Company
+Blog
+About
+Values
+Team
+Jobs
+Press
+Brand
+Merch
+↗
+Social
+Twitter
+↗
+Bluesky
+↗
+YouTube
+↗
+Discord
+↗
+Reddit
+↗

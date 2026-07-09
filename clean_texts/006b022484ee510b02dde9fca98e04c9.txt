@@ -1,0 +1,461 @@
+I finally tried Obsidian again and realized why so many people use Notion instead
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+Networking
+Storage and NAS
+Components
+Peripherals
+Operating Systems
+Submenu
+Linux
+Windows
+Software
+Submenu
+Programming
+Applications
+Mobile
+Submenu
+Android
+iPhone
+Carriers
+New Tech
+Submenu
+Hobbies
+Smart Home
+Homelab
+Single-Board Computers (SBCs)
+Cutting Edge
+Streaming
+Submenu
+Streaming Content
+Streaming Platforms
+Audio/Video
+Automotive
+Reviews
+Buying Guides
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+2
+More Action
+Sign in now
+🔥Tech Deals
+Storage
+Streaming
+Linux
+Open Source
+Microsoft Excel
+Android
+Windows
+Close
+I finally tried Obsidian again and realized why so many people use Notion instead
+Credit: Patrick Campanale / How-To Geek
+By 
+Patrick Campanale
+Published
+ May 7, 2026, 10:30 AM EDT
+Patrick Campanale has been in the tech space for well over a decade, specializing in PC/gaming news and reviews, as well as maker-focused products to build small businesses.
+
+With a start in technology back in 2010 surrounding the Palm/webOS ecosystem, Patrick spent his formative years developing mobile applications as well as blogging for various publications, eventually leading to starting his own website in 2014. After running a technology blog for a few years, he stepped out of that role and into the world of high-end custom PC manufacturing and building, with a focus on YouTube video production and overclocking. Then, six years ago, Patrick joined the 
+9to5Toys 
+team as an editor/writer/reviewer with over 14,000 articles being published there there, ranging from deals and roundups to in-depth reviews on the latest technology, video games, 3D printers, and more.
+
+In his free time, Patrick loves to 
+create projects from wood
+ using various robots and methods, including leveraging the technologies of CNCs and lasers. If Patrick isn't working on a computer or playing video games, he's likely in his 2-car garage workshop creating something unique. In addition to all this, Patrick is also a youth pastor at his local church where he feels God has called him to serve, and he loves every minute of it. 
+Sign in to your 
+How-To Geek
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+2
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+I want to love Obsidian, I really do. The problem with Obsidian is Obsidian itself, and, after trying it out again, I see why so many people choose to use Notion instead.
+
+                        Everything in Obsidian requires a plugin
+               
+
+            And so many plugins end up abandoned
+    
+Credit: Patrick Campanale / How-To Geek
+✕
+ Remove Ads
+ While there are many 
+markdown
+ editors out there, 
+Obsidian is arguably one of the biggest around
+. The issue is, 
+Obsidian
+ ships as a fairly barebones experience. The Obsidian team is pretty small, comprising of less than a dozen people, which means that their core focus is on the core experience of Obsidian.
+This is actually a problem though. Essentially, if there’s something you want to do in Obsidian, the chances are 
+it requires a third-party plugin
+ and isn’t a native feature. In fact, if you look at Kepano’s X account, 
+he actually tells people to look for plugins
+ at basically every turn.
+Because of this philosophy, a lot of Obsidian’s best features end up becoming abandonware because it’s based on a plugin that was maintained by one person who eventually got too busy to keep maintaining it. I ran into this problem after downloading Obsidian to try and get it set up how I wanted it.
+I live and breathe kanban boards for my writing workflow. Each article I write goes through multiple stages, from initial ideation, to outlining, pending approval, writing, and more. I use Notion for writing currently, and the kanban system works great there.
+I had heard that Obsidian had a decent kanban plugin, and I was excited to use it—until I saw 
+it hadn’t been updated in months
+ and the developer had marked it as archived, but still available. Then, 
+I found another kanban plugin
+, only to see that it was marked as looking for a new maintainer. The problem is, neither worked all that well with the newer Obsidian version I was running.
+✕
+ Remove Ads
+I did find 
+another kanban plugin
+, and that worked okay, but it wasn’t the experience I was looking for. I thought about building my own plugin, but that would be plagued by the same issues as using an out-of-date plugin. I really don’t have the time or energy to maintain a plugin to make sure it works with future versions, so that played a major role in my decision of whether to continue using Obsidian or not.
+
+                        Obsidian offers a great writing experience plagued by a not great sync experience
+               
+
+            Unless you give Obsidian money or spend a ton of time setting up your own sync server
+    
+I absolutely love the writing experience
+ that Obsidian offers. I’m not a huge fan of block-based writing, which is what Notion currently uses. Obsidian just has a much smoother experience and I love how it looks. The problem is, looks can’t overcome pain points with ease of use.
+Obsidian is designed to be local-first
+, which is fantastic compared to Notion’s cloud-first approach. The problem comes from the sync experience with Obsidian. Obsidian supports 
+syncing with iCloud Drive or Google Drive
+ just fine, but the sync is linked to iCloud Drive or Google Drive, 
+which is 
+not
+ instant
+.
+The only other official sync method provided by Obsidian is paying for their 
+monthly Obsidian Sync service
+, which 
+is
+ basically instant. I paid for it for a few months but ended up cancelling it because I just couldn’t bring myself to continue to pay for it.
+✕
+ Remove Ads
+I eventually found 
+the open source Obsidian LiveSync plugin
+, which allows you to self-host your own sync platform. I tried this, and it mostly works, but it is a major pain to set up and keep going. I’ve got extensive experience with Docker, self-hosting, and Linux server maintenance. Running Obsidian LiveSync is definitely doable, but it’s not a quick setup. There's also 
+the Obsidian Git plugin
+, which is pretty powerful in its own rights, but 
+it's still a plugin
+ and the lone developer could drop support for it at any time.
+The syncing experience alone with Obsidian was enough to drive me away from it. It’s just too much work, and Obsidian could absolutely have done a better job with it. The Obsidian LiveSync plugin isn’t even a first-party tool, it’s a third-party feature that someone in the community built, which means it’s plagued by the same thing that all the other plugins are—the potential for abandonment.
+
+                        Notion is simply more capable than Obsidian
+               
+
+            I really want to love Obsidian, but it’s missing core functionality that it 
+should
+ have
+    
+Credit: Patrick Campanale / How-To Geek
+ While Obsidian does have an absolute ton of plugins, there are just some core things that really aren’t all that possible with it. Databases are much harder to build in Obsidian, different view styles aren’t easy to design, and various types of frontmatter, like custom tags or fields, also aren’t all that intuitive.
+✕
+ Remove Ads
+Obsidian really is just designed to be a barebones writing program, and that’s entirely fine, but it just doesn’t really work for me. I need more capabilities than that for my writing software. In Notion, for example, I track all sorts of fields that are technically possible in Obsidian but they’re not used in nearly the same way.
+When I have an article due date or scheduled date, I put that into a field in Notion that is used in sorting. I also have various other fields, from categories to file attachments and more. While Obsidian does have support for most of this, the implementation is quite poor.
+Again, with a number of plugins, I could probably fix that, but at that point, I’m spending more time building the solution then actually writing, and that becomes a problem. A writing solution should just work for you, and Obsidian makes you work for it.
+
+            Obsidian has such great bones, but the execution leaves a lot to be desired
+    
+I 
+want
+ to love Obsidian, I really do. The problem is, Obsidian just doesn’t do what I need it to, and I think that’s the general consensus of other users too. While Obsidian definitely has a cult following, it really only has about one million users worldwide. Compare that to the 100 million users that Notion has, and it starts to make more sense.
+One million users is nothing short of amazing for a fairly indie level project, but it definitely shows. I wish Obsidian the best, and I will probably continue to try out Obsidian every now and then to see what’s changed, but, for now, Notion wins out on my daily writing tool, even though I really wish it didn’t.
+✕
+ Remove Ads
+Applications
+macOS
+Linux
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. 
+Read More
+.
+Close
+✕
+ Remove Ads
+
+                                                    Desktop
+                                            
+
+                                                    Mobile
+                                            
+
+			Why Linux is my IDE
+		
+3 hours ago
+
+			Windows Fast Start-up is still causing problems in 2026, and everyone should disable it
+		
+6 hours ago
+
+			KDE Dolphin does file management better than GNOME—here's why
+		
+7 hours ago
+See More
+
+			8 Google Messages features I wish someone had told me about sooner
+		
+3 hours ago
+
+			5 hidden Motorola gestures that make other Android phones feel basic
+		
+5 hours ago
+
+			This open-source app suite replaced 6 closed-source apps and tools on my Android phone
+		
+7 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			4 open-source Windows apps that are better than their paid rivals
+		
+
+			Windows isn't the best operating system anymore
+		
+
+			Forget the Toyota Tacoma—this pickup makes more sense for everyday driving
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+2
+Sign in to your 
+How-To Geek
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+craig
+craig
+craig
+#XN353751
+Member since 2025-09-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+livesync is nearly plug and play, idk what you mean it's tedious? 
+2026-05-08 15:03:10
+Upvote
+Downvote
+Reply
+Copy
+        
+Tricia
+Tricia
+Tricia
+#TT992958
+Member since 2026-05-07
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I wonder if you're trying to do too much literally in your Markdown editor instead of using two tools: choose the task manager that is best for your flow (kanban, so a plethora of options) and use obsidian for the actual writing. 
+Having said this, I'm using obsidian explicitly for the tasks plugin, but I'm not trying to manage complex workflow. Just an ever running to-do list to go with my general note taking.
+2026-05-07 17:42:12
+Upvote
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Patrick
+Patrick
+Patrick
+#CB808864
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+2  Followers 
+View
+I've tried that workflow in the past and might go back to it, but it has been very 
+very
+ nice to have my writing in the same area as my task management for simplicity.
+2026-05-08 09:58:58
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+6 days ago
+
+                                    This flashlight app was one of the most downloaded Android apps of 2013—until the FTC found out what it was really doing
+                            
+6 days ago
+
+                                    5 Home Assistant integrations that make my smart home feel like it came from the future
+                            
+May 2, 2026
+
+                                    6 PowerShell commands that fix the most common Windows 11 problems in seconds
+                            
+May 2, 2026
+
+                                    5 free, open-source apps that save me hundreds of dollars and hours of work
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+How-To Geek
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

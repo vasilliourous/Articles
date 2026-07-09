@@ -1,0 +1,445 @@
+I’m a cybersecurity professional, here’s why I’m preparing for an AI data breach | TechRadar
+Skip to main content
+Tech Radar
+Tech Radar Pro
+Tech Radar Gaming
+Open menu
+Close main menu
+TechRadar
+the business technology experts
+NZ Edition
+Asia
+
+Singapore
+
+Europe
+
+Danmark
+
+Suomi
+
+Norge
+
+Sverige
+
+UK
+
+Italia
+
+Nederland
+
+België (Nederlands)
+
+France
+
+Deutschland
+
+España
+
+North America
+
+US (English)
+
+Canada
+
+México
+
+Australasia
+
+Australia
+
+New Zealand
+
+RSS
+Sign in
+View Profile
+Sign out
+Search
+Search TechRadar
+
+News
+
+
+Reviews
+
+
+Features
+
+
+Perspectives
+
+
+Website builders
+
+
+Web hosting
+
+
+Security
+
+Don't miss these
+Pro
+The fake Rolex problem: How AI turned amateur attackers into nation-state threats
+Pro
+Shadow AI and agents like OpenClaw are hijacking corporate data too easily
+Pro
+The blueprint architecture for securing the AI data center
+Security
+Weak safeguards leave thousands of AI agents open to attack
+Pro
+Many firms don't know what their workers are sharing with AI tools
+Pro
+Trust by design: How much can you really trust your AI agent
+Pro
+AI tools have made vulnerability exploitation faster and easier
+Pro
+Why NIST’s AI agent standards initiative is a turning point for enterprise security
+Pro
+Tame your AI gremlins before the chaos becomes permanent
+Security
+Over 29 million secrets were leaked on GitHub in 2025, and AI really isn't helping
+Pro
+It’s time cyber security understood human behavior and acted accordingly
+Pro
+The mobile app traffic your security team can't see — and AI agents are generating it
+Pro
+Testing AI is not like testing software and most companies haven't figured that out yet
+Pro
+Governing the hidden risks of generative AI in the enterprise
+Pro
+Your OpenClaw agents can empty your inbox and leak your data. Here's how to secure them
+Tech Radar Pro
+Are you a pro? Subscribe to our newsletter
+Sign up to the TechRadar Pro newsletter to get all the top news, opinion, features and guidance your business needs to succeed!
+Become a Member in Seconds
+ Unlock instant access to exclusive member features.
+
+Contact me with news and offers from other Future brands
+
+
+Receive email from us on behalf of our trusted partners or sponsors
+
+There was a problem. Please refresh the page and try again.
+
+By submitting your information you agree to the 
+Terms & Conditions
+ and 
+Privacy Policy
+ and are aged 16 or over.
+
+You are now subscribed
+Your newsletter sign-up was successful
+Join the club
+Get full access to premium articles, exclusive features and a growing list of member rewards.
+Explore
+ An account already exists for this email address, please log in.
+Trending
+Best office chairs
+Best 3D printers
+Best antivirus
+Best web hosting
+Best website builder
+Pro
+I’m a cybersecurity professional, here’s why I’m preparing for an AI data breach
+Opinion
+
+By
+
+Mike Kosak
+
+published
+
+15 March 2026
+Today's threat of a third-party data vendor breach
+
+When you purchase through links on our site, we may earn an affiliate commission. 
+Here’s how it works
+.
+
+(Image credit: Blue Planet Studio/Shutterstock)
+
+Copy link
+
+
+Facebook
+
+
+X
+
+
+Whatsapp
+
+
+Reddit
+
+
+Pinterest
+
+
+Flipboard
+
+
+Threads
+
+
+Email
+
+
+Share this article
+
+0
+
+Join the conversation
+
+
+Follow us
+
+
+Add us as a preferred source on Google
+
+
+Newsletter
+
+
+Subscribe to our newsletter
+
+Recently, OpenAI acknowledged a 
+security
+ breach at a third-party data analytics vendor that led to the exposure of some of its API users’ personal information, including email addresses, names, and browser details.
+The incident on its own underscores the continuing issues surrounding supply chain targeting the risks of third-party data exposure but beyond that, the incident serves as a potential shot across the bow for the 
+cybersecurity
+ community and the broader public in general.
+Mike Kosak
+Social Links Navigation
+Director of Threat Intelligence at LastPass.
+Treasure trove of data
+AI companies are a treasure trove of data. Not just the data the models are trained on or even the intellectual property involved in the actual technology- AI can be viewed akin to Cloud Service Providers (CSPs) as repositories for a massive amount and variety of 
+customer
+-provided data.
+Article continues below 
+Watch full video here: AI Planned It, Ep 2 
+Latest Videos From TechRadar
+AI Planned It, Ep 2
+0 seconds of 1 minute, 29 seconds
+Volume 0%
+Press shift question mark to access a list of keyboard shortcuts
+Keyboard Shortcuts
+Enabled
+Disabled
+Shortcuts Open/Close
+/ or ?
+Play/Pause
+SPACE
+Increase Volume
+↑
+Decrease Volume
+↓
+Seek Forward
+→
+Seek Backward
+←
+Captions On/Off
+c
+Fullscreen/Exit Fullscreen
+f
+Mute/Unmute
+m
+Decrease Caption Size
+-
+Increase Caption Size
++ or =
+Seek %
+0-9
+Next Up
+ExplAIned- Apple Intelligence Vs Galaxy AI
+01:27
+ facebook
+ x
+ reddit
+ Link
+https://cdn.jwplayer.com/previews/79oyTozo
+Copied
+Live
+00:00
+01:29
+0:46
+More Videos
+01:29
+AI Planned It, Ep 2
+01:27
+ExplAIned- Apple Intelligence Vs Galaxy AI
+01:29
+ChatGPT vs. Claude
+01:30
+AI Planned It, Ep 1- PC Build
+Close
+
+            You may like
+        
+Confronting AI’s data privacy paradox
+Securing AI infrastructure is critical – here's how to do it
+Friend or foe? AI: The new cybersecurity threat and solutions
+As we saw in the late 2010s, nation-states and other threat actors increased their targeting of CSPs to maximize their return on investment, and it is a matter of time until we see a major breach of one of the AI companies and the accompanying exposure of personal and proprietary data.
+The 
+data
+ is too attractive, and threat actors are too capable.
+This isn’t to take anything away from the security programs at these companies; on the contrary, there is no doubt that, particularly among the most advanced firms that would draw the biggest interest among threat actors, the security programs are world-class and incredibly well-resourced and operated, but it’s the classic issue of defenders need to be right all the time and attackers only need to be right once.
+Secure by design
+To be clear, this isn’t even taking into consideration the recent security issues identified within Moltbook after it was rapidly adopted in the last few weeks, including major vulnerabilities independently discovered by both Wiz, as captured in their excellent blog post, and Jameson O’Reilly which were highlighted by 404 Media.
+Are you a pro? Subscribe to our newsletter
+Sign up to the TechRadar Pro newsletter to get all the top news, opinion, features and guidance your business needs to succeed!
+Contact me with news and offers from other Future brands
+Receive email from us on behalf of our trusted partners or sponsors
+By submitting your information you agree to the 
+Terms & Conditions
+ and 
+Privacy Policy
+ and are aged 16 or over.
+While Moltbook is the focus of these recent reports, the issues arising from insecure development of AI tools - especially as the capabilities and technology proliferate - are much larger and more distressing, and they deserve their own analysis.
+These issues go back to an overarching emphasis on speed of implementation, an overreliance on 
+vibe coding
+, and a fundamental lack of implementation of the “secure-by-design” mantra that is creating security issues that threat actors will most certainly leverage. But again, that’s another topic… back to the issue at hand.
+What makes a potential large-scale breach of a major AI firm so unique is the variety and sensitivity of the data. Many companies don’t even realize some of their most sensitive data may have already been shared via their 
+employees
+.
+
+            What to read next
+        
+Shadow AI and agents like OpenClaw are hijacking corporate data too easily
+Always-on AI Agents put everything hackers could ever want behind a single attack surface
+AI powers innovation – but it’s also powering the next wave of cyber attacks
+According to a study earlier this year from Harmonic, 45.4% of company’s sensitive data submissions into AI apps came from personal accounts and Varonis found 99% of organizations have sensitive data exposed to 
+AI tools
+, including unsanctioned apps.
+Combine this data with deeply personal information individuals are sharing with AI chatbots, including asking questions that have later been used in criminal cases and leveraging AI for mental health and therapy-like discussions.
+The potential for extortion and blackmail becomes a concern as well, particularly among those who may feel pressure to avoid going to therapists or reporting mental health concerns, such as those in intelligence, first responders, or the military.
+People are viewing AI chatbots as a safe place to share their thoughts and questions while maintaining a sense of anonymity when this may not be the case, particularly in the long-term.
+Enforcing robust AI
+I raise these concerns not to be a naysayer or a Cassandra, but in hopes of preparing the larger AI customer base for the inevitable so that they can take the appropriate steps now before something happens.
+This means examining their risk appetite, be it personal, professional, or organizational, for that they are willing to share with AI and let be stored in perpetuity on third-party servers that are viewed as rich targets. This means users should examine what, if any, sensitive data they are comfortable sharing with an external organization.
+For companies, which often have data classification policies, this is easier to do. For personal users, this can be more difficult. Once this examination is complete, it means taking steps to adjust behavior, again either personal or organizational, to align with that risk appetite.
+This may mean developing, implementing, and (most importantly) enforcing robust AI use policies within your company. This may also mean researching 
+chatbots
+ before leveraging them for asking personal and/or sensitive questions that you may not want to have out in the open in the event of a large breach.
+Major breach
+AI and its continuing rapid development obviously have some amazing and wonderful implications for companies and individuals alike. But these companies’ place as highly-prized targets for advanced threat actors means it is almost certainly just a matter of time until a major breach occurs.
+Best for users to consider now what data they would like to avoid being exposed in the event of a major breach by refraining from submitting it in the first place.
+We've featured the best encryption software.
+This article was produced as part of TechRadarPro's Expert Insights channel where we feature the best and brightest minds in the technology industry today. The views expressed here are those of the author and are not necessarily those of TechRadarPro or Future plc. If you are interested in contributing find out more here: 
+https://www.techradar.com/news/submit-your-story-to-techradar-pro
+TOPICS
+
+AI
+
+Mike Kosak
+Social Links Navigation
+Senior Principal Intelligence Analyst at LastPass.
+View More
+You must confirm your public display name before commenting
+Please logout and then login again, you will then be prompted to enter your display name.
+
+Logout
+
+Read more
+Pro
+Confronting AI’s data privacy paradox
+Pro
+Securing AI infrastructure is critical – here's how to do it
+Pro
+Friend or foe? AI: The new cybersecurity threat and solutions
+Pro
+Shadow AI and agents like OpenClaw are hijacking corporate data too easily
+Pro
+Always-on AI Agents put everything hackers could ever want behind a single attack surface
+Pro
+AI powers innovation – but it’s also powering the next wave of cyber attacks
+Latest in Pro
+Pro
+Large lithium discovery in Appalachia may reduce US reliance on foreign imports
+Pro
+Japanese researchers develop material to boost solar panel efficiency
+Security
+Microsoft phishing threat report shows 146% surge in quishing
+Pro
+New WordPress plugin could reduce AI data usage and energy consumption
+Pro
+Unlocking science: building AI researchers can trust
+Security
+FBI says hackers are making millions from stolen cargo - losses 'surged' to nearly $725 million in 2025
+Latest in Opinion
+Virtual Reality & Augmented Reality
+I don't know if Vision Pro is dead, but it is still the most sophisticated, hardware Apple ever built
+Pro
+Unlocking science: building AI researchers can trust
+Pro
+AI tools have made vulnerability exploitation faster and easier
+Pro
+Why governance is moving to the middleware layer
+Pro
+When stability became strategy: the post-upgrade enterprise
+Pro
+We need a cybersecurity curriculum taught by hackers
+Advertisement
+Advertisement
+LATEST ARTICLES
+1
+Norton VPN enters the AI agent space with 'first truly AI native' VPN for agents
+2
+Quordle hints and answers for Monday, May 4 (game #1561)
+3
+NYT Connections hints and answers for Monday, May 4 (game #1058)
+4
+NYT Strands hints and answers for Monday, May 4 (game #792)
+5
+'I don’t believe we’ll hit AGI' — Steve Wozniak explains his AI skepticism
+Useful links
+Best VPN
+Best Free VPN
+Best Web Hosting Service
+Best Website Builder
+Best Laptops
+Best Gaming Laptops
+Best Gaming PC
+Best PC Gaming Chair
+Best Phone
+Best TV
+Best Oled TVs
+Best Smartwatch
+Best Turntables
+Best Noise Cancelling Headphones
+Best Wireless Earbuds
+Best Office Chairs
+Best Camera
+Best Dash Cam
+Best Drones
+Best Robot Vacuums
+
+TechRadar is part of Future plc, an international media group and leading digital publisher. 
+Visit our corporate site
+.
+
+Add as a preferred source on Google
+About Us
+Contact Future's experts
+Contact Us
+Terms and conditions
+Privacy policy
+Cookies policy
+Advertise with us
+Web notifications
+Accessibility Statement
+Careers
+©
+Future Publishing Limited Quay House, The Ambury,
+Bath
+BA1 1UA. All rights reserved. England and Wales company registration number 2008885. 
+Close
+
+Please login or signup to comment
+
+Please wait...
+
+Login
+
+
+Sign Up

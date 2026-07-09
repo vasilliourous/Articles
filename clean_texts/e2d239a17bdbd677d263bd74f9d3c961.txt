@@ -1,0 +1,1456 @@
+5 popular Linux distributions (and who they're meant for)
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+Networking
+Storage and NAS
+Components
+Peripherals
+Operating Systems
+Submenu
+Linux
+Windows
+Software
+Submenu
+Programming
+Applications
+Mobile
+Submenu
+Android
+iPhone
+Carriers
+New Tech
+Submenu
+Hobbies
+Smart Home
+Homelab
+Single-Board Computers (SBCs)
+Cutting Edge
+Streaming
+Submenu
+Streaming Content
+Streaming Platforms
+Audio/Video
+Automotive
+Reviews
+Buying Guides
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+27
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Storage
+Streaming
+Linux
+Open Source
+Microsoft Excel
+Android
+Windows
+Close
+5 popular Linux distributions (and who they're meant for)
+By 
+Dibakar Ghosh
+Published
+ Mar 14, 2026, 12:57 PM EDT
+Dibakar Ghosh is a tech journalist at How-To Geek, where he focuses on Linux, Windows, and productivity tools. His goal is simple—help readers at every skill level get more done with the tech they use every day.
+
+He began his writing career in 2016 with WordPress tutorials, later moving into digital marketing, where he spent years reviewing complex tools for marketers. His work has also appeared on 
+Authority Hacker
+, where he’s shared in-depth guides on digital workflows and online productivity. That experience now shapes his journalism, blending analytical depth with practical, real-world advice. 
+
+When he’s not writing or testing software, Dibakar is usually watching movies or playing video games. He’s a huge Christopher Nolan fan and a strong proponent of the theater experience. In gaming, he has sunk hundreds of hours into Insomniac’s Spider-Man series, Returnal, Prototype, Darksiders, and Final Fantasy titles.
+Sign in to your 
+How-To Geek
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+27
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Are you tired of everyone recommending a new Linux distro claiming it's 
+the best
+? Are you wondering which one of these 
+best
+ distros is actually aligned with your needs and requirements? Well, let me spotlight five popular Linux distros and what they do, so you can finally make your choice!
+✕
+ Remove Ads
+I firmly believe that there's no 
+objectively best 
+Linux distro, but there certainly is a Linux distro that's 
+subjectively best 
+for you
+! The idea behind a Linux distro is to create an optimized Operating System catering to specific use cases. So, if a distro matches your use cases, it will be 
+the best
+ for you. Now, to help you find your match, I've narrowed down five popular Linux distros with a quick overview of their pros and cons. This should help you understand what each of these distros has to offer so you can pick the one that's right for you!
+Related
+
+			Here's Why There Are So Many Linux Distros
+		
+Because the more the merrier. 
+Posts
+25
+By 
+Dibakar Ghosh
+Mar 2, 2025
+
+                        Ubuntu
+               
+
+            It's famous for a reason
+    
+The name 
+Ubuntu
+ is almost synonymous with Linux these days and for good reason! It offers a stable and accessible user experience that's not only user-friendly but also unique enough to feel like you're using a new OS (Operating System). This is thanks to a customized version of the 
+GNOME desktop environment
+ which delivers a functional workflow focused around virtual desktops.
+But one of the best things about Ubuntu is its 
+Long Term Support (LTS)
+ releases, which come out every two years and are supported for five years. This means you don't need to worry about updating your OS anytime soon once you have settled in. That said, if you want to upgrade more frequently to access newer technologies, you still can by picking one of the non-LTS releases, which are released every six months with nine months of support.
+✕
+ Remove Ads
+
+            Why You Should Consider Ubuntu
+    
+
+                                        Compatibility with almost all hardware—thanks to excellent out-of-the-box driver support.
+                        
+
+                                        Access to a wide collection of software via 
+Personal Package Archives (PPAs) and Snaps
+.
+                        
+AppArmor
+ is enabled by default for enhanced security.
+                        
+
+                                        Almost all Linux tutorials and guides use Ubuntu as an example, giving you access to tons of online resources.
+                        
+
+            Why Ubuntu Might Not Be Right for You
+    
+
+                                        It heavily pushes Snap packages, which are known to be slow and take up a lot of hard drive space.
+                        
+
+                                        Not the most 
+lightweight distro
+ and can lag on old hardware.
+                        
+
+                                        Lacks the some of the tools and customizability to appeal to Linux power users.
+                        
+Best For
+
+                                        The Linux curious—folks who want to try out Linux
+                        
+
+                                        People who are looking for a no-nonsense, general-purpose Linux distro that just works
+                        
+Minimum Requirements
+
+                                        2GHz dual-core processor or better
+                        
+
+                                        4GB system memory (RAM)
+                        
+
+                                        25GB free hard drive space
+                        
+Download Link
+Download Ubuntu Desktop
+
+                        Fedora
+               
+
+            Cutting-edge and open-source 
+    
+Fedora
+ is another super-popular Linux distro that also uses GNOME—similar to Ubuntu—but ditches all the heavy customizations for a vanilla experience. The distro is also committed to delivering a cutting-edge user experience with new versions released every six months packed with all the latest software updates. That said, Fedora explicitly focuses on 
+open-source software
+. You can run closed-source proprietary software if you like, but to do that, you'll need to activate third-party 
+repositories
+ and might need to do some manual tinkering.
+✕
+ Remove Ads
+
+            Why You Should Consider Fedora
+    
+
+                                        Comes with tons of developer tools out of the box, making it excellent for developers.
+                        
+
+                                        Extremely stable despite the focus on delivering cutting-edge software.
+                        
+
+                                        SELinux is enabled by default for enhanced security.
+                        
+
+            Why Fedora Might Not Be Right for You
+    
+
+                                        Each version is only supported for 13 months, forcing you to update more frequently.
+                        
+
+                                        Certain services like Netflix won't run out-of-the-box unless you manually install the proprietary 
+media codecs
+ and 
+DRM
+ modules.
+                        
+Best For
+
+                                        Software developers
+                        
+
+                                        Open-source software enthusiasts
+                        
+
+                                        People looking for a balance between stability and cutting-edge software
+                        
+Minimum Requirements
+
+                                        2GHz dual-core processor or faster
+                        
+
+                                        2GB system memory (RAM)
+                        
+
+                                        15GB unallocated drive space
+                        
+Download Link
+Download Fedora Workstation
+Related
+
+			Fedora vs. Ubuntu: Which Distro Is Right for You?
+		
+Ubuntu once was the go-to recommendation for beginners, but Fedora has closed the gap.
+Posts
+By 
+Bertel King
+Dec 29, 2023
+
+                        Linux Mint
+               
+
+            It just works
+    
+Linux Mint
+ is one of the top recommended distros for people 
+new to Linux coming from Microsoft Windows
+. You get a Windows 7-like experience with a traditional desktop layout having a taskbar at the bottom, a Start button-like application menu to the left followed by all your pinned apps, and quick settings in the right corner. The distro is also optimized to be as beginner-friendly as possible, so you can focus on working with the OS instead of learning how the OS works.
+✕
+ Remove Ads
+
+            Why You Should Consider Linux Mint
+    
+
+                                        Based on Ubuntu LTS, Linux Mint is an extremely stable and reliable Linux distro.
+                        
+
+                                        It doesn't include Snap apps, which many Linux users don't like, and replaces them with 
+Flatpaks
+.
+                        
+
+                                        All the necessary codecs and drivers are installed out of the box.
+                        
+
+            Why Linux Mint Might Not Be Right for You
+    
+
+                                        The Windows 7-like appearance can feel a bit outdated.
+                        
+
+                                        Being based on Ubuntu LTS, updates trail behind that of Ubuntu.
+                        
+
+                                        Not the best choice if you are looking for powerful customization tools and in-depth system-level controls.
+                        
+Best For
+
+                                        Windows 7 migrants
+                        
+
+                                        Linux newcomers
+                        
+
+                                        Folks without a technical background wanting to use Linux
+                        
+Minimum Requirements
+
+                                        2GB system memory (RAM)
+                        
+
+                                        20GB of disk space
+                        
+Download Link
+Download Linux Mint
+
+                        Garuda Linux
+               
+
+            A bold and refreshing distro
+    
+Garuda Linux
+ is relatively new on the Linux scene compared to the other distros on this list, but it has managed to gain a lot of attention and a loyal following. One of the biggest reasons behind its popularity is its bold and beautiful design. The Garuda Dragonized edition brings a KDE Plasma-based, macOS-inspired, neon-infused desktop with loud gamer vibes, while the 
+Garuda Mokka
+ edition keeps the same layout paired with a more muted pastel-based color scheme. That said, Garuda isn't merely about the looks, as it packs in powerful graphical tools for system management that will 
+rarely require you to use the terminal
+.
+✕
+ Remove Ads
+
+            Why You Should Consider Garuda Linux
+    
+
+                                        Has built-in access to the 
+Arch User Repository (AUR)
+ which offers access to tens of thousands of software.
+                        
+
+                                        The 
+KDE Plasma desktop environment
+ is super customizable.
+                        
+
+                                        Implements tons of performance tweaks out-of-the-box that make it perfect for Linux gaming.
+                        
+
+                                        It uses the 
+Btrfs file system
+ and Snapper, which help you create system snapshots and rollback to previous working states in case something breaks.
+                        
+
+            Why Garuda Linux Might Not Be Right for You
+    
+
+                                        It's a demanding distro that can lag on weaker hardware.
+                        
+
+                                        As a rolling release distro, you'll need to update it weekly or bi-weekly to maintain optimal performance.
+                        
+
+                                        Not ideal if you are completely new to Linux.
+                        
+Best For
+
+                                        Gamers
+                        
+
+                                        Power users
+                        
+Minimum Requirements
+
+                                        4GB system memory (RAM)
+                        
+
+                                        30GB disk storage space
+                        
+Download Link
+Download Garuda Linux
+Related
+
+			Windows Gamers Should Try Out This Gaming-Focused Linux OS
+		
+Who doesn't like dragons?
+Posts
+4
+By 
+Dibakar Ghosh
+Sep 1, 2024
+
+                        OpenSUSE
+               
+
+            It's anything you want it to be
+    
+If you want a distro that can show you all the colors of Linux, you should go with 
+OpenSUSE
+—after all, it's the distro with a chameleon as its official mascot! OpenSUSE is available in both a rolling release version called Tumbleweed, and a stable release version called Leap. This means whether you want a more stable user experience or faster updates won't require you to completely change distros and enter a new environment, but just switch to a different version of the same distro.
+✕
+ Remove Ads
+Furthermore, OpenSUSE supports all the popular desktop environments and lets you pick which one you want to use during the installation process. You get an almost vanilla experience with barely any theming or customization. The distro is also loaded with powerful tools like YaST, which makes it an excellent distro for system admins, but at the same time, it's very user-friendly and something you can use on your home PC.
+
+            Why You Should Consider OpenSUSE
+    
+
+                                        Learn just how one distro works, and switch between different desktop environments or editions based on evolving needs without having to switch distros.
+                        
+
+                                        OpenSUSE Tumbleweed is a rolling release distro, but updates go through testing before being pushing out, making the packages more stable compared to Garuda or other rolling release distros.
+                        
+
+                                        Comes with YaST—a powerful tool that will help you manage almost all system administrative needs graphically, without using the terminal.
+                        
+
+            Why OpenSUSE Might Not Be Right for You
+    
+
+                                        YaST can be overwhelming and hard to navigate—with a layout similarly confusing as the Windows Control Panel.
+                        
+
+                                        Default software availability on official repositories is not as vast, and you'll need to use Flatpaks, Snaps, or 
+AppImages
+.
+                        
+Best For
+
+                                        Linux system admins
+                        
+
+                                        Linux home servers
+                        
+
+                                        Linux explorers
+                        
+Minimum Requirements
+
+                                        2GHz dual-core CPU or better
+                        
+
+                                        2GB of system memory (RAM)
+                        
+
+                                        8GB of disk space for minimal installation
+                        
+
+                                        40GB disk space is required for installation with the Btrfs file system
+                        
+Download Link
+Download OpenSUSE Tumbleweed
+Download OpenSUSE Leap
+✕
+ Remove Ads
+Related
+
+			Use Samba on Linux for Essential Home Network File Sharing: Here's How
+		
+Sharing files across your home network is easy with Samba.
+Posts
+By 
+Matt Klein
+Sep 14, 2024
+
+            Which Distro Should You Choose?
+    
+If you're 
+new to Linux
+ and are looking for a simple operating system for your day-to-day computing needs, both Ubuntu and Linux Mint are excellent options. Mint is slightly better if you are seeking something that feels familiar to Windows 7. That said, if you're a 
+developer or programmer
+, then Fedora is your best bet. It can be slightly technically demanding and require some terminal tinkering, but you should be able to handle this easily.
+Coming to OpenSUSE, I'd recommend the Leap edition as a home server distro, especially thanks to YaST. And finally, we have Garuda Linux, which I'll only recommend if you have some prior experience using Linux—unless you feel comfortable 
+learning about Linux
+, reading wikis, and talking on forums to troubleshoot your issues. With zero knowledge of how Linux works, all the different features and options might overwhelm you, even if they are all graphical tools and not terminal-based.
+Related
+
+			ChatGPT Helped Me Get Better at Using Linux, Here’s How
+		
+From explaining Linux commands to automating tasks, ChatGPT can handle them all.
+Posts
+By 
+Zunaid Ali
+May 25, 2024
+
+            How to Get Started
+    
+I hope you were able to pick your first distro based on the information above. The next step would be 
+installing it on VirtualBox
+ and testing it out. Some heavy distros like Garuda or Ubuntu can lag on VirtualBox, so you can try them by 
+booting into the Live Environment
+. If you're happy with the user experience, you can go ahead and 
+install the distro on your PC
+.
+✕
+ Remove Ads
+Linux
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. 
+Read More
+.
+Close
+✕
+ Remove Ads
+
+                                                    Desktop
+                                            
+
+                                                    Mobile
+                                            
+
+			PowerShell isn't scary—these everyday commands prove it
+		
+8 minutes ago
+
+			Dirty Frag vulnerability in Linux lets hackers do more damage—here's how to protect yourself
+		
+15 hours ago
+
+			Intel will make chips for Apple—what does that mean for Windows PCs?
+		
+18 hours ago
+See More
+
+			Please stop typing on your Google Pixel—these 3 voice commands are a game changer
+		
+16 hours ago
+
+			Google Maps has a power-saving mode that extends battery life by 4 hours—but there's a catch
+		
+17 hours ago
+
+			6 ways to repurpose your old Motorola phone
+		
+18 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			The NVIDIA Shield wasn't supposed to be a streaming device—here are its odd origins
+		
+
+			The excellent Ghostty terminal app just got an upgrade on Linux and Mac
+		
+
+			How to Install and Use ADB, the Android Debug Bridge Utility
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+27
+Sign in to your 
+How-To Geek
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Joey
+Joey
+Joey
+#HI947388
+Member since 2025-06-13
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Debian all the way 
+2026-03-14 22:30:33
+Upvote
+
+                                    6
+                            
+Downvote
+Reply
+
+                        6
+                    
+Copy
+        
+Dave
+Dave
+Dave
+#BL675207
+Member since 2025-09-27
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+What do you like about it, in case I feel like experimenting sometime?
+2026-03-14 23:24:57
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+Paul
+Paul
+Paul
+#ZU703661
+Member since 2024-06-23
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Agree! There is a reason other distros are based on Debian. It is the most widely used and with tasksel you can choose what desktop you want. 
+2026-03-15 01:21:18
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+Aime
+Aime
+Aime
+#AS291317
+Member since 2026-03-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+100% ... Been a Linux user since I was 12, I am 41 now and have used Debian 22 years of the 29 years. 
+2026-03-15 09:23:26
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Aime
+Aime
+Aime
+#AS291317
+Member since 2026-03-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Used Debian for 20+ years. The most stable distro and it's the reason why most distros are based on Debian. Yo won't regret it if you try.
+2026-03-15 09:25:00
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+JimT777
+JimT777
+JimT777
+#VH419765
+Member since 2023-12-16
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Linux Mint is based on Ubuntu, which is in turn based on Debian.
+2026-03-18 03:43:12
+Upvote
+Downvote
+Reply
+Copy
+        
+Michael
+Michael
+Michael
+#NG108301
+Member since 2026-02-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Dave
+ As the article stated, Mint is based on Ubuntu.  Many don't realize, but Ubuntu is based on Debian.  Debian is a "root" Linux distro, meaning that it didn't branch or "fork" from another distro.  What this means to you is that updates to Debian are frequently faster than Ubuntu, which in turn is faster to update than Mint (as the article stated).  However, it's a tad less friendly to use than Ubuntu, which could mean that you'll be spending more time in forums and the Command-Line Interface (CLI - the Linux equivalent of a Command/DOS prompt, though significantly more powerful - PowerShell copied a lot of its more advanced features from Linux's CLI).
+That being said, once Debian is installed and all your favorite software is configured, it's a rock-solid, stable and reliable platform.  (It still needs routine maintenance, as all Linux/Windows/Mac computers do.)
+2026-04-04 04:46:37
+Upvote
+Downvote
+Reply
+Copy
+        
+Dave
+Dave
+Dave
+#BL675207
+Member since 2025-09-27
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I've only ever tried Mint.  I asked for suggestions,  almost everyone recommended Mint, and it's worked out very well.  I wasn't interested in spending much time learning some esoteric new way if doing things, although I have used everything from CP/M, Apple DOS, and every version of Windows since 3.1, along with whatever Microsoft server version was in place in the early 1990s.  New apps have been fine.  Mint just works.     Sorry to the windoze fanboys who take umbrage with Linux users mentioning how well they like it.  I'm sure we will be treated to their presence soon.  Just spreading the good news is all I'm doing....
+2026-03-14 23:23:43
+Upvote
+
+                                    5
+                            
+Downvote
+Reply
+Copy
+        
+Christopher
+Christopher
+Christopher
+#SH026046
+Member since 2024-12-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Good article especially for Linux newbies. A reference to Debian as the source for Ubuntu and derivatives might have been a good thing. 
+2026-03-15 09:01:16
+Upvote
+
+                                    4
+                            
+Downvote
+Reply
+Copy
+        
+Jay
+Jay
+Jay
+#RK074744
+Member since 2025-11-13
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+CachyOS is my daily driver
+2026-03-16 03:33:52
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Jay
+Jay
+Jay
+#NE155266
+Member since 2026-03-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I had Linux mint for 2 decades. I use Linux mint xfce for my Jurassic laptop 
+2026-03-15 01:24:53
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+SilverFos
+SilverFos
+SilverFos
+#KV039328
+Member since 2026-03-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Garuda Linux is NOT that popular. On every post of yours, you mention it. Arch/Debian all the way
+2026-03-15 00:17:56
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Ali
+Ali
+Ali
+#OP318862
+Member since 2026-03-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I never learned windows.. my first REAL experience on a desktop was Ubuntu. I now, am using Mint (to explore/learn) cyber security, where I've purged/autoremove the apps that I truly don't need, and I just installed Fedora Workstation 43 on a Dell 7480 12GB RAM and 256GB allocated disk (to learn Python) i love them both. 
+2026-03-15 22:15:26
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+PM
+PM
+PM
+#WS240997
+Member since 2025-11-05
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I used Linux Mint for several years. I switched to Zorin OS a few years ago. I have no intention of moving away from it anytime in the near future.
+2026-03-16 14:13:10
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+dysback
+dysback
+dysback
+#KJ020839
+Member since 2024-09-05
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Debian is the mother and father of most Linux distributions but Ubuntu is a better choice for inexperienced users.
+2026-03-15 21:41:41
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Cory
+Cory
+Cory
+#PN362956
+Member since 2026-03-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+For a server or a box that must work rock-solid 100% of the time? Debian, no question.
+For my desktop: Fedora.
+2026-03-15 13:57:19
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+CajunMoses
+CajunMoses
+CajunMoses
+#OJ552239
+Member since 2024-01-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+1  Follower 
+View
+Admittedly, I the version of Fedora that I use is Silverblue rather than the more traditional mutable Workstation. Maybe the experience is different in some way for Workstations than it is for Silverblue, but I can't imagine why updating to a new version would in any way be more of a barrier than routine weekly updates. To move to the next version, you simply open a terminal and give it a rebase command, you reboot, and you're done. It isn't like it's ever even been a big deal. Especially if you're rebasing to the stable release at any time during the 13-month support interval.
+2026-03-15 09:18:48
+Upvote
+Downvote
+Reply
+Copy
+        
+Michal
+Michal
+Michal
+#NL728615
+Member since 2023-11-29
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+You're completely missing SELinux-based distros, such as Fedora Silverblue. Not the easiest to handle, but much safer than ordinary distros.
+2026-03-17 10:06:58
+Upvote
+Downvote
+Reply
+Copy
+        
+Simplismic
+Simplismic
+Simplismic
+#WO020884
+Member since 2025-11-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I kinda like MXLinux.
+2026-03-17 12:55:49
+Upvote
+Downvote
+Reply
+Copy
+        
+Ronny
+Ronny
+Ronny
+#XB025188
+Member since 2026-02-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Missing Debian, gentoo, arch, Rocky, and lots and lots more.. this site seems to be a major Ubuntu fanboy community
+2026-03-15 11:09:51
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        2
+                    
+Copy
+        
+calenti
+calenti
+calenti
+#DG821070
+Member since 2025-12-29
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I think these articles are for those who need guidance about which distro to use, which means they're new to linux or venturing out from windows for the first time, and for them stability/simplicity to setup/where is my file manager/googleabilty/what the LLMs slurped for KB is a priority so Ubuntu/Fedora is the right track.
+2026-03-17 07:43:29
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+SilverFos
+SilverFos
+SilverFos
+#KV039328
+Member since 2026-03-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+calenti
+ i don't believe ubuntu is that beginner friendly, especially for someone seeking a windows like atmosphere 
+2026-03-20 01:54:26
+Upvote
+Downvote
+Reply
+Copy
+        
+Inky
+Inky
+Inky
+#ET624465
+Member since 2025-10-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Not a Linux distro, but I want to see how far FreeBSD has come since I last used it in 2003.  My Framework 12 laptop is currently on Fedora 43, and it's meh at best. Since c 2012-2013, I've been only using Macs and Chromebooks until 2 months ago when I got the Framework. I honestly don't remember what distro I was using from 2004-2012.
+2026-03-15 04:11:00
+Upvote
+Downvote
+Reply
+Copy
+        
+calenti
+calenti
+calenti
+#DG821070
+Member since 2025-12-29
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Additional use case - set up an old PC as a Linux entry point. Xubuntu/Lubuntu are worth mentioning for that, as is Arch Linux as they're suited to limited hardware capacity.
+2026-03-17 07:45:21
+Upvote
+Downvote
+Reply
+Copy
+        
+Matthew
+Matthew
+Matthew
+#UB812161
+Member since 2026-03-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+It's been a few years since I used Linux on the Desktop, but I use it daily on servers. My choice is AlmaLinux because  we were primarily a RH and CentOS shop. The people who started MariaDB and Rocky aren't really people I like, so I don't use them  for personal reasons. 
+When it comes time to make a choice for Linux on servers I start with AlmaLinux, then Debian (depending on what it's used for), and then Ubuntu. I haven't found anything yet that needed Debian or Ubuntu for that AlmaLinux can't do. 
+However, there is one more. Alpine Linux is my base system for containers. 
+2026-03-15 11:36:56
+Upvote
+Downvote
+Reply
+Copy
+        
+Rachid
+Rachid
+Rachid
+#BI944658
+Member since 2026-02-23
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Debian is my linux Distribution since 2008 and i am very happy.
+2026-03-17 15:33:08
+Upvote
+Downvote
+Reply
+Copy
+        
+Mr.
+Mr.
+Mr.
+#MH103048
+Member since 2026-03-16
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Ah this post must be for Linux newbies, you didn't even mention the best 3: Arch Linux (with no GUI or Hyprland), LFS (Linux from SCRATCH so it can be all you want it to be without bloat like all the ones you referenced ), and even Guix or others that are FOSS. But newbie gonna be a newbie, using Ubuntu or mint 🤣
+2026-03-16 10:38:14
+Upvote
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+TR36
+TR36
+TR36
+#LG778457
+Member since 2025-10-12
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+"... But newbie gonna be a newbie, using Ubuntu or mint."
+Ya know "Mr." we ought to be encouraging "newbies" instead of putting them down and discouraging them from even considering Linux.  The whole point of this article is to provide an overview of what some of the more widely used Linux systems are -- ESPECIALLY for "newbies" who might want to leave Windows behind.  It's why the author provides this kind of advice:
+=====
+  "5 popular Linux distributions (and who they're meant for)"
+  "Ubuntu ... Best For ... The Linux curious—folks who want to try out Linux."
+  "Linux Mint ... Best For ... Windows 7 migrants, Linux newcomers."
+=====
+Being a bit friendlier to "newbies" might go a long way to help with growing the Linux user base, which I think is something most of us here would like to see.
+2026-03-19 20:14:36
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Mar 12, 2026
+
+                                    Google Chrome on Linux is getting a big upgrade
+                            
+Mar 12, 2026
+
+                                    Dolphin emulator’s new update fixes many emulation and NAS problems
+                            
+Mar 12, 2026
+
+                                    7 essential keyboard shortcuts every Linux Mint user should know
+                            
+Mar 12, 2026
+
+                                    These 4 open-source apps fixed Windows' biggest problems
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+How-To Geek
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

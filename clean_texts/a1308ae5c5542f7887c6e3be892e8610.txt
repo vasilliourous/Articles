@@ -1,0 +1,842 @@
+I run these 5 commands on every fresh Linux install to save hours of work
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+Networking
+Storage and NAS
+Components
+Peripherals
+Operating Systems
+Submenu
+Linux
+Windows
+Software
+Submenu
+Programming
+Applications
+Mobile
+Submenu
+Android
+iPhone
+Carriers
+New Tech
+Submenu
+Hobbies
+Smart Home
+Homelab
+Single-Board Computers (SBCs)
+Cutting Edge
+Streaming
+Submenu
+Streaming Content
+Streaming Platforms
+Audio/Video
+Automotive
+Reviews
+Buying Guides
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+15
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Storage
+Streaming
+Linux
+Open Source
+Microsoft Excel
+Android
+Windows
+Close
+I run these 5 commands on every fresh Linux install to save hours of work
+Credit: Lucas Gouveia / How-To Geek
+By 
+Faisal Rasool
+Published
+ Mar 1, 2026, 9:00 AM EST
+Faisal Rasool has been a feature writer at How-to Geek since early 2024. He brings five years of professional experience in simplifying technology for his readers on topics like mobile devices, PCs, and online privacy. He tries to help people get the most out of their gadgets and software with the least effort.
+
+In his teenage years, he spent hours every day tinkering with Android phones and Linux builds. Faisal started his career at WhatMobile in 2019 (mostly out of his obsession with Android) where he published over 2,000 news stories. Currently, he contributes to the news section over at AndroidHeadlines.
+
+He also authored more than 100 feature articles for SlashGear, covering Android, iOS, Web, Chromebooks, online privacy/security, and PC content. 
+
+Faisal is also pursuing a Bachelor's in English literature to build up his writing chops. He enjoys watercolors, classic video games, animated films, and conversations with strangers. 
+Sign in to your 
+How-To Geek
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+15
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Setting up a fresh Linux system and getting it ready for your work can sometimes be a tedious time sink. It's why I have this 5-step approach to making it as fast as I can.
+✕
+ Remove Ads
+
+                        Run a system update
+               
+You might have noticed that whenever you see instructions to install something using a 
+package manager
+, the documentation or the tutorial include a little update command like 
+sudo apt update
+. Why is that?
+Sometimes, when you run a command to install an app, it might return an error. Something like "package not found" or "unable to fetch." If that happens, it doesn't necessarily mean that the target package doesn't exist in the package manager repositories. The package might fail to locate the package if the package manager's local database is out of sync with the Linux servers.
+Whenever you run something like 
+apt install vlc
+, it doesn't actually connect to the server right away to locate the package. That would be slow and finicky (depending on your connection). Instead, your OS creates a local index of all available packages and runs the search on that database.
+✕
+ Remove Ads
+As new packages are added and older versions are updated in the official repos, the local database falls out of sync with the remote repo. It has to be manually updated and synced with the official providers. That's what sudo apt update does.
+After the local index is in sync with the official repos, you can run 
+sudo apt upgrade
+ to update all your packages to their latest versions. Upgrading packages sounds like the opposite of saving time, but regularly running these two commands saves you a lot of time (and trouble) down the line.
+Linux apps rely heavily on shared libraries and dependencies. If you don't regularly update them, you'll be stuck in what's called "dependency hell," where you have to scramble to manually fix dependency issues. If you installed the OS from even a slightly older installer image, you might find yourself spending hours playing wack-a-mole with broken packages. The solution is often as simple as running 
+sudo apt update && sudo apt upgrade
+.
+If you're on an Arch system, try this command.
+sudo pacman -Syu 
+Fedora people can run sudo dnf upgrade
+✕
+ Remove Ads
+
+                        Select the fastest mirrors
+               
+Linux packages aren't hosted on a single, centralized server. Instead, exact copies of software repositories are hosted in servers all over the world. These servers are called mirrors (because they're identical.) Not all of these servers are accessible all the time, and they don't all offer the same download speeds either.
+Beginner distros
+ usually have some sort of GUI utility to select the fastest mirror. For example, I'm using MX Linux here, and it has this neat MX Repo Manager tool which automatically selects the fastest mirror for your PC.
+You can do the same thing in the terminal with 
+nala
+.
+sudo nala fetch
+I have seen mirrors with dial-up speeds and downloading anything from those mirrors is excruciatingly slow. If you notice that your downloads or updates are taking too long, 9 times out of 10, you just need to switch mirrors.
+✕
+ Remove Ads
+
+                        Install packages quickly
+               
+On a fresh install, the first thing you probably want to do is install your favorite apps. Normally, you'd 
+just type the package names as you remember them and then install them
+. Let me show you a faster way.
+If you still have access to your previous Linux setup, try this. If you don't skip to the next step.
+Open the terminal on your old machine and enter this command. It creates a 
+list of all packages
+ you manually installed.
+apt-mark showmanual > 
+packages.txt
+Transfer the 
+packages.txt
+ file to the PC with the new installation. Open a terminal in the that navigate to the folder where you kept the 
+packages.txt
+ file. Then run this command.
+sudo xargs apt install -y 
+This command will install all the packages in the list in one go. You can also edit the text file to remove or add packages before running this command.
+If you don't have access to your old packages, you can use 
+Tuxmate
+ too. This site lets you select packages and gives you a single installation command.
+✕
+ Remove Ads
+
+                        Pull my dot files
+               
+I've spent some time configuring my 
+Kitty terminal
+, 
+nvim
+, and zsh shell, and I'm finally happy with 
+my setup
+. However, if this machine breaks or if I install Linux on another computer, I don't want to manually recreate it. That's what chezmoi is for. This tool lets you push your dot files to a GitHub repo and quickly reapply them with a single command.
+Start by installing chezmoi.
+sh -c "$(curl -fsLS 
+get.chezmoi.io
+)" -- -b $HOME/.local/bin
+Then open GitHub in your browser and create a 
+blank repo for your dotfiles
+. I call mine "dotfiles" (so creative.) Then open your terminal and run the following commands.
+✕
+ Remove Ads
+chezmoi init 
+chezmoi add ~/.zshrc 
+chezmoi add ~/.config/kitty/
+kitty.conf
+I only need to back up my zsh and Kitty configurations. You can add whatever dot files you want.
+
+                    Subscribe: Practical Linux setup tips in one newsletter
+                
+Want smoother Linux setup routines? Subscribe to the newsletter for concise, hands-on guidance, curated tool recommendations, and reusable configuration approaches that help you apply improvements across machines without hunting through scattered resources.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+chezmoi cd
+git add .
+git commit -m "Initial commit" 
+git remote add origin 
+https://github.com/usr/dotfiles
+You'll have to enter your username and a repo authentication token here.
+git push -u origin main 
+On my new operating system, I can just run this command, and it'll automatically apply all my configurations.
+chezmoi init --apply 
+https://github.com/usr/dotfiles.git
+
+                        Set up system-wide backups
+               
+I didn't bother setting up system-wide backups until last year when an update broke my CachyOS machine and I lost all my data. I spent days trying to recover the OS to no avail. I've since set myself up with a strict rule to maintain system-wide backups.
+The good news is most beginner distros make it 
+super easy to create and maintain backups
+. For example, Timeshift (built into a lot of Debian-based distros) creates system snapshots which you can revert to in case anything breaks.
+✕
+ Remove Ads
+Setting up a new Linux can be really frustrating sometimes. However, with the right tools and a "work smart, not hard" approach, it can be a breeze.
+Linux
+Maintenance & Optimization
+Linux & macOS Terminal
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. 
+Read More
+.
+Close
+✕
+ Remove Ads
+
+                                                    Desktop
+                                            
+
+                                                    Mobile
+                                            
+
+			PowerShell isn't scary—these everyday commands prove it
+		
+2 hours ago
+
+			Dirty Frag vulnerability in Linux lets hackers do more damage—here's how to protect yourself
+		
+17 hours ago
+
+			Intel will make chips for Apple—what does that mean for Windows PCs?
+		
+19 hours ago
+See More
+
+			Please stop typing on your Google Pixel—these 3 voice commands are a game changer
+		
+17 hours ago
+
+			Google Maps has a power-saving mode that extends battery life by 4 hours—but there's a catch
+		
+19 hours ago
+
+			6 ways to repurpose your old Motorola phone
+		
+20 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			Visual Studio Code is eating up hundreds of gigabytes on Linux
+		
+
+			How to Check Your BIOS Version and Update it
+		
+
+			You can make a self-hosted AI server with LM Studio 0.4.0
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+15
+Sign in to your 
+How-To Geek
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+wpeckham
+wpeckham
+wpeckham
+#RP857212
+Member since 2023-11-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+1  Follower 
+View
+Timeshift to a local drive is useful for many cases, but does nothing at all to help when your storage system dies.
+I said when, not if, because ALL hardware dies. You just never know WHEN! Real backups allow restore to cold iron, for when you must replace the entire machine. 
+2026-03-01 09:47:59
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Lee
+Lee
+Lee
+#YB648335
+Member since 2024-06-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Yep good point. I store them locally BUT I also copy the Timeshift backup to a hotshoe removable 2.5" HDD. Yeah what happens if the /Timeshift partition breaks like you mentioned? My last backup was 80 gigs so if you hold onto 3 or 4 of these they can garnish some room for sure. I only run Timeshift though before a kernel update I don't bother with timed ones.
+Of course this doesn't help /home so I've written a bash script that only backs the directories that I really need regarding my DATA to a compressed tar. And yeah I do the same thing there.. copy to another removable HDD. Actually here I have a few removables.
+2026-03-01 19:12:00
+Upvote
+Downvote
+Reply
+Copy
+        
+PsychoPadre
+PsychoPadre
+PsychoPadre
+#HM709973
+Member since 2025-04-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+On my system (Linux Mint 22.3) the command "apt-mark showmanual" produces a huge list of ALL applications on the system -- (1) those included when LM was installed, (2) anything that may have been added during subsequent LM upgrades, and (3) everything I manually added later (along with dependencies).
+Aside: The original LM install was 21, followed by all of the minor and major upgrades - which worked flawlessly as far as I could tell - to arrive at 22.3.
+A quick glance at the man page for "apt-mark" didn't reveal an obvious way to produce a list for case #3 - just the apps I've added manually, either from repositories via "apt-install", by double-clicking on a downloaded .deb package in the file manager, or using LM's Software Manager GUI. Those apps are really all that I'd want to identify, should I ever install an OS from scratch (which might not be LM, nor any Debian-based distro for that matter). Is there a way to do that, other than looking at the full list and trusting in your memory to completely identify those apps?
+Aside: I've also added Flatpaks, but those are easily found using the command "flatpak list".
+2026-03-01 10:50:11
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        3
+                    
+Copy
+        
+gregben
+gregben
+gregben
+#GX070288
+Member since 2025-02-17
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I've tried apt-mark showmanual on a couple of Debian servers and it shows tons of stuff that I didn't install manually and misses things that I did.
+2026-03-01 18:58:37
+Upvote
+Downvote
+Reply
+Copy
+        
+Lee
+Lee
+Lee
+#YB648335
+Member since 2024-06-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Interesting! Thus if you gotta replace your sys you know what needs to be installed so you don't miss any.. I gotta run this.. WOW you ain't kidding! I have 2451 entries! I copied them to a text file you never know!
+2026-03-01 19:22:01
+Upvote
+Downvote
+Reply
+Copy
+        
+PsychoPadre
+PsychoPadre
+PsychoPadre
+#HM709973
+Member since 2025-04-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+gregben
+ When I ran the command and looked at the huge list it produced, I didn't think to check for instances where it missed anything. I can do that... but then it's entirely possible I've installed some obscure CLI utilities that I use so rarely (but did an important job once or twice) I've forgotten about them anyway, and wouldn't notice they were missing (if they were) or even recognize that I had installed them (if they weren't).
+2026-03-03 08:07:11
+Upvote
+Downvote
+Reply
+Copy
+        
+PsychoPadre
+PsychoPadre
+PsychoPadre
+#HM709973
+Member since 2025-04-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Another command that can help is "grep -i install ~/.bash_history", which will reveal anything installed via "sudo apt install <package name>". Then one might do "grep -i remove ~/.bash_history" to see which, if any, of those were subsequently removed.
+2026-03-03 08:07:43
+Upvote
+Downvote
+Reply
+Copy
+        
+Bendy
+Bendy
+Bendy
+#PR661410
+Member since 2023-10-28
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+this makes no sense. you lost all your data because of a update? updates usually dont touch your files, they touch system files. you should have plugged the pc's hard drive into another computer that supports it's filesystem and get your files out that way. this wont work if your update is a very very very rare one that touches your personal folder.
+2026-03-07 08:21:39
+Upvote
+Downvote
+Reply
+Copy
+        
+Ray
+Ray
+Ray
+#CX470516
+Member since 2024-06-16
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+1  Follower 
+View
+In addition to making a timeshift backup, I use clonezilla to clone my drive. That way in case of a drive failure, I can use the clone. I then use timeshift to restore things more recent than my latest clone. 
+2026-03-02 09:29:27
+Upvote
+Downvote
+Reply
+Copy
+        
+Pat
+Pat
+Pat
+#LA671118
+Member since 2024-06-16
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Here's the thing and why it keeps linux down.... Windows, MAC and Android users aren't constantly having to reinstall their systems endlessly in a loop. Every single home linux user does... 
+2026-03-01 19:10:59
+Upvote
+Downvote
+Reply
+
+                        5
+                    
+Copy
+        
+UK-User
+UK-User
+UK-User
+#IY875594
+Member since 2025-08-17
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Well, I'm a Linux user (even a "single Linux user" - resist the retort) and I am not "reinstalling my system endlessly".
+On my second machine (2012 vintage), I may swap distros (because I can), and I may swap Desktop Environments ("DEs" - again because I can).
+But my main "driver" PC has been Linux Ubuntu from 
+10.
+04
+ (
+April
+ 20
+10
+) and I have done the near automatic biennial "distribution upgrade" through 12.04, 14.04, 16.04, 18.04, 20.04, 22.04, 24.04 by means of the GUI, except for: 
+1) new hardware in 2017 and
+2) when I chose to swap DE from LXDE to Gnome, which I did at the same time as a SSD upgrade.
+Some time this summer I will accept the offer to upgrade to 26.04 - still on a 2016 hardware design (because I can).
+I suppose Windows user may have less experience of upgrading through different Windows versions, because the demand for new hardware prevents them doing so.
+I do remember reinstalling Windows 95 (from 3½" disks)!
+2026-03-02 13:22:05
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+PsychoPadre
+PsychoPadre
+PsychoPadre
+#HM709973
+Member since 2025-04-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I have to echo what UK-User wrote... I can't relate to what you're saying about reinstalling anything in an endless loop. I installed Linux Mint 21 on my main computer, and did the periodic updates to 21.1, 21.2, 21.3, 22, 22.1, 22.2 and finally 22.3. None of those were forced. I did them when I got around to it and was comfortable that the updates wouldn't break my system. Contrast that to the forced Windows updates which, at best, you can defer for a few weeks, maybe a month -- my understanding, anyway, since I only used Windows on my home computer to be compatible with my work computer, and haven't touched it since I retired four years ago (when I wiped my home computer and installed Mint). 
+On the other hand, I've done a fair bit of distro hopping on three other computers, which are either older or under-powered compared to my daily driver. Now, if all I wanted to do was test different distros to compare desktop environments, application support, ability to customize, etc, I could've done so (or at least tried) using VirtualBox or Gnome Boxes. And in fact I've done thatl, but on the bare metal I did need to keep experimenting until I found distros (or a distro, as it turned out) that worked well given limited RAM and/or limited storage, older graphics hardware, etc. Again, contrast that with the forced-obsolescence policy that MS follows, where 100's of millions of reasonably-capable computers aren't allowed to upgrade to Win 11 while Win 10 is put out to pasture.
+2026-03-03 14:20:20
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+PsychoPadre
+PsychoPadre
+PsychoPadre
+#HM709973
+Member since 2025-04-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+UK-User
+ I remember installing Windows 1.0 from 5-1/4" disks, and MS-DOS before that.
+2026-03-03 14:25:10
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Uber
+Uber
+Uber
+#BR454399
+Member since 2024-06-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+It's no difference to Windows, MAC and Android in this respect. You DON'T have to reinstall a distro, you can just upgrade it. BUT just like WIndows and MAC and Android, it is less problematic to do fresh installs because (i) OSs collect junk ie software you never use, documents you don't need, and also files you won't need in the new upgrade. (ii) all OSs can have problems of an upgrade rather than a fresh install.
+A benefit with Linux is that you're not forced to upgrade. While support (security updates etc) are missing if you use very old OSs, Linux usually has a systematic upgrade so that you know how long your system will last with full security coverage (usually around 5 years). Also, you can do it when you want.. not constant messages.
+The reason most (not all) Linux users do fresh installs is simply that it cleans the computer and is less problematic. Windows users often don't understand the same applies to them. Indeed it's a far worse problem with Windows users because Windows OSs tend to slow down with time cos of all the fragmentation on the Hard Drive. Windows 11 users should still defragment if they are using a normal HDD hard drive. Linux users dont require this at all, ever. Should be as fast in 100 years as it is now
+2026-03-05 04:15:42
+Upvote
+Downvote
+Reply
+Copy
+        
+Derek
+Derek
+Derek
+#DG678770
+Member since 2024-07-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Every single home Linux user does 
+not
+. Some of us like to tinker, and try out different distros, but on the whole we don't install new systems as often as Windows users are forced to. You need a new system every time you change hardware. I've been known to just pop the main drive out of a machine and install it in the new one. I've been using the same system since Windows 7 was around
+2026-03-05 07:39:45
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Feb 20, 2026
+
+                                    If your external drive is always plugged in, it isn't a backup
+                            
+Feb 20, 2026
+
+                                    New Android malware uses Gemini AI to learn how to run on specific devices
+                            
+Feb 20, 2026
+
+                                    3 handy Linux apps to try this weekend (February 20 - 22)
+                            
+Feb 19, 2026
+
+                                    Google Chrome is getting three productivity upgrades
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+How-To Geek
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

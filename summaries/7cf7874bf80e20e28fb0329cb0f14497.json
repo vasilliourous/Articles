@@ -1,0 +1,84 @@
+{
+  "article_title": "I turned off three browser defaults, and my ISP suddenly couldn't track my web history anymore",
+  "core_thesis": "By adjusting three browser settings—enabling encrypted DNS (DoH), disabling page preloading, and forcing HTTPS-only connections—users can significantly reduce the amount of browsing data their ISP can passively collect, without needing additional software like a VPN. However, these changes do not provide complete anonymity and are not a full replacement for a VPN or Tor.",
+  "detailed_summary": "The article explains that ISPs can see a broad range of online activity by default, including DNS requests (which reveal exact websites visited), IP addresses, connection timestamps, and data usage. Even with HTTPS encryption, the domain name is visible via DNS. The author recommends three browser tweaks to mitigate this: (1) Switch to DNS over HTTPS (DoH) in browser settings, which encrypts DNS queries so the ISP cannot see which domains are being looked up. (2) Disable page preloading and network prediction features (found under Settings > Performance > Speed) to prevent the browser from making extra background connections that leak data. (3) Enable HTTPS-Only Mode (or Always use secure connections) to force all connections to use HTTPS, preventing unencrypted HTTP connections that expose full URLs. The article notes that these changes are not a VPN replacement—they reduce passive tracking but do not hide traffic patterns or IP addresses. A comment from an ISP developer adds that even with these measures, ISPs can still infer activity through traffic analysis and SNI (Server Name Indication) in TLS handshakes, and that Tor is the only truly untrackable method.",
+  "entities": [
+    {
+      "name": "Gavin Phillips",
+      "type": "person",
+      "role": "Author of the article, Segment Lead at MakeUseOf"
+    },
+    {
+      "name": "Cloudflare",
+      "type": "organization",
+      "role": "Recommended DoH provider for encrypted DNS"
+    },
+    {
+      "name": "Google Public DNS",
+      "type": "organization",
+      "role": "Alternative DoH provider"
+    },
+    {
+      "name": "OpenDNS",
+      "type": "organization",
+      "role": "Alternative DoH provider"
+    },
+    {
+      "name": "CleanBrowsing",
+      "type": "organization",
+      "role": "Alternative DoH provider"
+    },
+    {
+      "name": "Mozilla Firefox",
+      "type": "software",
+      "role": "Browser that supports HTTPS-Only Mode and DoH"
+    },
+    {
+      "name": "Google Chrome",
+      "type": "software",
+      "role": "Chromium-based browser with DoH and Always use secure connections"
+    },
+    {
+      "name": "Microsoft Edge",
+      "type": "software",
+      "role": "Chromium-based browser with similar settings"
+    },
+    {
+      "name": "Opera",
+      "type": "software",
+      "role": "Chromium-based browser with similar settings"
+    },
+    {
+      "name": "Vivaldi",
+      "type": "software",
+      "role": "Chromium-based browser with similar settings"
+    },
+    {
+      "name": "Safari",
+      "type": "software",
+      "role": "Browser that does not support DoH at browser level (macOS does)"
+    }
+  ],
+  "key_data_points": [
+    "ISPs can see DNS requests by default, revealing exact websites visited (e.g., example.com) – 🟢 relevant to Red Teaming: understanding what ISPs can see helps in planning opsec for C2 traffic or exfiltration.",
+    "HTTPS encrypts website content and full URLs, but the domain name is still visible via DNS – 🟢 relevant: even with HTTPS, DNS leaks can expose target domains; using DoH mitigates this.",
+    "Enabling DNS over HTTPS (DoH) in the browser encrypts DNS queries, preventing the ISP from logging domain lookups – 🟢 relevant: a quick win for privacy; can be scripted for automated browser hardening.",
+    "Disabling page preloading (Settings > Performance > Speed) stops the browser from making background connections that leak data – 🟢 relevant: reduces noise and potential data leakage during red team operations.",
+    "Enabling HTTPS-Only Mode forces all connections to use HTTPS, preventing unencrypted HTTP connections that expose full URLs – 🟢 relevant: ensures all traffic is encrypted, reducing visibility for network defenders.",
+    "A comment from an ISP developer states that even with these changes, ISPs can still track users via traffic analysis and SNI in TLS handshakes, and that Tor is the only truly untrackable method – 🟢 relevant: highlights limitations; for high-opsec scenarios, Tor or a VPN with additional measures is needed.",
+    "The article notes that these browser changes do not replace a VPN – they reduce passive tracking but do not hide IP addresses or traffic patterns – 🟢 relevant: important to set expectations; combine with VPN for stronger anonymity."
+  ],
+  "methodology_steps": [
+    "Step 1: Enable DNS over HTTPS (DoH) in your browser. For Chromium-based browsers (Chrome, Edge, Opera, Vivaldi): go to Settings, search for 'DNS', find the secure DNS section, and toggle it on. Choose a provider like Cloudflare, Google Public DNS, or OpenDNS. For Firefox: go to Settings > Privacy & Security > DNS over HTTPS and enable it.",
+    "Step 2: Disable page preloading and network prediction. In Chromium browsers: go to Settings > Performance > Speed, and disable 'Preload pages'. This stops the browser from making background connections that leak data.",
+    "Step 3: Enable HTTPS-Only Mode. In Chrome: go to Settings > Privacy and security > Security, and toggle 'Always use secure connections'. In Firefox: go to Settings > Privacy & Security > Security, and select 'Enable HTTPS-Only mode in all windows'. This forces all connections to use HTTPS, preventing unencrypted HTTP traffic.",
+    "Optional: Apply encrypted DNS at the OS level for broader protection beyond the browser. This can be done by configuring DoH or DoT in the operating system's network settings."
+  ],
+  "conclusions": [
+    "The three browser tweaks (DoH, disable preloading, HTTPS-only) effectively reduce the amount of browsing data an ISP can passively collect, but they do not provide complete anonymity. The article emphasizes that these changes are a good first step for privacy, but for stronger protection, a VPN or Tor should be used. 🟢 For Red Teaming, these settings can be part of a browser hardening checklist to minimize leakage during reconnaissance or C2 operations.",
+    "User comments highlight that even with these measures, ISPs can still infer activity through traffic analysis and SNI (Server Name Indication) in TLS handshakes. This means that for truly sensitive operations, additional layers like Tor or a VPN with obfuscation are necessary. 🟢 Relevant: understanding these limitations helps in designing opsec procedures that account for metadata leakage."
+  ],
+  "personal_relevance_summary": "This article is directly relevant to your cybersecurity and privacy interests, especially for Red Teaming where operational security (opsec) is critical. The three browser tweaks provide a quick, no-software way to reduce your digital footprint and prevent ISPs from logging your browsing history. As a programmer, you can automate these settings via browser policies or scripts for consistent hardening across multiple machines. The article also serves as a reminder that even with HTTPS, DNS leaks can expose your activity, so enabling DoH is a must. For your homelab, you can apply these settings to all devices to enhance network privacy. The comments add valuable nuance about the limitations of these measures, which is important for realistic threat modeling.",
+  "extra_advice": "Consider implementing these browser settings via Group Policy or a configuration script (e.g., using Chrome's managed policies or Firefox's policies.json) to enforce them across all devices in your homelab or team. Additionally, for Red Teaming, combine these tweaks with a VPN that has a kill switch and DNS leak protection, and test your setup using tools like DNSLeakTest.com or Wireshark to verify that no DNS queries leak outside the encrypted tunnel.",
+  "source_url": "https://www.makeuseof.com/i-turned-off-browser-defaults-and-my-isp-suddenly-couldnt-track-my-web-history-anymore/"
+}

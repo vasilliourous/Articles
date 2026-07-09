@@ -1,0 +1,611 @@
+I moved my entire Linux home directory to a second drive, and nothing broke
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+8
+More Action
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I moved my entire Linux home directory to a second drive, and nothing broke
+By 
+Jeff Butts
+Published
+ Apr 29, 2026, 9:00 AM EDT
+Jeff's been involved in the IT industry since before the Internet and spent more than 20 years working in technical support, system administration, network administration, and consulting roles. He holds an undergraduate degree in English, a Master's degree in English with a focus on professional writing and editing, and another Master's degree in Computing & Information Systems.
+
+After teaching university English and computer science for a few years, Jeff launched 
+his writing career
+. He's written for 
+Macworld
+, 
+Tom's Hardware
+, 
+groovyPost
+, 
+The Mac Observer
+, and more before beginning here at XDA. 
+Sign in to your 
+XDA
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+8
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Moving your entire Linux home directory sounds like one of those tweaks that should come with a warning label and a backup drive sitting nearby. Your home folder holds your documents, downloads, application settings, 
+shell configs
+, browser profiles, SSH keys, game saves, Flatpak data, and all the other tiny pieces that make a Linux install feel like yours. On paper, moving it away from the system drive feels risky because so many apps assume that path is always there. In practice, Linux 
+handles it better than you might expect
+.
+✕
+ Remove Ads
+Sometimes the best Linux upgrade is not a new desktop environment or a different distro, but giving your files a better place to live.
+That’s what surprised me most, years ago, when I first moved my home directory to a second drive. I expected a weekend of broken shortcuts, confused apps, and permissions drama. Instead, once the mount was set up properly, my desktop looked almost exactly the same as before. The experience made me appreciate how cleanly Linux separates the 
+operating system from the user environment
+ when you stop treating one drive as the only place everything can live.
+Related
+
+			5 awesome Linux features that will blow the mind of a Windows user
+		
+Don't know much about Linux? Get ready to blow your mind!
+Posts
+2
+By 
+Rich Edmonds
+Apr 8, 2026
+
+                        Separating home from system makes Linux easier to manage
+               
+
+            Your files do not need to live beside the operating system
+    
+The biggest reason to move 
+/home
+ is also the simplest one. Your operating system and your personal data do not have to share the same drive. Linux has always been comfortable with that idea, even if many desktop installs hide it behind a single default partition. Once you separate those roles, the whole system starts to feel more deliberate.
+That separation matters because the root drive is where the OS does most of its housekeeping. Updates, kernels, packages, logs, caches, and system snapshots can all grow over time. When your home directory is on the same drive, personal and system files end up competing for the same pool of space. Moving 
+/home
+ to another drive gives both sides more breathing room.
+✕
+ Remove Ads
+It also makes reinstalling Linux feel a lot less dramatic. If your system drive gets messy, you can wipe or replace the OS without treating your documents and application settings as collateral damage. You still need backups, because a second drive is not magic. But it does mean the operating system becomes easier to rebuild without dismantling your entire setup.
+
+                        A second drive can make upgrades feel less painful
+               
+
+            Reinstalling Linux feels calmer when your settings survive
+    
+The best part of this setup is not just having more storage. It is knowing that your user environment can survive changes that would otherwise feel annoying. A fresh Linux install usually means copying files back, restoring browser data, rebuilding dotfiles, and hoping you remembered every hidden config folder that mattered. With 
+/home
+ on a second drive, a lot of that work becomes less fragile.
+That does not mean every reinstall becomes effortless. You still need the same username or the right user ID mapping, and you need to make sure the second drive mounts at the correct point. Those details matter because Linux permissions are strict about ownership. Get them right, though, and your desktop can feel strangely familiar after a clean install.
+✕
+ Remove Ads
+This setup also makes distro hopping less irritating, which is dangerous knowledge for anyone with a spare USB stick and poor impulse control. You can test a different Linux distribution while keeping your personal files in one place. Some application settings may not translate perfectly across desktop environments or app versions, but the basic structure works. It turns experimentation into something closer to maintenance, rather than a full rebuild every time.
+
+                        Moving home is not completely risk-free
+               
+
+            A missing mount can make your desktop very confused
+    
+The risk here is that moving 
+/home
+ introduces a new failure point. If the second drive does not mount correctly, your system may boot without access to the user directory it expects to find. Depending on the setup, that can mean login failures, missing desktop settings, or a temporary empty home folder appearing where your real one should be. That’s not the kind of surprise anyone wants before coffee.
+There is also the permissions side of the problem. A home directory is not just a pile of files; it is a pile of files with ownership, modes, hidden folders, and application expectations attached. Copying everything with the wrong tool can strip metadata or cause subtle problems that only surface later. The move itself is not hard, but doing it carelessly can leave little splinters everywhere.
+For this kind of move, 
+rsync
+ is the tool I reach for before anything else. A regular file manager copy can work for basic documents, but it’s too easy to lose ownership, permissions, hidden files, timestamps, or other details that matter inside a Linux home directory. 
+rsync
+ is 
+better suited to the job
+ because it can preserve those attributes while copying everything to the new drive. It also lets you rerun the command safely, which is useful if you want to do a first pass, check the result, and then sync again before making the new location permanent.
+✕
+ Remove Ads
+Encryption can make the picture even more complicated. If your original system used full disk encryption or an encrypted home setup, moving 
+/home
+ to another drive requires more planning. You need to think about whether the second drive is encrypted, when it unlocks, and whether the login process can access it in time. Storage flexibility is great, but not if it quietly weakens the setup you already had.
+
+                        The risks are manageable with the right expectations
+               
+
+            This works best when you treat storage as infrastructure
+    
+The reason I still like this setup is that the risks are predictable. They are not mysterious Linux gremlins hiding in the walls. They are mostly mount points, file ownership, filesystem choices, and backup discipline. Those are boring details, but boring is exactly what you want from storage.
+You can put a Linux home directory on an NFS share, but I’d treat it as a specialized setup rather than the default recommendation for a desktop PC. It can make sense for shared workstations, lab machines, thin clients, or environments where the same user profile needs to follow you across multiple systems. For a personal desktop, though, it adds network dependency to something your session needs immediately at login. If the server, network, mount timing, permissions, UID mapping, or file locking behavior gets weird, your desktop can get weird right along with it.
+The key is to treat the second drive as part of the system, not as a removable afterthought. It should have a stable mount entry, a reliable filesystem, and a clear role. You should know what happens if it fails to mount, and you should have backups before making the move. Once those pieces are in place, 
+/home
+ on a second drive no longer feels exotic.
+✕
+ Remove Ads
+It also helps to remember that this is not an all-or-nothing decision. You can move only large folders, such as Documents, Downloads, Videos, Steam libraries, or project directories, if you want a softer version of the same idea. That gives you many of the storage benefits without relocating every hidden config file. Moving the entire home directory is cleaner, but selective offloading remains a valid approach.
+
+                        Linux feels better when your data has its own place
+               
+Moving my home directory to a second drive did not make my Linux system faster in some dramatic way. It made it feel better organized, which is less flashy but more useful every day. My system drive can focus on being the system drive, and my personal files have their own space to grow. That division makes upgrades, reinstalls, and general storage management feel less cramped.
+The best part is that nothing broke, which is exactly the kind of boring success Linux users should celebrate more often. It is not a tweak everyone needs, and it is not a replacement for a real backup plan. But if you have a second drive sitting in your PC, moving 
+/home
+ there can make your setup feel cleaner and more resilient. Sometimes the best Linux upgrade is not a new desktop environment or a different distro, but giving your files a better place to live.
+✕
+ Remove Ads
+Linux
+Home Lab
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			Claude Code works best when you stop asking it to code
+		
+
+			Fedora is becoming the default Linux recommendation, and Ubuntu did this to itself
+		
+
+			I finally found a local LLM I want to use every day (and it's not for coding)
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+8
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Andrzej
+Andrzej
+Andrzej
+#JP529462
+Member since 2024-08-24
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I guess you did NOT discover an option when installing Linux to have "home" in a separate partition, right?.
+2026-04-29 09:21:42
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+TheFrog
+TheFrog
+TheFrog
+#JJ997779
+Member since 2025-08-26
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I have seen many installations where /home is just a different partition on the same drive and people either ran out of space on their system partition or on the home partition. That's why I only see the point in this if you have a dual boot system where Windows and Linux share the same files. 
+Putting /home on a second drive is much better (if possible) - for single boot systems as well as for dual boot.
+2026-04-29 09:38:25
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+mike
+mike
+mike
+#OP956715
+Member since 2026-04-29
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Why a 2nd drive? Makes no sense. During install make 2 partitions. 1 for root and 1 for home. That way all of your data is separate from the os. Want to upgrade? No big deal everything upgrades in the root directory leaving home untouched.
+2026-04-29 15:14:31
+Upvote
+Downvote
+Reply
+
+                        2
+                    
+Copy
+        
+TheFrog
+TheFrog
+TheFrog
+#JJ997779
+Member since 2025-08-26
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+A second partition usually makes more problems because you either run out of space on your root or your data partition. I have seen that so many times that I strongly advise against it. It creates more problems than it solves.
+2026-04-30 01:39:09
+Upvote
+Downvote
+Reply
+Copy
+        
+Garkech
+Garkech
+Garkech
+#DD509280
+Member since 2026-01-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+TheFrog
+Set up LVM, move around space as needed.
+2026-05-04 06:03:26
+Upvote
+Downvote
+Reply
+Copy
+        
+Christopher
+Christopher
+Christopher
+#AZ894994
+Member since 2025-02-21
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I'm confused by this article.
+Were you expecting it to break?  Are you new to Linux? 
+2026-04-29 09:33:32
+Upvote
+Downvote
+Reply
+Copy
+        
+Clem
+Clem
+Clem
+#DN655127
+Member since 2026-01-23
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I like the idea of having /home on a second drive. I’d do it now but the mini PC that I’m using only supports one NVME drive, so it’s on my list to look at when/if I can afford a PC upgrade of some sort.
+My only grumble with the article is that it’s devoid of any detail as to how the task might be undertaken. If it’s that straightforward publish the steps involved.
+2026-04-30 08:17:19
+Upvote
+Downvote
+Reply
+Copy
+        
+Elad
+Elad
+Elad
+#MI140340
+Member since 2024-08-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Can I get a signed poster of you?
+2026-05-04 00:52:22
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 28, 2026
+
+                                    An AI agent deleted a company's entire database in 9 seconds, then confessed it 'guessed' instead of asking
+                            
+Apr 28, 2026
+
+                                    Before your router even connects to the internet, change these 6 settings
+                            
+Apr 28, 2026
+
+                                    Microsoft Teams is making it easier to view and manage all of your downloads
+                            
+Apr 27, 2026
+
+                                    I tried VS Code, Google Antigravity, and Claude Code for a month and one clearly dominated
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            Windows XP's Secret Themes
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:32
+
+                            Mac OS X launch: 25 years later
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:10
+Skip Ad
+5

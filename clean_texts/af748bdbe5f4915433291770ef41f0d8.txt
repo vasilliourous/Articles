@@ -1,0 +1,303 @@
+‘AI is not making IT simpler – it's making it more consequential’: IT workers are feeling the heat as AI raises expectations | IT Pro
+IT Pro
+US Edition
+US
+Australia
+UK
+×
+Search
+
+Business
+
+
+Cloud
+
+
+Hardware
+
+
+Infrastructure
+
+
+Security
+
+
+Content hubs
+
+
+Advertise
+
+
+More
+
+
+More
+
+About
+
+About
+
+View all More
+About us
+Advertise with us
+Contact us
+Newsletters
+Policies
+
+Policies
+
+View all More
+Terms of Service
+Privacy policy
+Cookie policy
+Copyright Preferences
+Additional Resources
+
+Additional Resources
+
+View all More
+AI
+Zero Trust
+Software
+Technology
+Resources 
+Webinars
+Brand Highlights
+Product Offerings
+Case Studies
+Channel Pro
+NEWSLETTER
+ITPro
+Get the ITPro daily newsletter
+Sign up today and you will receive a free copy of our Future Focus 2025 report - the leading guidance on AI, cybersecurity and other IT challenges as per 700+ senior executives
+
+Contact me with news and offers from other Future brands
+
+
+Receive email from us on behalf of our trusted partners or sponsors
+
+There was a problem. Please refresh the page and try again.
+
+By submitting your information you agree to the 
+Terms & Conditions
+ and 
+Privacy Policy
+ and are aged 16 or over.
+
+You are now subscribed
+Your newsletter sign-up was successful
+ An account already exists for this email address, please log in.
+Trending
+Subscribe to the ITPro newsletter
+AI in business
+Reviews and how tos
+The ITPro Podcast
+Laying the foundations for tomorrow's AI today
+Home
+Technology
+Artificial Intelligence
+‘AI is not making IT simpler – it's making it more consequential’: IT workers are feeling the heat as AI raises expectations
+A SolarWinds survey suggests AI makes IT work more strategic, but also adds friction and raises expectations
+
+By
+
+Nicole Kobie
+
+published
+
+3 weeks ago
+in 
+News
+
+When you purchase through links on our site, we may earn an affiliate commission. 
+Here’s how it works
+.
+
+(Image credit: Getty Images)
+
+Share
+
+Copy link
+
+
+Facebook
+
+
+X
+
+
+Linkedin
+
+
+Bluesky
+
+
+Share this article
+
+
+Join the conversation
+
+
+Follow us
+
+
+Add us as a preferred source on Google
+
+
+Newsletter
+
+
+Subscribe to our newsletter
+
+AI is driving significant efficiency gains for IT workers by speeding up tasks, according to new research, but it’s also causing friction and raising expectations.
+Findings from SolarWinds’ annual 
+IT Trends Report
+ suggest that AI is making some tasks easier, but rather than reducing workloads it instead increases the amount of strategic and complex work now required.
+Around 13% of respondents told SolarWinds that AI has not helped them individually in their day-to-day work.
+Seven-in-ten IT professionals said that AI has made their work more demanding, in part by expanding their roles.
+Latest Videos From IT Pro
+There have been some time savings thanks to reducing manual effort (65%) and faster root cause analysis (61%).
+However, now their work also includes making use of AI outputs and designing systems to make it work, such as interpreting data and AI-driven insights (59%), designing AI driven workflows (56%), and evaluating and validating AI outputs (47%).
+AI is also adding work due to the need to double-check outputs (71%) and the difficulty trusting recommendations (62%). Because of this, a third say AI has 
+increased "cognitive load"
+ in some ways.
+Get the ITPro daily newsletter
+Sign up today and you will receive a free copy of our Future Focus 2025 report - the leading guidance on AI, cybersecurity and other IT challenges as per 700+ senior executives
+Contact me with news and offers from other Future brands
+Receive email from us on behalf of our trusted partners or sponsors
+By submitting your information you agree to the 
+Terms & Conditions
+ and 
+Privacy Policy
+ and are aged 16 or over.
+"Seventy-one percent of IT professionals say AI has made their roles more demanding, not less, driven by the need to validate AI outputs, manage governance and risk, and keep pace with tools that evolve faster than most organizations can train for. AI saves time in some places and creates new forms of cognitive overhead in others.
+SolarWinds’ findings echo previous research highlighting how AI isn't 
+making work easier but intensifying it
+. Similar research found workers are now spending 
+half a day each week fixing AI "workslop"
+ — without 
+necessarily boosting wider productivity
+.
+Changing roles and shifting expectations
+According to SolarWinds, 80% agreed that their roles were evolving from “operational to orchestration”. Respondents now see their roles as more strategic (52%), automation driven (52%), cross-functional (47%), and complex (41%) than they did two years ago.
+"AI is not making IT simpler – it's making it more consequential," said Krishna Sai, Chief Technology Officer at SolarWinds.
+"The teams thriving in this environment are not usually the ones with the most AI tools. Instead, those who are building the governance and structure to actually trust them are seeing the greatest results. That's what organizations need to get right: not only deploying AI, but also creating the conditions where it can deliver."
+One cause of friction may well be a lack of skills and wider AI readiness, according to SolarWinds.
+The firm’s report showed that nearly half (47%) of C-suite executives believe their IT team is ready for AI. Meanwhile, just 13% of technical contributors actually doing the work agree with this outlook.
+Respondents also disagreed on how positive the impact of AI has been to their company.
+One-third said AI has enabled them to increase output without hiring extra staff, while 42% said it allowed performance to be maintained with fewer resources.
+That highlights how AI is being used to reduce headcounts or prevent future hiring, with more than 
+a third of UK tech leaders
+ admitting last year they'd made cuts to staff because of AI – though they now regret those redundancies.
+But another 20% told SolarWinds that AI has increased expectations without reducing workload – and 5% say they've seen no meaningful impact.
+FOLLOW US ON SOCIAL MEDIA
+Follow ITPro on Google News
+ and 
+add us as a preferred source
+ to keep tabs on all our latest news, analysis, views, and reviews.
+You can also 
+follow ITPro on LinkedIn
+, 
+X
+, 
+Facebook
+, and 
+BlueSky
+.
+Nicole Kobie
+Freelance journalist Nicole Kobie first started writing for ITPro in 2007, with bylines in New Scientist, Wired, PC Pro and many more. 
+Nicole the author of a book about the history of technology, The Long History of the Future.
+Latest
+
+The channel’s role in helping customers manage the data deluge
+
+Industry Insights
+
+The channel can play a pivotal role in helping customers develop future-proof, scalable data strategies
+
+
+Addressing Enterprise AI Data Challenges at Scale with the Dell AI Data Platform
+
+whitepaper
+You might also like
+
+Liz Kendall: The UK is in prime position to become a global leader in AI — but greater tech industry support is needed to avoid falling behind
+
+News
+
+Tech secretary Liz Kendall has pledged greater investment in the chip and semiconductor technologies that underpin AI
+
+
+UK firms accelerate ‘sovereign AI’ plans amid concerns over dependence on overseas tech
+
+News
+
+A Red Hat report shows firms are prioritizing sovereign AI over fears that foreign providers could restrict access
+
+
+UK organizations are failing to move past basic AI use-cases
+
+News
+
+Businesses in the UK are ramping up AI adoption, but they’re falling at key hurdles
+
+
+AI adoption rates aren’t matching IT hype
+
+News
+
+The appetite for AI is there, but a range of issues are hampering adoption
+
+
+Concerns are mounting over the cognitive impact of AI as workers report experiencing ‘brain fry’ – and it’s causing "increased employee errors, decision fatigue, and intention to quit"
+
+News
+
+Research from Boston Consulting Group backs earlier studies in highlighting the negative cognitive impact of AI at work
+
+
+If you thought RTO battles were bad, wait until AI mandates start taking hold across the industry
+
+Opinion
+
+Forcing workers to adopt AI under the threat of poor performance reviews and losing out on promotions will only create friction
+
+
+Sam Altman just said what everyone is thinking about AI layoffs
+
+News
+
+AI layoff claims are overblown and increasingly used as an excuse for “traditional drivers” when implementing job cuts
+
+
+Google says hacker groups are using Gemini to augment attacks – and companies are even ‘stealing’ its models
+
+News
+
+Google Threat Intelligence Group has shut down repeated attempts to misuse the Gemini model family
+
+View More ▸
+ITPro
+
+IT Pro is part of Future US Inc, an international media group and leading digital publisher. 
+Visit our corporate site
+.
+
+Add as a preferred source on Google
+Connect With Us
+RSS
+Contact Future's experts
+About us
+Contact us
+Terms and conditions
+Privacy policy
+Web notifications
+Cookies policy
+Newsletters
+GDRP consent
+Careers
+Contact Future's B2B experts
+©
+Future US, Inc. Full 7th Floor, 130 West 42nd Street,
+New York,
+NY 10036. 

@@ -1,0 +1,432 @@
+These 3 Docker containers turn my homelab into the ultimate network diagnostics tool
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+Networking
+Storage and NAS
+Components
+Peripherals
+Operating Systems
+Submenu
+Linux
+Windows
+Software
+Submenu
+Programming
+Applications
+Mobile
+Submenu
+Android
+iPhone
+Carriers
+New Tech
+Submenu
+Hobbies
+Smart Home
+Homelab
+Single-Board Computers (SBCs)
+Cutting Edge
+Streaming
+Submenu
+Streaming Content
+Streaming Platforms
+Audio/Video
+Automotive
+Reviews
+Buying Guides
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+More Action
+Sign in now
+🔥Tech Deals
+Storage
+Streaming
+Linux
+Open Source
+Microsoft Excel
+Android
+Windows
+Close
+These 3 Docker containers turn my homelab into the ultimate network diagnostics tool
+Credit: Patrick Campanale / How-To Geek
+By 
+Faisal Rasool
+Published
+ Apr 24, 2026, 7:30 AM EDT
+Faisal Rasool has been a feature writer at How-to Geek since early 2024. He brings five years of professional experience in simplifying technology for his readers on topics like mobile devices, PCs, and online privacy. He tries to help people get the most out of their gadgets and software with the least effort.
+
+In his teenage years, he spent hours every day tinkering with Android phones and Linux builds. Faisal started his career at WhatMobile in 2019 (mostly out of his obsession with Android) where he published over 2,000 news stories. Currently, he contributes to the news section over at AndroidHeadlines.
+
+He also authored more than 100 feature articles for SlashGear, covering Android, iOS, Web, Chromebooks, online privacy/security, and PC content. 
+
+Faisal is also pursuing a Bachelor's in English literature to build up his writing chops. He enjoys watercolors, classic video games, animated films, and conversations with strangers. 
+Sign in to your 
+How-To Geek
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																						
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Early on, when I had just started getting into homelabbing and self-hosting, my initial assumption was that once I configured a service properly, and got it up and running, it would just stay that way indefinitely. As I set up more and more services, my mini homelab grew to include a couple of servers and 
+VPS instances
+. It started getting out of hand a bit. I started experiencing my first service outages. Apparently, a homelab requires maintenance.
+✕
+ Remove Ads
+I spent a lot of time setting up things like reverse proxies, cron jobs, custom scripts, web servers, and VPS firewall configurations. Even after all that work, days or weeks later, some of those services would just randomly go down. By then, I had completely forgotten how I set stuff up in the first place, and it was just a whole mess. So I started using some Docker services to monitor my little homelab network and diagnose things.
+
+                        Uptime Kuma
+               
+
+            Monitor the uptime and get notified when stuff break
+    
+You might have come across those status trackers online which tell you when a site is down. They usually have some kind of visual indicators or dynamic graphs to track a site's uptime and outages. Uptime Kuma does the same thing, except you can point at your self-hosted services.
+Related
+
+			3 Self-Hosted Services I'm Running in My Homelab and Use Every Day
+		
+Plus, which ones I'm looking to try next.
+Posts
+6
+By 
+Jordan Gloor
+Jul 20, 2025
+✕
+ Remove Ads
+To set up Uptime Kuma, you create what's called a "monitor" for a service and the monitor shows you stats like current and average response times, as well as uptime percentages. When setting up the monitor, you point it at the URL you use to access the service and set a "heartbeat" timer. Uptime Kuma periodically pings the URL address and logs the time-stamped results. By default, that heartbeat interval is 60 seconds, but you can set it to whatever you want.
+It shows those logs as green uptime and red downtime indicators. You can also see the same logs in greater detail as interactive graphs.
+If you give Uptime Kuma a try, you should also set up notification alerts. Basically, if any of the services being monitored go down, Uptime Kuma will send you an alert. You can choose from a whole list of notification providers, including Discord, Telegram, Email, Signal, and Ntfy. 
+I already use Ntfy to push notifications to my phone
+, so I use Ntfy alerts for Uptime Kuma too.
+✕
+ Remove Ads
+The idea is that the time-stamped logs, the response time stats, and SSL expiration help you rule out the usual suspects when you inevitably hit that "Problem loading page" error.
+
+                        Netshoot
+               
+
+            All the tools you need for network diagnostics in one container
+    
+When a service goes down or misbehaves, the next step is to figure out what's wrong.
+You might have noticed that a typical Docker compose file has a "network" flag. It defines a virtual network for that container. Docker containers usually don't use the host network directly. So if you want to figure out what's wrong with that virtual network, you can't do so directly from the host. That's what Netshoot is for.
+You can list virtual Docker networks with this command.
+docker network ls
+You can run Netshoot as a temporary Docker container that lets you interact with any of the Docker networks on your list. Substitute 
+bridge
+ with your target network. The 
+--rm -it
+ flags tell Docker to remove this container when you exit it and give you an interactive shell.
+docker run --rm -it --network bridge nicolaka/netshoot
+To target a particular container, run this command.
+docker run --rm -it --network container:
+ nicolaka/netshoot
+✕
+ Remove Ads
+It should open an interactive Netshoot shell, which gives you access to 70+ networking tools. Some of them include 
+basic networking commands
+ like 
+ping
+, 
+curl
+, 
+nmap
+, 
+traceroute
+, 
+netstat
+, 
+tcpdump
+, 
+iperf3
+. For example, 
+ping
+ can test if a host is reachable. With 
+netstat
+, you can find if a port is already occupied. This has happened to me more than once. Since I'm running multiple web servers and Docker containers on my VPS instances, port conflicts are a recurring headache.
+
+                        OpenSpeedTest
+               
+
+            Speed tests for your homelab
+    
+Usually when you 
+run an internet speed test
+ on a website like Ookla, it tests your internet connection with an Ookla server. However, if you want to test the connection between a client (like your phone or laptop) and your home server, you'll want to run a speed test that targets that network. That's exactly what OpenSpeedTest does. It lets you test connection speeds of different nodes on your homelab network.
+✕
+ Remove Ads
+You can spin up a Docker container for OpenSpeedTest. By default, it maps to port 3001 for HTTPS, which should work fine for most people. However, Uptime Kuma also defaults to that port, so watch out for that if you have Uptime Kuma running already.
+
+                    Subscribe to the newsletter for practical homelab tools
+                
+Get hands-on homelab guidance: subscribe to the newsletter for actionable diagnostics, Docker tool walkthroughs, and practical tips—Uptime Kuma, Netshoot, OpenSpeedTest and more—so you can keep self-hosted services stable and manageable.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+The web UI looks the same as any regular internet speed test. It checks the upload and download speeds in megabits, as well as the latency and jitter (how stable or consistent the connection is).
+
+    						Raspberry Pi 5
+			
+Brand
+
+									
+										
+											Raspberry Pi
+
+										
+																	
+Storage
+
+									
+										
+											8GB
+
+										
+																	
+CPU
+
+									
+										
+											Cortex A7
+
+										
+																	
+Memory
+
+									
+										
+											8GB
+
+										
+																	
+$80 at Spark Fun
+$93 at Amazon
+$80 at CanaKit
+Expand
+Collapse
+
+            These Docker containers make diagnostics a little bit more manageable
+    
+As opposed to installing diagnostics tools on bare metal, 
+it's better to spin up these containers in a homelab environment
+ because they can be completely wiped off the server once you're done. I'd recommend keeping Uptime Kuma though, if your server can spare the resources.
+✕
+ Remove Ads
+Applications
+Programming
+Homelab
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. 
+Read More
+.
+Close
+✕
+ Remove Ads
+
+                                                    Desktop
+                                            
+
+                                                    Mobile
+                                            
+
+			Windows Fast Start-up is still causing problems in 2026, and everyone should disable it
+		
+11 minutes ago
+
+			KDE Dolphin does file management better than GNOME—here's why
+		
+2 hours ago
+
+			This open-source project brings the best part of Linux to Windows
+		
+3 hours ago
+See More
+
+			This open-source app suite replaced 6 closed-source apps and tools on my Android phone
+		
+1 hour ago
+
+			I don't use Google Maps in Android Auto anymore—this navigation app took its place
+		
+3 hours ago
+
+			Please stop typing on your Google Pixel—these 3 voice commands are a game changer
+		
+21 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			Annoyed by constant Wi-Fi drops? Here’s the fix you need
+		
+
+			Ugreen wanted to focus on AI with its latest NAS, but that’s its least impressive feature
+		
+
+			How to Install and Use ADB, the Android Debug Bridge Utility
+		
+
+                                                
+                
+                                                    
+                                    Thread
+                                                    
+Sign in to your 
+How-To Geek
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Be the first to post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+This space is open for discussion.
+Be the first to share your thoughts.
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 10, 2026
+
+                                    This hidden Windows 11 tool shows what your PC is really doing
+                            
+Apr 9, 2026
+
+                                    Your DNS server knows every website you visit—here's why Google's 8.8.8.8 is different
+                            
+Apr 9, 2026
+
+                                    5 open-source projects that secretly power the world
+                            
+Apr 9, 2026
+
+                                    This Linux distro will give your old Windows 10 PC a new lease on life
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+How-To Geek
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:09
+Skip Ad
+5

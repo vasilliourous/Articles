@@ -1,0 +1,567 @@
+Want to know which sites are selling your data? This free privacy tool gave me answers | ZDNET
+X
+Trending
+I wore the world's first HDR10 smart glasses
+TCL's new E Ink tablet beats the Remarkable and Kindle
+Anker's new charger is one of the most unique I've ever seen
+Best laptop cooling pads
+Best flip phones
+Roku TV vs Fire Stick
+Galaxy Buds 3 Pro vs Apple AirPods Pro 3
+M5 MacBook Pro vs M4 MacBook Air
+Linux Mint vs Zorin OS
+4 quick steps to make your Android phone run like new again
+How much RAM does your Linux PC need
+How to clear your Android phone cache
+How to disable ACR on your TV
+How to turn on Private DNS mode on Android
+ZDNET Recommends
+Tech
+Gaming
+Headphones
+Laptops
+Mobile Accessories
+Networking
+PCs
+Printers
+Smartphones
+Smart Watches
+Speakers
+Streaming Devices
+Streaming Services
+Tablets
+TVs
+Wearables
+Kitchen & Household
+Office Furniture
+Office Hardware & Appliances
+Smart Home
+Smart Lighting
+Yard & Outdoors
+Innovation
+Artificial Intelligence
+AR + VR
+Cloud
+Digital Transformation
+Energy
+Robotics
+Sustainability
+Transportation
+Work Life
+Accelerate your tech game 
+Paid Content
+How the New Space Race Will Drive Innovation
+How the metaverse will change the future of work and society
+Managing the Multicloud
+The Future of the Internet
+The New Rules of Work
+The Tech Trends to Watch in 2023
+Business
+See all Business
+Amazon
+Apple
+Developer
+E-Commerce
+Edge Computing
+Enterprise Software
+Executive
+Google
+Microsoft
+Professional Development
+Social Media
+SMB
+Windows
+How AI is transforming organizations everywhere
+The intersection of generative AI and engineering
+Software development: Emerging trends and changing roles
+Security
+See all Security
+Cyber Threats
+Password Manager
+Ransomware
+VPN
+Cybersecurity: Let's get tactical
+Securing the Cloud
+Advice
+Deals
+How-to
+Product Comparisons
+Product Spotlights
+Reviews
+Buying Guides
+See all Buying Guides
+Best Samsung phones
+Best Android phones
+Best smart rings
+Best blood pressure watches
+Best headphones for sleeping
+Best robot vacuum mops
+Best web hosting services
+Best travel VPNs
+Best VPNs
+Best AI image generators
+Best AI chatbots
+Best 75-inch TVs
+Best smartphones
+Best iPhones
+Best MagSafe battery packs
+Best digital notebooks
+Best TV antennas
+Best TVs
+Best laptops
+Best tablets
+Best smartwatches
+Best headphones
+Best live TV streaming services
+tomorrow
+belongs to those who embrace it
+today
+ZDNET France
+ZDNET Germany
+ZDNET Korea
+ZDNET Japan
+Go
+See all Topics
+Finance
+Education
+Health
+Special Features
+ZDNET In Depth
+ZDNET Recommends
+Newsletters
+Videos
+Editorial Guidelines
+Trending
+I wore the world's first HDR10 smart glasses
+TCL's new E Ink tablet beats the Remarkable and Kindle
+Anker's new charger is one of the most unique I've ever seen
+Best laptop cooling pads
+Best flip phones
+Roku TV vs Fire Stick
+Galaxy Buds 3 Pro vs Apple AirPods Pro 3
+M5 MacBook Pro vs M4 MacBook Air
+Linux Mint vs Zorin OS
+4 quick steps to make your Android phone run like new again
+How much RAM does your Linux PC need
+How to clear your Android phone cache
+How to disable ACR on your TV
+How to turn on Private DNS mode on Android
+ZDNET Recommends
+Tech
+Gaming
+Headphones
+Laptops
+Mobile Accessories
+Networking
+PCs
+Printers
+Smartphones
+Smart Watches
+Speakers
+Streaming Devices
+Streaming Services
+Tablets
+TVs
+Wearables
+Kitchen & Household
+Office Furniture
+Office Hardware & Appliances
+Smart Home
+Smart Lighting
+Yard & Outdoors
+Innovation
+Artificial Intelligence
+AR + VR
+Cloud
+Digital Transformation
+Energy
+Robotics
+Sustainability
+Transportation
+Work Life
+Accelerate your tech game 
+Paid Content
+How the New Space Race Will Drive Innovation
+How the metaverse will change the future of work and society
+Managing the Multicloud
+The Future of the Internet
+The New Rules of Work
+The Tech Trends to Watch in 2023
+Business
+See all Business
+Amazon
+Apple
+Developer
+E-Commerce
+Edge Computing
+Enterprise Software
+Executive
+Google
+Microsoft
+Professional Development
+Social Media
+SMB
+Windows
+How AI is transforming organizations everywhere
+The intersection of generative AI and engineering
+Software development: Emerging trends and changing roles
+Security
+See all Security
+Cyber Threats
+Password Manager
+Ransomware
+VPN
+Cybersecurity: Let's get tactical
+Securing the Cloud
+Advice
+Deals
+How-to
+Product Comparisons
+Product Spotlights
+Reviews
+Buying Guides
+See all Buying Guides
+Best Samsung phones
+Best Android phones
+Best smart rings
+Best blood pressure watches
+Best headphones for sleeping
+Best robot vacuum mops
+Best web hosting services
+Best travel VPNs
+Best VPNs
+Best AI image generators
+Best AI chatbots
+Best 75-inch TVs
+Best smartphones
+Best iPhones
+Best MagSafe battery packs
+Best digital notebooks
+Best TV antennas
+Best TVs
+Best laptops
+Best tablets
+Best smartwatches
+Best headphones
+Best live TV streaming services
+More
+See all Topics
+Finance
+Education
+Health
+Special Features
+ZDNET In Depth
+ZDNET Recommends
+Newsletters
+Videos
+Editorial Guidelines
+Tech
+
+      Home
+    
+
+      Tech
+    
+
+      Security
+    
+
+    Want to know which sites are selling your data? This free privacy tool gave me answers
+    
+
+    Data is gold, and some companies go to great lengths to collect it, store it, and sell it. But you can put an end to it.
+  
+Written by
+
+            Jack Wallen, 
+Contributing Writer
+Contributing Writer
+March 21, 2026 at 5:00 p.m. PT
+Table of Contents
+  Opt out of selling your data 
+  A word of caution 
+  The caveat 
+  What can you do? 
+Table of Contents
+  Opt out of selling your data 
+  A word of caution 
+  The caveat 
+  What can you do? 
+Elyse Betters Picaro / ZDNET
+Follow ZDNET: 
+Add us as a preferred source
+ on Google.
+   ZDNET's key takeaways 
+GPC is a movement, started in 2020, to help you reclaim your privacy.
+There are browsers and browser extensions you can use.
+You'll see if the site you are visiting is in compliance.
+Have you ever noticed a link on a website you regularly visit that indicates you can opt out of the company 
+selling your data
+? Probably not. Why? Because those links can be hiding in plain sight.
+Also: 
+How to stop iPhone apps from tracking you (and why you shouldn't wait to do it)
+Those links are there so that companies are in compliance with privacy regulations, and you have to click on them for every site you visit. What if you miss one? What if you simply forget? Well, at that point, your data has possibly been saved and sold. 
+That's not a guarantee, but a warning. Data is gold to some organizations, and they go to great lengths to collect it, save it, and sell it. 
+You have a choice. 
+  Opt out of selling your data 
+There's a service called 
+Global Privacy Control
+ that offers extensions and/or links to browsers and apps that support the cause. This service began in 2020 and was inspired by the 
+California Consumer Privacy Act
+, which gives California residents the right to opt out of any business that would sell their data. Currently, GPC is available for: 
+Brave Privacy Browser
+Disconnect
+DuckDuckGo Privacy Browser
+Mozilla's Firefox
+ (currently, this only applies to the Nightly release)
+OptMeowt
+ by privacy-tech-lab
+Privacy Badger
+Global Privacy Control (GPC) Inspector
+ (Chrome extension)
+  A word of caution 
+In the above list, you'll see OptMeowt. That was the first tool I tested, and I found it to be quite simple. However, there's a slight caveat with this. 
+On the LayerX Security site
+, which tells you if an extension is safe, OptMeowt is listed as a 5.0/10 on its security index. Although that rating doesn't sound too terrible, there are a couple of indicators that the extension could be problematic. 
+Those indicators come in the form of two critical warnings related to permission scope. OK, that sounds ominous, right? 
+Also: 
+You're being tracked online - 9 easy ways to stop the surveillance
+Sure, but the warnings are for access to network traffic and scripting. As far as the first warning, an extension like OptMeowt has to have access to network traffic, so I wouldn't concern myself with that. The second warning, however, indicates the extension is capable of injecting and executing code within a website. That could be used to exfiltrate data. 
+It is important to note the Google Web Store lists OptMeowt as a Featured extension, and I've yet to come across any indication (other than the LayerX Security site) that gives me concern. If you're not too keen on this, I would suggest opting for either the Brave Browser or DuckDuckGo Browser, as those two have the feature built in, as I've listed above. 
+If you want to try the OptMeowt extension, you install it in a supported browser (such as Firefox or DuckDuckGo Browser). 
+You visit a site.
+If the site is in compliance with privacy regulations, the GPC extension automatically opts you out, protecting you from having your data sold.
+The extension or browser informs any site in compliance that it is not to track you or sell your data.
+Guilty as charged (even though the site is only sending signals to 2 domains).
+Jack Wallen/ZDNET
+This kind of service shouldn't be hiding in plain sight, waiting for consumers and website owners to use it. Should GPC take hold, it will hopefully go a long way toward ensuring consumer privacy when using a browser. 
+Also: 
+Your home Wi-Fi isn't nearly as private as it should be - 6 free ways to lock it down
+Of course, GPC can only work for you if you use a supporting tool. If you don't use one of the extensions or enable the feature on a supported browser, GPC cannot help you. 
+Keep in mind that although the GPC organization started over 5 years ago, some of the tools are still in prerelease, so they will have issues. Even so, I tested it and found it to be effective. Once OptMeowt was installed, I started visiting sites and found that nearly every one of them was sending signals to third parties. Those signals indicate that a website is sharing information about you with third parties. On top of that, you can see the domains that are receiving signals. 
+I even discovered some of the apps and services I have installed on my home lab are sending signals to third parties. 
+  The caveat 
+Unfortunately, the California Consumer Privacy Act primarily protects residents of California. However, it can apply to any business around the US that would collect information from CA residents. What that means is consumers outside of California will indirectly benefit from the CCPA. As of this moment, there are 20 US states that have some form of data privacy laws in place. 
+Unfortunately, not every website is in compliance, which means GPC will not be 100% effective all the time. 
+The majority of sites I tested indicated they were not in compliance. Until every site falls into compliance, GPC will be hit or miss. Essentially, this is 
+Do Not Track
+ 2.0, and it will be frustrating if it follows the same fate, with few sites complying with the law. 
+I went to 
+privacy.ca.gov
+, and GPC reported that it was sending signals to third parties. On top of that, the OptMeowt extension indicates if a site is in compliance or not.
+Also: 
+How to clean up your digital footprint - and why it matters more than you think
+I would still highly recommend installing the extension or using a supporting browser. Even with the majority of sites not in compliance, you still get an idea of how many signals a site sends out when you visit, where those signals are going, and if the site has a compliance policy. 
+I want to have high hopes for GPC, but if websites fail to fall in line with the privacy laws and acts, its effectiveness is limited. Even so, I would consider this a must for every consumer who values their privacy.
+  What can you do? 
+There are a few things you can do to better protect your online privacy. Check out these articles for more information: 
+Cybersecurity 101: Everything on how to protect your privacy and stay safe online
+Half of all cyberattacks start in your browser: 10 essential tips for staying safe
+Your home Wi-Fi isn't nearly as private as it should be - 6 free ways to lock it down
+The best ad blockers: Clean up your browsing experience
+If you're into online privacy, try this popular Google alternative
+Stay anonymous online with these anti-tracking browsers
+Featured
+
+
+            Google Maps vs. Waze: I've driven with the two best navigation apps, and one is much better
+          
+
+
+            These 5 critical Windows Defender settings are off by default - turn them on ASAP
+          
+
+
+            I've tested robot mowers for years - here's my expert advice for every yard type
+          
+
+
+            This critical Linux vulnerability is putting millions of systems at risk - how to protect yours
+          
+
+
+              Google Maps vs. Waze: I've driven with the two best navigation apps, and one is much better
+            
+
+
+              These 5 critical Windows Defender settings are off by default - turn them on ASAP
+            
+
+
+              I've tested robot mowers for years - here's my expert advice for every yard type
+            
+
+
+              This critical Linux vulnerability is putting millions of systems at risk - how to protect yours
+            
+Editorial standards
+Show Comments
+
+          Log In to Comment
+        
+Community Guidelines
+Click to unmute
+Your Google I/O cheat sheet: What to expect
+Your Google I/O cheat sheet: What to expect
+Video Player is loading.
+Play Video
+Pause
+Skip Backward
+Skip Forward
+Next playlist item
+Unmute
+Current Time 
+0:00
+/
+Duration 
+6:44
+Loaded
+: 
+8.80%
+0:00
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+6:44
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions settings
+, opens captions settings dialog
+captions off
+, selected
+en-US
+Share
+Audio Track
+en-US (Main)
+, selected
+Fullscreen
+This is a modal window.
+Beginning of dialog window. Escape will cancel and close the window.
+Text
+Color
+White
+Black
+Red
+Green
+Blue
+Yellow
+Magenta
+Cyan
+Opacity
+Opaque
+Semi-Transparent
+Text Background
+Color
+Black
+White
+Red
+Green
+Blue
+Yellow
+Magenta
+Cyan
+Opacity
+Opaque
+Semi-Transparent
+Transparent
+Caption Area Background
+Color
+Black
+White
+Red
+Green
+Blue
+Yellow
+Magenta
+Cyan
+Opacity
+Transparent
+Semi-Transparent
+Opaque
+Font Size
+50%
+75%
+100%
+125%
+150%
+175%
+200%
+300%
+400%
+Text Edge Style
+None
+Raised
+Depressed
+Uniform
+Drop shadow
+Font Family
+Proportional Sans-Serif
+Monospace Sans-Serif
+Proportional Serif
+Monospace Serif
+Casual
+Script
+Small Caps
+Reset
+Done
+Close Modal Dialog
+End of dialog window.
+Close Modal Dialog
+This is a modal window. This modal can be closed by pressing the Escape key or activating the close button.
+This is a modal window. This modal can be closed by pressing the Escape key or activating the close button.
+Share: Your Google I/O cheat sheet: What to expect
+Facebook
+Twitter
+Direct Link
+Embed Code
+Close Modal Dialog
+Related
+
+      I enabled Data Saver mode on my Android phone to avoid overcharges - and it's a big relief
+    
+
+      How to audit what ChatGPT knows about you - and reclaim your data privacy
+    
+
+      Why Chrome may have quietly downloaded a 4GB file to your PC - and how to get rid of it
+    
+ZDNET
+we equip you to harness the power of disruptive innovation, at work and at home.
+Topics
+Galleries
+Videos
+Do Not Sell or Share My Personal Information
+about ZDNET
+Meet The Team
+Sitemap
+Reprint Policy
+Join
+ |
+    
+Log In
+Newsletters
+Licensing
+Accessibility
+
+  © 2026 ZDNET, A Ziff Davis company. All rights reserved.
+
+Privacy Policy
+ |
+   |
+  
+Your Privacy Rights
+ |
+  
+Advertise
+ |
+  
+Terms of Use

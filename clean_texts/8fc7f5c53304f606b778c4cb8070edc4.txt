@@ -1,0 +1,215 @@
+Payouts King ransomware uses QEMU VMs to bypass endpoint security
+News
+Featured
+Latest
+Canvas login portals hacked in mass ShinyHunters extortion campaign
+Ivanti warns of new EPMM flaw exploited in zero-day attacks
+Student hacked Taiwan high-speed rail to trigger emergency brakes
+New Cisco DoS flaw requires manual reboot to revive devices
+Fake OpenAI repository on Hugging Face pushes infostealer malware
+This Babbel deal shows how human-created language learning works better
+NVIDIA confirms GeForce NOW data breach affecting Armenian users
+Why More Analysts Won’t Solve Your SOC’s Alert Problem
+Tutorials
+Latest
+Popular
+How to access the Dark Web using the Tor Browser
+How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11
+How to use the Windows Registry Editor
+How to backup and restore the Windows Registry
+How to start Windows in Safe Mode
+How to remove a Trojan, Virus, Worm, or other Malware
+How to show hidden files in Windows 7
+How to see hidden files in Windows
+Webinars
+Downloads
+Latest
+Most Downloaded
+Qualys BrowserCheck
+STOPDecrypter
+AuroraDecrypter
+FilesLockerDecrypter
+AdwCleaner
+ComboFix
+RKill
+Junkware Removal Tool
+Deals
+Categories
+eLearning
+IT Certification Courses
+Gear + Gadgets
+Security
+VPNs
+Popular
+Best VPNs
+How to change IP address
+Access the dark web safely
+Best VPN for YouTube
+Forums
+More
+Virus Removal Guides
+Startup Database
+Uninstall Database
+Glossary
+Send us a Tip!
+Welcome Guide
+Home
+News
+Security
+Payouts King ransomware uses QEMU VMs to bypass endpoint security
+Payouts King ransomware uses QEMU VMs to bypass endpoint security
+
+                            By 
+Bill Toulas
+April 17, 2026
+03:10 PM
+0
+The Payouts King ransomware is using the QEMU emulator as a reverse SSH backdoor to run hidden virtual machines on compromised systems and bypass endpoint security.
+QEMU is an open-source CPU emulator and system virtualization tool that allows users to run operating systems on a host computer as virtual machines (VMs).
+Since security solutions on the host cannot scan inside the VMs, attackers can use them to execute payloads, store malicious files, and create 
+covert remote access tunnels
+ over SSH.
+1/1
+Skip 
+Ad
+Continue watching
+after the ad
+Visit Advertiser website
+GO TO PAGE
+For these reasons, QEMU has been abused in past operations from multiple threat actors, including the 
+3AM ransomware group
+, 
+LoudMiner cryptomining
+, and 
+‘CRON#TRAP’ phishing
+.
+Researchers at cybersecurity company Sophos documented two campaigns where attackers deployed QEMU as part of their arsenal and to collect domain credentials.
+One campaign that Sophos tracks as STAC4713 was first observed in November 2025 and has been linked to the Payouts King ransomware operation.
+The other, tracked as STAC3725, has been spotted in February this year and exploits the CitrixBleed 2 (CVE‑2025‑5777) vulnerability in NetScaler ADC and Gateway instances.
+Running Alpine Linux VMs
+Researchers note that the threat actors behind the STAC4713 campaign are associated with the GOLD ENCOUNTER threat group, which is known to target hypervisors and encryptors for VMware and ESXi environments.
+According to Sophos, the malicious actor creates a scheduled task named ‘TPMProfiler’ to launch a hidden QEMU VM as SYSTEM.
+They use virtual disk files disguised as databases and DLL files, and set up port forwarding to provide covert access to the infected host via a reverse SSH tunnel.
+The VM runs Alpine Linux version 3.22.0 that includes attacker tools such as AdaptixC2, Chisel, BusyBox, and Rclone.
+Sophos notes
+ that initial access was achieved via exposed SonicWall VPNs, while exploitation of the SolarWinds Web Help Desk vulnerability CVE-2025-26399 was observed in more recent attacks.
+In the post-infection phase, the threat actors used VSS (vssuirun.exe) to create a shadow copy, then used the print command over SMB to copy NTDS.dit, SAM, and SYSTEM hives to temp directories.
+More recently observed incidents attributed to the threat actor relied on other initial access vectors. The researchers say that in an attack in February, GOLD ENCOUNTER used an exposed Cisco SSL VPN, and in March they posed as IT staff and tricked employees over Microsoft Teams into downloading and installing QuickAssist.
+"In both instances, the threat actors used the legitimate ADNotificationManager.exe binary to sideload a Havoc C2 payload (vcruntime140_1.dll) and then leveraged Rclone to exfiltrate data to a remote SFTP location" - 
+Sophos
+According to a 
+Zscaler report
+ this week, Payouts King is likely tied to former BlackBasta affiliates, based on its use of similar initial access methods like spam bombing, 
+Microsoft Teams phishing
+, and 
+Quick Assist abuse
+.
+The strain employs heavy obfuscation and anti-analysis mechanisms, establishes persistence via scheduled tasks, and terminates security tools using low-level system calls.
+Payouts King encryption scheme uses AES-256 (CTR) with RSA-4096 with intermittent encryption for larger files. The dropped ransom notes point victims to leak sites on the dark web.
+Payouts King ransomware extortion portal
+Source: BleepingComputer
+The second campaign that Sophos observed (STAC3725), has been active since February and exploits the CitrixBleed 2 vulnerability to gain initial access to target environments.
+After compromising NetScaler devices, the attackers deploy a ZIP archive containing a malicious executable that installs a service named ‘AppMgmt,’ creates a new local admin user (CtxAppVCOMService), and installs a ScreenConnect client for persistence.
+The ScreenConnect client connects to a remote relay server and establishes a session with system privileges, then drops and extracts a QEMU package that runs a hidden Alpine Linux VM using a custom.qcow2 disk image.
+Instead of using a pre-built toolkit, the attackers manually install and compile their tools, including Impacket, KrbRelayx, Coercer, BloodHound.py, NetExec, Kerbrute, and Metasploit, inside the VM.
+Observed activity includes credential harvesting, Kerberos username enumeration, Active Directory reconnaissance, and staging data for exfiltration via FTP servers.
+Sophos recommends that organizations look for unauthorized QEMU installations, suspicious scheduled tasks running with SYSTEM privileges, unusual SSH port forwarding, and outbound SSH tunnels on non-standard ports.
+99% of What Mythos Found Is Still Unpatched.
+AI chained four zero-days into one exploit that bypassed both renderer and OS sandboxes. A wave of new exploits is coming.
+At the Autonomous Validation Summit (May 12 & 14), see how autonomous, context-rich validation finds what's exploitable, proves controls hold, and closes the remediation loop.
+Claim Your Spot
+Related Articles:
+LeakNet ransomware uses ClickFix, Deno runtime in stealthy attacks
+Trellix source code breach claimed by RansomHouse hackers
+Karakurt extortion gang ‘cold case’ negotiator gets 8.5 years in prison
+Why ransomware attacks succeed even when backups exist
+US ransomware negotiators get 4 years in prison over BlackCat attacks
+Evasion
+Payouts King Ransomware
+QEMU
+Ransomware
+Virtual Machine
+Bill Toulas
+
+              Bill Toulas is a tech writer and infosec news reporter with over a decade of experience working on various online publications, covering open-source, Linux, malware, data breach incidents, and hacks.
+            
+ Previous Article 
+Next Article 
+Post a Comment 
+Community Rules
+You need to login in order to post a comment
+Not a member yet? 
+Register Now
+You may also like:
+  Upcoming Webinar
+Popular Stories
+New Linux 'Dirty Frag' zero-day gives root on all major distros
+Canvas login portals hacked in mass ShinyHunters extortion campaign
+Palo Alto Networks warns of firewall RCE zero-day exploited in attacks
+Sponsor Posts
+See where traditional DLP falls short. Read the report.
+5.4M EOL package versions are live in registries. Your SCA tool tracks 7K. Scan free.
+What Claude Mythos Actually Means for Your Security Program
+Want to search 25 billion leaked credentials in 15 minutes for free? You can now. 
+Stop ransomware, verify clean restores, and recover fast with Acronis.
+  Upcoming Webinar
+Follow us:
+Main Sections
+News
+Webinars
+VPN Buyer Guides
+SysAdmin Software Guides
+Downloads
+Virus Removal Guides
+Tutorials
+Startup Database
+Uninstall Database
+Glossary
+Community
+Forums
+Forum Rules
+Chat
+Useful Resources
+Welcome Guide
+Sitemap
+Company
+About BleepingComputer
+Contact Us
+Send us a Tip!
+Advertising
+Write for BleepingComputer
+Social & Feeds
+Changelog
+Terms of Use
+  - 
+ Privacy Policy
+ - 
+Ethics Statement
+ - 
+Affiliate Disclosure
+Copyright @ 2003 - 2026 
+ Bleeping Computer
+®
+ LLC 
+ -   All Rights Reserved
+Login
+Username
+Password
+Remember Me
+Sign in anonymously
+ Sign in with Twitter
+Not a member yet? 
+Register Now
+Reporter
+Help us understand the problem. What is going on with this comment?
+Spam
+Abusive or Harmful
+Inappropriate content
+Strong language
+Other
+Read our 
+posting guidelinese
+ to learn what content is prohibited.
+Submitting...
+SUBMIT
+Freestar.com

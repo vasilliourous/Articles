@@ -1,0 +1,200 @@
+Threat actor uses Microsoft Teams to deploy new “Snow” malware
+News
+Featured
+Latest
+Canvas login portals hacked in mass ShinyHunters extortion campaign
+Ivanti warns of new EPMM flaw exploited in zero-day attacks
+Student hacked Taiwan high-speed rail to trigger emergency brakes
+New Cisco DoS flaw requires manual reboot to revive devices
+Fake OpenAI repository on Hugging Face pushes infostealer malware
+This Babbel deal shows how human-created language learning works better
+NVIDIA confirms GeForce NOW data breach affecting Armenian users
+Why More Analysts Won’t Solve Your SOC’s Alert Problem
+Tutorials
+Latest
+Popular
+How to access the Dark Web using the Tor Browser
+How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11
+How to use the Windows Registry Editor
+How to backup and restore the Windows Registry
+How to start Windows in Safe Mode
+How to remove a Trojan, Virus, Worm, or other Malware
+How to show hidden files in Windows 7
+How to see hidden files in Windows
+Webinars
+Downloads
+Latest
+Most Downloaded
+Qualys BrowserCheck
+STOPDecrypter
+AuroraDecrypter
+FilesLockerDecrypter
+AdwCleaner
+ComboFix
+RKill
+Junkware Removal Tool
+Deals
+Categories
+eLearning
+IT Certification Courses
+Gear + Gadgets
+Security
+VPNs
+Popular
+Best VPNs
+How to change IP address
+Access the dark web safely
+Best VPN for YouTube
+Forums
+More
+Virus Removal Guides
+Startup Database
+Uninstall Database
+Glossary
+Send us a Tip!
+Welcome Guide
+Home
+News
+Security
+Threat actor uses Microsoft Teams to deploy new “Snow” malware
+Threat actor uses Microsoft Teams to deploy new “Snow” malware
+
+                            By 
+Bill Toulas
+April 25, 2026
+11:07 AM
+0
+A threat group tracked as UNC6692 uses social engineering to deploy a new, custom malware suite named “Snow,” which includes a browser extension, a tunneler, and a backdoor.
+Their goal is to steal sensitive data after deep network compromise through credential theft and domain takeover.
+According to 
+Google’s Mandiant researchers
+, the attacker uses “email bombing” tactics to create urgency, then contact targets via Microsoft Teams, posing as IT helpdesk agents.
+1/1
+Skip 
+Ad
+Continue watching
+after the ad
+Visit Advertiser website
+GO TO PAGE
+A recent 
+Microsoft report
+ highlighted the growing popularity of this tactic in the cybercrime space, tricking users into granting attackers remote access via Quick Assist or other remote access tools.
+In the case of UNC6692, the victim is prompted to click a link to install a patch that would block email spam. In reality, the victims get a dropper that executes AutoHotkey scripts loading “SnowBelt,” a malicious Chrome extension.
+Malicious page used in the attacks
+Source: Google
+The extension executes on a headless Microsoft Edge instance, so the victim doesn’t notice anything, while scheduled tasks and a startup folder shortcut are also created for persistence.
+SnowBelt serves as a persistence mechanism and a relay mechanism for commands the operator sends to a Python-based backdoor named SnowBasin.
+Commands are delivered through a WebSocket tunnel established by a tunneler tool called SnowGlaze, to mask communications between the host and the command-and-control (C2) infrastructure.
+SnowGlaze also facilitates SOCKS proxy operations, allowing arbitrary TCP traffic to be routed through the infected host.
+SnowBasin runs a local HTTP server and executes attacker-supplied CMD or PowerShell commands on the infected system, relaying the results back to the operator through the same pipeline.
+The malware supports remote shell access, data exfiltration, file download, screenshot capturing, and basic file management operations.
+The operator can also issue a self-termination command to shut down the backdoor at the host.
+SnowBasin capabilities
+Source: Google
+Mandiant has found that, post-compromise, the attackers performed internal reconnaissance, scanning for services such as SMB and RDP to identify additional targets, and then moved laterally on the network.
+The attackers dumped LSASS memory to extract credential material and used pass-the-hash techniques to authenticate to additional hosts, eventually reaching domain controllers.
+At the final stage of the attack, the threat actor deployed FTK Imager to extract the Active Directory database, along with SYSTEM, SAM, and SECURITY registry hives.
+These files were exfiltrated from the network using LimeWire, giving the attackers access to sensitive credential data across the domain.
+Attack lifecycle
+Source: Google
+The report provides extensive indicators of compromise (IoCs) and also YARA rules to help detect the “Snow” toolset.
+99% of What Mythos Found Is Still Unpatched.
+AI chained four zero-days into one exploit that bypassed both renderer and OS sandboxes. A wave of new exploits is coming.
+At the Autonomous Validation Summit (May 12 & 14), see how autonomous, context-rich validation finds what's exploitable, proves controls hold, and closes the remediation loop.
+Claim Your Spot
+Related Articles:
+Microsoft Teams phishing targets employees with A0Backdoor malware
+Fake Claude AI website delivers new 'Beagle' Windows malware
+New stealthy Quasar Linux malware targets software developers
+Microsoft: Teams increasingly abused in helpdesk impersonation attacks
+WordPress plugin suite hacked to push malware to thousands of sites
+Backdoor
+Malware
+Microsoft Teams
+SnowBasin
+SnowBelt
+Social Engineering
+Bill Toulas
+
+              Bill Toulas is a tech writer and infosec news reporter with over a decade of experience working on various online publications, covering open-source, Linux, malware, data breach incidents, and hacks.
+            
+ Previous Article 
+Next Article 
+Post a Comment 
+Community Rules
+You need to login in order to post a comment
+Not a member yet? 
+Register Now
+You may also like:
+  Upcoming Webinar
+Popular Stories
+New Linux 'Dirty Frag' zero-day gives root on all major distros
+Canvas login portals hacked in mass ShinyHunters extortion campaign
+Palo Alto Networks warns of firewall RCE zero-day exploited in attacks
+Sponsor Posts
+What Claude Mythos Actually Means for Your Security Program
+See where traditional DLP falls short. Read the report.
+Want to search 25 billion leaked credentials in 15 minutes for free? You can now. 
+5.4M EOL package versions are live in registries. Your SCA tool tracks 7K. Scan free.
+Stop ransomware, verify clean restores, and recover fast with Acronis.
+  Upcoming Webinar
+Follow us:
+Main Sections
+News
+Webinars
+VPN Buyer Guides
+SysAdmin Software Guides
+Downloads
+Virus Removal Guides
+Tutorials
+Startup Database
+Uninstall Database
+Glossary
+Community
+Forums
+Forum Rules
+Chat
+Useful Resources
+Welcome Guide
+Sitemap
+Company
+About BleepingComputer
+Contact Us
+Send us a Tip!
+Advertising
+Write for BleepingComputer
+Social & Feeds
+Changelog
+Terms of Use
+  - 
+ Privacy Policy
+ - 
+Ethics Statement
+ - 
+Affiliate Disclosure
+Copyright @ 2003 - 2026 
+ Bleeping Computer
+®
+ LLC 
+ -   All Rights Reserved
+Login
+Username
+Password
+Remember Me
+Sign in anonymously
+ Sign in with Twitter
+Not a member yet? 
+Register Now
+Reporter
+Help us understand the problem. What is going on with this comment?
+Spam
+Abusive or Harmful
+Inappropriate content
+Strong language
+Other
+Read our 
+posting guidelinese
+ to learn what content is prohibited.
+Submitting...
+SUBMIT
+Freestar.com

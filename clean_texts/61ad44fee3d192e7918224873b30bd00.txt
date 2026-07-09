@@ -1,0 +1,388 @@
+I tried an open-source Figma alternative, and its AI does what Figma's can't
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+More Action
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I tried an open-source Figma alternative, and its AI does what Figma's can't
+By 
+Nolen Jonker
+Published
+ May 4, 2026, 8:31 AM EDT
+Nolen began their writing career in 2019, with three years dedicated to editing the Creative section at 
+MakeUseOf
+. Their expertise lies at the crossroads of technology and creativity, covering areas like photography, video editing, and graphic design.
+
+Outside of work, you'll often find Nolen diving into a good book, writing their own stories, or playing video games. 
+Sign in to your 
+XDA
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																						
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Figma's AI has been moving fast - there's image editing, content generation, Figma Make, Figma Sites, and more. But the parts that actually create and modify things on the design canvas are mainly behind a paid seat or routed 
+through external tools like Claude
+ or Cursor. 
+I've been using Penpot as an alternative
+ for a while because its free tier gives you a little more to work with and it's open-source, but it doesn't really solve that problem either; there's no native on-canvas AI that doesn't require external tools.
+✕
+ Remove Ads
+OpenPencil does. It's an 
+open-source design tool
+ with an AI that lives inside the editor natively, operates directly on the canvas, and runs on whatever API key you bring. Core development only started around January 2026, so it's still a pretty new tool, but I had to give it a spin.
+Related
+
+			I replaced Adobe, Figma, and Canva with one free tool, and I'm not paying for design software again
+		
+It's an all-kill design tool
+Posts
+14
+By 
+Nolen Jonker
+Apr 3, 2026
+
+                        What exactly is OpenPencil?
+               
+
+            An emerging Figma alternative
+    
+OpenPencil is an open-source, MIT-licensed design editor that's been in active development for a couple of months now. This is early software and the project is upfront about not being production-ready yet. It's built on CanvasKit and the Yoga layout engine for CSS flexbox and grid, and the 7MB desktop app runs on Tauri, which is why it's so lightweight.
+Worth flagging before you go looking: there are two unrelated projects sharing the name OpenPencil. The one I'm covering is at 
+openpencil.dev
+ and GitHub's 
+open-pencil/open-pencil
+. The other, by ZSeven-W, is a separate design-to-code tool and a different product entirely.
+✕
+ Remove Ads
+OpenPencil is aimed at solo UX/UI designers and small teams who want a 
+Figma-adjacent workflow without the subscription
+ or the closed platform dependency. You get a real vector editor with components, auto-layout, variables, P2P collaboration, and all the goodies. It probably won't replace Figma for production team workflows right now. But where it has a real edge is the AI model situation. Figma's AI runs on a credit system it controls. OpenPencil is BYOK - you connect your own API key from whatever provider you want, and since it also accepts any OpenAI-compatible endpoint, that likely extends to 
+local models
+ served through something like Ollama.
+
+                        It opens your Figma files
+               
+
+            Which removes the biggest objection
+    
+The usual argument against trying any new design tool is the existing file situation - you could have years of work sitting in .fig files that nothing else can properly read. OpenPencil reads and writes .fig natively using the same Kiwi binary codec Figma uses, so it's not a conversion situation with unpredictable results, what goes in comes back out intact. Copy-paste works both ways too. You can select nodes in Figma, paste into OpenPencil, and fills, strokes, auto-layout, text, effects, and corner radiuses all come through exactly as they are.
+In practice, this means you can take existing Figma files or layers straight into OpenPencil and put the AI to work on them. Here, I brought over an old practice design from Figma, and it kept everything intact down to the pixel.
+✕
+ Remove Ads
+
+                        What it does as an editor
+               
+
+            I was pleasantly surprised
+    
+I went in expecting something a little more bare-bones, but it’s closer to a real Figma alternative than that. You get all the standard vector drawing tools with a proper pen tool and bezier curves, full rich text editing, auto-layout via flexbox and CSS Grid, components with instance overrides and live sync, and design variables with Light/Dark mode collections. So all the basics that matter for UI work.
+Where it's still catching up is prototyping - frame transitions and interaction triggers are on the roadmap but not there yet, and rendering parity with Figma isn't either. It's also worth knowing there's no plugin ecosystem yet. For solo design work and UI layout it covers a lot of ground, but if your workflow depends heavily on Figma plugins or advanced prototyping, it's probably not a good fit for now.
+
+                        OpenPencil's AI is kind of the whole point
+               
+
+            And it's where it pulls ahead of Figma
+    
+You just hit 
+Ctrl + J
+ to open the AI assistant in the sidebar, then connect a provider - Anthropic, OpenAI, Google AI, OpenRouter, or any OpenAI-compatible endpoint - paste your API key, and the AI is ready to go right inside the design workspace. No account needed either. You'll also need 
+Node.js
+ installed to use this on the desktop app; once you have it, run 
+npm i -g @open-pencil/mcp
+ in your terminal, then restart the app.
+✕
+ Remove Ads
+From there, it has around 100 tools wired to that chat panel, so you can start creating shapes, setting fills and strokes, managing auto-layout, working with components and variables, running boolean operations, analyzing design tokens - all through natural language prompts. Tool calls show up as collapsible timeline entries so you can see exactly what it's doing, and there's a visual verification step where it renders what it built and checks it against your request. Everything it does is also undoable.
+Figma's AI that writes to the canvas requires a subscription or plugins (that are also behind the subscription). With OpenPencil, you foot the API bill and only pay for what you actually create, plus, it's right inside the design workspace. The closest free Figma users can get is Figma Make, which is a separate workspace that doesn't have all the design tools and you have a hard AI credit cap. The quality of what OpenPencil produces depends entirely on which model you connect, so it's worth being deliberate about picking your model.
+I had some issues with my Claude key at first so I switched to OpenRouter, and it worked seamlessly - I can't say whether this is on Anthropic's side or whether OpenPencil had an issue with the Anthropic integration. Once I got the chat going with OpenRouter though, it was smooth sailing. Not only did it create everything I asked for down to the pixel, but it also seemed to keep the chat context in mind. For example, instead of repeating the same prompt for a different layer, I'd just say "do the same thing with this box". A total of 8 prompts only cost me 50 cents.
+✕
+ Remove Ads
+Related
+
+			I'm never going back to Photoshop after mastering this free, self-hosted editor
+		
+A self-hosted editor that covers all of the essentials
+Posts
+3
+By 
+Nolen Jonker
+Jan 20, 2026
+
+            Early, but worth the look
+    
+OpenPencil isn't quite a Figma alternative just yet, primarily because it still lacks prototyping and plugins. But the rest of the bones are all there, plus it has something Figma doesn't have natively, which is an AI that actually works directly on the canvas. It's one of the more exciting design projects I've come across in a while, and while it's still in its early stages, it's worth giving a spin if you're a solo creator or want to try an open-source option that isn't Penpot for once.
+
+    						OpenPencil
+			
+See at OpenPencil
+Expand
+Collapse
+✕
+ Remove Ads
+Software and Services
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			Claude Code's creator keeps sharing tips, and they all made my experience better
+		
+
+			Google’s native app for Windows beats Microsoft at its own game
+		
+
+			Ollama is still the easiest way to start local LLMs, but it's the worst way to keep running them
+		
+
+                                                
+                
+                                                    
+                                    Thread
+                                                    
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Be the first to post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+This space is open for discussion.
+Be the first to share your thoughts.
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+May 2, 2026
+
+                                    I use OpenCode over Claude Code, and it's every bit as good
+                            
+May 1, 2026
+
+                                    I stopped paying monthly for productivity tools after finding these alternatives with one-time purchases
+                            
+May 1, 2026
+
+                                    I replaced ChatGPT and Claude with this powerful local LLM and saved over $20 a month while gaining full control
+                            
+May 1, 2026
+
+                                    I replaced Claude Pro with a local 9B model for a week, and finally found out what I was paying $20 a month for
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:07
+
+                            The end of affordable PCs?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            Windows XP's Secret Themes
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            How much data does Steam use in a year?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

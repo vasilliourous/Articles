@@ -1,0 +1,1031 @@
+5 open-source operating systems everyone mistakes for Linux
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+Networking
+Storage and NAS
+Components
+Peripherals
+Operating Systems
+Submenu
+Linux
+Windows
+Software
+Submenu
+Programming
+Applications
+Mobile
+Submenu
+Android
+iPhone
+Carriers
+New Tech
+Submenu
+Hobbies
+Smart Home
+Homelab
+Single-Board Computers (SBCs)
+Cutting Edge
+Streaming
+Submenu
+Streaming Content
+Streaming Platforms
+Audio/Video
+Automotive
+Reviews
+Buying Guides
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+10
+Threads
+16
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Storage
+Streaming
+Linux
+Open Source
+Microsoft Excel
+Android
+Windows
+Close
+5 open-source operating systems everyone mistakes for Linux
+Credit: Lucas Gouveia/How-To Geek
+By 
+Jorge A. Aguilar
+Published
+ Apr 21, 2026, 9:30 AM EDT
+Aggy is a veteran writer and editor in the technology and gaming space. Having served as a Managing Editor for high-traffic digital publications, alongside being an editor and consultant for over a dozen sites. Aggy's published work spans a wide and respected array of tech and gaming outlets, including WePC, Screen Rant, How-To Geek, Android Police, PC Invasion, and Try Hard Guides.
+
+Beyond editorial work, Aggy's direct experience in the tech sphere extends to app development. Aggy has published two games under Tales and is always eager to learn and do more. He also likes working on computers and researching in his spare time.
+
+He knows about Windows, Linux, Audio, Video, and much more. 
+Sign in to your 
+How-To Geek
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+10
+
+                            Like
+                                        
+10
+
+								Thread
+																										
+16
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Linux has been used as a catch-all term for any free, open-source operating system that prioritizes user control over systems like Windows or macOS. Although many share command-line interfaces and a philosophy of freedom, calling every open-source project a Linux distribution ignores important details about computing history and engineering. There are distinctions you need to understand if you want to appreciate the complexity and variety of open-source software. Just remember, not everything that is an outsider is Linux, even 
+though distros can be very different
+.
+✕
+ Remove Ads
+
+                        FreeBSD
+               
+
+            It's a complete package, not just a kernel
+    
+Credit: Lucas Gouveia/How-To Geek | Studio Romantic/
+Shutterstock
+FreeBSD is a free, open-source operating system that comes from the Berkeley Software Distribution created at UC Berkeley 
+that you can try
+. It looks like Linux and shares many tools, but it is a distinct system. It comes with a compatibility layer for running many Linux programs without modifications, even though the internal architecture is different.
+The primary difference lies in how the system is developed. Linux is technically just a kernel which other groups bundle with various tools to create a complete OS. FreeBSD develops the kernel and the core tools as one cohesive unit. Since a single group manages everything, the components are designed to work together, which makes the system predictable.
+✕
+ Remove Ads
+FreeBSD is known for its networking performance and stability. The networking stack is tuned for low latency, so it stays efficient under a heavy load. It also includes features like the Z File System for managing data and Jails for virtualization. These tools help the system run for long periods without crashing or needing a reboot.
+Quiz
+8 Questions · Test Your Knowledge
+Linux
+Trivia Challenge
+From a Finnish student's side project to powering the world's supercomputers — how well do you really know Linux?
+History
+Culture
+Commands
+Kernel
+Fun Facts
+Begin
+01 / 8
+History
+In what year did Linus Torvalds announce the first version of the Linux kernel to the world?
+A
+1989
+B
+1993
+C
+1991
+D
+1995
+Correct! Linus Torvalds posted his now-famous message to the 
+comp.os.minix
+ newsgroup on August 25, 1991, describing Linux as 'just a hobby, won't be big and professional.' That turned out to be quite the understatement.
+Not quite — Linus Torvalds made his famous announcement in 1991, when he was just 21 years old and a student at the University of Helsinki. He described it as a 'hobby' project, which is arguably the most successful hobby in computing history.
+Continue
+02 / 8
+Culture
+What is the name of the Linux mascot, and what kind of animal is it?
+A
+Beastie, a daemon
+B
+Tux, a penguin
+C
+GNU, a wildebeest
+D
+Rex, a fox
+Correct! Tux the penguin became the official Linux mascot in 1996, designed by Larry Ewing. The name 'Tux' is often said to stand for Torvalds UniX, and the penguin was chosen after Linus mentioned he was once bitten by a penguin at a zoo.
+The answer is Tux, a penguin! The mascot was chosen after Linus Torvalds mentioned being bitten by a fairy penguin at a zoo in Canberra, Australia. Designer Larry Ewing created the iconic image in 1996 using GIMP — fittingly, free software.
+Continue
+03 / 8
+Kernel
+What type of kernel architecture does Linux use?
+A
+Microkernel
+B
+Exokernel
+C
+Hybrid kernel
+D
+Monolithic kernel
+Correct! Linux uses a monolithic kernel, meaning the entire operating system runs in kernel space. This famously sparked a heated debate between Linus Torvalds and computer scientist Andrew Tanenbaum in 1992, who argued microkernels were the superior design.
+Not quite — Linux uses a monolithic kernel, where the OS core runs as a single large process in kernel space. This was actually controversial, leading to a famous flame war between Linus Torvalds and professor Andrew Tanenbaum, who believed microkernels were the future.
+Continue
+04 / 8
+Commands
+What does the classic Linux command 'sudo' stand for?
+A
+System User Do
+B
+Switch User and Do
+C
+Superuser Do
+D
+Secure Unix Do
+Correct! 'sudo' stands for Superuser Do, and it allows permitted users to run commands with the security privileges of another user — typically the root superuser. It's one of the most typed commands in Linux and has inspired countless memes about power and responsibility.
+The answer is 'Superuser Do'! While 'switch user' logic is involved, the name specifically refers to executing a command as the superuser (root). First developed in the 1980s, sudo is now a cornerstone of Linux security, letting admins grant elevated privileges without sharing the root password.
+Continue
+05 / 8
+Fun Facts
+What percentage of the world's top 500 supercomputers run Linux?
+A
+Around 75%
+B
+Exactly 50%
+C
+100%
+D
+Around 90%
+Correct! As of 2017, Linux achieved 100% domination of the TOP500 supercomputer list — and has maintained it ever since. From weather modeling to nuclear research to AI training, every single one of the world's fastest supercomputers runs Linux.
+Remarkably, the answer is 100%! Since November 2017, every single computer on the TOP500 supercomputers list has run Linux. It powers everything from climate simulations to particle physics research at CERN to AI model training at major tech companies.
+Continue
+06 / 8
+History
+Which operating system directly inspired Linus Torvalds to create Linux?
+A
+MS-DOS
+B
+BSD Unix
+C
+Minix
+D
+Solaris
+Correct! Torvalds was inspired by Minix, a small Unix-like OS created by Andrew Tanenbaum for educational purposes. Frustrated by Minix's limitations and licensing restrictions, he set out to build his own kernel — and the rest is history.
+The direct inspiration was Minix, a small educational Unix-like system created by professor Andrew Tanenbaum. Torvalds was using Minix on his new PC but found it too limited. His desire for a more capable, free system drove him to write Linux from scratch starting in 1991.
+Continue
+07 / 8
+Culture
+What does the 'GNU' in 'GNU/Linux' stand for?
+A
+General Network Utility
+B
+GNU's Not Unix
+C
+Global Networked Unix
+D
+GNU Null Unix
+Correct! GNU stands for 'GNU's Not Unix' — a classic recursive acronym beloved by hackers. The GNU project was started by Richard Stallman in 1983 to create a completely free Unix-like operating system. Linux provided the missing kernel to complete the GNU system.
+GNU stands for 'GNU's Not Unix' — a recursive acronym, which is a playful trick where the abbreviation refers back to itself. Richard Stallman launched the GNU Project in 1983, years before Linux existed. When Torvalds released the Linux kernel, it completed the puzzle Stallman had started.
+Continue
+08 / 8
+Fun Facts
+Which of the following runs on the Linux kernel?
+A
+macOS
+B
+Android
+C
+Windows Subsystem for Linux
+D
+iOS
+Correct! Android is built on top of the Linux kernel, making Linux the most widely used OS on the planet when you count smartphones. Billions of Android devices worldwide are technically running Linux — Torvalds' 'hobby' project ended up in nearly everyone's pocket.
+The answer is Android! Google built Android on top of a modified Linux kernel, which means billions of smartphones worldwide are running Linux under the hood. macOS and iOS use a Darwin/XNU kernel, and WSL runs Linux tools but translates syscalls rather than running the kernel natively.
+See My Score
+Challenge Complete
+Your Score
+/ 8
+Thanks for playing!
+Try Again
+You generally won't find FreeBSD on a standard home desktop, although you can configure it that way. It is mostly used for heavy infrastructure. Large companies like Netflix, Apple, and Sony use it for their web servers, firewalls, and storage systems. They choose it because it is fast, scales well, and has a license that is friendly for businesses.
+
+                        Haiku
+               
+
+            A fresh start for your desktop
+    
+Credit: Haiku
+✕
+ Remove Ads
+Haiku is an open-source operating system designed for personal computers. It is not a Linux distribution or a Unix clone, and a 
+good way to save a netbook
+. Instead, it was inspired by BeOS. While Linux uses a monolithic kernel where everything runs in one big, privileged space, Haiku uses a microkernel design that keeps the core code minimal.
+The microkernel approach is helpful for reliability. In monolithic systems like Linux, a single bad driver can crash the whole computer. Haiku runs most of its services in a protected area, which helps prevent those kinds of total failures.
+Haiku does not carry the history of old Unix systems. While FreeBSD and Linux are rooted in decades-old technology, Haiku was engineered from scratch to be fast and responsive for multimedia tasks. It is a labor of love, similar to how ReactOS was built to be a free alternative to Windows.
+While Linux handles everything from phones to clouds and FreeBSD runs massive servers, Haiku stays focused on the desktop. It is designed to give you a streamlined experience that feels quick and user-centric. It is a unique choice if you want something that does not follow the traditional Unix path.
+✕
+ Remove Ads
+
+                        TempleOS
+               
+
+            One man's unique digital vision
+    
+TempleOS is a lightweight operating system with biblical themes, built entirely by Terry A. Davis. It shares no history with Linux. Davis wrote the OS himself, which includes a custom language called HolyC and a dedicated compiler. The system lacks networking and the type of multitasking found in modern versions.
+The system is simple by design. It runs in a low-resolution, 16-color mode. Programs must voluntarily give up control to let other processes run, which differs from the way Windows or Linux handles tasks.
+Privacy and simplicity are the primary goals. Davis intentionally excluded networking since he saw the internet as a risk. So, to keep the system fast and simple, it does not use memory protection. This gives you total control over the hardware, and you can type code directly into the command line to execute it immediately.
+TempleOS is a lot more serious than you would be used to in terms of a general-purpose OS. It does not share any structure with Linux or Unix. It is an independent system that stands as a monument to one programmer's specific vision.
+✕
+ Remove Ads
+
+                        ReactOS
+               
+
+            Running Windows apps without the Windows price tag
+    
+ReactOS is a free project that tries to run Windows programs and drivers directly. Since it isn't based on Linux and doesn't use a Unix architecture, the developers are reverse-engineering the Windows NT design from the ground up. This lets it run native Windows software without needing a layer like Wine to translate the code.
+The project started in the late 90s and uses a clean-room method to figure out how Windows works. This means the team writes its own code to match how Windows behaves without actually seeing the private source code from Microsoft. The project even completed a full audit of its own code to make sure it wasn't violating any copyrights.
+✕
+ Remove Ads
+While ReactOS works with the Wine project to share some libraries, they are built differently. Wine is just a layer that sits on top of Linux or macOS. ReactOS is the actual operating system itself, including the kernel and the parts that talk to your hardware. This lets it use real Windows hardware drivers, which Wine can't do.
+
+                        Minix
+               
+
+            The secret system inside your computer
+    
+Andrew Tanenbaum created Minix in 1987 as a small, Unix-like operating system. He built it as a teaching tool to help students study a functional OS without needing to navigate the complex, restricted code found in professional Unix systems at the time. Linus Torvalds eventually used Minix as a reference and inspiration when he developed Linux.
+
+                    Subscribe to the newsletter for deeper OS insights
+                
+Want to go beyond basics and understand why so many operating systems aren't just 'Linux'? Subscribe to the newsletter for concise, expert breakdowns and comparisons that illuminate design choices and real-world use cases.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+Minix and Linux follow different design paths. Minix uses a microkernel where the kernel manages only basic tasks. Other components, like file systems and drivers, operate in isolated spaces. If a driver fails, a reincarnation server restarts it, which makes the system reliable and capable of self-healing.
+✕
+ Remove Ads
+You are likely using Minix without knowing it. Intel includes a version of Minix 3 in most modern processors. It runs within the Intel Management Engine, a hidden environment that operates independently from your main operating system.
+It maintains its own drivers and networking so IT staff can manage computers remotely. Since it is embedded in billions of Intel chips, Minix is one of the most widely used operating systems in the world.
+
+            Linux doesn't mean "other"
+    
+Linux gets treated like a general term that just means an OS is not PC, Android, or Mac. This is a dangerous precedent because it is based on a misunderstanding of how computers work. When you recognize that these systems are more than just Linux derivatives, you get a better appreciation for an ecosystem where unique visions continue to shape the future of what an OS can achieve. So don't just say any OS outside of the well-known trio is Linux.
+
+    						Apple MacBook Air M2
+			
+Operating System
+
+									
+										
+											macOS
+
+										
+																	
+Display (Size, Resolution)
+
+									
+										
+											13.6-inch Liquid Retina display
+
+										
+																	
+Camera
+
+									
+										
+											1080p FaceTime HD
+
+										
+																	
+Ports
+
+									
+										
+											Thunderbolt/USB 4, MagSafe, Headphone jack
+
+										
+																	
+See at Amazon
+See at bestbuy
+Expand
+Collapse
+✕
+ Remove Ads
+Linux
+Linux
+PC Optimization
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+10
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. 
+Read More
+.
+Close
+✕
+ Remove Ads
+
+                                                    Desktop
+                                            
+
+                                                    Mobile
+                                            
+
+			KDE Dolphin does file management better than GNOME—here's why
+		
+20 minutes ago
+
+			This open-source project brings the best part of Linux to Windows
+		
+2 hours ago
+
+			These 6 Linux command defaults make the terminal much less frustrating
+		
+2 hours ago
+See More
+
+			This open-source app suite replaced 6 closed-source apps and tools on my Android phone
+		
+4 minutes ago
+
+			I don't use Google Maps in Android Auto anymore—this navigation app took its place
+		
+2 hours ago
+
+			Please stop typing on your Google Pixel—these 3 voice commands are a game changer
+		
+20 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			5 hard truths about switching to Linux that Windows users need to hear
+		
+
+			8 open-source tools that secretly power the world
+		
+
+			How to Find Your Android Device's Info for Correct APK Downloads
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+16
+Sign in to your 
+How-To Geek
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Nic
+Nic
+Nic
+#ON908316
+Member since 2026-04-06
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I want (Open)VMS (RMS) back.  Designed with a heavy "this is for database servers" incline, it just worked.
+It gave us automatic file revisioning without having to **** around with CVS, Subversion, Git, etc.  Edit worked (and I suspect *nix's "nano" nicked the design).  I was using "Talk" in the '90s, well before any other system got any form of chat programme.
+2026-04-21 12:56:21
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+
+                        6
+                    
+Copy
+        
+Roger
+Roger
+Roger
+#RU146567
+Member since 2026-01-21
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+worked to with it. was smooth.
+2026-04-21 14:50:17
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+David
+David
+David
+#LF637181
+Member since 2023-11-28
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+OpenVMS was probably the most secure. One could set file protections for System, Owner, Group, and World.  One could then set the file for Read, Write, Execute or Delete.  The automatic revisioning was very useful. DEC almost beat them all when they released the ALPHA cpu tears before anyone else had a 64 bit processor.  Compaq swallowed them, they were swallowed by HP and then HP sold of the parts and killed the rest. Open VMS is still out there
+2026-04-21 15:39:57
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+Nic
+Nic
+Nic
+#ON908316
+Member since 2026-04-06
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I still have a DEC Alpha, and apart from weighing a lot and a slightly noiser fan, it's a superb machine.
+2026-04-21 16:17:53
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Johannes
+Johannes
+Johannes
+#QZ986572
+Member since 2024-12-21
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+David
+ You report something here I had not the faintest idea of. I am totally surprised it exists, still exists but totally unknown. Any idea why VMS popularity declined? Overwhelmed by Novell and killed by WinNT?
+2026-04-22 21:11:13
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+wfaulk
+wfaulk
+wfaulk
+#BC865021
+Member since 2024-09-28
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+nano is a copy of pico, the editor that came with the mail client pine. nano was written, IIRC, due to some licensing issue with pine/pico. To be fair, I don't know if pico was inspired by VMS's edit.
+I used Zephyr as early as 1990 (maybe 1989) as a networked chat/instant message system.
+2026-04-23 09:15:00
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Nic
+Nic
+Nic
+#ON908316
+Member since 2026-04-06
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Johannes
+ It wasn't popularity, it was a combination of not having enough people who understood it, far too little investment in it, and Unix-like systems becoming more attractive to the geeks (like me).  So yes, overwhelmed by Novell, but killed by Linux.  (WinNT was not a factor, everyone who moved away from VMS went to Unix-like systems, they were not stupid enough to adopt Windows)
+2026-04-29 16:10:51
+Upvote
+Downvote
+Reply
+Copy
+        
+Owen
+Owen
+Owen
+#IH471380
+Member since 2026-01-19
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+who would actually mistake any of these for linux; to be linux it first has to use the linux kernel or a fork of the linux kernel 
+2026-04-23 14:06:09
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+wpeckham
+wpeckham
+wpeckham
+#RP857212
+Member since 2023-11-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+1  Follower 
+View
+You forgot KolibriOS. I have shown my desktop to someone and had them ask what distribution I was using, SURE it was something new in the line of Linux. It is a complete self-contained operating system in assembler: INSANELY fast, incompatible with everything, beautiful, simple, and not quite unique. Did I mention fast? BTW: when I ran KDE on Windows I had people ask about that as well. It was Win-7 underneath (which dates it, and me), but that KDE desktop replacing explorer fooled them. Lesson: don't judge just by the looks. ;-)  
+2026-04-21 12:23:22
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Paul
+Paul
+Paul
+#MI267694
+Member since 2023-07-17
+Following
+0
+Topics
+1
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+1  Follower 
+View
+As interesting as these 5 O/S's seem to be, I am not willing to learn another O/S at this time. Still considering moving away from Windows into Linux.
+2026-04-22 10:50:17
+Upvote
+Downvote
+Reply
+Copy
+        
+Roger
+Roger
+Roger
+#RU146567
+Member since 2026-01-21
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+no one mistakes bsd with linux, but with unix. same with linux mistaken to be a unix. 
+2026-04-21 14:51:45
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        4
+                    
+Copy
+        
+Steve
+Steve
+Steve
+#RI066820
+Member since 2023-09-18
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+1  Follower 
+View
+BSD actually is a Unix derivative, and although it doesn't have any Unix code in it anymore, most Unix like systems, including most commercial Unix systems, many Linux distributions, Haiku, ReactOS and even older versions of Windows included or include BSD code. It's essentially Unix under a different name, for legal reasons.
+2026-04-22 03:27:48
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Roger
+Roger
+Roger
+#RU146567
+Member since 2026-01-21
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Steve
+ yeah, but it is still not unix.
+2026-04-22 13:22:27
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Dadi
+Dadi
+Dadi
+#HS395663
+Member since 2026-04-23
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+heh...  captain America arguing with himself...
+2026-04-23 15:58:48
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+FxMuld3r
+FxMuld3r
+FxMuld3r
+#EJ673718
+Member since 2026-01-19
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Dadi
+ 🤓
+2026-04-24 11:48:39
+Upvote
+Downvote
+Reply
+Copy
+        
+hheightman
+hheightman
+hheightman
+#NZ724982
+Member since 2023-07-17
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Thanks, once again, for sharing your omniscience and telling us what "everyone" knows or doesn't know. 
+2026-04-22 11:20:23
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Chris
+Chris
+Chris
+#TZ162002
+Member since 2024-08-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+1  Follower 
+View
+Operating systems that "everyone mistakes for Linux"?
+NO - NOBODY mistakes them for Linux, except for probably YOU, the article writer.
+2026-04-23 09:52:19
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 15, 2026
+
+                                    Get Windows on Linux in 10 minutes with these 2 commands
+                            
+Apr 14, 2026
+
+                                    Raspberry Pi OS 6.2 places a password requirement on sudo commands
+                            
+Apr 14, 2026
+
+                                    This app instantly turned my Plex server into a cable TV replacement
+                            
+Apr 14, 2026
+
+                                    The Raspberry Pi's 15-year reign is quietly ending—here's why
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+How-To Geek
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

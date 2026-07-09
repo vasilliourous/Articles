@@ -1,0 +1,54 @@
+{
+  "article_title": "7 Network Settings I Always Configure on a New Proxmox Server",
+  "core_thesis": "When setting up a new Proxmox server, the default networking configuration is functional but insufficient for performance, security, and scalability. The author recommends seven specific network tweaks—making the default bridge VLAN-aware, separating management and VM traffic, using static IPs and DNS, configuring LACP bonding, creating dedicated storage and migration networks, and enabling jumbo frames for storage—to build a robust, production-ready hypervisor environment that also benefits home labs.",
+  "detailed_summary": "The article, written by Brandon Lee, outlines seven essential network configurations for any new Proxmox VE server. The first step is to enable VLAN awareness on the default bridge (vmbr0) by adding 'bridge-vlan-aware yes' to /etc/network/interfaces or checking the box in the web GUI. This allows a single bridge to carry multiple VLANs, simplifying VM tagging without creating separate bridges. Second, the author stresses separating management traffic from VM traffic using dedicated VLANs (e.g., VLAN 10 for management, VLAN 20 for VMs). This improves security, prevents cluster communication interference, and enhances performance under load. Third, configuring a static management IP and proper DNS servers is critical for cluster communication, backups, monitoring, and automation tools; DHCP can cause address changes that break these services. Fourth, network bonding with LACP (802.3ad) is recommended for servers with multiple NICs. LACP aggregates bandwidth and provides redundancy, unlike active/backup mode which only offers failover. The configuration uses 'bond-mode 802.3ad' and 'bond-xmit-hash-policy layer2+3'. Fifth, a dedicated storage network (e.g., VLAN 30) should be created for Ceph, iSCSI, or NFS traffic to avoid congestion with VM traffic. This involves a separate bridge (vmbr1) with its own subnet. Sixth, jumbo frames (MTU 9000) should be enabled on the storage network to improve throughput and reduce CPU usage, but must be consistent across the entire path (switches, NICs, bridges). The author warns against enabling jumbo frames on VM networks. Seventh, a dedicated migration network (e.g., VLAN 40) isolates live migration traffic, preventing large memory transfers from saturating the main network and impacting running workloads. Each node gets a migration IP, and Proxmox's datacenter settings allow specifying this network for migrations. The article concludes that these small changes yield significant benefits in security, traffic separation, and performance.",
+  "entities": [
+    {
+      "name": "Brandon Lee",
+      "type": "person",
+      "role": "Author and senior writer at Virtualization Howto, with extensive IT and Proxmox experience."
+    },
+    {
+      "name": "Proxmox VE",
+      "type": "organization",
+      "role": "Open-source virtualization platform; the subject of the article's networking configurations."
+    },
+    {
+      "name": "Ceph",
+      "type": "organization",
+      "role": "Distributed storage system often used with Proxmox; benefits from dedicated storage network and jumbo frames."
+    },
+    {
+      "name": "LACP (Link Aggregation Control Protocol)",
+      "type": "event",
+      "role": "Network bonding protocol used to aggregate multiple NICs for increased bandwidth and redundancy."
+    }
+  ],
+  "key_data_points": [
+    "Enabling VLAN awareness on vmbr0 allows a single bridge to carry multiple VLANs, simplifying VM network tagging without creating separate bridges (🟢 relevant to homelab: reduces complexity when running many VMs across VLANs).",
+    "Separating management traffic (e.g., VLAN 10) from VM traffic (e.g., VLAN 20) improves security, prevents cluster communication interference, and enhances performance under load (🟢 relevant to Red Teaming: network segmentation limits lateral movement if a VM is compromised).",
+    "Static management IP and DNS are essential for cluster communication, backups, monitoring, and automation tools; DHCP can cause address changes that break these services (🟢 relevant to DevOps: consistent addressing is critical for automation and monitoring).",
+    "LACP bonding (802.3ad) aggregates bandwidth across multiple NICs and provides redundancy; configuration requires 'bond-mode 802.3ad' and 'bond-xmit-hash-policy layer2+3' (🟢 relevant to homelab: maximizes throughput for storage and VM traffic on multi-NIC servers).",
+    "A dedicated storage network (e.g., VLAN 30) prevents storage traffic (Ceph, iSCSI, NFS) from congesting VM traffic, improving application performance (🟢 relevant to homelab: essential for clustered storage like Ceph).",
+    "Jumbo frames (MTU 9000) on storage networks improve throughput and reduce CPU usage, but must be consistent across the entire network path; the author warns against enabling them on VM networks (🟢 relevant to homelab: boosts storage performance but requires careful configuration).",
+    "A dedicated migration network (e.g., VLAN 40) isolates live migration traffic, preventing large memory transfers from saturating the main network and impacting running workloads (🟢 relevant to homelab: enables maintenance without downtime)."
+  ],
+  "methodology_steps": [
+    "1. Enable VLAN awareness on vmbr0: Edit /etc/network/interfaces and add 'bridge-vlan-aware yes' to the vmbr0 stanza, or check the 'VLAN aware' box in the Proxmox web GUI under the bridge settings.",
+    "2. Separate management and VM traffic: Create two VLANs (e.g., VLAN 10 for management, VLAN 20 for VMs). Assign the Proxmox host an IP only on the management VLAN. VMs use their own VLANs via VLAN tags on the bridge.",
+    "3. Configure static management IP and DNS: In /etc/network/interfaces, set 'address', 'gateway', and 'dns-nameservers' for the management bridge. Example: 'address 192.168.10.10/24', 'gateway 192.168.10.1', 'dns-nameservers 192.168.10.2 192.168.10.3'.",
+    "4. Configure LACP bonding: Create a bond interface (e.g., bond0) with 'bond-slaves eno1 eno2', 'bond-miimon 100', 'bond-mode 802.3ad', and 'bond-xmit-hash-policy layer2+3'. Then set 'bridge-ports bond0' on the bridge.",
+    "5. Create a dedicated storage network: Add a new bridge (e.g., vmbr1) with a separate subnet (e.g., 10.10.30.0/24) and assign it to the bond or dedicated NICs. Configure Ceph or other storage to use this network.",
+    "6. Enable jumbo frames on storage network: Add 'mtu 9000' to both the bond interface and the storage bridge (vmbr1). Ensure all switches, NICs, and storage targets also support MTU 9000.",
+    "7. Configure a dedicated migration network: Create another VLAN (e.g., VLAN 40) and bridge with its own subnet. In Proxmox datacenter settings, specify this network as the migration network under 'Migration' settings."
+  ],
+  "conclusions": [
+    "Making the default bridge VLAN-aware is a simple but powerful change that allows a single bridge to carry multiple VLANs, reducing complexity and enabling flexible VM network tagging. This is especially useful in home labs with many VMs across different VLANs.",
+    "Separating management, VM, storage, and migration traffic using dedicated VLANs and bridges is a best practice that improves security, performance, and reliability. Even in home labs, mimicking production configurations builds good habits and prevents issues.",
+    "LACP bonding and jumbo frames are advanced optimizations that significantly boost network throughput and efficiency for storage-heavy workloads like Ceph. However, jumbo frames require end-to-end consistency and should not be used on VM networks.",
+    "Static IPs and DNS are foundational for stable cluster operations, automation, and monitoring. DHCP may be convenient initially but leads to problems as the infrastructure grows."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your homelab and DevOps interests, providing concrete, actionable steps to optimize Proxmox networking for performance, security, and scalability. As a programmer and aspiring red teamer, the emphasis on network segmentation (management vs. VM traffic) is directly applicable to building isolated lab environments for safe offensive security testing. The LACP bonding and jumbo frames configurations will help you maximize throughput for storage and VM traffic, which is critical when running resource-intensive VMs or clustered storage like Ceph. Additionally, the static IP and DNS advice ensures your homelab remains reliable for automation and monitoring tools you may deploy. You can immediately apply these settings to your Proxmox server to create a more robust and professional-grade lab.",
+  "extra_advice": "Consider automating these network configurations using Ansible or a similar configuration management tool. Since you're a programmer, you can write a playbook that applies these settings to new Proxmox nodes, ensuring consistency across your cluster. This aligns with your DevOps interests and saves time when scaling your homelab.",
+  "source_url": "https://www.virtualizationhowto.com/2026/03/7-network-settings-i-always-configure-on-a-new-proxmox-server/"
+}

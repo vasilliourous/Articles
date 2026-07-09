@@ -1,0 +1,448 @@
+I deployed Omnitools on my puny Raspberry Pi Zero and stopped using sketchy overpriced web tools
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+2
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I deployed Omnitools on my puny Raspberry Pi Zero and stopped using sketchy overpriced web tools
+By 
+Abhishek Kumar Mishra
+Published
+ Apr 21, 2026, 7:00 AM EDT
+Abhishek is an author at XDA who covers computing. 
+
+He has loved computers since he got the Lenovo G570 in 2012. Abhishek holds a master's degree in computer applications and began his writing career in 2018. He loves writing how-to articles, listicles, and informational posts on popular operating systems and web services.
+
+He closely follows the Windows Insider program and tests new Insider builds to discover upcoming experimental features and upgrades. His past work includes long-term collaborations with reputed publications like 
+Tom's Hardware
+, and 
+Windows Latest
+.
+
+When not writing anything, he is busy watching new episodes of One Piece or searching for something binge-worthy. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+2
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Repurposing spare SBCs is my favorite part of self-hosting. I try to find a perfect fit for even the tiniest, underpowered computer in my collection. I have already dedicated one of my Raspberry Pi Zero 2W to host Vaultwarden and serve as an isolated, energy-efficient password manager. The Pi Zero 2W is a perfect fit because it doesn't need a lot of power to work, supports wireless networking, and doesn't run out of memory while running the password manager. I have a few more 
+Pi Zero 2W
+ units, and I decided to dedicate another tiny yet frequently used tool to one of them.
+✕
+ Remove Ads
+My gripe with online conversion/resizing/compression tools is their deceptive payment and data storage practices. They try to lure you in with free tools, then don't let you download the final file copy unless you download something, pay for it, or watch too many ads. Omnitools is a powerhouse with numerous mini-tools that can do the jobs I mentioned while not costing a penny.
+
+                        Omnitools is my personal toolkit
+               
+
+            Adios, Adobe, and other sketchy web tools
+    
+ You may question my decision to pick a locally hosted tool over something like Adobe Web 
+PDF Editor
+ and other options. Omnitools is perfect because it does so much more than the basic, single-use case web tools. You can host it as a Docker container and then use all the tools in the browser.
+The primary reason behind it is that I don't trust websites with my data. Whenever I need to do any action with the file, like conversion or editing, I must upload it to their server first. Most websites promise to delete the uploaded file afterward, but there is no clear way to verify it.
+If you are uploading a college assignment or a random document, it doesn't matter. But I don't feel the same comfort while uploading invoices, personal documents, and other sensitive stuff. 
+Omnitools
+ does all the processing locally, and the files stay on the device and don't go anywhere else. I also get a vast assortment of tools compared to a basic few in any web tool.
+✕
+ Remove Ads
+Another small problem is the lack of transparency, where most tools advertise themselves as free but end up asking for payment once they process the file. Since Omnitools runs on my devices, I don't need to worry about file charges, subscriptions, or ad bombardment.
+Related
+
+			9 Docker containers that run 24/7 on my $100 mini PC
+		
+Maximum value budget homelab.
+Posts
+15
+By 
+Samir Makwana
+Feb 9, 2026
+
+                        Hosting Omnitools on Pi
+               
+
+            A simple Docker deployment
+    
+Omnitools is available on GitHub and can start working on your machine after a simple container deployment. So, that’s not difficult at all because you only need to run the following 
+Docker Run
+ command on your Pi’s terminal:
+docker run -d --name omni-tools --restart unless-stopped -p 8080:80 iib0011/omni-tools:latest
+In Pi Zero 2W’s case, setting up Omnitools isn’t a problem, because it doesn’t really drain a lot of the host system’s resources. Omnitools handles all the processing on the client side (your browser), so there’s not a lot of load on the Pi.
+Despite the measly 512 MB RAM, it can host it perfectly and has plenty left for running a 
+lightweight Raspberry Pi OS
+. I chose DietPi because it’s very lightweight and has ample CLI tools for management and other tasks. It uses about 60–70 MB, leaving plenty for other tools.
+✕
+ Remove Ads
+I was nitpicking on the OS choice because I needed to run 
+Docker
+ on it and then set up Omnitools. Docker will need an additional 30–50 MB to work, and I might need Portainer or Dockhand to manage the container in the future. Omnitools will need an additional 40–60 MB to work, and the results came out better than I expected.
+
+                        Omnitools runs without hiccups
+               
+
+            My browser bears the brunt
+    
+Omnitools uses very little disk space
+ on the Pi but has more tools than I need. My use case revolves around images, videos, and PDFs. I use the image tools a lot when I need to remove the background and make it transparent quickly. To check the usage, I imported an image that contained a small YouTube playback window with my desktop wallpaper in the background.
+
+                    Subscribe to the newsletter for tiny-SBC self-hosting tips
+                
+Want more actionable guidance on running privacy-first tools and repurposing tiny SBCs? Subscribe to the newsletter for deeper setup tips, troubleshooting notes, and curated tool suggestions that help you host local utilities like Omnitools with confidence.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+The tool quickly realized the subject and nearly removed all the background. I can use it with any fresh background whenever I need it. I also use the compress images tool a lot, and the batch file processing is equally fast because everything happens on the browser while the Pi just serves the tool’s files. If it were the other way round, the Pi wouldn’t be able to handle such a huge request.
+I checked Chrome’s task manager while running the Create transparent PNG tool. It spiked to 700MB for a few seconds before returning to the baseline 100–150MB mark after the action completed. So, there were no slowdowns, and the UI doesn’t devour a lot of memory due to a static frontend.
+✕
+ Remove Ads
+ I rarely use the XML and List tools as I don’t deal with these types of files daily. Still, having additional tools doesn’t hurt when all you need is a measly 104MB to store Omnitools on the server. My Raspberry Pi’s 32 GB 
+memory card
+ is more than enough for storing it, even if the dev adds more items later on.
+
+            Omnitools is a jack of all trades
+    
+I like Omnitools for its small size and tool variety, and the fact that it processes everything in the browser and not on the host. My Pi is perfect for this experiment and now serves as a personal tool library that other family members and I can use rather than visiting some sketchy/overpriced online tool. I don't need to worry about power consumption at all because Pi Zero 2W runs efficiently via a phone charger or power bank.
+
+    						Raspberry Pi Zero 2 W
+			
+A tiny SBC with 512MB memory that can work wonders for small-scale SBC projects due to low power needs.
+$30 at Amazon
+$15 at Micro Center
+Expand
+Collapse
+✕
+ Remove Ads
+Single-Board Computers
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I switched from streaming to self-hosting my media — it cost more than I expected
+		
+
+			I tested Claude’s new interactive visuals, and they’re changing how I explain things
+		
+
+			My favorite alternative to Office 365 isn’t LibreOffice – it’s something way cooler
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+2
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Tcs
+Tcs
+Tcs
+#QY460927
+Member since 2025-05-27
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I tried Ominitools but didn't liked at all. I can't understand why people recommend it. Bento PDF are so, so much better and run in docker too that made my question even more important...
+2026-04-21 10:55:09
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+jdrch
+jdrch
+jdrch
+#SH544516
+Member since 2024-07-14
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+TIL about OmniTools. Thanks!
+2026-04-21 14:41:08
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 19, 2026
+
+                                    I gave Claude Code control of my desktop for a week, and it automated things I didn't think were possible
+                            
+Apr 10, 2026
+
+                                    Microsoft's Windows 11 Copilot purge has already started
+                            
+Apr 10, 2026
+
+                                    Microsoft wants to fix Windows Insider by making it "simpler and more transparent"
+                            
+Apr 10, 2026
+
+                                    I run Hyper-V instead of VirtualBox on Windows 11, and it's faster and free
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:07
+
+                            The end of affordable PCs?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:04
+
+                            MacBook Neo: an iPhone 16 Pro in laptop form
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:05
+Skip Ad
+5

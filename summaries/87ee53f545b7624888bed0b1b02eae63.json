@@ -1,0 +1,59 @@
+{
+  "article_title": "My entire productivity stack is just these 4 Docker containers",
+  "core_thesis": "The author argues that self-hosting a minimal set of productivity tools via Docker containers reduces app clutter, centralizes data control, and enhances privacy and workflow efficiency. By moving away from scattered cloud services, they achieve a streamlined, self-managed productivity stack tailored to their needs.",
+  "detailed_summary": "The article describes the author's journey from juggling multiple cloud-based productivity apps to self-hosting a core set of four Docker containers. The motivation was to reduce account switching, regain control over data, and avoid reliance on third-party servers. The four containers are: Super Productivity (task management with time tracking), PhotoPrism (AI-powered media organization), AFFiNE (block-based note-taking and project management with an Edgeless Canvas), and Excalidraw (infinite whiteboard for sketches and diagrams). Each tool is self-hosted to ensure privacy, offline access, and long-term data ownership. The author emphasizes that this setup has made them more intentional about app usage and simplified their digital life.",
+  "entities": [
+    {
+      "name": "Nolen Jonker",
+      "type": "person",
+      "role": "Author of the article and user of the described productivity stack."
+    },
+    {
+      "name": "Super Productivity",
+      "type": "software",
+      "role": "Open-source task manager with time tracking, notes, and alarms."
+    },
+    {
+      "name": "PhotoPrism",
+      "type": "software",
+      "role": "AI-powered media organizer for images and videos."
+    },
+    {
+      "name": "AFFiNE",
+      "type": "software",
+      "role": "Block-based note-taking and project management tool with Edgeless Canvas."
+    },
+    {
+      "name": "Excalidraw",
+      "type": "software",
+      "role": "Infinite whiteboard app for sketches and diagrams."
+    },
+    {
+      "name": "Docker",
+      "type": "technology",
+      "role": "Containerization platform used to self-host the productivity tools."
+    }
+  ],
+  "key_data_points": [
+    "Super Productivity stores all data locally by default; self-hosting ensures full privacy and independence from third-party sync services like Dropbox. (🟢 Relevant to your Red Teaming: local data control reduces attack surface and prevents cloud-based data leaks.)",
+    "PhotoPrism uses AI to automatically tag and classify media by faces, locations, dates, and objects, but self-hosting keeps files off third-party AI servers. (🟢 Relevant to your homelab: demonstrates how to run AI workloads locally for privacy.)",
+    "AFFiNE can be connected to external AI providers even when self-hosted, retaining AI retrieval and interaction capabilities. (🟢 Relevant to your programming: shows how to integrate AI APIs with self-hosted apps.)",
+    "Excalidraw is primarily collaborative but can be used solo; self-hosting allows offline access and full control over diagram storage. (🟢 Relevant to your productivity: provides a self-hosted alternative to cloud whiteboards.)",
+    "The author reduced their productivity stack to just four Docker containers, which run in the same environment on their own machine. (🟢 Relevant to your homelab/DevOps: demonstrates a minimal, maintainable self-hosted setup.)"
+  ],
+  "methodology_steps": [
+    "1. Identify productivity needs: task management, media organization, note-taking, and whiteboarding.",
+    "2. Choose self-hostable open-source tools: Super Productivity, PhotoPrism, AFFiNE, and Excalidraw.",
+    "3. Deploy each tool as a Docker container on a local server or machine, ensuring they run in the same environment.",
+    "4. Configure each container for local data storage and optional external integrations (e.g., AI providers for AFFiNE).",
+    "5. Access the tools via web interface or desktop app, and manage them through Docker commands or a UI like Portainer."
+  ],
+  "conclusions": [
+    "Self-hosting a minimal productivity stack via Docker reduces app clutter and centralizes data control, leading to a more intentional and efficient workflow. The author found that four containers cover their core needs without the overhead of multiple cloud services.",
+    "Privacy and data ownership are key benefits: self-hosting eliminates reliance on third-party servers and keeps sensitive files (e.g., media, notes) under the user's control, which is especially important for those concerned about AI training or data breaches.",
+    "The approach is scalable and adaptable: users can spin up or replace containers as needed, making it suitable for both personal and professional use. The author's experience shows that a small set of well-chosen tools can replace a larger, more fragmented stack."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your interests in homelabbing and DevOps, as it provides a concrete example of self-hosting productivity tools using Docker. You can replicate this setup to gain hands-on experience with containerization, local AI integration, and data privacy. For your Red Teaming practice, understanding how self-hosted apps store and sync data locally can inform attack vectors or defense strategies. As a student, the productivity tools themselves (especially Super Productivity for time tracking and AFFiNE for note-taking) can help you manage projects and study materials more effectively. The article also encourages a minimalist approach to tool selection, which can reduce digital clutter and improve focus.",
+  "extra_advice": "Consider extending this stack by adding a reverse proxy (e.g., Nginx Proxy Manager) and a VPN (e.g., WireGuard) to securely access your self-hosted tools remotely. This will give you practical experience with network security and remote access, valuable for both homelabbing and Red Teaming.",
+  "source_url": "https://www.xda-developers.com/entire-productivity-stack-is-just-these-docker-containers/"
+}

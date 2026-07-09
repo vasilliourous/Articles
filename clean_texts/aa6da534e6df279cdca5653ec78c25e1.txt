@@ -1,0 +1,978 @@
+Your old GPU can still run big LLMs – you just need the right tweaks
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+16
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+Your old GPU can still run big LLMs – you just need the right tweaks
+By 
+Ayush Pande
+Published
+ May 6, 2026, 6:00 AM EDT
+Ayush Pande is a PC hardware and gaming writer. When he's not working on a new article, you can find him with his head stuck inside a PC or tinkering with a server operating system. Besides computing, his interests include spending hours in long RPGs, yelling at his friends in co-op games, and practicing guitar. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+16
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Running large language models on local hardware not only lets you avoid paying monthly subscriptions to cloud providers, but also prevents large corporations from gaining access to your private data. But unless you’re willing to spend thousands of dollars on a top-of-the-line graphics card, you’re bound to run out of VRAM when attempting to run large language models with over 15B parameters. Sure, 7B and 9B models can get the job done when it comes to productivity tasks, but sub-10B LLMs (or even their sub-20B counterparts, for that matter) aren’t the best for hardcore coding workloads or tasks involving precise output.
+✕
+ Remove Ads
+Fortunately, all hope isn’t lost, as there are a handful of workarounds for deploying larger models on cheaper, outdated hardware. In fact, with a little bit of fine-tuning, you can get reliable performance without lowering the accuracy of the outputs.
+Related
+
+			7 things I wish I knew when I started self-hosting LLMs
+		
+I've been self-hosting LLMs for quite a while now, and these are all of the things I learned over time that I wish I knew at the start.
+Posts
+12
+By 
+Adam Conway
+Jul 22, 2025
+
+                        Offloading layers lets me run massive LLMs on weak GPUs
+               
+
+            That’s how I managed to deploy Qwen3.6-35B-A3B on 12GB of VRAM
+    
+Although your GPU is the ideal component for providing extra processing oomph to your LLMs, it’s not the only device capable of running them. On a typical LLM, offloading a handful of layers to the CPU and system memory can help your server run the model, though you’ll have a noticeable drop in performance. Sure, it’s definitely more helpful than not being able to load the model altogether, and that’s pretty much how I got larger models “running” at low token generation rates on my 
+old Pascal card
+.
+However, mixture-of-experts models like Qwen3.6-35B-A3B and GPT-OSS-20B have an ace up their sleeve when it comes to running them on limited hardware. Rather than moving entire layers off the GPU, Qwen3.6 and GPT-OSS can offload the lesser-used experts onto the system RAM, while leaving the attention layers on the graphics card. This way, you can run MoE models with limited VRAM and still get reliable token generation speeds. Thanks to the MoE offload technique, I was able to get 20+ tokens/s when prompting Qwen3.6-35B-A3B on my RTX 3080 Ti – an outdated GPU with merely 12GB of VRAM.
+✕
+ Remove Ads
+Quiz
+8 Questions · Test Your Knowledge
+You don't need a beefy GPU to run a local LLM
+Trivia challenge
+Think you know your way around local AI? Test your knowledge of running LLMs without breaking the bank.
+Hardware
+AI Models
+Performance
+Software
+RAM & CPU
+Begin
+01 / 8
+Software
+Which popular open-source tool is widely used to run large language models locally on consumer hardware without writing any code?
+A
+TensorFlow Serving
+B
+Ollama
+C
+CUDA Toolkit
+D
+Hugging Face Spaces
+That's right! Ollama is a lightweight, easy-to-use tool that lets you download and run LLMs locally with simple terminal commands. It handles model management, hardware detection, and even exposes a local API — making it one of the most accessible entry points for local AI.
+Not quite — the answer is Ollama. While TensorFlow Serving and CUDA Toolkit are real AI infrastructure tools, they require significantly more setup. Ollama is purpose-built for running LLMs locally and works on Mac, Linux, and Windows with minimal friction.
+Continue
+02 / 8
+AI Models
+Meta's open-weight model family, commonly run on consumer hardware, is known by what name?
+A
+Falcon
+B
+Gemma
+C
+Llama
+D
+Mistral
+Correct! Meta's Llama (Large Language Model Meta AI) series — including Llama 2 and Llama 3 — has become a cornerstone of the local AI movement. Because Meta releases the weights openly, the community has built countless quantized versions optimized for consumer hardware.
+The correct answer is Llama. While Falcon, Gemma (Google), and Mistral are all legitimate open-weight models you can run locally, Meta's Llama series is arguably the most widely adopted and has the largest ecosystem of community tools and fine-tuned variants.
+Continue
+03 / 8
+Hardware
+When running an LLM locally without a dedicated GPU, which hardware component becomes the primary bottleneck for inference speed?
+A
+Storage read speed
+B
+System RAM capacity and bandwidth
+C
+CPU clock speed (GHz)
+D
+Network interface card speed
+Exactly right! When a GPU isn't available, LLMs run entirely in system RAM. Both the capacity (you need enough to hold the model) and the memory bandwidth (how fast data moves to the CPU) directly determine inference speed. DDR5 and multi-channel configurations can make a meaningful difference.
+The answer is system RAM capacity and bandwidth. While CPU clock speed matters, the real constraint is getting model weights in and out of memory fast enough. A model that doesn't fit in RAM will either fail to load or spill to disk, causing dramatically slower performance regardless of CPU speed.
+Continue
+04 / 8
+AI Models
+What does 'quantization' mean in the context of running LLMs on consumer hardware?
+A
+Splitting a model across multiple GPUs for parallel processing
+B
+Reducing the numerical precision of model weights to shrink file size and memory usage
+C
+Increasing the context window of a language model
+D
+Training a model on a smaller, curated dataset
+Spot on! Quantization reduces the bit-width used to store model weights — for example, from 32-bit floats down to 4-bit integers. This can shrink a model's memory footprint by 4–8x with only a modest drop in output quality, making billion-parameter models runnable on everyday laptops.
+Not quite — quantization means reducing numerical precision of model weights. A 7-billion parameter model at full 32-bit precision might need over 28GB of RAM, but a 4-bit quantized version can fit in around 4–5GB. It's one of the most important techniques enabling local AI on affordable hardware.
+Continue
+05 / 8
+Performance
+A '7B' model like Llama 3 7B refers to what specification of the model?
+A
+7 billion bytes of training data
+B
+7 billion parameters
+C
+A model trained for 7 billion steps
+D
+7 billion tokens in its context window
+Correct! The 'B' in model names like 7B, 13B, or 70B stands for billions of parameters — the individual numerical weights that define the model's behavior. More parameters generally means greater capability, but also higher memory requirements. 7B models strike a sweet spot for consumer hardware.
+The answer is 7 billion parameters. Parameters are the learned numerical values inside the neural network that encode everything the model knows. A 7B model has 7 billion of them, which is why even quantized versions need several gigabytes of RAM — and why 70B models remain a challenge for most consumer setups.
+Continue
+06 / 8
+Hardware
+Apple Silicon chips like the M1, M2, and M3 are considered exceptionally well-suited for local LLM inference primarily because of what architectural advantage?
+A
+They support CUDA, NVIDIA's AI acceleration framework
+B
+They have dedicated AI cores running at extremely high clock speeds
+C
+They use unified memory shared between CPU and GPU, enabling fast access to large models
+D
+They have more CPU cores than equivalent Intel processors
+That's right! Apple Silicon's unified memory architecture means the CPU and GPU share the same high-bandwidth memory pool. A MacBook with 16GB or 32GB of unified RAM can load and run LLMs at speeds that rival or exceed systems with discrete GPUs, making Apple laptops surprisingly competitive for local AI.
+The correct answer is unified memory. Apple Silicon doesn't support CUDA (that's NVIDIA-specific), but its unified memory design eliminates the bottleneck of transferring data between system RAM and a separate GPU's VRAM. This lets models run fast even without a discrete graphics card, which is why tools like Ollama and LM Studio perform so well on Macs.
+Continue
+07 / 8
+Software
+LM Studio is a graphical desktop application for running local LLMs. What is one of its most useful features for beginners?
+A
+It automatically connects to OpenAI's servers for faster processing
+B
+It provides a built-in ChatGPT-style chat interface and a local API server with no coding required
+C
+It can train custom models from scratch using your own data
+D
+It requires a subscription to unlock models larger than 3 billion parameters
+Exactly! LM Studio gives users a polished GUI to browse, download, and chat with local models — no terminal or coding needed. Its built-in local server also mimics the OpenAI API format, so you can point compatible apps at your own machine instead of the cloud.
+The correct answer is its built-in chat interface and local API server. LM Studio is entirely offline and free to use — it doesn't connect to OpenAI or require a subscription. Its approachable design has made it one of the most popular on-ramps for people exploring local AI for the first time.
+Continue
+08 / 8
+RAM & CPU
+If you want to run a quantized 13B parameter LLM locally at a usable speed on a CPU-only system, what is the generally recommended minimum amount of system RAM?
+A
+4GB
+B
+8GB
+C
+16GB
+D
+64GB
+Correct! A 4-bit quantized 13B model typically requires around 8–10GB of RAM just to load, which means 16GB is the practical minimum for a usable experience — leaving some memory for your OS and other processes. Going below that often results in the model using slow disk swap, making inference painfully sluggish.
+The answer is 16GB. While a 4-bit quantized 13B model can technically fit in under 10GB, you still need headroom for your operating system and background tasks. With only 8GB total, your system would likely resort to swapping to disk, turning a response that should take seconds into one that takes minutes.
+See My Score
+Challenge Complete
+Your Score
+/ 8
+Thanks for playing!
+Try Again
+I’m a 
+llama.cpp
+ user, so I used the 
+--n-cpu-moe
+ flag to offload the experts to my CPU. After running a couple of benchmarks, I found 32 to be the sweet spot for my LLM tasks. And the best part? I can still use a decently large context length of 
+65536
+, making my self-hosted Qwen3.6 setup perfect for long prompting sessions when I need to troubleshoot broken experiments or long chains of terminal outputs.
+
+                        Opting for higher quantization levels helps just as much
+               
+
+            But I wouldn't recommend going below Q4_K_M
+    
+Besides selectively offloading the experts, switching to heavily quantized models is a great way to get some more oomph out of your GPU. If you browse HuggingFace as often as I do, you’ll find models with different quantization levels, ranging from the highly precise Q8 versions to the heavily compressed Q2 and Q3 variants. Considering that quantization involves reducing the precision of model weights, Q8 can offer close to full accuracy of the model, but the VRAM hit is so massive that it makes sense to go for a higher parameter LLM and with heavier quantization. For example, if I had to choose between DeepSeek-R1 7B running at higher quants (something like Q8) and its 14B variant running at Q4_K_M or Q5_K_M, I’d pick the latter. While there are exceptions to this rule, I’d rather run a model of higher reasoning capabilities than opt for better precision on a comparatively weaker LLM.
+✕
+ Remove Ads
+Of course, that doesn’t mean you should go full throttle on the quantization aspect, either. Depending on your specific model, going down to Q2_K_M (or worse, Q2_K_S) can reduce its accuracy quite a bit. I consider Q4_K_M the sweet spot for my LLM workloads, as it’s light enough to fit on my old workstations without reducing the precision too much.
+
+                        Local LLMs can be a godsend for productivity tasks
+               
+
+            Name a better duo than self-hosted tools and local models
+    
+Over the last couple of months, I’ve started pairing my self-hosted LLMs with different productivity apps, and larger models such as Qwen3.6-35B-A3B and GPT-OSS-20B work really well with most tasks I throw at them. On the coding front, they mesh well with Claude Code and VS Code, and the former is especially effective at helping me troubleshoot annoying bugs, autocompleting long functions, and rewriting syntax (especially config files and IaC documents) into different languages.
+
+                    Subscribe for Practical Local LLM Tips and Hacks
+                
+Join the newsletter for hands-on guides to running large LLMs locally — MoE expert offload techniques, optimal quantization choices like Q4_K_M, and practical self-hosting tooling so you can run powerful models on modest GPUs.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+I also use them for my document management tasks, with my 
+Paperless-GPT
+ and Paperless AI instances benefiting the most from their superior reasoning prowess. Since I don’t need to turn down the context window, these massive LLMs can sift through my notes on 
+Blinko
+ and documents on 
+Open Notebook
+ to answer my queries. Now, I wouldn’t say that it’s possible to run 200B+ models without enterprise-grade hardware. But if you’ve got a decent GPU, you can try offloading the experts (or even sequential layers) and switch to higher quantization models to get some of the best consumer-tier LLMs on your humble PC.
+✕
+ Remove Ads
+
+    						llama.cpp
+			
+Llama.cpp
+ is an open-source framework that runs large language models locally on your computer. 
+
+See at Official Website
+Expand
+Collapse
+AI tools
+Self-Hosting
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I tested Claude Code, Codex, Lovable, and Replit side by side, and only one felt ready for real work
+		
+
+			I finally found a local LLM I want to use every day (and it's not for coding)
+		
+
+			I asked Gemini, Claude, and ChatGPT to build a customer landing page, and only one nailed the brief
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+16
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+thejamppa
+thejamppa
+thejamppa
+#OD808326
+Member since 2024-06-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+"Out dated 3070ti" ..."with merely 12 gb vram " feels ike I am.living in different really though.
+2026-05-06 14:20:16
+Upvote
+
+                                    10
+                            
+Downvote
+Reply
+
+                        3
+                    
+Copy
+        
+Praz
+Praz
+Praz
+#OQ485486
+Member since 2024-07-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+You beat me to it. I have a 3060 standard which I "upgraded" to last year and think myself privileged.
+2026-05-06 19:50:53
+Upvote
+
+                                    5
+                            
+Downvote
+Reply
+Copy
+        
+IJ
+IJ
+IJ
+#WW914310
+Member since 2025-09-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Is my 4090 with 24gb vram out of date? If it isn't yet, it will be soon! I still have my 970 and 2070 in old builds. They still have uses
+2026-05-07 06:56:47
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Augusto
+Augusto
+Augusto
+#UE018458
+Member since 2024-09-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+That was mid tier on releade 6 years ago, what did you expect? I feel like you're living in a different reality indeed
+2026-05-07 12:34:07
+Upvote
+Downvote
+Reply
+Copy
+        
+Janaina
+Janaina
+Janaina
+#XD736911
+Member since 2026-03-20
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+LOL 12 VRAM, "old" 
+Full rage bait mode, I see
+2026-05-08 00:28:11
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Luke
+Luke
+Luke
+#HH891735
+Member since 2023-11-05
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I’m too poor to program 500MB slopware packages for hosting my AI gf and 30 terabyte movie library like the author :(
+2026-05-08 14:21:07
+Upvote
+Downvote
+Reply
+Copy
+        
+Jimmy-T094
+Jimmy-T094
+Jimmy-T094
+#SU791078
+Member since 2025-11-24
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Yeah I'm running a 14B model on a Zenbook Flip 13 laptop with intel iris XE integrated graphics and 16gb ram on an 11th gen i5 with z-ram compression. Explain that one... It's slow to think but then it reads out at a perfect reading speed. Albeit I need to wait a few minutes for it to start its reply but this works for high detailed tasks. 
+2026-05-07 08:43:18
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Joel
+Joel
+Joel
+#LC556691
+Member since 2025-06-12
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I do similar with two 3060 eGPUs running attached to a micro pc with an AI 9 HX-370 processor.  One connected through Oculink and the other USB4.  Oculink for the main processing and USB4 for the offloading.  Add in an NPU layer to pre-process requests and load the best fitting LLM to actually do the lifting and you have a great setup.  Yes, the preprocessing can cause a bit of a delay, especially if you need to eject one llm and load another, but it ensures you are hitting rhe model best suited for the prompt and in a single session yiu are generally staying with the same llm due to the context.
+2026-05-06 16:52:52
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+David
+David
+David
+#CV719667
+Member since 2024-07-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+You can run even larger models if you have a fast SSD you're not particularly attached to.
+Go into advanced setup options performance tab and designate a big chunk of it to use as a page file or swap file.  Also if you have any spinning disc drives be sure the page file is zeroed out on them.  Then load your model up.
+It's not the fastest thing in the world and may hang occasionally but you can load and use models your hardware has no business running.
+2026-05-06 16:44:17
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Maurizio
+Maurizio
+Maurizio
+#FM973342
+Member since 2025-02-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Old 6800XT, Qwen3.6-35B-A3B, Vulkan, 90 tok/sec...New 5070TI, Qwen3.6-35B-A3B, CUDA, 115 tok/sec...
+2026-05-07 07:22:22
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        2
+                    
+Copy
+        
+DMTTMD
+DMTTMD
+DMTTMD
+#FH413151
+Member since 2026-04-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+How please?
+2026-05-07 20:31:17
+Upvote
+Downvote
+Reply
+Copy
+        
+Christopher
+Christopher
+Christopher
+#AZ894994
+Member since 2025-02-21
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+How heavily quantized is the version you're using?
+Qwen3.6-35B-A3B is 70GB
+2026-05-08 10:25:50
+Upvote
+Downvote
+Reply
+Copy
+        
+pocketdrummer
+pocketdrummer
+pocketdrummer
+#VW056365
+Member since 2025-07-31
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Don't forget Gemma 4 26B A4B exists.
+Ask your Chinese models about Tienanmen Square and you'll see why it may not be the best idea. 
+2026-05-06 10:22:50
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+
+                        3
+                    
+Copy
+        
+Christopher
+Christopher
+Christopher
+#AZ894994
+Member since 2025-02-21
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Pick your poison.  Western LLMs are heavily biased with ideology as well.  Not making an excuse for it, just point it out.
+2026-05-06 15:33:00
+Upvote
+
+                                    6
+                            
+Downvote
+Reply
+Copy
+        
+David
+David
+David
+#CV719667
+Member since 2024-07-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Christopher
+Any examples?  Outside of Grok I mean.
+2026-05-06 16:37:58
+Upvote
+Downvote
+Reply
+Copy
+        
+phinn
+phinn
+phinn
+#RH699396
+Member since 2026-05-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+David
+ I've been studying this bc all * the "bias" testing from Industry and sadly even academia is not testing bias at all. They are zero shot tests of system instructions and "forced choice/decision" testing (it's an oxymoron fyi) in different disguises, in paper after paper. Stating benchmarks as results and believing they are synonymous methodologically couldn't be further from the case. Specially, the bias I have been studying is at the user /LLM level regarding chat experience and model output. Does the model respond differently upon learning the users race and/or gender in a controlled chat experience to defined questions that assess opportunity loss, risk aversion, career advancement versus stereotypes (as compared with dominant control type). (you get the picture). Your "question" (yes in quotes because it's not a sincere question but a leading one, simply points to a Cheap foul or red card example and misses the whole point. The bias is present, it is measurable. I'm not through validation yet. But keep in mind what is or is not perceived as bias for you might not be true for everyone. And most importantly, might not be true for the person experiencing it. 
+2026-05-06 20:16:41
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+John
+John
+John
+#IN113272
+Member since 2024-12-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I'm still running my 1080ti
+2026-05-08 08:39:56
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+5 days ago
+
+                                    Microsoft quietly scrubbed its 32GB RAM gaming recommendation after gamers called it out
+                            
+5 days ago
+
+                                    Someone made a gaming PC so big you can live in it, and yes, it actually plays games
+                            
+5 days ago
+
+                                    The engineer behind NotebookLM's best features showed me his exact setup, and it changes everything
+                            
+5 days ago
+
+                                    It looks like the Steam Machine will likely get full HDMI 2.1 support after all
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+May 5, 2026
+1:24
+
+                            Project Helix blurs the lines between Xbox and PC
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+May 5, 2026
+1:35
+
+                            Google's Android Laptop OS: Top 5 things to know
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+May 5, 2026
+1:14
+
+                            RIP Mac Mini: 2006-2026
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+May 5, 2026
+1:15
+
+                            A decade before Windows 8, Win XP almost had its own Start Screen
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+May 5, 2026
+1:10
+
+                            Samsung DeX: Top 4 features
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

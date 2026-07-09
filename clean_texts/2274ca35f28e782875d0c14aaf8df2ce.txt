@@ -1,0 +1,766 @@
+I use OpenCode over Claude Code, and it's every bit as good
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+9
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I use OpenCode over Claude Code, and it's every bit as good
+By 
+Mahnoor Faisal
+Published
+ May 2, 2026, 8:30 AM EDT
+Mahnoor Faisal is a tech journalist covering AI and productivity tools with bylines at 
+XDA
+, 
+SlashGear
+, 
+MakeUseOf
+, 
+Laptop Mag
+, and 
+Android Police
+.
+
+She's been writing professionally since she was sixteen, and has since penned hundreds of articles. This includes in-depth coverage of AI tools like NotebookLM to breaking news across the AI space. Her passion for technology started when she received her first iPod Touch (4th generation) on her 8th birthday, and she's been deep in the tech world ever since.
+
+Currently pursuing a degree in computer science, Mahnoor brings both a journalist's eye and a technical foundation to her coverage of how AI is reshaping the way we work and learn. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+9
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Before AI came into the picture, I'd rarely hear non-developers talk about building their own apps, tools, or automations. Now it's everywhere, and a lot of that is 
+thanks to "vibe-coding" tools
+, including Claude Code. The reason I'm highlighting Claude Code specifically is that Claude has turned into the tool everyone (and I literally mean everyone) has been talking about lately.
+✕
+ Remove Ads
+Even users who would have never traditionally touched a tool with the word "Code" in it have been setting it up just to make sure they're getting their money's worth out of that $20 subscription. Now, I'm not going to be dramatic here and say that I don't use Claude Code. Contrary to that, it's one of my favorite tools, and I've used it for months just because of how impressive it is. But somewhere along the way, I started using OpenCode alongside it, and then more than it, and then I realized I wasn't really missing anything.
+Want to stay in the loop with the latest in AI? The XDA AI Insider newsletter drops weekly with deep dives, tool recommendations, and hands-on coverage you won't find anywhere else on the site. Subscribe by 
+modifying your newsletter preferences
+!
+
+                        OpenCode handles multiple models more seamlessly
+               
+This isn't surprising at all, but given that Claude Code is an Anthropic product, you're limited to Claude models. That's it. No GPT, no Gemini, no local LLMs, nothing. You get access to Claude's Haiku, Sonnet, and Opus models. To be fair, they're excellent and the entire reason why Claude Code is absolutely worth paying for. But also, that's the entire menu. If tomorrow Google drops a model that's better at your specific use case, or you want to run something locally for privacy, you're out of luck.
+✕
+ Remove Ads
+For instance, 
+GPT-5.5 launched last week
+, and it's significantly better at certain coding tasks. It scored 82.7% on Terminal-Bench 2.0, well ahead of Claude Opus 4.7's 69.4%. That's a benchmark that tests actual command-line workflows, which is literally what these tools do. Now, Opus still wins on other things like SWE-Bench Pro, but that's kind of the point! Different models are better at different tasks. With Claude Code, you don't get to pick. With OpenCode, you do since the tool is strictly bring-your-own-model. You get a very similar Claude Code-like terminal interface, but you pick what runs underneath. OpenCode uses the AI SDK and 
+Models.dev
+ to support over 75 LLM providers, as well as local LLMs.
+Related
+
+			I gave Claude Code control of my desktop for a week, and it automated things I didn't think were possible
+		
+I was seriously stunned.
+Posts
+59
+By 
+Simon Batt
+Apr 19, 2026
+The best part is you can also use some of your existing AI subscriptions with OpenCode. This includes ChatGPT Plus, GitHub Copilot, and GitLab Duo. For the rest, you'll need to tinker around with API keys, but it's straightforward! You run a /connect command, your keys are stored locally, and you're up and running. OpenCode also technically lets you connect your Claude subscription to it, but Anthropic explicitly prohibits this now. You can still use Claude with OpenCode through an API key, though. You just can't piggyback on your Pro or Max subscription anymore.
+It's worth noting that Claude Code can technically be pointed at non-Claude models by setting the ANTHROPIC_BASE_URL environment variable to a compatible server. Tools like Ollama, LM Studio, and 
+llama.cpp
+ all support the Anthropic Messages API format, meaning local LLMs work with Claude Code's harness without any proxy. We've covered 
+how to automate this setup with a simple script
+.
+However, this isn't the same as native multi-provider support. The server has to speak Anthropic's API format, and it's not a first-party feature in the way OpenCode's built-in support for 75+ providers is. OpenCode still has the edge in how seamlessly it handles model switching, and in our testing, it also runs leaner than Claude Code regardless of which model is behind it.
+✕
+ Remove Ads
+You can alternate between models depending on the task. Use GPT-5.5 for terminal-heavy workflows where it benchmarks higher, switch to a Gemini model for quick iteration, and drop down to a local model through Ollama for quick commit messages where you don't need the big guns. Same tool, same interface, different brain behind it!
+
+                        It has a bunch of Claude Code-like features too
+               
+When I first installed OpenCode, I thought it'd miss a lot of features that made Claude Code...Claude Code. Turns out, the majority of the things I assumed were Claude Code exclusives were already there. For instance, a Claude Code feature I really find handy in my coding sessions is Plan mode. Given I'm not a developer in the traditional sense, I rely on Plan mode a lot. Whether I'm making a change to an existing codebase or building something from scratch, it's super helpful to have the model analyze and map things out before it goes haywire and makes changes itself.
+Plan mode is designed to do exactly that. It keeps the agent in read-only mode so it can explore your project structure, understand dependencies, and lay out a full-fledged strategy before touching anything. OpenCode has this too! You switch to 
+Plan
+ mode, get your analysis, and then flip to 
+Build
+ mode when you're ready to begin building. OpenCode is also fully capable of editing files across your entire project, running terminal commands, and iterating on errors without you having to hold its hand.
+✕
+ Remove Ads
+Quiz
+8 Questions · Test Your Knowledge
+How much do you know about Claude?
+Trivia challenge
+Think you know Anthropic's AI assistant? Put your knowledge of Claude to the test.
+Origins
+Capabilities
+Safety
+Features
+Design
+Begin
+01 / 8
+Origins
+Which company created Claude?
+A
+OpenAI
+B
+Google DeepMind
+C
+Anthropic
+D
+Meta AI
+Correct! Claude was created by Anthropic, an AI safety company founded in 2021. Anthropic was co-founded by Dario Amodei and Daniela Amodei, among others who previously worked at OpenAI.
+Not quite. Claude is made by Anthropic, not to be confused with OpenAI, which makes ChatGPT. Anthropic was founded in 2021 with a strong focus on AI safety research.
+Continue
+02 / 8
+Safety
+What is the name of the safety and values framework Anthropic developed to guide Claude's behavior?
+A
+RLHF Protocol
+B
+Constitutional AI
+C
+SafeGuard Framework
+D
+Alignment Core
+Correct! Anthropic developed Constitutional AI (CAI), a technique that trains Claude using a set of principles — a 'constitution' — to guide its responses toward being helpful, harmless, and honest.
+Not quite. The framework is called Constitutional AI (CAI). It is a novel training approach pioneered by Anthropic that uses a written set of principles to help the model self-critique and improve its own outputs.
+Continue
+03 / 8
+Origins
+What is the name most commonly associated with inspiring Claude's name?
+A
+Claude Shannon, the father of information theory
+B
+Claude Monet, the French impressionist painter
+C
+Claude Lévi-Strauss, the anthropologist
+D
+Claude Bernard, the physiologist
+Correct! Claude Shannon is widely cited as the inspiration behind the name. Shannon founded information theory, which is foundational to all modern computing and digital communication — a fitting namesake for an AI.
+Not quite. The name Claude is most commonly associated with Claude Shannon, the mathematician and electrical engineer who founded information theory. His pioneering work laid the groundwork for the digital age.
+Continue
+04 / 8
+Capabilities
+Which of the following best describes Claude's context window capability in its more advanced versions?
+A
+Up to 4,000 tokens
+B
+Up to 16,000 tokens
+C
+Up to 100,000 tokens or more
+D
+Up to 32,000 tokens
+Correct! Advanced versions of Claude support context windows of 100,000 tokens or more, allowing it to process entire books, lengthy codebases, or large documents in a single conversation — a standout feature at the time of its release.
+Not quite. Claude's advanced versions support context windows of 100,000 tokens or more. This was a significant leap beyond many contemporaries and allows Claude to reason over very large amounts of text in one session.
+Continue
+05 / 8
+Design
+Which of the following principles is NOT part of Anthropic's core goal for Claude?
+A
+Helpful
+B
+Harmless
+C
+Honest
+D
+Hierarchical
+Correct! Anthropic's guiding principles for Claude are to be Helpful, Harmless, and Honest — often called the 'three H's.' Hierarchical is not part of this framework. The goal is to make AI that is safe and beneficial for everyone.
+Not quite. Anthropic's three guiding principles for Claude are Helpful, Harmless, and Honest. 'Hierarchical' is not one of them. These three H's shape how Claude is trained to interact with users responsibly.
+Continue
+06 / 8
+Features
+What was a key distinguishing feature of Claude 2 when it launched compared to many rival models at the time?
+A
+It could generate images natively
+B
+It had a 100,000-token context window
+C
+It could browse the internet in real time
+D
+It supported voice conversations out of the box
+Correct! Claude 2 launched with a 100,000-token context window, which was remarkable at the time. This allowed users to feed in entire books or massive codebases for analysis, setting Claude apart from many competing models.
+Not quite. The standout feature of Claude 2 was its 100,000-token context window. Claude does not natively generate images, and real-time browsing and built-in voice were not launch features of Claude 2.
+Continue
+07 / 8
+Safety
+Anthropic describes itself primarily as which type of company?
+A
+A consumer electronics company
+B
+An AI safety and research company
+C
+A cloud infrastructure provider
+D
+A social media and AI hybrid company
+Correct! Anthropic describes itself as an AI safety and research company. Unlike some competitors who lead with products or platforms, Anthropic's founding mission centers on building AI systems that are safe, interpretable, and steerable.
+Not quite. Anthropic is primarily an AI safety and research company. Its founding mission is rooted in making AI that is safe and understandable, which is why safety-focused training methods like Constitutional AI are central to its work.
+Continue
+08 / 8
+Features
+Which of the following tasks is Claude specifically designed to handle well?
+A
+Rendering 3D graphics in real time
+B
+Long-form writing, summarization, and complex reasoning
+C
+Executing system-level operating commands autonomously
+D
+Streaming live video content analysis
+Correct! Claude excels at long-form writing, summarization, coding assistance, and complex reasoning tasks. Its large context window and nuanced language understanding make it particularly well suited for handling detailed, multi-step text-based work.
+Not quite. Claude is designed for text-based tasks like writing, summarization, analysis, and reasoning. It does not render graphics, autonomously execute system commands, or perform live video analysis — it is a large language model at its core.
+See My Score
+Challenge Complete
+Your Score
+/ 8
+Thanks for playing!
+Try Again
+It supports MCP servers, so you can connect it to all your favorite tools. You can also create Skills — reusable sets of instructions that your agent can load on demand for specific tasks. It works the same way as in Claude Code: you create a 
+SKILL.md
+ file, define what it does, and the agent pulls it in when it's relevant.
+
+                        Claude Code's edge is the model, not the tool
+               
+
+            The advantage isn't Claude Code, it's Claude
+    
+ Something I've tried to ensure throughout this article is that this doesn't come across as a hit piece. I genuinely like Claude Code, and I'm subscribed to the Max 5x plan with no plans of canceling my subscription. However, the more I used OpenCode, the more I realized that what I liked was Claude itself, not Claude Code.
+
+                    Subscribe to the AI newsletter for hands-on tool guides
+                
+Unlock deeper AI tool coverage by subscribing to the newsletter: get detailed model comparisons, practical how-tos, and curated tool recommendations to help you evaluate Claude, OpenCode, local LLMs, and which setups fit your workflows.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+The intelligence, the reasoning, the quality of code — it's 
+all
+ Claude. Claude Code is essentially just the shell around it, so why would you really want to lock yourself into one tool when the model works just as well in another? One that also happens to support 75+ other providers, local models, and your existing subscriptions.
+And if you're migrating from Claude Code, OpenCode natively reads your existing 
+CLAUDE.md
+ files and skills directory as fallbacks, so you don't have to start from scratch! The tool is also completely free and open-source, so what do you really have to lose by giving it a shot?
+✕
+ Remove Ads
+AI tools
+Claude
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I replaced the expensive Claude Pro subscription with these local models, and my productivity didn’t drop a bit
+		
+
+			Forget Cursor and Claude Code, Google Antigravity is the perfect example of vibe coding
+		
+
+			My favorite alternative to Office 365 isn’t LibreOffice – it’s something way cooler
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+9
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Tim
+Tim
+Tim
+#FQ759700
+Member since 2024-08-11
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I use Claude with local LLMs like qwen and nemotron, article seems fundamentally flawed
+2026-05-02 15:08:55
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+
+                        2
+                    
+Copy
+        
+Adam
+Adam
+Adam
+#LG296209
+Member since 2026-05-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Yeah i stopped reading there as well. claude code works with ollama, llm studio, aws bedrock and all sorts of different models. sure it gets confused sometimes about output but whew what an article
+2026-05-02 16:08:09
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Darren
+Darren
+Darren
+#DD326373
+Member since 2026-05-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Adam
+ Funny how typing into copilot "how can I use Claude Code with lmstudio?" Changes the whole article :)
+2026-05-03 01:36:35
+Upvote
+Downvote
+Reply
+Copy
+        
+Michael
+Michael
+Michael
+#ZR356974
+Member since 2026-04-19
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I came here for the comments.. about claude code not able to use other models
+2026-05-02 16:39:54
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Watchful
+Watchful
+Watchful
+#KE882931
+Member since 2026-02-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+If slop coding is the only way you could code, You can't really code.
+2026-05-04 14:26:28
+Upvote
+Downvote
+Reply
+Copy
+        
+Max
+Max
+Max
+#VF309089
+Member since 2026-02-23
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Alright clankers, calm down 
+2026-05-04 08:23:34
+Upvote
+Downvote
+Reply
+Copy
+        
+KnightAbu
+KnightAbu
+KnightAbu
+#AP514189
+Member since 2024-12-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I have built complete secure enterprise apps using OpenCode even with their Big Pickle models - generally top of line model given to Open Code users free for testing purposes.
+It's very good. Concise coding especially in .net stack. Across everything from web to desktop to mobile. I believe right now it's Claude Sonnet 5. Very good.
+It makes some mistakes easily identifiable to a professional, but the amount of work it solves and does what we already know is very good. 
+Thinking traces are very good and Open code Exporting of transcript to markdown is so valuable for documentation.
+2026-05-04 06:40:04
+Upvote
+Downvote
+Reply
+Copy
+        
+Kirito
+Kirito
+Kirito
+#NA717019
+Member since 2026-05-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+How about not contributing to ecological collapse?
+2026-05-02 16:45:38
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Darren
+Darren
+Darren
+#DD326373
+Member since 2026-05-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Use local llms instead. Gemma on iPhone isn't bad
+2026-05-03 01:34:37
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+May 1, 2026
+
+                                    Laptop makers are sacrificing ports and repairability for designs nobody asked for
+                            
+Apr 30, 2026
+
+                                    Microsoft rolls out Xbox Mode, bringing a console-like experience to any PC
+                            
+Apr 30, 2026
+
+                                    I replaced my entire AI prompt library with Fabric, and now I can't imagine going back
+                            
+Apr 30, 2026
+
+                                    Linux is finally dropping support for ancient hardware, and it's about time
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:26
+
+                            Id Software's Quake turns 30
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            How much data does Steam use in a year?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            Snapdragon X2 Elite Extreme benchmarks: RIP Panther Lake?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:15
+
+                            What was the best version of Windows?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:07
+
+                            The end of affordable PCs?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

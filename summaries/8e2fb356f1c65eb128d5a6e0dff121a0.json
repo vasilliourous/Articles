@@ -1,0 +1,56 @@
+{
+  "article_title": "Copy Fail - A 732-Byte Python Script Can Get Root on Every Major Linux Distro",
+  "core_thesis": "A newly disclosed Linux kernel vulnerability (CVE-2026-31431), dubbed 'Copy Fail', allows any unprivileged local user to reliably escalate to root on all major Linux distributions via a 732-byte Python script. The bug is a logic flaw combining three independent kernel changes (AF_ALG sockets, splice() system call, and an in-place AEAD optimization from 2017) that enables controlled 4-byte writes into the page cache of setuid binaries, leading to arbitrary code execution as root. Unlike previous privilege escalation exploits (Dirty Cow, Dirty Pipe), Copy Fail requires no race conditions, version matching, or compiled payloads.",
+  "detailed_summary": "The vulnerability was discovered by researchers at Theori's Xint Code team and published under CVE-2026-31431. It affects every major Linux distribution (Ubuntu, RHEL, Amazon Linux, SUSE, Debian, Arch, Fedora, Rocky, Alma, and others) running kernels built between 2017 and the patch. The exploit is a single 732-byte Python script that works unmodified across distributions and kernel versions (tested on 6.12, 6.17, 6.18). The root cause lies at the intersection of three kernel features: AF_ALG sockets (exposing crypto to userspace), splice() (zero-copy file data transfer), and a 2017 in-place optimization in algif_aead.c that made AEAD operations use the same memory for input and output. When an attacker splices a readable file's page cache into the crypto path and triggers an authencesn decryption, a 4-byte scratch write overwrites a controlled offset in the kernel's cached copy of that file. The default target is /usr/bin/su (a setuid-root binary). By repeating the operation for each 4-byte chunk of shellcode, the attacker corrupts the cached binary; when execve(\"/usr/bin/su\") is called, the kernel loads the corrupted version and executes the shellcode as root. The bug also enables container escape because the page cache is shared across container boundaries. The fix (mainline commit a664bf3d603d) reverts the in-place optimization. A workaround is to disable the algif_aead kernel module or block AF_ALG sockets via seccomp.",
+  "entities": [
+    {
+      "name": "Theori",
+      "type": "organization",
+      "role": "Security research firm whose Xint Code team discovered and disclosed the vulnerability."
+    },
+    {
+      "name": "Taeyang Lee",
+      "type": "person",
+      "role": "Theori researcher who identified AF_ALG + splice() as a promising attack surface."
+    },
+    {
+      "name": "Xint Code",
+      "type": "organization",
+      "role": "AI-assisted security audit tool used to scan the crypto/ subsystem and find Copy Fail."
+    },
+    {
+      "name": "CVE-2026-31431",
+      "type": "event",
+      "role": "Official identifier for the Copy Fail vulnerability."
+    },
+    {
+      "name": "Linux Kernel",
+      "type": "organization",
+      "role": "Affected software; the vulnerability resides in the kernel's crypto subsystem."
+    }
+  ],
+  "key_data_points": [
+    "The exploit is a 732-byte Python script that works unmodified on Ubuntu, Amazon Linux, RHEL, and SUSE (🟢 relevant to Red Teaming: extremely lightweight and portable payload for privilege escalation).",
+    "The vulnerability affects all major Linux distributions running kernels built between 2017 and the patch (🟢 relevant to Red Teaming: broad attack surface across enterprise and cloud environments).",
+    "Copy Fail requires no race conditions, timing windows, or per-distribution tuning; it is a straight-line logic flaw (🟢 relevant to Red Teaming: high reliability reduces operational risk during engagements).",
+    "The bug enables container escape because the Linux page cache is shared across container boundaries (🟢 relevant to Red Teaming: can be used to break out of containers and compromise the host).",
+    "The fix (commit a664bf3d603d) reverts the 2017 in-place optimization in algif_aead.c; a workaround is to disable the algif_aead kernel module or block AF_ALG sockets via seccomp (🟢 relevant to Red Teaming: understanding mitigations helps in bypass development).",
+    "The discovery was aided by AI tooling (Xint Code) which scanned the crypto/ subsystem in about an hour (🟢 relevant to your interests: demonstrates how AI can accelerate vulnerability research)."
+  ],
+  "methodology_steps": [
+    "1. Identify a target setuid-root binary (e.g., /usr/bin/su) that will be loaded from the page cache.",
+    "2. Use splice() to feed the page-cache pages of the target file into an AF_ALG socket configured for AEAD decryption (authencesn).",
+    "3. Trigger the authencesn decryption operation, which writes 4 attacker-controlled bytes at a chosen offset in the output scatterlist (which points to the same page-cache pages due to the in-place optimization).",
+    "4. Repeat step 3 for each 4-byte chunk of shellcode, overwriting the cached binary with arbitrary code.",
+    "5. Call execve(\"/usr/bin/su\") — the kernel loads the corrupted binary from the page cache, and because su is setuid, the shellcode executes with root privileges.",
+    "6. (Optional) For container escape: perform the same attack from within a container to corrupt a host binary shared via the page cache."
+  ],
+  "conclusions": [
+    "Copy Fail is a critical privilege escalation vulnerability that affects virtually all Linux systems due to a decade-old logic flaw. Its simplicity and reliability make it a powerful tool for red team operations, especially in containerized environments where it enables node escape.",
+    "The vulnerability underscores the risk of combining seemingly harmless kernel features (AF_ALG, splice(), in-place crypto) without considering cross-subsystem interactions. Red teamers should monitor for similar logic bugs at subsystem boundaries.",
+    "The use of AI-assisted auditing (Xint Code) to discover the bug highlights a growing trend in vulnerability research. Red teamers can leverage similar tools to accelerate their own reconnaissance and exploit development."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your Red Teaming and cybersecurity interests. It describes a reliable, one-shot privilege escalation exploit that works across all major Linux distributions without modification — a valuable addition to your offensive toolkit. The container escape capability is particularly useful for cloud and Kubernetes engagements. As a programmer, you can study the 732-byte Python PoC to understand the mechanics of page-cache corruption and adapt it for custom payloads. The article also demonstrates how AI tools can accelerate vulnerability discovery, which you might apply to your own research or automation workflows.",
+  "extra_advice": "Consider integrating the Copy Fail exploit into your red team automation framework (e.g., Cobalt Strike aggressor script or custom payload delivery). Since the PoC is Python, you can easily obfuscate or embed it in a larger script. Also, practice the seccomp bypass angle: if AF_ALG is blocked, look for alternative ways to trigger the same page-cache corruption (e.g., via other socket types or io_uring). Finally, experiment with targeting different setuid binaries or even shared libraries to achieve persistence without touching disk.",
+  "source_url": "https://www.cyberkendra.com/2026/04/a-732-byte-python-script-can-get-root.html?m=1"
+}

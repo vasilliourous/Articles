@@ -1,0 +1,438 @@
+Glance replaced the 12 browser tabs I used to monitor my home lab
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+1
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+Glance replaced the 12 browser tabs I used to monitor my home lab
+By 
+Abhishek Kumar Mishra
+Published
+ Mar 17, 2026, 8:30 AM EDT
+Abhishek is an author at XDA who covers computing. 
+
+He has loved computers since he got the Lenovo G570 in 2012. Abhishek holds a master's degree in computer applications and began his writing career in 2018. He loves writing how-to articles, listicles, and informational posts on popular operating systems and web services.
+
+He closely follows the Windows Insider program and tests new Insider builds to discover upcoming experimental features and upgrades. His past work includes long-term collaborations with reputed publications like 
+Tom's Hardware
+, and 
+Windows Latest
+.
+
+When not writing anything, he is busy watching new episodes of One Piece or searching for something binge-worthy. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+1
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Self-hosting starts easily with a few services. You pick the most essential ones, like 
+Docker
+, a media streaming server, a local cloud storage solution, a DNS resolver like Pi-hole, and a few more. But you don't stop at that. Soon, you will have a myriad of services to manage backups, monitor services, check uptime, and more. I'm not against deploying multiple services, but accessing them becomes a pain after some time. Since each service or tool has a custom URL that you use to access the web UI, remembering each one becomes a problem.
+✕
+ Remove Ads
+Initially, I thought that bookmarking everything in my browser in a separate folder would suffice. But that means cycling through a long list of tiny labels to access the web interface. Glance solved my problem by building a custom dashboard that shows all my services with direct links to them and a brief overview of their status as well. I no longer need to use the bookmark trick or keep multiple tabs open and waste system resources.
+
+                        IP addresses are tough to remember
+               
+
+            It gets annoying after a point
+    
+ The biggest pain point of self-hosting is remembering the correct port number of each service. Bookmarking is a temporary relief that becomes confusing as the list grows. My previous workflow was keeping multiple tabs in a tab group. Whenever I launched the group, all tabs would simultaneously launch, consuming more system resources than I needed.
+The second problem is the overall appearance of such an orthodox design. You need to cycle between multiple tabs and don't have a bird's-eye view of everything on one screen.
+I needed a 
+customizable dashboard
+ interface that was lightweight, supported monitoring a variety of services, and could include some elements from my other workflow as well. Glance became a perfect match because it checked all the boxes and was deployable in a jiffy.
+✕
+ Remove Ads
+Related
+
+			Self-hosting is great, but I also see why people don't do it
+		
+Self-hosting isn't for the faint-hearted.
+Posts
+9
+By 
+Megan Ellis
+Aug 1, 2025
+
+                        Setting up Glance
+               
+
+            Only need to deploy one container
+    
+There are a variety of methods to deploy Glance. Don't confuse it with “Glances” because that's another tool for monitoring, while the one I'm using is a dashboard. Simply grab the 
+default compose file for Glance
+ and create a new folder to save its assets. You can also use 
+Docker Run
+ for it, and no matter what mode you choose, the container will be up and running in no time.
+However, that's only half the story. Glance can display something only after you create and edit the YML file. Before complicating things, I went with a basic YML file that would create a few columns on a single page. It shows a calendar, an RSS feed, and some more things. It loads instantly and fetches the info from the mentioned sources.
+
+                        Customizing Glance
+               
+
+            Putting all services on the front
+    
+ Glance doesn't automatically show all the self-hosted services that you use with a label and a URL link. You must do the heavy lifting to add each service to the dashboard page. I tried adopting a shortcut by adding a Docker widget to Glance. To achieve it, I specified the Docker volume bind in the Glance compose file. After reloading, Glance displayed all the available Docker containers with their correct uptime and status.
+✕
+ Remove Ads
+Problem solved, right? Well, it works for the most part, but it has a tiny problem. I can see the Docker container’s name, uptime, and availability. But I cannot open its web UI by clicking on the label. Glance cannot individually extract the relevant URLs and then turn each container tile into a clickable link.
+I had two options now. I could create individual widgets for each 
+Docker container
+, specify the correct URL, and then turn it into a clickable link. Or I could use the services template and add a label, an icon, a URL, and other details. I went with the latter and added all my containers and other services as well. It took some time to do so, but the effort was satisfying in the end.
+Glance has a rich configuration system to add and specify more details about a service or container. You can use a small or full column design, and it'll automatically place the elements accordingly.
+ I use a single-page design, but if you have multiple services and want more elements like feeds, Reddit, and more, a multiple-page design would be the most beneficial. My convoluted setup is now a single-page design that shows every update I need without opening new tabs. The feeds tell me about the latest stuff, and the services show the current status and provide a gateway to directly open the page.
+✕
+ Remove Ads
+
+                    Subscribe to the newsletter for smart self-hosting tips
+                
+Looking for curated information on self-hosted setups? Subscribe to the newsletter for focused coverage of dashboards like Glance, tool roundups, YAML examples, and practical templates, plus broader infrastructure and hobbyist tech topics.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+There are several theming options available for 
+Glance
+ to change the color scheme and a few more aspects. I love the default layout and didn't bother with Glance UI customization. My focus was more towards making everything accessible on the front page. I also set up the Glance page as my default loading page whenever I open the browser. So, everything is available immediately after I launch the page.
+
+            From chaos to orderliness
+    
+It feels less chaotic after deploying the Glance dashboard because it shows my self-hosted tools on one page. I no longer open twelve tabs in one go and get to view additional information related to my feeds, YouTube channels, weather, and more. All of this happens with just a one-time configuration of the YML file and doesn’t need any additional elements.
+You can also add elements like server stats monitoring using a Glance agent or add your favorite Twitch streamers or Docker containers with custom templates. If the service is offline, you'll see a warning sign next to it.
+✕
+ Remove Ads
+Productivity & Creativity Tools
+Self-Hosting
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			9 Docker containers that run 24/7 on my $100 mini PC
+		
+
+			I thought Google Tasks was basic, then I paired it with Gemini
+		
+
+			This Docker Compose visual builder is the tool I wish I had as a beginner
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+1
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Derek
+Derek
+Derek
+#WI799331
+Member since 2024-07-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Nobody needs to remember IPs and ports. That's why we have reverse proxies.
+2026-03-23 14:03:03
+Upvote
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Michael
+Michael
+Michael
+#KJ917922
+Member since 2024-08-23
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Until your reverse proxy takes a dump and in order to fix it you need to access a couple of services hosted on an ip:port you have forgotten about. Ask me how I know 😂
+This is why I keep my admin dashboards as simple as possible. User facing one's can be cleaner with more polish, but less dependencies are better in troubleshooting scenarios IMO. 
+2026-03-23 18:16:13
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Mar 16, 2026
+
+                                    4 ways YouTube Premium quietly offers the best value in streaming
+                            
+Mar 16, 2026
+
+                                    Your RAID setup will betray you if you configure it this way
+                            
+Mar 16, 2026
+
+                                    Google kept featuring this Chrome extension for months after it turned malicious
+                            
+Mar 16, 2026
+
+                                    I turned a Steam Deck into my living room home lab terminal
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 28, 2026
+1:17
+
+                            Android for Desktop has leaked
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 28, 2026
+1:12
+
+                            Why are we so nostalgic for Windows XP?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 22, 2026
+1:11
+
+                            The closest we'll ever get to Windows Phone 11
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 12, 2026
+1:17
+
+                            Razer made a holographic AI anime Assistant
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 10, 2026
+0:59
+
+                            When will the RAM crisis actually end?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:07
+Skip Ad
+5

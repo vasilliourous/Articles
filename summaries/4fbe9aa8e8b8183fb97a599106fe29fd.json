@@ -1,0 +1,67 @@
+{
+  "article_title": "Stop running these homelab apps 24/7—here's why they should run on a schedule instead",
+  "core_thesis": "Many self-hosted homelab applications do not need to run 24/7; running them only on a schedule can reduce resource waste, lower electricity costs, shrink the attack surface for security vulnerabilities, and even benefit mental health. The article argues that while some services (like Home Assistant) require constant uptime, others—such as Calibre-Web, Jellyfin, Paperless-ngx, Nextcloud, and Duplicati—can be scheduled to run only when actually needed, using tools like cron jobs or GUI schedulers.",
+  "detailed_summary": "The article challenges the common homelab practice of leaving every self-hosted app running indefinitely. It identifies five specific applications that are often over-provisioned: Calibre-Web (e-book library), Jellyfin (media server), Paperless-ngx (document management), Nextcloud (cloud storage), and Duplicati (backup software). For each, the author explains typical usage patterns that make 24/7 operation unnecessary—for example, reading a book over weeks means Calibre-Web sits idle, and backups only happen at a set time. The benefits of scheduling include reduced power consumption (especially for high-TDP hardware), a smaller attack surface (fewer hours exposed to exploits), and less mental clutter from always-on services. The article also acknowledges counterarguments from commenters who note that idle apps consume minimal CPU and that the complexity of scheduling may not be worth the marginal savings. However, the author maintains that for users with limited hardware resources or security concerns, scheduling is a practical optimization.",
+  "entities": [
+    {
+      "name": "Adam Davidson",
+      "type": "person",
+      "role": "Author of the article, a technology writer with a background in engineering and smart home automation."
+    },
+    {
+      "name": "Calibre-Web",
+      "type": "organization",
+      "role": "Self-hosted e-book management application; cited as an example of an app that can be scheduled."
+    },
+    {
+      "name": "Jellyfin",
+      "type": "organization",
+      "role": "Open-source media server; suggested for scheduling around viewing habits."
+    },
+    {
+      "name": "Paperless-ngx",
+      "type": "organization",
+      "role": "Document digitization tool; recommended for batch upload schedules."
+    },
+    {
+      "name": "Nextcloud",
+      "type": "organization",
+      "role": "Self-hosted cloud storage platform; argued to be schedulable for personal use."
+    },
+    {
+      "name": "Duplicati",
+      "type": "organization",
+      "role": "Backup software; described as a perfect candidate for scheduled runs."
+    },
+    {
+      "name": "Home Assistant",
+      "type": "organization",
+      "role": "Smart home automation platform; mentioned as an example of an app that must run 24/7."
+    }
+  ],
+  "key_data_points": [
+    "Calibre-Web has had past security vulnerabilities; running it on a schedule reduces the attack surface, especially if exposed for remote Kindle uploads (🟢 relevant to Red Teaming: scheduling reduces exposure window for exploitation).",
+    "Jellyfin often runs on hardware with high power consumption (multiple hard drives, high-TDP CPU); scheduling can yield noticeable annual electricity savings (🟢 relevant to homelab: practical cost-saving tip).",
+    "Paperless-ngx is often used for manual batch uploads (e.g., weekly); running it only during those times avoids unnecessary resource usage (🟢 relevant to homelab: aligns with efficient resource management).",
+    "Nextcloud's desktop sync client can queue changes locally and sync when the server comes back online, making scheduling feasible for personal use (🟢 relevant to homelab: technical detail for implementation).",
+    "Duplicati is typically used for scheduled backups (e.g., daily at 3 AM); running it outside those times wastes resources (🟢 relevant to homelab: obvious optimization).",
+    "Commenters on the article argue that idle apps consume minimal CPU and memory, and that the complexity of scheduling may not justify the marginal power savings (🟢 relevant to decision-making: weigh effort vs. benefit)."
+  ],
+  "methodology_steps": [
+    "Identify which homelab apps are not needed 24/7 by analyzing your actual usage patterns (e.g., when you read, watch media, upload documents, sync files, or run backups).",
+    "Choose a scheduling tool: cron jobs on Linux, Task Scheduler on Windows, or GUI-based schedulers in container orchestration platforms (e.g., Kubernetes CronJob, Docker's restart policies with time constraints).",
+    "For each app, define a schedule that matches your usage. Example: run Jellyfin only from 6 PM to midnight on weekdays and all day on weekends; run Calibre-Web only during your typical reading hours.",
+    "Implement the schedule. For Docker containers, use a script to start/stop containers via `docker start` and `docker stop` triggered by cron. For systemd services, use `systemctl start` and `systemctl stop` in cron jobs.",
+    "Test the schedule to ensure apps start and stop correctly and that any dependent services (e.g., reverse proxy) handle downtime gracefully.",
+    "Monitor resource usage and security logs to confirm the benefits (reduced power draw, fewer login attempts). Adjust schedule as needed."
+  ],
+  "conclusions": [
+    "Running homelab apps on a schedule can reduce electricity costs and hardware wear, especially for power-hungry hardware like multi-drive NAS or high-TDP CPUs. The article suggests that even small savings accumulate over a year.",
+    "Scheduling reduces the attack surface for security exploits. For Red Teaming, this means that scheduled apps are less predictable targets; however, for defenders, it limits exposure windows. The article notes that Calibre-Web and Nextcloud have had vulnerabilities, making scheduling a valid security practice.",
+    "Not all apps benefit from scheduling. Critical services like Home Assistant (for water leak detection) must run 24/7. The article emphasizes that scheduling is a case-by-case decision based on actual usage.",
+    "Commenters on the article largely disagree with the premise, arguing that idle apps consume negligible power and that the complexity of scheduling outweighs the benefits. The overall consensus from the Reddit-like discussion is that scheduling is unnecessary for most homelabs unless resources are extremely constrained."
+  ],
+  "personal_relevance_summary": "This article is directly relevant to your homelab interests, offering a practical optimization strategy that can save power, reduce security risks, and simplify your infrastructure. As a programmer, you can implement scheduling using cron jobs or container orchestration, which aligns with your DevOps skills. For Red Teaming, the security angle (reduced attack surface) is valuable—you can apply this concept to both defend your own lab and understand how defenders might limit exposure. The article also provides a balanced view by including counterarguments, helping you make an informed decision about whether scheduling is worth the effort in your specific setup.",
+  "extra_advice": "Consider automating the scheduling with a simple Python script or Ansible playbook that starts/stops containers based on a YAML configuration file. This not only saves power but also gives you a reusable tool for managing other services. For Red Teaming practice, you could simulate an attacker scanning for services that only run at certain times—this teaches you to identify patterns in service availability.",
+  "source_url": "https://www.howtogeek.com/stop-running-these-homelab-apps-247heres-why-they-should-run-on-a-schedule-instead/"
+}

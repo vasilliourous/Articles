@@ -1,0 +1,77 @@
+{
+  "article_title": "6 self-hosted services I set up once and never think about",
+  "core_thesis": "The article argues that while self-hosting often requires ongoing maintenance, a select few services can be deployed and then operate reliably with minimal intervention. The author shares six tools—Vaultwarden, Tailscale, Uptime Kuma, Dockge, OmniTools, and Pi-hole—that have proven to be 'set and forget' solutions in their homelab, contrasting them with resource-heavy tools like NextCloud that demand frequent tweaks.",
+  "detailed_summary": "The author, Abhishek Kumar Mishra, describes his experience with self-hosted services that require little to no ongoing attention after initial setup. He highlights six tools: Vaultwarden (a lightweight password manager hosted on a Raspberry Pi Zero 2W with DietPi), Tailscale (a mesh VPN for remote access that works seamlessly with most services), Uptime Kuma and Dockge (container monitoring and Docker Compose management tools from the same developer), OmniTools (a self-hosted file conversion and PDF editing suite that runs conservatively on low-end hardware), and Pi-hole (a DNS-level ad blocker that acts as an invisible network shield). The author notes that these services contrast with heavier tools like NextCloud and Paperless-ngx, which require frequent adjustments. The article also includes reader comments discussing alternatives like Technitium DNS, WireGuard vs. Tailscale, and practical tips for integrating Tailscale with Plex.",
+  "entities": [
+    {
+      "name": "Abhishek Kumar Mishra",
+      "type": "person",
+      "role": "Author of the article and self-hosting enthusiast"
+    },
+    {
+      "name": "Vaultwarden",
+      "type": "software",
+      "role": "Lightweight self-hosted password manager"
+    },
+    {
+      "name": "Tailscale",
+      "type": "software",
+      "role": "Mesh VPN for secure remote access"
+    },
+    {
+      "name": "Uptime Kuma",
+      "type": "software",
+      "role": "Container monitoring tool"
+    },
+    {
+      "name": "Dockge",
+      "type": "software",
+      "role": "Docker Compose management UI"
+    },
+    {
+      "name": "OmniTools",
+      "type": "software",
+      "role": "Self-hosted file conversion and PDF editing suite"
+    },
+    {
+      "name": "Pi-hole",
+      "type": "software",
+      "role": "DNS-level ad blocker and network shield"
+    },
+    {
+      "name": "DietPi",
+      "type": "software",
+      "role": "Lightweight OS used for hosting Vaultwarden"
+    },
+    {
+      "name": "Raspberry Pi Zero 2W",
+      "type": "hardware",
+      "role": "Low-power SBC used for Vaultwarden and Pi-hole"
+    }
+  ],
+  "key_data_points": [
+    "Vaultwarden is a lightweight password manager that can be installed on a Raspberry Pi Zero 2W with DietPi via a one-click task, requiring only a one-time password import and setup (🟢 relevant to your homelab: ideal for low-resource, low-maintenance password management).",
+    "Tailscale provides remote access to self-hosted services by replacing the server IP with a Tailscale IP and port, and it boots with the OS with negligible memory usage (🟢 relevant to your Red Teaming: can be used for persistent C2 or exfiltration tunnels if compromised).",
+    "Uptime Kuma monitors container health by pinging services and reporting status pictorially, with no control over containers—just tracking and push notifications (🟢 relevant to your DevOps: useful for automated alerting in production environments).",
+    "Dockge offers a simple interface for defining Docker Compose stacks and environment variables, avoiding terminal usage, but has limited control over containers created by other tools like Portainer (🟢 relevant to your programming: simplifies container orchestration for development workflows).",
+    "OmniTools performs file conversion, PDF editing, video conversion, and compression locally without uploading to external servers, and is extremely resource-conservative (🟢 relevant to your homelab: perfect for low-end SBCs like Raspberry Pi).",
+    "Pi-hole acts as a DNS resolver with built-in ad blocking and tracking prevention, routing all requests through it to evade ISP tracking, but can sometimes break connections if lists are not updated (🟢 relevant to your cybersecurity: enhances privacy and can be used to block malicious domains).",
+    "Reader comments suggest alternatives: Technitium DNS as a more feature-rich Pi-hole replacement with built-in DoT/DoH, and WireGuard as a more privacy-respecting remote access option compared to Tailscale (🟢 relevant to your Red Teaming: WireGuard can be used for stealthy tunnels; Technitium offers advanced DNS filtering)."
+  ],
+  "methodology_steps": [
+    "For Vaultwarden: Install DietPi on a Raspberry Pi Zero 2W, then use the one-click Vaultwarden install option in DietPi. Import passwords once, set up browser extension, and perform regular system backups of DietPi to a USB drive for data redundancy.",
+    "For Tailscale: Install the Tailscale app/package on each device, add it to your Tailnet, and replace the server's local IP with the Tailscale IP and appropriate port number in client configurations. Tailscale auto-starts with the OS.",
+    "For Uptime Kuma: Deploy as a Docker container, then add monitoring items for each container by specifying the service URL and ping interval. Configure push notifications for alerts.",
+    "For Dockge: Deploy as a Docker container, then use its web interface to create stacks by pasting Docker Compose files and setting environment variables. Use it to start/stop containers, but note limited control over containers created by other tools.",
+    "For OmniTools: Deploy as a Docker container on a low-end SBC. Access the web UI to perform file conversions, PDF edits, video conversions, and compression tasks without any additional configuration.",
+    "For Pi-hole: Install on a Raspberry Pi Zero 2W (or any Linux device), configure it as the primary DNS resolver on your router or devices. Regularly update blocklists and add a backup DNS resolver to avoid connection breaks."
+  ],
+  "conclusions": [
+    "The author concludes that Vaultwarden, Tailscale, Uptime Kuma, Dockge, OmniTools, and Pi-hole are reliable 'deploy once and forget' services that require minimal ongoing attention, making them ideal for homelabbers who want stable infrastructure without constant maintenance.",
+    "Reader comments highlight that Tailscale's reliance on third-party servers can be mitigated by self-hosting Headscale, and that WireGuard offers a more privacy-respecting alternative for remote access, though with more manual configuration.",
+    "The article emphasizes that not all self-hosted tools are low-maintenance; resource-heavy tools like NextCloud and Paperless-ngx need frequent tweaks, contrasting with the six recommended services that work flawlessly after initial setup."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your homelab and DevOps interests, providing a curated list of low-maintenance self-hosted services that can be deployed on low-power hardware like Raspberry Pi. For your Red Teaming practice, tools like Tailscale and Pi-hole have dual-use potential: Tailscale can be used for persistent remote access or exfiltration tunnels, while Pi-hole can block malicious domains and enhance operational security. The reader comments also offer valuable alternatives (Technitium DNS, WireGuard) that may better suit privacy-conscious or offensive-security setups. As a programmer, you can leverage Dockge and Uptime Kuma to streamline Docker management and monitoring in your development environments.",
+  "extra_advice": "Consider setting up a dedicated 'red team' homelab segment using Tailscale or WireGuard to simulate remote access scenarios. For Pi-hole, integrate it with a threat intelligence feed to block known C2 domains during penetration tests. Also, explore Technitium DNS as a more feature-rich alternative that supports DoT/DoH natively, which could be useful for encrypted DNS tunneling experiments.",
+  "source_url": "https://www.xda-developers.com/self-hosted-services-i-set-up-once-and-never-think-about/"
+}

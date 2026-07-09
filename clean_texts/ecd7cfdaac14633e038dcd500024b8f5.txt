@@ -1,0 +1,518 @@
+Your Proxmox 8 server stops getting security updates in August, and upgrading to PVE 9 isn't straightforward
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+4
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+Your Proxmox 8 server stops getting security updates in August, and upgrading to PVE 9 isn't straightforward
+By 
+Ayush Pande
+Published
+ Mar 25, 2026, 12:30 PM EDT
+Ayush Pande is a PC hardware and gaming writer. When he's not working on a new article, you can find him with his head stuck inside a PC or tinkering with a server operating system. Besides computing, his interests include spending hours in long RPGs, yelling at his friends in co-op games, and practicing guitar. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+4
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Just like typical distros, virtualization platforms receive major updates every so often to add new features, bug fixes, and security patches to your home lab. Proxmox received its last major release in August last year, with the update moving the underlying virtual environment to Debian 13 and the Linux kernel to 6.14. While the new additions are just as neat, the sad news is that the old Proxmox 8.x versions will hit their end-of-life stage later this August.
+✕
+ Remove Ads
+As such, you’ll have to upgrade to PVE 9.0 sooner or later, or risk running your home lab without any security patches. Credit where it’s due, 
+Proxmox
+ has neatly laid out the instructions for upgrading your nodes in the official documentation. That said, this process can involve way too many steps, and you’ll want to set aside extra time to troubleshoot random issues that may rear their ugly heads once you’ve upgraded to the latest version of the virtualization platform.
+Related
+
+			You need this free self-hosted tool if you're using Proxmox
+		
+Its utility goes up even more for multi-node Proxmox setups
+Posts
+By 
+Ayush Pande
+Feb 20, 2026
+
+                        You’ll want to back up everything before jumping to Proxmox 9.0
+               
+
+            Including the host settings
+    
+Updating your everyday machine has a slight possibility of breaking things, and the same applies on the home lab front. Except, you’ll have to be extra cautious, as you might end up with broken network services and irrecoverable virtual guests if things go south during the upgrade procedure. As such, it’s a good idea to back up every aspect of your Proxmox server to an external node (or even a 
+cloud platform
+, if you don’t have the storage provisions locally).
+✕
+ Remove Ads
+I recommend going with a bare-metal 
+Proxmox Backup Server
+ rig, as it not only keeps your LXCs and VMs safe, but its reliance on incremental snapshots along with its data compression and deduplication features prevent the backup files from hogging too much disk space. Alternatively, you can create vzdump backups locally, provided you use an FTP app to transfer them to a separate machine, as you don’t want these files to go down if anything happens to your Proxmox hub during the transition from PVE 8.x to 9.0.
+But aside from the virtual guests, I’d also recommend backing up the base Proxmox instance. You can either do this manually by saving the contents of 
+/etc/pve/
+user.cfg
+, 
+/etc/pve/
+storage.cfg
+,
+ /etc/network/interfaces
+, and a bunch of other config directories, or rely on genius developer 
+tis24dev’s ProxSave repo
+ to handle the backup tasks for you.
+
+                        The upgrade process involves simple steps
+               
+
+            Or you can just yell YOLO and wipe everything clean
+    
+If you’re on Proxmox 8, you’ll first have to upgrade your node to version 8.4.9. Once that’s done, you’ll have to manually modify the Proxmox update repository to include Proxmox 9 packages. Otherwise, they won’t show up in the Updates tab, even if you’ve already got the community repository enabled. The fastest way to do so involves running the 
+cat
+ command to append the Debian 13 package links to the 
+proxmox.sources
+ config file:
+cat > /etc/apt/
+sources.list.d/proxmox.sources
+ Types: deb
+URIs: 
+http://download.proxmox.com/debian/pve
+Suites: trixie
+Components: pve-no-subscription
+Signed-By: /usr/share/keyrings/
+proxmox-archive-keyring.gpg
+EOF
+✕
+ Remove Ads
+Once that’s done, you should see the PVE packages within the Updates section, and pressing the Upgrade button will cause Proxmox to start the migration process. The virtualization platform will occasionally halt the process to ask for confirmation about specific settings, so you can’t just leave the terminal alone. I mostly went with default options for two Proxmox nodes when I updated them last year, and didn’t have many issues (aside from one massive problem on the first workstation that I’ll mention in a bit). Alternatively, if you’re not willing to put up with random compatibility issues, you could just go for a fresh installation and restore the virtual guests (and Proxmox config files) once the PVE setup wizard has worked its magic.
+
+                        You might encounter a handful of issues
+               
+
+            Especially if you’ve overprovisioned the local-lvm pool as I did
+    
+An offline local-lvm pool on Proxmox 9
+This section is precisely the reason why I keep stressing the importance of backups throughout the article. Although the update process can take anywhere between 30 minutes and an hour (or perhaps two, if you’ve installed PVE on a hard drive), a successful upgrade could still result in issues. Take the problem I encountered, for instance.
+
+                    Subscribe to the newsletter for Proxmox upgrade guidance
+                
+Keep your Proxmox home lab protected — subscribe to the newsletter for practical upgrade checklists, backup best practices, and troubleshooting guidance that helps you navigate PVE migrations and avoid common home-lab pitfalls.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+Since I work with dozens of LXCs and VMs, my goofy self accidentally overprovisioned the local-lvm pool on the main workstation. In actuality, my virtual guests consumed around 60% of the drive space, but their virtual disks were almost twice as big as the local-lvm pool. When I booted into the freshly-configured Proxmox 9.0 environment, I was greeted by an inoperable pool and broken containers and virtual machines. A glance at the logs revealed the 
+activating LV 'pve/data' failed: Check of pool pve/data failed (status:64). Manual repair required!
+(500)
+ error message, and I considered recovering my original setup just so I could bring my essential LXCs online.
+✕
+ Remove Ads
+Related
+
+			This new Proxmox 9 feature flew under the radar, but it's one of my favorites
+		
+The redesigned mobile UI is the best part of Proxmox 9
+Posts
+By 
+Ayush Pande
+Aug 13, 2025
+Fortunately, some helpful folks at the Proxmox forums mentioned the 
+lvconvert --repair pve/data
+ command, and running it brought my local-lvm pool (and by extension, the virtual guests residing in it) back online. But that’s not the only error you could encounter during this process. I’ve heard about folks running into frame buffer freezes on Nvidia GPUs, and the fixes range from adding 
+nomodeset
+ as a parameter during the Proxmox boot menu to disabling Nvidia drivers in the 
+/etc/modprobe.d/
+blacklist.conf
+file. In most cases, the Proxmox forums should have a solution to your upgrade maladies, and if nothing else works, wiping everything clean (and restoring the LXCs and VMs afterward) is always an option.
+
+    						Proxmox
+			
+Proxmox is an open-source platform built on Debian Linux designed for server virtualization.
+See at Proxmox
+Expand
+Collapse
+✕
+ Remove Ads
+Linux
+Home Lab
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I set up Claude Code the way its creator does, and the difference is night and day
+		
+
+			I replaced Gemini and Perplexity with this underrated AI tool
+		
+
+			I don't pay for ChatGPT, Perplexity, Gemini, or Claude – I stick to my self-hosted LLMs instead
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+4
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Yurii
+Yurii
+Yurii
+#YQ884619
+Member since 2025-08-31
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Backup vms, pve8to9 script and fix any warnings, update repos, upgrade. It’s nothing crazy all my 4 Cisco servers survived just fine
+2026-03-26 07:46:42
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+
+                        2
+                    
+Copy
+        
+Nikolaj
+Nikolaj
+Nikolaj
+#QP952802
+Member since 2026-03-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+What kind of warnings should one expect? And what was the fix? 
+2026-03-26 09:54:17
+Upvote
+Downvote
+Reply
+Copy
+        
+Dave
+Dave
+Dave
+#CW559433
+Member since 2025-08-17
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+There's a warning to shut down any running machines for example. 
+The pve8to9 script is very good in my (limited) experience, I upgraded my 2 Proxmox servers with no trouble. 
+I do have VM backups running nightly on both machines, as well as a script to backup the config every week so I wasn't worried.
+2026-03-27 05:10:41
+Upvote
+Downvote
+Reply
+Copy
+        
+Onyimbo
+Onyimbo
+Onyimbo
+#KT948697
+Member since 2026-03-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+How to close lock 
+2026-03-25 14:43:31
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Mar 25, 2026
+
+                                    This Nvidia Linux driver update finally fixes a frustrating Wayland display problem
+                            
+Mar 24, 2026
+
+                                    I optimized Proxmox's defaults and cut my home lab energy costs without sacrificing speed
+                            
+Mar 24, 2026
+
+                                    We have reached the GPU ceiling, and AI tricks like DLSS are how companies pretend we haven't
+                            
+Mar 24, 2026
+
+                                    A popular Python library just became a backdoor to your entire machine
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            Windows XP's Secret Themes
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:07
+
+                            The end of affordable PCs?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            Snapdragon X2 Elite Extreme benchmarks: RIP Panther Lake?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:05
+Skip Ad
+5

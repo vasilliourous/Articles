@@ -1,0 +1,66 @@
+{
+  "article_title": "I found a free, open-source alternative to Claude Code, and it works with everything",
+  "core_thesis": "OpenCode is a free, open-source, terminal-based agentic coding tool that serves as a viable alternative to Anthropic's paid Claude Code, supporting over 75 AI providers (including local models) and offering similar features like Plan and Build modes, file referencing, image drag-and-drop, session sharing, and undo/redo, making agentic coding accessible without a subscription.",
+  "detailed_summary": "The article introduces OpenCode as a free, open-source alternative to Claude Code, a terminal-based agentic coding tool from Anthropic. While Claude Code is locked to Anthropic's ecosystem and requires a Pro or Max subscription, OpenCode works with over 75 AI providers including GPT, Claude, Gemini, and local models via Ollama or LM Studio. It can be installed via curl, npm, Homebrew, Scoop, or Chocolatey. Once installed, users select a model using the /models command and can authenticate with existing subscriptions (e.g., ChatGPT Plus, GitHub Copilot) or use API keys. OpenCode mirrors Claude Code's functionality: it can write code, run terminal commands, test, debug, and make multi-file changes. Key features include Plan mode (read-only planning) and Build mode (execution), fuzzy file search with @, drag-and-drop images, undo/redo commands, session sharing via /share, and customization options like themes and custom commands. The article also includes reader comments: some praise OpenCode for its model flexibility and constant tooling, while others criticize its reliability in production and suggest alternatives like Cursor. One commenter notes that Claude Code can also be configured to use local LLMs via environment variables, but warns that the system prompt is very large (~70k characters).",
+  "entities": [
+    {
+      "name": "OpenCode",
+      "type": "software",
+      "role": "Free, open-source terminal-based agentic coding tool, alternative to Claude Code"
+    },
+    {
+      "name": "Claude Code",
+      "type": "software",
+      "role": "Anthropic's paid terminal-based agentic coding tool"
+    },
+    {
+      "name": "Anthropic",
+      "type": "organization",
+      "role": "AI company behind Claude and Claude Code"
+    },
+    {
+      "name": "Mahnoor Faisal",
+      "type": "person",
+      "role": "Author of the article, tech journalist covering AI and productivity tools"
+    },
+    {
+      "name": "Ollama",
+      "type": "software",
+      "role": "Tool for running local LLMs, supported by OpenCode"
+    },
+    {
+      "name": "LM Studio",
+      "type": "software",
+      "role": "Tool for running local LLMs, supported by OpenCode"
+    },
+    {
+      "name": "GitHub Copilot",
+      "type": "software",
+      "role": "AI coding assistant, can be used as a provider with OpenCode"
+    }
+  ],
+  "key_data_points": [
+    "OpenCode is completely free and open-source, unlike Claude Code which requires a Pro ($20/month) or Max ($100/month) subscription (🟢 relevant to your budget as a student: you can try agentic coding without financial commitment).",
+    "OpenCode supports over 75 AI providers including GPT, Claude, Gemini, and local models via Ollama/LM Studio, offering flexibility beyond Anthropic's ecosystem (🟢 relevant to your Red Teaming and homelab interests: you can use local models for sensitive code or offline work).",
+    "Installation is simple: run 'curl -fsSL https://opencode.ai/install | bash' or use npm, Homebrew, Scoop, or Chocolatey (🟢 relevant to your DevOps/homelab: quick setup on any platform).",
+    "OpenCode features Plan mode (read-only) and Build mode (execution), allowing users to map out changes before applying them (🟢 relevant to your programming: reduces errors and helps you understand AI-generated code).",
+    "OpenCode supports fuzzy file search with @, drag-and-drop images into the terminal, undo/redo commands, session sharing via /share, and customization (themes, custom commands, code formatters) (🟢 relevant to your productivity: these features streamline the coding workflow).",
+    "Reader comments indicate mixed real-world performance: some find it unreliable in production, while others praise its model flexibility and constant tooling. One commenter suggests Cursor as a better alternative (🟢 relevant to your decision-making: consider testing multiple tools for your specific use case).",
+    "Claude Code can also be configured to use local LLMs via environment variables, but the system prompt is very large (~70k characters), which may cause delays (🟢 relevant to your homelab: if you prefer Claude Code, you can still use local models with some overhead)."
+  ],
+  "methodology_steps": [
+    "Install OpenCode: run 'curl -fsSL https://opencode.ai/install | bash' in your terminal (macOS Terminal, PowerShell, Command Prompt, or any terminal emulator). Alternatively, use npm, Homebrew (macOS), Scoop, or Chocolatey (Windows).",
+    "After installation, run the /models command to select your desired AI provider. You can authenticate with existing subscriptions (e.g., ChatGPT Plus, GitHub Copilot) or use an API key. For local models, ensure Ollama or LM Studio is running and select the local provider.",
+    "To start a coding session, navigate to your project directory and run OpenCode. Describe your task in plain English. Use Tab to switch between Plan mode (read-only planning) and Build mode (execution).",
+    "Use @ to fuzzy search and reference files directly in your prompts. Drag and drop images (e.g., mockups) into the terminal for visual context.",
+    "Use /undo and /redo to revert or reapply changes. Use /share to generate a shareable link to your entire conversation. Customize the tool via themes, custom commands, and code formatters as needed."
+  ],
+  "conclusions": [
+    "OpenCode is a compelling free alternative to Claude Code, especially for users who want to avoid vendor lock-in or cannot afford a subscription. Its support for over 75 providers and local models makes it highly flexible (🟢 relevant to your homelab and Red Teaming: you can use local models for security-sensitive tasks).",
+    "The article's reader comments reveal that OpenCode may not be production-ready for all users, with some reporting failures. However, others find it effective for personal projects and rapid prototyping. As a student and programmer, you can use it to experiment with agentic coding without financial risk, but should validate its output carefully.",
+    "OpenCode's Plan mode is particularly valuable for learning and debugging, as it forces the AI to explain its approach before making changes. This aligns with your need for programming help and understanding code logic."
+  ],
+  "personal_relevance_summary": "As a programmer and cybersecurity enthusiast, OpenCode offers a free, flexible agentic coding tool that can integrate with local LLMs (via Ollama/LM Studio) for offline or sensitive work—ideal for Red Teaming experiments where you might want to avoid cloud dependencies. Its Plan mode helps you understand AI-generated code, which is valuable for learning. The tool's open-source nature allows customization and auditing, aligning with your homelab and DevOps interests. However, be aware of mixed user reviews regarding production reliability; use it for personal projects and learning first. The article also provides installation steps and feature comparisons that you can directly apply.",
+  "extra_advice": "Consider setting up OpenCode with a local model like CodeLlama or DeepSeek-Coder via Ollama for a fully offline agentic coding environment. This is especially useful for Red Teaming tasks where you need to analyze or generate code without sending it to external APIs. Additionally, explore OpenCode's customization options to create custom commands that automate repetitive security testing tasks (e.g., scanning for common vulnerabilities).",
+  "source_url": "https://www.xda-developers.com/found-a-free-open-source-alternative-to-claude-code/"
+}

@@ -1,0 +1,1108 @@
+After a year of self-hosting LLMs, I realized the real bottleneck isn’t the GPU
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+19
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+After a year of self-hosting LLMs, I realized the real bottleneck isn’t the GPU
+By 
+Yash Patel
+Published
+ May 6, 2026, 7:00 PM EDT
+Beginning his professional journey in the tech industry in 2018, Yash spent over three years as a Software Engineer. After that, he shifted his focus to empowering readers through informative and engaging content on his tech blog – 
+DiGiTAL BiRYANi
+. He has also published tech articles for 
+MakeTechEasier
+. He loves to explore new tech gadgets and platforms.  When he is not writing, you’ll find him exploring food. He is known as Digital Chef Yash among his readers because of his love for Technology and Food. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+19
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+For the past year, I’ve been running my own local LLM setup, hoping it would make my work faster and more efficient. And in many ways, it did; but not for the reasons I expected. I went in thinking better hardware would unlock better results. More VRAM, faster inference, bigger models.
+✕
+ Remove Ads
+But over time, I realized something was off. Despite having a solid setup, my day-to-day productivity didn’t improve as much as it should have. Tasks still felt manual, repetitive, and sometimes even slower than before.
+That’s when it clicked: the real bottleneck in a local AI setup isn’t the GPU, it’s everything around it. Once 
+I changed how my setup worked
+, the AI started becoming a part of how I actually work.
+
+                        Obsession with GPUs is real
+               
+
+            GPUs are important, but not everything
+    
+When you first 
+get into self-hosting LLMs
+, everything revolves around the GPU; and honestly, that makes sense. VRAM decides which models you can run. More memory means larger models, better context windows, and smoother performance. You start comparing specs, testing quantization, watching tokens-per-second like it’s a benchmark game.
+I did the same. Upgraded hardware, tweaked configs, chased that “perfect setup.” And yes, GPUs matter. Without enough compute, nothing works. A weak setup limits you before you even begin.
+But here’s where things get misleading: once your model runs reliably, better hardware stops translating into better outcomes. You might get faster responses, maybe slightly better outputs — but your actual workflow doesn’t improve much.
+Quiz
+8 Questions · Test Your Knowledge
+You don't need a beefy GPU to run a local LLM
+Trivia challenge
+Think you know your way around local AI? Test your knowledge of running LLMs without breaking the bank.
+Hardware
+AI Models
+Performance
+Software
+RAM & CPU
+Begin
+01 / 8
+Software
+Which popular open-source tool is widely used to run large language models locally on consumer hardware without writing any code?
+A
+TensorFlow Serving
+B
+Ollama
+C
+CUDA Toolkit
+D
+Hugging Face Spaces
+That's right! Ollama is a lightweight, easy-to-use tool that lets you download and run LLMs locally with simple terminal commands. It handles model management, hardware detection, and even exposes a local API — making it one of the most accessible entry points for local AI.
+Not quite — the answer is Ollama. While TensorFlow Serving and CUDA Toolkit are real AI infrastructure tools, they require significantly more setup. Ollama is purpose-built for running LLMs locally and works on Mac, Linux, and Windows with minimal friction.
+Continue
+02 / 8
+AI Models
+Meta's open-weight model family, commonly run on consumer hardware, is known by what name?
+A
+Falcon
+B
+Gemma
+C
+Llama
+D
+Mistral
+Correct! Meta's Llama (Large Language Model Meta AI) series — including Llama 2 and Llama 3 — has become a cornerstone of the local AI movement. Because Meta releases the weights openly, the community has built countless quantized versions optimized for consumer hardware.
+The correct answer is Llama. While Falcon, Gemma (Google), and Mistral are all legitimate open-weight models you can run locally, Meta's Llama series is arguably the most widely adopted and has the largest ecosystem of community tools and fine-tuned variants.
+Continue
+03 / 8
+Hardware
+When running an LLM locally without a dedicated GPU, which hardware component becomes the primary bottleneck for inference speed?
+A
+Storage read speed
+B
+System RAM capacity and bandwidth
+C
+CPU clock speed (GHz)
+D
+Network interface card speed
+Exactly right! When a GPU isn't available, LLMs run entirely in system RAM. Both the capacity (you need enough to hold the model) and the memory bandwidth (how fast data moves to the CPU) directly determine inference speed. DDR5 and multi-channel configurations can make a meaningful difference.
+The answer is system RAM capacity and bandwidth. While CPU clock speed matters, the real constraint is getting model weights in and out of memory fast enough. A model that doesn't fit in RAM will either fail to load or spill to disk, causing dramatically slower performance regardless of CPU speed.
+Continue
+04 / 8
+AI Models
+What does 'quantization' mean in the context of running LLMs on consumer hardware?
+A
+Splitting a model across multiple GPUs for parallel processing
+B
+Reducing the numerical precision of model weights to shrink file size and memory usage
+C
+Increasing the context window of a language model
+D
+Training a model on a smaller, curated dataset
+Spot on! Quantization reduces the bit-width used to store model weights — for example, from 32-bit floats down to 4-bit integers. This can shrink a model's memory footprint by 4–8x with only a modest drop in output quality, making billion-parameter models runnable on everyday laptops.
+Not quite — quantization means reducing numerical precision of model weights. A 7-billion parameter model at full 32-bit precision might need over 28GB of RAM, but a 4-bit quantized version can fit in around 4–5GB. It's one of the most important techniques enabling local AI on affordable hardware.
+Continue
+05 / 8
+Performance
+A '7B' model like Llama 3 7B refers to what specification of the model?
+A
+7 billion bytes of training data
+B
+7 billion parameters
+C
+A model trained for 7 billion steps
+D
+7 billion tokens in its context window
+Correct! The 'B' in model names like 7B, 13B, or 70B stands for billions of parameters — the individual numerical weights that define the model's behavior. More parameters generally means greater capability, but also higher memory requirements. 7B models strike a sweet spot for consumer hardware.
+The answer is 7 billion parameters. Parameters are the learned numerical values inside the neural network that encode everything the model knows. A 7B model has 7 billion of them, which is why even quantized versions need several gigabytes of RAM — and why 70B models remain a challenge for most consumer setups.
+Continue
+06 / 8
+Hardware
+Apple Silicon chips like the M1, M2, and M3 are considered exceptionally well-suited for local LLM inference primarily because of what architectural advantage?
+A
+They support CUDA, NVIDIA's AI acceleration framework
+B
+They have dedicated AI cores running at extremely high clock speeds
+C
+They use unified memory shared between CPU and GPU, enabling fast access to large models
+D
+They have more CPU cores than equivalent Intel processors
+That's right! Apple Silicon's unified memory architecture means the CPU and GPU share the same high-bandwidth memory pool. A MacBook with 16GB or 32GB of unified RAM can load and run LLMs at speeds that rival or exceed systems with discrete GPUs, making Apple laptops surprisingly competitive for local AI.
+The correct answer is unified memory. Apple Silicon doesn't support CUDA (that's NVIDIA-specific), but its unified memory design eliminates the bottleneck of transferring data between system RAM and a separate GPU's VRAM. This lets models run fast even without a discrete graphics card, which is why tools like Ollama and LM Studio perform so well on Macs.
+Continue
+07 / 8
+Software
+LM Studio is a graphical desktop application for running local LLMs. What is one of its most useful features for beginners?
+A
+It automatically connects to OpenAI's servers for faster processing
+B
+It provides a built-in ChatGPT-style chat interface and a local API server with no coding required
+C
+It can train custom models from scratch using your own data
+D
+It requires a subscription to unlock models larger than 3 billion parameters
+Exactly! LM Studio gives users a polished GUI to browse, download, and chat with local models — no terminal or coding needed. Its built-in local server also mimics the OpenAI API format, so you can point compatible apps at your own machine instead of the cloud.
+The correct answer is its built-in chat interface and local API server. LM Studio is entirely offline and free to use — it doesn't connect to OpenAI or require a subscription. Its approachable design has made it one of the most popular on-ramps for people exploring local AI for the first time.
+Continue
+08 / 8
+RAM & CPU
+If you want to run a quantized 13B parameter LLM locally at a usable speed on a CPU-only system, what is the generally recommended minimum amount of system RAM?
+A
+4GB
+B
+8GB
+C
+16GB
+D
+64GB
+Correct! A 4-bit quantized 13B model typically requires around 8–10GB of RAM just to load, which means 16GB is the practical minimum for a usable experience — leaving some memory for your OS and other processes. Going below that often results in the model using slow disk swap, making inference painfully sluggish.
+The answer is 16GB. While a 4-bit quantized 13B model can technically fit in under 10GB, you still need headroom for your operating system and background tasks. With only 8GB total, your system would likely resort to swapping to disk, turning a response that should take seconds into one that takes minutes.
+See My Score
+Challenge Complete
+Your Score
+/ 8
+Thanks for playing!
+Try Again
+The real issues start showing up after the setup phase. Outputs feel inconsistent. You repeat prompts. Context gets lost. The system works, but it’s not useful yet.
+✕
+ Remove Ads
+That’s the shift most people miss. GPUs remove the entry barrier, but they don’t solve the deeper problems that come after.
+Related
+
+			After self-hosting everything for a year, I learned that tech skills matter LESS than I thought
+		
+Good self-hosting is 80% behavior, and 20% technology.
+Posts
+14
+By 
+Yash Patel
+Mar 9, 2026
+
+                        Prompting is not a strategy
+               
+
+            Stop building a chatbot and start building a system
+    
+The biggest mistake I made in my first few months of self-hosting was treating my 
+local AI setup like a private clone of ChatGPT
+. It’s an easy trap to fall into: you set up a beautiful web interface, open a browser tab, and start chatting. But if your local AI only lives in a chat box, you’ve essentially built a high-powered engine just to idle in the driveway.
+Relying on manual prompting is a massive bottleneck. Every time you have to Alt-Tab, copy-paste text, and wait for a response, you are losing the battle against friction. A "private chatbot" still requires you to do all the heavy lifting of moving data back and forth. The real power of self-hosting isn't having a digital pen pal; it’s about moving the LLM out of the browser and into your file system, your scripts, and your automated workflows. If your interaction starts and ends with a "Send" button, you aren't using an intelligent system; you’re just managing a fancy text generator.
+Related
+
+			These 4 tools paired with Ollama gave me a private AI workflow that actually matters
+		
+Privacy-first AI that integrates naturally into tools I already use
+Posts
+3
+By 
+Yash Patel
+Apr 11, 2026
+✕
+ Remove Ads
+
+                        The connectivity gap matters more than you think
+               
+
+            LLMs are only as good as the context you feed them
+    
+After a year of self-hosting
+, I realize that a "naked" LLM (one that doesn't know anything about you) is surprisingly useless. You can have the fastest, smartest model in the world, but if it doesn’t have access to your actual data, it’s like a genius locked in a dark room.
+The real bottleneck isn't how fast the AI thinks; it's how much it knows about your specific world.
+If you have to manually copy-paste your project history or upload the same documents every time you want help, the constant back-and-forth will eventually make you stop using it. The goal should be to stop treating the LLM like a website you visit and start treating it like a background utility, one that lives exactly where your data already is.
+
+            Here’s how I integrated Local AI setup with my workflow
+    
+In my setup, the LLM isn't a destination; it's a layer integrated into everything I do. I use Logseq as 
+my primary knowledge base
+, where the AI helps me resurface old research nodes and link disparate ideas. For document management, Paperless-ngx acts as the digital archive, providing the raw context the model needs to answer questions about my invoices or contracts.
+✕
+ Remove Ads
+
+                    Subscribe to the newsletter for practical local LLM systems
+                
+Unlock practical local LLM workflows — subscribe to the newsletter for clear integration patterns, actionable tool recommendations, and real examples that move models out of chat boxes into your files, scripts, and home automation. The newsletter dives in
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+Even my physical environment is part of this loop. By linking the local stack to Home Assistant, I can use natural language to trigger complex scenes without touching a dashboard. To tie it all together, tools like AgenticSeek allow me to move from simple "chats" to actual workflows, 
+offloading repetitive tasks to autonomous agents
+.
+When your AI is woven into your files, your notes, and your home, the hardware becomes secondary to the system’s utility.
+Related
+
+			I’d do these 5 things differently if I started self-hosting LLMs today
+		
+From trial-and-error to a cleaner local AI workflow.
+Posts
+By 
+Yash Patel
+Apr 21, 2026
+
+            Bottleneck is often the operator, not the machine
+    
+My 
+self-hosting LLM journey
+ taught me one thing: the biggest limitation isn’t the model or the hardware; it’s how the system is designed and used. You can have a powerful setup, but if your workflows are unclear or inconsistent, the results will reflect that.
+A local AI stack
+ needs direction. It needs structure, clean inputs, and some level of maintenance. Without that, even the best tools feel underwhelming. With it, even a modest setup can deliver real value.
+The real upgrade isn’t buying better GPUs or chasing new models. It’s thinking more deliberately about how everything fits together. In the end, the effectiveness of your AI system depends less on what you run and more on how you run it.
+
+    						Logseq
+			
+An open-source and privacy-focused knowledge management app for taking notes and managing information
+See at Logseq
+Expand
+Collapse
+✕
+ Remove Ads
+AI tools
+Artificial Intelligence
+Self-Hosting
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I replaced the expensive Claude Pro subscription with these local models, and my productivity didn’t drop a bit
+		
+
+			Google’s native app for Windows beats Microsoft at its own game
+		
+
+			5 open-source developer tools that are better than their well-funded competitors
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+19
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Ian
+Ian
+Ian
+#TL915367
+Member since 2025-06-11
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+The combo that finally clicked for me was AnythingLLM as the document/knowledge interface (think local NotebookLM) paired with Maindex.io as a persistent memory layer across sessions. AnythingLLM handles the RAG side beautifully while Maindex gives the AI genuine continuity between conversations. Together they solve exactly the context problem you're describing, without any manual copy-pasting. Highly recommend if you haven't tried that stack.
+2026-05-07 13:09:11
+Upvote
+
+                                    4
+                            
+Downvote
+Reply
+Copy
+        
+Jennifer
+Jennifer
+Jennifer
+#FV136699
+Member since 2026-01-27
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I started writing a book and began using Copilot because of the convenience of having something check for continuity and plot holes. It was great initially. Then it started to "forget" and I had to keep uploading all my chapters, character bios and timelines EVERY TIME I wanted to do continuity checks or ask a simple character querry("Do you think character A would actually say this...?"). It became more time consuming just managing the data. I'm also concerned about my data being on a corporate server. I have a secondary pc(i7 5960x/64GB DDR 3200mhz/4070ti 12GB VRAM/20TB assorted storage) and want to create a 7B or 13B VM LLM just for writing this book. I have never done anything like this. Will I be able to set up a system/stack that remembers everything, without the need to re-input data every session? Can I talk to it conversationally? Your article makes me believe i could, but not sure if my pc would be adequate. 
+2026-05-07 07:44:08
+Upvote
+
+                                    4
+                            
+Downvote
+Reply
+
+                        5
+                    
+Copy
+        
+Irving A.
+Irving A.
+Irving A.
+#XS844356
+Member since 2026-05-07
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+It is possible. You can either use Qwen3. 5-27b, quantization q8_0 or bf16. Or also you can run a mixture of experts (MoE) model, by offloading some of the layers to CPU/RAM. I do this for coding, running Qwen 3.6-35b-a3b, on a similar computer as yours. I use llama.cpp but you can use ollama or lmstudio. The important thing is to either use a dense model that fits on your VRAM (or in case of a MoE model, the amount of active layers). 
+2026-05-07 17:15:28
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Gerardo
+Gerardo
+Gerardo
+#JJ749928
+Member since 2026-05-08
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Take a look at MemPalace. It provides basically a structured memory that can be queried by the model whenever it forgot something. I think it will solve this issue for you.
+2026-05-07 20:02:05
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Jennifer
+Jennifer
+Jennifer
+#FV136699
+Member since 2026-01-27
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Irving A.
+ Thanks for your response, but i really didn't understand all of it. I am a hardware tech and build pcs, but never really got into the software side or coding. I have begun reading about Llama/ollama/lmstudio and have gathered that my pc as spec'd, can handle a 13b model well. I want to protect my IP, so running in a VM is the way to go. That pc is also my home server to stream media(Jellyfin) and games(Razer Cortex) to laptop/phone, so I would only engage the VM LLM while nothing else was running, so I could allocate all the pc's resources, vram especially. Reading about gpu pass through, TTS, and containers, token count and speed... its pretty daunting! BUT not insurmountable. This will be a winter project when I can devote some real chunks of time to it. I am trying to determine if securing my book data/IP is worth the effort though. I am a nerd and will probably do it just to see 1, if I can, and 2, because I like a technical challenge.
+2026-05-08 07:12:57
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Jeff
+Jeff
+Jeff
+#FR473748
+Member since 2026-05-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Hello Jennifer,  the true power in running your llm locally for book writing is that you could run a model that is uncensored, this allows you to ask plot questions a safe llm will advise you against using instead of helping you . Run it using a docker container so the model stays isolated, you won't need a virtual machine,  the docker is already the container that holds a virtual world that the ai lives inside and can't escape.  Copilot forgetting is directly related to its context window size. Any model you choose has 2 important things,  the model lives in ram, but your context window shares that ram. Bigger model on small ram equal small context window, and that equals ai forgetting everything,  hallucinations,  drift. You need to invest in a dgx spark or similar, or pay for the upgrades for more context,  this will let you run 128gb ram, 70 billion parameters model locally, but if price is high, then just use the cloud,  rent the compute large enough for a huge model and a huge context window. 2nd thing to learn is rag. You store your book each day when your done, then you send it to rag, your model can then reference important plot details from it each time it answers you, and this helps keep the ai from forgetting everything important in your story even with a small context window, hope this helps, good luck with your book.
+2026-05-09 14:07:09
+Upvote
+Downvote
+Reply
+Copy
+        
+Jennifer
+Jennifer
+Jennifer
+#FV136699
+Member since 2026-01-27
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Jeff
+ Thanks for your advice. I have been reading about RAG pipelines, so I can grasp the concept. Currently I care for my 80yr old mom and cannot work, so I live off my retirement which has strict budgeting constraints. No DGX Spark in my future!!! Trying to maximize performance with what i already have and see if i can duplicate the Copilot experience locally without the constant data uploading plus the security of my IP not being stored on a Microsoft server somewhere. I guess I am looking for a beginner level step by step guide to producing a local LLM with good referencing speed, decent reasoning, TTS capabilities, and a capacity to recall ALL the book data plus conversations about it(context window???) using the hardware i have. Copilot tells me my i7 5960x/64gb ddr4/4070ti/20tb storage system can easily do a 7b or 13b model using RAG, that could produce those results locally. When I ask it how... it becomes somewhat convoluted and out of my immediate range of comprehension! Lol 
+2026-05-09 17:28:24
+Upvote
+Downvote
+Reply
+Copy
+        
+Raccoon
+Raccoon
+Raccoon
+#VM623366
+Member since 2026-05-07
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+100%. Context documents are extremely powerful. I have an entire folder of context documents that my LLMs reference. This is a huge productivity hack. Local and cloud services all can access the folder I use for this. I've made over a dozen context documents using Claude, that work for all the models and it's really powerful 
+2026-05-07 08:27:59
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+Ripul
+Ripul
+Ripul
+#QA825414
+Member since 2024-11-08
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I have been speculating the same. The ChatGPT and Claude have become increasingly efficient in managing context and history. Not sure if investing in local llm is worth any more.
+2026-05-07 02:49:01
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+
+                        6
+                    
+Copy
+        
+TheFrog
+TheFrog
+TheFrog
+#JJ997779
+Member since 2025-08-26
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Local LLMs are worth investing time (and money) in, if you don't trust the companies with your data.
+2026-05-07 04:45:29
+Upvote
+
+                                    7
+                            
+Downvote
+Reply
+Copy
+        
+Test
+Test
+Test
+#RW871376
+Member since 2026-03-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+TheFrog
+ Just set claude or chatgpt or grok or deepseek not to train on your data in the settings 
+2026-05-07 07:02:56
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Alex
+Alex
+Alex
+#BM997773
+Member since 2025-07-17
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Test
+ and you trust the company to honor that? They stole content to train. So I have to assume they will steal mine too.
+2026-05-07 11:25:57
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+Beaver Lake
+Beaver Lake
+Beaver Lake
+#KB172279
+Member since 2026-05-07
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+TheFrog
+ they are worth the effort if you have the data you need and are afraid of who else might get to see it.... 
+So I fully agree. 
+2026-05-07 15:25:06
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Dan
+Dan
+Dan
+#MW289092
+Member since 2026-03-21
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Alex
+ If trade secrets or other classified info are involved, I agree. But if it's creative work, like the book that another commenter is working on, then AI training on it isn't stealing any more than people reading/watching it and being inspired by it.
+2026-05-07 18:52:59
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Marek
+Marek
+Marek
+#XC170424
+Member since 2024-06-26
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+TheFrog
+  even more importantly if you want to learn something about the technology.
+2026-05-09 14:13:39
+Upvote
+Downvote
+Reply
+Copy
+        
+Have
+Have
+Have
+#VA120660
+Member since 2024-07-17
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Great article from xda, finally 
+2026-05-08 01:03:40
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Giulio
+Giulio
+Giulio
+#SW183137
+Member since 2026-05-08
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Interesting. I run a local LLM and Claude/Chatgpt depending on the projects I am working with but for my projects having the LLM without memory is actually key in making them produce better output, as long as I feed it the specific context at the beginning of the project. It takes a few minutes but the result is of much higher quality, especially if you work on a variety of projects. If you use memory it can get easily confused and they end up affecting the quality of output. 
+2026-05-07 23:40:20
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+H.
+H.
+H.
+#IZ076762
+Member since 2025-11-14
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+This article is useless. 
+RAG, Context strategies are well known
+2026-05-07 03:00:39
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+TheFrog
+TheFrog
+TheFrog
+#JJ997779
+Member since 2025-08-26
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+It depends from which knowledge you start. For me it was an interesting read as I have very limited knowledge of local AI usage. It is a good article from where I can start.
+2026-05-07 04:43:53
+Upvote
+
+                                    7
+                            
+Downvote
+Reply
+Copy
+        
+Chris
+Chris
+Chris
+#EN981123
+Member since 2026-05-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+You're getting there, keep going. Try this question: How do we preserve meaning
+without corrupting cognition?
+2026-05-09 00:37:03
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+3 days ago
+
+                                    Your old GPU can still run big LLMs – you just need the right tweaks
+                            
+4 days ago
+
+                                    I set up Claude Code's newest model the way its creator does, and it makes a bigger difference than I imagined
+                            
+4 days ago
+
+                                    Most people ignore their router's USB port, but it's perfect for one surprisingly useful thing
+                            
+4 days ago
+
+                                    I ditched Claude Pro for free tools for a week — and one of them had no right being this good
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+May 5, 2026
+1:24
+
+                            Remembering the Galaxy Note 7 debacle
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+May 5, 2026
+1:19
+
+                            Top PC tech anniversaries from 2006
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+May 5, 2026
+1:35
+
+                            Google's Android Laptop OS: Top 5 things to know
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+May 5, 2026
+1:06
+
+                            Google Pixel Laptop (2026): What we know so far
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+May 5, 2026
+1:19
+
+                            4 reasons Windows 7 was iconic
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

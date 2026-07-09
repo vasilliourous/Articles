@@ -1,0 +1,76 @@
+{
+  "article_title": "Vibe Coding Best Practices: How To Get Consistent Results",
+  "core_thesis": "Vibe coding—using natural language to generate code via AI tools—can be highly productive, but without structured practices it leads to inconsistent, buggy, and insecure code. The article argues that developers must act as supervisors, managing context, planning prompts, reviewing diffs, protecting sensitive code, and standardizing workflows to achieve reliable, maintainable results.",
+  "detailed_summary": "The article presents a comprehensive guide to improving the reliability of AI-assisted coding (vibe coding). It identifies common failure points: stale context, vague prompts, unreviewed output, and lack of repeatable workflows. The solution is a five-stage lifecycle: manage context, plan prompts, review output, protect the codebase, and scale with repeatable workflows. Specific practices include keeping a lean CLAUDE.md config file (under 50 lines), resetting context between features using /clear, /compact, and /rewind commands, using Plan Mode before any code generation, writing scoped prompts with explicit constraints, providing example files for style matching, reviewing every diff for file deletions, API changes, off-limits files, new dependencies, and schema changes, running type checks and tests after every change, declaring off-limits zones in config files, requiring migration plans with rollback before schema changes, and building reusable skills (prompt patterns) for repetitive tasks like testing, security review, and refactoring. The article uses Claude Code as the primary example but notes the practices apply to Cursor, Windsurf, Gemini CLI, Codex, and others.",
+  "entities": [
+    {
+      "name": "Ekene Eze",
+      "type": "person",
+      "role": "Author of the article, provides expert advice on vibe coding best practices."
+    },
+    {
+      "name": "Claude Code",
+      "type": "organization",
+      "role": "AI coding tool by Anthropic, used as the primary example for practices like /clear, /compact, /rewind, and skills."
+    },
+    {
+      "name": "CLAUDE.md",
+      "type": "organization",
+      "role": "Project configuration file for Claude Code that defines context, conventions, and off-limits areas."
+    },
+    {
+      "name": "Cursor",
+      "type": "organization",
+      "role": "AI coding tool that uses .cursor/rules/ for configuration."
+    },
+    {
+      "name": "Windsurf",
+      "type": "organization",
+      "role": "AI coding tool that uses .windsurfrules for configuration."
+    },
+    {
+      "name": "Gemini CLI",
+      "type": "organization",
+      "role": "AI coding tool by Google that uses GEMINI.md and supports /clear, /rewind, /compress."
+    },
+    {
+      "name": "OpenAI Codex",
+      "type": "organization",
+      "role": "AI coding tool that uses AGENTS.md for configuration."
+    }
+  ],
+  "key_data_points": [
+    "Most AI-generated code failures come from stale or overloaded context; keeping CLAUDE.md under 50 lines helps the AI prioritize correctly (🟢 relevant to your programming: lean configs reduce misinterpretation and save tokens).",
+    "Context bleed occurs when working on multiple features in one session; using /clear after each discrete task prevents carryover of incorrect assumptions (🟢 relevant to your Red Teaming: clean context avoids accidental inclusion of exploit code from previous tasks).",
+    "Plan Mode (e.g., /plan in Claude Code) forces the AI to outline files, function signatures, edge cases, and assumptions before writing code, catching mismatches early (🟢 relevant to your programming: saves time by preventing architectural drift).",
+    "Scoped prompts should include goal, constraints, and verification steps; open-ended prompts like 'Add error handling' lead to unintended changes across the project (🟢 relevant to your Red Teaming: constrained prompts reduce risk of AI introducing insecure patterns in sensitive areas).",
+    "Reviewing every diff is critical: watch for file deletions, public API changes, off-limits files, new dependencies, hard-coded API keys, and schema changes (🟢 relevant to your Red Teaming: catching hard-coded keys or altered auth endpoints prevents security gaps).",
+    "Run type checks and tests after every accepted change; the longer the gap, the harder to trace failures (🟢 relevant to your programming: immediate feedback loop keeps code stable).",
+    "Declare off-limits zones in CLAUDE.md (e.g., /src/auth/, /src/payments/) and repeat in prompts; this prevents AI from modifying security-critical code without explicit approval (🟢 relevant to your Red Teaming: protects authentication and payment logic from accidental weakening).",
+    "Require a migration plan with up/down SQL, schema changes, app code updates, and rollback steps before any schema change (🟢 relevant to your homelab/DevOps: ensures database changes are reversible and safe).",
+    "Skills are reusable prompt patterns saved as markdown files (e.g., .claude/skills/write-tests/SKILL.md); they standardize repetitive tasks like testing, security review, and refactoring (🟢 relevant to your programming: reduces variance and speeds up common workflows)."
+  ],
+  "methodology_steps": [
+    "Keep your context config file (CLAUDE.md, GEMINI.md, .cursorrules, etc.) lean: include only build/run commands, folder structure overview, naming/style conventions, off-limits files, and testing framework. Remove outdated bug context, temporary notes, reversed decisions, and long explanations. Aim for under 50 lines.",
+    "Reset context between features: use /clear after each discrete task to wipe the context window. Use /compact when context is nearly full but continuity is needed (skim the summary after). Use /rewind to undo recent wrong turns (not a substitute for /clear).",
+    "Use Plan Mode for every new feature: enter Plan Mode (Shift+Tab twice or /plan), describe the feature, ask the AI to outline files, function signatures, edge cases, and assumptions. Review the plan, ask questions, then exit Plan Mode and instruct implementation.",
+    "Write scoped and constrained prompts: include a goal, list of constraints (e.g., 'Only modify src/routes/tasks.ts'), and a process (propose, wait for approval, implement, run tests, summarize). Avoid open-ended prompts.",
+    "Give the AI an example file: before writing code, ask the AI to read a reference file that demonstrates your desired patterns (e.g., error handling, validation, response format). Instruct it to match that pattern exactly.",
+    "Review every diff before accepting: check for file deletions, public API changes, off-limits files, new dependencies, hard-coded credentials, and schema changes. After implementation, prompt for a risk review summarizing changes, deletions, new deps, and potential breakage.",
+    "Run tests and type checks after every accepted change: execute typecheck, test suite, and lint. If any fail, use /rewind or fix before next prompt.",
+    "Declare off-limits zones in CLAUDE.md: list sensitive directories/files (e.g., /src/auth/**, /src/payments/**) and require a plan with rollback and test coverage before touching them. Repeat the constraint in relevant prompts.",
+    "Require a migration plan before any schema change: prompt the AI to produce up SQL, down SQL, Prisma schema change, application code updates, and rollback steps. Approve the plan before any code is written.",
+    "Build skills for repetitive tasks: after running the same prompt pattern 3-4 times, save it as a SKILL.md in .claude/skills/. Include name, description, and step-by-step instructions. Commit skills to version control. Use /skill-name to invoke."
+  ],
+  "conclusions": [
+    "Vibe coding is not a replacement for developer judgment; the developer remains the architect, reviewer, and decision-maker. The AI is a fast collaborator that amplifies work when given clear briefs, tight scope, and honest feedback. (Supports the user's need for programming help: adopting these practices will make AI-generated code more reliable and maintainable.)",
+    "Stale or overloaded context is the primary cause of AI code failures. Keeping config files lean and resetting context between features prevents context bleed and incorrect assumptions. (Relevant to Red Teaming: clean context avoids accidental inclusion of exploit code from previous tasks.)",
+    "Planning before code generation (Plan Mode) and writing scoped prompts dramatically reduce architectural drift and unintended changes. This saves time and tokens, and produces more reviewable code. (Relevant to the user's ambition: these practices enable faster, safer iteration on complex projects.)",
+    "Reviewing diffs and running tests after every change is non-negotiable. AI can silently rename APIs, delete files, or introduce security vulnerabilities. Rigorous review and immediate testing catch these issues before they reach production. (Relevant to Red Teaming: catching hard-coded keys or altered auth endpoints prevents security gaps.)",
+    "Declaring off-limits zones and requiring migration plans protect sensitive code and data. This is especially critical for authentication, payment processing, and database schemas. (Relevant to homelab/DevOps: ensures database changes are reversible and safe.)",
+    "Building reusable skills (prompt patterns) standardizes repetitive tasks like testing, security review, and refactoring, leading to consistent output across sessions. (Relevant to the user's programming needs: reduces variance and speeds up common workflows.)"
+  ],
+  "personal_relevance_summary": "This article is directly applicable to your programming and Red Teaming needs. As a programmer, the best practices for managing context, planning prompts, reviewing diffs, and running tests will help you produce more reliable AI-generated code and avoid common pitfalls. For Red Teaming, the emphasis on declaring off-limits zones, reviewing diffs for security issues (hard-coded keys, API changes), and requiring migration plans aligns with offensive security principles—ensuring that AI does not inadvertently weaken authentication, access control, or data integrity. The article also provides concrete commands and configurations for tools like Claude Code, which you can adapt to your own workflow. As a student, the structured lifecycle (manage context → plan → review → protect → scale) is a valuable framework for any technical project, not just AI-assisted coding.",
+  "extra_advice": "Consider creating a personal 'skill' for security review of AI-generated code. Write a SKILL.md that checks for common vulnerabilities (injection, hard-coded secrets, missing access control) and run it before merging any AI-generated changes. This will directly support your Red Teaming focus by catching security issues early. Also, experiment with the /rewind command to quickly undo AI mistakes during development—this can save significant debugging time.",
+  "source_url": "https://roadmap.sh/vibe-coding/best-practices"
+}

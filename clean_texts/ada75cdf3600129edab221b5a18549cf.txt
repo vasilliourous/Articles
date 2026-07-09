@@ -1,0 +1,651 @@
+I used Claude and NotebookLM together for research and realized they're solving completely different problems
+Menu
+Sign in now
+Close
+PC & Mobile
+Submenu
+Windows2
+Linux
+Android
+Apple
+Technical
+Submenu
+Tech Explained
+Security
+Software
+Submenu
+Productivity
+Internet
+Creative
+Screen
+Submenu
+Entertainment
+Streaming
+Home
+Submenu
+Smart Home
+Home
+News
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+8
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+Productivity
+Android
+Smart TVs
+Networking
+Windows 11
+Entertainment
+Close
+I used Claude and NotebookLM together for research and realized they're solving completely different problems
+Credit: Abhijith N Arjunan/MakeUseOf
+By 
+Abhijith N Arjunan
+Published
+ May 1, 2026, 10:30 AM EDT
+Abhijith has been writing for the Web since 2011 and has contributed to sites like Beebom and TechWiser. He is curious about making the best of tech accessible to everyone.
+
+He started writing as a hobby after getting a computer at 16. Since then, he has found technical writing a space where he belongs and could make a difference. A curious and self-motivated person, Abhijith's writings focus on productivity, Android, and the Internet. 
+
+He holds a Master's degree in English and a PhD in Humanities. Enthusiastic about language, literature, and culture, he works as an Assistant Professor of English.
+
+If not writing or reading, you can find Abhijith playing Chess or CODM. 
+Sign in to your 
+MakeUseOf
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+8
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Research assistance is one area where I rely on LLM-based AI platforms more frequently. Compared to other uses of generative AI, using AI chatbots to help you structure your research and identify connections in your notes creates less tension, especially in academia. These days, however, I don't use as wide a variety of AI tools for research.
+✕
+ Remove Ads
+Instead, the workflow mainly depends on two solutions: Claude and NotebookLM.
+I'll level with you: I didn't know this optimal combination from the beginning. It actually took me a while to understand that 
+Claude is way better than ChatGPT
+. Even when I started with the duo, using both tools strategically proved a bigger challenge and required more trial and error than I expected. During this process, I also realized that Claude and NotebookLM are made to solve completely different problems in different ways.
+Related
+
+			6 Reasons I Use Claude Instead of ChatGPT
+		
+ChatGPT is great; don't get me wrong. But Claude is so much better.
+Posts
+By 
+Yasir Mahmood
+Mar 30, 2025
+
+                        I thought Claude could do it all
+               
+
+            Why I expected one AI to handle everything
+    
+ After a brief stint with ChatGPT, I found Claude, and it soon became my go-to AI tool for all things research. Compared to ChatGPT and others, 
+Claude demonstrated stronger writing and reasoning skills
+, and I soon considered it a thinking partner for all my research needs. In hindsight, I preferred the way Claude interacted with my messages, especially how it explained everything and followed lengthy threads.
+Further down the line, I 
+used Claude for a variety of tasks
+, including literature reviews, course preparation, lecture content development, and structuring/outlining public-facing articles. Because Claude offered support for documents and other types of drafts I could paste, my workflow was also smooth. However, soon enough, I noticed something about the responses.
+✕
+ Remove Ads
+Everything was alright when I was asking Claude questions about what it already knew. However, when I provided Claude with sources, the responses were not always the most authentic. That is, even when I ask Claude to base the response on the provided source, it still includes a few elements from outside the source. Mixing general knowledge — or any knowledge without citation — isn't something I can afford when it comes to research. This is where the contender came in!
+
+    						Claude
+			
+Developer
+
+									
+										
+											Anthropic PBC
+
+										
+																	
+Price model
+
+									
+										
+											Free, subscription available
+
+										
+																	
+Claude is an advanced artificial intelligence assistant developed by Anthropic. Built on Constitutional AI principles, it excels at complex reasoning, sophisticated writing, and professional-grade coding assistance.
+See at App Store
+See at Google Play Store
+See at Claude
+Expand
+Collapse
+
+                        Then I brought in NotebookLM as my document‑bouncer
+               
+
+            Why I stopped trusting my notes to one AI
+    
+I basically introduced NotebookLM to the workflow for a single important reason: source fidelity. That is, I wanted to ensure that the responses I received were based solely on the sources I provided. You can understand how important this is in research, especially if you are doing it for teaching or academia. For instance, when I prepare study materials, I don't want the AI to quote material from outside the source.
+As you can guess, NotebookLM solves this problem very gracefully. It ensures that the responses are based on the sources I uploaded — and only those sources. The number of sources I can upload to a single NotebookLM notebook was also impressive compared to the limited options on Claude. More importantly, NotebookLM enabled asking different sets of questions. Instead of asking "What do you think about standard languages?", I could ask, "What do the sources say about standard languages?" This step was huge in itself.
+✕
+ Remove Ads
+However, while these responses were source-grounded and authentic, I soon hit a wall. I realized that 
+NotebookLM isn't something you can use like you use Claude or ChatGPT
+. It is not a great conversationalist, so using it for reasoning and brainstorming was less optimal than I thought. The biggest issue I faced was situating responses from NotebookLM in a broader context.
+
+				NotebookLM
+			
+OS
+
+									
+										
+											Android, iOS, Web-based app
+
+										
+																	
+Developer
+
+									
+										
+											Google
+
+										
+																	
+Pricing model
+
+									
+										
+											Free
+
+										
+																	
+NotebookLM is Google’s AI-powered research notebook that reads what you upload and helps you transform it into structured summaries, explanations, and visuals.
+See at NotebookLM
+Expand
+Collapse
+
+                        The “aha” moment: they’re not twins
+               
+
+            Why these two tools never really overlap
+    
+It took me some time, but I realized that Claude and NotebookLM weren't supposed to replace each other. These two aren't options for the same job, but are built for different jobs altogether.
+Claude is close to awesome as a relatable conversationalist and research partner you can count on. It has worked great for me as a writing partner as well, especially when I provide a messy bunch of notes. I confidently use it to explain complex ideas and to rephrase content to improve tone and readability. It's source fidelity that Claude often struggles with.
+NotebookLM, on the other hand, must be seen as an engine that deeply analyzes your sources and provides authentic responses. It knows how to limit responses based solely on the source. You can also benefit from cleaner citations and specific parts of the source as a reference when you use it. You are less likely to encounter 
+LLM hallucinations
+, too. NotebookLM, however, doesn't work great as a conversation partner.
+Related
+
+			6 smart prompts that make NotebookLM way more useful
+		
+You’re missing out on NotebookLM’s full potential.
+Posts
+By 
+Mahnoor Faisal
+Feb 4, 2026
+✕
+ Remove Ads
+This understanding led me to create 
+a two-AI research pipeline
+ rather than relying on a single AI.
+
+                        My personal two‑AI research pipeline
+               
+
+            How I split work between Claude and NotebookLM
+    
+Based on insights from using both NotebookLM and Claude, I built a two-AI pipeline that works well for research. Here's how it works:
+
+                                        I first upload all the relevant sources to NotebookLM, which processes everything. After this, I ask NotebookLM for key points, summaries, and specific questions based on the project. For instance, I may ask, "Where does the author say this?" Note that I don't ask NotebookLM to answer direct questions or to prepare fully-fledged documents.
+                        
+
+                                        In the second step, I move to Claude and provide the context I got from NotebookLM. Here, Claude's task is to convert these rather messy, incomplete sections into coherent materials I can use for specific purposes. For instance, I may ask Claude to create a study note for students or an outline for a research paper based on what I provided.
+                        
+
+                                        This third step is optional but highly recommended if you are worried about authenticity. Once I prepare something using Claude, I take the response and go back to NotebookLM, where I ask it to verify the claims based on the source. It has been a great way to avoid potential hallucinations or overstated claims.
+                        
+This pipeline has been an effective way to get the best out of both Claude and NotebookLM while avoiding potential pitfalls each tool may pose when used individually.
+
+            When using only one of them bites you
+    
+You don't need me to tell you that Claude and NotebookLM are great tools in their own right. However, from a research perspective on accuracy and authenticity, using only one of them can cause more problems than you think. For instance, with Claude alone, you get well-written drafts and an interactive experience, but you risk compromising source fidelity. Similarly, NotebookLM does a great job of sticking its responses to your sources, but the drafts it creates aren't so great. Keeping these points in mind, a pipeline that uses both tools makes a lot of sense!
+✕
+ Remove Ads
+Productivity
+NotebookLM
+Artificial Intelligence
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+
+                                                    Technology Explained
+                                            
+
+                                                    PC & Mobile
+                                            
+
+			3 tech companies that make your gadgets more expensive
+		
+2 hours ago
+
+			Your SSD does not wipe your deleted files — this is what TRIM actually does
+		
+5 hours ago
+
+			Wireless charging is finally worth using, but only if you know what to look for
+		
+6 hours ago
+See More
+
+			The Lenovo Yoga Pro 7i is a tough sell, but the display is insane
+		
+3 hours ago
+
+			I ran a Windows network reset and fixed problems I'd blamed on my router for months
+		
+7 hours ago
+
+			I switched to Gentoo Linux and now I get why it's worth the headache
+		
+11 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			ChatGPT refused to help me vibe code my project and it led me somewhere better
+		
+
+			I switched to Hyprland and now I get why Linux users are obsessed with it
+		
+
+			5 useful things I do with a local LLM on my phone
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+8
+Sign in to your 
+MakeUseOf
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Kumush
+Kumush
+Kumush
+#UZ612863
+Member since 2026-05-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+It's very good👍🏻 
+2026-05-03 01:58:04
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+John
+John
+John
+#HC929174
+Member since 2026-05-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Have you heard of Feynman? It's an agentic research tool. Since it's meant for academic research, all it's sources are based on actual papers. Also you can guide it to touch on specific sources. Once you get Feynman setup, you can build a custom Claude Skill that pipes the research outputs directly into notebooklm. 
+2026-05-03 04:06:21
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+
+                        2
+                    
+Copy
+        
+Abhijith
+Abhijith
+Abhijith
+#LI551915
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Hi, thank you for your suggestion. I will try Feynman and see how it goes.
+2026-05-03 10:03:17
+Upvote
+Downvote
+Reply
+Copy
+        
+Do
+Do
+Do
+#OS290031
+Member since 2026-05-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Hi,
+Do you have a workflow or tutorial on how to use Feynman for academic research?
+2026-05-04 16:06:51
+Upvote
+Downvote
+Reply
+Copy
+        
+Jack
+Jack
+Jack
+#AD182808
+Member since 2023-10-18
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+(See my note below...)
+2026-05-01 20:06:07
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+MD. ABDUL
+MD. ABDUL
+MD. ABDUL
+#WV638367
+Member since 2026-05-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+You could use claude skills to do all fect_checking, ultrathink etc to do everything withen claude effective, efficiently, ethically and safely, just as a thought. 
+2026-05-01 23:07:59
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Jack
+Jack
+Jack
+#AD182808
+Member since 2023-10-18
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Pretty good ideas! I'll be trying this out on my next project. 
+2026-05-01 20:04:58
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Oluyomi
+Oluyomi
+Oluyomi
+#GX194432
+Member since 2026-05-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Thank you, for sharing this.
+2026-05-03 03:23:55
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 29, 2026
+
+                                    I started using Claude instead of these 5 apps — and I'm not going back
+                            
+Apr 28, 2026
+
+                                    Someone figured out how to run Windows 9x inside Linux and it's surprisingly useful
+                            
+Apr 28, 2026
+
+                                    One-third of new websites are now AI-generated — here's how to spot them
+                            
+Apr 27, 2026
+
+                                    OpenAI wants to take on Apple and Samsung, but it's got a long road ahead
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+MakeUseOf
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:06
+Skip Ad
+5

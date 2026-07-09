@@ -1,0 +1,416 @@
+I spent 10 years in Evernote until this free note-taking app pulled me away
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+Networking
+Storage and NAS
+Components
+Peripherals
+Operating Systems
+Submenu
+Linux
+Windows
+Software
+Submenu
+Programming
+Applications
+Mobile
+Submenu
+Android
+iPhone
+Carriers
+New Tech
+Submenu
+Hobbies
+Smart Home
+Homelab
+Single-Board Computers (SBCs)
+Cutting Edge
+Streaming
+Submenu
+Streaming Content
+Streaming Platforms
+Audio/Video
+Automotive
+Reviews
+Buying Guides
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Storage
+Streaming
+Linux
+Open Source
+Microsoft Excel
+Android
+Windows
+Close
+I spent 10 years in Evernote until this free note-taking app pulled me away
+Credit: Justin Duino / How-To Geek
+By 
+Nate Pangaro
+Published
+ May 1, 2026, 10:15 AM EDT
+Nathaniel Pangaro is a tech enthusiast who dives deep into Apple’s world, from Macs and iPads to iPhones, Apple Watches, and every gadget in between. He loves turning tricky tech features into guides and reviews that are actually fun to read—and easy to use.
+
+At 
+AppleInsider
+, he broke down the latest Apple releases with hands-on testing, clear explanations, and visuals that make readers feel like they’re right there with him. He also keeps SEO in mind so people can actually find his work online.
+
+He’s also written for The Student Loan Help Group, turning tech and finance topics into simple, helpful, and engaging content. Nathaniel also takes photos and creates rendered visuals to showcase devices and highlight features.
+
+When he’s not writing, Pangaro enjoys listening to music, working out, baking, and spending time with his pets. These hobbies help him recharge and bring a fresh, creative perspective to his work, keeping his writing energetic and relatable.
+
+Pangaro's goal is simple: help readers get the most from their Apple devices and actually enjoy doing it.
+Sign in to your 
+How-To Geek
+ account
+Add Us On
+Summary
+Generate a summary of this story
+Jump links
+Jump Links
+Why I finally quit Evernote
+Notion gave me everything I needed for free
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																						
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+I’ve been using Evernote since 2016, when I was a junior in high school. It’s been a reliable place to store notes, ideas, and journal entries. It handled most of what I needed, but it was never a perfect fit.
+While I had used it on and off, I recently decided to start using it more seriously. However, after all these years, a few things made me want to explore other note-taking apps that better matched my current needs. I eventually landed on Notion, and it fills the gaps I had with Evernote.
+✕
+ Remove Ads
+
+                        Why I finally quit Evernote
+               
+
+            The reasons behind my departure from the Evernote user base
+    
+After years of 
+using Evernote
+, it was time to move on. While it wasn’t an easy decision, several factors ultimately led me to make the switch.
+
+            Restricted to one notebook
+    
+I don’t want to pay for 
+a note-taking app
+, especially when there’s already one built into my device. Still, I originally 
+switched to Evernote
+ because it offered better organization than the default Notes app.
+Credit: Nathaniel Pangaro / How-To Geek | Samsung
+ However, 
+the free plan isn’t perfect
+. It comes with several limitations that seemed manageable at first, but became more frustrating the more I used the app.
+One of the biggest issues is the restriction on notebooks. On the free plan, you’re limited to just one notebook, which quickly becomes a problem as your notes grow.
+Credit: Nathaniel Pangaro / How-To Geek | Samsung
+ I prefer to keep different notebooks for different topics, similar to how I would with physical notebooks. While I started with just one notebook in Evernote for creative writing, my interests have expanded, and I now want separate notebooks for each.
+✕
+ Remove Ads
+I’ve been able to organize my notes using titles and a specific structure to manage multiple topics within a single notebook, but that only goes so far. Having separate notebooks would make things much simpler.
+
+            Maxed out at 50 notes
+    
+On top of that, the number of notes you can create is also limited. With the free plan, you can only create up to 50 notes before hitting the cap.
+Credit: Nathaniel Pangaro / How-To Geek | Samsung
+ When I first started writing, I only created one note a week as a summary. But as my interests grew and I wanted to write more, that limit quickly became unrealistic.
+
+            Ads to upgrade are everywhere
+    
+The final straw, however, was the constant push to upgrade. Ads seemed to appear everywhere—whether I was trying to create a new notebook or simply typing, with one sitting above the keyboard.
+Credit: Nathaniel Pangaro / How-To Geek | Samsung
+ At every turn, there was another prompt to upgrade. It disrupted my train of thought and made it harder to stay focused while writing.
+
+                        Notion gave me everything I needed for free
+               
+
+            It gave me back the features that I missed with Evernote
+    
+When looking for a new app for notes and journaling, I focused on what wasn’t working in Evernote and what I could get for free elsewhere. I knew I wouldn’t get the most feature-rich option, but what I needed wasn’t too much to ask for.
+✕
+ Remove Ads
+Credit: Patrick Campanale / How-To Geek
+ After browsing, downloading, and testing different apps, I 
+settled on Notion
+ as my new writing app and moved everything I had in Evernote there. Luckily, transferring my existing notes was easy, though it had to be done through Notion’s desktop site rather than on mobile.
+
+    						Notion
+			
+OS
+
+									
+										
+											Windows, macOS, iOS, Android, and web browsers
+
+										
+																	
+Supported Desktop Browsers
+
+									
+										
+											Web Clipper Extension for Chrome, Firefox, Safari
+
+										
+																	
+Download for free
+Expand
+Collapse
+
+            No limit on how many notes you can create
+    
+One of the main reasons I switched to Notion was the lack of a cap on the number of notes I could create on the free plan, unlike with Evernote. This allowed me to write daily journal entries instead of just weekly ones, without worrying about hitting a limit.
+
+            Template marketplace within the app
+    
+This is especially useful when browsing the wide range of templates created by others, with some free and others priced. These templates cover many different use cases and topics, and unlike the Evernote app on my device, I can browse a marketplace of them.
+Credit: Nathaniel Pangaro / How-To Geek | Samsung
+ For example, my notes used to look the same no matter the purpose—just a title, a block of text, and a few scattered photos. With templates, I can use one specifically for fitness entries and another for journaling about emotions.
+✕
+ Remove Ads
+Furthermore, some of these emotion-focused templates include prompts that help guide reflection and provide a starting point during moments of writer’s block. They’ve been especially helpful when I know how I’m feeling but struggle to put it into words.
+Credit: Nathaniel Pangaro / How-To Geek | Samsung
+ Writing about different topics without worrying about limits has been a major benefit. Just as important, you can separate those topics so they’re not all in the same space. You can organize them, sort them, and easily collapse or expand sections as needed.
+This makes it much easier to reference past entries without scrolling through multiple notes in the same notebook. I know exactly which section to check, and the search feature makes it even easier by letting me find specific content within my notes.
+
+            More aesthetic customization options
+    
+Another feature I appreciate is the added level of customization beyond just names and content. Not only can I label each note and section, but I can also add an icon and a cover image—something I could do in Evernote, but it looks better in Notion.
+Credit: Nathaniel Pangaro / How-To Geek | Samsung
+✕
+ Remove Ads
+ These additions give each note more personality and provide extra context if the title doesn’t fully explain it. They also make the app feel more visually engaging, rather than just a screen filled with text.
+
+            Access your notes from more than one device
+    
+To top it all off, these features can be used across multiple devices. Unlike Evernote, which limits access on its free plan, Notion lets you use multiple devices, even on its free tier.
+Credit: Nathaniel Pangaro / How-To Geek | Samsung
+ This is especially useful for features that may not be available on the mobile version but are accessible on the desktop version. It also allows me to switch between devices easily—for example, writing on my phone while I’m out and continuing on my laptop when I get home.
+
+            A new note-taking journey begins
+    
+Evernote used to be a great free option, but it has become so limited that it’s no longer practical for daily use. With 
+Notion
+, I’ve been able to enjoy journaling again without worrying about limits or constant upgrade prompts.
+It was time to say goodbye to Evernote and move on, and by 
+switching to Notion
+, I am not only happy with my decision but also not looking back anytime soon.
+✕
+ Remove Ads
+Android
+Apple iPhone
+Apps & Web Apps
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. 
+Read More
+.
+Close
+✕
+ Remove Ads
+
+                                                    Desktop
+                                            
+
+                                                    Mobile
+                                            
+
+			Why Linux is my IDE
+		
+1 hour ago
+
+			Windows Fast Start-up is still causing problems in 2026, and everyone should disable it
+		
+4 hours ago
+
+			KDE Dolphin does file management better than GNOME—here's why
+		
+5 hours ago
+See More
+
+			8 Google Messages features I wish someone had told me about sooner
+		
+1 hour ago
+
+			5 hidden Motorola gestures that make other Android phones feel basic
+		
+3 hours ago
+
+			This open-source app suite replaced 6 closed-source apps and tools on my Android phone
+		
+5 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			Stop using Excel like a spreadsheet—build an app instead
+		
+
+			Forget Roku and Fire TV, this is a better way to stream
+		
+
+			Ready to graduate from Linux Mint? These 3 distros are perfect for intermediate users
+		
+
+                                                
+                
+                                                    
+                                    Thread
+                                                    
+Sign in to your 
+How-To Geek
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Be the first to post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+This space is open for discussion.
+Be the first to share your thoughts.
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 29, 2026
+
+                                    Micro USB never actually died—here's the economics of why it's still everywhere
+                            
+Apr 29, 2026
+
+                                    Gemini just made it much easier to turn ideas into real files
+                            
+Apr 29, 2026
+
+                                    Google quietly fixed AirPods compatibility with Android, and this app is all you need
+                            
+Apr 29, 2026
+
+                                    Notepad++ is finally available on the Mac, 23 years later
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+How-To Geek
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

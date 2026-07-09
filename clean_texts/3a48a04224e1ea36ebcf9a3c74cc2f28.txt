@@ -1,0 +1,573 @@
+These two critical Mac security features are off by default - how to turn them on and why you should | ZDNET
+X
+Trending
+I wore the world's first HDR10 smart glasses
+TCL's new E Ink tablet beats the Remarkable and Kindle
+Anker's new charger is one of the most unique I've ever seen
+Best laptop cooling pads
+Best flip phones
+Roku TV vs Fire Stick
+Galaxy Buds 3 Pro vs Apple AirPods Pro 3
+M5 MacBook Pro vs M4 MacBook Air
+Linux Mint vs Zorin OS
+4 quick steps to make your Android phone run like new again
+How much RAM does your Linux PC need
+How to clear your Android phone cache
+How to disable ACR on your TV
+How to turn on Private DNS mode on Android
+ZDNET Recommends
+Tech
+Gaming
+Headphones
+Laptops
+Mobile Accessories
+Networking
+PCs
+Printers
+Smartphones
+Smart Watches
+Speakers
+Streaming Devices
+Streaming Services
+Tablets
+TVs
+Wearables
+Kitchen & Household
+Office Furniture
+Office Hardware & Appliances
+Smart Home
+Smart Lighting
+Yard & Outdoors
+Innovation
+Artificial Intelligence
+AR + VR
+Cloud
+Digital Transformation
+Energy
+Robotics
+Sustainability
+Transportation
+Work Life
+Accelerate your tech game 
+Paid Content
+How the New Space Race Will Drive Innovation
+How the metaverse will change the future of work and society
+Managing the Multicloud
+The Future of the Internet
+The New Rules of Work
+The Tech Trends to Watch in 2023
+Business
+See all Business
+Amazon
+Apple
+Developer
+E-Commerce
+Edge Computing
+Enterprise Software
+Executive
+Google
+Microsoft
+Professional Development
+Social Media
+SMB
+Windows
+How AI is transforming organizations everywhere
+The intersection of generative AI and engineering
+Software development: Emerging trends and changing roles
+Security
+See all Security
+Cyber Threats
+Password Manager
+Ransomware
+VPN
+Cybersecurity: Let's get tactical
+Securing the Cloud
+Advice
+Deals
+How-to
+Product Comparisons
+Product Spotlights
+Reviews
+Buying Guides
+See all Buying Guides
+Best Samsung phones
+Best Android phones
+Best smart rings
+Best blood pressure watches
+Best headphones for sleeping
+Best robot vacuum mops
+Best web hosting services
+Best travel VPNs
+Best VPNs
+Best AI image generators
+Best AI chatbots
+Best 75-inch TVs
+Best smartphones
+Best iPhones
+Best MagSafe battery packs
+Best digital notebooks
+Best TV antennas
+Best TVs
+Best laptops
+Best tablets
+Best smartwatches
+Best headphones
+Best live TV streaming services
+tomorrow
+belongs to those who embrace it
+today
+ZDNET France
+ZDNET Germany
+ZDNET Korea
+ZDNET Japan
+Go
+See all Topics
+Finance
+Education
+Health
+Special Features
+ZDNET In Depth
+ZDNET Recommends
+Newsletters
+Videos
+Editorial Guidelines
+Trending
+I wore the world's first HDR10 smart glasses
+TCL's new E Ink tablet beats the Remarkable and Kindle
+Anker's new charger is one of the most unique I've ever seen
+Best laptop cooling pads
+Best flip phones
+Roku TV vs Fire Stick
+Galaxy Buds 3 Pro vs Apple AirPods Pro 3
+M5 MacBook Pro vs M4 MacBook Air
+Linux Mint vs Zorin OS
+4 quick steps to make your Android phone run like new again
+How much RAM does your Linux PC need
+How to clear your Android phone cache
+How to disable ACR on your TV
+How to turn on Private DNS mode on Android
+ZDNET Recommends
+Tech
+Gaming
+Headphones
+Laptops
+Mobile Accessories
+Networking
+PCs
+Printers
+Smartphones
+Smart Watches
+Speakers
+Streaming Devices
+Streaming Services
+Tablets
+TVs
+Wearables
+Kitchen & Household
+Office Furniture
+Office Hardware & Appliances
+Smart Home
+Smart Lighting
+Yard & Outdoors
+Innovation
+Artificial Intelligence
+AR + VR
+Cloud
+Digital Transformation
+Energy
+Robotics
+Sustainability
+Transportation
+Work Life
+Accelerate your tech game 
+Paid Content
+How the New Space Race Will Drive Innovation
+How the metaverse will change the future of work and society
+Managing the Multicloud
+The Future of the Internet
+The New Rules of Work
+The Tech Trends to Watch in 2023
+Business
+See all Business
+Amazon
+Apple
+Developer
+E-Commerce
+Edge Computing
+Enterprise Software
+Executive
+Google
+Microsoft
+Professional Development
+Social Media
+SMB
+Windows
+How AI is transforming organizations everywhere
+The intersection of generative AI and engineering
+Software development: Emerging trends and changing roles
+Security
+See all Security
+Cyber Threats
+Password Manager
+Ransomware
+VPN
+Cybersecurity: Let's get tactical
+Securing the Cloud
+Advice
+Deals
+How-to
+Product Comparisons
+Product Spotlights
+Reviews
+Buying Guides
+See all Buying Guides
+Best Samsung phones
+Best Android phones
+Best smart rings
+Best blood pressure watches
+Best headphones for sleeping
+Best robot vacuum mops
+Best web hosting services
+Best travel VPNs
+Best VPNs
+Best AI image generators
+Best AI chatbots
+Best 75-inch TVs
+Best smartphones
+Best iPhones
+Best MagSafe battery packs
+Best digital notebooks
+Best TV antennas
+Best TVs
+Best laptops
+Best tablets
+Best smartwatches
+Best headphones
+Best live TV streaming services
+More
+See all Topics
+Finance
+Education
+Health
+Special Features
+ZDNET In Depth
+ZDNET Recommends
+Newsletters
+Videos
+Editorial Guidelines
+Tech
+
+    Why you can trust ZDNET
+  
+:
+ZDNET independently tests and researches products to bring you our best recommendations and advice. When you buy through our links, we may earn a commission.
+Our process
+'ZDNET Recommends': What exactly does it mean?
+ZDNET's recommendations are based on many hours of testing, research, and comparison shopping. We gather data from the best available sources, including vendor and retailer listings as well as other relevant and independent reviews sites. And we pore over customer reviews to find out what matters to real people who already own and use the products and services we’re assessing.
+When you click through from our site to a retailer and buy a product or service, we may earn affiliate commissions. This helps support our work, but does not affect what we cover or how, and it does not affect the price you pay. Neither ZDNET nor the author are compensated for these independent reviews.  Indeed, we follow strict guidelines that ensure our editorial content is never influenced by advertisers.
+ZDNET's editorial team writes on behalf of you, our reader. Our goal is to deliver the most accurate information and the most knowledgeable advice possible in order to help you make smarter buying decisions on tech gear and a wide array of products and services. Our editors  thoroughly review and fact-check every article to ensure that our content meets the highest standards. If we have made an error or published misleading information, we will correct or clarify the article. If you see inaccuracies in our content, please report the mistake via 
+this form
+.
+Close
+
+      Home
+    
+
+      Tech
+    
+
+      Services & Software
+    
+
+      Operating Systems
+    
+
+      Mac OS
+    
+
+    These two critical Mac security features are off by default - how to turn them on and why you should
+    
+
+    You're leaving your Mac exposed if you haven't enabled these two security features.
+  
+Written by
+
+            Jack Wallen, 
+Contributing Writer
+Contributing Writer
+April 29, 2026 at 7:47 a.m. PT
+Table of Contents
+  What are Firewall and Stealth Mode on Mac?  
+  How to enable Firewall on your Mac
+1. Open System Settings
+2. Open Network
+3. Navigate to Firewall
+4. Access Firewall
+5. Enable Firewall
+ How to enable Stealth Mode on your Mac
+Table of Contents
+  What are Firewall and Stealth Mode on Mac?  
+  How to enable Firewall on your Mac
+1. Open System Settings
+2. Open Network
+3. Navigate to Firewall
+4. Access Firewall
+5. Enable Firewall
+ How to enable Stealth Mode on your Mac
+Kerry Wan/ZDNET
+Follow ZDNET: 
+Add us as a preferred source
+ on Google.
+  ZDNET key takeaways  
+A Firewall should be considered a necessity.
+Macs typically ship with Firewall disabled.
+Macs also have Stealth Mode for even more security.
+Because I've used Linux for so long, it was easy to take security for granted. But even with that more secure operating system, there are things I do to heighten protection.
+When I started using 
+MacOS
+ for things like video editing, I did the same thing and assumed it was safe from would-be intruders. And then I eventually came to the conclusion that if a computer is connected to a network, it's vulnerable, regardless of the OS. 
+Also: 
+6 MacOS settings I immediately change on every new Mac - and why
+Upon arriving at that conclusion, I realized I needed to get serious about security on MacOS. That led me to two things: Firewall and Stealth Mode.  
+  What are Firewall and Stealth Mode on Mac?  
+Most have heard of (or even used) a Firewall, which is not the same as 
+antivirus software
+.  
+For those who have not, it's a very simple concept to understand. A Firewall monitors incoming and outgoing network traffic and either allows or denies it, based on a set of preconfigured rules. Generally speaking, those predefined rules are good enough for the average user (although some might need to add rules to allow traffic such as from SSH connections).  
+In other words, when a Firewall is enabled, your system is much more secure than when it's disabled. 
+Also: 
+MacBook Pro vs. MacBook Air: We tested both models, and here's which one to buy in 2026
+Stealth Mode is related to Firewall in that it ensures that your Mac doesn't respond to either "ping" requests or connection attempts. Ping requests and connection attempts are often used by hackers to see what's what on a network, which can be a first step in an attempted break-in.  
+As you've probably assumed by now, it would behoove you to have both Firewall and Stealth Mode enabled.  
+  How to enable Firewall on your Mac
+For whatever reason, most Macs ship with Firewall disabled. That has been the case with every MacBook and iMac I've owned. Here's how you enable it.  
+1. Open System Settings
+The first thing to do is open System Settings, which can be done by clicking the Apple icon at the left edge of the Menu Bar (top bar).
+Also: 
+How to decide between Linux and MacOS - if you're ready to ditch Windows
+2. Open Network
+From the System Settings app, click Network in the left sidebar.
+If it's grayed out, it's not enabled.
+Jack Wallen/ZDNET
+3. Navigate to Firewall
+Firewall is located in the Network section, which is accessed from the left sidebar.
+Also: 
+The case for buying a MacBook Neo right now - especially for students
+4. Access Firewall
+In the Network section, you'll see Firewall listed under the connection type you use (such as Wi-Fi). Although mine is listed as Active, yours probably says "Inactive." Click Firewall.
+If you're connected via ethernet, it will be listed instead of Wi-Fi.
+Jack Wallen/ZDNET
+5. Enable Firewall
+Click the On/Off slider for Firewall until it's in the On position. Once you've done that, Firewall is enabled, and Options is available.
+You can't access options until Firewall is enabled.
+Jack Wallen/ZDNET
+ How to enable Stealth Mode on your Mac
+Once you have Firewall turned on, click Options, and you'll see "Enable stealth mode" at the bottom. Click the associated On/Off slider, and you're done.  
+All you have to do is click the slider.
+Jack Wallen/ZDNET
+Also: 
+9 essential Mac apps everyone should be using in 2026 - and why I vouch for them
+Congrats, your Mac should now be a bit more secure.  
+Featured
+
+
+            Google Maps vs. Waze: I've driven with the two best navigation apps, and one is much better
+          
+
+
+            These 5 critical Windows Defender settings are off by default - turn them on ASAP
+          
+
+
+            I've tested robot mowers for years - here's my expert advice for every yard type
+          
+
+
+            This critical Linux vulnerability is putting millions of systems at risk - how to protect yours
+          
+
+
+              Google Maps vs. Waze: I've driven with the two best navigation apps, and one is much better
+            
+
+
+              These 5 critical Windows Defender settings are off by default - turn them on ASAP
+            
+
+
+              I've tested robot mowers for years - here's my expert advice for every yard type
+            
+
+
+              This critical Linux vulnerability is putting millions of systems at risk - how to protect yours
+            
+Editorial standards
+Show Comments
+
+          Log In to Comment
+        
+Community Guidelines
+Click to unmute
+Every UAP video released by the U.S. Department of War in 14 minutes
+Every UAP video released by the U.S. Department of War in 14 minutes
+Video Player is loading.
+Play Video
+Pause
+Skip Backward
+Skip Forward
+Next playlist item
+Unmute
+Current Time 
+0:25
+/
+Duration 
+14:32
+Loaded
+: 
+9.60%
+00:25
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+14:07
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions settings
+, opens captions settings dialog
+captions off
+, selected
+Share
+Audio Track
+en (Main)
+, selected
+Fullscreen
+This is a modal window.
+Beginning of dialog window. Escape will cancel and close the window.
+Text
+Color
+White
+Black
+Red
+Green
+Blue
+Yellow
+Magenta
+Cyan
+Opacity
+Opaque
+Semi-Transparent
+Text Background
+Color
+Black
+White
+Red
+Green
+Blue
+Yellow
+Magenta
+Cyan
+Opacity
+Opaque
+Semi-Transparent
+Transparent
+Caption Area Background
+Color
+Black
+White
+Red
+Green
+Blue
+Yellow
+Magenta
+Cyan
+Opacity
+Transparent
+Semi-Transparent
+Opaque
+Font Size
+50%
+75%
+100%
+125%
+150%
+175%
+200%
+300%
+400%
+Text Edge Style
+None
+Raised
+Depressed
+Uniform
+Drop shadow
+Font Family
+Proportional Sans-Serif
+Monospace Sans-Serif
+Proportional Serif
+Monospace Serif
+Casual
+Script
+Small Caps
+Reset
+Done
+Close Modal Dialog
+End of dialog window.
+Close Modal Dialog
+This is a modal window. This modal can be closed by pressing the Escape key or activating the close button.
+This is a modal window. This modal can be closed by pressing the Escape key or activating the close button.
+Share: Every UAP video released by the U.S. Department of War in 14 minutes
+Facebook
+Twitter
+Direct Link
+Embed Code
+Close Modal Dialog
+Related
+
+      Privacy in the AI era is possible, says Proton's CEO, but one thing keeps him up at night
+    
+
+      These 5 critical Windows Defender settings are off by default - turn them on ASAP
+    
+
+      6 MacOS settings I immediately change on every new Mac - and why
+    
+ZDNET
+we equip you to harness the power of disruptive innovation, at work and at home.
+Topics
+Galleries
+Videos
+Do Not Sell or Share My Personal Information
+about ZDNET
+Meet The Team
+Sitemap
+Reprint Policy
+Join
+ |
+    
+Log In
+Newsletters
+Licensing
+Accessibility
+
+  © 2026 ZDNET, A Ziff Davis company. All rights reserved.
+
+Privacy Policy
+ |
+   |
+  
+Your Privacy Rights
+ |
+  
+Advertise
+ |
+  
+Terms of Use

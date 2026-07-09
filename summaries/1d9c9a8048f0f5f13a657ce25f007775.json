@@ -1,0 +1,71 @@
+{
+  "article_title": "Why your homelab needs a domain",
+  "core_thesis": "Using a domain name for your homelab simplifies access to self-hosted services by replacing hard-to-remember IP addresses and port numbers with easy-to-remember domain names, and enables secure remote access via SSL certificates and dynamic DNS, making homelab management more efficient and scalable.",
+  "detailed_summary": "The article argues that homelab enthusiasts should adopt a domain name for their local network to replace the cumbersome practice of memorizing IP addresses and port numbers for each service. The author shares personal experience of managing multiple services like Nginx Proxy Manager and Scrypted, noting that a domain allows DNS resolution to map friendly names like 'npm.mydomain.com' to internal IPs, simplifying access and making it resilient to IP changes. The article covers three main approaches: using a public domain with dynamic DNS (DDNS) for external access, using internal DNS (e.g., Pi-Hole) for local-only resolution, and leveraging reverse proxies like Nginx Proxy Manager to handle SSL certificates and routing. It emphasizes that even for local-only setups, a domain improves organization and security, and recommends purchasing a real domain (around $10/year) rather than using fake domains to avoid conflicts. The article also mentions Cloudflare as a preferred DNS provider and provides a Docker container for DDNS updates.",
+  "entities": [
+    {
+      "name": "Patrick Campanale",
+      "type": "person",
+      "role": "Author of the article, homelab enthusiast"
+    },
+    {
+      "name": "Nginx Proxy Manager",
+      "type": "software",
+      "role": "Reverse proxy tool for managing SSL and routing"
+    },
+    {
+      "name": "Cloudflare",
+      "type": "organization",
+      "role": "DNS provider and DDNS service"
+    },
+    {
+      "name": "Pi-Hole",
+      "type": "software",
+      "role": "Local DNS server for internal resolution"
+    },
+    {
+      "name": "Dynamic DNS (DDNS)",
+      "type": "technology",
+      "role": "Service that updates DNS records when IP changes"
+    },
+    {
+      "name": "Scrypted",
+      "type": "software",
+      "role": "Example self-hosted service mentioned"
+    },
+    {
+      "name": "Calibre",
+      "type": "software",
+      "role": "Example self-hosted service mentioned"
+    },
+    {
+      "name": "AudioBookshelf",
+      "type": "software",
+      "role": "Example self-hosted service mentioned"
+    }
+  ],
+  "key_data_points": [
+    "Using a domain eliminates the need to remember IP:port combinations like 192.168.0.6:7818; instead, you use a friendly name like npm.mydomain.com (🟢 relevant to your homelab: simplifies access to many services).",
+    "Dynamic DNS (DDNS) automatically updates your domain's IP address when your external IP changes, ensuring continuous remote access (🟢 relevant to your homelab: critical for self-hosting with dynamic IPs).",
+    "You can combine Pi-Hole (local DNS) with Nginx Proxy Manager to keep services local-only while still using domain names, enhancing security (🟢 relevant to your homelab: secure internal access without exposing services).",
+    "A real domain costs about $10/year; using a fake domain like 'service.local' can cause conflicts if someone else registers it (🟢 relevant to your homelab: cheap investment for reliability).",
+    "Cloudflare offers DDNS support via a Docker container (CloudflareDDNS) that checks your external IP and updates DNS records automatically (🟢 relevant to your homelab: easy setup for dynamic IPs)."
+  ],
+  "methodology_steps": [
+    "Purchase a domain from a registrar like Cloudflare, Namecheap, or GoDaddy (recommended: Cloudflare for integrated DDNS).",
+    "Set up a reverse proxy like Nginx Proxy Manager on your homelab server to handle SSL certificates and route domain requests to internal services.",
+    "For external access: configure DDNS using a tool like CloudflareDDNS Docker container to automatically update your domain's A record when your public IP changes.",
+    "For local-only access: install Pi-Hole as your local DNS server and configure it to resolve your domain to internal IPs, then use Nginx Proxy Manager to route traffic without exposing services externally.",
+    "Optionally, use Cloudflare Tunnels as an alternative to DDNS for secure external access without opening ports."
+  ],
+  "conclusions": [
+    "Adopting a domain for your homelab significantly reduces cognitive load by replacing IP:port combinations with memorable names, making management of many services practical.",
+    "A domain enables proper SSL certificate setup via reverse proxies, ensuring encrypted HTTPS access both locally and remotely, which is essential for security.",
+    "DDNS is a simple solution for homes with dynamic public IPs, and tools like CloudflareDDNS make it easy to automate IP updates.",
+    "For security-conscious users, internal DNS with Pi-Hole and Nginx Proxy Manager provides the benefits of domain names without exposing services to the internet.",
+    "Purchasing a real domain is recommended over using fake domains to avoid conflicts and ensure reliable resolution."
+  ],
+  "personal_relevance_summary": "This article is directly relevant to your homelab interests as it provides a practical guide to replacing IP-based access with domain names, a fundamental step for scaling your self-hosted services. As a programmer and cybersecurity enthusiast, you'll appreciate the emphasis on SSL certificates and secure remote access, which aligns with Red Teaming best practices for encrypted communications. The article also offers concrete steps for setting up DDNS and internal DNS, which you can implement to improve your homelab's organization and security. Additionally, the cost-effective solution ($10/year) makes it an easy win for your homelab setup.",
+  "extra_advice": "Consider using a subdomain like 'lab.yourdomain.com' to keep homelab services separate from personal sites. For Red Teaming practice, you could set up a vulnerable service (e.g., DVWA) behind Nginx Proxy Manager and test SSL stripping or DNS rebinding attacks locally.",
+  "source_url": "https://www.howtogeek.com/your-homelab-needs-a-domain-heres-why/"
+}

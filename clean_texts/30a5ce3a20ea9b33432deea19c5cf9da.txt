@@ -1,0 +1,265 @@
+Paragon is not collaborating with Italian authorities probing spyware attacks, report says | TechCrunch
+Skip to content
+The first StrictlyVC of 2026 hits SF on April 30. Tickets are going fast. 
+Register now.
+Close
+TechCrunch Desktop Logo
+TechCrunch Mobile Logo
+Latest
+Startups
+Venture
+Apple
+Security
+AI
+Apps
+Events
+Podcasts
+Newsletters
+Search
+Submit
+Site Search Toggle
+Mega Menu Toggle
+Topics
+
+		Latest	
+
+		AI	
+
+		Amazon	
+
+		Apps	
+
+		Biotech & Health	
+
+		Climate	
+
+		Cloud Computing	
+
+		Commerce	
+
+		Crypto	
+
+		Enterprise	
+
+		EVs	
+
+		Fintech	
+
+		Fundraising	
+
+		Gadgets	
+
+		Gaming	
+
+		Google	
+
+		Government & Policy	
+
+		Hardware	
+
+		Instagram	
+
+		Layoffs	
+
+		Media & Entertainment	
+
+		Meta	
+
+		Microsoft	
+
+		Privacy	
+
+		Robotics	
+
+		Security	
+
+		Social	
+
+		Space	
+
+		Startups	
+
+		TikTok	
+
+		Transportation	
+
+		Venture	
+More from TechCrunch
+		
+
+		Staff	
+
+		Events	
+
+		Startup Battlefield	
+
+		StrictlyVC	
+
+		Newsletters	
+
+		Podcasts	
+
+		Videos	
+
+		Partner Content	
+
+		TechCrunch Brand Studio	
+
+		Crunchboard	
+
+		Contact Us	
+Image Credits:
+Paolo Manzo/NurPhoto / Getty Images
+
+		Security	
+Paragon is not collaborating with Italian authorities probing spyware attacks, report says
+Lorenzo Franceschi-Bicchierai
+10:46 AM PDT · April 28, 2026
+Last year, 
+WhatsApp
+ and 
+Apple
+ notified several people in Italy, including journalists and activists, that they had been targeted with government spyware. In particular, WhatsApp pointed the finger at the Israeli American surveillance tech maker 
+Paragon Solutions
+ as the company that provided the technology for a hacking campaign that targeted around 90 people around the world with its “Graphite” spyware.
+The notifications prompted a scandal in Italy that is still unfolding. After being notified of the attacks, a number of victims filed criminal complaints with Italian authorities, and prosecutors then opened an investigation. 
+Now it appears that Paragon, despite its previous promises to help Italian authorities investigate the scandal, is said to be uncollaborative.
+According to Wired Italy
+, Italian prosecutors sent a formal request for information to Paragon, via the Israeli government, but a year after the investigations were opened, the company has yet to respond.
+Following the eruption of the spyware scandal in Italy, 
+Paragon publicly called out the Italian government
+, claiming it refused the company’s offer to investigate whether a journalist was hacked and spied on with its Graphite spyware. The company went so far as to cancel its contract with Italy’s two spy agencies, AISE and AISI, in part because the Italian government turned down the company’s offer to help.
+It’s unclear why Paragon has not responded to the prosecutor’s request. It’s possible that the Israeli government intervened. In 2024, 
+The Guardian reported
+ that the Israeli government seized documents from NSO’s office to prevent the company from complying with demands in the lawsuit against WhatsApp.
+Israeli human rights lawyer Eitay Mack told Wired Italy that the Israeli government could force local companies to cooperate with foreign judicial requests for information, “but this has never happened.”
+Techcrunch event
+This Week Only: Buy one pass, get the second at 50% off
+Your next round. Your next hire. Your next breakout opportunity. Find it at TechCrunch Disrupt 2026, where 10,000+ founders, investors, and tech leaders gather for three days of 250+ tactical sessions, powerful introductions, and market-defining innovation. Register before May 8 to bring a +1 at half the cost.
+This Week Only: Buy one pass, get the second at 50% off
+Your next round. Your next hire. Your next breakout opportunity. Find it at TechCrunch Disrupt 2026, where 10,000+ founders, investors, and tech leaders gather for three days of 250+ tactical sessions, powerful introductions, and market-defining innovation. Register before May 8 to bring a +1 at half the cost.
+San Francisco, CA
+|
+October 13-15, 2026
+REGISTER NOW
+Spain’s High Court 
+closed its investigation
+ earlier this year into the use of NSO’s spyware to target Spanish politicians, claiming Israeli authorities did not cooperate with its probe.  
+Contact Us
+
+			Do you have more information about Paragon Solutions, and the spyware scandal in Italy? From a non-work device, you can contact Lorenzo Franceschi-Bicchierai securely on Signal at +1 917 257 1382, or via Telegram and Keybase @lorenzofb, or 
+email
+.
+Paragon, the Israeli embassy in Washington, D.C., and the prosecutors’ offices in Rome and Naples, which are jointly investigating the case, did not respond to TechCrunch’s request for comment. 
+In the history of government spyware, it’s extremely rare for a company to get into a public fight with one of its former customers. Paragon’s move was likely motivated by its longstanding attempts to appear as an ostensibly more righteous alternative to other spyware makers, such as NSO Group or Intellexa, which have been ensnared in countless scandals around the world.
+Instead, Paragon’s official website, which no longer loads, 
+said
+ the company provides customers “with ethically based tools, teams, and insights.”
+So far, this is Paragon’s first public scandal, but 
+the company now has an active contract
+ with the U.S. Immigration and Customs Enforcement, which for a year has been arresting and deporting tens of thousands of immigrants all over the country. 
+ICE told lawmakers
+ that its law-enforcement arm Homeland Security Investigations (HSI) is using Paragon’s spyware to counter terrorism and drug trafficking.    
+Italy’s government under Prime Minister Giorgia Meloni has always denied hacking two of the journalists, Francesco Cancellato and Ciro Pellegrino, who work at the online news website Fanpage and whose phones were targeted by Paragon’s Graphite. The Citizen Lab, a research organization that has investigated spyware abuses for more than a decade, 
+confirmed both journalists were hacked with Graphite
+.
+The other victims in the country 
+include
+activists
+ who work for Mediterranea Saving Humans, an Italian nonprofit with the mission of rescuing migrants who try to cross the Mediterranean Sea.
+Last June, the Italian parliamentary committee that oversees the country’s spy agencies investigated the scandal, and 
+concluded that the targeting of the activists was lawful
+. But it also said it could not find evidence that Cancellato was targeted, and the committee did not investigate Pellegrino’s case at all. 
+Then, in March, the same prosecutors who have requested information from Paragon 
+said in a press release
+ that a forensic investigation into Cancellato’s device confirmed that his phone had indeed been hacked, while it could not conclude the same after analyzing Pellegrino’s phone.
+The prosecutors’ investigation is still ongoing.
+Topics
+Apple
+, 
+cybersecurity
+, 
+government spyware
+, 
+hacking
+, 
+iPhone
+, 
+Italy
+, 
+paragon
+, 
+Paragon Solutions
+, 
+privacy
+, 
+Security
+, 
+Spyware
+, 
+surveillance
+, 
+WhatsApp
+When you purchase through links in our articles, 
+we may earn a small commission
+. This doesn’t affect our editorial independence.
+
+			Lorenzo Franceschi-Bicchierai	
+Senior Reporter, Cybersecurity
+Lorenzo Franceschi-Bicchierai is a Senior Writer at TechCrunch, where he covers hacking, cybersecurity, surveillance, and privacy. 
+You can contact or verify outreach from Lorenzo by emailing 
+lorenzo@techcrunch.com
+, via encrypted message at +1 917 257 1382 on Signal, and @lorenzofb on Keybase/Telegram.
+View Bio 
+May 27
+Athens, Greece
+StrictlyVC Athens is up next. Hear unfiltered insights straight from Europe’s tech leaders and connect with the people shaping what’s ahead. Lock in your spot before it’s gone.
+REGISTER NOW
+Most Popular
+Laid-off Oracle workers tried to negotiate better severance. Oracle said no. 
+Julie Bort
+San Francisco’s housing market has lost its mind
+Connie Loizos
+Hackers deface school login pages after claiming another Instructure hack
+Lorenzo Franceschi-Bicchierai
+Zack Whittaker
+Hackers steal students’ data during breach at education tech giant Instructure
+Lorenzo Franceschi-Bicchierai
+As workers worry about AI, Nvidia’s Jensen Huang says AI is ‘creating an enormous number of jobs’
+Lucas Ropek
+Ouster’s new color lidar is coming to replace cameras
+Sean O'Kane
+This tiny, magnetic e-reader could stop you from doomscrolling
+Amanda Silberling
+
+		Loading the next article		
+
+		Error loading the next article	
+✕
+X
+LinkedIn
+Facebook
+Instagram
+youTube
+Mastodon
+Threads
+Bluesky
+TechCrunch
+Staff
+Contact Us
+Advertise
+Crunchboard Jobs
+Site Map
+Terms of Service
+Privacy Policy
+RSS Terms of Use
+Code of Conduct
+Anthropic
+SAP
+Samsung
+Marc Lore
+TechCrunch Disrupt
+Tech Layoffs
+ChatGPT
+© 2026 TechCrunch Media LLC.
+Some areas of this page may shift around if you resize the browser window. Be sure to check heading and document order.

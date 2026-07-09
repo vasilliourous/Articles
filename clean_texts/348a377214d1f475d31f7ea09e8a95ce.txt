@@ -1,0 +1,341 @@
+Thousands of executives aren't seeing AI productivity boom, reminding economists of IT-era paradox | Fortune
+Search
+Subscribe for $1
+Subscribe for $1
+Sign in
+Home
+Latest
+Fortune 500
+Finance
+Tech
+Leadership
+Lifestyle
+Rankings
+Multimedia
+AI
+Productivity
+Thousands of CEOs admit AI had no impact on employment or productivity—and it has economists resurrecting a paradox from 40 years ago
+By 
+Sasha Rogelberg
+Sasha Rogelberg
+Reporter
+Down Arrow Button Icon
+By 
+Sasha Rogelberg
+Sasha Rogelberg
+Reporter
+Down Arrow Button Icon
+April 19, 2026, 10:58 AM ET
+Add us on
+Nobel laureate and economist Robert Solow noticed a productivity paradox in the IT age of the 1980s that economists today see reflected in the AI boom.
+Lior Mizrahi—Getty Images
+In 1987, economist and Nobel laureate Robert Solow made a stark observation about the stalling evolution of the Information Age: Following the advent of transistors, microprocessors, integrated circuits, and memory chips of the 1960s, economists and companies expected these new technologies to disrupt workplaces and result in a surge of productivity. Instead, 
+productivity growth slowed
+, dropping from 2.9% from 1948 to 1973, to 1.1% after 1973.
+Recommended Video
+Newfangled computers were actually at times 
+producing too much information
+, generating agonizingly detailed reports and printing them on reams of paper. What had promised to be a boom to workplace productivity was for several years a bust. This unexpected outcome became known as Solow’s productivity paradox, thanks to the economist’s observation of the phenomenon.
+“You can see the computer age everywhere but in the productivity statistics,” Solow wrote in a 
+New York Times Book Review
+ article
+ in 1987.
+Data on how C-suite executives are—or aren’t—using AI shows history is repeating itself, complicating the similar promises economists and Big Tech founders made about the technology’s impact on the workplace and economy. Despite 374 companies in the S&P 500 mentioning AI in earnings calls—most of which said the technology’s implementation in the firm was entirely positive—according to a 
+Financial Times
+ analysis
+ from September 2024 to 2025, those positive adoptions aren’t being reflected in broader productivity gains.
+A 
+study
+ published in February by the National Bureau of Economic Research found that among 6,000 CEOs, chief financial officers, and other executives from firms who responded to various business outlook surveys in the U.S., U.K., Germany, and Australia, the vast majority see little impact from AI on their operations. While about two-thirds of executives reported using AI, that usage amounted to only about 1.5 hours per week, and 25% of respondents reported not using AI in the workplace at all. Nearly 90% of firms said AI has had no impact on employment or productivity over the past three years, the research noted.
+However, firms’ expectations of AI’s workplace and economic impact remained substantial: Executives also forecast AI will increase productivity by 1.4% and increase output by 0.8% over the next three years. While firms expected a 0.7% cut to employment over this time period, individual employees also surveyed saw a 0.5% increase in employment.
+Is AI actually making people more productive?
+In 2023, MIT researchers claimed AI implementation could 
+increase a worker’s performance by nearly 40%
+ compared to workers who didn’t use the technology. But emerging data failing to show these promised productivity gains has led economists to wonder when—or if—AI will offer a return on corporate investments, which 
+swelled to more than $250 billion
+ in 2024.
+“AI is everywhere except in the incoming macroeconomic data,” Apollo chief economist Torsten Slok wrote in a 
+blog post
+, invoking Solow’s observation from nearly 40 years ago. “Today, you don’t see AI in the employment data, productivity data, or inflation data.”
+Slok added that outside of the Magnificent Seven, there are “no signs of AI in 
+profit margins
+ or 
+earnings expectations
+.”
+Slok cited a slew of academic studies on AI and productivity, painting a contradictory picture about the utility of the technology. Last November, the Federal Reserve Bank of St. Louis published in its 
+State of Generative AI Adoption
+ report
+ that it observed a 1.9% increase in excess cumulative productivity growth since the late-2022 introduction of ChatGPT. A 
+2024 MIT study
+, however, found a more modest 0.5% increase in productivity over the next decade.
+“I don’t think we should belittle 0.5% in 10 years. That’s better than zero,” study author and Nobel laureate Daron Acemoglu said at the time. “But it’s just disappointing relative to the promises that people in the industry and in tech journalism are making.”
+Other emerging research can offer reasons why: Workforce solutions firm 
+ManpowerGroup’s 
+2026 Global Talent Barometer
+ found that across nearly 14,000 workers in 19 countries, workers’ regular AI use increased 13% in 2025, but confidence in the technology’s utility plummeted 18%, indicating persistent distrust.
+AI adoption can even be counterproductive at a certain point, according to a 
+study
+ conducted by 
+Boston Consulting Group
+, leading to “
+AI brain fry
+.” In a survey of 1,488 full-time U.S.-based workers, respondents reported increased productivity when using three or fewer AI tools, but self-reported productivity plummeted when respondents used four or more tools, with workers saying they felt brain fog or made more small mistakes as a result of technology overuse.
+Nickle LaMoreaux, IBM’s chief human resources officer, said this year the tech giant 
+would triple its number of young hires
+, suggesting that despite AI’s ability to automate some of the required tasks, displacing entry-level workers would create a dearth of middle managers down the line, endangering the company’s leadership pipeline.
+What could reverse AI’s productivity pattern?
+To be sure, this productivity pattern could reverse. The IT boom of the 1970s and ’80s eventually gave way to a surge of productivity in the 1990s and early 2000s, including a 
+1.5% increase in productivity growth
+ from 1995 to 2005 following decades of slump. 
+Economist and Stanford University’s Digital Economy Lab director Erik Brynjolfsson noted in a 
+Financial Times
+ op-ed
+ the trend 
+may already be reversing
+. He observed that fourth-quarter GDP was tracking up 3.7%, despite last week’s jobs report revising down job gains to just 181,000, suggesting a productivity surge. His own analysis indicated a U.S. productivity jump of 2.7% last year, which he attributed to a transition from AI investment to reaping the benefits of the technology. Former Pimco CEO and economist Mohamed El-Erian also noted 
+job growth and GDP growth continuing to decouple
+ as a result in part of continued AI adoption, a similar phenomenon that occurred in the 1990s with office automation.
+Some productivity increases may be hiding in plain sight. A 
+study
+ led by the Stanford Institute for Economic Policy Research found using internet browsing data from 200,000 U.S. households that generative AI increased the efficiency of online tasks like job hunting, travel planning, or shopping from between 76% and 176%. However, researchers found the time AI users saved on chores was spent hanging out with friends or watching television, as opposed to spent on work on new skills development.
+Slok saw the future impact of AI as potentially resembling a “J-curve” of an initial slowdown in performance and results, followed by an exponential surge. He said whether AI’s productivity gains would follow this pattern would depend on the value created by AI. 
+So far, AI’s path has already diverged from its IT predecessor. Slok noted in the 1980s, an innovator in the IT space had monopoly pricing power until competitors could create similar products. Today, however, AI tools are readily accessible as a result of “fierce competition” between large language model-buildings driving down prices.
+Therefore, Slok posited, the future of AI productivity would depend on companies’ interest in taking advantage of the technology and continuing to incorporate it into their workplaces. “In other words, from a macro perspective, the value creation is not the product,” Slok said, “but how generative AI is used and implemented in different sectors in the economy.”
+A version of this story was published on Fortune.com on Feb. 17, 2026.
+More on AI and productivity:
+AI is 
+making productivity obsolete
+. The leaders who thrive next will have something machines can’t touch
+AI promised supreme productivity, but it’s 
+actually straining workloads
+ for employees—time spent emailing has doubled, and focused work sessions fell by 9%
+AI promises to free workers from grunt work, but psychologists say those mindless tasks are 
+exactly what our brains
+ need to recover
+In 2001, Fortune first convened the smartest people we know, bringing together CEOs and founders, builders and investors, thinkers and doers. Since then, 
+Fortune Brainstorm Tech
+ has been the place where bold ideas collide. From 
+June 8–10
+, we will return to 
+Aspen
+—where it all began—to mark 25 years of Brainstorm. 
+Register now
+.
+About the Author
+By 
+Sasha Rogelberg
+Reporter
+LinkedIn icon
+Twitter icon
+Sasha Rogelberg is a reporter and former editorial fellow on the news desk at 
+Fortune
+, covering retail and the intersection of business and popular culture.
+See full bio
+Right Arrow Button Icon
+Latest in AI
+AI
+Qualcomm
+Qualcomm’s CEO is working with ‘pretty much all’ major AI players on top-secret devices—and powering OpenAI’s first push into hardware
+By 
+Eva Roytburg
+May 9, 2026
+5 hours ago
+Commentary
+Retirement
+Tim Cook and Reed Hastings just showed every CEO how to leave gracefully
+By 
+Paul Hardart
+May 9, 2026
+6 hours ago
+Future of Work
+Tech
+Companies are abandoning ‘peanut butter’ raises as pay-for-performance takes over the workplace in the AI era
+By 
+Marco Quiroz-Gutierrez
+May 9, 2026
+7 hours ago
+AI
+Banks
+Goldman Sachs’ tech boss says tracking individual AI usage isn’t useful. He just watches how fast his 12,000 engineers move from idea to production
+By 
+Marco Quiroz-Gutierrez
+May 8, 2026
+21 hours ago
+Economy
+Jobs
+The job market is healing for everyone—except in the office
+By 
+Eva Roytburg
+May 8, 2026
+1 day ago
+AI
+Anthropic
+Anthropic grew 80-fold in a single quarter. Now it’s renting Elon Musk’s data center to cope
+By 
+Marco Quiroz-Gutierrez
+May 8, 2026
+1 day ago
+Most Popular
+North America
+California farmers must destroy 420,000 peach trees after Del Monte closes its canneries and cancels more than $550 million in long-term contracts
+By 
+Sasha Rogelberg
+May 7, 2026
+2 days ago
+Magazine
+A Michigan farm town voted down plans for a giant OpenAI-Oracle data center. Weeks later, construction began
+By 
+Sharon Goldman
+May 6, 2026
+3 days ago
+Arts & Entertainment
+'Blue dot fever' plagues musicians like Post Malone, Meghan Trainor, and Zayn as a growing list of artists cancel tours due to lagging ticket sales
+By 
+Dave Lozo
+ and 
+Morning Brew
+May 7, 2026
+2 days ago
+Personal Finance
+Current price of oil as of May 8, 2026
+By 
+Joseph Hostetler
+May 8, 2026
+1 day ago
+Energy
+The CEO of Maersk, which ships 14% of everything you buy, said the Iran war is adding $500 million in monthly costs it's trying not to pass down
+By 
+Sasha Rogelberg
+May 8, 2026
+22 hours ago
+Success
+Airbnb CEO Brian Chesky warns two types of people won’t survive the AI era: ‘pure people managers’ and workers who resist change
+By 
+Emma Burleigh
+May 7, 2026
+2 days ago
+Fortune Secondary Logo
+Rankings
+100 Best Companies
+Fortune 500
+Global 500
+Fortune 500 Europe
+Most Powerful Women
+World's Most Admired Companies
+See All Rankings
+Lists Calendar
+Sections
+Finance
+Fortune Crypto
+Features
+Leadership
+Health
+Commentary
+Success
+Retail
+Mpw
+Tech
+Lifestyle
+CEO Initiative
+Asia
+Politics
+Conferences
+Europe
+Newsletters
+Personal Finance
+Environment
+Magazine
+Education
+Customer Support
+Frequently Asked Questions
+Customer Service Portal
+Privacy Policy
+Terms Of Use
+Single Issues For Purchase
+International Print
+Commercial Services
+Advertising
+Fortune Brand Studio
+Fortune Analytics
+Fortune Conferences
+Business Development
+Group Subscriptions
+About Us
+About Us
+Press Center
+Work At Fortune
+Terms And Conditions
+Site Map
+Rankings
+Sections
+Customer Support
+Commercial Services
+About Us
+Press Center
+Work At Fortune
+Terms And Conditions
+Site Map
+Facebook icon
+Twitter icon
+LinkedIn icon
+Instagram icon
+Pinterest icon
+© 2026 Fortune Media IP Limited. All Rights Reserved. Use of this site constitutes acceptance of our 
+Terms of Use
+ and 
+Privacy Policy
+ | 
+CA Notice at Collection and Privacy Notice
+ | 
+Do Not Sell/Share My Personal Information
+
+FORTUNE is a trademark of Fortune Media IP Limited, registered in the U.S. and other countries. FORTUNE may receive compensation for some links to products and services on this website. Offers may be subject to change without notice.
+Thousands of executives aren't seeing AI productivity boom, reminding economists of IT-era paradox | Fortune
+Your Privacy Rights 
+When you visit our website, we may place cookies or other tracking technologies, such as pixels, on your computer, phone, device or browser, as applicable. These technologies may collect information from you, including your personal information, such as your IP address or device identifier. We use these technologies to make the site work as you expect it to, to provide a more personalized web experience, to analyze activity on our site, and in some cases, for targeted advertising. You can manage your cookie settings below. You cannot opt-out of Strictly Necessary Cookies.
+
+To opt out of sales of personal information, please click 
+here
+.
+
+Allow All
+ Manage Consent Preferences
+Strictly Necessary Cookies
+Always Active
+These cookies are necessary for the website to function and cannot be switched off in our systems. They are usually only set in response to actions made by you which amount to a request for services, such as setting your privacy preferences, logging in or filling in forms. You can set your browser to block or alert you about these cookies, but some parts of the site will not then work.
+Sharing of Personal Information for Targeted Advertising
+Sharing of Personal Information for Targeted Advertising
+You may exercise your right to opt out of the sale or sharing of personal information by using this toggle switch. We collect this data for analytics and to personalize your experience, allowing us to show you tailored offers, ads or content. Note that if you opt out, this may affect our ability to personalize ads according to your preferences. You may still see ads, but they may not be personalized to you.
+Social Media Cookies
+Switch Label
+label
+These cookies are set by a range of social media services that we have added to the site to enable you to share our content with your friends and networks. They are capable of tracking your browser across other sites and building up a profile of your interests. This may impact the content and messages you see on other websites you visit. If you do not allow these cookies you may not be able to use or see these sharing tools.
+Targeting Cookies
+Switch Label
+label
+Cookies of this category may be set on our website and are used to display personalized content to you that is believed to be in line with your interests. They are based on uniquely identifying your browser and internet device. For example, these cookies help us to provide information to you that is especially relevant to you.
+Performance Cookies
+Switch Label
+label
+These cookies allow us to count visits and traffic sources so we can measure and improve the performance of our site. They help us to know which pages are the most and least popular and see how visitors move around the site. If you do not allow these cookies, we will not know when you have visited our site and will not be able to monitor its performance.
+Back Button
+Cookie List
+Search Icon
+Filter Icon
+Clear
+checkbox label
+label
+Apply
+Cancel
+Consent
+Leg.Interest
+checkbox label
+label
+checkbox label
+label
+checkbox label
+label
+Reject All
+Confirm My Choices
+search by queryly 
+Advanced Search

@@ -1,0 +1,360 @@
+Homelab projects to try this weekend (March 6 - 8)
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+Networking
+Storage and NAS
+Components
+Peripherals
+Operating Systems
+Submenu
+Linux
+Windows
+Software
+Submenu
+Programming
+Applications
+Mobile
+Submenu
+Android
+iPhone
+Carriers
+New Tech
+Submenu
+Hobbies
+Smart Home
+Homelab
+Single-Board Computers (SBCs)
+Cutting Edge
+Streaming
+Submenu
+Streaming Content
+Streaming Platforms
+Audio/Video
+Automotive
+Reviews
+Buying Guides
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Storage
+Streaming
+Linux
+Open Source
+Microsoft Excel
+Android
+Windows
+Close
+Homelab projects to try this weekend (March 6 - 8)
+Credit: Hannah Stryker / How-To Geek
+By 
+Patrick Campanale
+Published
+ Mar 6, 2026, 11:15 AM EST
+Patrick Campanale has been in the tech space for well over a decade, specializing in PC/gaming news and reviews, as well as maker-focused products to build small businesses.
+
+With a start in technology back in 2010 surrounding the Palm/webOS ecosystem, Patrick spent his formative years developing mobile applications as well as blogging for various publications, eventually leading to starting his own website in 2014. After running a technology blog for a few years, he stepped out of that role and into the world of high-end custom PC manufacturing and building, with a focus on YouTube video production and overclocking. Then, six years ago, Patrick joined the 
+9to5Toys 
+team as an editor/writer/reviewer with over 14,000 articles being published there there, ranging from deals and roundups to in-depth reviews on the latest technology, video games, 3D printers, and more.
+
+In his free time, Patrick loves to 
+create projects from wood
+ using various robots and methods, including leveraging the technologies of CNCs and lasers. If Patrick isn't working on a computer or playing video games, he's likely in his 2-car garage workshop creating something unique. In addition to all this, Patrick is also a youth pastor at his local church where he feels God has called him to serve, and he loves every minute of it. 
+Sign in to your 
+How-To Geek
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																						
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+This weekend, set some time aside to focus on a few basics in your homelab. From setting up Tdarr to keep your media library nice and optimized to making Docker management easier with Portainer, and even setting up Nginx Proxy Manager for reverse proxies, here are three homelab projects for you to try out this weekend.
+✕
+ Remove Ads
+
+                        Automatically transcode your library with Tdarr
+               
+
+            H.264 is so 2010
+    
+Credit: Patrick Campanale / How-To Geek
+ For the longest time, I just ripped media to my Plex server in whatever format it defaulted to. A vast majority was H.264, while some newer content was H.265/HEVC. The problem is, H.264 is a wildly inefficient container to use in 2026. While it’s still the industry standard, H.265 is a much better option to use whenever possible—and that’s where 
+Tdarr
+ comes in.
+Instead of having to re-rip entire TV series back to my NAS, I chose to use Tdarr to transcode the content from H.264 to H.265, and it works pretty great. There were one or two TV show episodes and movies that I did have to re-rip, but Tdarr did a great job at handling everything else for me.
+✕
+ Remove Ads
+With Tdarr, you can tell it exactly what you want it to do. I had mine set to only transcode movies or TV shows that were above a certain bitrate, so things that were already optimized it didn’t touch. I also had it strip out extra audio channels, subtitles, and any other extra information that didn’t need to be there.
+At the end of the day, 
+using Tdarr in my setup saved me 7TB of storage
+ without having to do much else besides set it up at the beginning.
+If your Plex or Jellyfin library has grown too big for its own britches, then try out Tdarr. It might take a bit to get set up, but once it’s configured, you’ll be surprised at just how much space you can save.
+
+                        Make managing your Docker containers easier with Portainer
+               
+
+            No more Docker CLI for you!
+    
+I couldn’t manage my homelab without Docker. Every system in my homelab runs Docker in some way, shape, or form. It’s on all three of my NAS systems I’m running, and exists on just about every virtual machine I use, too. I even use Docker on my VPS. It’s safe to say that I’m a Docker fanatic.
+✕
+ Remove Ads
+While I use Docker daily, I 
+hate
+ Docker CLI. I simply never took the time to learn it because I started using Docker on Unraid, which handles everything through a user interface. That’s why, when I started moving Docker containers off of Unraid, 
+I had to find another solution
+ that kept me out of Docker CLI—and that solution is 
+Portainer
+.
+Portainer is a simple-to-use Docker management interface. It allows you to spin up individual containers or “Stacks,” which are basically Docker Compose files.
+I have Portainer running on one of my virtual machines, and then I use the Portainer Agent on all of my other Docker systems so I can control everything from one convenient UI.
+Portainer is really simple to set up
+, and requires just two commands to get up and going. So, if you’re still using Docker from the command line, it’s time to upgrade your setup and deploy Portainer today.
+
+                        Set up a reverse proxy for your self-hosted services using Nginx Proxy Manager
+               
+
+            Internal or external access, it doesn’t matter—just please stop using IPs and ports
+    
+Credit: Nginx Proxy Manager
+✕
+ Remove Ads
+ My homelab houses a lot of services that I use both internally and externally. Personally, 
+I use Nginx Proxy Manager
+ to handle all of my reverse proxy needs. I’ve used it for the past five or more years, and currently run nearly 50 reverse proxy domains through it.
+Nginx Proxy Manager
+ isn’t the only reverse proxy tool around. There’s Caddy, Traefik, and even 
+Cloudflare Tunnels
+. I choose Nginx Proxy Manager mostly because it’s what I know, and it works well.
+To get Nginx Proxy Manager up and running is pretty simple. The only thing you might need to change for the Docker container is what ports it runs on, but that also is dependent on what router you have (if you plan to use it for external access).
+In my setup, I have it running on ports 81 and 444, one number up from the normal 80 and 443 that HTTP and HTTPS runs on. This is because I already have other services running on 80/443 on that server. However, I’m only able to do this because I can route external port 80 to internal port 81, and external port 443 to internal port 444 with my Unifi system.
+✕
+ Remove Ads
+When I set up Nginx Proxy Manager at my dad’s house, his router didn’t have that ability, so we had to change what ports his host OS used so that Nginx Proxy Manager could use 80/443. Regardless of your setup, you’ll need to 
+port forward
+ external port 80/443 to Nginx Proxy Manager if you want to access your reverse proxied services outside your local network.
+After you get these basic homelab services up and running, 
+you should really check out Grafana
+. I was able to build a pretty sweet dashboard using Grafana that showed me quite a lot of information in my homelab at a quick glance. It took me a few hours to get Grafana set up the way I wanted though, so you should definitely have ample time set aside before starting on the project.
+✕
+ Remove Ads
+Hobbies
+Homelab
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. 
+Read More
+.
+Close
+✕
+ Remove Ads
+
+                                                    Desktop
+                                            
+
+                                                    Mobile
+                                            
+
+			PowerShell isn't scary—these everyday commands prove it
+		
+2 hours ago
+
+			Dirty Frag vulnerability in Linux lets hackers do more damage—here's how to protect yourself
+		
+17 hours ago
+
+			Intel will make chips for Apple—what does that mean for Windows PCs?
+		
+20 hours ago
+See More
+
+			Please stop typing on your Google Pixel—these 3 voice commands are a game changer
+		
+17 hours ago
+
+			Google Maps has a power-saving mode that extends battery life by 4 hours—but there's a catch
+		
+19 hours ago
+
+			6 ways to repurpose your old Motorola phone
+		
+20 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			Raspberry Pi projects to try this weekend (February 20 - 22)
+		
+
+			The 'USB-C' label is a trap: Why Power Delivery and DisplayLink are the only dock specs that matter
+		
+
+			I replaced 4 paid subscriptions with one free app
+		
+
+                                                
+                
+                                                    
+                                    Thread
+                                                    
+Sign in to your 
+How-To Geek
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Be the first to post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+This space is open for discussion.
+Be the first to share your thoughts.
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Mar 4, 2026
+
+                                    Home Assistant 2026.3 has arrived: Here’s what’s new
+                            
+Mar 4, 2026
+
+                                    4 weird ports you'll only find on super-old Android phones
+                            
+Mar 4, 2026
+
+                                    Stop using magnetic USB-C cables, they can kill your device
+                            
+Mar 2, 2026
+
+                                    Jellyfin, the open-source media server, just got better on Roku TVs
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+How-To Geek
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:09
+Skip Ad
+5

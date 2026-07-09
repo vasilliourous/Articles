@@ -1,0 +1,61 @@
+{
+  "article_title": "I stopped using Watchtower and found something better for Docker updates",
+  "core_thesis": "The author argues that while automated Docker container updates via Watchtower are convenient, they can break services due to lack of control and rollback mechanisms. They advocate for Tugtainer, a tool that notifies users of available updates but lets them manually decide when to apply them, offering a safer balance for home lab environments.",
+  "detailed_summary": "The article describes the author's shift from Watchtower to Tugtainer for managing Docker container updates in a home lab. Watchtower automatically polls registries, pulls latest images, and recreates containers, which can break services like Homarr, Heimdall, and Homepage due to unexpected restarts and no rollback. Tugtainer, in contrast, fetches updates but only notifies the user via email, webhook, or its web dashboard, allowing manual approval. It supports multiple hosts via an agent system, enabling centralized management. Setup is quick, and Tugtainer automatically discovers existing containers, letting users choose which to monitor, auto-update, or exclude. It also smartly updates linked containers in correct order. However, neither tool shows changelogs or version numbers. The author concludes that Tugtainer is ideal for smaller, tightly packed home labs where stability matters, while Watchtower may still suit non-critical containers.",
+  "entities": [
+    {
+      "name": "Samir Makwana",
+      "type": "person",
+      "role": "Author of the article, technology journalist"
+    },
+    {
+      "name": "Watchtower",
+      "type": "software",
+      "role": "Automated Docker container update tool that the author stopped using"
+    },
+    {
+      "name": "Tugtainer",
+      "type": "software",
+      "role": "Alternative Docker update tool that notifies before updating, giving manual control"
+    },
+    {
+      "name": "Homarr",
+      "type": "software",
+      "role": "Self-hosted dashboard that broke due to Watchtower auto-updates"
+    },
+    {
+      "name": "Heimdall",
+      "type": "software",
+      "role": "Self-hosted dashboard that broke due to Watchtower auto-updates"
+    },
+    {
+      "name": "Homepage",
+      "type": "software",
+      "role": "Self-hosted dashboard that broke due to Watchtower auto-updates"
+    }
+  ],
+  "key_data_points": [
+    "Watchtower automatically polls registries, pulls latest images, stops existing containers, and recreates them with updates, which can break services and lacks rollback (🟢 relevant to your homelab: if you run critical services, auto-updates risk downtime).",
+    "Tugtainer fetches updates but only notifies the user via email, webhook, or dashboard, allowing manual approval before applying updates (🟢 relevant to your homelab: gives you control to avoid breaking changes).",
+    "Tugtainer supports multiple hosts via an agent system, enabling centralized management of Docker updates across different machines from a single web dashboard (🟢 relevant to your homelab: simplifies multi-host environments).",
+    "Tugtainer automatically discovers existing Docker containers and lets users choose which to monitor, auto-update, or exclude (🟢 relevant to your homelab: selective control prevents experimental containers from breaking).",
+    "Tugtainer smartly updates linked containers (e.g., media and network) in the correct order (🟢 relevant to your homelab: ensures dependent services update without issues).",
+    "Neither Watchtower nor Tugtainer shows changelogs or version numbers; users must check Docker Hub or GitHub manually (🟢 relevant to your homelab: you still need to research updates before applying)."
+  ],
+  "methodology_steps": [
+    "Deploy Tugtainer as a Docker container: use a simple docker run command or docker-compose file (e.g., `docker run -d --name tugtainer -v /var/run/docker.sock:/var/run/docker.sock tugtainer/tugtainer`).",
+    "Tugtainer automatically discovers existing Docker containers on the same host after deployment.",
+    "Configure notifications: set up email or webhook credentials in Tugtainer's web interface to receive update alerts.",
+    "Select which containers to monitor for manual updates, which to auto-update, and which to exclude via the web dashboard.",
+    "For multi-host setups, install Tugtainer agents on other machines and connect them to the main dashboard for centralized control.",
+    "When an update is available, Tugtainer sends a notification; log into the web interface to review and approve updates individually or in bulk."
+  ],
+  "conclusions": [
+    "Tugtainer provides a safer alternative to Watchtower for home labs where stability is critical, as it gives users control over when to apply updates, preventing unexpected breakage. The author's experience with broken dashboards supports this.",
+    "Watchtower remains suitable for non-critical containers where automatic updates are acceptable, but for essential services, Tugtainer's manual approval model is preferable.",
+    "Tugtainer's multi-host support and smart ordering of linked container updates make it a powerful tool for managing complex Docker environments, though it lacks changelog display, requiring manual research."
+  ],
+  "personal_relevance_summary": "This article is directly relevant to your homelab and DevOps interests, as it compares two Docker update tools and provides a practical alternative to Watchtower. As a programmer and homelab enthusiast, you can apply Tugtainer to gain granular control over container updates, preventing service disruptions in your self-hosted apps. The step-by-step setup and multi-host management advice are actionable for your environment. Additionally, the article's focus on balancing automation with manual oversight aligns with your need for reliable, maintainable infrastructure.",
+  "extra_advice": "Consider combining Tugtainer with a changelog aggregator (e.g., a script that fetches release notes from GitHub) to compensate for its lack of version info. This would give you full visibility before approving updates, enhancing your control.",
+  "source_url": "https://www.xda-developers.com/stopped-using-watchtower-found-something-better-docker-updates/"
+}

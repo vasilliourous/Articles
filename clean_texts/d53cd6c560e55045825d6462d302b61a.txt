@@ -1,0 +1,88 @@
+How I’m Using (New)Warp Universal Agent Support (To Power My Parallel Workflow) | by Joe Njenga | AI Software Engineer | Apr, 2026 | Medium
+Sitemap
+Open in app
+Sign up
+Sign in
+Medium Logo
+Get app
+Write
+Search
+Sign up
+Sign in
+Mastodon
+AI Software Engineer
+·
+Follow publication
+Sharing ideas about using AI for software development and integrating AI systems into existing software workflows. We explores practical approaches for developers and teams who want to use AI tools in their coding process.
+Follow publication
+1
+Member-only story
+How I’m Using (New)Warp Universal Agent Support (To 
+Power My Parallel Workflow)
+Joe Njenga
+Follow
+9 min read
+·
+Apr 30, 2026
+208
+3
+Listen
+Share
+Press enter or click to view image in full size
+Warp just made running multiple AI agents dead simple for everyone. I’m now using Claude Code and Codex in one smooth agentic workflow
+I tested Warp a while back and walked away impressed. It is one of the few AI coding tools I’d recommend to anyone serious about agentic development.
+So when I came across their new 
+Universal Agent Support update
+, I had to try it immediately.
+Here’s the problem most developers run into when using AI agents: you have one agent refactoring your code, another writing tests, and a third handling documentation.
+The natural instinct is to run them one after another. That approach works, but it’s slow. You’re essentially lining up your agents in a queue when they could all be working at the same time.
+The Warp’s Universal Agent Support is designed to solve this problem.
+It lets you run Claude Code, Codex, Gemini CLI, and other coding agents side by side — each in its own tab, each working on a different task. These agents run in isolated Git worktrees, so their changes never conflict.
+I pulled up an old test project that would be ideal for me to test and share with you.
+I set multiple agents on different
+…
+Press enter or click to view image in full size
+In this article, I’ll walk you through how I set it up, how I configure vertical tabs, manage agent notifications, use Git worktrees for isolation, and review changes across agents using Warp’s Code Review panel.
+To make this practical, I ran two agents on this demo project simultaneously so you can see how the workflow looks in actual use.
+Press enter or click to view image in full size
+But first, let us understand this new Warp’s Universal Agent Support.
+What Is Universal Agent Support?
+Create an account to read the full story.
+The author made this story available to Medium members only.
+If you’re new to Medium, create a new account to read this story on us.
+Continue in app
+Or, continue in mobile web
+Sign up with Google
+Sign up with Facebook
+Sign up with email
+Already have an account? 
+Sign in
+208
+208
+3
+Follow
+Published in AI Software Engineer
+3.8K followers
+·
+Last published 
+May 1, 2026
+Sharing ideas about using AI for software development and integrating AI systems into existing software workflows. We explores practical approaches for developers and teams who want to use AI tools in their coding process.
+Follow
+Follow
+Written by Joe Njenga
+23K followers
+·
+96 following
+Software & AI Automation Engineer, Tech Writer & Educator. Vision: Enlighten, Educate, Entertain. One story at a time. Work with me: 
+mail.njengah@gmail.com
+Follow
+Help
+Status
+About
+Careers
+Press
+Blog
+Privacy
+Rules
+Terms
+Text to speech

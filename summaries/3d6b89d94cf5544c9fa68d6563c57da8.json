@@ -1,0 +1,70 @@
+{
+  "article_title": "I always tweak my Proxmox host's settings before spinning up a single VM or LXC",
+  "core_thesis": "The article argues that Proxmox's default settings are suboptimal for most home lab users, especially those on a budget or using older hardware, and that a series of post-install tweaks—including switching to the no-subscription repository, disabling cluster services, enabling Log2Ram, installing a Pulse monitoring agent, and adjusting power settings—can significantly improve performance, reliability, and energy efficiency.",
+  "detailed_summary": "The author, Ayush Pande, shares his personal workflow for configuring a fresh Proxmox installation before deploying any virtual machines or containers. He emphasizes that the default enterprise repository requires a paid subscription for updates, so he recommends enabling the no-subscription repository via the community-driven Proxmox VE-Helper Scripts post-install script, which also removes the subscription nag and disables unnecessary cluster services on standalone nodes. Disabling pve-ha-lrm and pve-ha-crm services reduces write operations on SSDs, extending their lifespan; for older SSDs, he additionally configures Log2Ram to write logs to RAM and only flush to disk periodically. For monitoring, he installs the Pulse agent on each node, which automatically discovers VMs and LXCs and reports metrics to a centralized Pulse server. Power optimization includes setting the CPU scaling governor to 'powersave' (instead of 'performance') to throttle idle frequencies, and enabling C-States, Eco Mode, and ASPM while disabling boost clocks in BIOS. Finally, he recommends using Proxmox Datacenter Manager for multi-node management, pairing nodes with Proxmox Backup Server (with careful snapshot automation), and setting VM CPU type to 'host' and display to 'SPICE' for better performance and reduced cursor lag.",
+  "entities": [
+    {
+      "name": "Ayush Pande",
+      "type": "person",
+      "role": "Author of the article and Proxmox enthusiast sharing personal configuration tweaks."
+    },
+    {
+      "name": "Proxmox VE",
+      "type": "organization",
+      "role": "Open-source virtualization platform based on Debian, the subject of the article."
+    },
+    {
+      "name": "Proxmox VE-Helper Scripts",
+      "type": "organization",
+      "role": "Community-driven script collection that automates post-install tweaks (note: commenter mentions the tteck script may be outdated for Proxmox 9.x)."
+    },
+    {
+      "name": "Pulse",
+      "type": "software",
+      "role": "Monitoring service for Proxmox that automatically discovers VMs/LXCs and provides health metrics."
+    },
+    {
+      "name": "Log2Ram",
+      "type": "software",
+      "role": "Tool that writes logs to RAM and periodically flushes to disk to reduce SSD wear."
+    },
+    {
+      "name": "Proxmox Datacenter Manager",
+      "type": "software",
+      "role": "First-party utility for managing multiple Proxmox nodes and migrating guests without clustering."
+    },
+    {
+      "name": "Proxmox Backup Server",
+      "type": "software",
+      "role": "Backup solution for Proxmox; author warns against excessive snapshot automation."
+    }
+  ],
+  "key_data_points": [
+    "Proxmox defaults to the enterprise repository, which requires a paid subscription; without it, updates fail. The no-subscription repository provides free updates. (🟢 Relevant to your homelab: ensures you get security patches without cost.)",
+    "The community post-install script (from Proxmox VE-Helper Scripts) can automate switching repos, removing the subscription nag, and disabling cluster services. (🟢 Relevant to your homelab: saves time and reduces manual errors.)",
+    "Disabling pve-ha-lrm and pve-ha-crm services on standalone nodes reduces frequent writes to the boot SSD, extending its lifespan. (🟢 Relevant to your homelab: critical if using salvaged or consumer SSDs with limited write endurance.)",
+    "Log2Ram writes logs to RAM and only flushes to disk periodically, further reducing write operations on cheap SSDs. (🟢 Relevant to your homelab: simple way to protect low-end storage.)",
+    "Pulse is a monitoring tool that automatically discovers VMs and LXCs, pulling essential statistics and supporting remote monitoring of multiple nodes. (🟢 Relevant to your homelab: provides a centralized dashboard for health checks.)",
+    "Setting the CPU scaling governor to 'powersave' aggressively throttles idle frequencies, reducing power consumption on systems that are mostly idle. (🟢 Relevant to your homelab: lowers electricity bills and heat output.)",
+    "Enabling C-States, Eco Mode, and ASPM, and disabling boost clocks in BIOS can further reduce energy usage. (🟢 Relevant to your homelab: especially useful for always-on servers.)",
+    "Setting VM CPU type to 'host' improves performance by exposing host CPU features, but should not be used on clusters with mixed CPU types. (🟢 Relevant to your homelab: easy performance gain for single-node setups.)",
+    "Switching VM display to SPICE eliminates cursor lag and sluggishness in GUI-heavy VMs. (🟢 Relevant to your homelab: improves user experience for desktop VMs.)"
+  ],
+  "methodology_steps": [
+    "1. After installing Proxmox, run the community post-install script (e.g., from Proxmox VE-Helper Scripts) to switch to the no-subscription repository, remove the subscription nag, and disable cluster services (pve-ha-lrm, pve-ha-crm) on standalone nodes. (Note: verify script compatibility with your Proxmox version; the tteck script may be outdated for v9.x.)",
+    "2. For nodes with older or low-end SSDs, install and configure Log2Ram to reduce write operations: logs are written to RAM and periodically flushed to disk.",
+    "3. Install the Pulse agent on each Proxmox node. On a centralized Pulse server, generate an agent command from Settings > Agents, then execute it on each new node to register it for monitoring.",
+    "4. Optimize power settings: change the CPU scaling governor to 'powersave' (e.g., via `cpufreq-set -g powersave` or editing `/etc/init.d/pve-manager`). In BIOS, enable C-States, Eco Mode, and ASPM, and disable boost clocks.",
+    "5. For VM performance: set the CPU type to 'host' (under VM Hardware > CPUs) and change the Display to 'SPICE' (under VM Hardware > Display) to reduce cursor lag.",
+    "6. Optionally, connect nodes to Proxmox Backup Server for backups, but avoid excessive snapshot automation to prevent storage choking."
+  ],
+  "conclusions": [
+    "Proxmox's default settings are not optimized for home lab users, especially those on a budget or using older hardware. The article provides a clear set of tweaks that improve update reliability, reduce SSD wear, lower power consumption, and enhance VM performance. (🟢 Relevant to your homelab: actionable steps to get the most out of Proxmox.)",
+    "The community post-install script is a convenient way to apply multiple tweaks at once, but users should verify compatibility with their Proxmox version (as noted in the comments, the tteck script may not work with v9.x). (🟢 Relevant to your homelab: be cautious and test scripts in a non-production environment first.)",
+    "Power optimization through governor and BIOS settings can significantly reduce energy costs for always-on servers, making it a worthwhile investment of time. (🟢 Relevant to your homelab: especially if you run multiple nodes 24/7.)",
+    "Using Pulse for monitoring provides a centralized view of all nodes, which is invaluable for managing a growing homelab. (🟢 Relevant to your homelab: helps detect issues early and track resource usage.)"
+  ],
+  "personal_relevance_summary": "This article is directly relevant to your homelab and DevOps interests, offering a practical checklist of post-install tweaks for Proxmox that improve performance, reliability, and energy efficiency. As a programmer and cybersecurity enthusiast, you can apply these optimizations to your own Proxmox nodes to create a more stable and responsive environment for hosting VMs and containers. The advice on disabling cluster services and using Log2Ram is particularly useful if you're using salvaged SSDs, and the power-saving tips will reduce operational costs for always-on lab systems. Additionally, the Pulse monitoring setup aligns with your need for technical oversight, and the VM performance tweaks (CPU host, SPICE display) are easy wins for any GUI-based workloads you might run.",
+  "extra_advice": "Consider automating these tweaks with an Ansible playbook or a shell script that you can run on any fresh Proxmox installation. This will save time and ensure consistency across your homelab nodes. Also, verify the community script's compatibility with your Proxmox version before using it; if it's outdated, manually apply the repository change and service disabling steps.",
+  "source_url": "https://www.xda-developers.com/i-always-tweak-my-proxmox-hosts-settings/"
+}

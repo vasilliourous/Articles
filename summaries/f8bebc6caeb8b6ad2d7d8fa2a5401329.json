@@ -1,0 +1,49 @@
+{
+  "article_title": "Someone Built an App to Fight Surveillance Pricing With a Flipper Zero... for Research Purposes",
+  "core_thesis": "The article reports on TagTinker, a Flipper Zero app that can hack electronic shelf labels (ESLs) via infrared, exposing the weak security of these devices used for surveillance pricing in retail. It highlights how retailers use personal data to adjust prices dynamically, and how the app—intended for educational research—can manipulate ESLs to display custom text or images, potentially disrupting price gouging.",
+  "detailed_summary": "The article discusses the growing practice of surveillance pricing, where retailers use personal data and AI to adjust prices for individuals or demographics, both online and in physical stores via electronic shelf labels (ESLs). It notes that some US states have attempted to ban this practice. The focus is on TagTinker, a new app for the Flipper Zero hacking tool that can communicate with ESLs using infrared signals—the same technology used in TV remotes. The app allows users to display custom text, images, or test patterns on ESLs, and with a WiFi Dev Board, can render live network-sourced designs. The GitHub page emphasizes that the project is for educational research and security curiosity only, and warns against illegal use. The article also references a detailed breakdown of ESL security by Furrtek.org, indicating that many ESLs rely on security through obscurity rather than robust encryption.",
+  "entities": [
+    {
+      "name": "TagTinker",
+      "type": "software",
+      "role": "Flipper Zero app for hacking electronic shelf labels"
+    },
+    {
+      "name": "Flipper Zero",
+      "type": "hardware",
+      "role": "Multi-tool hacking device used to run TagTinker"
+    },
+    {
+      "name": "Furrtek.org",
+      "type": "organization",
+      "role": "Provided exhaustive breakdown of ESL security"
+    },
+    {
+      "name": "Tom Hawking",
+      "type": "person",
+      "role": "Author of the article"
+    }
+  ],
+  "key_data_points": [
+    "Surveillance pricing uses personal data and AI to adjust prices for individuals or demographics, and has moved from online to physical stores via electronic shelf labels (ESLs). (🟢 Relevant to Red Teaming: understanding how data is used for price manipulation can inform social engineering or privacy-focused attacks.)",
+    "TagTinker communicates with ESLs using infrared signals, the same as TV remotes, because many ESLs lack Bluetooth or WiFi and rely on security through obscurity. (🟢 Relevant to Red Teaming: this demonstrates a low-cost, low-complexity attack vector for physical retail environments.)",
+    "The app can display text, images, and test patterns on ESLs; with a WiFi Dev Board, it can render live network-sourced designs. (🟢 Relevant to Red Teaming: this capability could be used for physical social engineering, e.g., displaying fake discounts to cause chaos or gather intelligence.)",
+    "The GitHub page includes a disclaimer that TagTinker is for educational research and security curiosity only, and warns against illegal activities. (🟢 Relevant to Red Teaming: highlights the ethical boundaries of offensive security research.)",
+    "Furrtek.org provides a detailed breakdown of ESL security, indicating that many ESLs are poorly secured. (🟢 Relevant to Red Teaming: this resource can be used to identify and exploit similar vulnerabilities in other IoT devices.)"
+  ],
+  "methodology_steps": [
+    "Obtain a Flipper Zero device and ensure it has the latest firmware.",
+    "Install the TagTinker app from its GitHub repository onto the Flipper Zero.",
+    "Point the Flipper Zero's infrared transmitter at an electronic shelf label (ESL) within range.",
+    "Use the app to send infrared commands to the ESL; the app can display custom text, images, or test patterns on the label.",
+    "Optionally, attach a WiFi Dev Board to the Flipper Zero to enable live, network-rendered tag designs."
+  ],
+  "conclusions": [
+    "The article concludes that surveillance pricing is a dystopian practice enabled by weak security in ESLs, and that tools like TagTinker expose these vulnerabilities for educational purposes. (🟢 Relevant to Red Teaming: this demonstrates a practical attack surface in retail environments that can be leveraged for physical access or disruption.)",
+    "The reliance on infrared and security through obscurity in ESLs makes them easy to hack, highlighting the need for better security in IoT devices. (🟢 Relevant to Red Teaming: this is a classic example of how 'security by obscurity' fails, and can be used as a teaching point for clients.)",
+    "The article emphasizes that TagTinker is for research only, but its existence shows how easily price manipulation could be performed maliciously. (🟢 Relevant to Red Teaming: understanding this attack vector can help in designing penetration tests for retail clients.)"
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your Red Teaming interests as it details a practical, low-cost attack vector against electronic shelf labels used in retail surveillance pricing. The TagTinker app for Flipper Zero demonstrates how infrared-based communication can be exploited to manipulate prices or display arbitrary content, which could be used in physical social engineering or to disrupt retail operations. As a programmer, you can examine the GitHub source code to understand the protocol and potentially extend the tool for other IR-based devices. The article also provides a link to Furrtek.org's detailed ESL security analysis, which is a valuable resource for learning about IoT vulnerabilities. This knowledge can be applied in penetration testing engagements for retail clients or for personal projects exploring physical security.",
+  "extra_advice": "Consider reverse-engineering other IR-based IoT devices (e.g., smart home sensors, digital signage) using the same approach as TagTinker. The Furrtek.org resource is a goldmine for understanding ESL protocols—use it to build your own IR hacking tools or integrate with the Flipper Zero for broader physical security assessments. Additionally, explore how surveillance pricing data flows from retailers to data brokers; this could uncover API vulnerabilities or data leakage points for Red Teaming exercises.",
+  "source_url": "https://gizmodo.com/someone-built-an-app-to-fight-surveillance-pricing-with-a-flipper-zero-for-research-purposes-2000755224"
+}

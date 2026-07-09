@@ -1,0 +1,59 @@
+{
+  "article_title": "5 things you can run in a Docker container that might surprise you",
+  "core_thesis": "Docker is not just for databases and reverse proxies; it can also run unexpected services like a full desktop environment, local AI assistants, voice chat servers, file sharing, and game servers, making infrastructure more portable and experimentation safer.",
+  "detailed_summary": "The article presents five unconventional uses for Docker containers that go beyond typical self-hosting services. First, Webtop provides a full Linux desktop accessible via browser, useful for isolated testing or accessing a desktop from any device. Second, Ollama can run local LLMs in Docker, offering a private AI assistant without relying on third-party services. Third, a TeamSpeak server can be containerized for lightweight voice chat, especially as an alternative to Discord. Fourth, Samba in Docker turns any machine into a simple NAS for file sharing without a full NAS OS. Fifth, game servers (e.g., Minecraft) benefit from Docker's portability and easy experimentation. The article emphasizes that Docker lowers the barrier to trying new services and makes infrastructure more portable and disposable.",
+  "entities": [
+    {
+      "name": "Ty Sherback",
+      "type": "person",
+      "role": "author of the article"
+    },
+    {
+      "name": "Webtop",
+      "type": "software",
+      "role": "Docker container that provides a full Linux desktop in a browser"
+    },
+    {
+      "name": "Ollama",
+      "type": "software",
+      "role": "tool for running local LLMs, deployable in Docker"
+    },
+    {
+      "name": "TeamSpeak",
+      "type": "software",
+      "role": "voice chat server that can be run in Docker"
+    },
+    {
+      "name": "Samba",
+      "type": "software",
+      "role": "file sharing protocol implemented as a Docker container"
+    },
+    {
+      "name": "Minecraft",
+      "type": "software",
+      "role": "example of a game server that can be containerized"
+    }
+  ],
+  "key_data_points": [
+    "Webtop runs a full Linux desktop in a browser via Docker, enabling isolated workspaces for testing sketchy downloads or troubleshooting without a VM (🟢 relevant to your homelab: provides a disposable environment for security testing or accessing a desktop from any device).",
+    "Ollama in Docker allows running local LLMs with a clean web interface, keeping data private and making the AI setup portable and easy to tear down (🟢 relevant to your Red Teaming: can be used for local AI-assisted analysis without sending data to third parties).",
+    "TeamSpeak server in Docker is self-contained, with persistent data and easy migration; it's a lightweight alternative to Discord for simple voice chat (🟢 relevant to your homelab: easy to set up for team communication during CTFs or projects).",
+    "Samba in Docker exposes storage on the network without needing a full NAS OS, ideal for adding file sharing to an existing server (🟢 relevant to your homelab: quick way to share files across devices).",
+    "Game servers like Minecraft in Docker allow safe experimentation with mods and settings without risking the main setup (🟢 relevant to your interests: demonstrates Docker's portability for any server application)."
+  ],
+  "methodology_steps": [
+    "For Webtop: Pull the image (e.g., 'linuxserver/webtop'), run with port mapping for web access, and optionally mount volumes for persistent storage.",
+    "For Ollama: Use the official Ollama Docker image, expose port 11434, and pair with a web UI container like Open WebUI for a browser interface.",
+    "For TeamSpeak: Use the official TeamSpeak server image, map the necessary ports (9987 UDP, 10011 TCP, 30033 TCP), and mount a volume for persistent data.",
+    "For Samba: Use a Docker image like 'dperson/samba', configure shares via environment variables or a config file, and map the desired host directories.",
+    "For game servers: Use a dedicated image (e.g., 'itzg/minecraft-server'), set environment variables for version and settings, and mount a volume for world data."
+  ],
+  "conclusions": [
+    "Docker can run a wide variety of services beyond typical web apps, including desktop environments, AI assistants, voice servers, file sharing, and game servers, making it a versatile tool for homelabs and development.",
+    "The portability and disposability of Docker containers lower the cost of experimentation, allowing users to try new services without long-term commitment or complex setup.",
+    "For self-hosters, these use cases demonstrate that Docker can replace VMs and dedicated appliances for many tasks, simplifying infrastructure management."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your homelab and DevOps interests, as it expands the scope of what you can containerize. For Red Teaming, the Webtop container provides a disposable environment for testing malware or accessing a Linux desktop from any device, while Ollama enables private AI assistance for analysis. The Samba and game server examples show how to quickly add file sharing or multiplayer servers to your lab. As a programmer, you can apply these patterns to containerize any service, making your infrastructure more modular and portable.",
+  "extra_advice": "Consider setting up a Webtop container as a jump box for isolated security testing, and combine Ollama with a web UI to create a private coding assistant that doesn't leak your code to third parties.",
+  "source_url": "https://www.xda-developers.com/things-you-can-run-in-a-docker-container-that-you-didnt-know-about/"
+}

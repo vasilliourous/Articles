@@ -1,0 +1,423 @@
+Australian police officers can be tracked due to a security flaw in tasers and body-worn cameras - ABC News
+Skip to main content
+Skip to news navigation, settings and search
+Explore the ABC
+More from ABC
+news
+iview
+listen
+ABC News
+Just In
+For You
+Politics
+World
+Business
+Analysis
+Sport
+Lifestyle
+Entertainment
+Quizzes
+More
+Search
+Search the ABC
+Start typing for suggestions, press enter to search, or choose from a list of options below.
+Cancel
+Log in
+News Home
+Just In
+For You
+Analysis
+Rural
+Watch Live
+Health
+Indigenous
+Politics
+Science
+Deep Time
+Elections
+World
+Environment
+Investigations
+Business
+Local news
+Quizzes
+Sport
+AFL
+NRL
+Football
+Tennis
+Cricket
+Netball
+Lifestyle
+Wellbeing
+Relationships & Family
+Food & Recipes
+Personal Finance
+Home & Garden
+Entertainment
+TV & Movies
+Books
+Music
+Pop Culture
+Arts
+Your ABC Account
+Personalise the news and
+stay in the know
+Log in to personalise
+Facebook
+YouTube
+Instagram
+Twitter
+Emergency
+Backstory
+Newsletters
+中文新闻
+BERITA BAHASA INDONESIA
+TOK PISIN
+Appearance (BETA)
+Follow system settings
+ Select an option
+Always light
+Always dark
+Follow system settings
+Find any issues using dark mode? 
+Please let us know
+ABC iView
+ABC Listen
+ABC News
+News Home
+Australian police officers can be tracked due to a security flaw in tasers and body-worn cameras
+Share
+Share article
+Australian police officers can be tracked due to a security flaw in tasers and body-worn cameras
+Exclusive by 
+Grace Tobin
+, 
+Kirsten Robb
+, 
+Kate McKenna
+ and Ruby Jones
+Four Corners
+Topic:
+Police
+Sun 3 May
+Sunday 3 May
+Sun 3 May 2026 at 6:37pm
+This hacker realised tech giant Axon's devices expose officers' locations. 
+(
+Four Corners: Sissy Reyes
+)
+abc.net.au/news/police-location-tracked-bluetooth-flaw-axon-tasers-bodycams/106610886
+Link copied
+Share
+Share article
+The hacker's phone buzzes as he approaches the police station.
+"One, two, three …," he counts the notifications.
+Each one is another police officer detected; his screen details their exact coordinates.
+"… Seven, eight, nine, 10."
+This isn't hi-tech spy craft; it's an app available on app stores.
+Bluetooth-enabled tasers and body-worn cameras, used by thousands of Australian police officers, can inadvertently reveal their real-time location to any criminal with a phone or laptop.
+Police services around the country have been warned of the security flaw. But despite the safety risks, especially to officers who are undercover, in tactical units or who take their equipment home, none appear to have acted.
+Devices that use bluetooth have their own unique serial number called a MAC address. Most mobiles, like Apple iPhones, have built-in privacy features that randomise the code and make them harder to track.
+This hacker realised US tech giant Axon, which sells tasers and body-worn cameras to police around the world, had failed to do the same.
+Axon makes body-worn cameras and tasers used by police agencies around Australia and the world. 
+(
+Four Corners: Sissy Reyes
+)
+"I was just logging Bluetooth devices on my phone … and started seeing body-worn cameras and tasers appear in the logs and [thought] that's a bit odd.
+"I think it comes down to either incompetence or laziness … it just seems like the engineers who developed this were either ignorant or incompetent," he said.
+The man, who doesn't want to be named, showed Four Corners how he built his own proof-of-concept software, and was able to locate and track officers by the fixed, public MAC address assigned to any Axon bluetooth-enabled device.
+"You can track police devices … from quite a significant distance away," he said.
+"It'll just give it a little alert … saying 'police detected'."
+Tonight on Four Corners: The tactics of the multi-billion-dollar tech giant behind tasers. Watch from 8:30 on ABC TV and 
+ABC iview
+.
+The vulnerability is already being exploited overseas.
+Border Patrol agents in the United States were reportedly told to stop using Axon body-worn cameras in the field last year after potential security risks with the devices were identified and an investigation launched.
+Other hackers have shared instructional tutorials online.
+"This is like quite an open secret," the man said.
+'It can be weaponised'
+On the night Four Corners met with the hacker in Melbourne, he downloaded one of several publicly available apps on the Android app store.
+Whenever an officer was detected, the app notified him. He suddenly had the latitude and longitude of each bluetooth-enabled device, the model and its serial number.
+The man gets a notification as another device is detected. 
+(
+Four Corners: Sissy Reyes
+)
+We observed officers returning to a suburban police station in marked vehicles before some left in unmarked cars, potentially on their way home. The app continued to alert us to their presence after we could no longer see them.
+The hacker said his own software could operate at distances up to 400 metres away.
+In the wrong hands, he said it could be scaled up using dozens of tiny, cheap Bluetooth scanner units positioned around a suburb or town, which would track police devices on a live map.
+"It could be used for ambushing the police, attacking them, escaping them … organised criminal gangs or whatever. Essentially, it can be weaponised," he said.
+Four Corners has obscured the name of the app. 
+(
+Four Corners: Sissy Reyes
+)
+Concerned, he wrote to every police agency and police minister in the country, the federal police and even national security agencies.
+In Victoria, where he lived, he tried to raise the alarm multiple times.
+"I'm trying to raise a potentially serious cyber security issue with police," he first wrote in 2024.
+"I've created software that can detect the presence of police officers from 400m away using just a laptop or phone.
+"… ur new AXON Tasers leave the entire force essentially wearing beacons that broadcast their location.
+"The AXON brand Tasers need to be recalled and VicPol must demand that AXON implement Bluetooth MAC address randomisation for these devices.
+"Im trying to make you realize the danger that frontline officers face due to this vulnerability."
+He warned police that, with the right hardware, organised criminals could set up a simple system that would allow them to track police in real-time and detect raids potentially from kilometres away.
+"I basically told them that it was a gaping hole in the operational security and that it was very easy to exploit."
+He didn't get a single response.
+Through our own investigation, Four Corners has confirmed that Victoria Police did receive the hacker's email back in 2024 and assessed the threat internally.
+It was initially determined that the risk was very real and a recommendation was made to take immediate action, particularly within surveillance and undercover units.
+But executives in Victoria Police dismissed it as a non-issue after speaking with the manufacturer, Axon.
+Victoria Police determined internally that the risk was real but denied having had any issues. 
+(
+Four Corners: Sissy Reyes
+)
+Victoria Police told Four Corners it "hasn't had any issues with unauthorised access or tracking of Tasers or bodyworn cameras over Bluetooth or wi-fi".
+A spokesperson said they had conducted their own testing which "identified no issues of this nature" and that Axon had provided "security advice".
+Victoria Police refused to confirm whether frontline officers have ever been directly informed they can be detected and tracked while wearing their Axon tasers and body-worn cameras.
+Police pulled him over on his farm. He was tasered 30 seconds later
+Disturbing cases of people wrongly tasered by police raise questions over whether officers are too reliant on the devices.
+Other states exposed
+Four Corners approached police agencies in New South Wales, Queensland, Western Australia, Tasmania, South Australia, the ACT and the Northern Territory to inform them of the security flaw. None would say whether they had informed officers or described any steps they had taken to ensure their safety.
+The NSW Police Force said it was aware of concerns about bluetooth vulnerabilities.
+"Applications, software and methods designed to 'track' or monitor police activity by criminals are not new or unique to Axon devices," it said.
+"This type of activity presents ongoing challenges for all law enforcement agencies."
+Queensland Police refused to provide any response at all.
+Four Corners approached police unions in every affected state and territory. All declined to comment.
+Axon didn't respond to the ABC's questions.
+The company does have a disclaimer acknowledging the vulnerability, or "security consideration" as it describes it, of body-worn cameras in the product settings on its website.
+Buried within the fine print of its trust and security page, Axon warns its police customers that "Axon Cameras' Bluetooth and Wi-Fi radio signals can be generally detected".
+It states that "operational security considerations be made prior to deploying Axon Cameras in operations where … detection may result in unintended outcomes".
+Axon acknowledges its cameras' bluetooth and wi-fi radio signals can be detected. 
+(
+Four Corners: Sissy Reyes
+)
+Axon concedes that its setting known as "Stealth Mode" does not disable the emission of radio signals on its devices.
+Asked why the company wouldn't just fix the issue, the hacker told Four Corners the vulnerability is a hardware issue.
+"It has been engineered in a way that they can't patch it or update the software," the hacker said.
+"The whole system would have to be redesigned from scratch … so if they were forced to recall the devices, they'd be put in a horrible position."
+While 
+Axon said in 2023
+ it was working on "improvements to address concerns of tracking", that was too late for the T7 and T10 models used in most Australian states.
+Devices used across Australia that are potentially vulnerable to the bluetooth issue:
+NSW
+ — Axon body-worn cameras and T7 model tasers
+VIC
+ — Axon body-worn cameras and T7 model tasers
+Qld
+ — Axon body-worn cameras and T10 model tasers
+WA
+ — Axon body-worn cameras and T7 model tasers
+Tas
+ — Planning to trial Axon T10 model tasers
+NT
+ — Axon body-worn cameras
+SA
+ — SAPOL say their new T10 models are not affected as they will not be bluetooth-integrated with other tech
+Australian Federal Police (including ACT Policing)
+ — Axon T7 model tasers
+Axon holds a monopoly on so-called "conducted energy devices" globally.
+It sells tasers to more than 18,000 policing agencies, including every state and territory in Australia.
+The $32 billion tech giant is the largest manufacturer of body-worn cameras in the US. It also offers AI tools, drones, software licences and cloud storage for police agencies.
+Specialist officers are among the thousands around the country who use the Axon devices. 
+(
+Four Corners: Sissy Reyes
+)
+The Australian government has hundreds of millions of dollars in contracts with the company.
+Criminologist Emma Ryan, who has spent her career researching tasers, is concerned by how embedded Axon has become with Australian policing agencies.
+Mick's 95yo mum died after being tasered. He wants answers
+In an in-depth interview ahead of the inquest into Clare Nowland's death, her son wants changes that will prevent another tragedy.
+"They're captured," she said.
+"I cannot see a way in which police can separate their reliance."
+Dr Ryan said she was shocked to learn that equipment supposed to protect police could potentially be used to harm officers.
+"I wonder how many police who are carrying these pieces of equipment are aware of the kind of risks that the new technology is posing to them."
+Watch the full Four Corners investigation, Taser Tactics, tonight from 8:30pm on ABC TV and ABC iview.
+Contact ABC Investigations:
+All fields are required unless marked optional.
+Email
+First name
+Last name
+ Mobile phone
+ (optional)
+Why are you contacting us?
+Select an option
+Select an option
+News tip or story contribution
+Report an error
+Feedback
+Can we ask you a few questions about your background?
+ (optional)
+Select an option
+Select an option
+Yes
+No
+Submit
+This site is protected by reCAPTCHA and the Google 
+Privacy Policy
+ and 
+Terms of Service
+ apply.
+Posted 
+Sun 3 May 2026 at 6:37pm
+Sunday 3 May 2026 at 6:37pm
+Sun 3 May 2026 at 6:37pm
+, 
+updated 
+Sun 3 May 2026 at 7:22pm
+Sunday 3 May 2026 at 7:22pm
+Sun 3 May 2026 at 7:22pm
+Share options
+Copy link
+Facebook
+X (formerly Twitter)
+Top Stories
+Farrer result turns One Nation from protest to genuine electoral threat
+C
+Analysis by Clare Armstrong
+We asked the IRGC for their Strait of Hormuz rules and they emailed us back
+Topic:
+World Politics
+How everyone is making money — and what it means for the tax they pay
+Topic:
+Budget
+One woman calls it 'potato brain'. She's one of half of the workforce with burnout
+Topic:
+Mental Health
+Who is responsible for the problems in Alice Springs town camps?
+Topic:
+Indigenous Australians
+Popular now
+We asked the IRGC for their Strait of Hormuz rules and they emailed us back
+Topic:
+World Politics
+How everyone is making money — and what it means for the tax they pay
+Topic:
+Budget
+Farrer result turns One Nation from protest to genuine electoral threat
+C
+Analysis by Clare Armstrong
+Related topics
+Adelaide
+Brisbane
+Canberra
+Melbourne
+Police
+Sydney
+Technology
+United States
+Top Stories
+Farrer result turns One Nation from protest to genuine electoral threat
+C
+Analysis by Clare Armstrong
+We asked the IRGC for their Strait of Hormuz rules and they emailed us back
+Topic:
+World Politics
+How everyone is making money — and what it means for the tax they pay
+Topic:
+Budget
+One woman calls it 'potato brain'. She's one of half of the workforce with burnout
+Topic:
+Mental Health
+Who is responsible for the problems in Alice Springs town camps?
+Topic:
+Indigenous Australians
+Just In
+Vine out of Giro after horrific crash
+Topic:
+Sport
+10m ago
+10 minutes ago
+Sat 9 May 2026 at 9:38pm
+The community passionate about miniature versions of horses
+Topic:
+Feel Good
+29m ago
+29 minutes ago
+Sat 9 May 2026 at 9:19pm
+Regional sports 'stronger through diversity' as refugees thrive on field
+Topic:
+Sport
+29m ago
+29 minutes ago
+Sat 9 May 2026 at 9:19pm
+Whistleblower's plea to remove gag orders ahead of landmark ADF sexual violence inquiry
+Topic:
+Defence Forces
+31m ago
+31 minutes ago
+Sat 9 May 2026 at 9:17pm
+More Just In
+Back to top
+Footer
+ABC News homepage
+Your home of Australian stories, conversations and events that shape our nation.
+Contact ABC News
+This service may include material from Agence France-Presse (AFP), APTN, Reuters, AAP, CNN and the BBC World Service which is copyright and cannot be reproduced.
+We acknowledge Aboriginal and Torres Strait Islander peoples as the First Australians and Traditional Custodians of the lands where we live, learn, and work.
+ABC News
+Home
+Just In
+Watch Live News
+Politics
+Elections
+Australia
+World
+Sport
+City & Local
+Rural
+Business
+Analysis
+Live Sport
+Science
+Health
+Lifestyle
+Entertainment
+Indigenous
+Emergency
+Browse All Topics
+News in Language
+中文
+Tok Pisin
+Berita Bahasa Indonesia
+Follow ABC News
+Tiktok
+Facebook
+Instagram
+YouTube
+Apple News
+X
+Music & Audio
+listen
+Triple J
+Triple J Unearthed
+Live Radio
+Hottest 100
+Movies & TV
+iview
+List of ABC Shows
+Live TV
+TV Guide
+Kids & Students
+Education
+BTN
+ABC Kids
+Sign up to our newsletters
+Sign up to get the latest on your favourite topics from the ABC
+Go to Newsletters
+Editorial Policies
+Accessibility
+Help
+Contact Us
+Commercial
+Careers
+About the ABC
+Privacy Policy
+Terms of Use
+© 2026 ABC
+Close menu
+ABC
+ABC News
+ABC iview
+ABC listen
+Kids & Students
+Indigenous
+Information & Services
+Editorial Policies
+Read our editorial guiding principles
+Follow the ABC

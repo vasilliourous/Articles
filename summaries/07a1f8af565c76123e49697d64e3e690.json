@@ -1,0 +1,68 @@
+{
+  "article_title": "6 self-hosted apps that replaced every paid subscription I used to waste money on",
+  "core_thesis": "The article argues that self-hosting open-source applications can effectively replace popular paid subscription services (like Google Photos, Microsoft 365, Todoist, Bitwarden, YNAB, and ChatGPT) while saving money, preserving privacy, and giving users full control over their data. The author shares their personal experience with six specific tools, noting that most can run on low-power hardware like an N100 mini-PC, making self-hosting accessible and cost-effective in the long run.",
+  "detailed_summary": "The author, a self-hosting enthusiast, describes how they replaced six paid subscriptions with self-hosted alternatives to combat 'enshittification'—the trend of freemium services degrading quality, collecting data, and paywalling features. The tools covered are: Immich (Google Photos replacement) with facial recognition and mobile sync, but requiring robust backups; Nextcloud (Google Drive/Microsoft 365 alternative) enhanced with Collabora Online and Nextcloud Office for document editing; Vikunja (Todoist replacement) supporting deadlines, recurring tasks, Gantt charts, and Kanban boards; Vaultwarden (Bitwarden alternative) for password, TOTP, and API key management with low resource usage; Firefly III (YNAB alternative) for flexible budgeting and transaction tracking; and Ollama (ChatGPT replacement) for running local LLMs integrated with Home Assistant, Paperless-GPT, and note-taking apps. The author emphasizes that most services run on low-power devices (e.g., N100 mini-PC) and only Immich/Nextcloud require additional backup hardware, making self-hosting cheaper than subscriptions over time.",
+  "entities": [
+    {
+      "name": "Immich",
+      "type": "software",
+      "role": "Self-hosted Google Photos alternative with facial recognition and mobile sync."
+    },
+    {
+      "name": "Nextcloud",
+      "type": "software",
+      "role": "Self-hosted collaboration platform with document editing via Collabora Online and Nextcloud Office."
+    },
+    {
+      "name": "Vikunja",
+      "type": "software",
+      "role": "Self-hosted task management tool with Gantt charts, Kanban boards, and CalDAV support."
+    },
+    {
+      "name": "Vaultwarden",
+      "type": "software",
+      "role": "Lightweight self-hosted password manager compatible with Bitwarden clients."
+    },
+    {
+      "name": "Firefly III",
+      "type": "software",
+      "role": "Self-hosted personal finance manager with flexible budgets and spending charts."
+    },
+    {
+      "name": "Ollama",
+      "type": "software",
+      "role": "Local LLM runner for AI tasks without cloud dependency."
+    },
+    {
+      "name": "Ayush Pande",
+      "type": "person",
+      "role": "Author and self-hosting enthusiast."
+    }
+  ],
+  "key_data_points": [
+    "Immich supports a massive list of file formats, advanced search filters, public sharing, hierarchical tags, and automatic album generation, and can use a spare GPU (e.g., Arc A750) to improve facial recognition (🟢 relevant to your homelab: can leverage spare hardware for enhanced functionality).",
+    "Nextcloud requires additional apps like Collabora Online and Nextcloud Office to match Microsoft 365/Google Drive capabilities, enabling document, spreadsheet, and presentation editing (🟢 relevant to your DevOps: demonstrates modular architecture for extending core services).",
+    "Vikunja can import records from Todoist and supports deadlines, recurring tasks, progress bars, sub-tasks, Gantt charts, Kanban boards, lists, and tabular views, plus CalDAV sync (🟢 relevant to your productivity: offers a feature-rich, self-hosted task manager).",
+    "Vaultwarden is a lightweight Bitwarden-compatible server that handles passwords, API keys, TOTP tokens, and private documents, with password/passphrase generation (🟢 relevant to your Red Teaming: can be used to securely store and generate credentials for testing).",
+    "Firefly III tracks monetary transactions and creates detailed spending charts, offering flexible budgets, piggy banks, and bills, unlike the rigid zero-based budgeting of YNAB (🟢 relevant to your student finances: helps manage budgets without subscription costs).",
+    "Ollama allows running local LLMs for tasks like querying Home Assistant, generating OCR text via Paperless-GPT, and analyzing notes, with power draw spiking only in short bursts (🟢 relevant to your Red Teaming: local LLMs can be used for automated analysis without data leaving your network).",
+    "Most self-hosted apps can run on an N100 mini-PC; only Immich and Nextcloud may need additional backup hardware (e.g., a single-board computer with HDDs and Tailscale) (🟢 relevant to your homelab: low-cost hardware suffices for a full self-hosted stack)."
+  ],
+  "methodology_steps": [
+    "Replace Google Photos with Immich: Deploy Immich on a server, configure a spare GPU (e.g., Arc A750) for facial recognition, set up mobile sync, and ensure robust backups (e.g., a remote node with Tailscale) to avoid data loss.",
+    "Replace Google Drive/Microsoft 365 with Nextcloud: Install Nextcloud, then add Collabora Online and Nextcloud Office apps from the app store for document editing. Optionally install Calendar, Whiteboard, RSS, notes, forms, and cookbook apps.",
+    "Replace Todoist with Vikunja: Deploy Vikunja, import existing Todoist data, and use features like deadlines, recurring tasks, Gantt charts, Kanban boards, and CalDAV sync with calendar apps.",
+    "Replace Bitwarden with Vaultwarden: Run Vaultwarden (lightweight Bitwarden server), use Bitwarden clients to connect, and store passwords, API keys, TOTP tokens, and private documents. Generate strong passwords/passphrases with adjustable parameters.",
+    "Replace YNAB with Firefly III: Deploy Firefly III for flexible budgeting, transaction tracking, and spending charts. Alternatively, use Actual Budget for zero-based budgeting if preferred.",
+    "Replace ChatGPT with Ollama: Install Ollama to run local LLMs. Integrate with Home Assistant for smart device queries, Paperless-GPT for OCR, and note-taking apps like Open Notebook or Blinko for analysis."
+  ],
+  "conclusions": [
+    "Self-hosting these six apps can eliminate multiple paid subscriptions (Google Photos, Microsoft 365, Todoist, Bitwarden, YNAB, ChatGPT) while maintaining or improving functionality, with the added benefits of privacy and data control. The author's experience shows that most tools run on low-power hardware, making the setup cost-effective over time.",
+    "Immich is a strong Google Photos alternative but requires careful backup planning—unlike Google Photos, it does not inherently protect against data loss from server experiments. A remote sync node (e.g., a single-board computer with HDDs and Tailscale) is recommended.",
+    "Vaultwarden's low resource usage and compatibility with Bitwarden clients make it an ideal self-hosted password manager, alleviating concerns about losing credentials during server experiments due to local caching in client apps.",
+    "Ollama enables local AI capabilities without recurring costs or privacy breaches, and can be integrated with other self-hosted tools (Home Assistant, Paperless-GPT, note apps) to enhance their functionality."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your interests in self-hosting, DevOps, and cost-saving. It provides a concrete list of six open-source tools that can replace expensive subscriptions, with detailed setup considerations (e.g., backups for Immich, app extensions for Nextcloud). For your homelab, the emphasis on low-power hardware (N100 mini-PC) and GPU usage for facial recognition/LLMs offers practical deployment ideas. As a student, the financial savings from replacing subscriptions like Microsoft 365 and Todoist are directly beneficial. The article also touches on privacy and data control, aligning with your cybersecurity mindset. You can immediately apply these recommendations to reduce costs and gain hands-on experience with self-hosted infrastructure.",
+  "extra_advice": "Consider setting up a dedicated low-power server (e.g., an N100 mini-PC) running Proxmox or Docker to host all six apps. Use Tailscale for secure remote access and backup sync. For Red Teaming, leverage Vaultwarden to store and generate test credentials, and Ollama to run local LLMs for automated phishing email generation or log analysis without cloud exposure. Start with Vaultwarden and Vikunja as they have minimal hardware requirements and provide immediate value.",
+  "source_url": "https://www.xda-developers.com/self-hosted-apps-that-replaced-every-paid-subscription-i-used/"
+}

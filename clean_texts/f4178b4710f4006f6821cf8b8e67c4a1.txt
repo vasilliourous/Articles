@@ -1,0 +1,259 @@
+UmbrelOS - A Debian-based personal home cloud OS with a slick user interface - CNX Software
+Skip to content
+CNX Software – Embedded Systems News
+Reviews, tutorials and the latest news about embedded systems, IoT, open-source hardware, SBC's, microcontrollers, processors, and more
+Menu	
+About
+Expand child menu
+About Us
+Contact Us
+Advertisement & Consulting Services
+Work for Us
+Support CNX Software
+Privacy Policy
+All News
+Raspberry Pi
+Arduino
+Reviews
+Tutorials
+UP Embedded
+Expand child menu
+UP AI Ecosystem
+Embedded Boards
+Embedded Systems
+Posted on
+April 12, 2026
+April 12, 2026
+ by 
+Jean-Luc Aufranc (CNXSoft)
+ - 
+3 Comments
+ on UmbrelOS – A Debian-based personal home cloud OS with a slick user interface
+UmbrelOS – A Debian-based personal home cloud OS with a slick user interface
+UmbrelOS is a Debian-based home cloud OS with a neat web-based interface that works on devices like Raspberry Pi SBCs, mini PCs, old computers, and more.
+Having been first released in 2020, the OS is not exactly new, but I only discovered it today after noticing it was one of the supported operating systems for the 
+Pironman 5 Pro Max enclosure for the Raspberry Pi 5
+. It initially launched as a tool for running a Bitcoin full node on a Raspberry Pi easily, but eventually turned into a home cloud OS that competes against other open-source solutions such as 
+OpenMediaVault
+ or 
+CasaOS/ZimaOS
+.
+UmbrelOS highlights:
+Intuitive web dashboard at umbrel.local or your device’s IP.
+Umbrel App Store
+ — Over 300 apps, including Nextcloud or Immich for media and document storage, Jellyfin for media streaming, Home Assistant automation framework, Vaultwarden password manager, Bitcoin and Lightning nodes, AdGuard Home adblocker, and AI-related tools like Ollama and OpenClaw.
+Self-hosted — Runs apps in Docker containers
+Automatic encrypted backups to another Umbrel device or a NAS on your network, or an external USB drive.
+Rewind in Files – Restore specific files and folders from any point in the past.
+Network mounts in Files app
+External USB storage and formatting on AMD64
+GPU acceleration for apps
+Hardware compatibility – Raspberry Pi 4/5, x86 64-bit (AMD64) systems, virtual machines.
+Files app
+Source code, instructions, and OS images for AMD64 systems, Linux virtual machines, and Raspberry Pi 4/5 can be found 
+on GitHub
+. While most people will likely install UmbrelOS on their own hardware, the company also released two hardware devices, the Umbrel Home and Umbrel Pro, which run the same software but offer priority support. Since UmbrelOS has been tested on the Umbrel hardware, features like WiFi, data migration, and external USB storage support are also guaranteed to work.
+The small Umbrel Home pairs a quad-core Intel N150 CPU with 16GB of DDR5 RAM and up to a 4 TB SSD and offers Gigabit Ethernet connectivity and a few USB 3.0 ports, while the Umbrel Pro is powered by an octa-core Intel Core i3-N300 CPU coupled with 16GB LPDDR5 and up to 32TB SSD storage (4x 8TB), and features 2.5GbE networking, and two 10 Gbps USB 3.2 ports.
+You can find more details about UmbrelOS and the two Umbrel devices on 
+the project’s website
+.
+Jean-Luc Aufranc (CNXSoft)
+Jean-Luc started CNX Software in 2010 as a part-time endeavor, before quitting his job as a software engineering manager, and starting to write daily news, and reviews full time later in 2011.
+Share this:
+Facebook
+Twitter
+Hacker News
+Slashdot
+Reddit
+LinkedIn
+Pinterest
+Flipboard
+MeWe
+Line
+Email
+Share
+Support CNX Software! Donate via 
+cryptocurrencies
+, 
+become a Patron
+ on Patreon, or purchase goods on 
+Amazon
+ or 
+Aliexpress
+. We also use affiliate links in articles to earn commissions if you make a purchase after clicking on those links.
+Tags
+alder lake
+, 
+artificial intelligence (AI)
+, 
+bitcoin
+, 
+cryptocurrency
+, 
+debian
+, 
+home assistant
+, 
+Linux
+, 
+nas
+, 
+Raspberry Pi
+, 
+twin lake
+Related posts:
+Raspberry Pi 5 vs Intel N100 mini PC comparison – Features, Benchmarks, and Price
+Cytron CM4 Maker Board review – Part 2: NVMe SSD, RTC, Buzzer, Grove modules, ChatGPT…
+Getting Started with Raspberry Pi AI HAT+ (26 TOPS) and Raspberry Pi AI camera
+Raspberry Pi 5 edge AI computer ships with 8GB RAM, Hailo-8 AI module, supports Frigate NVR
+Zimaboard 2 – An Intel N150 micro server and mini PC with dual SATA, dual 2.5GbE, PCIe slot, miniDP (Crowdfunding)
+Subscribe
+ Login
+Notify of 
+new follow-up comments
+new replies to my comments
+Connect with:
+Label
+{}
+[+]
+Name*
+Email*
+Website
+I agree to the 
+Privacy Policy
+The comment form collects your name, email and content to allow us keep track of the comments placed on the website.  Please read and accept our website Terms and Privacy Policy to post a comment.
+Connect with:
+Label
+{}
+[+]
+Name*
+Email*
+Website
+I agree to the 
+Privacy Policy
+The comment form collects your name, email and content to allow us keep track of the comments placed on the website.  Please read and accept our website Terms and Privacy Policy to post a comment.
+3
+ Comments                    
+oldest
+newest
+
+    itchy n scratchy
+
+
+    26 days ago
+
+Thanks, great find!
+Reply
+
+    mohamed Al sayed
+
+
+    26 days ago
+
+It is mostly similar to ZimaOS but Zima OS is more advanced in NAS implementation and it also has app store for hundreds of self hosted services.
+Reply
+
+    King Sav
+
+
+    20 days ago
+
+The specs on their hardware are trash for the price and I wish the N processor on all my enemies lol
+Reply
+
+                                    Load More Comments                                
+Post navigation
+Previous Post
+Previous
+$15 STM32U575 development board features FPC display connector, microSD card slot, two 48-pin GPIO headers
+Next Post
+Next
+Homture Magic Frame smart photo display integrates generative AI and 60 GHz mmWave radar (Sponsored)
+
+			Search for:		
+
+		Search	
+Facebook
+Twitter
+LinkedIn
+Telegram
+YouTube
+RSS
+Trending Posts - Last 7 Days 
+ESP32-P4 security key features 2-inch touchscreen, 3,000+ password capacity (Crowdfunding)
+16.6k views
+ | 
+9 comments
+Study compares Rust and C languages for embedded firmware development
+11.2k views
+ | 
+6 comments
+HAUI 3Gang Touch Display is a 7-inch wall-mount Home Assistant dashboard with MQTT support
+5.7k views
+ | 
+4 comments
+ESP32-P4 + ESP32-C5 board features Raspberry Pi-compatible MIPI connectors for official displays and camera modules
+4.2k views
+ | 
+0 comments
+6.67-inch flexible AMOLED display works with Raspberry Pi, LattePanda, and other SBCs with HDMI output
+4.1k views
+ | 
+0 comments
+SPONSORS
+Recent Comments
+MereHuman
+ on 
+ESP32-P4 security key features 2-inch touchscreen, 3,000+ password capacity (Crowdfunding)
+Scott Yeager
+ on 
+HAUI 3Gang Touch Display is a 7-inch wall-mount Home Assistant dashboard with MQTT support
+itchy n scratchy
+ on 
+FalCAN Probe is an open-source, STM32-based USB to CAN/RS-485/RS-422 adapter
+itchy n scratchy
+ on 
+Ploopy Bean open-source hardware pointing stick mouse runs QMK firmware
+Justin White
+ on 
+ESP32-P4 security key features 2-inch touchscreen, 3,000+ password capacity (Crowdfunding)
+Subscribe to Comments RSS Feed
+Latest Reviews
+Review of Rikomagic DS08 Android 13 digital signage player
+Rikomagic has sent me a sample of their DS08 digital signage player for review. It’s based on a 
+ […]
+Khadas Mind Graphics 2 and Mind xPlay display + keyboard review – Part 1: Unboxing, teardown, and first try
+Khadas has sent us the Mind Graphics 2 dock, Mind xPlay portable display and keyboard, as well as the Mind 2 
+ […]
+Pironman 5 Pro Max Review – A Raspberry Pi 5 Tower PC case with integrated video and audio capabilities, optional …
+SunFounder has sent us a sample of the Pironman 5 Pro Max tower PC case for Raspberry Pi 5 for review 
+ […]
+Copyright 2010-2026 - CNX Software Limited - 
+Contact us
+Privacy Policy
+This website uses cookies to improve your experience. We'll assume you're ok with this, but if you don't like these, you can remove them 
+Accept
+Privacy & Cookies Policy
+Close
+Privacy Overview
+This website uses cookies to improve your experience while you navigate through the website. Out of these, the cookies that are categorized as necessary are stored on your browser as they are essential for the working of basic functionalities of the ...
+
+								Necessary							
+Necessary
+Always Enabled
+
+									Necessary cookies are absolutely essential for the website to function properly. This category only includes cookies that ensures basic functionalities and security features of the website. These cookies do not store any personal information.								
+
+								Non-necessary							
+Non-necessary
+
+									Any cookies that may not be particularly necessary for the website to function and is used specifically to collect user personal data via analytics, ads, other embedded contents are termed as non-necessary cookies. It is mandatory to procure user consent prior to running these cookies on your website.								
+SAVE & ACCEPT
+wpDiscuz
+Insert
+Copy link
+✓
+Thanks for sharing!
+Find any service
+AddToAny
+More…

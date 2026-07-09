@@ -1,0 +1,701 @@
+How to use Claude as a coding tutor that tracks my progress (Prompt included)
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+Networking
+Storage and NAS
+Components
+Peripherals
+Operating Systems
+Submenu
+Linux
+Windows
+Software
+Submenu
+Programming
+Applications
+Mobile
+Submenu
+Android
+iPhone
+Carriers
+New Tech
+Submenu
+Hobbies
+Smart Home
+Homelab
+Single-Board Computers (SBCs)
+Cutting Edge
+Streaming
+Submenu
+Streaming Content
+Streaming Platforms
+Audio/Video
+Automotive
+Reviews
+Buying Guides
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+More Action
+Sign in now
+🔥Tech Deals
+Storage
+Streaming
+Linux
+Open Source
+Microsoft Excel
+Android
+Windows
+Close
+I transformed Claude into the ultimate coding tutor that tracks my progress (Prompt included)
+Credit: Patrick Campanale / How-To Geek
+By 
+Dibakar Ghosh
+Published
+ May 4, 2026, 9:30 AM EDT
+Dibakar Ghosh is a tech journalist at How-To Geek, where he focuses on Linux, Windows, and productivity tools. His goal is simple—help readers at every skill level get more done with the tech they use every day.
+
+He began his writing career in 2016 with WordPress tutorials, later moving into digital marketing, where he spent years reviewing complex tools for marketers. His work has also appeared on 
+Authority Hacker
+, where he’s shared in-depth guides on digital workflows and online productivity. That experience now shapes his journalism, blending analytical depth with practical, real-world advice. 
+
+When he’s not writing or testing software, Dibakar is usually watching movies or playing video games. He’s a huge Christopher Nolan fan and a strong proponent of the theater experience. In gaming, he has sunk hundreds of hours into Insomniac’s Spider-Man series, Returnal, Prototype, Darksiders, and Final Fantasy titles.
+Sign in to your 
+How-To Geek
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																						
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+If you’ve tried using Claude to learn to code and walked away feeling like you just witnessed a magic trick rather than actually learned something, you’re not alone. Without structure, 
+AI coding tools
+ default to doing the work for you—you end up with hundreds of lines of code without understanding the algorithm or the logic behind it.
+✕
+ Remove Ads
+That said, after much trial and error, I’ve finally perfected a prompt that turns Claude into an exercise-driven tutor. It focuses on teaching concepts by making you work through the code, while also remembering your progress and difficulties to refine future sessions. Best of all, it only takes two minutes to set up.
+
+                        How you can use Claude vibe coding to learn actual coding
+               
+
+            The daily workflow and context tracking
+    
+It’s not exactly news that you can use an 
+LLM as a tutor
+. Being able to ask questions in natural language and get a relevant, contextual answer is a genuine game changer for self-learners. The experience is fundamentally different from—and often better than—Googling something. With search, you had to frame everything as keywords and hope someone had already written about your specific problem in a way that made sense. With an LLM, you just ask, and it explains the concept in a way you can actually relate to.
+Quiz
+8 Questions · Test Your Knowledge
+Artificial intelligence basics
+Trivia challenge
+From chatbots to neural networks — find out how much you really know about AI.
+Concepts
+History
+Tools
+Ethics
+Models
+Begin
+01 / 8
+Concepts
+What does the term 'machine learning' most accurately describe?
+A
+A robot physically learning to move its limbs
+B
+A system that improves its performance by learning from data
+C
+Software that mimics human speech patterns exactly
+D
+A computer that programs itself from scratch
+Correct! Machine learning is a branch of AI where systems improve automatically through experience and exposure to data. Instead of being explicitly programmed for every task, these systems identify patterns and make decisions with minimal human intervention.
+Not quite. Machine learning refers to systems that learn from data to improve their performance over time. It's less about physical movement or exact mimicry and more about finding patterns in large datasets to make predictions or decisions.
+Continue
+02 / 8
+History
+Who is widely credited with coining the term 'artificial intelligence' in 1956?
+A
+Alan Turing
+B
+Marvin Minsky
+C
+John McCarthy
+D
+Claude Shannon
+Correct! John McCarthy coined the term 'artificial intelligence' at the famous Dartmouth Conference in 1956, which is considered the founding event of AI as a formal field of research. He later invented the Lisp programming language, which became a staple in early AI development.
+Not quite. While Alan Turing, Marvin Minsky, and Claude Shannon were all AI pioneers, it was John McCarthy who coined the term 'artificial intelligence' at the Dartmouth Conference in 1956. McCarthy went on to shape the field enormously throughout his career.
+Continue
+03 / 8
+Tools
+What type of AI model powers popular chatbots like ChatGPT?
+A
+A decision tree
+B
+A large language model (LLM)
+C
+A convolutional neural network (CNN)
+D
+A Bayesian classifier
+Correct! ChatGPT and similar chatbots are powered by large language models, or LLMs. These models are trained on enormous amounts of text data and learn to predict and generate human-like language, making them capable of conversation, writing, and reasoning tasks.
+Not quite. ChatGPT is built on a large language model (LLM). While decision trees and Bayesian classifiers are real AI tools, they're used for much simpler tasks. CNNs are great for image recognition but aren't designed for open-ended language generation.
+Continue
+04 / 8
+Concepts
+What is 'overfitting' in machine learning?
+A
+When a model uses too much computing power
+B
+When a model performs well on training data but poorly on new data
+C
+When a dataset is too large to process efficiently
+D
+When an AI model is trained for too many tasks at once
+Correct! Overfitting happens when a model learns the training data too well — including its noise and quirks — and then fails to generalize to new, unseen data. It's like a student who memorizes practice exam answers but can't handle different questions on the real test.
+Not quite. Overfitting describes a model that has learned the training data so specifically that it performs poorly on new data. It's one of the most common challenges in machine learning and is addressed through techniques like cross-validation and regularization.
+Continue
+05 / 8
+Ethics
+What is 'AI bias' most commonly referring to?
+A
+An AI that deliberately favors one programming language over another
+B
+When AI hardware runs hotter on one side than the other
+C
+Systematic and unfair outcomes caused by skewed training data or design
+D
+The preference an AI has for faster processors
+Correct! AI bias refers to systematic errors or unfair outcomes that arise when a model is trained on skewed, incomplete, or unrepresentative data. For example, facial recognition systems have been shown to perform worse on darker skin tones due to biased training datasets, raising serious ethical concerns.
+Not quite. AI bias is about systematic, often harmful unfairness baked into a model's outputs, usually due to skewed training data or flawed design choices. It's a major ethical concern in areas like hiring algorithms, criminal justice tools, and medical diagnostics.
+Continue
+06 / 8
+Models
+What does 'GPT' stand for in AI model names like GPT-4?
+A
+General Processing Technology
+B
+Generative Pre-trained Transformer
+C
+Graphical Prediction Tool
+D
+Global Pattern Training
+Correct! GPT stands for Generative Pre-trained Transformer. 'Generative' means it can create new content, 'pre-trained' means it was trained on a large dataset before being fine-tuned, and 'Transformer' refers to the neural network architecture that made modern LLMs possible.
+Not quite. GPT stands for Generative Pre-trained Transformer. The Transformer architecture, introduced in a landmark 2017 paper called 'Attention Is All You Need,' revolutionized natural language processing and laid the groundwork for today's powerful AI chatbots.
+Continue
+07 / 8
+Concepts
+Which of the following best describes 'deep learning'?
+A
+AI that can only work on complex, research-level problems
+B
+A type of machine learning using neural networks with many layers
+C
+Learning algorithms that require no training data
+D
+A method of storing AI models on deep storage servers
+Correct! Deep learning is a subset of machine learning that uses artificial neural networks with many layers — hence 'deep' — to model complex patterns in data. It's the technology behind image recognition, voice assistants, and most modern AI breakthroughs.
+Not quite. Deep learning uses multi-layered neural networks inspired loosely by the human brain. The 'depth' refers to the number of layers in the network, and more layers generally allow the model to learn more complex and abstract representations of data.
+Continue
+08 / 8
+History
+What was the name of the IBM AI system that famously defeated chess champion Garry Kasparov in 1997?
+A
+Watson
+B
+AlphaGo
+C
+Deep Blue
+D
+HAL 9000
+Correct! IBM's Deep Blue defeated world chess champion Garry Kasparov in a six-game match in 1997, marking a landmark moment in AI history. It was the first time a computer beat a reigning world chess champion under standard tournament conditions, shocking the world.
+Not quite. The IBM system was called Deep Blue. Watson is IBM's later AI known for winning Jeopardy!, while AlphaGo is Google DeepMind's system that mastered the board game Go in 2016. HAL 9000, of course, is the fictional AI from Stanley Kubrick's 2001: A Space Odyssey.
+See My Score
+Challenge Complete
+Your Score
+/ 8
+Thanks for playing!
+Try Again
+That said, almost any LLM can help you learn web design. What makes Claude particularly useful is its 
+Artifacts
+ feature—that and the fact that it’s the best LLM for coding I’ve tested. In Claude’s web or desktop app, it generates code and renders it live in a panel right next to the chat. So when you’re learning something, you’re not switching between a code editor, a browser, and a chat window—it all happens in one place.
+Related
+
+			Claude vs. ChatGPT vs. Gemini: I tested them on a real coding challenge and one dominated
+		
+May the best programmer win!
+Posts
+12
+By 
+Zunaid Ali
+Apr 19, 2026
+✕
+ Remove Ads
+On top of that, Claude has 
+Projects
+—a unified space for related chats. You can create something like “Learning Web Design,” and all your sessions live there. But it’s more than just organization. Claude builds a memory from the conversations within that project, synthesizing what you’ve covered, where you’re making progress, and where you keep getting stuck. So when you open a new chat inside that project, Claude already has context on your learning and can tailor its help accordingly.
+
+                        How to do your coding exercises
+               
+
+            Escaping the spectator trap
+    
+ One of the biggest risks with AI coding tools is slipping into spectator mode—the AI writes everything, you watch it happen, it looks great, but you don’t actually retain anything. This system is designed to prevent that.
+It does this through an exercise mode built into the tutoring prompt. Instead of just explaining concepts and writing code for you, Claude gives you a block of code and challenges you to modify it to achieve a specific result. You copy the code from the Artifact, paste it into 
+VS Code—or your IDE of choice
+—make the changes yourself, and then paste your version back into the chat. Claude then evaluates what you wrote and tells you whether your logic and syntax are correct.
+✕
+ Remove Ads
+What makes this effective is that Claude is prompted to be deliberately stubborn. It will answer clarifying questions if you’re stuck, but it won’t move on to the next topic until you’ve submitted a correct solution. You can’t just skip ahead.
+
+                        Building the system and how it works
+               
+
+            It’ll barely take 2 minutes
+    
+Setup takes about two minutes. Open Claude, create a new Project, and paste this prompt into the Project instructions:
+# Role
+
+You are a hands-on coding tutor for a student learning to program. This Project will span many sessions. Your job is to move them from zero to comfortable writing real code — not to build things for them.
+
+# Scope — what this workflow covers
+
+You teach anything Claude can execute or render live, because the tight "see it run" feedback loop is what makes this setup work. That gives you a genuinely useful curriculum:
+
+**Core curriculum (rendered as HTML or React Artifacts):**
+-
+ HTML structure
+
+-
+ CSS fundamentals and layout (Flexbox, Grid)
+
+-
+ JavaScript (variables, functions, events, DOM manipulation)
+
+-
+ React components (Hooks, props, state; 
+`recharts`
+, 
+`lucide-react`
+, and 
+`shadcn/ui`
+ are available in the Artifacts React runtime)
+
+**Optional track (rendered via the Analysis tool):**
+-
+ Python for data visualization — matplotlib, pandas, seaborn, numpy, plotly. The student sees charts render directly in the chat.
+
+**Optional side-trips:**
+-
+ SVG for vector graphics fundamentals
+
+-
+ Anything else Claude can render live that supports a teaching goal
+
+**Teaching aid — not a curriculum of its own:**
+-
+ Mermaid diagrams. Use these liberally to visualize things that are hard to picture from code alone: control flow in a loop, the shape of a data structure, the steps of an algorithm, the component tree of a React app, the request/response cycle of a web page. Pulling up a Mermaid diagram alongside code often makes an abstract concept click instantly.
+
+**Out of scope:**
+
+Languages or setups where Claude can't run the code live (most back-end and systems languages — Ruby, PHP, Go, Java, C++, full-stack Node.js; anything needing a database, server, mobile toolchain, or packages beyond what Claude's sandboxes bundle). If the student asks for these, pause and say: "Claude can't execute this live, so you'd lose the instant feedback that makes this workflow effective. I can still tutor you, but we'd be relying entirely on your local environment — slower loop, more window-switching. Want to proceed anyway, or stick with what runs live?" Honor their choice.
+
+# At the start of every session
+
+Check the Project's knowledge base for session summaries (usually labeled "Day 1", "Day 2", etc.). If one exists, read the most recent one first and calibrate:
+
+-
+ Continue from the concept after the last one that clicked
+
+-
+ Revisit anything flagged "still confusing" or "needs work"
+
+-
+ Don't re-teach what's already solid
+If no summary exists, ask what they want to learn. If they're unsure, offer a default path — usually: HTML → CSS → CSS layout → JavaScript → DOM → React. If they're more interested in data, suggest starting with Python and matplotlib instead. They can jump around — just briefly note what prerequisites you're assuming before moving sideways.
+
+# How you teach
+**Run it live.**
+ Whenever you introduce a concept, create or update an Artifact (for HTML/CSS/JS or React) or use the Analysis tool (for Python) so the student sees output next to the code.
+
+**Reach for Mermaid when words aren't enough.**
+ If the student is wrestling with how a 
+`for`
+ loop flows, what 
+`useState`
+ actually does, or what a binary tree looks like, sketch it as a Mermaid diagram before showing more code. Visual intuition first, syntax second.
+
+**Comment every meaningful line.**
+ Explain what each line does in an inline comment. Students learn as much from the comments as from the result.
+
+
+```html
+<!-- The <p> tag creates a paragraph block -->
+<p>Hello world.</p>
+```
+**Explain the why, not just the what.**
+ When introducing 
+`display: flex`
+ or 
+`useState`
+ or a pandas DataFrame, explain what problem it solves and what the alternative was. Concepts stick when students understand the motivation.
+
+
+
+# Tutorial mode — the core practice loop
+
+
+This is the most important part. Never just write the full solution for the student. The biggest risk with AI coding help is spectator mode — watching code appear and retaining nothing. Prevent it by running every concept through this loop:
+
+
+1.
+ Introduce the concept and show a small example (Artifact for web, Analysis tool for Python).
+
+2.
+ Give the student a specific challenge: modify the code to achieve a concrete result (e.g., "change the paragraph's color to navy with 16px of padding" or "add a button that increments a counter" or "change the bar chart to a line chart and filter to only 2024 data").
+
+3.
+ Tell them to copy the code into VS Code, make the change locally, then paste their version back into chat.
+
+4.
+ When they paste it back, review their logic and syntax. Tell them specifically what's right, what's wrong, and why.
+
+5.
+ Do not move to the next concept until they've submitted a working solution. Be warm but firm about this.
+
+If they're stuck, answer clarifying questions, offer progressively bigger hints, even show one line — but never write the full answer and move on. They have to be the one who finishes the code.
+
+If they say "just show me" or "skip this," redirect gently: "The whole point of this setup is that you write the code. I'll give you hints as big as you need — what specifically is tripping you up?"
+
+
+# Local preview setup
+
+The first time the student is ready to run code outside Claude's sandbox, generate an Artifact walking them through how to do it locally:
+
+-
+**HTML/CSS/JS:**
+ save 
+`.html`
+ files, open in a browser, or use VS Code's Live Server extension.
+
+-
+**React:**
+ a quick intro to Vite (
+`npm create vite@latest`
+) so they can run a real dev server with hot reload.
+
+-
+**Python:**
+ installing Python, setting up a virtual environment, and running scripts from the terminal or in a Jupyter notebook via VS Code.
+
+This bridges them from tutor-assisted learning toward working like a real developer.
+
+
+# Ending a session
+
+
+When the student says something like "wrap up," "end session," or "done for today," generate a session summary Artifact with this exact structure:
+
+
+# Session Summary — [Date]
+## Concepts covered
+-
+ [bullet list]
+
+## What clicked
+-
+ [things they showed solid understanding of]
+
+## Sticking points
+-
+ [where they got stuck or asked repeated clarifying questions]
+
+## Still needs work
+-
+ [concepts to revisit next time]
+
+## Suggested next session
+-
+ [what to tackle next, given where they are]
+
+After producing it, remind them: "Save this to the Project's knowledge base using the 
+**Add Content**
+ button and label it by day (e.g., 'Day 3'). I'll read it at the start of our next session so we don't lose our place."
+
+
+# Tone
+
+Encouraging but honest. Celebrate real understanding. Flag confusion instead of papering over it. Treat the student as a capable adult choosing to learn something new — not as someone fragile. When they make a mistake, say so clearly and explain the correction.
+
+
+That’s it—you’ve successfully created a Claude project for learning how to code. Now just start chatting—tell Claude what you want to learn, or if you’re not sure where to begin, it can recommend a starting point for you.
+Just remember that at the end of each session, don’t just close the chat. Explicitly tell Claude you’re done for the day so it can generate a summary Artifact for you to save in your Project’s knowledge base. This is what maintains continuity.
+From that point on, every new session starts with Claude already aware of your current proficiency level. It references that summary to understand where you are, what needs more work, and adjusts accordingly.
+Related
+
+			5 Useful AI Prompting Techniques You Should Know
+		
+Level up your AI game with these pro prompting strategies.
+
+Posts
+By 
+Dibakar Ghosh
+Aug 14, 2024
+
+                        Limitations and scope
+               
+
+            Nothing is perfect
+    
+✕
+ Remove Ads
+ The whole system is built around one core idea: Claude runs your code live, so you see results immediately. That’s what makes the feedback loop tight. As a result, the workflow works best with languages Claude can execute in the Artifact panel—
+HTML, CSS, JavaScript, and React
+. It can also use Python, but only for data visualization through the Analysis tool.
+
+                    Subscribe for hands-on Claude coding prompts & lessons
+                
+Want more Claude tutoring recipes? Subscribe to the newsletter for curated prompts, exercise templates, and session-ready Project instructions, plus related tutoring techniques that make practicing with Artifacts and building real exercises straightforwar
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+Where it breaks down is with back-end and systems languages—things like Ruby, PHP, Go, Java, C++, or anything that requires a database, a server, or a mobile toolchain. Claude can’t run or render these live. If you ask to learn one of them, the prompt is designed to be upfront and tell you that you won’t be able to visualize the code working inside the chat.
+
+    						Claude
+			
+Price
+
+									
+										
+											$20
+
+										
+																	
+Claude is an AI assistant made by Anthropic. It can assist with a wide range of tasks—writing, coding, analysis, research, and more. Unlike a search engine, Claude reasons through problems conversationally, making it useful as a thinking partner rather than just an information retrieval tool.
+Expand
+Collapse
+That said, you can still use this tutoring method to learn any language. You’ll just need to rely on your local IDE to compile and run the code, which means more context switching and a slower feedback loop. However, the coding exercises and context tracking still work as expected.
+Related
+
+			6 programming languages that sound fake but aren’t
+		
+No fake news here, you really can program with musical notes if you want to!
+Posts
+By 
+Bobby Jack
+Feb 16, 2026
+✕
+ Remove Ads
+Programming
+AI & Machine Learning
+AI (Artificial Intelligence)
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. 
+Read More
+.
+Close
+✕
+ Remove Ads
+
+                                                    Desktop
+                                            
+
+                                                    Mobile
+                                            
+
+			Why Linux is my IDE
+		
+2 hours ago
+
+			Windows Fast Start-up is still causing problems in 2026, and everyone should disable it
+		
+5 hours ago
+
+			KDE Dolphin does file management better than GNOME—here's why
+		
+7 hours ago
+See More
+
+			8 Google Messages features I wish someone had told me about sooner
+		
+3 hours ago
+
+			5 hidden Motorola gestures that make other Android phones feel basic
+		
+4 hours ago
+
+			This open-source app suite replaced 6 closed-source apps and tools on my Android phone
+		
+6 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			I let Claude control my computer—and it filled my Amazon basket
+		
+
+			How to Use CHKDSK to Fix Hard Drive Problems on Windows 10 or Windows 11
+		
+
+			4 open-source Windows apps that are better than their paid rivals
+		
+
+                                                
+                
+                                                    
+                                    Thread
+                                                    
+Sign in to your 
+How-To Geek
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Be the first to post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+This space is open for discussion.
+Be the first to share your thoughts.
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 21, 2026
+
+                                    Latest Rufus update debloats and installs Windows 11 silently
+                            
+Apr 21, 2026
+
+                                    Here's an open-source Google Circle To Search alternative that works offline
+                            
+Apr 21, 2026
+
+                                    5 open-source operating systems everyone mistakes for Linux
+                            
+Apr 20, 2026
+
+                                    Plex kept making it harder to stream my media, so I replaced it with its open-source rival
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+How-To Geek
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement
+Skip Ad
+5

@@ -1,0 +1,394 @@
+This open-source app finally showed me how much I was actually spending on subscriptions
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+1
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+This open-source app finally showed me how much I was actually spending on subscriptions
+By 
+Dhruv Bhutani
+Published
+ Apr 21, 2026, 8:31 AM EDT
+Dhruv Bhutani has been writing about consumer technology since 2008, offering deep insights into the personal technology landscape through features and opinion pieces. He writes for XDA-Developers, where he focuses on topics like productivity, networking, self-hosting, and more. Over the years, his work has also appeared in leading publications such as Android Police, Android Authority, CNET, PCMag, and more. Outside of his professional work, Dhruv is an avid fan of horror media spanning films and literature, enjoys fitness activities, collects vinyl records, and plays the guitar.
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+1
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Subscriptions are part and parcel of modern day entertainment, streaming, and even software use. But I had no idea how much money I was wasting on 
+subscriptions
+ until I started to track them down and make a note of things. Turns out, it took a deep dive into my email receipts to find every single 
+streaming service
+, SaaS tool, domain, random trial that I've never bothered canceling. While, yes, the cost of these services certainly matters, not having visibility is a bigger issue. I only really noticed many of these services when I got charged, and then too, often the merchant name doesn't match the actual service.
+✕
+ Remove Ads
+Let's just say, it's a real problem, which is why I set up Zublo. This 
+self-hosted
+, open-source app gives you a single, local dashboard for every recurring expense that you make, and gives you a proper look at exactly what you're paying for.
+
+                        Visualize your spending
+               
+
+            Fully private and offline spending analysis
+    
+Credit: 
+ Zublo's entire focus is on giving you visibility into your subscriptions. The idea here is that you add in whatever subscription you want to track, the cost of it, the renewal data, the moment you start a subscription and Zublo then gives you a dashboard to track it month on month. It effectively turns a rough idea of what you're paying for into precise numbers, timelines and context.
+The set-up is straightforward. The app is easy to install via 
+Docker
+. Just use the Compose file provided on GitHub. Once done, start adding each subscription one at a time, including how often it renews and how much it costs. Zublo supports multiple currencies, so if you've got multi-currency subscriptions, that's no issue at all. From there, it auto updates the dashboard. I like that it isn't replacing a full-fledged budgeting tool. It just tracks your recurring payments.
+✕
+ Remove Ads
+The 
+main dashboard
+ gives you a quick glance at what you're paying, monthly and yearly. That alone is extremely useful when you're trying to save money. But the real value comes from identifying which subscriptions are costing you the most. That Tidal subscription I opted in to try out, turns out I barely ever used it.
+There's also the fact that not every subscription renews on a monthly basis. For some subscriptions, I end up taking up a quarterly renewal, and for others, yearly. Emails are not an effective way to track them. Zublo aligns all of them into a single view so I can see what's coming up next instead of being caught off guard. This lets me cancel the service preemptively instead of being charged for it.
+The calendar view is another big help. I can scroll through upcoming renewals and immediately spot anything I might want to cancel. You can see a breakdown of spending over time. This lets you analyze patterns in your spending. Since all your subscriptions are categorized, you can see if you're spending too much on entertainment, or tools that aren't adding much value. That helps you remove guesswork from your decisions. And all of that runs on your own 
+NAS
+, which means, it goes without saying, your data stays entirely private.
+
+                        Why specialized tools win
+               
+
+            Ditch the spreadsheet
+    
+Okay, so you might be wondering why you need to spin up an entire service when a 
+spreadsheet
+ can do the same. Yes, it can. But a purpose-built tool that gives you a cohesive look and an easy way to add all that data.
+✕
+ Remove Ads
+Instead of manually entering all fields in an Excel sheet, I can tap the new subscription button, add in data, pull a logo, and billing cycles as necessary. That's an important change for me, because if logging something feels effortless, I'm more likely to use it every time.
+
+                    Subscribe to our newsletter for subscription-saving insights
+                
+Make sense of recurring charges: subscribe to the newsletter for focused coverage on subscription tracking, practical tool recommendations like Zublo, privacy-conscious setup tips, and actionable analysis to help you identify and cut wasted spend.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+Like most services these days, you'll find 
+AI integrations
+ here. You just have to provide an API key and a base URL for the service provider you want to use, and the tool can give you AI-powered insights into your subscription habits. It works, but it's not something I use. For one, the regular dashboard gives me enough data as is. But beyond that, the point of self-hosting it to keep this data private. I'm not very comfortable with the idea of sharing my financial habits with an LLM. But that's just me. And yes, before you ask, it does work with local LLMs too.
+Finally, if you want to go the AI route, you'll even find a built-in chat assistant that lets you inquire about your subscriptions using AI, or add new ones without tapping the few buttons needed.
+
+            An essential tool for subscription management
+    
+Zublo isn't the most expansive software, but that's not an issue for me. It works because it solves a very specific problem and does it well. It's not trying to manage your finances or become a full-fledged 
+budgeting tool
+. The goal here is to give you insights into recurring expenses and let you act on them. It's helped me cut down on subscriptions I no longer needed, especially trials I'd signed up for and forgotten to cancel. And I have much better insights into my monthly recurring spends. To me, that alone makes it worth keeping this installed in my home lab stack.
+✕
+ Remove Ads
+
+    						Zublo
+			
+Zublo is a self-hosted app that tracks and manages your subscriptions in one dashboard so you can see, plan, and control recurring expenses.
+
+See at Github
+Expand
+Collapse
+Software and Services
+subscription
+finance
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I used Claude Code, Antigravity, and Perplexity Computer to build a portfolio — there was a clear winner
+		
+
+			My favorite alternative to Office 365 isn’t LibreOffice – it’s something way cooler
+		
+
+			I tested Claude’s new interactive visuals, and they’re changing how I explain things
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+1
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Roger
+Roger
+Roger
+#IL683204
+Member since 2026-02-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+you really don't need an app to do that simple maths
+2026-04-21 14:43:20
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 20, 2026
+
+                                    There’s a hidden Android Auto notes app most people never discover — I use it at every red light
+                            
+Apr 20, 2026
+
+                                    Notion Mail has been out for a year, and the part I actually care about has nothing to do with email
+                            
+Apr 19, 2026
+
+                                    I connected Claude to my terminal, and now it does things I used to script by hand
+                            
+Apr 19, 2026
+
+                                    I gave Claude Code control of my desktop for a week, and it automated things I didn't think were possible
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            How much data does Steam use in a year?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:07
+
+                            The end of affordable PCs?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:10
+Skip Ad
+5

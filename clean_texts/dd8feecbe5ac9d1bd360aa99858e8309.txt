@@ -1,0 +1,533 @@
+If you spot this port on a cheap used laptop, grab it before someone else does
+Menu
+Sign in now
+Close
+PC & Mobile
+Submenu
+Windows2
+Linux
+Android
+Apple
+Technical
+Submenu
+Tech Explained
+Security
+Software
+Submenu
+Productivity
+Internet
+Creative
+Screen
+Submenu
+Entertainment
+Streaming
+Home
+Submenu
+Smart Home
+Home
+News
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+4
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+Productivity
+Android
+Smart TVs
+Networking
+Windows 11
+Entertainment
+Close
+If you spot this port on a cheap used laptop, grab it before someone else does
+Credit: Amir Bohlooli / MUO
+By 
+Amir Bohlooli
+Published
+ Apr 11, 2026, 9:00 AM EDT
+Amir is the Segment Lead for Software at MUO. He's a PharmD student who loves looking at numbers and spreadsheets.
+
+Inspired by his father's hobbies, Amir developed a knack for DIY projects and built his first quadcopter in high school. At 18, he began writing about 3D printing, and now contributes to MUO where he writes and edits productivity tools, AI and LLMs, spreadsheets, self-hosting, DIY projects, and a lot more.
+
+Amir also enjoys creating music, although its categorization as such remains open to interpretation. In addition to his academic pursuits, Amir is an avid gamer, car enthusiast, and proud owner of a 1993 Mitsubishi Galant.  
+Sign in to your 
+MakeUseOf
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+4
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+One man’s trash really is another man’s treasure, and that feels more true now than it used to. Ever since I 
+bought a used router and installed OpenWRT on it
+, I’ve been mesmerized by the used tech market.
+✕
+ Remove Ads
+Open-source software has come a long way. So has self-hosting. There are more options than ever, which means buying old hardware is no longer just about settling for less. Sometimes it’s about spotting something cheap, wiping the software, installing your own stack, and turning it into exactly what you need.
+Thanks to the advances of software, there are so many ways to put old hardware to use. 
+Old tablets and phones still have lots of uses
+. Old laptops definitely still have uses. Maybe not as "laptops" that you carry around to work on the go.
+I wanted something to use as a home server, a machine to 
+run Jellyfin
+ on, 
+host SearXNG
+, maybe Immich, that sort of thing. I landed on a used Dell Latitude for about $180. It has an Intel Core i5-1245U, 8GB of RAM, and a 256GB M.2 SSD. On paper, that’s just a decent, ordinary laptop.
+But it also has one feature that makes the value proposition much better for this use case, to the point where it almost feels ridiculous for the price.
+
+                        This is the port to look out for
+               
+
+            It comes with lightning
+    
+Credit: Amir Bohlooli / MUO
+ I admit that I hadn't look up the spec sheet when buying the used Dell. It was a quick impulse purchase. I looked at the seller's photos, noticed the USB-C ports, but didn't think much of it since they didn't have the lightning bolt icon on them. When the laptop arrived, I brought up the spec sheet to know what I'm dealing with, and then I saw it.
+✕
+ Remove Ads
+This little Dell comes with not one but two Thunderbolt 4 ports, each capable of up to 40Gbps. And that is absurdly useful on a used laptop, especially one you’re repurposing as a home server.
+In fact, I’d argue Thunderbolt is more useful here than it would be for the laptop’s original audience. A student or office worker might appreciate it, sure. But for a cheap used machine that’s being turned into a tiny server, it changes the whole equation. It was serendipitous for me, but it can be intentional for you.
+Related
+
+			It looks like USB-C, but this symbol changes everything
+		
+Watch out for lightning strikes.
+Posts
+14
+By 
+Gavin Phillips
+Dec 14, 2025
+
+                        Thunderbolt makes regret impossible
+               
+
+            Always a smart purchase
+    
+With Thunderbolt, the only specs I really care about are the CPU and the RAM.
+This laptop, for example, doesn’t even have an Ethernet port. No RJ45. I had planned to dedicate one of the USB ports to a USB Ethernet adapter, but with Thunderbolt I can attach a USB hub to the laptop, then attach not one, but four 10Gb Ethernet adapters. I can have four (separate) 10Gb networks at the same time. That alone opens so many doors for networking. (I know that an adapter like that would cost around the same as the entire laptop — I'm just saying)
+
+    						Ubiquiti 10G Ethernet adapter
+			
+Brand
+
+									
+										
+											Ubiquiti
+
+										
+																	
+DATA TRANSFER RATE
+
+									
+										
+											1/2.5/5/10 Gbps
+
+										
+																	
+The Ubiquiti UniFi USB-C to 10GbE RJ45 Ethernet Adapter is a high-performance network interface designed to provide ultra-fast 10 Gigabit Ethernet connectivity to laptops and computers via a USB-C port.
+CONNECTOR
+
+									
+										
+											USB-C to RJ45
+
+										
+																	
+$170 at UniFi
+$380 at Newegg
+Expand
+Collapse
+✕
+ Remove Ads
+Amir Bohlooli / MUO
+Storage expansion is where this gets even better. If I’m using this for Jellyfin or any kind of media-heavy server setup, I’m going to want more storage. Thunderbolt means I’m not stuck with slow external drives. I can connect 
+fast SSD storage and actually use it
+ properly.
+I was a little disappointed that I didn’t spend more on a model with a proper GPU — to 
+run local LLMs
+ with. But then I realized I don’t necessarily need to. I can just add one externally later when I feel like it. 
+eGPUs are still a bit of a mess in 2026
+. I’m not pretending otherwise. But they do work! I’m obviously not going to hook up an RTX 5090 and expect desktop-class magic over a 40Gbps link, but something modest is absolutely on the table.
+Credit: Amir Bohlooli / MUO
+These tiny blemishes had significantly dropped the laptop's price.
+Even the limited RAM is not quite the disaster it looks like at first. No, you can’t just add external RAM over Thunderbolt, and no, fast storage is not the same thing as memory. RAM is RAM because it’s directly tied into the CPU in a way storage never will be. But if I want to use the internal PCIe 
+SSD as scratch storage
+ and offload bulk storage to external drives, I can.
+
+                    Subscribe to the newsletter for used-hardware hacks
+                
+Want practical buy-and-repurpose ideas? Subscribe to the newsletter for hands-on guides on spotting great used gear, turning devices into DIY servers, and other actionable equipment insights.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+✕
+ Remove Ads
+In other words, what I’ve really got here is a very capable mini PC that also happens to come with a built-in display, keyboard, trackpad, and battery.
+
+            I almost wish the screen was broken too
+    
+Amir Bohlooli / MUO
+ If the display had been broken, would I actually have cared? Not much. If anything, I would’ve been happy if that knocked another $100 off the price. A broken display is a dealbreaker if you're using a laptop as a laptop, but not if you're using it for a server. My point is that, most of what tanks a used laptop's price, makes it a great deal for a use case like this, and Thunderbolt makes regret impossible. Whatever you missed, you can just add later.
+A decent CPU is important. Enough RAM is important. But Thunderbolt is the thing that turns a cheap used laptop from “pretty good for the money” into “I can’t believe this was this cheap.” So yes, if you’re browsing cheap used laptops and you spot Thunderbolt on one, especially on a business-class model with a decent CPU, you’ve basically won the DIY self-hosting lottery. Even if you don't have a use for it now, you'll have a use for it later.
+Quiz
+
+                                                            6 Questions
+                                                    
+USB trivia quiz
+Your Top Score
+--
+Attempts
+--
+Average
+43%
+Users
+322
+
+                                                            Start Quiz
+                                                    
+USB trivia quiz
+0
+0
+Medium
+Question 1 of 6
+Which USB version first introduced the “SuperSpeed” branding?
+USB 1.1
+USB 2.0
+USB 3.2
+USB 3.0
+Report Error
+Found an error? Send it 
+info@
+www.makeuseof.com
+ so it can be corrected.
+✕
+ Remove Ads
+Technology Explained
+Home Server
+Laptop Tips
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+
+                                                    Technology Explained
+                                            
+
+                                                    PC & Mobile
+                                            
+
+			CPU-Z shows more than PC specs if you know where to look
+		
+4 minutes ago
+
+			Your CPU is throttling itself, and one BIOS toggle will fix it
+		
+20 hours ago
+
+			I stopped buying random USB-C cables after learning what three numbers actually mean
+		
+1 day ago
+See More
+
+			I switched to Gentoo Linux and now I get why it's worth the headache
+		
+3 hours ago
+
+			Windows has been hoarding old drivers on your SSD — here's how to clear them out
+		
+15 hours ago
+
+			Motorola's Razr 2026 software finally matches the hardware's flair
+		
+18 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			I switched to Hyprland and now I get why Linux users are obsessed with it
+		
+
+			I replaced GNOME with the new COSMIC, and it feels like the future of Linux
+		
+
+			I changed one 2.4GHz Wi-Fi setting and my connection got much more stable
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+4
+Sign in to your 
+MakeUseOf
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Chris
+Chris
+Chris
+#OH876966
+Member since 2023-10-18
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I do not expect any need for a server. This article tells us we all need or will need one. Even being a techie (fitting the category of readers of the article in general) does not mean we would be in need of one. Just feels much more niche than described. But nice to know more about the feature set.
+2026-04-15 08:32:54
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        3
+                    
+Copy
+        
+Derek
+Derek
+Derek
+#SC823359
+Member since 2025-08-24
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+It does not. It says that if you're in a position like me, wanting to set up a home lab, a used laptop may be the right choice. A very valid point. The point is: can you take advantage of Thunderbolt?
+2026-04-15 16:37:31
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Binge
+Binge
+Binge
+#QN433751
+Member since 2026-02-24
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+If you think you don't need one then you don't know what you're missing out on, brother
+2026-04-16 03:43:13
+Upvote
+
+                                    4
+                            
+Downvote
+Reply
+Copy
+        
+Debra
+Debra
+Debra
+#KR930770
+Member since 2026-02-14
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Old, obsolete machine with bunch of hard drives is what most of use call a "server". You find the oldest (usually desktop) system which isn't good for much else, but has lots of drive bays, and you fill it with hard drives. It has to be VERY old IMO, if it doesn't work as a fileserver. If it power up it's still not worth throwing out.
+2026-04-28 18:43:36
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 8, 2026
+
+                                    I replaced my paid VPN app with a feature Windows already had — and it works perfectly
+                            
+Apr 7, 2026
+
+                                    Your router's band steering might be the reason your TV keeps buffering
+                            
+Apr 7, 2026
+
+                                    The Galaxy S26 Ultra has everything — but the regular S26 is the smarter buy
+                            
+Apr 7, 2026
+
+                                    External GPUs in 2026 are still a hot mess
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+MakeUseOf
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

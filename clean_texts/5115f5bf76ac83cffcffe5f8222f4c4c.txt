@@ -1,0 +1,909 @@
+5 free and open-source apps that save me hundreds of dollars and hours of work
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+Networking
+Storage and NAS
+Components
+Peripherals
+Operating Systems
+Submenu
+Linux
+Windows
+Software
+Submenu
+Programming
+Applications
+Mobile
+Submenu
+Android
+iPhone
+Carriers
+New Tech
+Submenu
+Hobbies
+Smart Home
+Homelab
+Single-Board Computers (SBCs)
+Cutting Edge
+Streaming
+Submenu
+Streaming Content
+Streaming Platforms
+Audio/Video
+Automotive
+Reviews
+Buying Guides
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+15
+Threads
+11
+More Action
+Sign in now
+🔥Tech Deals
+Storage
+Streaming
+Linux
+Open Source
+Microsoft Excel
+Android
+Windows
+Close
+5 free, open-source apps that save me hundreds of dollars and hours of work
+Credit: Lucas Gouveia/How-To Geek
+By 
+Dibakar Ghosh
+Published
+ May 2, 2026, 9:30 AM EDT
+Dibakar Ghosh is a tech journalist at How-To Geek, where he focuses on Linux, Windows, and productivity tools. His goal is simple—help readers at every skill level get more done with the tech they use every day.
+
+He began his writing career in 2016 with WordPress tutorials, later moving into digital marketing, where he spent years reviewing complex tools for marketers. His work has also appeared on 
+Authority Hacker
+, where he’s shared in-depth guides on digital workflows and online productivity. That experience now shapes his journalism, blending analytical depth with practical, real-world advice. 
+
+When he’s not writing or testing software, Dibakar is usually watching movies or playing video games. He’s a huge Christopher Nolan fan and a strong proponent of the theater experience. In gaming, he has sunk hundreds of hours into Insomniac’s Spider-Man series, Returnal, Prototype, Darksiders, and Final Fantasy titles.
+Sign in to your 
+How-To Geek
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+15
+
+                            Like
+                                        
+15
+
+								Thread
+																										
+11
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Somewhere between your productivity apps and your cloud storage, you're probably paying hundreds—maybe thousands—of dollars a year in subscriptions. But at the same time, you can't really help it because these tools genuinely save you time and help you 
+get more done
+. Fortunately, I’ve found five powerful free and open-source (FOSS) alternatives that can do the same job without emptying your pocket.
+✕
+ Remove Ads
+
+                        Super Productivity
+               
+
+            The FOSS app that killed three of my subscriptions at once
+    
+Close
+Super Productivity is probably the 
+most feature-packed FOSS app
+ I've come across. At its core, it's a task manager, but it also bundles in time tracking, habit tracking, and a bunch of tools specifically aimed at keeping you focused and 
+avoiding procrastination
+.
+The basics work like you'd expect—you can create tasks, organize them into projects, add tags, attachments, subtasks, and set time estimates. But there are a few things—power user features—that make it stand out. There's a planner view to see what's due and when, a Kanban board to track progress, and even an Eisenhower matrix if you want to get serious about prioritization. Global shortcuts let you capture a task or note the moment it pops into your head, which is genuinely useful when a distracting thought comes up mid-work—you just log it and move on instead of going down a rabbit hole.
+✕
+ Remove Ads
+Quiz
+8 Questions · Test Your Knowledge
+FOSS apps that save time and money
+Trivia challenge
+From video encoding to AI productivity — find out how well you know these powerful free tools.
+Productivity
+AI Tools
+Video
+Open Source
+Utilities
+Begin
+01 / 8
+Video
+What is the primary purpose of HandBrake?
+A
+Screen recording and live streaming
+B
+Video transcoding and format conversion
+C
+Video upscaling using AI algorithms
+D
+Editing and splicing video clips together
+Correct! HandBrake is a free, open-source video transcoder that converts video from nearly any format to modern codecs like H.264, H.265, and AV1. It's been around since 2003 and runs on Windows, macOS, and Linux, making it a go-to replacement for expensive commercial encoding software.
+Not quite. HandBrake is a video transcoder, meaning it converts and compresses video files from one format to another. It's not a screen recorder or editor — think of it as the tool that shrinks your massive MKV file into something more manageable without paying for a subscription.
+Continue
+02 / 8
+AI Tools
+What does Ollama primarily allow users to do?
+A
+Generate AI images locally on a GPU
+B
+Transcribe speech to text using a local model
+C
+Run large language models locally on their own machine
+D
+Sync AI-generated content across multiple cloud services
+Correct! Ollama is an open-source tool that lets you download and run large language models like Llama 3, Mistral, and Gemma directly on your own hardware. This means no API fees, no data sent to external servers, and full offline capability — a real money-saver compared to paid AI subscriptions.
+Not quite. Ollama is designed to run large language models locally on your computer, similar to what ChatGPT does in the cloud but entirely on your own machine. It supports a wide range of open-source models and is completely free, helping you avoid costly API usage fees.
+Continue
+03 / 8
+Transcription
+OpenWhisper (also known as Whisper by OpenAI) is best described as what kind of tool?
+A
+A real-time voice assistant for smart home devices
+B
+An automatic speech recognition and transcription system
+C
+A text-to-speech engine for accessibility features
+D
+A noise cancellation tool for video conferencing
+Correct! Whisper is an open-source automatic speech recognition (ASR) model released by OpenAI that can transcribe and even translate audio in dozens of languages. Community tools like OpenWhisper make it easy to use locally, saving you from paying for transcription services that can charge per minute of audio.
+Not quite. Whisper and tools built around it, like OpenWhisper, are speech-to-text transcription systems. They listen to audio and produce written transcripts, which is incredibly useful for captioning videos, transcribing meetings, or converting podcasts to text without a pricey subscription service.
+Continue
+04 / 8
+Image Tools
+What technology does Upscayl use to enhance image resolution?
+A
+Bicubic interpolation borrowed from traditional photo editors
+B
+Cloud-based rendering via remote servers
+C
+AI-powered neural network upscaling
+D
+HDR tone-mapping to simulate higher detail
+Correct! Upscayl uses AI neural networks — specifically models like Real-ESRGAN — to intelligently upscale images by predicting and adding realistic detail. Unlike simple interpolation, AI upscaling can make a blurry photo look genuinely sharper, all without paying for tools like Topaz Gigapixel AI.
+Not quite. Upscayl leverages AI neural networks to upscale images, which is far more sophisticated than traditional methods like bicubic interpolation. It analyzes patterns in an image and fills in plausible detail, producing results that rival expensive commercial software — and it runs entirely on your local GPU for free.
+Continue
+05 / 8
+Productivity
+Which of the following best describes Super Productivity?
+A
+A cloud-based team project management platform like Jira
+B
+An open-source to-do and time-tracking app for individuals
+C
+A browser extension that blocks distracting websites
+D
+A calendar app that syncs with Google and Outlook
+Correct! Super Productivity is a free, open-source task manager and time tracker designed for individuals who want to stay focused. It includes features like Pomodoro timers, time logging, Jira and GitHub integration, and works offline — replacing paid apps like Todoist or Toggl for many users.
+Not quite. Super Productivity is a personal to-do and time-tracking application that runs locally on your machine. It supports Pomodoro technique timers, task breakdowns, and even integrates with tools like Jira and GitHub, making it a powerful free alternative to paid productivity apps.
+Continue
+06 / 8
+Video
+Which open video codec does HandBrake support for encoding that offers significantly better compression than the older H.264 standard?
+A
+VP8
+B
+MPEG-2
+C
+H.265 (HEVC)
+D
+DivX
+Correct! HandBrake supports H.265 (also called HEVC), which can compress video to roughly half the file size of H.264 at the same visual quality. This makes it ideal for storing large video libraries without sacrificing quality, and it's completely free to use in HandBrake.
+Not quite. The answer is H.265, also known as HEVC. HandBrake supports this modern codec, which offers dramatically better compression efficiency than H.264 — meaning smaller files with the same image quality. VP8 and MPEG-2 are older or less efficient formats by comparison.
+Continue
+07 / 8
+AI Tools
+Which of these open-source large language models can be run locally using Ollama?
+A
+GPT-4o
+B
+Claude 3 Opus
+C
+Llama 3
+D
+Gemini Ultra
+Correct! Meta's Llama 3 is one of the most popular open-source models available through Ollama. Unlike GPT-4o, Claude, or Gemini Ultra — which are proprietary and accessed via paid APIs — Llama 3 can be downloaded and run entirely on your own hardware at no cost.
+Not quite. GPT-4o, Claude 3 Opus, and Gemini Ultra are all proprietary models that require paid access through their respective companies. Llama 3, created by Meta, is open-source and can be downloaded and run locally through Ollama, making it a powerful free alternative.
+Continue
+08 / 8
+Open Source
+What is a key advantage shared by all of these tools — HandBrake, Ollama, Upscayl, and Super Productivity — compared to their commercial counterparts?
+A
+They are officially supported and funded by major tech corporations
+B
+They require a one-time license fee rather than a monthly subscription
+C
+They are free and open-source, with no subscription fees or usage limits
+D
+They store all data securely in encrypted cloud storage by default
+Correct! All of these tools are completely free and open-source, meaning anyone can use them without paying subscription fees or worrying about usage limits. Their source code is publicly available, allowing developers worldwide to inspect, improve, and contribute to them — which is what keeps them competitive with expensive commercial software.
+Not quite. The defining advantage these tools share is that they are free and open-source — no subscriptions, no usage caps, and no vendor lock-in. Their code is publicly available for anyone to audit or contribute to, which helps them evolve rapidly and remain trustworthy alternatives to costly commercial software.
+See My Score
+Challenge Complete
+Your Score
+/ 8
+Thanks for playing!
+Try Again
+Being a FOSS app, everything lives locally on your PC by default. However, you can 
+sync the data file using Syncthing
+ or Dropbox to get your tasks on your phone as well.
+For me, Super Productivity 
+replaced Todoist, Trello, and Toggl
+—which together were costing me over $100 a year. But honestly, the bigger win is harder to put a number on. It's pulled me out of what I can only describe as procrastination purgatory—that miserable state where you’re delaying working, but can't relax either, because you know you have work to finish.
+Related
+
+			I replaced 3 paid productivity apps with one simple Python script
+		
+If you're paying for software features you're not even using, consider scripting them.
+Posts
+3
+By 
+Zunaid Ali
+Apr 5, 2026
+
+                        Upscayl
+               
+
+            Stopped me from paying the 4K tax
+    
+✕
+ Remove Ads
+Upscayl is an AI-powered image upscaler that runs completely locally on your hardware, which means your files never leave your machine. It’s great for upscaling your private family photos—stuff you don’t want ending up on someone’s servers. That said, I personally use it for upscaling wallpapers and other visual assets.
+As a content creator, I constantly need high-resolution images—for thumbnails, social shares, you name it. But most screenshots you take or images you find online are nowhere near that quality. Upscayl lets me take those and upscale them up to 4x the original resolution. It ships with several AI models optimized for different types of images, so you're not getting a one-size-fits-all result with weird graphical artifacts. You can also batch process potentially hundreds of images by pointing Upscayl to a specific folder.
+The most obvious way Upscayl helps you save money is by killing subscriptions to premium AI upscaling tools like Topaz Gigapixel. But the savings go beyond just that. A lot of stock photo sites offer FHD images for free and lock the 4K versions behind a paywall. With Upscayl, I just grab the free version and upscale it myself. Same thing with AI image generation. If you're using something like 
+Midjourney
+, generating at 4K eats into your credits fast. But with Upscayl, I can simply generate the image at FHD quality and upscale it afterward.
+✕
+ Remove Ads
+One thing worth knowing is that the speed 
+depends heavily on your GPU
+. With a decent one, a 4x upscale can take just a few seconds—faster than most online tools with overloaded servers, and without the hassle of uploading and downloading a massive file. But if you're running it on CPU only, it's going to take significantly longer, albeit with same picture quality.
+Related
+
+			Forget Photoshop: You Can Use AI to Upscale, Restore, and Colorize Old Photos
+		
+It’s one-click magic.
+Posts
+By 
+Faisal Rasool
+May 19, 2024
+
+                        OpenWhispr
+               
+
+            The dictation upgrade that saved my wrists and my wallet
+    
+This is probably my favorite app on this list right now, and it's genuinely changed how I work day to day. OpenWhispr is a voice-to-text dictation app that lives on your system and types out what you say directly into whatever app your cursor is in. You hold a button, talk, let go, and the transcribed text appears.
+✕
+ Remove Ads
+Now, you might be surprised to hear this, but 
+I've always hated typing
+. I'm not particularly fast, at around 60–70 WPM and I get wrist pain when I type for long hours. As such, I've always relied on dictation tools. The old-school option was Dragon NaturallySpeaking, which was both expensive and, by modern standards, not accurate enough.
+Newer AI-powered tools are much better, but they're still asking for $10+ a month—things like Whisper Flow or Super Whisper. However, the thing is, all of these tools are running 
+OpenAI's Whisper model
+ under the hood, which is itself free and open-source. So technically, you could just install Whisper yourself and use it for free. I have been doing that for a while, but it's a bit technically cumbersome and unintuitive.
+Thanks to OpenWhispr, I now have a polished, user-friendly experience like those premium tools, just without the subscription. And because it's also running Whisper under the hood, the accuracy is exactly the same.
+✕
+ Remove Ads
+However, I would like to mention that Whisper is very GPU-hungry. You'll want around 6GB of VRAM for fast real-time transcription. That said, OpenWhispr also supports NVIDIA Parakeet, which is generally faster and lighter on resources—and it’s actually preferable if you're only working in English. For anyone without a GPU, there's also an option to connect your 
+OpenAI API key
+ and offload the transcription to their servers. You still pay, but it's a tiny fraction of what those premium subscriptions cost.
+Now, beyond live dictation, OpenWhispr can also transcribe audio files, capture transcriptions during meetings, clean them up with an LLM, and even reformat them into structured text.
+OpenWhispr is open-source but follows a freemium model. If you lack the dedicated hardware for fast on-device transcription, you can subscribe to their paid plans for cloud-based transcription at a reasonable rate.
+
+    						Plaud Note Pro
+			
+8
+/10
+Brand
+
+									
+										
+											Plaud
+
+										
+																	
+Storage
+
+									
+										
+											64GB
+
+										
+																	
+The Plaud Note Pro is an ai note-taking device with a rippled aluminum design. It features an easy-to-use interface, wider voice pickup, and a more intelligent app than before. The Plaud App 3.0 provides powerful capabilities to capture, analyze, and transform spoken words into summaries.
+$199 at Plaud
+Expand
+Collapse
+
+                        Ollama
+               
+
+            Run LLMs locally and save on API costs
+    
+✕
+ Remove Ads
+Ollama is probably the most technical app on this list, in the sense that you’ll need to interface with the terminal to set it up. That said, it’s just entering a couple of very intuitive commands, so it’s not necessarily complicated.
+Basically, it lets you 
+download and run large language models
+ directly on your local machine, and then allows other AI-powered apps to interact with it through a local API. Because Ollama mimics OpenAI's API structure, it slots into almost any AI tool that supports an OpenAI-compatible endpoint.
+As such, instead of paying for API access to a cloud model, you just point the tool at your local Ollama instance and it works. For example, you can connect it to tools like 
+OpenClaw
+, Claude Code, and OpenAI's Codex, and use your local AI for all the 
+text and code generation
+—keeping all your prompts and data private.
+✕
+ Remove Ads
+Personally, I use it to power my n8n workflows—a self-hosted, free alternative to tools like 
+Make.com
+ or Zapier for 
+building complex automations
+. I use Ollama to run Qwen3.5 9B at 4-bit quantization—works great on my RTX 3060—and connect it via the local API to n8n. The setup handles all my automation-focused tasks without breaking a sweat—things like extracting content from messages, assigning tags, renaming screenshots, and moving files to the right folders.
+
+                    Cut subscription costs with FOSS: subscribe to the newsletter
+                
+Join the newsletter for curated FOSS recommendations, hands-on setup notes, and practical guides focused on replacing paid subscriptions with free alternatives. Expect deep dives into tools, workflows, and step-by-step tips to adopt them.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+Beyond keeping my data off corporate servers, it's also saved me a significant chunk in API costs that I'd otherwise be spending to run these same automations through a paid service.
+Related
+
+			Install and Use AI Chatbots at Home With Ollama
+		
+Try out your very own AI chatbot privately and securely at home.
+Posts
+By 
+Matt Klein
+Nov 10, 2024
+
+                        Handbrake
+               
+
+            Cloud storage providers hope you never learn about this one
+    
+Handbrake is probably the most well-known app on this list, so there's a good chance you've already heard of it. It's a video transcoding tool, and if you have a decent GPU, it can compress your videos down to a 
+fraction of their original size
+—typically around 60–75 percent smaller—without any noticeable quality loss.
+✕
+ Remove Ads
+I travel a lot, and I'm more of a video person than a photo person. After a single trip, I'll usually come back with 200-300GB of raw footage. Multiply that across four or five trips a year, and you're looking at close to 1TB of video every year. Without Handbrake, that would mean either constantly buying new hard drives or 
+paying for cloud storage
+ to keep up. Handbrake helps me cut that expense by 75 percent.
+The workflow is simple too—you can point it at an entire folder and queue everything up for overnight encoding while you sleep. The quality stays the same regardless of whether you're using a GPU or not. The only difference is speed. On my RTX 3060, Handbrake compressed a 14-minute, 2.2GB video down to around 450MB in just under four minutes. On CPU alone, that same job can take closer to 30 minutes—provided it’s a reasonably modern processor. So if you have a GPU, use it. If you don't, just set it running before bed and it'll be done by morning.
+✕
+ Remove Ads
+Related
+
+			Stop buying hard drives for Plex: How I reclaimed 7TB for free
+		
+Your Plex library is bloated—the automated tool that saved me 7TB
+Posts
+19
+By 
+Patrick Campanale
+Feb 10, 2026
+
+            Five apps. Zero subscriptions. Full productivity.
+    
+FOSS has come a long way, and these five apps are proof that you don't have to choose between saving money and staying productive. I don't miss any of the apps or workflows they've replaced, and I'm saving hundreds of dollars a month because of them.
+Applications
+Apps & Web Apps
+Open Source
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+15
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. 
+Read More
+.
+Close
+✕
+ Remove Ads
+
+                                                    Desktop
+                                            
+
+                                                    Mobile
+                                            
+
+			Why Linux is my IDE
+		
+2 hours ago
+
+			Windows Fast Start-up is still causing problems in 2026, and everyone should disable it
+		
+4 hours ago
+
+			KDE Dolphin does file management better than GNOME—here's why
+		
+6 hours ago
+See More
+
+			8 Google Messages features I wish someone had told me about sooner
+		
+2 hours ago
+
+			5 hidden Motorola gestures that make other Android phones feel basic
+		
+4 hours ago
+
+			This open-source app suite replaced 6 closed-source apps and tools on my Android phone
+		
+6 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			4 open-source Windows apps that are better than their paid rivals
+		
+
+			Replace your Microsoft 365 subscription with these 5 free open-source apps
+		
+
+			This distro nobody talks about is more popular than Ubuntu and Fedora—here's 3 reasons why
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+11
+Sign in to your 
+How-To Geek
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+David
+David
+David
+#CD270202
+Member since 2026-05-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+you forgot one. open office. the best program around. a word processor that overrun microfiber. plus others and the best sny language 
+2026-05-03 01:36:12
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+
+                        3
+                    
+Copy
+        
+Venerable
+Venerable
+Venerable
+#RV316822
+Member since 2025-11-28
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+open office and rest u said seemed glibberish like wot are they
+2026-05-03 12:19:03
+Upvote
+Downvote
+Reply
+Copy
+        
+Rafał
+Rafał
+Rafał
+#AF591053
+Member since 2026-04-20
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+You made a typo in LibreOffice.
+2026-05-04 05:32:04
+Upvote
+Downvote
+Reply
+Copy
+        
+zilexa
+zilexa
+zilexa
+#FE181901
+Member since 2025-07-08
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+You mean either Collabora Office (basically LibreOffice with a better UI) or OnlyOffice (which is focused on Microsoft document formats instead of OpenDocument formats).
+2026-05-04 18:05:52
+Upvote
+Downvote
+Reply
+Copy
+        
+Oofy
+Oofy
+Oofy
+#KP506273
+Member since 2026-01-26
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+And what OSes do these run on?
+2026-05-02 15:39:50
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        2
+                    
+Copy
+        
+Sassine
+Sassine
+Sassine
+#QO745271
+Member since 2025-05-12
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Anything you want, Windows, Linux and MacOS
+2026-05-04 04:32:02
+Upvote
+Downvote
+Reply
+Copy
+        
+Oofy
+Oofy
+Oofy
+#KP506273
+Member since 2026-01-26
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Thanks for the info. The author could have put a simple statement at the beginning the article, though.
+2026-05-04 15:15:23
+Upvote
+Downvote
+Reply
+Copy
+        
+CajunMoses
+CajunMoses
+CajunMoses
+#OJ552239
+Member since 2024-01-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+1  Follower 
+View
+N
+ot particularly fast 
+?!? ... 
+According to Google:
+"A typing speed of 60-70 WPM is often considered the threshold between average and 
+high-speed
+ typing. While 
+fast
+, it is often a "plateau" point, and surpassing 70+ WPM frequently requires more deliberate, structured practice."
+2026-05-02 12:30:03
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Rafał
+Rafał
+Rafał
+#AF591053
+Member since 2026-04-20
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+It's highly language-dependent.
+2026-05-04 05:31:24
+Upvote
+Downvote
+Reply
+Copy
+        
+zilexa
+zilexa
+zilexa
+#FE181901
+Member since 2025-07-08
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+The quality stays the same regardless of whether you're using a GPU or not. The only difference is speed.
+ That's absolutely not true! In fact it's a double lie. 
+Saying quality stays the same is ofcourse complete nonsense since Handbrake will always do a lossy transcode no matter what type of encoder you use.
+ Secondly, hardware (GPU) encoders emphasize speed over quality. They are fine to use to convert TV shows and movies. For personal content like videos of a family event, you want to preserve the original quality. That's why we have amazing software encoders like the x265-10bit encoder. 
+2026-05-04 18:04:41
+Upvote
+Downvote
+Reply
+Copy
+        
+Joseph
+Joseph
+Joseph
+#HT639651
+Member since 2026-05-06
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Handy is another one that's good for transcription, I have not compared to OpenWhispr but don't really feel compelled because it does what it needs to do. Takes audio and hand it to Parakeet (or other models). 
+2026-05-06 13:15:38
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 16, 2026
+
+                                    This Linux shell revives the worst version of Windows, and it's glorious
+                            
+Apr 16, 2026
+
+                                    Stop waiting for your PC to fail: 5 warning signs I check every month
+                            
+Apr 16, 2026
+
+                                    Thinking about a Meta Quest 3 or 3S? Buy it before the April 19 price hike
+                            
+Apr 16, 2026
+
+                                    Transmission flushes: When they help and when they hurt your car
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+How-To Geek
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

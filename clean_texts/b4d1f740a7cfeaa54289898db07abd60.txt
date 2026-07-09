@@ -1,0 +1,387 @@
+This tiny tool shows everything happening with my Docker containers in real time
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+This tiny tool shows everything happening with my Docker containers in real time
+By 
+Abhishek Kumar Mishra
+Published
+ Mar 27, 2026, 7:31 AM EDT
+Abhishek is an author at XDA who covers computing. 
+
+He has loved computers since he got the Lenovo G570 in 2012. Abhishek holds a master's degree in computer applications and began his writing career in 2018. He loves writing how-to articles, listicles, and informational posts on popular operating systems and web services.
+
+He closely follows the Windows Insider program and tests new Insider builds to discover upcoming experimental features and upgrades. His past work includes long-term collaborations with reputed publications like 
+Tom's Hardware
+, and 
+Windows Latest
+.
+
+When not writing anything, he is busy watching new episodes of One Piece or searching for something binge-worthy. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																						
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Self-hosting tools on a home server is usually the starting point for every beginner. As you mature in the journey, you find that hosting most of the tools as 
+Docker containers
+. There are multiple upsides to this approach because you can isolate services from each other and manage them independently. However, it becomes an uphill task to manage everything after you set up a dozen or more services on the server.
+✕
+ Remove Ads
+There are multiple dashboard options, like Beszel, or you can use the terminal or Portainer to check the container stats and availability. Uptime Kuma is also an option, but each of these comes with its complexities, and some can be a bit difficult to set up. I found solace in Glances, a simple tool that shows me everything useful related to my Docker setup in one go.
+
+                        Docker monitoring should be simple
+               
+
+            Looks aren't important
+    
+ Ask any beginner about Docker monitoring setup, and you’ll notice a pattern. Most of the tools available are either too overwhelming or too complex. Grafana is a great example of a tool that packs every possible monitoring feature that you can imagine, but it's an uphill battle to get going. I avoid the 
+Grafana and Prometheus
+ combo on low-end servers that lack the resources to spare.
+Uptime Kuma
+ is another monitoring tool that you can use to check the container uptime, but it only does that. You can configure notifications with it, but Kuma doesn’t show anything else. You have to individually add each Docker container for monitoring, and then it’ll keep track of the uptime.
+I wanted to avoid tools that showed too many graphs and was looking for something that would show me everything on one single page. Glances is a tool that offers exactly what I want without any of the added complexities.
+✕
+ Remove Ads
+Related
+
+			5 of the best tools for monitoring your home lab
+		
+Keep a weather eye on your home server with these incredible services
+Posts
+4
+By 
+Ayush Pande
+Jan 31, 2025
+
+                        Setting up Glances
+               
+
+            One run command is enough
+    
+Glances
+ is a monitoring tool that looks like 
+htop
+. You must be familiar with 
+htop 
+because it's a system monitoring tool that you can run from any popular Linux distro terminal. Glances has a similar look and feel, but for your Docker systems. I call it “like htop” because it's one of the few tools that you use via 
+SSH
+, as a web dashboard, and your system's command line.
+To install it on your Docker system, you only need to execute a 
+Docker run
+ command or create a compose file. It'll create a new container for Glances and will map the 61208 port to access its web UI. You can type the server IP:61208 to access the web dashboard. That's all.
+If it were for Prometheus and Grafana, you would need to deploy a stack and then add individual resources to monitor in Grafana. Glances doesn't need any such pampering and loads up instantly without needing any further customization.
+
+                        Everything at a glance
+               
+
+            Less is more
+    
+✕
+ Remove Ads
+Glances gets rid of the GUI approach and focuses more on telling you everything on a single page. On the top left side, you can spot the container ID assigned to Glances with the IP address, date, and time.
+The left-hand side mentions system hardware details with separate sections for network, disk I/O, and file system. On the top right side, you can see more CPU, memory, and swap details. Next is the most important part, which shows Docker containers running on your system. The data is updated in real-time, so you don't need to worry about incorrect or delayed reporting.
+Glances automatically sorts containers by CPU consumption, but you can sort them by memory consumption or naming scheme. The container monitoring section shows the status, uptime, CPU and memory usage, network usage, and even mentions the port number on which the tool is hosted. If you compare it with the 
+Docker ps
+ command
+, you can see some of the elements, but you cannot see any kind of resource consumption.
+While I prefer using Glances as a container monitoring solution, I don’t see any harm in using it as a CLI resource monitor. I can see details of the system processes along with all the container details. The only point of hosting it as a Docker container is that I don’t need to use SSH to access it. I can simply use the local IP and the correct port number to launch the monitoring page.
+✕
+ Remove Ads
+Glances lacks any kind of control over the containers. So, you cannot manage your Docker containers, which means stopping, starting, or creating containers is out of the picture. But that isn’t a massive trade-off because other monitoring tools also lack this feature. Still, it would have been nice to have at least container state management (start, stop, restart) in the tool.
+Having such a feature would reduce reliance on using 
+Portainer
+ or a terminal for such basic tasks. The memory footprint of Glances isn’t huge and uses about 80–100 MB to work. It's a trivial amount of memory to check what’s going on with your containers. You can choose to force-start the Glances' container every time you want to access the web UI, but that would add an extra step.
+
+                    Subscribe to the newsletter for practical Docker monitoring
+                
+Get the newsletter for practical Docker monitoring insights and curated self-hosting tips that expand on this topic. Subscribe to dive deeper into concise, usable guidance on monitoring choices, tool trade-offs, and setup approaches for your home server.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+Glances doesn’t show the stopped or inactive Docker containers. You can configure Glances’ web UI to only show the sections you like. It’s possible, but I won’t encourage it because there are too many elements to work with.
+
+            Everything at a glance
+    
+Glances is a no-nonsense tool that I’ve begun using on all my Docker systems. It’s exceptionally easy to deploy, has a very small memory footprint, and presents information in a digestible format. I don’t need to scroll through multiple tabs, graphs, or sections, and can see everything related to the host system and Docker system with it.
+While I crave more container control in Glances, I understand that the tool’s focus is on simplistic, real-time monitoring, rather than more control. Give it a try, and you’ll barely miss Grafana or Uptime Kuma.
+✕
+ Remove Ads
+Software and Services
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I can run my entire home lab on Proxmox LXCs while using a fraction of the resources VMs would need
+		
+
+			I don’t use Obsidian or Google Keep after I came across this self-hosted LLM-powered note-taker
+		
+
+			I built a $60 ESP32 touchscreen so I could stop managing my home lab from a browser
+		
+
+                                                
+                
+                                                    
+                                    Thread
+                                                    
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Be the first to post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+This space is open for discussion.
+Be the first to share your thoughts.
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Mar 24, 2026
+
+                                    Stop struggling with OPNsense — these 4 tweaks take a few minutes to make
+                            
+Mar 23, 2026
+
+                                    Stop reading raw server logs: These terminal tools turn them into visual dashboards
+                            
+Mar 23, 2026
+
+                                    I tried to make my Steam Deck a real server, and it’s better at it than it has any right to be
+                            
+Mar 21, 2026
+
+                                    Home Assistant's best upgrade costs nothing, but it changes everything
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            How much data does Steam use in a year?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            Snapdragon X2 Elite Extreme benchmarks: RIP Panther Lake?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:04
+Skip Ad
+5

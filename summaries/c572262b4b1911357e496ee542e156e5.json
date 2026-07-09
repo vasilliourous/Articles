@@ -1,0 +1,65 @@
+{
+  "article_title": "How to Build a Production-Ready Claude Code Skill",
+  "core_thesis": "Building a production-ready Claude Code Skill requires a structured approach: start with concrete use cases, design a specific and slightly 'pushy' description to ensure triggering, choose the simplest implementation pattern (prompt-only, prompt+scripts, or Skill+MCP), test with realistic messy prompts, and iterate continuously. The article argues that Skills are reusable prompts that package domain knowledge into installable units, and that the key to success is spending time on design and testing rather than jumping straight into writing instructions.",
+  "detailed_summary": "The article, written by Hajime Takeda in March 2026, provides a comprehensive guide to building Claude Code Skills, which are sets of instructions that teach Claude how to handle specific tasks. It begins by distinguishing Skills from MCP servers (which provide tools) and Subagents (which run independent work), using the analogy that MCP is the kitchen and Skills are the recipe. The author emphasizes that Skills use progressive disclosure: only metadata (name + description, ~100 tokens) is always in context; the full SKILL.md body is loaded when triggered; and bundled resources (scripts, references, assets) are loaded on demand. This allows many Skills to be installed without blowing the context window.\n\nThe planning phase is critical: define 2-3 concrete use cases by observing repetitive work, imagine how users will phrase requests, and determine inputs/outputs. The YAML frontmatter (name and description) must be specific and slightly 'pushy' to ensure Claude triggers the Skill, as Claude defaults to handling simple tasks on its own. The description should include trigger keywords and edge cases (e.g., 'also trigger when user uploads xlsx/csv with financial column headers'). Implementation follows three patterns: Pattern A (prompt-only) for tasks where Claude's judgment suffices (e.g., commit message formatting); Pattern B (prompt+scripts) for deterministic processing like data transformation; Pattern C (Skill+MCP/Subagent) for workflows involving external APIs. The author recommends starting with Pattern A and evolving.\n\nTesting is done with realistic, messy prompts (typos, casual language) rather than clean ones. The iteration loop involves running the Skill, evaluating output, and fixing SKILL.md. The skill-creator tool can semi-automate test case generation and description optimization. Distribution methods include ZIP upload to claude.ai, placing the Skill in .claude/skills/ for team repos, and the Plugin Marketplace or Anthropic Official Marketplace for broader reach. Before sharing, check that the ZIP contains the folder at root, frontmatter meets character limits, and no hardcoded API keys are present. Version bumps are necessary for auto-update.",
+  "entities": [
+    {
+      "name": "Hajime Takeda",
+      "type": "person",
+      "role": "Author of the article and developer of an e-commerce review Skill used as a running example."
+    },
+    {
+      "name": "Claude Code",
+      "type": "organization",
+      "role": "Anthropic's AI coding assistant platform for which Skills are built."
+    },
+    {
+      "name": "Anthropic",
+      "type": "organization",
+      "role": "Company behind Claude and the Skills ecosystem; maintains the anthropics/skills repository."
+    },
+    {
+      "name": "skill-creator",
+      "type": "tool",
+      "role": "Anthropic's semi-automated tool for generating test cases, evaluating Skills, and optimizing descriptions."
+    },
+    {
+      "name": "Plugin Marketplace",
+      "type": "platform",
+      "role": "Open-source distribution channel for Claude Skills."
+    },
+    {
+      "name": "Anthropic Official Marketplace",
+      "type": "platform",
+      "role": "Official distribution channel for broader reach of Claude Skills."
+    }
+  ],
+  "key_data_points": [
+    "The anthropics/skills repository reached over 87,000 stars on GitHub as of March 2026, indicating rapid growth of the Skills ecosystem (🟢 relevant to your DevOps/homelab interests: shows a thriving community with reusable components you can adopt or contribute to).",
+    "Skills use progressive disclosure: metadata (~100 tokens) is always in context; SKILL.md body loads only when triggered; bundled resources load on demand. This design allows many Skills to be installed without exceeding context limits (🟢 relevant to your homelab/DevOps: efficient resource management is key for self-hosted AI setups).",
+    "The description must be specific and slightly 'pushy' to trigger Claude, as Claude defaults to handling simple tasks on its own. Example: 'Analyze sales/revenue CSV and Excel files... Also trigger when user uploads xlsx/csv with financial or transactional column headers' (🟢 relevant to your Red Teaming: you can craft descriptions to ensure your offensive security Skills trigger reliably).",
+    "Three implementation patterns: Pattern A (prompt-only) for tasks like brand guidelines; Pattern B (prompt+scripts) for data transformation; Pattern C (Skill+MCP/Subagent) for external API workflows. Start with Pattern A and evolve (🟢 relevant to your programming: you can build Skills for code review, vulnerability analysis, or automation scripts).",
+    "Testing should use realistic, messy prompts (typos, casual language) rather than clean ones. The iteration loop: run Skill with test prompts, evaluate output, fix SKILL.md, repeat (🟢 relevant to your Red Teaming: realistic test prompts simulate real attacker behavior, improving your Skill's robustness).",
+    "Distribution methods: ZIP upload to claude.ai (folder at root), .claude/skills/ directory for team repos, Plugin Marketplace, Anthropic Official Marketplace, Vercel's npx skills add, and Skills API (🟢 relevant to your homelab/DevOps: you can version-control Skills in your homelab repo and share with your team).",
+    "Before sharing, check: ZIP has folder at root, frontmatter meets character limits (name ≤64 chars, description ≤1024 chars), no hardcoded API keys, and version field is bumped for auto-update (🟢 relevant to your programming: security best practices like no hardcoded keys are critical for any code you distribute)."
+  ],
+  "methodology_steps": [
+    "Define 2-3 concrete use cases by observing repetitive work. For each use case, answer: Who will use it? In what situation? How will they phrase their request? What is the input? What is the expected output?",
+    "Write the YAML frontmatter: name (≤64 chars) and description (≤1024 chars). Make the description specific and slightly 'pushy' by including trigger keywords and edge cases (e.g., 'Also trigger when user uploads xlsx/csv with financial column headers').",
+    "Choose the simplest implementation pattern: Pattern A (prompt-only) if Claude's judgment suffices; Pattern B (prompt+scripts) for deterministic processing; Pattern C (Skill+MCP/Subagent) for external API workflows. Start with Pattern A and evolve.",
+    "Create the file structure: SKILL.md (required) with YAML frontmatter and Markdown instructions; optional scripts/, references/, assets/ directories. Keep SKILL.md under 500 lines; move longer content to references/ and point to it in SKILL.md.",
+    "Write test prompts as realistic, messy user requests (typos, casual abbreviations, vague file names). Avoid clean, perfectly phrased prompts.",
+    "Run the iteration loop: execute the Skill with test prompts, evaluate output against defined success criteria, fix SKILL.md if needed, and repeat. Use Anthropic's skill-creator tool to semi-automate test case generation and description optimization.",
+    "Distribute the Skill: for personal use, ZIP the folder (with folder at root) and upload via claude.ai Settings > Customize > Skills. For team use, place the Skill in .claude/skills/ in the project repo. For public distribution, use Plugin Marketplace or Anthropic Official Marketplace.",
+    "Before sharing, verify: ZIP contains folder at root, frontmatter meets character limits, no hardcoded API keys, and version field is bumped for auto-update."
+  ],
+  "conclusions": [
+    "A Skill is a reusable prompt with structure that packages domain knowledge into an installable unit. The key to success is spending time on design (use cases, description) and testing with realistic prompts, not just writing instructions. This aligns with your programming and DevOps needs: you can build Skills to automate repetitive coding tasks, code review, or homelab workflows.",
+    "The progressive disclosure architecture (metadata always in context, body and resources loaded on demand) allows many Skills to coexist without context overflow. This is critical for your homelab/DevOps setups where you might run multiple Skills simultaneously.",
+    "Testing with messy, realistic prompts is essential because clean prompts do not reflect real user behavior. For your Red Teaming work, this means you should test offensive security Skills with prompts that mimic actual attacker queries (e.g., 'find me a way to exploit this API').",
+    "The article recommends starting with Pattern A (prompt-only) and evolving to Pattern B or C as needed. This incremental approach reduces complexity and is a good practice for your programming projects: build a minimal viable Skill first, then add scripts or MCP integrations."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your interests as a programmer, Red Teamer, and homelab enthusiast. As a programmer, you can build Skills to automate code review, commit message formatting, or even vulnerability scanning workflows. For Red Teaming, you can create Skills that guide Claude through penetration testing steps, analyze logs for indicators of compromise, or generate exploit payloads — the article's emphasis on specific, 'pushy' descriptions ensures your offensive Skills trigger reliably. For homelab/DevOps, you can package your infrastructure automation scripts as Skills, share them with your team via .claude/skills/ in your repo, and benefit from the progressive disclosure architecture to keep context usage efficient. The testing methodology with realistic prompts is directly applicable to building robust tools that work in messy real-world scenarios. Overall, this guide gives you a structured framework to turn your repetitive tasks into reusable, production-ready AI skills.",
+  "extra_advice": "Consider building a Skill that automates your Red Teaming reconnaissance phase: define use cases like 'analyze this subdomain list for common web vulnerabilities' or 'extract endpoints from this API documentation and test for OWASP Top 10 issues.' Use Pattern B with Python scripts for deterministic scanning (e.g., using requests and BeautifulSoup) and Pattern A for the analysis workflow. Test with messy prompts like 'hey i got this list of urls from a bug bounty program, can you check if any have SQLi?' This will save you hours of manual work and can be shared with your team via your homelab repo.",
+  "source_url": "https://towardsdatascience.com/how-to-build-a-production-ready-claude-code-skill/"
+}

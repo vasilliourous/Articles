@@ -1,0 +1,454 @@
+The winners and losers of AI coding | InfoWorld
+🚀 The new InfoWorld.com hybrid search: 🔍 Explore InfoWorld content smarter, faster and AI powered. ✨ 
+Try it!
+Topics
+Latest
+Newsletters
+Resources
+Buyer’s Guides
+Events
+
+										Search									
+
+									Menu								
+
+										Search									
+
+									Menu								
+Topics
+Close
+Analytics
+Artificial Intelligence
+Careers
+Cloud Computing
+Data Management
+Databases
+Development Tools
+Devops
+Emerging Technology
+Enterprise Buyer’s Guides
+Generative AI
+IT Leadership
+Java
+JavaScript
+Microsoft .NET
+Open Source
+Programming Languages
+Python
+Security
+Software Development
+Technology Industry
+Back
+Close
+Search
+Topics
+Latest
+Newsletters
+Resources
+Buyer’s Guides
+More
+Features
+Blogs
+BrandPosts
+Videos
+Topics
+Topics
+Analytics
+Artificial Intelligence
+Careers
+Cloud Computing
+Data Management
+Databases
+Development Tools
+Devops
+Emerging Technology
+Enterprise Buyer’s Guides
+Generative AI
+IT Leadership
+Java
+JavaScript
+Microsoft .NET
+Open Source
+Programming Languages
+Python
+Security
+Software Development
+Technology Industry
+Home
+Blogs
+Rubber Duck Reflections
+
+				by									
+Nick Hodges
+The winners and losers of AI coding
+opinion
+Apr 8, 2026
+4 mins
+
+				Goodbye and good riddance to all of those infuriatingly unmaintainable legacy balls of mud. Modern, bespoke replacements are on the horizon. 			
+
+							Credit: 															afotostock / Shutterstock													
+I don’t need to tell you that 
+agentic coding
+ is changing the world of software development. Things are happening so quickly that it’s hard to keep up. Internet years seem like eons compared to agentic coding years.  It seemed like just a few short weeks ago that everyone very suddenly stopped writing code and let 
+Claude Code
+ do all the work because, well, it was a few short weeks ago that it happened. 
+It seems like new ideas, tools, and frameworks are popping up every day.
+Despite things moving like a cheetah sprinting across the Savannah, I am going to make a few predictions about where the cheetah is going to end up and what will happen when it gets there. 
+So long, legacy software
+First, legacy software is going to become a thing of the past. You know what I’m talking about—
+those big balls of mud
+ that have accreted over the last 30 years. The one started by your cousin’s friend who wrote that software for your dad’s laundromat and is now the software recommended by the 
+Coin Laundry Association
+. The one with seven million lines of hopeless spaghetti code that no one person actually understands, that uses ancient, long-outdated technology, that is impossible to maintain but somehow still works. The one that depends on an entire team of developers and support people to keep running.
+More Videos
+0 seconds of 30 seconds
+Volume 0%
+Press shift question mark to access a list of keyboard shortcuts
+Keyboard Shortcuts
+Enabled
+Disabled
+Shortcuts Open/Close
+/ or ?
+Play/Pause
+SPACE
+Increase Volume
+↑
+Decrease Volume
+↓
+Seek Forward
+→
+Seek Backward
+←
+Captions On/Off
+c
+Fullscreen/Exit Fullscreen
+f
+Mute/Unmute
+m
+Decrease Caption Size
+-
+Increase Caption Size
++ or =
+Seek %
+0-9
+Next Up
+How to manage logins and users for a Django website using Python
+08:22
+Subtitle Settings
+Off
+Automated Captions - en-US
+Font Color
+White
+Font Opacity
+100%
+Font Size
+100%
+Font Family
+Arial
+Character Edge
+None
+Edge Color
+Black
+Background Color
+Black
+Background Opacity
+50%
+Window Color
+Black
+Window Opacity
+0%
+Reset
+White
+Black
+Red
+Green
+Blue
+Yellow
+Magenta
+Cyan
+100%
+75%
+50%
+25%
+200%
+175%
+150%
+125%
+100%
+75%
+50%
+Arial
+Courier
+Georgia
+Impact
+Lucida Console
+Tahoma
+Times New Roman
+Trebuchet MS
+Verdana
+None
+Raised
+Depressed
+Uniform
+Drop Shadow
+White
+Black
+Red
+Green
+Blue
+Yellow
+Magenta
+Cyan
+White
+Black
+Red
+Green
+Blue
+Yellow
+Magenta
+Cyan
+100%
+75%
+50%
+25%
+0%
+White
+Black
+Red
+Green
+Blue
+Yellow
+Magenta
+Cyan
+100%
+75%
+50%
+25%
+0%
+This ad will end in 7
+Live
+00:23
+00:06
+00:30
+Well, someone is going to come along and write a completely fresh, new, unmuddy version of that ball of mud with a coding agent. The perfect example of this is happening in open source with 
+Cloudflare’s EmDash project
+. Now don’t get me wrong. I have a 
+deep respect for WordPress
+, the CMS that basically runs the internet. It’s venerable and battle-tested—and bloated and insecure and written in PHP.
+EmDash is a “spiritual successor” to WordPress. Cloudflare basically asked, “What would WordPress look like if we started building it today?” Then they started building it using agentic coding, and basically did in a couple of months what WordPress took 24 years to do. Sure, they had WordPress as a template, but it was only because of agentic coding that they were even willing to attempt it. 
+It’s long been thought foolish to say “Let’s rebuild the whole thing from scratch.”
+ Now, with agentic coding, it seems foolish not to.
+This is not the last creaky, old-school project that will be re-imagined in the coming days. If your business relies on a big ball of mud, it’s time to start looking at rebuilding it from the ground up before someone else beats you to it.
+Ideas, implemented
+Second, all those great application ideas you’ve been thinking about but could never find the time to do? Well, now you and millions of other developers can actually do them. I myself am nearing completion on six — six! — of the ideas I’ve been kicking around for years and never found the time to do. Yep, I build them all in parallel, with six different agents running at once. (Thank you, 
+Garry Tan and gstack!
+)
+Now, will there be a lot of slop that comes out of that? Sure. But will there be a huge supply of cool new software that will change the world? Yes, definitely. 
+That project you’ve always wanted to do? You can do it now. 
+InfoWorld Smart Answers
+Learn more
+Explore related questions
+What core web development issues does Cloudflare's new EmDash CMS solve?
+Can I really build a functional Astro application using Claude Code?
+Why is vibe coding your own enterprise applications a risky strategy?
+How does the Claude Code GitHub Action automate my security reviews?
+How can project managers leverage agentic AI for application architecture designs?
+Ask
+Third, bespoke software will become the norm. Today, a business that needs accounting software will buy a product like Quickbooks or some other off-the-shelf solution, and adapt it to their way of doing things. But going forward, those businesses can create their own accounting package designed specifically for the way they do business. No one knows their domain better than the small business owner themselves. Instead of relying on someone who doesn’t understand the nuances of running your particular plumbing business, you can just talk to Claude Code and build your own solution. 
+This is happening today
+ (the head of finance wrote the solution!). If you aren’t considering becoming more efficient via agentic coding, then you might find yourself dealing with competitors that are.
+Legacy apps need rewriting. Those side projects need building. That app you need for your business isn’t going to build itself. Three months ago, it all seemed foolish and impossible. Today? You are either the cheetah or the gazelle.
+Generative AI
+Artificial Intelligence
+Software Development
+Developer
+Roles
+Careers
+NEWSLETTER
+The latest AI updates, straight to your inbox
+News, analysis, and insights for IT leaders navigating the risks and rewards of AI. A special series from the editors of CIO, Computerworld, CSO, InfoWorld and Network World
+By submitting your information, you agree to our 
+PRIVACY POLICY
+.
+SUBSCRIBE
+Related content
+opinion
+12 model-level deep cuts to slash AI training costs
+By Jayachander Reddy Kandakatla
+May 8, 2026
+8 mins
+
+								Developer							
+
+								Development Approaches							
+
+								Development Tools							
+opinion
+Three skills that matter when AI handles the coding
+By Matthew OKeefe
+May 7, 2026
+10 mins
+
+								Developer							
+
+								Generative AI							
+
+								Roles							
+opinion
+No, AI won’t destroy software development jobs
+By Nick Hodges
+May 6, 2026
+5 mins
+
+								Developer							
+
+								Engineer							
+
+								Roles							
+feature
+Enterprise Spotlight: Transforming software development with AI
+By InfoWorld staff
+May 1, 2026
+1 min
+
+								Developer							
+
+								Development Tools							
+
+								Engineer							
+Other Sections
+
+								Resources							
+
+								Videos							
+
+														by 															
+
+																Nick Hodges															
+Follow Nick Hodges on X
+Follow Nick Hodges on LinkedIn
+Nick has a BA in classical languages from Carleton College and an MS in information technology management from the Naval Postgraduate School. In his career, he has been a busboy, a cook, a caddie, a telemarketer (for which he apologizes), an office manager, a high school teacher, a naval intelligence officer, a software developer, a product manager, and a software development manager. In addition, he is a former Delphi Product Manager and Delphi R&D Team Manager and the author of 
+Coding in Delphi
+. He is a passionate Minnesota sports fan, especially the Timberwolves, as he grew up and went to college in the Land of 10,000 Lakes. He currently lives in West Chester, PA, and can be found on the Internet at 
+https://nickhodges.com
+.
+More from this author
+opinion
+A new challenge for software product managers
+Apr 29, 2026 
+4 mins
+opinion
+How AI is upending SaaS tools
+Apr 22, 2026 
+5 mins
+opinion
+Where will developer wisdom come from?
+Apr 15, 2026 
+5 mins
+opinion
+What next for junior developers?
+Apr 1, 2026 
+5 mins
+opinion
+Stop worrying: Instead, imagine software developers’ next great pivot
+Mar 25, 2026 
+4 mins
+opinion
+Markdown is now a first-class coding language: Deal with it
+Mar 18, 2026 
+4 mins
+opinion
+Pity the developers who resist agentic coding
+Mar 11, 2026 
+4 mins
+opinion
+An ode to craftsmanship in software development
+Mar 4, 2026 
+4 mins
+Show me more
+Popular
+Articles
+Videos
+news
+What happens when engineering teams reorganize around AI agents
+By Travis Van
+May 8, 2026
+4 mins
+Artificial Intelligence
+Development Approaches
+Generative AI
+opinion
+When cloud giants meddle in markets
+By David Linthicum
+May 8, 2026
+5 mins
+Artificial Intelligence
+Cloud Architecture
+Cloud Computing
+feature
+Python isn’t always easy
+By Serdar Yegulalp
+May 8, 2026
+2 mins
+Programming Languages
+Python
+Software Development
+video
+Two powerful tools for viewing Python app performance stats
+May 5, 2026
+5 mins
+Python
+video
+How to back up SQLite databases the right way (not by copying them!)
+Apr 28, 2026
+5 mins
+Python
+video
+Jujutsu: The rising alternative to Git
+Apr 21, 2026
+5 mins
+Python
+About
+About Us
+Advertise
+Contact Us
+Editorial Ethics Policy
+Foundry Careers
+Newsletters
+Reprints
+Add InfoWorld as a Preferred Source in Google Search
+Policies
+Terms of Service
+Privacy Policy
+Cookie Policy
+Copyright Notice
+Member Preferences
+About AdChoices
+Your California Privacy Rights
+Privacy Settings
+More
+News
+Features
+Blogs
+BrandPosts
+Events
+Videos
+Enterprise Buyer’s Guides
+Our Network
+CIO
+Computerworld
+CSO
+Network World
+Facebook
+X
+YouTube
+Google News
+LinkedIn
+© 2026  FoundryCo, Inc. All Rights Reserved.
+InfoWorld wants to show you notifications
+You can turn off notifications at any time from your browser
+Accept
+Do not accept
+Powered by 
+subscribers

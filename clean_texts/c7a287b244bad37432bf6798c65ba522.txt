@@ -1,0 +1,393 @@
+I ditched browser bookmarks for a single text file & my links have never been more organized
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+1
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I ditched browser bookmarks for a single text file & my links have never been more organized
+By 
+Dhruv Bhutani
+Published
+ Apr 26, 2026, 6:00 AM EDT
+Dhruv Bhutani has been writing about consumer technology since 2008, offering deep insights into the personal technology landscape through features and opinion pieces. He writes for XDA-Developers, where he focuses on topics like productivity, networking, self-hosting, and more. Over the years, his work has also appeared in leading publications such as Android Police, Android Authority, CNET, PCMag, and more. Outside of his professional work, Dhruv is an avid fan of horror media spanning films and literature, enjoys fitness activities, collects vinyl records, and plays the guitar.
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+1
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Browser bookmarks are supposed to make things easier. Instead, if you're anything like me, they quickly turn into a dumping ground. I save links faster than I organize them into folders, and folders get nested inside folders. By the time I actually get around to checking out those links, half of those links are outdated. And for the most part, the most critical ones get duplicated across devices. All that to say that the 
+bookmark bar
+ doesn't really stay all that useful for too long.
+✕
+ Remove Ads
+That problem pushed me to search for better bookmarking solutions. And that's how I stumbled across a tool called Links as Code. The idea is simple on the surface. Instead of saving bookmarks inside a browser, you store them in a 
+YAML file
+. The app reads that file and turns it into a clean, minimal dashboard. No syncing needed, no complicated structure. Just a single file that you control that offers a refreshingly different way to structure your links.
+
+			5 reasons I switched to a self-hosted, bookmarking solution
+		
+From privacy control to archiving and cross-platform access, Hoarder redefines how you manage and organize bookmarks effectively and securely.
+Posts
+2
+By 
+Dhruv Bhutani
+Jan 27, 2025
+
+                        The real problem with bookmarks is management
+               
+
+            YAML turns bookmarks into something usable
+    
+Credit: 
+The biggest issue with 
+traditional bookmarks
+ isn't the feature itself. That part works well enough. It's the lack of structure. Browsers let you save anything, anywhere with no friction, but they're not particularly efficient. The problem is that a folder that made sense months ago might not make much sense today.
+What adds to the problem is that bookmarks are passive and lack context. There's no grouping beyond folders and no real way to reorganize them at scale. You're forced into a UI that wasn't particularly designed for long-term management. This is where the links-as-code approach flips things around.
+✕
+ Remove Ads
+Instead of relying on a browser UI, everything lives in a plain text 
+YAML file
+. You define links as structured data. Each entry has a name, a URL, and, optionally, a description. You can then group links into sections that actually reflect how you use them. The app simply reads this file and renders it into a usable interface. That makes a bigger difference than you might think.
+Because your links are no longer tied to a browser, they are portable, editable, and consistent in how they function. You can open the file, scan through it, look for changes that need to be made, and make those changes immediately. There's no hunting through menus or dragging items between folders. You're editing your entire link system in one single text file.
+Even smaller changes become simpler to handle. Renaming a link is trivial, for example. And reorganizing categories takes seconds. Removing dead links becomes part of an easy workflow instead of having to dig through menus and submenus.
+The tool itself is simple and straightforward. The straightforward compose file provided on GitHub can be deployed in seconds, and all you have to do is place the YAML file in a data directory. There's no database or account or syncing to break. The app just displays whatever links you place in the YAML file.
+
+                        This tool replaced my bookmarks faster than I expected
+               
+
+            Turning a YAML file into a daily dashboard
+    
+✕
+ Remove Ads
+ While the setup is simple enough. What surprised me most was how quickly it replaced my bookmarks entirely. Instead of treating it as a backup, I dived right in and used it as my primary entry point for everything running on my network. Every service, tool, and dashboard got added to that YAML file.
+The structure was pretty deliberate. I group things based on how I think and use specific services, rather than how browser bookmark defaults work. There's a section for core tools that I use daily. And another one for 
+media services
+. Finally, there's another section for core infrastructure. If there's something I'm experimenting with or that needs attention, it gets its own section, so I don't forget about it.
+That YAML-based flexibility is the real advantage. The tool supports both ungrouped links and grouped sections, so you can keep things simple or build out a more structured layout depending on your needs. The YAML format is straightforward, making it easy to maintain over time.
+Yes, there's a bit more friction than a 
+standard bookmark
+. Adding a link requires opening the file and typing it out. That might sound slower than clicking a star icon, but it forces a more deliberate action. You only add things that matter. Over time, that list stays clean because it's intentional. Even customization is simple because you can manage everything within the text file.
+
+            A simple tool that fixes a messy habit
+    
+Using the tool really brought to light just how messy link management tends to be using standard bookmarks. Browsers made it easy to save links, but also forget about them, and definitely not how to manage them clearly.
+✕
+ Remove Ads
+
+                    Subscribe: Newsletter for smarter link and bookmark setups
+                
+Make better link habits: subscribe to the newsletter for practical, hands-on coverage of link-as-code workflows, YAML examples, deployment tips, and maintainable bookmark strategies — plus related self-hosted productivity tools and ideas.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+Switching to a YAML-based system might sound technical, but in practice it's surprisingly simple. You move from a cluttered interface to a single file-based control. The app handles displaying your bookmarks and letting you interact with them. The bookmarks are right there in the YAML file. It's not doing all that much. There's no automation, no recommendations, or much else happening here. And that's precisely why I like it and why it's become a part of my 
+self-hosted
+ stack.
+Links as Code: This Docker-based app gives you a lightweight dashboard that turns a simple YAML file into a clean, structured homepage for all your links. 
+Software and Services
+Bookmarks
+Browser
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I ditched Chrome years ago, here are 5 open-source browsers I recommend instead
+		
+
+			I switched from Claude Code to Codex for a week, and the trade-offs surprised me
+		
+
+			 3 NotebookLM prompts I use that practically make my presentation slides for me
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+1
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+James
+James
+James
+#JM317306
+Member since 2025-08-31
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Sounds interesting but it is hard to beat Raindrop or Thoughtogram
+2026-05-03 03:29:57
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 23, 2026
+
+                                    Claude Code works best when you stop asking it to code
+                            
+Apr 23, 2026
+
+                                    This free self-hosted app turned my Jellyfin server into a YouTube archive overnight
+                            
+Apr 23, 2026
+
+                                    I built a local LLM server I can access from anywhere, and it uses a Raspberry Pi
+                            
+Apr 23, 2026
+
+                                    3 reasons I'm finally uninstalling Obsidian - and what I'm replacing it with
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:07
+
+                            The end of affordable PCs?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            How much data does Steam use in a year?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:14
+
+                            3 PC gaming anniversaries from 1996
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

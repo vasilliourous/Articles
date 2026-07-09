@@ -1,0 +1,362 @@
+The billion-dollar startup with a different idea for AI - AMI Labs
+Manage Cookie Consent
+We use technologies like cookies to store and/or access device information. We do this to improve browsing experience and to show personalized ads. Consenting to these technologies will allow us to process data such as browsing behavior or unique IDs on this site. Not consenting or withdrawing consent, may adversely affect certain features and functions.
+Functional
+Functional
+ Always active 
+The technical storage or access is strictly necessary for the legitimate purpose of enabling the use of a specific service explicitly requested by the subscriber or user, or for the sole purpose of carrying out the transmission of a communication over an electronic communications network.
+Preferences
+Preferences
+The technical storage or access is necessary for the legitimate purpose of storing preferences that are not requested by the subscriber or user.
+Statistics
+Statistics
+The technical storage or access that is used exclusively for statistical purposes.
+The technical storage or access that is used exclusively for anonymous statistical purposes. Without a subpoena, voluntary compliance on the part of your Internet Service Provider, or additional records from a third party, information stored or retrieved for this purpose alone cannot usually be used to identify you.
+Marketing
+Marketing
+The technical storage or access is required to create user profiles to send advertising, or to track the user on a website or across several websites for similar marketing purposes.
+Manage options
+Manage services
+Manage {vendor_count} vendors
+Read more about these purposes
+Accept
+Deny
+View preferences
+Save preferences
+View preferences
+Cookie Policy
+Privacy Policy
+{title}
+Skip to content
+AI News is part of the TechForge Publications series
+Explore All
+Developer
+IoT News
+MarketingTech
+CloudTech
+Telecoms
+TechHQ
+TechWire Asia
+Explore All
+Developer
+IoT News
+MarketingTech
+CloudTech
+Telecoms
+TechHQ
+TechWire Asia
+TechForge
+News
+Categories
+Physical AI
+AI and Us
+Environment & Sustainability
+Human-AI Relationships
+Open-Source & Democratised AI
+Trust, Bias & Fairness
+World of Work
+AI in Action
+Creative Industries
+Cybersecurity AI
+Education AI
+Entertainment & Media
+Finance AI
+Government & Public Sector AI
+Healthcare & Wellness AI
+Legal Industry AI
+Manufacturing & Engineering AI
+Marketing AI
+Utilities
+Workforce & HR AI
+Retail & Logistics AI
+Service Industry AI
+How It Works
+Computer Vision
+Data Engineering & MLOps
+Infrastructure & Hardware
+Multimodal AI
+Natural Language Processing (NLP)
+Reinforcement Learning
+Inside AI
+AI Business Strategy
+AI Hardware & Chips
+AI Market Trends
+AI Mergers & Acquisitions
+AI Startups & Funding
+Founders & Visionaries
+Governance, Regulation & Policy
+Features
+Deep Dives
+Interviews
+Opinion
+Special Reports & Series
+Sponsored Content
+TechEx Events
+All Categories
+Events
+Resources
+All Resources
+Editorial Calendar
+Exclusive Videos
+More
+About Us
+Advertise
+Contact Us
+News
+Categories
+Physical AI
+AI and Us
+Environment & Sustainability
+Human-AI Relationships
+Open-Source & Democratised AI
+Trust, Bias & Fairness
+World of Work
+AI in Action
+Creative Industries
+Cybersecurity AI
+Education AI
+Entertainment & Media
+Finance AI
+Government & Public Sector AI
+Healthcare & Wellness AI
+Legal Industry AI
+Manufacturing & Engineering AI
+Marketing AI
+Utilities
+Workforce & HR AI
+Retail & Logistics AI
+Service Industry AI
+How It Works
+Computer Vision
+Data Engineering & MLOps
+Infrastructure & Hardware
+Multimodal AI
+Natural Language Processing (NLP)
+Reinforcement Learning
+Inside AI
+AI Business Strategy
+AI Hardware & Chips
+AI Market Trends
+AI Mergers & Acquisitions
+AI Startups & Funding
+Founders & Visionaries
+Governance, Regulation & Policy
+Features
+Deep Dives
+Interviews
+Opinion
+Special Reports & Series
+Sponsored Content
+TechEx Events
+All Categories
+Events
+Resources
+All Resources
+Editorial Calendar
+Exclusive Videos
+More
+About Us
+Advertise
+Contact Us
+Search
+Subscribe
+Subscribe
+News
+Categories
+Physical AI
+AI and Us
+Environment & Sustainability
+Human-AI Relationships
+Open-Source & Democratised AI
+Trust, Bias & Fairness
+World of Work
+AI in Action
+Creative Industries
+Cybersecurity AI
+Education AI
+Entertainment & Media
+Finance AI
+Government & Public Sector AI
+Healthcare & Wellness AI
+Legal Industry AI
+Manufacturing & Engineering AI
+Marketing AI
+Utilities
+Workforce & HR AI
+Retail & Logistics AI
+Service Industry AI
+How It Works
+Computer Vision
+Data Engineering & MLOps
+Infrastructure & Hardware
+Multimodal AI
+Natural Language Processing (NLP)
+Reinforcement Learning
+Inside AI
+AI Business Strategy
+AI Hardware & Chips
+AI Market Trends
+AI Mergers & Acquisitions
+AI Startups & Funding
+Founders & Visionaries
+Governance, Regulation & Policy
+Features
+Deep Dives
+Interviews
+Opinion
+Special Reports & Series
+Sponsored Content
+TechEx Events
+All Categories
+Events
+Resources
+All Resources
+Editorial Calendar
+Exclusive Videos
+More
+About Us
+Advertise
+Contact Us
+Hamburger Toggle Menu
+How It Works
+The billion-dollar startup with a different idea for AI
+Joe Green
+April 23, 2026
+Share this story:
+Tags:
+AMI Labs
+meta
+small models
+startups
+Categories:
+How It Works
+A billion dollars in startup funding for a company that employs 12 people is an indication that investors still have faith in AI. But the founder of the startup in question – AMI Labs’ Yann LeCun – believes that the breed of technology we currently term AI (large language models) is not the way through which it will develop meaningful and long-term results.
+Yann LeCun left his post as chief AI scientist at Meta late last year and founded 
+Advanced Machine Intelligence Labs
+ (AMI Labs) which, he asserts, will remain a research organisation not expected to produce a saleable product for maybe five years. The team at AMI Labs are concentrating not on huge, general-purpose language-based models, but AIs that comprise of collections of modular components, trained for and operating in specific use-cases.
+LeCun’s proposed system of artificial intelligence would comprise of the following types of elements:
+a world model specific to the domain in which the AI would operate. This might be industry-specific, or perhaps more likely, role-specific,
+an actor that proposes steps to take next, based on classical reinforcement learning,
+a critic that analyses the different options drawn from the world model and based on short-term memory, and assess the proposed steps according to hard-coded rules,
+a perception system that would be specific to the AI’s use: video or audio data, text, images, and so on using, for example, deep learning vision recognition algorithms,
+a short-term memory,
+a configurator that would orchestrate the movement of information between each of the above.
+Unlike large language models that have been trained on only one source of information (the text scraped from the internet), each instance of LeCun’s AI would be given directed data relevant only to their environment and purpose. In each version, the importance of each module might be set differently. For example, the critic module would be more comprehensive in areas that operate with sensitive information, or the perception module would be paramount in systems that need to react to real-world events quickly.
+Each module would be trained in ways that relevant to the AI’s particular field. There have been several successful instances of this in the past, such as machine-learning systems that can teach themselves how to play a video or board game, for example. These are in contrast to the large language models that underpin the vast majority of what we currently talk about when we talk about AI.
+LLMs are trained as generalists, creating best-guess answers based on what they have ingested, which are then subject to tweaking either by prompt engineering via software wrappers (Claude Code being the most well-known recently), or at a deeper level by means of reasoning models (the ‘thinking out loud’ portion of basic responses fed back into the AI’s prompt before the user sees the final answers.)
+The financial implications of AIs produced by the type of methods proposed by AMI Labs will be interesting to the current AI industry – assuming Yann LeCun’s ideas produce fruitful and viable results. Large language models from big technology providers (Anthropic, Meta, OpenAI, Google et al.) have consumed more resources with each iteration over the last five years. In addition to early-stage model size growth, the recursive prompting necessary to improve outputs from their later versions means that training and running large models becomes increasingly expensive, and only huge enterprises can afford to run them at a financial loss.
+The smaller, focused modules inside AMI Labs’ proposed solution could be run on fraction of the GPU power currently necessary for giant LLMs, or even on-device. Instead of the hundreds of billions of parameters models used by ChatGPT, for example, specialist models – that don’t need to be generalists – should need only a few hundred million parameters. This, and an assumption that the cost of computing will generally fall, mean that local, cheap, and inherently more accurate AI may be only a short step away.
+A startup with a new idea garnering enormous amounts of financial backing is nothing new in technology’s recent history. But at least part of LeCun’s strategy is based on his belief that current large language models cannot improve significantly enough to realise the aspirational claims made by their creators. AMI Labs seems to be offering investors a way that AI can perform successfully at some stage in the near future with an manageable cost, using a different architecture from the current norm. It’s a different proposition from what’s currently on the table from today’s AI behemoths, but the message of future potential is similar.
+(Image source: “Perspective on Modular Construction” by sidehike is licensed under CC BY-NC-SA 2.0.
+)
+Want to learn more about AI and big data from industry leaders?
+ Check out 
+AI & Big Data Expo
+ taking place in Amsterdam, California, and London. The comprehensive event is part of 
+TechEx
+ and co-located with other leading technology events. Click 
+here
+ for more information.
+AI News is powered by 
+TechForge Media
+. Explore other upcoming enterprise technology events and webinars 
+here
+.
+About the Author
+Joe Green
+Commercial Editor
+ Joe Green is a writer based in Bristol, UK. He acquired his first computer and dial-up modem in 1992 and has worked in the tech industry since 2000. He writes and podcasts, specialising in open-source, networking, cybersecurity, software development and online privacy.
+Related
+RingCentral adds Shopify, Calendly, and WhatsApp to AI Receptionist
+May 8, 2026
+AI helping ease the UK’s NHS burden
+May 7, 2026
+HP and the art of AI and data for the enterprise
+May 6, 2026
+US government increases AI suppliers and rethinks Anthropic’s role
+May 6, 2026
+Join our Community
+Subscribe now to get all our premium content and latest tech news delivered straight to your inbox
+Click here
+Popular
+Physical AI
+Asylon and Thrive Logic bring physical AI to enterprise perimeter security
+7428 view(s)
+AI Business Strategy
+JPMorgan begins tracking how employees use AI at work
+6813 view(s)
+AI in Action
+Google makes its industrial robotics AI play official–and this time, it means business
+6051 view(s)
+How It Works
+The billion-dollar startup with a different idea for AI
+5743 view(s)
+See all
+Latest
+View All Latest
+Government & Public Sector AI
+May 6, 2026
+US government increases AI suppliers and rethinks Anthropic’s role
+AI in Action
+May 6, 2026
+Google tests Remy AI agent for Gemini as focus turns to user control
+Physical AI
+May 4, 2026
+Physical AI raises governance questions for autonomous systems
+Subscribe
+All our premium content and latest tech news delivered straight to your inbox
+Subscribe
+Explore
+Contact Us
+Newsletter
+Privacy Policy
+Cookie Policy
+Contact Us
+Newsletter
+Privacy Policy
+Cookie Policy
+Reach Our Audience
+Advertise
+Contact Us
+Post a Press Release
+Advertise
+Contact Us
+Post a Press Release
+Categories
+AI and Us
+AI in Action
+How It Works
+Features
+Inside AI
+Sponsored Content
+TechEx Events
+All Categories
+AI and Us
+AI in Action
+How It Works
+Features
+Inside AI
+Sponsored Content
+TechEx Events
+All Categories
+Other Publications
+Explore All
+Developer
+IoT News
+MarketingTech
+CloudTech
+Telecoms
+TechHQ
+TechWire Asia
+Explore All
+Developer
+IoT News
+MarketingTech
+CloudTech
+Telecoms
+TechHQ
+TechWire Asia
+AI News is part of 
+TechForge
+Manage consent
+Notifications

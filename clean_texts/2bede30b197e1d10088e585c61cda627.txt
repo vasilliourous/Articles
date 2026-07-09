@@ -1,0 +1,286 @@
+The Effects of AI-Generated Code Tearing Through Corporations Is Actually Kind of Funny
+Search for:
+AI
+Anthropic
+Ethics
+Facial recognition
+Google
+Machine Learning
+Meta
+OpenAI
+xAI
+Society
+Art
+Blockchain
+Cybersecurity
+Education
+FCC
+Finance
+Food
+Privacy
+The Industrialists
+Virtual Reality
+Health
+Brain
+Developments
+Genetics
+Medical
+Prosthetics and Devices
+Sleep
+Studies
+Machines
+Computing
+Robotics
+Science
+Agriculture
+Biology
+Chemistry
+Energy
+Environment
+Evolution
+Future Materials
+Military
+Physics
+Space
+Astronomy
+Astrophysics
+Blue Origin
+Boeing
+ESA
+NASA
+Off-World
+Space Force
+SpaceX
+Transport
+Electric Vehicles
+Mass Transit
+Self-Driving Vehicles
+Tesla
+Latest
+Newsletter
+Search for:
+IG
+BS
+FB
+Artificial Intelligence
+Ethics
+
+				Code Overload			
+The Effects of AI-Generated Code Tearing Through Corporations Is Actually Kind of Funny
+Womp womp!
+By
+Frank Landymore
+
+					Published				
+
+					Apr 11, 2026 12:45 PM EDT				
+
+			Add Futurism			
+(opens in a new tab)
+More information
+Adding us as a Preferred Source in Google by using this link indicates that you would like to see more of our content in Google News results.
+
+				Illustration by Tag Hartman-Simkins / Futurism. Source: Getty Images			
+Sign up to see the future, today
+Can’t-miss innovations from the bleeding edge of science and tech
+Email address
+ Sign Up 
+Thank you!
+Corporations are rapidly embracing AI to churn out mountains of code. 
+Outwardly, this is presented as a revolution in productivity. But a behind the scenes look 
+in 
+The New York Times
+ paints a slightly different, and somewhat comic, picture. Beleaguered programmers are being saddled with more code than what they know what to do with, while their employers struggle to find the best way to get them to check all the AI’s hastily written work.
+One financial services company, for example, saw its coding output increase tenfold after embracing the popular AI tool Cursor — creating an epic backlog of one million lines of code that needs to be reviewed, according to Joni Klippert, CEO of the security startup StackHawk, which works with the financial firm.
+And the code glut isn’t something that can be ignored. Left unchecked, bad code — regardless of whether it’s AI-generated or human-written — can 
+gum up software and cause security flaws
+. Amazon and Meta both recently 
+experienced disruptions
+ after AI tools 
+took unauthorized actions
+, and those are just the ones we’ve heard about.
+“The sheer amount of code being delivered, and the increase in vulnerabilities, is something they can’t keep up with,” Klippert told the 
+NYT
+. The accelerated output created a “lot of stress” in other departments, like sales and marketing support, she added.
+We’re now at an interesting inflection point of AI’s impact in the workplace. It’s been used to justify whittling down workforces across the globe, with one report finding that AI was cited in the announcements of more than 54,000 layoffs last year. This year included major names in tech: Jack Dorsey’s fintech firm 
+Block
+ and software giant 
+Atlassian
+ laid off thousands of employees while touting pivots to AI.
+Yet, at the same time that jobs are being eliminated, AI is also creating more work that would be best done by another human. Someone has to test the AI code, and traditionally it’d be the guy who wrote it — but nowadays they’re too busy prompting an AI agent. Who’s supposed to pick up the slack is unclear.
+“There are not enough application security engineers on the planet to satisfy what just American companies need,” Joe Sullivan, an adviser to Costanoa Ventures, told the 
+NYT
+.
+Moreover, AI may actually be making programmers’ jobs harder. Software engineers 
+have admitted
+ that being expected to produce more code while having to constantly supervise their AI tools is 
+accelerating them towards burnout
+ — a phenomenon that’s been documented in emerging research into the topic. One 
+ongoing study
+ dubbed this mental health toll AI “brain fry.”
+Companies are still grappling with how to address the code glut. “The blessing and the curse is that now everyone inside your company becomes a coder,” Michele Catasta, the president and head of AI at the startup Replit, told the 
+NYT
+.
+Sachin Kamdar of the AI agent startup Elvix took a hardline approach: all code must be reviewed by a human, because it’d be harder to fix down the line if no one understood what the AI cooked up in the first place.
+“It’s just going to break something, and they’re not going to know why it broke,” he told the 
+NYT
+.
+Another solution is throwing more AI at the problem. Anthropic and OpenAI have released AI agents designed to review code. And in December, Cursor, the provider of the much hyped AI coding tool, bought the startup Graphite, which builds an AI code reviewing platform.
+More on AI:
+Wall Street Journal Editor-in-Chief Instructs Staff to Welcome AI Sloplords
+
+					
+					Frank Landymore
+										
+
+					Contributing Writer				
+I’m a tech and science correspondent for Futurism, where I’m particularly interested in astrophysics, the business and ethics of artificial intelligence and automation, and the environment.
+Most Popular
+
+			Meta		
+Meta Has Entered Its Death Spiral
+By
+Jon Christian
+
+			Food		
+Thermoses Linked to Permanent Vision Loss
+By
+Frank Landymore
+
+			Robotics		
+Hacker Takes Over Robot Lawnmower, Runs Over Innocent Man
+By
+Frank Landymore
+
+			Artificial Intelligence		
+In Irony-Soaked Incident, Amazon Data Center Shuts Down Due to High Temperatures
+By
+Joe Wilkins
+
+			Black Holes		
+NASA Says Strange Red Dots in Sky Are an Unknown Class of Object That Looks Like a Huge Evil Eye
+By
+Frank Landymore
+Read More
+
+						More in Ethics					
+
+			Ethics		
+Apple Is Blocking Vibe Coding Apps From the App Store, Infuriating Developers
+By
+Frank Landymore
+
+			Ethics		
+ICE Foiled At Every Turn By One Vibe Coding Man In His Pickup Truck
+By
+Frank Landymore
+
+			Ethics		
+CEOs Say AI Gives Them Only Two Options, and Both Are Bad News for Employees
+By
+Frank Landymore
+
+			Ethics		
+Elon Musk Orders Sweeping Layoffs as xAI Fails to Catch Up
+By
+Victor Tangermann
+
+			Ethics		
+Malware Is Now Using AI to Rewrite Its Own Code to Avoid Detection
+By
+Victor Tangermann
+
+			Ethics		
+New AI Agent Logs Directly Into College Platform Canvas to Do Your Homework for You
+By
+Frank Landymore
+
+			Ethics		
+New York Times Accused of Running AI-Generated Article
+By
+Maggie Harrison Dupré
+
+			Ethics		
+Study: New York Times Has Published Extensive AI-Generated Articles
+By
+Frank Landymore
+
+						SEE MORE					
+
+						More in Artificial Intelligence					
+
+			Artificial Intelligence		
+Even Tech Investors Are Getting Sick of All These AI Startups With Weak Ideas
+By
+Joe Wilkins
+
+			Anthropic		
+Claude Deleted a Company’s Entire Database, Illustrating a Danger Every CEO Should Be Aware of
+By
+Frank Landymore
+
+			Anthropic		
+Today Is the Day Anthropic Promised That Fully Autonomous Employees Would Be Tearing Through the Business World
+By
+Joe Wilkins
+
+			Anthropic		
+The Economics of Using AI to Churn Out Code Are Looking Worse Than Ever
+By
+Frank Landymore
+
+			xAI		
+Elon Musk Says He’s Epically Screwed Up at xAI, Is Rebuilding “From the Foundations”
+By
+Victor Tangermann
+
+			Artificial Intelligence		
+Bosses Are Blowing More Money on AI Agents Than It’d Cost Them to Just Pay Human Workers
+By
+Frank Landymore
+
+			Artificial Intelligence		
+CEO Says He’ll Hire Anyone Who Can Vibe Code With AI, Regardless of Actual Skill
+By
+Frank Landymore
+
+			Google		
+AI Code Is a Bug-Filled Mess
+By
+Victor Tangermann
+
+						SEE MORE					
+Sign up to see the future, today
+Can’t-miss innovations from the bleeding edge of science and tech
+Thank you!
+Email address
+ Sign Up 
+Newsletter
+About Us
+Editorial Standards
+Contacts
+Privacy Policy
+Terms & Conditions
+DMCA Policy
+Sitemap
+FOLLOW US
+
+								IG							
+
+								BS							
+
+								FB							
+DISCLAIMER(S)
+Disclaimer(s)
+Articles may contain affiliate links which enable us to share in the revenue of any purchases made. 
+Registration on or use of this site constitutes acceptance of our Terms of Service.
+© 2026
+Recurrent
+. All rights reserved.
+Advanced Transport
+Artificial Intelligence
+Future Society
+Health & Medicine
+Robots and Machines
+Science & Energy
+Space

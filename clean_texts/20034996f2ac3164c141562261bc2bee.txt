@@ -1,0 +1,468 @@
+6 hobbies that are better with a Raspberry Pi
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+Networking
+Storage and NAS
+Components
+Peripherals
+Operating Systems
+Submenu
+Linux
+Windows
+Software
+Submenu
+Programming
+Applications
+Mobile
+Submenu
+Android
+iPhone
+Carriers
+New Tech
+Submenu
+Hobbies
+Smart Home
+Homelab
+Single-Board Computers (SBCs)
+Cutting Edge
+Streaming
+Submenu
+Streaming Content
+Streaming Platforms
+Audio/Video
+Automotive
+Reviews
+Buying Guides
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+More Action
+Sign in now
+🔥Tech Deals
+Storage
+Streaming
+Linux
+Open Source
+Microsoft Excel
+Android
+Windows
+Close
+6 hobbies that are better with a Raspberry Pi
+Credit: Tim Brookes / How-To Geek
+By 
+Tim Brookes
+Published
+ Apr 29, 2026, 7:00 AM EDT
+Tim has been covering technology for almost 20 years, in that time spanning a broad range of topics from security to product reviews. He is especially focused on the Apple ecosystem, productivity, and consumer advice.
+
+Over the years Tim has written thousands of articles, reviews, and round-ups in addition to producing video content and original photography. A graduate of journalism, he found his footing as a freelancer with a laptop and loves how he is able to work from practically anywhere.
+
+Now a Senior Editor for iPhone, Mac, and Smart Home at 
+How-To Geek
+, Tim still loves to write. He can also be found crafting round-ups and productivity posts for the 
+Zapier 
+blog
+. 
+
+Earlier in his career Tim spent nearly a decade as a writer and eventually 
+Apple section editor
+ for 
+MakeUseOf
+. 
+
+Tim currently lives in Brisbane, Australia. Outside of work he loves to hike and work out, play video games, and spend quality time with his wonderful partner and two cats Inka and Roger. 
+Sign in to your 
+How-To Geek
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																						
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+The Raspberry Pi first rose to prominence as an educational tool before it was catapulted into the mainstream by hobbyists. Several hardware revisions later, this single-board computer has its own actively-maintained operating system and features prominently as the go-to pint-sized project computer.
+✕
+ Remove Ads
+Here’s how your other interests can be better with the world’s most famous single-board computer.
+
+    						Raspberry Pi 5
+			
+Brand
+
+									
+										
+											Raspberry Pi
+
+										
+																	
+Storage
+
+									
+										
+											8GB
+
+										
+																	
+It's only recommended for tech-savvy users, but the Raspberry Pi 5 is a tinkerer's dream. Cheap, highly customizable, and with great onboard specs, it's a solid base for your next mini PC.
+$130 at Spark Fun
+$172 at Amazon
+$175 at CanaKit
+Expand
+Collapse
+
+    						Raspberry Pi Zero 2WH
+			
+Brand
+
+									
+										
+											Raspberry Pi
+
+										
+																	
+The Raspberry Pi Zero 2 WW is super tiny and super affordable, but it packs enough computing power for a variety of DIY projects. You can use it to create a handheld retro gaming console, for Klipper/Mainsail, a super compact home or media server, and more. Plus, the GPIO header pins come pre-soldered for ease of use.
+$21 at Sparkfun
+$36 at Amazon
+Expand
+Collapse
+
+                        3D printing
+               
+Credit: 
+Tim Brookes / How-To Geek
+✕
+ Remove Ads
+OctoPrint
+ is an open-source project that lets you 
+control almost any 3D printer using a web interface
+. This includes the ability to send jobs to your printer using a browser, monitor jobs that are in progress, view connected cameras, inspect gcode, monitor temperature and other sensors, and even directly control the print head.
+It’s completely free to use, with a 
+plugin repository
+ that expands what the software is capable of. It pairs beautifully with a Raspberry Pi thanks to the 
+OctoPi
+ project, which runs on the Raspberry Pi 3B or Zero 2 and above. After a brief setup process, you’ll be able to access your printer using any web browser on the same network.
+Bambu Lab printer owners might not see much point in OctoPi, considering how fleshed-out the Bambu Lab ecosystem already is. Unfortunately, it’s also 
+heavily locked down
+, which is where Bambu Lab-specific OctoPrint alternative
+Bambuddy
+ comes in.
+✕
+ Remove Ads
+This open-source tool lets you 
+use your Bambu Lab printer locally
+ in developer mode, which disables the company’s own remote access features and replaces them with a self-hosted, offline-friendly version. Even if you prefer Bambu Lab’s own apps and services, having Bambuddy installed for internet and remote server outages means you always have an easy fallback option.
+
+                        Homelab
+               
+Credit: Patrick Campanale / How-To Geek
+A homelab is a 
+playground of servers and networking equipment
+ in which you can build and experiment. The term has evolved over the years to encompass all manner of self-hosting projects. This includes anything from hosting your own web server and setting up VPN access for your network to rolling your own cloud storage and replacing Spotify with an open-source alternative.
+✕
+ Remove Ads
+The Raspberry Pi has made its way into many homelabs over the years. Though a mini PC typically represents better value for new homelabbers looking for more performance, storage, and the x86 architecture, a Raspberry Pi is still a solid option that can do everything from 
+hosting a DNS sinkhole
+ to 
+backing up your local computers
+.
+Pi-hole
+ is the perfect starting place, but you’ll also want to 
+familiarize yourself with Docker
+ and then 
+get started with a few containers
+.
+
+                        Retro gaming
+               
+Credit: Tim Brookes / How-To Geek
+Even an older Raspberry Pi has enough grunt to be turned into a multi-system retro gaming emulator. The newer the Pi, the more platforms you’ll have available to you (and the more you’ll be able to play with options like increasing render resolution). Even 3D games for platforms like the PlayStation and Dreamcast are playable on a Raspberry Pi 5.
+✕
+ Remove Ads
+If you’re interested in retro gaming, you might also be interested in building something somewhat period-appropriate. The Raspberry Pi has 
+close ties to the vintage computing movement
+, with 
+turnkey Linux distributions like Recalbox
+ designed specifically with the Pi in mind. There’s little wonder these tiny computers power so many full-sized arcade cabinets.
+But there’s more. 
+DOSBian-X essentially turns your Raspberry Pi into a DOS (or early Windows) PC
+ from the 90s, or you can 
+turn any Raspberry Pi into a 486 by installing DOSBox-X
+ on any flavor of Linux. And that’s before we get to the many retro-themed 3D-printable enclosures that you can print for your Raspberry Pi…
+
+                        Building computers and other gadgets
+               
+Credit: Lucas Gouveia/How-To Geek | carboncomputers
+✕
+ Remove Ads
+Unlike a standard desktop PC, which uses a separate motherboard, CPU, RAM, GPU, and other components, the Raspberry Pi comes preassembled and soldered ahead of time. You can perform a few limited upgrades, like adding HAT modules, 
+solid-state storage
+, and 
+active cooling
+, but the performance is largely fixed.
+Thankfully, you can still get down and dirty by building something else that uses the Raspberry Pi at the heart of the operation. One of the biggest examples of a flex in this regard is a cyberdeck, 
+retro-futuristic mobile computer modules
+ that are inspired by hackers in cyberpunk literature and movies.
+But the Raspberry Pi has found its way into many advanced projects over the years, and the determining factor here is how far you want to push it and your appetite for learning. You can build 
+ADS-B plane trackers
+, weather stations, smart home dashboards, and more.
+
+                        Smart home and automation
+               
+Credit: Sydney Louw Butler/How-To Geek
+✕
+ Remove Ads
+The most obvious use for a Raspberry Pi in the smart home is as a Home Assistant server. The Open Home Foundation’s own Home Assistant Green turnkey server closely resembles a Raspberry Pi in a box, and the fact that Home Assistant is included as a two-click download in the official Raspberry Pi imaging tool makes it especially easy to get started with.
+But there are other uses for a Raspberry Pi within the smart home. For example, if you use an MQTT broker to communicate with devices on mesh and Wi-Fi networks, you could 
+move your MQTT server to an external device like a Raspberry Pi
+ so that everything doesn’t stop working when your server reboots (
+just make sure it’s not publicly accessible
+).
+
+                    Power up your projects: subscribe to the newsletter
+                
+Subscribe to the newsletter for hands-on Raspberry Pi guides, project blueprints, and troubleshooting tips—practical coverage across 3D printing, homelabs, retro gaming, smart-home projects, and media builds.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+For more complex automations, you can install 
+Node-RED
+ on your Pi to build detailed flows in a visual manner using local and remote data.
+
+                        Home audio and home theater
+               
+✕
+ Remove Ads
+If you’re an audiophile, you’re probably not going to rely on a Raspberry Pi as your primary amplifier. But if you’re enthusiastic about home audio, you might be interested in learning a bit about building your own receiver (or “Pi-Fi”) 
+for around $20 and the price of a Pi
+.
+Beyond this, you could use a Raspberry Pi to add 
+Bluetooth or AirPlay to an older receiver
+ that lacks it, adding wireless connectivity to vintage stereo equipment so they can be used with the smartphones of today that lack 3.5mm stereo ports.
+The Raspberry Pi can also improve your home theater experience, with 
+LibreELEC being the ultimate Roku replacement
+. This media-focused Linux distro boots quickly into Kodi, one of the most versatile media center platforms you could ever hope to use. You can even use the aforementioned Pi-hole to set up a DNS sinkhole and 
+block tracking servers and advertisements from appearing on your smart TV
+.
+✕
+ Remove Ads
+The 
+Raspberry Pi might not be quite as compelling as it once
+ was given the rise of dirt-cheap microcontrollers and a healthy second-hand market of mini PCs, but they’re still fantastic little devices—even the older models.
+Single-Board Computers (SBCs)
+Hobbies
+Raspberry Pi
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. 
+Read More
+.
+Close
+✕
+ Remove Ads
+
+                                                    Desktop
+                                            
+
+                                                    Mobile
+                                            
+
+			Windows Fast Start-up is still causing problems in 2026, and everyone should disable it
+		
+2 hours ago
+
+			KDE Dolphin does file management better than GNOME—here's why
+		
+4 hours ago
+
+			This open-source project brings the best part of Linux to Windows
+		
+5 hours ago
+See More
+
+			5 hidden Motorola gestures that make other Android phones feel basic
+		
+2 hours ago
+
+			This open-source app suite replaced 6 closed-source apps and tools on my Android phone
+		
+4 hours ago
+
+			I don't use Google Maps in Android Auto anymore—this navigation app took its place
+		
+5 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			Ready to graduate from Linux Mint? These 3 distros are perfect for intermediate users
+		
+
+			3 essential Linux apps to try this weekend (April 17 - 19)
+		
+
+			5 open-source operating systems everyone mistakes for Linux
+		
+
+                                                
+                
+                                                    
+                                    Thread
+                                                    
+Sign in to your 
+How-To Geek
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Be the first to post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+This space is open for discussion.
+Be the first to share your thoughts.
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 28, 2026
+
+                                    PowerToys 0.99 makes it easier to drag windows and manage monitor settings
+                            
+Apr 28, 2026
+
+                                    Android Auto supports way more apps than you think—here are 4 surprises
+                            
+Apr 28, 2026
+
+                                    Canonical plans responsible AI for Ubuntu Linux, rejecting Microsoft's Copilot model
+                            
+Apr 28, 2026
+
+                                    OpenAI is building a smartphone, and it hopes to kill app stores
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+How-To Geek
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:14
+Skip Ad
+5

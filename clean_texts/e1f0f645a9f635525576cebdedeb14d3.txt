@@ -1,0 +1,470 @@
+I set up my Obsidian vault to organize itself, and I haven't touched my folder structure in weeks
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+3
+More Action
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I set up my Obsidian vault to organize itself, and I haven't touched my folder structure in weeks
+By 
+Nolen Jonker
+Published
+ Apr 18, 2026, 4:30 PM EDT
+Nolen began their writing career in 2019, with three years dedicated to editing the Creative section at 
+MakeUseOf
+. Their expertise lies at the crossroads of technology and creativity, covering areas like photography, video editing, and graphic design.
+
+Outside of work, you'll often find Nolen diving into a good book, writing their own stories, or playing video games. 
+Sign in to your 
+XDA
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+3
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Obsidian gives you 
+total control over your folder structure
+, which sounds great until you realize that total control means total responsibility. I had a system at one point - actually, I had several. Each one made sense at the time when I built it, and each one stopped doing its thing when my notes started piling up faster than I could sort them. I'd open the app, drop something in, tell myself I'd file it later, and then spend the next session doing nothing but dragging notes into folders instead of actually using them. If you’re a scatterbrain like me, you know exactly what I mean.
+✕
+ Remove Ads
+The manual overhead was the whole problem. Not the folders themselves or the vault size, but the fact that I had to be the one to move everything. Turns out, Obsidian has a 
+couple of community plugins
+ that can make this organization process much more streamlined. You set them up once and don’t really have to touch the folder structure after that. There is also a third, much easier way I’ve found to organize everything with a couple of prompts.
+Related
+
+			4 game-changing Obsidian workflows I wish I tried earlier
+		
+Obsidian workflows I tried late, but you don’t have to
+Posts
+4
+By 
+Parth Shah
+Sep 1, 2025
+
+                        The problem with working with folders
+               
+
+            A messy drafts folder is one thing, pasting the wrong draft into your CMS is another
+    
+When I copied over the wrong draft into our CMS and edited it halfway just to realize it was the wrong piece, I knew I had to do something about the mess in my folders. It’s so easy to click on the wrong thing or not be able to find what you’re looking for, or find four duplicates for some reason. This happened long ago, and I actually tried out a bunch of folder systems first, 
+from PARA to Zettelkasten
+, just to end up settling on organizing by filetype. Thing is, everything I work with is in txt or md, so I was going to have to do better than filetype.
+✕
+ Remove Ads
+The other thing is the ghost notes. I start a new note for everything - a half-formed idea, a title I don't want to forget, an outline that never became an outline. Obsidian just lets you do that without much friction. Which sounds good until your vault is full of untitled notes and single-sentence drafts that you'll never finish and can't bring yourself to delete. I had notes that were literally just a heading. Some didn't even have that.
+
+                        A plugin that puts new notes where they belong
+               
+
+            Fixing the folder problem before it starts
+    
+QuickAdd is a community plugin that lets you set up custom commands for creating notes - and the part I care about is the Template choice. You go into the plugin settings, create a new Template choice, point it at a template file you've already made, and tell it which folder to drop the note into. Name it something like "New Article Draft" and that command shows up in the command palette. From that point, every time you use it, it prompts you for a title, creates the note from your template, and puts it straight into the folder you selected.
+The Template file is useful for me, but being able to add that template to a folder before even populating it with content is the real winner here. Now, the note isn't just in the right place, it's already set up for something. That's what kills the ghost note problem. When creating a new note has a tiny bit of intentionality baked in, I'm a lot less likely to spin up a blank note and abandon it two minutes later.
+✕
+ Remove Ads
+
+                        The plugin that makes your vault sort itself in one click
+               
+
+            Tag once and the note files itself
+    
+The Auto Note Mover plugin is the other half of this setup, and it handles everything QuickAdd doesn't - which is mostly the notes that already exist, or the ones you create outside of a QuickAdd command. The way it works is straightforward: you go into the plugin settings, hit “Add new rule”, pick a destination folder, and set a tag that should trigger the move. That's the whole configuration. Once the trigger is set to Automatic, the plugin watches your notes in the background. The moment you tag a note, it moves into the destination folder.
+One thing that got me early on: the tags are case sensitive. #design and #Design are not the same rule, and if your tag and your rule don't match exactly, the note won’t move. So this is worth keeping in mind when setting up your tags, and it also means you get to have multiple tags - for example, #design as the Auto Note Mover trigger that moves the note, and #Design as your actual Obsidian tag for filtering and browsing.
+Related
+
+			I use Obsidian to document my home lab and self-hosted services, here's how
+		
+There are tools built for documenting your home lab, but I love using Obsidian for it instead.
+Posts
+5
+By 
+Adam Conway
+Jun 21, 2025
+
+                        Set it and forget it... mostly
+               
+
+            There's a less elegant but more powerful version of all this
+    
+✕
+ Remove Ads
+Between QuickAdd and Auto Note Mover, the folder structure basically maintains itself. New drafts land where they're supposed to and everything else gets tagged and files itself. But this is the ongoing, “set it and forget it” layer. There is a third, less elegant way of sorting out the vault. By connecting Claude directly to the local Obsidian vault through the filesystem connector, you can hand off a much heavier organizational job - renaming notes, moving files, creating folders, sorting through a vault that's already a mess before any rules were in place. All through a few prompts. It's not automatic like Auto Note Mover, it's more like delegating a deep clean to something that can actually handle the scale of it. But getting into the full of it will have us here all day.
+For now, the plugins alone have been enough to make Obsidian feel like something 
+I actually want to use every day
+. The setup took maybe half an hour total, most of which was just deciding on folder structure and tag naming. Two plugins, configured once.
+
+    						Obsidian
+			
+OS
+
+									
+										
+											Windows, macOS, Linux, iOS, iPadOS, Android
+
+										
+																	
+Individual pricing
+
+									
+										
+											Free normally; $4/month for Obsidian Sync
+
+										
+																	
+Download Obsidian
+Expand
+Collapse
+✕
+ Remove Ads
+Productivity & Creativity Tools
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			My favorite alternative to Office 365 isn’t LibreOffice – it’s something way cooler
+		
+
+			I tried Cursor, Claude Code, and Google Antigravity for a month and I have a clear winner for you
+		
+
+			Self-hosted LLM took my personal knowledge management system to the next level
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+3
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+ChunWah
+ChunWah
+ChunWah
+#NN582388
+Member since 2026-04-20
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I'm dealing with the same messy tags and folders in Obsidian. I’ve been looking into using an AI agent to clean everything up—glad to see I'm not the only one!
+2026-04-20 09:07:12
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Reg
+Reg
+Reg
+#UO381402
+Member since 2025-05-27
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Damn love the articles on this dite.  Always interesting and practical.  Can you do a demo of  Vivaldi notes.  Beaut community but I've had a love hate relationship with Vivaldi (browser) notes.  I want to try and cut too many systems (I've got notebooks on many fronts)  Actually, quite good, integrated I the browsing experience, syncs to other computers and can integrate with the home screen area screen capture, linking etc 
+2026-04-22 00:12:18
+Upvote
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+carolina
+carolina
+carolina
+#VS528131
+Member since 2026-04-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+See if Obsidian Web Clipper in chrome store works for you. 
+2026-04-22 07:54:04
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 17, 2026
+
+                                    Claude Projects is the best productivity booster that you're not using
+                            
+Apr 17, 2026
+
+                                    I tested Claude's two biggest competitors because of its usage limits, and one banned my account
+                            
+Apr 16, 2026
+
+                                    Claude Code installed my IDE, and now I can't go back to manual setup
+                            
+Apr 16, 2026
+
+                                    I don't need the Switch 2's Zelda: Ocarina of Time remake — I already made my own
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            Windows XP's Secret Themes
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            How much data does Steam use in a year?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:32
+
+                            Mac OS X launch: 25 years later
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:16
+Skip Ad
+5

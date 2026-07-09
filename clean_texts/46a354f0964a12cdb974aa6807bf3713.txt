@@ -1,0 +1,427 @@
+I thought my Proxmox server was slow until I changed this setting
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+2
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I thought my Proxmox server was slow until I changed this setting
+By 
+Ayush Pande
+Published
+ Apr 1, 2026, 9:01 AM EDT
+Ayush Pande is a PC hardware and gaming writer. When he's not working on a new article, you can find him with his head stuck inside a PC or tinkering with a server operating system. Besides computing, his interests include spending hours in long RPGs, yelling at his friends in co-op games, and practicing guitar. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+2
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Considering the sheer number of settings, toggles, and menus in Proxmox’s web UI, you can spend hours tweaking the virtualization platform for your home labbing needs. There's an SDN stack for network lovers, high-availability services for hardcore self-hosting enthusiasts, and backup tools for folks who don’t want to lose their meticulously-crafted app stack to botched experiments.
+✕
+ Remove Ads
+Then you’ve got tools that dictate the behavior of virtual guests, and with Proxmox’s default settings prioritizing stability over all else, you might want to try tinkering with them for the best performance in your LXCs and VMs. Take the Display option hidden within your virtual machine settings, for example. While it’s a seemingly harmless setting, leaving it at the default value can cause Proxmox VMs to feel sluggish. Yeah, I speak from experience.
+Related
+
+			I tried using a Proxmox-based Windows 11 VM as my daily driver - here's how it went
+		
+All it took was a little bit of tinkering and a whole lot of patience
+Posts
+12
+By 
+Ayush Pande
+Jul 11, 2025
+
+                        Switching to SPICE display made my Proxmox VMs a lot more responsive
+               
+
+            I don’t need the SPICE client just to access their GUIs, either
+    
+During my early Proxmox days, I was always trying new things to enhance the performance of my virtual machines – partly because I wanted to create dev environments for my coding tasks, and also because the thought of turning virtualized Linux setups as responsive as my everyday system seemed equal parts impressive and unhinged. Allocating plenty of system resources and tweaking the CPU settings definitely improved the experience, but something was still amiss.
+✕
+ Remove Ads
+Moving the cursor was somewhat sluggish, no matter what OS I used for the VM. Likewise, launching anything on virtual machines with desktop environments would take slightly longer than it should. And these problems didn’t affect a specific system, either. Switching from my old PC to my Xeon server – or even arming my current gaming PC with Proxmox via a spare SSD – couldn’t fix the lag issues. Heck, even enabling the QEMU guest tools and passing a graphics card (one at a time, of course) to my virtual machines failed to make my everyday tasks feel more responsive.
+That’s when I came across some forum posts claiming that the default Display option might be the culprit. And well, changing it to SPICE instantly made my virtual machines snappier. The cursor no longer left a trail when swiping across the screen, while switching between apps became a lot more seamless.
+Related
+
+			Your Proxmox 8 server stops getting security updates in August, and upgrading to PVE 9 isn't straightforward
+		
+Whatever you do, remember to back up your virtual guests
+Posts
+4
+By 
+Ayush Pande
+Mar 25, 2026
+Here’s the fun part: if you try clicking on the Console button in the top right corner of the Proxmox web UI, it will download a .vv file on your client, and you’ll need to use it with a remote access app (something like Virt-viewer) to access the virtual machine’s GUI elements. However, you can sidestep this process entirely by using the Console tab on the left side of the screen, right where you’d find typical VM settings. While you probably won’t be able to use advanced SPICE features with this workaround, it’s my go-to method for tinkering with disposable virtual machines when I don’t want to configure access setups on my client devices.
+✕
+ Remove Ads
+
+            It also fixed a weird issue with high-resolution desktop environments
+    
+Enhancing the snappiness of my virtual machines wasn’t the only advantage of enabling SPICE. When I used to change the display resolution on my Linux VMs (specifically instances relying on Debian-based distros) past 1440p, I’d start to encounter weird bugs. If the virtual machine crashed out of nowhere, I’d end up with a black screen after the initial login page – and this would only happen when I’d bump the resolution up a notch. Heck, I’d have VMs with this display issue even after a clean shutdown, and the only way to resolve it involved reloading to an old snapshot with the default 1024x576 resolution.
+After I started switching my virtual machines to SPICE, this problem never reared its ugly head. It’s such a minor fix, but it solved a massive problem that troubled me countless times during my early Proxmox days.
+
+                        But you might want to use different tools for remote gaming VMs
+               
+
+            Parsec for a simple setup, Sunshine + Moonlight if you don’t mind tinkering a bit
+    
+I tend to switch the Display setting to SPICE on almost all Linux virtual machines, but my Windows 11 remote gaming and dev VMs are an exception. I opt for Windows 11 Pro for virtual machines, and it’s mostly so I can access them using RDP. It works exceedingly well for everyday tasks, even when I use the Windows App on my MacBook.
+✕
+ Remove Ads
+
+                    Subscribe to the newsletter for Proxmox tuning tips
+                
+Discover deeper Proxmox display and VM performance guides when you subscribe to the newsletter. Expect practical tweaks, troubleshooting walkthroughs, and measured comparisons of SPICE, RDP, Parsec, Sunshine/Moonlight to help optimize your setups.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+However, both SPICE and RDP are no match for remote game-streaming services and their extremely low latency, which is why I rely on the latter for wacky VM setups that can harness my GPUs to run modern titles. Personally, I’m not a fan of 
+Parsec’s
+ paywalled features or its tendency to use company servers to authenticate my devices. But it’s by far the simplest method for playing games remotely on a virtual machine, especially since it bundles a virtual display adapter with the app.
+Otherwise, if you’ve got a dummy HDMI display, or you're willing to jump into the labyrinth of virtual displays, a 
+Sunshine + Moonlight
+ (or 
+Apollo + Artemis
+, for Android clients) setup delivers a better experience without relying on external servers.
+
+    						Proxmox
+			
+Proxmox is an open-source platform built on Debian Linux designed for server virtualization.
+See at Proxmox
+Expand
+Collapse
+✕
+ Remove Ads
+Linux
+Home Lab
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			You, too, can build this $15 ESP32 internet radio that brings Winamp into the modern era
+		
+
+			Your smart TV may be holding your entire Wi-Fi hostage
+		
+
+			The RAM stick is dying, and the replacement is something most PC builders have never seen
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+2
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+d3Xt3r
+d3Xt3r
+d3Xt3r
+#PN315587
+Member since 2024-08-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+RDP works great for Linux as well (at least with KDE, not sure about other DEs). I almost never use the native Proxmox or virt-viewer clients as they are quite janky for regular usage.
+2026-04-01 23:04:45
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Sidhe
+Sidhe
+Sidhe
+#LJ963657
+Member since 2023-11-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I always forget that some people do run VMs at home with a gui as the primary interface, possibly a large number of people. 
+2026-04-01 19:08:35
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Mar 31, 2026
+
+                                    Microsoft has killed the Remote Desktop app, and its replacement's name isn't great
+                            
+Mar 31, 2026
+
+                                    Archinstall 4.0 finally makes installing Arch Linux bearable for normal people
+                            
+Mar 30, 2026
+
+                                    This one setting was ruining my TV — turning it off fixed everything
+                            
+Mar 30, 2026
+
+                                    This ESP32 retro handheld console is perfect for those who prefer to make, not buy
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:32
+
+                            Mac OS X launch: 25 years later
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            Snapdragon X2 Elite Extreme benchmarks: RIP Panther Lake?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

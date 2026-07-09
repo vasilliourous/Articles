@@ -1,0 +1,398 @@
+My homelab felt broken until I added a reverse proxy
+Menu
+Sign in now
+Close
+PC & Mobile
+Submenu
+Windows2
+Linux
+Android
+Apple
+Technical
+Submenu
+Tech Explained
+Security
+Software
+Submenu
+Productivity
+Internet
+Creative
+Screen
+Submenu
+Entertainment
+Streaming
+Home
+Submenu
+Smart Home
+Home
+News
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+More Action
+Sign in now
+Productivity
+Android
+Smart TVs
+Networking
+Windows 11
+Entertainment
+Close
+My homelab felt broken until I added a reverse proxy
+Credit: Roine Bertelson/MUO
+By 
+Roine Bertelson
+Published
+ Mar 25, 2026, 10:30 AM EDT
+Roine Bertelson
+ is a Stockholm-based tech writer, translator, and digital strategist with more than twenty years of hands-on experience in AI tools, Linux, consumer tech, cybersecurity, and SEO-driven content. He's known for turning complex topics into clear and practical guidance that helps readers solve real problems. People trust his work because he actually uses and tests the tools he writes about, breaks things on purpose, and translates the chaos of modern technology into advice that feels human, honest, and useful.
+Sign in to your 
+MakeUseOf
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																						
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+My homelab wasn’t broken, as containers were running, services were reachable, and nothing was actively sabotaging my day. From a purely technical perspective, everything was doing exactly what it was supposed to do. But using it felt like dealing with a system that tolerated me rather than worked with me. Every interaction had just enough friction to be annoying, but not enough to justify fixing it. So I didn’t. I worked around it, memorizing things I shouldn’t have to remember, and quietly accepted that this was just part of running a homelab.
+✕
+ Remove Ads
+The problem is that “it works” is a pretty low bar. It wasn’t until I added a reverse proxy that I realized how much of that friction I had normalized. Nothing major changed on paper. It's the same services, same machine, and same setup underneath. But suddenly, everything felt like it belonged together.
+
+                        Everything worked, but felt messy
+               
+
+            Every service lived behind a different port, and nothing felt connected
+    
+Screenshot uploaded by Yadullah Abidi | No attribution required.
+ My 
+Docker setup on the Ubuntu machine
+ started simple. One container, then another, then a few more. That part always feels harmless.
+Then the ports started piling up. One service on 3000, another on 8080, and something else on 9000, because apparently that is where things go when no one wants to think about it too hard. I had bookmarks just to remember how to access my own setup. If I forgot one, I guessed. If I guessed wrong, I opened a handful of tabs and hoped one of them landed somewhere useful.
+It also made everything feel temporary. Nothing had a proper place. It was just a list of endpoints I had to remember. Nothing was broken. It just felt like I was constantly compensating for a system that refused to organize itself.
+
+                        I got used to the friction
+               
+
+            When everything technically works, you stop questioning how annoying it is
+    
+Afam Onyimadu / MUO
+✕
+ Remove Ads
+ This is the part that really sneaks up on you, because nothing crashes, you assume everything is fine. So you keep adding services. More containers, more ports, more little workarounds that you promise yourself you will clean up later. 
+Remote access
+ existed in that vague “I can make it work if I have to” category. HTTPS was more of a suggestion than a standard.
+Sharing anything with someone else felt like explaining a puzzle. “Go to this IP, add this port, ignore the warning; it’s fine.” It never sounds convincing, even when it is. The real issue was not technical. It was behavioral. I started avoiding my own homelab because interacting with it felt like effort; that's something that should never happen.
+
+                        The fix was simpler than expected
+               
+
+            A reverse proxy gives everything a single, predictable way to be accessed
+    
+A reverse proxy sounds like something that belongs in a networking textbook. In practice, it is just a 
+traffic router
+. Instead of remembering port and IP combinations, you give each service a proper address. Something that makes sense to a human. So, instead of typing an IP and a port number, you type something like a name. The proxy takes that request and sends it to the right container behind the scenes.
+It also becomes the one place where you handle HTTPS, routing, and access rules. You stop solving the same problem over and over for each service. You solve it once. Everything else benefits from it.
+✕
+ Remove Ads
+The first thing I noticed was how little I had to think. Every service had a proper address. Not a number, not a guess, not a bookmark I hoped was still correct. Just a name that matched what it actually did. The second change was consistency. Everything was accessed the same way. No exceptions. No. “this one works differently for historical reasons.” Then came HTTPS. No warnings, no hesitation, no quiet moment of wondering if I should really be logging into something like this.
+
+    						Docker Desktop
+			
+OS
+
+									
+										
+											Windows, macOS, Linux
+
+										
+																	
+Docker Desktop is a one-click application for Windows, macOS, and Linux for easily building, running, and managing containerized applications.
+See at Docker
+Expand
+Collapse
+Remote access also stopped feeling like a hack. When everything flows through a single entry point, exposing it properly becomes something you can actually manage without second-guessing yourself. Even small things improved. Opening services felt faster because I was not pausing to remember how to reach them. Adding new ones felt natural instead of something I would deal with later. None of these changes were dramatic on their own. Together, they removed almost all of the friction I had been ignoring.
+
+                        I set it up with nginx
+               
+
+            A simple Docker nginx reverse proxy is enough to clean up your entire homelab
+    
+Afam Onyimadu / MUO
+ This is where things usually sound harder than they are. I went with Nginx running in Docker. No fancy dashboards, only a clean, predictable setup. Notice that in the code below, 
+"myapp" is the placeholder name
+ for the apps you want to include in this.
+✕
+ Remove Ads
+First, create a Docker network. This lets nginx talk to your containers by name.
+docker network create proxy
+When you run your containers, attach them to this network:
+docker run -d \
+  --name myapp \
+  --network proxy \
+  -p 3000:3000 \
+  myapp-image
+Now, it's time to run Nginx:
+docker run -d \
+  --name nginx-proxy \
+  --network proxy \
+  -p 80:80 \
+  -v $(
+pwd
+)/nginx.conf:/etc/nginx/nginx.conf:ro \
+  nginx
+Once you Nginx up, it's time to configure it. Here’s a minimal example that routes traffic to a container:
+events {}
+
+http {
+    server {
+        listen 80;
+
+        server_name myapp.local;
+
+        location / {
+            proxy_pass http://myapp:3000;
+            proxy_set_header Host 
+$host
+;
+            proxy_set_header X-Real-IP 
+$remote_addr
+;
+        }
+    }
+}
+Now you can access your service at 
+http://myapp.local
+ Instead of 
+http://192.168.x.x:3000
+. Now all that's left is to repeat for other services. Each service gets its own 
+server_name
+ and 
+proxy_pass
+.
+That’s it. No magic, and no mystery. If you want HTTPS later, you can layer in Let’s Encrypt using a companion container. But even this basic setup already fixes most of the pain.
+Related
+
+			I shrunk my Docker images by over 50% with this one free tool
+		
+Seeing what your containers really carry changes everything.
+Posts
+1
+By 
+Afam Onyimadu
+Jan 25, 2026
+
+            The difference was not technical, it was how the whole setup behaved as one thing
+    
+This is the part that surprised me. Adding a reverse proxy did not make my homelab faster. It did not add features. It did not change what my setup was capable of doing. It changed how it felt to use it. Spinning up a new container no longer comes with a second problem to solve. I already know how it will be accessed. It fits into the same structure as everything else.
+I stopped relying on memory, bookmarks, and small workarounds. I stopped negotiating with my own setup. It just works in a way that feels complete. And once you get used to that, going back to ports and guesswork feels slightly embarrassing.
+✕
+ Remove Ads
+Productivity
+Docker
+Home Server
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+
+                                                    Technology Explained
+                                            
+
+                                                    PC & Mobile
+                                            
+
+			CPU-Z shows more than PC specs if you know where to look
+		
+1 hour ago
+
+			Your CPU is throttling itself, and one BIOS toggle will fix it
+		
+21 hours ago
+
+			I stopped buying random USB-C cables after learning what three numbers actually mean
+		
+1 day ago
+See More
+
+			I ran a Windows network reset and fixed problems I'd blamed on my router for months
+		
+21 minutes ago
+
+			I switched to Gentoo Linux and now I get why it's worth the headache
+		
+4 hours ago
+
+			Windows has been hoarding old drivers on your SSD — here's how to clear them out
+		
+16 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			5 Linux terminal commands that fix most of my system problems
+		
+
+			Your router and phone are probably fighting over DNS without you realizing it
+		
+
+			Finally, a note-taking app that feels like it was made for Windows
+		
+
+                                                
+                
+                                                    
+                                    Thread
+                                                    
+Sign in to your 
+MakeUseOf
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Be the first to post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+This space is open for discussion.
+Be the first to share your thoughts.
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Mar 23, 2026
+
+                                    Windows' default file copy is embarrassingly slow compared to this free open-source alternative
+                            
+Mar 23, 2026
+
+                                    I accidentally added a gigabit Ethernet port to my smart TV
+                            
+Mar 23, 2026
+
+                                    Windows 11 still runs dinosaur services like Fax at boot — here's what you should disable
+                            
+Mar 22, 2026
+
+                                    3 Ryobi tools you’ll want before spring yardwork starts
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+MakeUseOf
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

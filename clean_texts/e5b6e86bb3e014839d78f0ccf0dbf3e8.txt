@@ -1,0 +1,1256 @@
+I replaced ChatGPT and Claude with this powerful local LLM and saved over $20 a month while gaining full control
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+26
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I replaced ChatGPT and Claude with this powerful local LLM and saved over $20 a month while gaining full control
+By 
+Ayush Pande
+Published
+ May 1, 2026, 7:30 AM EDT
+Ayush Pande is a PC hardware and gaming writer. When he's not working on a new article, you can find him with his head stuck inside a PC or tinkering with a server operating system. Besides computing, his interests include spending hours in long RPGs, yelling at his friends in co-op games, and practicing guitar. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+26
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+As a home labber, I’ve always been an advocate for running services on my local hardware instead of relying on cloud platforms. And my stance on FOSS tools hasn’t changed even after I started running large language models. If anything, I’ve grown to love the 9B and 12B LLMs I’ve deployed on my server nodes, as I don’t have to worry about external firms gaining access to all the documents and log files I upload to my models.
+✕
+ Remove Ads
+But no matter how much I adore my local models, they can’t hold a candle to the hundreds of billions of parameters that Claude, Perplexity, ChatGPT, and other cloud-based models can crunch, especially for demanding coding tasks requiring massive context windows. Or at least, that’s what I thought until I began using Qwen3.6-35B-A3B on my gaming PC. And let me tell you, this powerhouse of an LLM can walk toe-to-toe with pricey cloud models for development workloads – all while running on my weak hardware.
+
+                        Getting Qwen3.6-35B-A3B to run on my outdated GPU was a bit of a challenge
+               
+
+            But with a few tweaks, I got this beast of a model to generate 20+ tokens/s
+    
+Before I talk about my experience with Qwen3.6, let me go over the hardware aspect of my LLM-hosting setup. As a broke home labber, the RTX 3080 Ti is the fastest GPU in my arsenal, and it has held up pretty decently for running 12B models, and even GPT-OSS-20B with tweaked parameters. However, it only has 12GB of VRAM and, to be honest, it’s terribly outdated for LLM-powered tasks in 2026. In theory, it would be difficult to run a 27B model on this card, let alone something as bulky as a 35B LLM. But as it turns out, it’s not only possible to load Qwen3.6-35B-A3B on my old system, but it can even drive this LLM at a respectable token generation rate of 24t/s.
+✕
+ Remove Ads
+Since it’s a mixture of experts model, I can use the 
+--n-cpu-moe 
+flag to offload some expert weights on the CPU instead of forcing them on my graphics card, while 
+-ngl 999 
+ensures my GPU gets utilized for the KV cache and attention layers. Increasing the CPU threads via
+ -t
+ increases its computational prowess, but since I wanted enough context size for my coding tasks, I set 
+-c
+ to 
+65536
+. After asking our resident LLM maestro, Adam Conway, for some tips, I used the following command to get my llama-server instance running with Qwen3.6:
+llama-server.exe
+ -m "C:\Users\Ayush\.lmstudio\models\lmstudio-community\Qwen3.6-35B-A3B-GGUF\Qwen3.6-35B-A3B-Q4_K_M.gguf" -c 65536 -ngl 999 --n-cpu-moe 30 -fa on -t 20 -b 2048 -ub 2048 --no-mmap --jinja
+Just to test things out, I logged into the web UI created by llama-server and ran a quick query about XDA-Developers. To my surprise, the LLM was able to hit above 20 tokens/s, so I switched to llama-bench to see how far I could go. The max my system could handle was a 16K prompt length with 
+-ctk 
+set to 
+q8_0‑style
+ quantization (though setting 
+-ctv
+ to 
+q8_0‑style
+ would cause it to crash).
+llama-bench.exe
+ -m "C:\Users\Ayush\Downloads\LLMs\Qwen3.6-35B-A3B-Q4_K_M.gguf" -p 16000 -n 256 -ngl 999 --n-cpu-moe 32 -fa on -t 20 -b 2096 -ub 2096 -ctk q8_0
+In fact, one look at the system resources confirmed that the 32GB RAM on my PC was the bottleneck with these commands. So, if I could track two more 16GB sticks (which may be plausible once the RAM apocalypse ends), I could push the context window and quantization settings even further. But since I wanted to check whether Qwen3.6 could replace its cloud counterparts for my specific tasks, it was time to pair it with my code editors, agentic tools, and typical FOSS apps.
+
+                        Qwen3.6-35B-A3B is a beast of an LLM
+               
+
+            It’s a rock-solid coding companion
+    
+✕
+ Remove Ads
+Besides my productivity tasks (which I’ll get to in a moment), I extensively use LLMs as my coding companions. And no, I’m not talking about vibe-coding tasks, either. Rather than letting clankers create apps, I use them to troubleshoot tasks, rearrange syntax, and autocomplete my code. Up until now, I’d cycle between Qwen2.5-Coder and DeepSeek R1 for my coding tasks, and while they were decent companions, I’d often have to run them a couple of times and specify the context in great detail before they’d start dishing out helpful suggestions.
+Quiz
+8 Questions · Test Your Knowledge
+How much do you know about Claude?
+Trivia challenge
+Think you know Anthropic's AI assistant? Put your knowledge of Claude to the test.
+Origins
+Capabilities
+Safety
+Features
+Design
+Begin
+01 / 8
+Origins
+Which company created Claude?
+A
+OpenAI
+B
+Google DeepMind
+C
+Anthropic
+D
+Meta AI
+Correct! Claude was created by Anthropic, an AI safety company founded in 2021. Anthropic was co-founded by Dario Amodei and Daniela Amodei, among others who previously worked at OpenAI.
+Not quite. Claude is made by Anthropic, not to be confused with OpenAI, which makes ChatGPT. Anthropic was founded in 2021 with a strong focus on AI safety research.
+Continue
+02 / 8
+Safety
+What is the name of the safety and values framework Anthropic developed to guide Claude's behavior?
+A
+RLHF Protocol
+B
+Constitutional AI
+C
+SafeGuard Framework
+D
+Alignment Core
+Correct! Anthropic developed Constitutional AI (CAI), a technique that trains Claude using a set of principles — a 'constitution' — to guide its responses toward being helpful, harmless, and honest.
+Not quite. The framework is called Constitutional AI (CAI). It is a novel training approach pioneered by Anthropic that uses a written set of principles to help the model self-critique and improve its own outputs.
+Continue
+03 / 8
+Origins
+What is the name most commonly associated with inspiring Claude's name?
+A
+Claude Shannon, the father of information theory
+B
+Claude Monet, the French impressionist painter
+C
+Claude Lévi-Strauss, the anthropologist
+D
+Claude Bernard, the physiologist
+Correct! Claude Shannon is widely cited as the inspiration behind the name. Shannon founded information theory, which is foundational to all modern computing and digital communication — a fitting namesake for an AI.
+Not quite. The name Claude is most commonly associated with Claude Shannon, the mathematician and electrical engineer who founded information theory. His pioneering work laid the groundwork for the digital age.
+Continue
+04 / 8
+Capabilities
+Which of the following best describes Claude's context window capability in its more advanced versions?
+A
+Up to 4,000 tokens
+B
+Up to 16,000 tokens
+C
+Up to 100,000 tokens or more
+D
+Up to 32,000 tokens
+Correct! Advanced versions of Claude support context windows of 100,000 tokens or more, allowing it to process entire books, lengthy codebases, or large documents in a single conversation — a standout feature at the time of its release.
+Not quite. Claude's advanced versions support context windows of 100,000 tokens or more. This was a significant leap beyond many contemporaries and allows Claude to reason over very large amounts of text in one session.
+Continue
+05 / 8
+Design
+Which of the following principles is NOT part of Anthropic's core goal for Claude?
+A
+Helpful
+B
+Harmless
+C
+Honest
+D
+Hierarchical
+Correct! Anthropic's guiding principles for Claude are to be Helpful, Harmless, and Honest — often called the 'three H's.' Hierarchical is not part of this framework. The goal is to make AI that is safe and beneficial for everyone.
+Not quite. Anthropic's three guiding principles for Claude are Helpful, Harmless, and Honest. 'Hierarchical' is not one of them. These three H's shape how Claude is trained to interact with users responsibly.
+Continue
+06 / 8
+Features
+What was a key distinguishing feature of Claude 2 when it launched compared to many rival models at the time?
+A
+It could generate images natively
+B
+It had a 100,000-token context window
+C
+It could browse the internet in real time
+D
+It supported voice conversations out of the box
+Correct! Claude 2 launched with a 100,000-token context window, which was remarkable at the time. This allowed users to feed in entire books or massive codebases for analysis, setting Claude apart from many competing models.
+Not quite. The standout feature of Claude 2 was its 100,000-token context window. Claude does not natively generate images, and real-time browsing and built-in voice were not launch features of Claude 2.
+Continue
+07 / 8
+Safety
+Anthropic describes itself primarily as which type of company?
+A
+A consumer electronics company
+B
+An AI safety and research company
+C
+A cloud infrastructure provider
+D
+A social media and AI hybrid company
+Correct! Anthropic describes itself as an AI safety and research company. Unlike some competitors who lead with products or platforms, Anthropic's founding mission centers on building AI systems that are safe, interpretable, and steerable.
+Not quite. Anthropic is primarily an AI safety and research company. Its founding mission is rooted in making AI that is safe and understandable, which is why safety-focused training methods like Constitutional AI are central to its work.
+Continue
+08 / 8
+Features
+Which of the following tasks is Claude specifically designed to handle well?
+A
+Rendering 3D graphics in real time
+B
+Long-form writing, summarization, and complex reasoning
+C
+Executing system-level operating commands autonomously
+D
+Streaming live video content analysis
+Correct! Claude excels at long-form writing, summarization, coding assistance, and complex reasoning tasks. Its large context window and nuanced language understanding make it particularly well suited for handling detailed, multi-step text-based work.
+Not quite. Claude is designed for text-based tasks like writing, summarization, analysis, and reasoning. It does not render graphics, autonomously execute system commands, or perform live video analysis — it is a large language model at its core.
+See My Score
+Challenge Complete
+Your Score
+/ 8
+Thanks for playing!
+Try Again
+Qwen3.6, on the other hand, gives solid troubleshooting tips from the very first prompt – to the point where it correctly identifies where my Home Assistant automation was malfunctioning after I paired it with Claude Code and uploaded the trigger-action YAML file and HASS logs. Heck, I’ve even run it through a couple of other terminal logs, and aside from two configs (which, in all fairness, didn’t have enough details about the errors), it pinpointed the faulty packages and configs accurately. Likewise, I paired it with the Continue extension on VS Code, and it’s great at autofilling my variable names and modifying syntax to fit different languages.
+
+            I’ve also paired it with a handful of self-hosted FOSS tools
+    
+✕
+ Remove Ads
+If you’ve read my articles at XDA, you’re probably aware that I use LLMs with certain LXCs and Docker containers. Well, Qwen3.6 is just as effective for my productivity-centric toolkit. Thanks to llama-server’s OpenAPI-compliant nature, I can pair this LLM with everything from my Paperless-ngx companion apps to good ol’ Open WebUI. In fact, I’ve paired it with OpenNotebook, and it’s significantly better than every other local model I’ve used for aggregating my research notes. Likewise, I’ve also added it to Blinko, where it goes through my notes and answers all my queries.
+
+                    Subscribe for hands-on guides to running Qwen3.6 locally
+                
+Discover why subscribing to this newsletter pays off: detailed coverage of running Qwen3.6-35B-A3B locally, step-by-step hardware tweaks, exact llama-server and bench commands, quantization and context tips, and practical FOSS integrations.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+The best part? Not only do I get to keep my notes off the prying eyes of cloud-based AI models, but I also don’t have to spend extra bucks on subscription fees. For example, I’ve been feeding Claude Code error logs every time my home lab breaks, and without Qwen3.6-35B-A3B, I’d have to pay for API usage. And since this 35B behemoth is good enough for research, I can just pair it with Open WebUI + SearXNG instead of relying on ChatGPT.
+
+    						llama.cpp
+			
+Llama.cpp
+ is an open-source framework that runs large language models locally on your computer. 
+
+See at Official Website
+Expand
+Collapse
+✕
+ Remove Ads
+AI tools
+Self-Hosting
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			My favorite alternative to Office 365 isn’t LibreOffice – it’s something way cooler
+		
+
+			I gave Claude Code control of my desktop for a week, and it automated things I didn't think were possible
+		
+
+			I tried Cursor, Claude Code, and Google Antigravity for a month and I have a clear winner for you
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+26
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Electroneer
+Electroneer
+Electroneer
+#TP580108
+Member since 2026-05-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I have something similar set up: Qwen3.6 running on a 4090 via llama-server, connected up to Hermes to turn it into an agent. 
+I also am using Tailscale to have access to my agent via Open WebUI I'm not at home.
+It's pretty powerful for something running on a single GPU. 
+2026-05-01 13:09:58
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+pocketdrummer
+pocketdrummer
+pocketdrummer
+#VW056365
+Member since 2025-07-31
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Ask it about Tiananmen Square.
+2026-05-01 12:05:33
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+
+                        3
+                    
+Copy
+        
+Atalantis
+Atalantis
+Atalantis
+#SB379579
+Member since 2026-04-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Abliterated 😈
+2026-05-01 15:34:31
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+Copy
+        
+Christopher
+Christopher
+Christopher
+#AZ894994
+Member since 2025-02-21
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I mean, it is a Chinese model.  What were you expecting? ;)
+2026-05-01 17:27:15
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Alessandro
+Alessandro
+Alessandro
+#QM191123
+Member since 2026-05-08
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+But honestly, if you have to write code, what's the point of asking for things that aren't relevant, especially to a Chinese model. The fact is that it works well and honestly with 2 RTX 3060 12GB each
+ and 64GB of RAM, putting the moe in RAM and the 3b active in VRam, I can handle a 32k context at 55/60 tokens/s.
+So what do I care if it doesn't respond to things that are inconvenient for the model?
+2026-05-08 02:39:41
+Upvote
+Downvote
+Reply
+Copy
+        
+Allen
+Allen
+Allen
+#AD533887
+Member since 2024-10-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Great post, I use a lot of LLMs for coding where simple development qwen 3.6 is solid but when you get into complex coding and algorithms it struggles even with mcp.  It works great for JS, typescript, etc but when I start the back end, mobile and gaming development I tend to lean on heavier models that even sonnet 4.6 struggles.  Now, what does work is planning on opus then using qwen 3.6 has been really good outside large context windows, which then I use gpt models.  
+2026-05-01 18:10:33
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Atalantis
+Atalantis
+Atalantis
+#SB379579
+Member since 2026-04-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Very true. Qwen3.6 isn't like moving the world, or agi or whatever but it is effective and can actually be run on consumer hardware, unlike the others. I'm very happy with it. 5060ti 16gb+3060 12gb, on Linux, it's a mix of speed (moe q4 80tps) and quality (27b dense q4_nl 100k ctxt, 18tps)
+2026-05-01 15:39:00
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Darryl
+Darryl
+Darryl
+#XT945579
+Member since 2025-06-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+"I save £20 a month" 
+Really?
+You need a monster PC to run even a decent LLM, and you won't get one thousandth of the power or precision of Claude.
+You're talking about a completely false economy and clearly don't do anything serious if you're using a local LLM.
+I use one for nothing more than simple questions.
+I wouldn't trust one to scan a contract and provide a synopsis.
+It would take hours and still be flawed.
+Claude I can throw a contract at and be absolutely confident in it's findings.
+All these "I saved pennies and use a local LLM" are terrible.
+You literally have no clue as to what you're talking about.
+And given the sheer amount of fodder you all turn over daily, none of you ever seem to stick with anything.
+2026-05-03 07:05:37
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        2
+                    
+Copy
+        
+ChronicallyChill
+ChronicallyChill
+ChronicallyChill
+#CY764104
+Member since 2026-05-05
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+>You need a monster PC to run even a decent LLM,
+No you don't. 
+>you won't get one thousandth of the power or precision of Claude
+wrong again
+>learly don't do anything serious if you're using a local LLM
+lmao, projecting on and condescending to the author because of your own inexperience is crazy work 
+>I wouldn't trust one to scan a contract and provide a synopsis.
+And I wouldn't use a garden hose to climb Mt Everest. This article is clearly targeted at developers... 
+>It would take hours and still be flawed.
+non-sequitor, tokens are measured in seconds for a reason
+>Claude I can throw a contract at and be absolutely confident in it's findings.
+It still makes mistakes. Dario, is that you posting from an alt??? 
+>You literally have no clue as to what you're talking about.
+more projection, I'm a senior developer of 26 years now and started in LLM adjacent technologies in the 2010s doing NLP almost a decade before the transformer paper was published... I get paid to engineer agents that are in production in high stakes IT infrastructure right now - I thought the article was quite good for what it was intended for
+Why are you such a hater? Is it your own insecurity, anxiety about your future? Are you literally Dario? What a baffling block of text. I genuinely wish I could understand the thought process of someone like you. Do you experience mood swings with blood sugar fluctuations? Have you been diagnosed with a personality disorder?
+2026-05-05 11:33:08
+Upvote
+Downvote
+Reply
+Copy
+        
+Darryl
+Darryl
+Darryl
+#XT945579
+Member since 2025-06-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+>No you don't.
+Actually, yes you do. You can get away with a small LLM with a reasonable card, but for serious work, no chance. You need real power.
+>>you won't get one thousandth of the power or precision of Claude
+?wrong again
+Nope, not at all. I run LLM's on a Proxmox system at home, and use Claude Code Max Pro to assist in development. Real work, real development, real experience.
+>lmao, projecting on and condescending to the author because of your own inexperience is crazy work
+Merely pointing out actual facts. And you don't know me, so getting personal is condescending. As is hiding behind a pseudonym.
+>And I wouldn't use a garden hose to climb Mt Everest. This article is clearly targeted at developers...
+And as a developer, which I am, and have been for a lot longer than you, I'm fully aware.
+>non-sequitor, tokens are measured in seconds for a reason
+My time is measured in hours, minutes and seconds, which is what actual developers work to. I'm sure that you know what a deadline is. 
+>>Claude I can throw a contract at and be absolutely confident in it's findings.
+>It still makes mistakes. Dario, is that you posting from an alt???
+Who's Dario? Is that deliberate? 
+>more projection, I'm a senior developer of 26 years now and started in LLM adjacent technologies in the 2010s doing NLP almost a decade before the transformer paper was published... I get paid to engineer agents that are in production in high stakes IT infrastructure right now - I thought the article was quite good for what it was intended for
+I've a BSc in Software Engineering, have a Masters in Software Development and Delivery, have a PhD in Computational Science with Mathematics. 
+Never hate, just talk sense about what I know.
+And you've been personal. That's inappropriate,and frankly sad. 
+If you enjoyed the article, so be it. The name calling and abuse shows how much of a hater you are.
+No disorders; I just don't tolerate nonsense.
+2026-05-05 14:26:00
+Upvote
+Downvote
+Reply
+Copy
+        
+Visar
+Visar
+Visar
+#XM292213
+Member since 2024-10-30
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Is the purpose of this article ti brag about having 12GB GPU RAM because I fail to see anything else.
+You the combined amout of GPU RAM of my household, while I'm dishing out 400$/month for both Max Claude and Max Codex and they barely help to do a "little" more.
+2026-05-02 12:02:31
+Upvote
+Downvote
+Reply
+Copy
+        
+ChronicallyChill
+ChronicallyChill
+ChronicallyChill
+#CY764104
+Member since 2026-05-05
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Hello, senior developer in infra/backend, NLP and web applications for 26 years, and local LLM user since 2024.
+I just wanted to show some support to the author; this showed up in my news feed and I was pleasantly surprised how good it is. 
+You're doing your community a service.
+2026-05-05 11:43:21
+Upvote
+Downvote
+Reply
+Copy
+        
+Eric
+Eric
+Eric
+#HK172638
+Member since 2025-09-19
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Installed this same model onto my system with a 4080 and plugged it into my home assistant instance. Asked it to determine the reason why my lights were on in a room they have been on in. It thought about it for 20 minutes, stuck in a loop of "I should query the list of devices in the room. I should query the of automations that use those devices" over and over and then died. 
+I then pointed out that it failed at the task, and the first thing in its next thought window was "The user is lying to me "
+Eff this model. 
+2026-05-01 21:36:19
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        2
+                    
+Copy
+        
+Odram
+Odram
+Odram
+#ZK257660
+Member since 2026-02-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Dafuq😅 
+2026-05-02 23:28:46
+Upvote
+Downvote
+Reply
+Copy
+        
+ChronicallyChill
+ChronicallyChill
+ChronicallyChill
+#CY764104
+Member since 2026-05-05
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+It's not the model, you have to actually apply some effort to get every model to run properly. Did you read the model card? Did you set the hyperparameters as recommended? 
+You also need to give it enough information to know how to talk to your particular home automation stack.
+If you used ollama you gimped yourself. 
+2026-05-05 11:37:06
+Upvote
+Downvote
+Reply
+Copy
+        
+Hicsy
+Hicsy
+Hicsy
+#CQ961700
+Member since 2026-05-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Which Haswell gaming CPU had 20 threads?!?
+ At any rate - try masking off all the hyperthreads, much like we have to on newer gaming cpus with their useless "efficiency cores"... HT prob just holding up each core here, so u could see 50% increase in speed.
+2026-05-03 06:22:36
+Upvote
+Downvote
+Reply
+Copy
+        
+CBed
+CBed
+CBed
+#FY182546
+Member since 2026-05-06
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+THIS is why I think the massive gambles these AI companies and others are all making will prove to be COMPLETELY insane.
+These AI models are becoming exponentially more capable, but also exponentially more EFFICIENT. 
+It won't be long and you will be able to host a LLM that will do everything you need locally on your cell phone or standard laptop. 
+I'm guessing there will be massive consolidation in the datacenter market where companies with too much debt load can't compete on price and go bankrupt and others swoop in to buy the hardware for pennies on the dollar. 
+If that happens the hardware manufactures will take it on the chin. 
+2026-05-06 16:41:47
+Upvote
+Downvote
+Reply
+Copy
+        
+J
+J
+J
+#XD466771
+Member since 2026-05-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+For someone vibe coding, is it possible to have a full llm on my px or ona aws server without paying and just as good? Not just coding but in general. 
+2026-05-02 11:23:03
+Upvote
+Downvote
+Reply
+Copy
+        
+Chris
+Chris
+Chris
+#SP982763
+Member since 2026-01-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Cost of running a good local model, minimum $3000 pc.  Even that is significantly limiting for running anything comparatively meaningful to a cloud model.
+Using cloud based models that are far superior.  $1000 pc (or significantly less), +$20pm.  
+The same price will get you over 4yrs for a model.... these articles fail to explain the cost of a system to run good models.  
+2026-05-01 22:51:59
+Upvote
+Downvote
+Reply
+
+                        3
+                    
+Copy
+        
+Nathan
+Nathan
+Nathan
+#SC246459
+Member since 2026-03-27
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+But for those of us already with a gaming PC it provides options without that extra initial outlay.
+And I still use Claude code - but my smaller local llms let me do a lot of conversational work and palm off to Claude once I've got the setup done - I hit my token limit later that way.
+My setup is similar and I hadn't considered an llm that large. Mostly kept max model size at under 20B. But now I might explore qwen3.6 as an option since the flag combo experimentation to get a functional option has already been done.
+2026-05-02 17:42:49
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Chris
+Chris
+Chris
+#SP982763
+Member since 2026-01-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Nathan
+ I agree, and do my own self hosted rig.  It's just not clear on the article the cost of set up.
+2026-05-04 23:22:25
+Upvote
+Downvote
+Reply
+Copy
+        
+ChronicallyChill
+ChronicallyChill
+ChronicallyChill
+#CY764104
+Member since 2026-05-05
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Not at all. One or two 5060TIs in an off lease office PC is absolutely just fine. Any two 16GB GPUs actually will put you in good shape and you can find those cheap enough even now.
+2026-05-05 11:39:51
+Upvote
+Downvote
+Reply
+Copy
+        
+Atilla
+Atilla
+Atilla
+#ND281540
+Member since 2026-01-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Why should I use a crippled bad small slow model like 3.6. when I can use deepseek 4 flash which is way superior with 240b parameters and is so cheap, that maybe electricity costs of you 3080 is maybe higher. Sorry guys when will you understand that local models are useless. And not good enough
+2026-05-01 09:41:15
+Upvote
+Downvote
+Reply
+
+                        3
+                    
+Copy
+        
+Atalantis
+Atalantis
+Atalantis
+#SB379579
+Member since 2026-04-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Bro have you tried 3.6? (*At q4 or better)? It's legit really good. The moe is very fast, 80tps, and (NOTE: you NEED to run it on Linux for some reason, tps 12->18 on my system) the dense is very smart. Local models have progressed hugely, and I would argue the new small models, even as small as Gemma 4 e4b it's also good, but more ok/meh vs "wow". Also I'm running it 5060ti+3060 so that's $750 total new price wise and I already had the 5060 ($500) for games bc it's 16gb vram
+2026-05-01 15:33:44
+Upvote
+Downvote
+Reply
+Copy
+        
+Sabotage
+Sabotage
+Sabotage
+#ZE185719
+Member since 2025-02-21
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Local over not local. I think that's a strong point here over price and speed. Not everyone wants to send their ideas, their data, their work....out into the world. Some don't want to risk prompt injections either. There are benefits and....downsides. But, that's what's great. People have options and can make their own choices. 
+2026-05-02 17:26:09
+Upvote
+Downvote
+Reply
+Copy
+        
+Atilla
+Atilla
+Atilla
+#JP995568
+Member since 2025-10-14
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Atalantis
+ no local models will never be as good as cheap strong models like deepseek 4 flash.  even electricity is more expensive then deepseek 4 flash costs. and i dont need a graphics card which gets hot or loud. 
+2026-05-03 07:24:22
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 30, 2026
+
+                                    Steam Deck restocks are coming, but Valve is battling memory shortages and global supply chaos to make it happen
+                            
+Apr 29, 2026
+
+                                    You can turn your PS5 into a Linux-powered gaming PC now, but there are big trade-offs
+                            
+Apr 29, 2026
+
+                                    Valve isn't ditching Windows or x86, but it's quietly making both optional
+                            
+Apr 28, 2026
+
+                                    Your old Nintendo 64 games are finally getting unofficial PC ports, and they run better than emulators
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:07
+
+                            The end of affordable PCs?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            Snapdragon X2 Elite Extreme benchmarks: RIP Panther Lake?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

@@ -1,0 +1,236 @@
+TP-Link Meets With FCC About Router Ban Exemption, Says It's a 'US Company'
+PCMag Australia
+Best Picks
+/
+Reviews
+/
+News
+/
+How-To
+/
+Security
+Business
+Software
+Deals
+Best Picks
+/
+Computer & Electronics
+Best Laptops
+Best Monitors
+Best Wireless Routers
+Best Ultrawide Monitors
+Best Printers
+Best Keyboards
+Best Robot Vacuums
+Best Outdoor Home Security Cameras
+Best Smart Locks
+Best TVs
+Best Noise-Cancelling Headphones
+Best Gaming Headsets
+Software
+Best VPN Services
+Best Antivirus Protection
+Best Malware Removal and Protection Software
+Best Password Managers
+ Best Web Hosting Services
+Best Mac Antivirus Protection
+Best Security Suites
+Best Streaming Services Australia
+Best Free Password Managers
+Business
+Best CRM Software
+Best Email Marketing Software
+Best Marketing Automation Software
+Best Dedicated Web Hosting Services
+Best Business Cloud Storage and File Sharing Providers
+Best Password Managers for Businesses
+Best Business Laptops
+Best Computer Monitors for Business
+Best Printers for Business
+Reviews
+/
+News
+/
+How-To
+/
+Security
+Business
+Software
+Deals
+Looking for a bargain? Shop the biggest tech deals in Australia here!
+PCMag Australia
+News
+Networking
+Wireless Routers
+TP-Link Meets With FCC About Router Ban Exemption, Says It's a 'US Company'
+Updated Apr 21, 2026
+Though it's now based in California, TP-Link will no doubt face continued scrutiny over its Chinese ties, which the US alleges could pose a spying threat.
+ &
+Michael Kan
+Principal Reporter
+
+                        Our team tests, rates, and reviews more than 1,500 products each year to help you make better buying decisions and get more from technology.
+                    
+
+                Our Expert
+            
+LOOK INSIDE PC LABS
+HOW WE TEST
+65
+EXPERTS
+43
+YEARS
+41,500+
+REVIEWS
+(Photo by Patrick T. Fallon/AFP via Getty Images)
+In an effort to secure an exemption from the 
+FCC's foreign-made router ban
+, TP-Link is arguing that it's a US company.
+TP-Link met with FCC officials on Thursday to discuss applying for an exemption from the router ban, officially known as a Conditional Approval, according to a 
+pair
+ of regulatory 
+filings
+. Two days prior, US-based Netgear and Adtran 
+received the reprieve
+, paving the way for the companies to certify and sell new router models in the US for at least the next 18 months. 
+In the meetings, TP-Link’s lawyers and consultants spoke with staff for FCC Commissioners Olivia Trusty and Anna Gomez. In both, “TP-Link stated its intent to apply for Conditional Approval of its consumer-grade routers, [and] explained the importance of maintaining innovation, competition, and consumer choice in the consumer routers market."
+In both meetings, the company also stressed that TP-Link is not only a 
+leading Wi-Fi router vendor
+, but also “a US company, with headquarters in Irvine, California." 
+It underscores TP-Link's efforts to downplay its ties to China. US officials have long 
+alleged
+ that the company’s products could pose a spying threat to Chinese hackers, a claim 
+TP-Link denies
+.
+TP-Link was founded in 1996 in Shenzhen, China. But it began the 
+process
+ of spinning off from its Chinese counterpart in 2022, which it completed two years later. The TP-Link US 
+site
+ emphasizes it has no ties to China, adding that the “US operations own and direct the global TP-Link business. Jeffrey Chao, the company’s founder and CEO, owns TP-Link with his wife, and both reside in Irvine.”
+Recommended by Our Editors
+Tech Group Urges FCC to Scrap Wi-Fi Router Ban's Software Update Cutoff
+Will Starlink Escape the FCC's Router Ban? Not With Production in Vietnam
+Facing Router Ban, TP-Link Tells FCC It's Investing Hundreds of Millions in the US
+Still, TP-Link will no doubt face continued scrutiny over its Chinese ties, especially once the company applies for an exemption from the FCC router ban. The commission’s 
+guidance
+ for the process requires a Wi-Fi router vendor to disclose its complete ownership structure, any foreign government support, and the nationality of its executive leadership. Chao, a Chinese citizen, is seeking US permanent residency through the Trump Gold Card program, requiring a $1 million payment, 
+according
+ to Bloomberg. 
+There’s also speculation that the FCC’s router ban is a veiled threat against TP-Link. Last year, there were reports that 
+the US would ban TP-Link alone
+, but it is now pursuing a broader ban to avoid angering Chinese President Xi Jinping amid upcoming trade talks, 
+according
+ to 
+The Wall Street Journal
+. 
+In the FCC meetings, TP-Link added that its routers have been “positively 
+reviewed
+ by technology reviewers,” and denied that its products pose a security threat. “TP-Link routers are safe and secure. Publicly available data places TP-Link on par with or ahead of other major industry players in terms of security outcomes,” the company told commission staff, according to the regulatory filings.
+When asked about the FCC meetings, the company also told PCMag: “TP-Link Systems Inc. will follow the same process the FCC has laid out for all companies. We remain committed to providing innovative, reliable, and secure connectivity solutions for American consumers.”  
+Applying for the FCC exemption will require TP-Link to submit a “detailed, time-bound plan to establish or expand manufacturing in the United States.” The company must also disclose the country of origin for all the components inside any future router models it plans on selling. We expect the FCC to also question the company's stance on security, given that Russian hackers were recently spotted 
+exploiting
+ flaws in end-of-life TP-Link routers. In response, the company has published its own 
+advisory
+, urging affected customers to replace the legacy hardware or install newly designed security updates to ward off the threat. 
+For now, TP-Link and other major brands can continue selling their existing product models in the US, but a security clock is ticking. Under the FCC’s order, foreign-made routers are only 
+permitted
+ to receive software and firmware updates until March 1, 2027. Although the FCC is indicating it’ll clarify the policy over time, the current order risks preventing numerous router models, including TP-Link's, from receiving crucial security updates going forward. So far, only Netgear and Adtran are exempt from the software update issue.
+What Our Ratings Mean
+5.0 - Exemplary: Near perfection, ground-breaking
+4.5 - Outstanding: Best in class, acts as a benchmark for measuring competitors
+4.0 - Excellent: A performance, feature, or value leader in its class, with few shortfalls
+3.5 - Good: Does what the product should do, and does so better than many competitors
+3.0 - Average: Does what the product should do, and sits in the middle of the pack
+2.5 - Fair: We have some reservations, buy with caution
+2.0 - Subpar: We do not recommend, buy with extreme caution
+1.5 - Poor: Do not buy this product
+1.0 - Dismal: Don't even think about buying this product
+
+                  Read Our
+                  
+Editorial Mission Statement
+
+                  and
+                  
+Testing Methodologies
+.
+              
+About Our Expert
+Michael Kan
+Principal Reporter
+My Experience
+I've been a journalist for over 15 years. I got my start as a schools and cities reporter in Kansas City and joined PCMag in 2017, where I cover satellite internet services, cybersecurity, PC hardware, and more. I'm currently based in San Francisco, but previously spent over five years in China, covering the country's technology sector.
+Since 2020, I've covered the launch and explosive growth of SpaceX's Starlink satellite internet service, writing 600+ stories on availability and feature launches, but also the regulatory battles over the expansion of satellite constellations, fights with rival providers like AST SpaceMobile and Amazon, and the effort to expand into satellite-based mobile service. I've combed through FCC filings for the latest news and driven to remote corners of California to test Starlink's cellular service. 
+I also cover cyber threats, from ransomware gangs to the emergence of AI-based malware. In 2024 and 2025, 
+the FTC forced Avast
+ to pay consumers $16.5 million for secretly harvesting and selling their personal information to third-party clients, as revealed in my joint 
+investigation
+ with Motherboard.
+I also cover the PC graphics card market. Pandemic-era shortages 
+led me to camp out
+ in front of a Best Buy to get an RTX 3000. I'm now following how the AI-driven memory shortage is impacting the entire consumer electronics market. I'm always eager to learn more, so please jump in the comments with feedback and send me tips.
+The Best Tech I've Had:
+My first video game console: a Nintendo Famicom
+I loved my Sega Saturn despite PlayStation's popularity.
+The iPod Video I received as a gift in college
+Xbox 360 FTW
+The Galaxy Nexus was the first smartphone I was proud to own.
+The PC desktop I built in 2013, which still works to this day.
+Read the latest from Michael Kan
+FCC Extends Update Deadline for Foreign-Made Routers, Drones Until 2029
+New Starlink Policy Requires Passport Check, 'Live Portrait' for International Use
+T-Mobile Reopens Online Starlink Mobile Sign-Ups, No Call or Store Visit Needed
+Concerns Mount That EU Will Demand Age Verification for VPNs
+Canvas Restored After Hack, Breach Traced to 'Free-For-Teacher' Accounts
+More from Michael Kan
+Read full bio
+Comments
+Please enable JavaScript to view the comments.
+PCMag Newsletters
+Our Best Stories in Your Inbox 
+Follow PCMag
+(Opens in a new window)
+facebook
+(Opens in a new window)
+X
+(Opens in a new window)
+flipboard
+(Opens in a new window)
+google
+(Opens in a new window)
+instagram
+(Opens in a new window)
+pinterest
+Honest, Objective, Lab-Tested Reviews
+PCMag.com is a leading authority on technology, delivering lab-based, independent reviews of the latest products and services. Our expert industry analysis and practical solutions help you make better buying decisions and get more from technology.
+How We Test
+Editorial Principles
+Best Picks
+/
+Reviews
+/
+News
+/
+How-To
+/
+Security
+Business
+Software
+Deals
+About PCMagazine
+Privacy Policy
+Terms of Use
+Advertise
+ AdChoices
+For over 40 years, PCMag has been a trusted authority on technology, delivering independent, labs-based reviews of the latest products and services. With expert analysis and practical solutions across consumer electronics, software, security, and more, PCMag helps consumers make informed buying decisions and get the most from their tech. From in-depth reviews to the latest news and how-to guides, PCMag is the go-to source for staying ahead in the digital world.
+
+      © 1996-2026 © 1996-2026 Ziff Davis, LLC., a Ziff Davis company. All Rights Reserved. PCMag, PCMag.com and PC Magazine are among the federally registered trademarks of Ziff Davis and may not be used by third parties without explicit permission. The display of third-party trademarks and trade names on this site does not necessarily indicate any affiliation or the endorsement of PCMag. If you click an affiliate link and buy a product or service, we may be paid a fee by that merchant.
+    
+International Editions:
+PCMag USA
+Canada
+United Kingdom
+Australia
+Greece
+Israel
+Middle East

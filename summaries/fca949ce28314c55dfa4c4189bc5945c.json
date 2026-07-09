@@ -1,0 +1,75 @@
+{
+  "article_title": "AI's not going to kill open source code security",
+  "core_thesis": "Despite Cal.com's claim that AI makes open source code security untenable, the article argues that open source remains viable and more secure than proprietary code, even in the age of AI. The author contends that AI can be used to both find and fix vulnerabilities, and that open source's transparency allows shared auditing budgets, making it more resilient than closed-source alternatives.",
+  "detailed_summary": "The article responds to Cal.com's decision to abandon AGPL-3.0 licensing for a proprietary license, citing AI as a security threat. CEO Bailey Pumfleet argued that AI attackers exploit open source transparency, comparing it to handing out a bank vault blueprint. However, the author counters that this is an old, discredited argument; open source has historically been more secure than proprietary code. The article notes that AI does accelerate vulnerability discovery, but also enables faster patching. It references Black Duck's 2026 OSSRA report showing a 107% surge in open source vulnerabilities, but highlights that AI can help share auditing costs across open source projects. The developer community largely rejects Cal.com's move, with critics pointing to fundamental security oversights in Cal.com's own code and accusing the company of using security as a pretext for profit. The article concludes that open source will adapt to AI, and that retreating to proprietary licensing is a mistake.",
+  "entities": [
+    {
+      "name": "Cal.com",
+      "type": "organization",
+      "role": "Company that moved from AGPL to proprietary license, claiming AI threatens open source security."
+    },
+    {
+      "name": "Bailey Pumfleet",
+      "type": "person",
+      "role": "CEO and co-founder of Cal.com, who declared 'open source is dead' due to AI."
+    },
+    {
+      "name": "Greg Kroah-Hartman",
+      "type": "person",
+      "role": "Linux kernel maintainer who disagrees with the notion that open source is dead."
+    },
+    {
+      "name": "Drew Breunig",
+      "type": "person",
+      "role": "Tech strategist who proposed the 'brutally simple equation' of token economics for security."
+    },
+    {
+      "name": "Simon Willison",
+      "type": "person",
+      "role": "Django co-creator who argues open source is more valuable because it can share auditing budgets."
+    },
+    {
+      "name": "Ryan Sipes",
+      "type": "person",
+      "role": "Mozilla Thunderbird Product & Business Development Manager, offering an open source alternative."
+    },
+    {
+      "name": "Peter Steinberger",
+      "type": "person",
+      "role": "Creator of OpenClaw, who noted that AI can reverse engineer closed source binaries."
+    },
+    {
+      "name": "Black Duck",
+      "type": "organization",
+      "role": "Published the 2026 OSSRA report showing a 107% increase in open source vulnerabilities."
+    },
+    {
+      "name": "Anthropic Mythos Preview",
+      "type": "product",
+      "role": "AI tool that may overwhelm maintainers with bug reports."
+    },
+    {
+      "name": "GPT 5.4-Cyber",
+      "type": "product",
+      "role": "OpenAI's AI model claimed to reverse engineer binaries to source code."
+    }
+  ],
+  "key_data_points": [
+    "Cal.com moved from AGPL-3.0 to proprietary license, claiming AI makes open source code security impossible. (🟢 Relevant to Red Teaming: highlights the debate on whether open source aids attackers; as a red teamer, you can leverage AI to find vulnerabilities in open source code faster.)",
+    "Black Duck's 2026 OSSRA report found a 107% surge in open source vulnerabilities per codebase. (🟢 Relevant to Red Teaming: indicates a growing attack surface; you can focus on these vulnerabilities for exploitation.)",
+    "Drew Breunig's equation: 'to harden a system you need to spend more tokens discovering exploits than attackers will spend exploiting them.' (🟢 Relevant to Red Teaming: suggests that if attackers have more compute, they win; you can use AI to scale your exploit discovery.)",
+    "Simon Willison argues open source is more valuable because libraries can share auditing budgets, while closed source must find exploits privately. (🟢 Relevant to Red Teaming: open source allows you to study code and find vulnerabilities that affect many projects.)",
+    "Critics noted Cal.com's security issues were 'fundamental oversights in authentication and access control,' not sophisticated hacking. (🟢 Relevant to Red Teaming: common weaknesses like auth bypass are still prevalent; focus on OWASP Top 10.)",
+    "GPT 5.4-Cyber claims to reverse engineer binaries to source code, undermining security by obscurity. (🟢 Relevant to Red Teaming: you can use such AI to analyze closed-source software for vulnerabilities.)"
+  ],
+  "methodology_steps": [],
+  "conclusions": [
+    "Open source is not dead; AI changes the security landscape but does not invalidate open source. The article provides evidence that open source has historically been more secure and that AI can be used defensively.",
+    "Cal.com's move is seen as a pretext for profit, not a genuine security response. The developer community largely rejects the idea that closing source improves security.",
+    "AI tools like GPT 5.4-Cyber can reverse engineer binaries, making security by obscurity obsolete. This reinforces the value of open source transparency.",
+    "The future of open source will involve adapting to AI, not abandoning it. Projects should invest in AI-driven security auditing rather than retreating to proprietary models."
+  ],
+  "personal_relevance_summary": "This article is directly relevant to your Red Teaming and programming interests. It discusses how AI can be used to find vulnerabilities in open source code, which you can leverage for offensive security. The debate on open source vs. closed source security informs your approach: open source provides transparency for finding bugs, while AI accelerates both discovery and patching. As a programmer, you can apply the concept of shared auditing budgets to contribute to or benefit from community security efforts. The article also highlights that fundamental security flaws (like auth issues) remain common, so you should focus on those in your assessments.",
+  "extra_advice": "Consider experimenting with AI-driven vulnerability scanning tools on open source projects to practice Red Teaming. Use GPT-5.4-Cyber or similar to reverse engineer binaries and find zero-days. Also, contribute to open source security by reporting bugs you find—this builds reputation and helps the community.",
+  "source_url": "https://www.theregister.com/security/2026/04/26/ais-not-going-to-kill-open-source-code-security/5220745"
+}

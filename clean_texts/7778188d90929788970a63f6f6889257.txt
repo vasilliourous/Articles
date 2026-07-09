@@ -1,0 +1,202 @@
+New Python Backdoor Uses Tunneling Service to Steal Browser and Cloud Credentials
+sudo apt-get update cyber_news
+Followed by 5.70+ million
+
+
+
+
+
+
+ Get the Latest News
+Home
+Newsletter
+Webinars
+Home
+Threat Intelligence
+Vulnerabilities
+Cyber Attacks
+Webinars
+Expert Insights
+Awards
+
+
+
+Resources
+Webinars
+Awards
+Free eBooks
+About Site
+About THN
+Jobs
+Advertise with us
+Contact/Tip Us
+
+Reach out to get featured—contact us to send your exclusive story idea, research, hacks, or ask us a question or leave a comment/feedback!
+Follow Us On Social Media
+
+
+
+
+
+
+ RSS Feeds
+
+ Email Alerts
+New Python Backdoor Uses Tunneling Service to Steal Browser and Cloud Credentials
+
+Ravie Lakshmanan
+
+Apr 30, 2026
+Cloud Security / Threat Intelligence
+Cybersecurity researchers have disclosed details of a stealthy Python-based backdoor framework called 
+DEEP#DOOR
+ that comes with capabilities to establish persistent access and harvest a wide range of sensitive information from compromised hosts.
+"The intrusion chain begins with execution of a batch script ('install_obf.bat') that disables Windows security controls, dynamically extracts an embedded Python payload ('svc.py'), and establishes persistence through multiple mechanisms including Startup folder scripts, registry Run keys, scheduled tasks, and optional WMI subscriptions," Securonix researchers Akshay Gaikwad, Shikha Sangwan, and Aaron Beardslee 
+said
+ in a report shared with The Hacker News.
+It's assessed that the batch script is distributed via traditional approaches like phishing. It's currently not known how widespread attacks distributing the malware are, and if any of those infections have been successful.
+"Based on our current analysis, there is no clear evidence to suggest that this malware framework was widely used in large-scale or highly active campaigns," Gaikwad, senior security research engineer at Securonix, told The Hacker News via email. "Its observed usage appears to be limited and somewhat targeted rather than broadly distributed."
+"At this stage, we have not identified consistent indicators pointing to specific geographies or industry sectors being systematically targeted. However, given the modular nature of the framework, it is possible that different threat actors could adapt it for varied use cases over time."
+What makes the attack chain noteworthy is that the core Python implant is embedded directly inside the dropper script, from where it's extracted, reconstructed, and executed. This reduces the need for repeatedly having to reach out to external infrastructure and minimizes the forensic footprint. 
+Once launched, the malware establishes communication with "bore[.]pub," a Rust-based 
+tunneling service
+, allowing the operator to issue commands that facilitate remote command execution and extensive surveillance. This includes -
+Reverse shell
+System reconnaissance
+Keylogging
+Clipboard monitoring
+Screenshot capture
+Webcam access
+Ambient audio recording
+Web browser credential harvesting
+SSH key extraction
+Credentials stored in Google Chrome, Mozilla Firefox, and Windows Credential Manager
+Cloud credential theft (Amazon Web Services, Google Cloud, and Microsoft Azure)
+The use of public TCP tunneling service for command-and-control (C2) offers several advantages in that it eliminates the need for setting up dedicated infrastructure, blends malicious traffic, and avoids embedding details of the server within the payload.
+In parallel, DEEP#DOOR incorporates a bevy of anti-analysis and defense evasion mechanisms, such as sandbox, debugger, and virtual machine (VM) detection, AMSI and Event Tracing for Windows (
+ETW
+) patching, NTDLL unhooking, Microsoft Defender tampering, SmartScreen bypass, PowerShell logging suppression, command-line wiping, timestamp stomping, and log clearing, to fly under the radar and complicate incident response efforts. 
+It also employs multiple persistence mechanisms that involve creating Windows Startup folder scripts, Registry Run keys, and scheduled tasks, while also relying on a watchdog mechanism to make sure the persistence artifacts have not been removed, and if so, automatically recreate them, making remediation challenging.
+"The resulting implant operates as a fully featured Remote Access Trojan (RAT) capable of long-term persistence, espionage, lateral movement, and post-exploitation operations within compromised environments," Securonix said. "The implant prioritizes evading detection and forensic visibility by directly tampering with Windows security and telemetry mechanisms."
+"DEEP#DOOR highlights the continued evolution of threat actors toward fileless, script-driven intrusion frameworks that rely heavily on native system components and interpreted languages like Python. By embedding the payload directly within the dropper and extracting it at runtime, the malware significantly reduces external dependencies and limits traditional detection opportunities."
+Found this article interesting?  Follow us on 
+Google News
+, 
+Twitter
+ and 
+LinkedIn
+ to read more exclusive content we post.
+SHARE
+
+
+
+
+
+Tweet
+
+Share
+
+Share
+
+Share
+
+
+Share on Facebook
+
+Share on Twitter
+
+Share on Linkedin
+
+Share on Reddit
+
+Share on Hacker News
+
+Share on Email
+
+Share on WhatsApp
+Share on Facebook Messenger
+
+Share on Telegram
+SHARE 
+
+Cloud security
+, 
+Credential Theft
+, 
+cybersecurity
+, 
+Malware
+, 
+Phishing
+, 
+Remote Access Trojan
+, 
+Threat Intelligence
+, 
+windows security
+Get the Latest News in Your Inbox
+Get the latest news, expert insights, exclusive resources, and strategies from industry leaders, all for free.
+Email
+Cybersecurity Webinars
+Building Stronger Defenses
+Stop Patient Zero Attacks Before They Bypass Detection
+Learn how to stop patient zero attacks before they bypass detection and compromise your systems at entry points.
+Reserve My Spot
+Reduce AppSec Risk
+Validate Real Attack Paths Before Attackers Exploit Them
+Learn how to validate real attack paths and reduce exploitable risk with continuous agentic security validation.
+Watch Free Now
+⚡ Latest News
+Cybersecurity Resources
+The 2026 Identity Crisis: Why Your IAM is Only Half the Story
+Stop driving blind. See the identity blind spots traditional IAM misses. Watch now.
+Your VPN is Helping Attackers Move as Fast as AI
+AI collapsed human response window and turned remote access into fastest path to breach.
+The Room Where Security Actually Gets Done — SANSFIRE 2026
+D.C., July 13–18. Elite instructors, 50+ courses, NetWars, and peers who operate at your level.
+Earn a Master's in Cybersecurity Risk Management
+Lead the future of cybersecurity risk management with an online Master’s from Georgetown.
+Expert Insights 
+Articles
+Videos
+Mythos is Coming: What the Next Six Months Require
+
+May 04, 2026
+Read ➝
+From Phishing to Recovery: Breaking the Ransomware Attack Chain
+
+May 04, 2026
+Read ➝
+Your Biggest Security Risk Isn’t Malware — It's What You Already Trust
+
+May 04, 2026
+Read ➝
+CTM360 Exposes Global GovTrap Campaign With 11,000+ Fake Government Portals Targeting Citizens Worldwide
+
+April 27, 2026
+Read ➝
+Connect with us!
+
+1,300,000 Followers
+
+710,100 Followers
+
+25,500 Subscribers
+
+157,500 Followers
+
+1,990,000 Followers
+55,500 Followers
+Company
+About THN
+Advertise with us
+Contact
+Pages
+Webinars
+Awards
+Privacy Policy
+
+ RSS Feeds
+
+ Contact Us
+© 2026 The Hacker News. All Rights Reserved.

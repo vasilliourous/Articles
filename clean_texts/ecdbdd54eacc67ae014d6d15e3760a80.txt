@@ -1,0 +1,558 @@
+Built for a hostile internet: Canonical VP of Engineering on Ubuntu 26.04 LTS | ZDNET
+X
+Trending
+I wore the world's first HDR10 smart glasses
+TCL's new E Ink tablet beats the Remarkable and Kindle
+Anker's new charger is one of the most unique I've ever seen
+Best laptop cooling pads
+Best flip phones
+Roku TV vs Fire Stick
+Galaxy Buds 3 Pro vs Apple AirPods Pro 3
+M5 MacBook Pro vs M4 MacBook Air
+Linux Mint vs Zorin OS
+4 quick steps to make your Android phone run like new again
+How much RAM does your Linux PC need
+How to clear your Android phone cache
+How to disable ACR on your TV
+How to turn on Private DNS mode on Android
+ZDNET Recommends
+Tech
+Gaming
+Headphones
+Laptops
+Mobile Accessories
+Networking
+PCs
+Printers
+Smartphones
+Smart Watches
+Speakers
+Streaming Devices
+Streaming Services
+Tablets
+TVs
+Wearables
+Kitchen & Household
+Office Furniture
+Office Hardware & Appliances
+Smart Home
+Smart Lighting
+Yard & Outdoors
+Innovation
+Artificial Intelligence
+AR + VR
+Cloud
+Digital Transformation
+Energy
+Robotics
+Sustainability
+Transportation
+Work Life
+Accelerate your tech game 
+Paid Content
+How the New Space Race Will Drive Innovation
+How the metaverse will change the future of work and society
+Managing the Multicloud
+The Future of the Internet
+The New Rules of Work
+The Tech Trends to Watch in 2023
+Business
+See all Business
+Amazon
+Apple
+Developer
+E-Commerce
+Edge Computing
+Enterprise Software
+Executive
+Google
+Microsoft
+Professional Development
+Social Media
+SMB
+Windows
+How AI is transforming organizations everywhere
+The intersection of generative AI and engineering
+Software development: Emerging trends and changing roles
+Security
+See all Security
+Cyber Threats
+Password Manager
+Ransomware
+VPN
+Cybersecurity: Let's get tactical
+Securing the Cloud
+Advice
+Deals
+How-to
+Product Comparisons
+Product Spotlights
+Reviews
+Buying Guides
+See all Buying Guides
+Best Samsung phones
+Best Android phones
+Best smart rings
+Best blood pressure watches
+Best headphones for sleeping
+Best robot vacuum mops
+Best web hosting services
+Best travel VPNs
+Best VPNs
+Best AI image generators
+Best AI chatbots
+Best 75-inch TVs
+Best smartphones
+Best iPhones
+Best MagSafe battery packs
+Best digital notebooks
+Best TV antennas
+Best TVs
+Best laptops
+Best tablets
+Best smartwatches
+Best headphones
+Best live TV streaming services
+tomorrow
+belongs to those who embrace it
+today
+ZDNET France
+ZDNET Germany
+ZDNET Korea
+ZDNET Japan
+Go
+See all Topics
+Finance
+Education
+Health
+Special Features
+ZDNET In Depth
+ZDNET Recommends
+Newsletters
+Videos
+Editorial Guidelines
+Trending
+I wore the world's first HDR10 smart glasses
+TCL's new E Ink tablet beats the Remarkable and Kindle
+Anker's new charger is one of the most unique I've ever seen
+Best laptop cooling pads
+Best flip phones
+Roku TV vs Fire Stick
+Galaxy Buds 3 Pro vs Apple AirPods Pro 3
+M5 MacBook Pro vs M4 MacBook Air
+Linux Mint vs Zorin OS
+4 quick steps to make your Android phone run like new again
+How much RAM does your Linux PC need
+How to clear your Android phone cache
+How to disable ACR on your TV
+How to turn on Private DNS mode on Android
+ZDNET Recommends
+Tech
+Gaming
+Headphones
+Laptops
+Mobile Accessories
+Networking
+PCs
+Printers
+Smartphones
+Smart Watches
+Speakers
+Streaming Devices
+Streaming Services
+Tablets
+TVs
+Wearables
+Kitchen & Household
+Office Furniture
+Office Hardware & Appliances
+Smart Home
+Smart Lighting
+Yard & Outdoors
+Innovation
+Artificial Intelligence
+AR + VR
+Cloud
+Digital Transformation
+Energy
+Robotics
+Sustainability
+Transportation
+Work Life
+Accelerate your tech game 
+Paid Content
+How the New Space Race Will Drive Innovation
+How the metaverse will change the future of work and society
+Managing the Multicloud
+The Future of the Internet
+The New Rules of Work
+The Tech Trends to Watch in 2023
+Business
+See all Business
+Amazon
+Apple
+Developer
+E-Commerce
+Edge Computing
+Enterprise Software
+Executive
+Google
+Microsoft
+Professional Development
+Social Media
+SMB
+Windows
+How AI is transforming organizations everywhere
+The intersection of generative AI and engineering
+Software development: Emerging trends and changing roles
+Security
+See all Security
+Cyber Threats
+Password Manager
+Ransomware
+VPN
+Cybersecurity: Let's get tactical
+Securing the Cloud
+Advice
+Deals
+How-to
+Product Comparisons
+Product Spotlights
+Reviews
+Buying Guides
+See all Buying Guides
+Best Samsung phones
+Best Android phones
+Best smart rings
+Best blood pressure watches
+Best headphones for sleeping
+Best robot vacuum mops
+Best web hosting services
+Best travel VPNs
+Best VPNs
+Best AI image generators
+Best AI chatbots
+Best 75-inch TVs
+Best smartphones
+Best iPhones
+Best MagSafe battery packs
+Best digital notebooks
+Best TV antennas
+Best TVs
+Best laptops
+Best tablets
+Best smartwatches
+Best headphones
+Best live TV streaming services
+More
+See all Topics
+Finance
+Education
+Health
+Special Features
+ZDNET In Depth
+ZDNET Recommends
+Newsletters
+Videos
+Editorial Guidelines
+Business
+
+      Home
+    
+
+      Business
+    
+
+      Enterprise Software
+    
+
+    Built for a hostile internet: Canonical VP of Engineering on Ubuntu 26.04 LTS
+    
+
+    He also says Ubuntu's Rust rollout has been a 'rip-roaring success.'
+  
+Written by
+
+            Steven Vaughan-Nichols, 
+Senior Contributing Editor
+Senior Contributing Editor
+April 23, 2026 at 7:30 a.m. PT
+must read
+Why Chrome may have quietly downloaded a 4GB file to your PC - and how to get rid of it
+Read now 
+Jon Seager, Canonical VP of Engineering 
+Canonical/ZDNET
+Follow ZDNET: 
+Add us as a preferred source
+ on Google.
+ZDNET's key takeaways
+The latest long-term support edition of Ubuntu 26.04 is here. 
+This version is safer and faster than ever.
+It includes serious AI tool improvements. 
+Canonical's new 
+Ubuntu 26.04 Long Term Support (LTS)
+, which arrives on April 23, 2026, isn't trying to be flashy for its own sake. This version is trying to be hard to break, easy to trust, and modern enough to matter for the next decade and a half. At a media briefing ahead of the launch, Jon Seager, Canonical's VP of engineering for Ubuntu Linux, framed this release around a single word: resilience.
+He could have called it safer or more reliable, he said, but that wasn't enough. "I think resilience conveys a nice connotation of a system that is secure and reliable, but also durable, in a sense, like durable to the sorts of conditions that a machine may be exposed to on the internet these days, where a lot of our machines reside," Seager explained. That theme, surviving a hostile internet while staying useful, runs through the entire release.
+Also: 
+98% of IT leaders want digital sovereignty: Now SUSE is operationalizing it
+With 26.04, Canonical wants Ubuntu to be a showcase for the best of upstream, even when it's still "as yet unproven" -- with a lot more engineering and auditing to make it ready for prime time.
+At the same time, though, Seager is adamant that this release isn't just for hyperscale customers. Sure, he said, Ubuntu is now something "the biggest enterprises in the world rely upon," but it still has to work for educators, students, mom‑and‑pop shops, and startups. "I firmly believe that we can satisfy both ends of that spectrum with Ubuntu."
+Better toolchains for everyone
+The most controversial and ambitious change lands deep in user space: 
+Ubuntu now includes Rust rewrites of several core utilities
+. Over the past 18 months, Canonical has helped drive sudo-rs and Rust coreutils to the point where they're now ready for default use in an LTS.
+Why? Because Seager said, "More than 90% of the world's security vulnerabilities, factually, are related to memory safety, and so by replacing core parts of the operating system with a language that makes it very difficult to write those memory safety vulnerabilities, it is beneficial to us from a financial perspective. We are in the business of selling security maintenance," he said. 
+But beyond Canonical's balance sheet, Seager noted that Ubuntu runs in power stations, satellites, and other critical infrastructure, so "by dramatically reducing the attack surface in Ubuntu, I feel like that is a net good."
+Also: 
+The new rules for AI-assisted code in the Linux kernel: What every dev needs to know
+The sudo-rs rollout, he said, was "a rip‑roaring success," and he praised the 
+Trifecta/Prossimo foundation
+ as "a complete delight to work with." The Rust coreutils set will ship "99% there," with only two or three utilities still falling back to classic GNU coreutils. 
+Seager explained: "We've done two rounds of internal security audits with the Canonical security team, and also funded two rounds of an external security auditor… There were three outstanding [CVEs] that aren't critical, but because it's an LTS and quite sensitive, we decided to just not make three of the utilities default. It's actually one fix that affects all three utilities. We just didn't quite land the fix in time."
+He was keen to stress this approach isn't about discrediting the old tools. Canonical has already pushed documentation fixes back into GNU coreutils based on Rust work, and there are cases where GNU still outperforms Rust and vice versa. The point, he said, is that both toolchains are improving: "The tools are all getting better for everyone."
+Also: 
+I tried a command-line-only distro that can seriously improve your Linux skills
+Next on his Rust hit list was 
+ntpd-rs
+, which he said will provide "the first single source of truth for doing NTP, LTS, and PTP all in one place, all in one utility with memory safety," turning what is currently a scar‑inducing exercise into something that's "an absolute delight." Canonical is also working with 
+Rustls
+ to deliver "browser‑grade PKI security primitives to Linux" at the system level.
+Under the hood
+Ubuntu 26.04 LTS ships a 
+Linux 7.0 kernel
+. The release also has an aggressively current language stack: OpenJDK 25 LTS, Kotlin 2.0.4, updated Go, and .NET 10. There's also a preview of the 
+Zig
+ language toolchain for you to check out. This chain is already used in Ubuntu 26.04 to package 
+Ghostty
+, "Mitchell Hashimoto's very shiny new terminal emulator," for x86‑64 and ARM64. Support for architectures like s390x and ppc64el will follow as Canonical and the Zig community work through the missing pieces.
+However, the title for developers is on the GPU side. Seager declared, "We now have the right to ship Nvidia's CUDA and AMD ROCm in the archive with our long‑term support commitment. So this removes the need to struggle to figure out which versions of CUDA, Nvidia drivers, and PyTorch you need. It should all just be an apt install away," for all your Nvidia-hardware-based AI work. 
+Also: 
+The once beloved PCLinuxOS is back - and it's still a great Windows escape
+The container and virtualization stack also receive a policy change. Instead of constantly rolling Docker, containerd, libvirt, and QEMU within an LTS, 26.04 ships a fixed stack by default, with an opt‑in rolling track for those who need the latest features. Seager compared it to Ubuntu's HWE kernel model: you can stay stable, or you can chase new functionality, but you choose
+On the desktop, Ubuntu moves to 
+GNOME 50
+, swaps Totem for a new video player called Showtime, and continues its steady march toward 
+Wayland‑only graphics sessions
+. Seager suggested this second attempt at Wayland has gone "a bit better" than the ill‑fated 2017 experiment, thanks to better drivers, a more mature app ecosystem, and a stronger relationship with Nvidia. "I think it is the only path forward at the end of the day… In my personal opinion, it's overdue."
+Still can't stand the idea of using Wayland? Seager was unapologetic about drawing a hard line at this LTS boundary. Ubuntu can't support every legacy graphics setup forever, he argued, and 24.04 will still get 15 years of updates. If you truly can't live without X11, you're not "high and dry."
+More immediately visible for most users will be Android/iOS‑style permissions prompts for snapped applications. This setup required plumbing from the kernel and AppArmor up through snapd, GNOME, and GDM, but the result is simple: "This is what allows your computer to display a prompt like you would have become accustomed to on Android or iOS… 'This app would like to use your camera. Would you like it to?" Seager said. Initially, this approach covers filesystem and camera access, with experimental microphone support and more interfaces coming now that the wiring is in place.
+Also: 
+This is my favorite Linux distro of all time - and I've tried them all
+On the security side, TPM‑backed full‑disk encryption is now GA on the desktop, giving Ubuntu users a BitLocker/FileVault‑like experience without double passphrase prompts. Enterprises can escrow recovery keys in 
+Canonical Landscape
+, and server support will follow once Canonical has nailed the more complex storage and network boot scenarios in that environment.
+Canonical is also leaning harder on modern identity management through AuthD. This authentication approach enables users to log in with Azure AD, Google Cloud, or any OpenID Connect (OIDC) provider, with quality‑of‑life improvements like shorter usernames, automatic keyring unlock, and TPM‑backed token storage. The same mechanisms are being pushed into the cloud images. Seager said Ubuntu use on WSL is "absolutely rocketing", making it an increasingly important part of the portfolio.
+AI and more
+This work was all done 
+using AI tools
+. He said AI tools are now part of normal engineering practice, but Canonical is avoiding the "one platform to rule them all" story. Teams are encouraged to adopt the tools that make sense for them, as long as they pick something consistently at the team level. The company as a whole is leaning toward open‑source harnesses and open‑weight models that better fit Ubuntu's values. There are no quotas on tokens or AI‑generated code. Instead, engineers are expected to educate themselves and use the tools with judgment.
+Besides AI, Seager shared that there is now "significantly more automation than there was two years ago" and "much, much lower" human intervention in getting all the right bits into place. Core processes like main inclusion review and the Stable Release Update machinery have been tightened up, and the developer membership board is pushing more contributors through the pipeline.
+On the regulatory side, with 
+California‑style age‑verification bills spreading
+ and a US‑wide proposal in the works, Seager said Canonical is taking a wait-and-see approach. Canonical has "no immediate plans to make any technological changes to Ubuntu" in 26.04. He flatly rejected the idea of rushing third‑party verification services into the OS and warned against "very shallow" measures that don't achieve their goals while exposing user data. If Canonical does have to move, it will likely start with age ratings in the Snap Store and light‑touch enforcement in snapd, and it will talk to users publicly before it flips any switches.
+Asked how his first LTS as VP of engineering feels, Seager was measured but positive. The release teams' practices now feel "a lot more polished… a lot more modern," and they "move with a lot more purpose," he said. When he arrived, some engineers looked at his plans "like I was an alien"; now they're bringing him ideas. There's more automation still to do, but "we are in a significantly better place than we were 18 months ago," in his view.
+Ubuntu 26.04 LTS, in other words, isn't just another point on Canonical's calendar. It's the first real proof that Seager's "engineering Ubuntu for the next 20 years" agenda is landing -- not just in Rust and Wayland, but in how Ubuntu itself gets built and shipped.
+Me? I've just started to kick the new Ubuntu's tires, but so far I like what I see a lot. You'll be able to see for yourself now as the final bits are readied for download.
+Open Source
+
+
+            How AI has suddenly become much more useful to open-source developers
+          
+
+
+            Google's Gemma 4 model goes fully open-source and unlocks powerful local AI - even on phones
+          
+
+
+            Why AI is both a curse and a blessing to open-source software - according to developers
+          
+
+
+            I tried a Claude Code rival that's local, open source, and completely free - how it went
+          
+
+
+              How AI has suddenly become much more useful to open-source developers
+            
+
+
+              Google's Gemma 4 model goes fully open-source and unlocks powerful local AI - even on phones
+            
+
+
+              Why AI is both a curse and a blessing to open-source software - according to developers
+            
+
+
+              I tried a Claude Code rival that's local, open source, and completely free - how it went
+            
+Editorial standards
+Show Comments
+
+          Log In to Comment
+        
+Community Guidelines
+Click to unmute
+Every UAP video released by the U.S. Department of War in 14 minutes
+Every UAP video released by the U.S. Department of War in 14 minutes
+Video Player is loading.
+Play Video
+Pause
+Skip Backward
+Skip Forward
+Next playlist item
+Unmute
+Current Time 
+0:18
+/
+Duration 
+14:32
+Loaded
+: 
+7.54%
+00:18
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+14:14
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions settings
+, opens captions settings dialog
+captions off
+, selected
+Share
+Audio Track
+en (Main)
+, selected
+Fullscreen
+This is a modal window.
+Beginning of dialog window. Escape will cancel and close the window.
+Text
+Color
+White
+Black
+Red
+Green
+Blue
+Yellow
+Magenta
+Cyan
+Opacity
+Opaque
+Semi-Transparent
+Text Background
+Color
+Black
+White
+Red
+Green
+Blue
+Yellow
+Magenta
+Cyan
+Opacity
+Opaque
+Semi-Transparent
+Transparent
+Caption Area Background
+Color
+Black
+White
+Red
+Green
+Blue
+Yellow
+Magenta
+Cyan
+Opacity
+Transparent
+Semi-Transparent
+Opaque
+Font Size
+50%
+75%
+100%
+125%
+150%
+175%
+200%
+300%
+400%
+Text Edge Style
+None
+Raised
+Depressed
+Uniform
+Drop shadow
+Font Family
+Proportional Sans-Serif
+Monospace Sans-Serif
+Proportional Serif
+Monospace Serif
+Casual
+Script
+Small Caps
+Reset
+Done
+Close Modal Dialog
+End of dialog window.
+Close Modal Dialog
+This is a modal window. This modal can be closed by pressing the Escape key or activating the close button.
+This is a modal window. This modal can be closed by pressing the Escape key or activating the close button.
+Share: Every UAP video released by the U.S. Department of War in 14 minutes
+Facebook
+Twitter
+Direct Link
+Embed Code
+Close Modal Dialog
+Related
+
+      Microsoft finally open sources DOS 1.0 - and it's so much more than the code
+    
+
+      This critical Linux vulnerability is putting millions of systems at risk - how to protect yours
+    
+
+      My 5 favorite open source operating systems that aren't Linux
+    
+ZDNET
+we equip you to harness the power of disruptive innovation, at work and at home.
+Topics
+Galleries
+Videos
+Do Not Sell or Share My Personal Information
+about ZDNET
+Meet The Team
+Sitemap
+Reprint Policy
+Join
+ |
+    
+Log In
+Newsletters
+Licensing
+Accessibility
+
+  © 2026 ZDNET, A Ziff Davis company. All rights reserved.
+
+Privacy Policy
+ |
+   |
+  
+Your Privacy Rights
+ |
+  
+Advertise
+ |
+  
+Terms of Use

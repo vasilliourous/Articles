@@ -1,0 +1,79 @@
+I Just Tested (New) Claude Code Routines (That Kill Your Boring Backlogs) | by Joe Njenga | Apr, 2026 | Medium
+Sitemap
+Open in app
+Sign up
+Sign in
+Medium Logo
+Get app
+Write
+Search
+Sign up
+Sign in
+Mastodon
+Member-only story
+I Just Tested (New) Claude Code Routines (That Kill Your Boring Backlogs)
+Joe Njenga
+Follow
+10 min read
+·
+Apr 14, 2026
+124
+4
+Listen
+Share
+Press enter or click to view image in full size
+You don’t have to get bogged down by boring, repetitive dev tasks that you can set and forget.
+At least, that’s the promise of the newly introduced Claude Code Routines. I was quick to test it, and it delivered.
+Press enter or click to view image in full size
+If you’ve been using Claude Code for a while, you already know it’s great for automating the 
+software development cycle.
+But the catch has always been automation still needs you to manage the cron jobs, infrastructure, and MCP servers.
+Claude Code Routines is designed to fix this problem.
+You define an 
+automation once
+:
+ a
+prompt, the repository, and your connectors, then tell Claude when to run it on a schedule, via an API call, or in response to a GitHub event.
+Like 
+Claude Managed Agents
+, this also runs on Anthropic-managed cloud infrastructure, so it keeps running, whether your terminal is on or off.
+It’s currently in research
+…
+What Are Claude Code Routines?
+A routine is a saved Claude Code configuration that includes a prompt, a GitHub repository, and your connectors packaged once and scheduled to run.
+Unlike other automations we have set up before, routines execute on Anthropic-managed cloud infrastructure.
+What makes it different is that Claude runs the task, and you see the results next time you check in.
+Every routine gets one or more triggers:
+Scheduled
+ — hourly, nightly, or weekly on a cadence you set
+Create an account to read the full story.
+The author made this story available to Medium members only.
+If you’re new to Medium, create a new account to read this story on us.
+Continue in app
+Or, continue in mobile web
+Sign up with Google
+Sign up with Facebook
+Sign up with email
+Already have an account? 
+Sign in
+124
+124
+4
+Follow
+Written by Joe Njenga
+23K followers
+·
+96 following
+Software & AI Automation Engineer, Tech Writer & Educator. Vision: Enlighten, Educate, Entertain. One story at a time. Work with me: 
+mail.njengah@gmail.com
+Follow
+Help
+Status
+About
+Careers
+Press
+Blog
+Privacy
+Rules
+Terms
+Text to speech

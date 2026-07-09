@@ -1,0 +1,623 @@
+I automated 8 household tasks with $3 NFC tags and freed up hours every week
+Menu
+Sign in now
+Close
+PC & Mobile
+Submenu
+Windows2
+Linux
+Android
+Apple
+Technical
+Submenu
+Tech Explained
+Security
+Software
+Submenu
+Productivity
+Internet
+Creative
+Screen
+Submenu
+Entertainment
+Streaming
+Home
+Submenu
+Smart Home
+Home
+News
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+7
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+Productivity
+Android
+Smart TVs
+Networking
+Windows 11
+Entertainment
+Close
+I automated 8 household tasks with $3 NFC tags and freed up hours every week
+Credit: Chris Hachey / MakeUseOf
+By 
+Chris Hachey
+Published
+ May 7, 2026, 12:30 PM EDT
+Chris Hachey is a contributor for MakeUseOf with years of experience covering consumer tech. He has been published on 
+XDA-developers.com
+, 
+Pocket-lint.com
+, 
+BGR.com
+, and other tech sites. He is passionate about finding great deals on tech, testing out new consumer electronics, and sharing his insights into smart home devices.
+
+From Bluetooth speakers and earbuds to 2-in-1 laptops, Chris has tested hundreds of products to provide his audience with real analysis on how well something works. When he's not looking for the latest and greatest in tech, he's probably spending too much time on his phone, playing with his dog or daughter, or watching his favorite sports teams. Follow him on X 
+@hach_tag
+MuckRack
+Sign in to your 
+MakeUseOf
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+7
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+I'm always looking to make things easier for myself. Call this laziness. Call this drive. Why would I work harder when I can work smarter? In all seriousness, I have really enjoyed setting up my smart home because of all the shortcuts and automations that it presents.
+✕
+ Remove Ads
+Being able to walk up the stairs and ask my smart speaker to turn on the lights so they are already on by the time I get there is a simple yet effective smart home feature I use every day. But I started to think about how to improve other parts of my daily life by relying on technology. That's how I discovered Near Field Communication (NFC) tags. NFC technology is not something I am unfamiliar with, as I use 
+Brick
+ each day to help myself lock in when I'm writing. But getting cheap tags opened up a lot of possibilities for my home that I hadn't realized.
+Related
+
+			Yes, I automated laundry tracking with AI — and it suggests clothes to wear
+		
+What happens when you mix NFC tags, a local AI model, and a pile of dirty clothes? Surprisingly smart fashion advice.
+Posts
+By 
+Yadullah Abidi
+Oct 20, 2025
+
+                        Get the dance party started
+               
+
+            I can open up multiple apps
+    
+Credit: Chris Hachey / MakeUseOf
+I have an iPhone, so I use my NFC tags with the Shortcuts app to set up automations. You can do this by opening up the app, selecting Automation at the bottom, and then choosing how you want to set up your automation from there. The NFC tag is used as a trigger and an If in many If/Then automations.
+NFC tags work with an Android or iPhone, as the phone generates a magnetic field, which triggers the NFC tag and lets it send data to the phone. They work as a bridge between a phone and some kind of digital piece of information, such as a website, image, or app, similar to 
+how a QR code works
+.
+Setting up an NFC tag is simple: bring it near a reader to set up the automation in the Shortcuts app on an iPhone and the NFC Tools app on an Android phone. I bought a pack of two NFC tags to get started with. But now that I see how much each of them can do, I'm going to be investing in more.
+✕
+ Remove Ads
+Something that I immediately set up when I was exploring all the options was an NFC tag for the kitchen. My family and I do so much in the kitchen and it made sense to add one there. One of the things that was a must right away was using an NFC tag to open up a music app.
+Scanning the tag brings up Spotify, Apple Music, or other music apps. Whichever one you choose can cause it to populate. With Apple Music, it actually lets you open it and play music right away, so you can add that and not be forced to open up the app and choose the music. This is helpful when you're cooking and need all hands on deck but still want to enjoy some quality dance time.
+
+                        Open up a recipe while you're cooking
+               
+
+            We have a few favorites that we have saved
+    
+I placed an NFC tag on the top of the butter bell in our kitchen. It holds it perfectly and can be moved around the kitchen. We rarely actually use the butter, making it more likely that we won't need to flip the NFC tag over.
+One of the more annoying options when you're cooking is to look up a recipe. It's frustrating because you might need to constantly tap your phone to wake it up as you're reading ingredients. You might also want to have a bigger screen than your small phone. It's part of the reason why 
+my family got a Skylight Calendar
+, which lets you load recipes and show them on a large 15-inch screen. 
+✕
+ Remove Ads
+But, for anyone who wants to look up a recipe, or really any website, you can sync it to your NFC tag. We frequently use the site 
+WhatsGabyCooking.com
+ as it has a great array of easy-to-follow recipes.
+I added that URL to the NFC tag automation and it populates the app when I want to quickly look up a recipe. Of course, you can choose a specific recipe from a site or any page that you want, and link it to the scanning of the NFC tag.
+
+                        Start a timer on your phone
+               
+
+            You don't need to try and remember how long the pasta's been on
+    
+Credit: Chris Hachey / MakeUseOf
+Sticking to a recipe can be challenging for some who like to ad-lib their ingredients and go by the look of the meal and their gut. My wife is one of those people and her food usually turns out excellent.
+I'm not one of those people as I have to stick to a recipe or things can turn out disastrously. That's why I rely on timers to make sure I'm doing things at the right pace and parts of the dish come out at roughly the same time. The last thing you want is a warm roast chicken and cold mashed potatoes because the timing was off.
+By tapping the phone on the tag, which is placed right next to my glasses, I don't need good eyesight to open the app up.
+Using the NFC tag to start a timer helps me reset myself and move onto the next stage of the process without trying to throw off my entire cooking session. I'm able to put that step to the side, knowing that when the timer goes off, I'll come back and check.
+✕
+ Remove Ads
+You can adjust the timer once it's opened, but you will need to set a certain amount of time that will open up once your NFC tag is scanned.
+
+                        Catch up on your reading
+               
+
+            Don't forget where you were in the book
+    
+Credit: Chris Hachey / MakeUseOf
+As mentioned above, you can listen to different music platforms by adding them as the app that opens when an NFC tag is scanned. When I'm cooking or in the kitchen, I like to listen to all kinds of music when my family is with me and podcasts when I'm cooking alone.
+But, if you're a book lover, you can have the NFC tag open up an audiobook to help you stay with your story. It's a great way to keep up with your reading while your hands are tied up doing something else.
+The audiobook will play upon the scan, so you'll pick up right where you left off. It's a helpful automation because it limits the amount of work you need to do manually to get your audiobook up and running.
+
+                        Bring up the baby monitor
+               
+
+            This is a big one for me at night
+    
+Credit: Chris Hachey / MakeUseOf
+I placed the other NFC tag that I have on my bedside table. I found that, while I'm lying in bed, being able to tap my phone on my nightstand opens up options for me.
+✕
+ Remove Ads
+I used this for a while on my nightstand and set the Nanit app to open up when I tap it. This app is the baby monitor app that we use in our home. It opens up both my son's and my daughter's baby monitors and displays the feed on my phone.
+While I can open my phone and open up the app, there isn't always time to do that. I've learned this the hard way, as my daughter might talk in her sleep and I can hear the monitor. But fumbling for my glasses and opening up the phone to see the camera feed takes a while, especially if she or my son starts to cry.
+By tapping the phone on the tag, which is placed right next to my glasses, I don't need good eyesight to open the app up. It then gives me the time to put on my glasses to view the camera. While this is a small thing, a toddler yelling in the middle of the night is always going to startle me awake, so being able to see what's causing it quickly is important.
+
+                        Turn on my smart plug
+               
+
+            It's easier to use Apple HomeKit for this
+    
+Credit: Chris Hachey / MakeUseOf
+While I do prefer using 
+Amazon Alexa and my Echo Show speakers
+ as my go-to smart home ecosystem and devices, I do have some Apple HomeKit integrations I've used over the years. One of them is with a 
+WeMo Smart Plug
+, which I have plugged into one of the bedside lamps in our room.
+✕
+ Remove Ads
+Rather than relying on voice commands to turn on that light, which during the night could wake up my wife or children because Alexa is quite loud when she responds, I can tap the NFC tag to turn on the plug. This is an easy way to use Apple HomeKit's integration and automations with the NFC tags.
+Almost any Apple Home device can be used through the Shortcuts app with this if/then automation. You can also use this with IFTTT, Samsung SmartThings, and others with an Android phone.
+
+                        My smart light can turn on and off
+               
+
+            This is because of the bulb I have
+    
+Credit: Chris Hachey / MakeUseOf
+One of the other lamps in my bedroom is set up with a 
+WiZ smart bulb
+. I like using the WiZ bulb because it's a colored bulb and we can change the scenes in our room.
+
+                    Subscribe to the newsletter for practical NFC smart-home tips
+                
+Want more hands-on NFC tag and smart-home ideas? Subscribe to the newsletter for step-by-step setups, creative placement tips, and practical automations that help you get the most from NFC and home devices.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+WiZ's app offers automation capabilities through Shortcuts, meaning it is one of the apps that allows you to control it through a shortcut. This gave me the opportunity to turn my smart bulb on and off by tapping the NFC tag.
+Since we never use the light from our ceiling fan, I hung the NFC tag from the light switch. When I walk in the room, I can tap my phone and the light turns on. While this isn't as effective as using my smart speaker to turn it on, for anyone that doesn't have a smart speaker, it's a way to control your smart light.
+It is easier than having to open up the app and access the light from there. It might even make sense to put another NFC tag going up the stairs. That way, you can tap it on your way up and the light will be on by the time you get to the room.
+✕
+ Remove Ads
+
+                        Get ready for bed with some Focus
+               
+
+            This was a no-brainer NFC tag use
+    
+Credit: Chris Hachey / MakeUseOf
+By the end of the day, you're tired and want to go to sleep. If you're like me, you put your phone on Do Not Disturb or one of the other Focus modes the iPhone offers.
+I liked having the NFC tag right on my bedside table and tapping my phone there to put it into Do Not Disturb. This means that my phone won't ring while I'm asleep, helping me avoid being woken up by a phone call or a dreaded work email in the middle of the night.
+It not only helps me sleep more peacefully but also helps me set a healthier boundary from using my phone. If I don't hear it buzzing, it aids me in believing I'm not needed and I can rest. It helps quiet my brain at the end of a long day.
+
+            NFC tags are endlessly useful
+    
+Not only can NFC tags do so many things, but they are ridiculously inexpensive. Deciding where to place them is the hardest part about owning them. While I listed numerous ways of using the technology, there are many more. You can help automate a smart home and help yourself get more done around the house. 
+
+    						NFC Tags
+			
+Using NFC tags is a smart way of automating tasks around your home. You can set them up, tap them, and be on your way.
+See at Amazon
+Expand
+Collapse
+✕
+ Remove Ads
+Smart Home
+NFC
+Smart Home
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+
+                                                    Technology Explained
+                                            
+
+                                                    PC & Mobile
+                                            
+
+			3 tech companies that make your gadgets more expensive
+		
+4 hours ago
+
+			Your SSD does not wipe your deleted files — this is what TRIM actually does
+		
+7 hours ago
+
+			Wireless charging is finally worth using, but only if you know what to look for
+		
+8 hours ago
+See More
+
+			The Lenovo Yoga Pro 7i is a tough sell, but the display is insane
+		
+5 hours ago
+
+			I ran a Windows network reset and fixed problems I'd blamed on my router for months
+		
+9 hours ago
+
+			I switched to Gentoo Linux and now I get why it's worth the headache
+		
+13 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			I disabled one hidden Windows setting and freed up CPU performance instantly
+		
+
+			My 2-year-old Android phone felt too slow to keep— then I fixed it without upgrading
+		
+
+			I set up Pi-hole on my home network, and the internet feels like a completely different place
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+7
+Sign in to your 
+MakeUseOf
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+David
+David
+David
+#NI502578
+Member since 2026-05-08
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I'm struggling to understand how this saves hours. Most of this can be done with voice commands. "Hey Google set a timer."
+2026-05-07 22:49:54
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+
+                        4
+                    
+Copy
+        
+Ron
+Ron
+Ron
+#IN288593
+Member since 2026-05-08
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Yea, was thinking the same about everything in this article, but she would need to 'upgrade' her phone to a Pixel 😆. And lights on/off when you enter/leave a space, motion sensor light switches have existed for decades.
+2026-05-08 06:00:31
+Upvote
+
+                                    4
+                            
+Downvote
+Reply
+Copy
+        
+King
+King
+King
+#NI807058
+Member since 2026-05-08
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I was thinking the same thing. 
+2026-05-08 07:25:10
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Nick
+Nick
+Nick
+#ST449017
+Member since 2026-05-08
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+"Hold on, let me scan this tag with my phone instead of just opening the app"
+2026-05-08 08:23:14
+Upvote
+Downvote
+Reply
+Copy
+        
+Chris
+Chris
+Chris
+#TZ364706
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Just was highlighting some of the possibilities. There is a ton that you can do with NFC tags, just like there's so much you can do with voice assistants, smart speakers, etc. Since Siri isn't the most reliable, might just be easier to tap for someone! 
+2026-05-08 14:14:44
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Chris
+Chris
+Chris
+#MY299298
+Member since 2026-05-08
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I put one by my furnace filter and when I scan it it puts a reminder 3 months out in the future
+2026-05-07 20:41:24
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Paul
+Paul
+Paul
+#HY797011
+Member since 2026-05-08
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+There's loads of better uses... I've a 30 year old car with a cassette player. I've NFC tag on the dash which places my phone in do not disturb with a voice and text message reply notifying callers I'm driving.
+2026-05-08 09:51:07
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+3 days ago
+
+                                    Google's AI search just got a lot more useful — but make sure to vet those sources
+                            
+3 days ago
+
+                                    I turned off one background service and my Linux machine finally felt fast
+                            
+3 days ago
+
+                                    7 popular Windows apps that Microsoft PowerToys made obsolete
+                            
+5 days ago
+
+                                    5 useful things a $5 ESP32 can do for your home network
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+MakeUseOf
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+8:01
+Loaded
+: 
+2.32%
+0:00
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+8:01
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement
+Skip Ad
+5

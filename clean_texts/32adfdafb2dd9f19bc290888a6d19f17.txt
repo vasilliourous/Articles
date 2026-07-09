@@ -1,0 +1,656 @@
+I stopped using Watchtower and found something better for Docker updates
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+8
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I stopped using Watchtower and found something better for Docker updates
+By 
+Samir Makwana
+Published
+ Feb 20, 2026, 6:00 AM EST
+Samir Makwana is a technology journalist and editor from India since past 18 years and his work appears on MakeUseOf, HowToGeek, GSMArena, BGR, GuidingTech, The Inquisitr, TechInAsia, TechWiser, and others. He has written news, features, and gadget reviews for national technology media publications. His passion is to help people with their technology problems and gadget purchases. For that, he has worked for some of the biggest international technology publications, covering news, explainers, how-to guides, listicles, and product-buying guides.
+
+He has worked as an editor and managed teams since 2015. His expertise broadly covers computers, smartphones, game consoles, headphones, smart home products, browsers, and apps.  
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+8
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Experimenting with Docker is fun because you can run several containerized services without messing anything up. That’s how I have a bunch of containers running in my humble home lab. However, I often fail to perform maintenance tasks, such as updating containers to their latest images.
+✕
+ Remove Ads
+I 
+counted on Watchtower
+ to handle automatic updates of the Docker containers. But auto-updating software has backfired for me so many times. Upon learning that Watchtower’s development had slowed, I 
+looked for alternatives
+ and discovered 
+Tugtainer
+.
+Instead of blindly auto-updating containers and breaking things with changes, I prefer being notified about the update before it auto-updates. That’s why I stopped using Watchtower and switched to Tugtainer for Docker updates.
+Related
+
+			4 essential Docker containers i run on every new server
+		
+A collection of handy containers to manage my workstations
+Posts
+9
+By 
+Ayush Pande
+Jan 20, 2026
+
+                        Why I prefer Tugtainer over Watchtower
+               
+
+            Manual control keeps a sanity check
+​
+Despite past problems with auto-updates, I tend to keep auto-updates enabled on every device or machine I use. Even on others’ devices. Continuing the same with Watchtower seemed convenient, except when it broke my containerized services setup a couple of times.
+Typically, Watchtower polls the registry for updates, then pulls the latest image. Then it stops the existing containers and recreates them using the latest updates. Since the 
+entire process is automated
+, it breaks some containers more than once.
+Apart from restarting at odd times, there’s no mechanism to roll back changes. It’s fine for non-essential containers, but it has messed up my self-hosted dashboards like 
+Homarr
+, 
+Heimdall
+, and 
+Homepage
+.
+✕
+ Remove Ads
+
+                        Tugtainer is a game-changer for my workflow
+               
+
+            No complexities involved
+    
+Tugtainer is also a Docker updating container with a very notable twist. It fetches the updates but doesn’t automatically update any containers.
+With Tugtainer, when updates are available, Tugtainer sends notifications to help me make an informed call on whether to update container(s) or skip them. Besides, the “update available” label also appears on the app’s dashboard.
+It’s easy to check and approve updates through Tugtainer’s web interface. By giving me control, I can choose a safer upgrade path for my essential Dockers. Besides, it supports multiple hosts, which allows me to manage updates for Docker running on different machines in my home.
+
+                        Setting up Tugtainer takes barely a few minutes
+               
+
+            Straightforward deployment
+    
+While I made the best of the label-based configuration in Watchtower, I don’t miss it. Deploying Tugtainer barely takes a minute. The app automatically discovers the existing Docker containers running on the same machine.
+I love that I get to choose which containers I want Tugtainer to monitor for manual updates, in addition to auto-updates, and to exclude the experimental ones.
+✕
+ Remove Ads
+I can set to receive notifications through email, webhook, or both ways to not miss out on any updates. On feeding the relevant credentials, the Tugtainer sends a test notification.
+Tugtainer allows adding multiple new host machines and controlling their Docker updates from a single web-based dashboard. So checking all hosts at once becomes convenient, rather than fetching updates individually.
+​
+
+                        Where the difference becomes apparent and shines
+               
+
+            Choice to not auto-update everything
+    
+Tugtainer offers a different set of options instead of the typical 
+'set it and forget it' containers
+. That’s what sets it apart: I can clearly choose which containers I want it to monitor and fetch their updates accordingly.
+The selective control of which containers I want to check for updates, but decide to apply them later, is what I missed in Watchtower. That way, I prevent my 
+media-specific Dockers
+ from automatically updating and crashing.​
+Tugtainer doesn’t show me any changelogs or version numbers. I still need to check the respective container’s Docker Hub or GitHub page for that. So I get notified when the updates exist and get to choose when or whether to apply them. That control is exactly what I needed to not break things with auto-updates.
+What I loved is that Tugtainer smartly picks up the linked containers (media and network) and updates them in the correct order.
+✕
+ Remove Ads
+
+                    Subscribe to our newsletter for Docker update insights
+                
+Join our newsletter for in-depth coverage of container update tools like Tugtainer and Watchtower, hands-on tips for safe upgrades, and tool comparisons to help you choose selective update strategies for a more stable home lab.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+The one thing in common between Watchtower and Tugtainer is that neither shows a full change log, displays version numbers, or offers a comparison of changes across updates. ​
+For multiple hosts, Tugtainer's agent system is really handy for controlling every container’s updates from a 
+single dashboard
+.
+Related
+
+			The single Docker container that made me a home lab power user
+		
+This Docker container transformed my home lab
+Posts
+5
+By 
+Parth Shah
+Oct 4, 2025
+
+            Automatic updates aren’t always better in a home lab
+    
+Tugtainer provides me with the control and visibility to monitor Docker container updates without manual checks. If auto-updates are breaking your containerized system in your home lab, Tugtainer is the perfect alternative to Watchtower. It’s recommended for smaller, more tightly packed setups with a bunch of self-hosted apps running in containers.
+Watchtower works best
+ as an update automation that fetches and applies all the latest updates. But some changes can potentially break things and render the container unavailable. Also, Tugtainer's agent system makes it easy to manage updates for containers running across different machines.
+That said, you can still use Watchtower on a host with a handful of critical containers for your workflow. Meanwhile, Tugtainer can handle the lower-priority ones.
+
+    						Tugtainer
+			
+A web-based app for automated and manual Docker container updates that also offers multiple hosts support.
+See at Tugtainer on GitHub
+Expand
+Collapse
+✕
+ Remove Ads
+Software and Services
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I automated myself out of caring about my home lab
+		
+
+			5 Docker mistakes beginners make in their first month
+		
+
+			7 game-changing Docker containers worth hosting on your NAS
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+8
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Mark
+Mark
+Mark
+#JS289493
+Member since 2026-01-21
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I recently switched to Dockhand. It handles container updates beautifully!
+2026-02-20 16:55:22
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Lloyd
+Lloyd
+Lloyd
+#MC045971
+Member since 2025-03-24
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Thanks for sharing.  This can replace portainer also.
+2026-02-21 07:02:32
+Upvote
+Downvote
+Reply
+Copy
+        
+Jord
+Jord
+Jord
+#TF786912
+Member since 2025-11-29
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Ive found it strange, that to my feeling it seems like there is no finite way to update containers except for manually running the (update/redeploy) commands? What happens when you run multiply hosts with stacks? How to manage...
+Sometimes i just think im stupid :)
+2026-02-21 02:44:32
+Upvote
+Downvote
+Reply
+Copy
+        
+C
+C
+C
+#VP756849
+Member since 2025-12-23
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I've been using OpenClaw for this, it's been excellent, I've been able to ask it to: Identify docker updates and pull change logs. it's able to lookup the release versions, and tell me if it's a Major update (I should be careful) and it even checks if they're running and accessible for me.
+2026-02-21 13:06:37
+Upvote
+Downvote
+Reply
+Copy
+        
+DmasterP
+DmasterP
+DmasterP
+#PF447341
+Member since 2025-07-30
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I switched from Portainer to Arcane. So much better and does updates where it scans and tells you update is avaliable. You click button to update, or at the top of page "update all containers" for bulk update. Not everyone is using a container manager, so may not suit everyone, but it's a really great interface 
+2026-02-21 09:29:26
+Upvote
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+David
+David
+David
+#JB727261
+Member since 2026-02-21
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Agreed. The only thing Arcane can't do over Portainer is swarm management... which I don't need.
+Arcane also has a scheduler for updates.
+2026-02-21 11:58:22
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Simon
+Simon
+Simon
+#MO670497
+Member since 2026-02-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I've switched to DigitallyRefined Containers Up, as this handles container updates by creating pull requests automatically and once they're merged it pulls and restarts containers using Docker compose
+2026-02-22 03:15:42
+Upvote
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Derek
+Derek
+Derek
+#WI799331
+Member since 2024-07-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+How does that differ from Watchtower? Watchtower doesn't "restart" containers, because a container is based on an image, so it has to be running Compose
+2026-02-23 10:35:36
+Upvote
+Downvote
+Reply
+Copy
+        
+CallcenterHaloBCA
+CallcenterHaloBCA
+CallcenterHaloBCA
+#JA433471
+Member since 2026-02-11
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Layanan Halo BCA tersedia 24 jam untuk membantu kebutuhan perbankan nasabah. Nomor resmi Halo BCA adalah 1500888. Layanan Halo BCA juga dapat diakses melalui WhatsApp 62-815-4053-864 HaloBCA dengan koneksi internet dan bebas pulsa
+2026-02-26 10:41:57
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Feb 19, 2026
+
+                                    You, too, can install this cute open-source tamagotchi on your ESP32
+                            
+Feb 19, 2026
+
+                                    Linux 7.0 is preparing fixes for a Wi-Fi driver...from 2017
+                            
+Feb 18, 2026
+
+                                    Amazon's long-overdue Fire TV Stick interface redesign is rolling out now — and it looks great
+                            
+Feb 18, 2026
+
+                                    I finally found a local LLM I actually want to use for coding
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 28, 2026
+1:17
+
+                            Android for Desktop has leaked
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 28, 2026
+1:12
+
+                            Why are we so nostalgic for Windows XP?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 22, 2026
+1:11
+
+                            The closest we'll ever get to Windows Phone 11
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 12, 2026
+1:17
+
+                            Razer made a holographic AI anime Assistant
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Jan 10, 2026
+0:59
+
+                            When will the RAM crisis actually end?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

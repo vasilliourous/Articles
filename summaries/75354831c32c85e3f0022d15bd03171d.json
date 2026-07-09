@@ -1,0 +1,51 @@
+{
+  "article_title": "I deleted 3 productivity apps for this one open-source tool, and I love it",
+  "core_thesis": "Koncentro is a free, open-source, cross-platform productivity app that combines a task manager, a system-level website blocker, and a Pomodoro timer into a single lightweight package, effectively replacing multiple separate tools and reducing friction in maintaining a focused workflow.",
+  "detailed_summary": "The article describes the author's experience replacing three separate productivity tools (a focus mode, a browser site blocker script, and a notes-based task manager) with Koncentro, an open-source app available for Windows, macOS, and Linux. Koncentro integrates three core features: a minimal to-do list with subtasks and time tracking (estimated vs. elapsed), a website blocker that uses a local proxy (mitmproxy) to intercept traffic at the system level (supporting blocklist and allowlist modes tied to workspaces), and a configurable Pomodoro timer that automatically applies workspace-specific blocking rules when a session starts. The app uses workspaces to group tasks, blocker rules, and timer settings for different contexts (e.g., writing vs. research). The initial setup requires installing MitmProxy certificates and may conflict with existing proxies or VPNs. The author notes limitations: no calendar integration, cloud sync, notifications, workspace duplication, or copyable blocklists, and the setup process is rough. However, the unified interface and automatic blocking during Pomodoro sessions made the app effective enough to replace the three previous tools.",
+  "entities": [
+    {
+      "name": "Koncentro",
+      "type": "software",
+      "role": "Open-source productivity app combining task manager, website blocker, and Pomodoro timer."
+    },
+    {
+      "name": "mitmproxy",
+      "type": "software",
+      "role": "Open-source tool used by Koncentro to create a local proxy for system-level website blocking."
+    },
+    {
+      "name": "Tashreef Shareef",
+      "type": "person",
+      "role": "Author of the article and MakeUseOf writer."
+    }
+  ],
+  "key_data_points": [
+    "Koncentro is free, open-source, and runs on Windows, macOS, and Linux (🟢 relevant to your homelab/DevOps: cross-platform compatibility means you can use it on any machine in your lab).",
+    "The website blocker uses a local proxy (mitmproxy) to intercept traffic at the system level, not just in a browser, making it harder to bypass than browser extensions (🟢 relevant to your Red Teaming: understanding proxy-based blocking can help you design bypasses or test network-level controls).",
+    "The blocker supports two modes: blocklist (block specific sites) and allowlist (only allow approved sites), and rules are tied to workspaces (🟢 relevant to your productivity: you can create strict blocking for deep work and relaxed rules for research).",
+    "The Pomodoro timer automatically applies workspace-specific blocking rules when a session starts, integrating focus time with distraction blocking (🟢 relevant to your student needs: this reduces friction in maintaining focus during study sessions).",
+    "The task manager is deliberately minimal—no tags, due dates, or priority flags—but includes estimated vs. elapsed time tracking and drag-and-drop completion (🟢 relevant to your programming: simple, lightweight tools often integrate better into custom workflows).",
+    "Initial setup requires installing MitmProxy certificates and may conflict with existing proxies or VPNs on port 8080 (🟢 relevant to your homelab: be aware of port conflicts if you run other proxy services).",
+    "The app lacks cloud sync, calendar integration, notifications, workspace duplication, and copyable blocklists, indicating it is still in early stages (🟢 relevant to your ambition: you could contribute to the open-source project to add these features)."
+  ],
+  "methodology_steps": [
+    "Download and install Koncentro from its GitHub repository for your operating system (Windows, macOS, or Linux).",
+    "On first launch, complete the guided tour to understand the interface and features; note that the app may require installing MitmProxy certificates for the website blocker to function.",
+    "Configure the website blocker: choose between blocklist mode (add specific distracting sites) or allowlist mode (only allow approved sites). The blocker uses a local proxy on port 8080, so ensure no other service uses that port.",
+    "Create workspaces for different contexts (e.g., 'Writing', 'Research') and assign specific blocking rules to each workspace.",
+    "Use the To Do Tasks tab to create main tasks and subtasks. Set estimated time for each task; the app will track elapsed time automatically or allow manual entry.",
+    "Start a Pomodoro timer from the timer tab; the timer will automatically apply the blocking rules of the active workspace. The timer duration is configurable per workspace.",
+    "When a task is complete, drag and drop it from 'To Do Tasks' to 'Completed Tasks'.",
+    "Switch between workspaces to change task lists, blocking rules, and timer settings as needed."
+  ],
+  "conclusions": [
+    "Koncentro effectively replaces multiple productivity tools by bundling a task manager, website blocker, and Pomodoro timer into one app, reducing the overhead of managing separate tools. The author found it compelling enough to delete three previous apps.",
+    "The system-level website blocker (using mitmproxy) is more robust than browser extensions because it operates at the network level, making it harder to bypass. This is a key differentiator for users who struggle with self-discipline.",
+    "The app's integration of the Pomodoro timer with workspace-specific blocking rules creates a seamless focus session: starting a timer automatically blocks distractions, which reduces the friction of manually enabling blockers.",
+    "Koncentro is still in early development, with notable missing features (cloud sync, calendar, notifications, workspace duplication). However, its open-source nature means the community can contribute improvements.",
+    "For students and programmers, the minimal task manager and cross-platform support make it a lightweight addition to a productivity stack, especially when combined with other open-source tools."
+  ],
+  "personal_relevance_summary": "This article is directly relevant to your productivity and homelab interests. Koncentro is an open-source tool that you can deploy on any of your lab machines (Windows, macOS, Linux) to consolidate task management, website blocking, and Pomodoro timing. As a programmer, you might appreciate its minimalistic design and the ability to inspect or modify its code. The system-level website blocker is particularly interesting from a Red Teaming perspective—understanding how mitmproxy-based blocking works can help you evaluate or bypass similar controls in penetration testing. As a student, the integrated Pomodoro timer with automatic blocking can help you maintain focus during study sessions without juggling multiple apps. The article also highlights the app's limitations, which could be opportunities for you to contribute to the open-source project or build custom integrations.",
+  "extra_advice": "Consider forking Koncentro's repository and adding cloud sync via a self-hosted Nextcloud instance or a simple REST API. This would make it more useful across your homelab devices and give you hands-on experience with open-source contribution. Also, experiment with the mitmproxy setup to understand how system-level proxies can be used for both blocking and monitoring—this knowledge is directly applicable to Red Teaming scenarios where you might need to intercept or manipulate traffic.",
+  "source_url": "https://www.makeuseof.com/koncentro-open-source-productivity-app/"
+}

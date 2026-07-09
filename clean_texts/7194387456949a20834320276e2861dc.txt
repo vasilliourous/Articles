@@ -1,0 +1,450 @@
+Waydroid runs Android apps on Linux better than Windows ever ran them on WSA
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+1
+More Action
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+Waydroid runs Android apps on Linux better than Windows ever ran them on WSA
+By 
+Abhishek Kumar Mishra
+Published
+ Apr 23, 2026, 5:30 PM EDT
+Abhishek is an author at XDA who covers computing. 
+
+He has loved computers since he got the Lenovo G570 in 2012. Abhishek holds a master's degree in computer applications and began his writing career in 2018. He loves writing how-to articles, listicles, and informational posts on popular operating systems and web services.
+
+He closely follows the Windows Insider program and tests new Insider builds to discover upcoming experimental features and upgrades. His past work includes long-term collaborations with reputed publications like 
+Tom's Hardware
+, and 
+Windows Latest
+.
+
+When not writing anything, he is busy watching new episodes of One Piece or searching for something binge-worthy. 
+Sign in to your 
+XDA
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+1
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+The Windows Subsystem for Android (WSA) is history now. Microsoft caved in and killed the project, which angered a lot of users because it was one of the main highlights of the Windows 11 launch. Microsoft failed to anticipate the demand for running Android apps with Google Play Store support, and the option to only download apps via the Amazon Appstore didn’t appeal to a lot of users. I thought WSA would kill 
+third-party Android emulators on Windows
+, but WSA didn’t catch up with them.
+✕
+ Remove Ads
+On the Linux side, though. Waydroid can help run Android apps with Google support, and that opens doors to a wide range of apps compared to WSA. The possibilities are endless, and I don’t need to worry about a limited app library, subpar performance due to virtualization overhead, or figuring out Google account integration.
+
+                        Waydroid ditches the traditional VM route
+               
+
+            LXC containers are better
+    
+ I won't hide the fact that I was very excited when Microsoft unveiled its plans for WSA. There were many Android apps that I wished would work on PC because of the lack of desktop versions. But WSA had a very limited list of apps that I could access via its Amazon App Store partnership. Also, the core idea was to run a virtualized Android system and make the apps feel like they were running on Windows.
+Waydroid doesn't rely completely on the virtualization aspect and instead uses 
+LXC containers
+ (OS-level virtualization), which are like a mini-system within Linux. It avoids using a hardware emulation layer or kernel duplication to work. Instead, it is just a lightweight, isolated Linux environment sharing the same OS kernel. There’s far less translation between layers compared to a virtual machine, which results in better performance while running apps.
+✕
+ Remove Ads
+It's basically the core idea of using any Android app emulator. The app should load instantly, work as it does on phones, and not feel like a cheap imitation. I like the experience because it feels snappy, and it is one of the reasons why Waydroid has a special place on my Linux system.
+When I used WSA, the resource usage was on the higher side as I had to run a complete OS (Windows 11) and an Android virtual machine and divide resources between the two. LXC containers can offer a much better experience because they skip traditional 
+hardware virtualization
+ (CPU, Memory, GPU) and can access it through the Linux kernel sharing. It’s not as clean as bare metal, but it is less taxing on performance compared to full virtualization.
+Related
+
+			WinApps could put an end to using full Windows on my PC (with some work)
+		
+ We're inching closer to a Windows-free world
+Posts
+8
+By 
+João Carrasqueira
+Sep 1, 2025
+
+                        Setting up Waydroid is simple
+               
+
+            No unnecessary tricks needed
+    
+If you’ve ever set up an 
+Android emulator
+ on your PC, you must be aware of the complications that come with it. While WSA was simple to install and run, it needed an Amazon Appstore account to work, and if you wanted to expand it beyond the measly 100 apps, it needed too much effort to get it going.
+Waydroid needs barely two things to work. There are 
+official instructions
+ for different distros, but if you're using Ubuntu or its derivatives, you start by adding the Waydroid repository:
+sudo apt install curl ca-certificates -y
+curl -s 
+https://repo.waydro.id
+ | sudo bash
+✕
+ Remove Ads
+Then, you must update your Linux system (I use Ubuntu) with a simple 
+sudo apt update && upgrade
+ command before running the Waydroid install command.
+sudo apt install waydroid -y
+Once the tool installs, you can launch it using the icon and then pick the Android with Google Apps option during initialization. It’ll download the required files, which are around 1200 MB, and then a full-fledged Android OS (version 13) is available at your disposal. Earlier, you needed to certify your Linux device with Google before accessing the Play Store library.
+I didn’t face the problem after installation, and it's great news for Linux noobs. Rather than enduring the long, arduous process of certifying your device, you can simply log in to your account and start installing apps. The experience is similar to how you set up a new Android device.
+
+                        Vast app library
+               
+
+            WSA barely had a catalog
+    
+ Even if WSA figured out performance improvements, the app list would make it the least competent emulation app. Waydroid supports Google accounts natively, like 
+BlueStacks
+, and that is a game-changer because the Play Store library is vast. If I look at it from a beginner, non-techy user standpoint, it would be easier to set up Waydroid and sign in with the Google account compared to what WSA tries to offer.
+✕
+ Remove Ads
+
+                    Subscribe to our newsletter for Waydroid & Linux Android tips
+                
+Curious about running Android apps on Linux? Subscribe to the newsletter for clear, practical coverage of Waydroid and Android-on-Linux setups — installation guides, Play Store integration, performance tuning, and troubleshooting to help you master app compatibility.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+Waydroid can run and install apps that are only designed for Arm processors, though these entries might show up as unsupported in the Play Store. The success rate varies, but the fact that it's possible is a big win for Linux users. There are several other methods to get apps, like the Aurora store or F-Droid. Games also follow the same route with mixed success in a few popular titles.
+One thing you need to remember is Waydroid’s reliance on 
+Wayland
+. It’s a modern display server that some Linux distros don’t include or enable by default, and Waydroid won’t work without it. Ubuntu uses Wayland by default, and so do other distros like KDE Neon and Fedora. If you use a non-Wayland distro like 
+AntiX
+ that uses X11, you’ll have to use Weston to run a nested compositor to display the Waydroid interface.
+
+            Waydroid is wonderful
+    
+Windows might have ditched the WSA project, but Waydroid achieves a better experience without additional complexities. You can access the Play Store library, a core part of any modern Android app emulator, and can switch between software and GPU rendering for better performance. It can also run some unsupported apps using scripts and additional libraries, making it much better in comparison.
+
+    						Waydroid
+			
+Waydroid is a container-based approach that boots a full Android system on regular Linux systems running the Wayland Compositor desktop environment.
+See at Waydroid
+Expand
+Collapse
+✕
+ Remove Ads
+Linux
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I gave Claude Code control of my desktop for a week, and it automated things I didn't think were possible
+		
+
+			Claude Code's creator keeps sharing tips, and they all made my experience better
+		
+
+			Wine 11 rewrites how Linux runs Windows games at the kernel level, and the speed gains are massive
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+1
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+wojtek
+wojtek
+wojtek
+#EX105555
+Member since 2025-09-19
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+that's kinda the buty of Android being built in top of Linux - things like waydroid using lightweight LXD  container are available and you don't have two bo emulation route.
+2026-04-24 02:05:59
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Muntasir
+Muntasir
+Muntasir
+#LP059528
+Member since 2026-04-30
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Camera works in whatsapp????
+2026-04-30 12:07:08
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 23, 2026
+
+                                    Someone is running a website entirely off an ESP32 with 520 KB of RAM, and you can too
+                            
+Apr 23, 2026
+
+                                    You can now run modern Linux kernels inside Windows 95 with this fan-made project
+                            
+Apr 22, 2026
+
+                                    The Claude feature everyone ignores is the one I use every single day to boost my productivity
+                            
+Apr 22, 2026
+
+                                    I've been running SteamOS on a non-Steam mini PC, and it makes a better living room console than I expected
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:15
+
+                            What was the best version of Windows?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            Windows XP's Secret Themes
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:11
+Skip Ad
+5

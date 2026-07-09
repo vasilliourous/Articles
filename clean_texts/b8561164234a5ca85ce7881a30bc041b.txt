@@ -1,0 +1,391 @@
+Claude wants to rule your personal life now
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+1
+More Action
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+Claude wants to rule your personal life now
+Credit: Anthropic
+By 
+Patrick O'Rourke
+Published
+ Apr 24, 2026, 11:17 AM EDT
+Patrick O'Rourke is XDA's News Editor and Entertainment Segment Lead. Previously, he was Pocket-lint's Editor-in-Chief, the Editor-in-Chief of Canadian tech publication 
+MobileSyrup
+, and earlier in his career, he worked as the technology editor at the 
+Financial Post and Postmedia
+. He's based in Toronto.
+
+Over the past 15 years, he's written thousands of articles. Patrick has also interviewed dozens of tech industry executives and covered GDC, E3, Gamescom, WWDC, Apple keynotes, Samsung Unpacked events and more.
+
+Patrick has a BA in journalism from Toronto Metropolitan University. 
+Sign in to your 
+XDA
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+1
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Summary
+
+                                        Claude adds consumer apps like Audible, AllTrails, Instacart, Uber, Resy, TripAdvisor and more.
+                        
+
+                                        Apps appear dynamically to suggest the right app for reservations, groceries, or trip planning.
+                        
+
+                                        Claude gains more access to personal data but asks before purchases and remains ad-free.
+                        
+Anthropic
+ has announced that it's expanding the type of apps that can 
+connect to its Claude AI chatbot
+. The list of services now includes more personal apps like Audible, AllTrails, Instacart, Intuit, Credit Karma, Intuit TurboTax, Resy, StubHub, Taskrabbit, Thumbtack, TripAdvisor, Uber Eats, Uber, and Vaitor. Anthropic says more platforms are coming.
+✕
+ Remove Ads
+While this app integration makes Claude more useful, it also gives the chatbot even more access to your personal information. That said, this allows Claude to perform more complex tasks on your behalf, which is the entire point of AI like this to begin with. This new service integration mirrors the functionality Claude offers on the professional and educational sides, two areas where Anthtopic has focused over the past year.
+
+                        Connected platforms now appear dynamically in conversations
+               
+
+            Anthropic says Claud features over 200 app integrations
+    
+With this integration, you can plan a hike on AllTrails, and then pull up a Spotify playlist to see if it will last the length of your travels. Additionally, you can ask AllTrails to find nearby paths that match your preferences, whether you're looking for something dog-friendly or a more scenic route. Anthropic says that apps should appear dynamically in Claude conversations rather than forcing users to swipe between apps intentionally.
+"Claude now suggests the right app for what you're doing, like finding a reservation, adding to a grocery cart, or identifying a flight. It's working from what you've told it: your preferences, your context, your conversation," writes Anthropic.
+In the same press release, Anthropic emphasizes that "Claude is ad-free and will stay that way," stating that there are no paid placements or sponsored answers in conversations with the AI chatbot. That said, Claude will still suggest connectors and make recommendations, though Anthropic says that this happens organically.
+✕
+ Remove Ads
+The AI company says that Claude will check with the user before taking actions like making a purchase or a reservation. Since launching in July 2025, Claude's app integration has grown to over 200 platforms. In other recent Claude-related news, Anthropic has confirmed that it's 
+experimenting with a Pro plan
+ that doesn't contain Claude Code. 
+Related
+
+			A developer restored OrcaSlicer's features that Bambu Lab killed — then the legal threats arrived
+		
+People aren't happy.
+Posts
+5
+By 
+Simon Batt
+Apr 23, 2026
+Software and Services
+Claude
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I gave Claude Code control of my desktop for a week, and it automated things I didn't think were possible
+		
+
+			I used Claude Code, Antigravity, and Perplexity Computer to build a portfolio — there was a clear winner
+		
+
+			Forget Cursor and Claude Code, Google Antigravity is the perfect example of vibe coding
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+1
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+William
+William
+William
+#YM709106
+Member since 2024-08-28
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Why are you trying to make it sound ominous in the title? It's literally just optional app integrations. How is this bad?
+2026-05-02 06:51:35
+Upvote
+Downvote
+Reply
+Copy
+        
+Paul
+Paul
+Paul
+#KC123592
+Member since 2024-11-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Sigh. It doesn't really matter to me what Claude can do. Even with a pro subscription I keep running out of tokens. Then I'm totally locked out. You've got to continuously watch the usage meter, track "peak" hours (peak for who), summarize and start over. It's starting to be the opposite of a helpful assistant.
+2026-04-27 18:35:41
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 23, 2026
+
+                                    Claude Code works best when you stop asking it to code
+                            
+Apr 23, 2026
+
+                                    Local LLMs changed how I use Home Assistant, and now my smart devices actually listen
+                            
+Apr 23, 2026
+
+                                    Microsoft's Copilot just became the productivity collaborator it was promised to be
+                            
+Apr 22, 2026
+
+                                    The Claude feature everyone ignores is the one I use every single day to boost my productivity
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:26
+
+                            Id Software's Quake turns 30
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            How much data does Steam use in a year?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

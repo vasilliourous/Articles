@@ -1,0 +1,565 @@
+Nobody talks about this polished open-source note-taking app, and I don’t get it
+Menu
+Sign in now
+Close
+PC & Mobile
+Submenu
+Windows2
+Linux
+Android
+Apple
+Technical
+Submenu
+Tech Explained
+Security
+Software
+Submenu
+Productivity
+Internet
+Creative
+Screen
+Submenu
+Entertainment
+Streaming
+Home
+Submenu
+Smart Home
+Home
+News
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+6
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+Productivity
+Android
+Smart TVs
+Networking
+Windows 11
+Entertainment
+Close
+Nobody talks about this polished open-source note-taking app, and I don’t get it
+Yadullah Abidi / MakeUseOf
+Credit: Yadullah Abidi / MakeUseOf
+By 
+Afam Onyimadu
+Published
+ Apr 19, 2026, 3:00 PM EDT
+Afam's experience in tech publishing dates back to 2018, when he worked for Make Tech Easier. Over the years, he has built a reputation for publishing high-quality guides, reviews, tips, and explainer articles, covering Windows, Linux, and open source tools. His work has been featured on top websites, including Technical Ustad, Windows Report, Guiding Tech, Alphr, and Next of Windows.
+
+He holds a first degree in Computer Science and is a strong advocate for data privacy and security, with several tips, videos, and tutorials on the subject published on the Fuzo Tech YouTube channel.
+
+When he is not working, he loves to spend time with his family, cycling, or tending to his garden.  
+Sign in to your 
+MakeUseOf
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+6
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+As a tech writer, I'm constantly checking out new writing and note-taking tools, and whenever I do, I'm typically searching for the "holy grail" of that niche. With note-taking apps, I've tried far more than I'm willing to admit. 
+A few, like Obsidian
+, Notion, and even OneNote, have been solid.
+✕
+ Remove Ads
+However, no matter the tool I try, I've always come back to Joplin. For regular, everyday work, it's polished, easy to use, cross-platform, and offers freedom from lock-in. It's the true king of the note-taking niche.
+
+                        Joplin doesn't win you over immediately
+               
+
+            It earns its place slowly—and that's exactly the point
+    
+Design sometimes signals quality, and Joplin doesn't look spectacular, especially not if you're used to Notion or Obsidian. So I understand how this first experience can make someone jump to a conclusion.
+However, the seemingly plain design of Joplin feels deliberate. You get a three-panel layout: notebooks, notes, and an editor, and it stays consistent across macOS, Windows, and Linux. Aside from the interface, you also get a consistent set of keyboard shortcuts, with mobile apps following the same structure as the desktop app.
+This is an intentional consistency that's prioritized over providing a stripped-down alternative on some platforms. It allows you to have the same experience regardless of the device.
+The consistency is Joplin's form of polish, and this is harder to achieve than a beautiful but inconsistent onboarding screen. The very first time I went from laptop to phone mid-project, there was no need to reorient myself. The app's consistency is the kind of finish many other tools do not attempt.
+✕
+ Remove Ads
+
+    						Joplin
+			
+OS
+
+									
+										
+											Windows, macOS, Linux, Android, iOS, FreeBSD, Terminal
+
+										
+																	
+Developer
+
+									
+										
+											Laurent Cozic (and community)
+
+										
+																	
+Price model
+
+									
+										
+											Free (open-source); Paid subscription for cloud storage
+
+										
+																	
+Joplin is a cross-platform, privacy-focused note-taking and task-management app. It supports rich features like Markdown notes, notebooks and tags, end-to-end encryption, a web clipper, self-hosted sync (via WebDAV/Nextcloud/Dropbox) or managed cloud sync with Joplin Cloud. It works offline, allows importing from Evernote, supports plugins and themes, and gives full control over your data. 
+See at Joplin
+See at GitHub
+Google Play Store
+App Store
+Expand
+Collapse
+
+                        Your notes are safer here than anywhere else
+               
+
+            Ownership and encryption—and what each one actually means in practice
+    
+Afam Onyimadu / MUO
+ When you use most note-taking apps, you put a lot of trust in the company and its promises. You trust exports work when you need them, you trust the company will remain online, and more critically, you trust that data is handled responsibly. Joplin, on the other hand, reduces the amount of trust required from a provider.
+Your notes are kept in Markdown in a database that is stored on your device. They never depend on whether Joplin's servers are available. It has a clean export process that delivers your files in Markdown, which are readable and editable in any text editor; you are not trapped in any particular ecosystem. This is an important distinction from certain other tools that work with proprietary formats that only specific apps can decode.
+It's useful to compare Joplin with Obsidian, because both tools are big on data ownership. In fact, Obsidian has an edge with a slightly more direct approach that involves saving notes on the disk as .md files. But I still lean towards Joplin because end-to-end encryption (E2EE) is part of the free package, a feature that will cost me at least $4 in Obsidian per month.
+✕
+ Remove Ads
+Joplin protects against a threat model that is relevant to most people by offering E2EE in transit and on the sync server. However, you don't get encryption for the local database on your device, which is also true for almost every note app in this category. This is exactly how some of the popular note apps in this category compare:
+App
+Data format
+Local-first
+Free E2EE
+Clean exit
+Joplin
+Markdown (local database)
+Yes
+Yes
+Markdown export
+Obsidian
+Plain .md files on disk
+Yes
+No (needs $4/mo plan)
+Already on disk
+Evernote
+Proprietary
+No
+No
+ENEX (proprietary)
+Notion
+Proprietary
+No
+No
+Inconsistent export
+OneNote
+Proprietary
+No
+No
+.onepkg (proprietary/large)
+Joplin has an optional sync service called Joplin Cloud that costs about €2.40/month. However, this is just an optional service that lets you pay for convenience rather than a means of gatekeeping features that should be free.
+Related
+
+			I started using Obsidian as a complete beginner and now I understand why people switch and never go back
+		
+It can be as simple, or as complex as you want it to be.
+Posts
+7
+By 
+Manuviraj Godara
+Apr 4, 2026
+
+                        The depth reveals itself only when you need it
+               
+
+            What I discovered after a year that wasn't obvious on day one
+    
+Afam Onyimadu / MUO
+✕
+ Remove Ads
+ I was pleasantly surprised when I tried moving a batch of notes automatically in Joplin. I used its local REST API to pipe web content directly into a notebook. I didn't even have to touch Joplin's interface, and the twenty-minute setup time was worth it. It has saved me several hours ever since. For tools that can make HTTP requests, Joplin's REST API allows you to create, search, and modify notes.
+Also, if you primarily work in the terminal, you will benefit from its command-line client. But one element that brings Joplin to life is its plugin ecosystem. It's not as robust as several alternatives, but it's manageable in a way that makes it easy to find the right tools to add the exact kind of functionality you need. I use the 
+Jarvis plugin
+ a lot. Connected to my local Ollama instance, I'm able to summarize, auto-tag, and perform semantic search.
+Most of the plugins I use with Joplin today were not part of my workflow from the first day. But it has consistently provided tools that remove friction and add fluidity to note-taking at the points when I actually need them.
+
+            So why doesn't everyone use Joplin?
+    
+Joplin doesn't prioritize aesthetics. Even though it has a functional interface, 
+it will never match the visual elegance of tools like Notion
+. So if visual motivation is a huge factor in how you write, Joplin wouldn't work for you.
+It also has other gaps. The lack of a native bidirectional linking system is an example. This is where Obsidian beats it, especially for anyone building a Zettelkasten. However, these flaws constitute the visible shape of what Joplin isn't trying to be. It's not a collaborative workspace, nor is it a knowledge graph tool. It takes note‑taking seriously: it's cross‑platform at a level few alternatives match, is privacy‑focused, and is free at its core.
+✕
+ Remove Ads
+All Joplin tries to do is make you actually invest in notes, rather than a platform, and that's why even when I try several elegant options, 
+I still end up back with Joplin
+.
+Productivity
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+
+                                                    Technology Explained
+                                            
+
+                                                    PC & Mobile
+                                            
+
+			Wireless charging is finally worth using, but only if you know what to look for
+		
+16 minutes ago
+
+			CPU-Z shows more than PC specs if you know where to look
+		
+2 hours ago
+
+			Your CPU is throttling itself, and one BIOS toggle will fix it
+		
+22 hours ago
+See More
+
+			I ran a Windows network reset and fixed problems I'd blamed on my router for months
+		
+1 hour ago
+
+			I switched to Gentoo Linux and now I get why it's worth the headache
+		
+5 hours ago
+
+			Windows has been hoarding old drivers on your SSD — here's how to clear them out
+		
+17 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			Sorry, Windows and Linux: this is still the better OS for developers
+		
+
+			ChatGPT refused to help me vibe code my project and it led me somewhere better
+		
+
+			I stopped using Task Manager once I found what Windows hides from it
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+6
+Sign in to your 
+MakeUseOf
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Ted
+Ted
+Ted
+#SE712576
+Member since 2025-02-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+This article absolutely sold me on Joplin as I was getting extremely frustrated trying out many other notetaking / tagged PKMs. Thank you! Best of all it's completely free. Because I use One Drive.
+2026-04-20 09:03:12
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+
+                        2
+                    
+Copy
+        
+Brian
+Brian
+Brian
+#XX510671
+Member since 2026-04-20
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Be aware syncing Joplin using OneDrive can appear to freak out at times.  I ignored other users' warnings about Joplin sync issues with OneDrive, and it worked well for me for months.  But then one morning I noticed Joplin's sync status on my phone said it was deleting thousands of entries (many more than the number of notes I have).  Trying to cancel or pause the sync did nothing.  Copilot had me check some things and then told me it was not routine, and was a known sync issue, and I needed to switch to airplane mode immediately to stop the data loss.  I opened Joplin on my PC to make sure it's copy of my notes was in tact, but when I did it went immediately into the same self destruct syncing.  In the end, I didn't lose any data, but it was a frantic half day trying to figure out what went wrong and ensuring my data was safe.  I think the syncing probably was actually routine, and is caused by the way OneDrive syncs data to my phone.  But this experience was enough to push me to the Joplin Cloud sync, which is priced pretty reasonably and has been great.
+2026-04-20 10:12:12
+Upvote
+Downvote
+Reply
+Copy
+        
+Todd
+Todd
+Todd
+#JQ798543
+Member since 2025-08-07
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I've been using Joplin for years and years now. Since way back when it was very rough around the edges. I tried Obsidian for about a year side by side with Joplin, then finally ditched Obsidian. Joplin isn't as pretty, but it's more flexible, and in the ways that matter to me, it's more powerful. Oh. And it is open source and end-to-end encrypted.
+At this point, I pay for the the Joplin Cloud service since it adds sharing features that I use quite a bit. Plus, I use the product extensively at this point, and therefore I should pay for it. I used to sync everything to Dropbox. It worked pretty flawlessly for me.
+2026-04-21 08:03:42
+Upvote
+Downvote
+Reply
+Copy
+        
+Jonathan
+Jonathan
+Jonathan
+#TL886177
+Member since 2024-08-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I use OneNote very often and I was intrigued by Joplin's question about how well the Web Clipper works on Android and PC?
+2026-04-20 00:59:24
+Upvote
+Downvote
+Reply
+Copy
+        
+Clinton
+Clinton
+Clinton
+#GZ565960
+Member since 2025-09-29
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I've tried them all and keep coming back to Joplin. Simple, secure, and free synchronizing with Dropbox. I use Google Tasks for the "verbs"  and actions I have to take. Google Keep for "nouns"  and quick notes. Joplin for my "knowledge"  and notebooks.
+2026-04-19 23:34:50
+Upvote
+Downvote
+Reply
+Copy
+        
+Paul
+Paul
+Paul
+#WJ217262
+Member since 2026-04-20
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+The are serious issues with plugins on android. Just still my note taker of choice but I work on both windows and android and if a plug-in only works on one it doesn't work at all.
+2026-04-19 22:43:09
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 17, 2026
+
+                                    Claude can now design your slide decks — and a whole lot more
+                            
+Apr 16, 2026
+
+                                    6 things I 3D print now instead of buying again
+                            
+Apr 16, 2026
+
+                                    I stopped using Microsoft Word and write everything in Markdown now — this is my setup
+                            
+Apr 16, 2026
+
+                                    There's a hidden spec on SSDs that lets me pick the fastest every time
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+MakeUseOf
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:07
+Skip Ad
+5

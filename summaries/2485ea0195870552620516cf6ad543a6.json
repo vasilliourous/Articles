@@ -1,0 +1,47 @@
+{
+  "article_title": "Vibe coding is dead. Long live actual coding.",
+  "core_thesis": "The era of 'vibe coding'—where AI generates entire applications with minimal human intervention—has ended because it led to a flood of undifferentiated, low-quality products. The market now demands engineers who possess deep technical skills, can debug and optimize AI-generated code, and build unique, maintainable systems rather than relying solely on prompt engineering.",
+  "detailed_summary": "The article recounts the author's personal experience building a SaaS tool in a weekend using Cursor, which wrote 90% of the code. Despite a polished product, no one signed up because the market was already saturated with nearly identical AI-generated tools. This illustrates the core problem: vibe coding, popularized by Andrej Karpathy in early 2024, made software creation accessible to everyone, but the resulting abundance of similar products devalued the output. The author argues that as AI tools become ubiquitous, the competitive advantage shifts from speed of creation to depth of understanding. The market now rewards engineers who can critically evaluate, debug, and refine AI-generated code, and who possess the architectural knowledge to build systems that are not just functional but also secure, scalable, and maintainable. The article concludes that the future belongs to 'actual coders'—those who combine AI assistance with strong fundamentals in computer science, system design, and cybersecurity.",
+  "entities": [
+    {
+      "name": "Andrej Karpathy",
+      "type": "person",
+      "role": "AI researcher who coined the term 'vibe coding' in early 2024, sparking a trend of AI-generated software."
+    },
+    {
+      "name": "Cursor",
+      "type": "organization",
+      "role": "AI-powered code editor that enabled rapid development, used by the author to build a SaaS tool."
+    },
+    {
+      "name": "Bolt.new",
+      "type": "organization",
+      "role": "AI development platform that contributed to the vibe coding movement."
+    },
+    {
+      "name": "Replit",
+      "type": "organization",
+      "role": "Online IDE that gained traction during the vibe coding era for its AI-assisted features."
+    },
+    {
+      "name": "Product Hunt",
+      "type": "organization",
+      "role": "Platform where many identical AI-generated tools were launched, highlighting market saturation."
+    }
+  ],
+  "key_data_points": [
+    "The author built a SaaS tool in a weekend with Cursor writing 90% of the code, yet received zero sign-ups due to market saturation (🟢 relevant to your Red Teaming: demonstrates that rapid AI-generated tools often lack uniqueness and security considerations, making them easy targets for exploitation).",
+    "Andrej Karpathy's 2024 definition of vibe coding encouraged developers to 'forget that the code even exists,' leading to a generation of builders who never touched a terminal (🟢 relevant to your programming needs: highlights the danger of ignoring underlying code—essential for debugging and security).",
+    "The market is now flooded with identical AI-generated products—same gradient blob headers, same hero copy, same three-tier pricing—resulting in low user retention and high bounce rates (🟢 relevant to your homelab/devops: emphasizes the need for custom, well-architected solutions over cookie-cutter templates).",
+    "The article claims that 'everyone can build' means 'nothing you build automatically stands out,' shifting value from creation speed to engineering depth (🟢 relevant to your ambition: encourages investing in deep technical skills rather than relying solely on AI)."
+  ],
+  "methodology_steps": [],
+  "conclusions": [
+    "Vibe coding is dead because it produced a commodity market where differentiation is impossible; the competitive advantage now lies in deep technical expertise and the ability to critically evaluate and improve AI-generated code.",
+    "The market in 2026 rewards engineers who understand system design, security, and maintainability—skills that go beyond prompt engineering. For Red Teaming, this means AI-generated code often contains vulnerabilities that a skilled engineer can exploit or fix.",
+    "To succeed, developers should use AI as an accelerator, not a crutch, and focus on building unique, secure, and scalable systems. This aligns with the user's interests in cybersecurity, homelabbing, and DevOps, where custom solutions and deep understanding are paramount."
+  ],
+  "personal_relevance_summary": "This article directly addresses the user's interest in cybersecurity and programming by warning against over-reliance on AI-generated code, which often lacks security and uniqueness. For Red Teaming, it highlights that AI-generated tools are low-hanging fruit due to common vulnerabilities and lack of customization. For homelab and DevOps, it reinforces the value of building custom, well-architected systems rather than using generic templates. As a student, the article encourages developing deep technical skills over superficial prompt engineering, which is crucial for long-term career growth. The user can take away the importance of combining AI assistance with strong fundamentals in debugging, security, and system design.",
+  "extra_advice": "Consider auditing AI-generated code for common security flaws (e.g., injection vulnerabilities, hardcoded secrets) as a Red Teaming exercise. For homelab projects, deliberately avoid AI-generated boilerplate and instead focus on manual configuration to deepen your understanding of the underlying infrastructure.",
+  "source_url": "https://levelup.gitconnected.com/vibe-coding-is-dead-long-live-actual-coding-33f5507348c3"
+}

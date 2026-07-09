@@ -1,0 +1,60 @@
+{
+  "article_title": "A PHP Dev Just Solved a 20+ Year-Old KDE Plasma Problem No One Else Would",
+  "core_thesis": "A long-standing KDE Plasma limitation—the inability to show different virtual desktops on each monitor independently—has been resolved by a PHP developer with minimal C++ experience, Hynek Schlindenbuch, through a merge request to KWin's master branch. The fix is Wayland-only and will ship in Plasma 6.7, overcoming a 20+ year-old bug that was previously deemed infeasible under X11 due to EWMH protocol constraints.",
+  "detailed_summary": "The article reports that a bug filed in 2005 by Kjetil Kjernsmo, requesting per-screen independent virtual desktops in KDE, has finally been fixed. Over 15 duplicate reports accumulated over the years, but the issue remained unresolved because X11's EWMH specification does not support multiple active virtual desktops simultaneously. KWin maintainer Martin Flöser had ruled out a fix for the KDE 4.x series in 2013, stating that only Wayland could enable this feature. Hynek Schlindenbuch, a full-time PHP developer with no prior KDE contributions and minimal C++/Qt/CMake experience, implemented the solution. His motivation was to switch to Wayland for fractional scaling but was blocked by the missing per-screen desktop functionality. The merge request has been accepted into KWin's master branch and is slated for Plasma 6.7. The implementation allows each screen to independently track which virtual desktop it displays, with windows assigned to specific screens and desktops. Keyboard shortcuts only switch the desktop on the active screen, and the feature is opt-in (default remains synchronized switching). The fix is Wayland-only; X11 was intentionally excluded as Plasma 6.8 will drop X11 support anyway.",
+  "entities": [
+    {
+      "name": "Hynek Schlindenbuch",
+      "type": "person",
+      "role": "Developer who implemented the per-screen virtual desktop feature for KWin; a PHP programmer with no prior KDE contributions."
+    },
+    {
+      "name": "Kjetil Kjernsmo",
+      "type": "person",
+      "role": "Original bug reporter in 2005 who requested independent virtual desktops per screen."
+    },
+    {
+      "name": "Martin Flöser",
+      "type": "person",
+      "role": "KWin maintainer who previously stated the feature was impossible under X11."
+    },
+    {
+      "name": "KDE Plasma",
+      "type": "software",
+      "role": "Desktop environment where the fix will be integrated, starting with Plasma 6.7."
+    },
+    {
+      "name": "KWin",
+      "type": "software",
+      "role": "KDE's window manager where the merge request was applied."
+    },
+    {
+      "name": "Wayland",
+      "type": "protocol",
+      "role": "Display server protocol that enabled the fix; X11 was incompatible due to EWMH."
+    },
+    {
+      "name": "X11",
+      "type": "protocol",
+      "role": "Legacy display server protocol that prevented the feature due to EWMH constraints."
+    }
+  ],
+  "key_data_points": [
+    "The bug was originally filed in 2005 against KDE 3.3.2 on Debian Stable, requesting per-screen independent virtual desktops. (🟢 Relevant to your homelab/DevOps: multi-monitor setups are common in development environments; this fix improves workflow efficiency.)",
+    "Over 15 duplicate reports were filed over the years, indicating widespread demand. (🟢 Shows community need; useful for understanding user pain points in Linux desktop environments.)",
+    "The technical barrier was X11's EWMH specification, which has no concept of multiple active virtual desktops. Martin Flöser confirmed this in 2013, ruling out a fix for KDE 4.x. (🟢 Relevant to your Red Teaming: understanding protocol limitations can inform exploitation of legacy systems.)",
+    "The fix is Wayland-only; X11 was intentionally excluded because Plasma 6.8 will drop X11 support. (🟢 Important for homelab planning: if you use multi-monitor setups, consider migrating to Wayland to benefit from this feature.)",
+    "Hynek Schlindenbuch, a PHP developer with no prior KDE contributions and minimal C++/Qt/CMake experience, implemented the solution. (🟢 Demonstrates that ambitious developers can contribute to large projects; encourages you to tackle challenging problems.)",
+    "The implementation allows each screen to independently track its virtual desktop, windows are assigned to specific screens, and keyboard shortcuts only affect the active screen. (🟢 Directly improves productivity for multi-monitor users; you can now have different workspaces on each display.)",
+    "The feature is opt-in; synchronized switching remains the default. (🟢 Provides flexibility; you can enable it via settings when needed.)"
+  ],
+  "methodology_steps": [],
+  "conclusions": [
+    "A long-standing KDE limitation has been resolved by a determined individual with a non-traditional background, proving that complex open-source problems can be solved by motivated newcomers. (🟢 Encourages you to contribute to projects you care about, even if you lack deep expertise.)",
+    "The fix is Wayland-only, aligning with the industry shift away from X11. Users on multi-monitor setups should plan to migrate to Wayland to take advantage of this and future features. (🟢 Relevant to your homelab: if you run KDE, consider testing Wayland to improve multi-monitor workflow.)",
+    "The developer's motivation was practical (fractional scaling) and he solved a blocker himself. This exemplifies the open-source ethos of scratching your own itch. (🟢 Inspires you to identify and solve your own pain points in your homelab or development environment.)"
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your homelab and DevOps interests, especially if you use KDE Plasma with multiple monitors. The new per-screen virtual desktop feature can significantly improve your workflow by allowing different workspaces on each display, which is common in development and system administration. As a programmer, you can appreciate how a PHP developer with minimal C++ experience solved a 20-year-old problem—this demonstrates that ambitious individuals can make impactful contributions to complex projects. For your Red Teaming perspective, understanding the limitations of X11 vs Wayland can inform your knowledge of legacy system vulnerabilities. Additionally, the article reinforces the value of migrating to Wayland for modern features, which is a practical consideration for your homelab setup.",
+  "extra_advice": "Consider setting up a KDE Plasma 6.7 beta or development environment to test the per-screen virtual desktop feature early. If you encounter any issues, you could contribute feedback or even attempt to fix them, following Hynek's example. Additionally, explore Wayland's other advantages for multi-monitor setups, such as improved fractional scaling and security, which are beneficial for both homelab and Red Teaming practice.",
+  "source_url": "https://itsfoss.com/news/kde-plasma-per-screen-virtual-desktops/"
+}

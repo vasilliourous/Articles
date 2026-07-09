@@ -1,0 +1,461 @@
+NGINX is Dead? // Angie Web Server Migration Guide - YouTube
+
+      Back
+    
+
+  NZ
+
+Skip navigation
+
+        Search
+      
+
+  Search with your voice
+
+Sign in
+
+  NZ
+
+1-click OpenClaw | Hostinger.com/openclaw
+Tap to unmute
+2x
+NGINX is Dead? // Angie Web Server Migration Guide
+Christian Lempa   18,326 views   1 month ago
+Search
+Copy link
+Info
+Shopping
+If playback doesn't begin shortly, try restarting your device.
+•
+You're signed out
+Videos you watch may be added to the TV's watch history and influence TV recommendations. To avoid this, cancel and sign in to YouTube on your computer.
+Cancel
+Confirm
+Share
+Include playlist
+An error occurred while retrieving sharing information. Please try again later.
+0:00
+0:00
+ / 
+0:27
+Live
+•
+Watch full video
+•
+•
+1x
+NGINX is Dead? // Angie Web Server Migration Guide
+Christian Lempa
+
+  
+    Christian Lempa
+  
+
+271K subscribers
+Join
+Subscribe
+Subscribed
+539
+Share
+Save
+Download
+
+  Download
+
+18K views
+1 month ago
+
+  18,326 views • Mar 27, 2026
+
+Check out Twingate and supercharge your security: 
+https://bit.ly/3Y1OaZi
+
+
+If you're still running NGINX as a reverse proxy in Docker or on a web server, it might be time to consider Angie — a drop-in replacement built by former NGINX engineers. I'll walk you through migrating your existing configs, setti
+…
+...more
+
+...more
+
+Chapters
+View all
+Introduction
+Introduction
+0:00
+Introduction
+0:00
+What is Angie?
+What is Angie?
+2:54
+What is Angie?
+2:54
+Migrate from Nginx to Angie
+Migrate from Nginx to Angie
+4:49
+Migrate from Nginx to Angie
+4:49
+ACME TLS Cert retrieval and renewal
+ACME TLS Cert retrieval and renewal
+7:26
+ACME TLS Cert retrieval and renewal
+7:26
+What about DNS Challenge?
+What about DNS Challenge?
+13:16
+What about DNS Challenge?
+13:16
+Prometheus Metrics
+Prometheus Metrics
+14:38
+Prometheus Metrics
+14:38
+Docker Upstream Discovery and LB
+Docker Upstream Discovery and LB
+16:24
+Docker Upstream Discovery and LB
+16:24
+ANIC Kubernetes Ingress and alternatives
+ANIC Kubernetes Ingress and alternatives
+19:00
+ANIC Kubernetes Ingress and alternatives
+19:00
+Transcript
+Follow along using the transcript.
+Show transcript
+Christian Lempa
+
+      271K subscribers
+    
+Videos
+About
+Show less
+
+NGINX is Dead? // Angie Web Server Migration Guide
+18,326 views
+18K views
+Mar 27, 2026
+539
+Share
+Save
+Download
+
+  Download
+
+Comments
+Comments
+128
+Top
+                
+
+              Show featured comments
+            
+Newest
+                
+
+              Show recent comments, including potential spam
+            
+In this video
+Chapters
+Transcript
+Chapters
+Introduction
+Introduction
+0:00
+Introduction
+0:00
+What is Angie?
+What is Angie?
+2:54
+What is Angie?
+2:54
+Migrate from Nginx to Angie
+Migrate from Nginx to Angie
+4:49
+Migrate from Nginx to Angie
+4:49
+ACME TLS Cert retrieval and renewal
+ACME TLS Cert retrieval and renewal
+7:26
+ACME TLS Cert retrieval and renewal
+7:26
+What about DNS Challenge?
+What about DNS Challenge?
+13:16
+What about DNS Challenge?
+13:16
+Prometheus Metrics
+Prometheus Metrics
+14:38
+Prometheus Metrics
+14:38
+Docker Upstream Discovery and LB
+Docker Upstream Discovery and LB
+16:24
+Docker Upstream Discovery and LB
+16:24
+ANIC Kubernetes Ingress and alternatives
+ANIC Kubernetes Ingress and alternatives
+19:00
+ANIC Kubernetes Ingress and alternatives
+19:00
+Final thoughts
+Final thoughts
+20:35
+Final thoughts
+20:35
+Sync to video time
+Description
+NGINX is Dead? // Angie Web Server Migration Guide
+539
+Likes
+18,326
+Views
+Mar 27
+2026
+Check out Twingate and supercharge your security: 
+https://bit.ly/3Y1OaZi
+
+
+If you're still running NGINX as a reverse proxy in Docker or on a web server, it might be time to consider Angie — a drop-in replacement built by former NGINX engineers. I'll walk you through migrating your existing configs, setting up built-in ACME for automatic TLS certificates without certbot, enabling native Prometheus metrics, and configuring Docker upstream discovery.
+
+References
+
+Write-Up: 
+https://christianlempa.de/videos/angi...
+Angie: 
+https://en.angie.software/angie/
+My Traefik Tutorial: 
+ • Simple HTTPs for Docker! // Traefik Tutori...  
+
+________________
+
+💜 Support me and become a Fan!
+   → 
+https://christianlempa.de/patreon
+
+   → 
+ / @christianlempa  
+
+
+💬 Join our Community!
+   → 
+https://christianlempa.de/discord
+
+
+👉 Follow me everywhere
+   → 
+https://christianlempa.de
+
+
+________________
+
+Read my Tech Documentation
+
+https://christianlempa.de/docs
+
+
+My Gear and Equipment
+
+https://christianlempa.de/kit
+
+
+________________
+
+Timestamps:
+
+
+00:00
+ Introduction
+
+02:54
+ What is Angie?
+
+04:49
+ Migrate from Nginx to Angie
+
+07:26
+ ACME TLS Cert retrieval and renewal
+
+13:16
+ What about DNS Challenge?
+
+14:38
+ Prometheus Metrics
+
+16:24
+ Docker Upstream Discovery and LB
+
+19:00
+ ANIC Kubernetes Ingress and alternatives
+
+20:35
+ Final thoughts
+
+________________
+Links can include affiliate links.
+…
+...more
+
+...more
+
+Show less
+
+Chapters
+View all
+Introduction
+Introduction
+0:00
+Introduction
+0:00
+What is Angie?
+What is Angie?
+2:54
+What is Angie?
+2:54
+Migrate from Nginx to Angie
+Migrate from Nginx to Angie
+4:49
+Migrate from Nginx to Angie
+4:49
+ACME TLS Cert retrieval and renewal
+ACME TLS Cert retrieval and renewal
+7:26
+ACME TLS Cert retrieval and renewal
+7:26
+Transcript
+Follow along using the transcript.
+Show transcript
+Christian Lempa
+
+      271K subscribers
+    
+Videos
+About
+Transcript
+NaN / NaN
+25:59
+Dockhand: A Smarter, Safer Docker Manager
+Christian Lempa
+11K views
+ • 
+21 hours ago
+New
+23:30
+Caddy: Everyone Says It’s the EASIEST… I Tested It
+Christian Lempa
+24K views
+ • 
+2 weeks ago
+9:50
+They Lied to You About AI (This Study Proves It)
+Caleb Ulku
+267K views
+ • 
+1 month ago
+19:48
+I Tested the Cheapest Path to 96GB of VRAM
+Alex Ziskind
+287K views
+ • 
+1 month ago
+14:26
+I Was DEFINITELY Using The Wrong Server
+DevOps Toolbox
+54K views
+ • 
+2 months ago
+30:21
+NetBird Setup Guide (New & Simplified)
+Christian Lempa
+33K views
+ • 
+4 weeks ago
+15:05
+The USB Keyboard We're Never Allowed to Plug In
+Adam Savage’s Tested
+242K views
+ • 
+3 days ago
+New
+9:39
+The AI Economy is about to change
+The PrimeTime
+971K views
+ • 
+7 days ago
+31:41
+MORE Rude & Naughty Countdown Words | 8 Out of 10 Cats Does Countdown | Channel 4
+Channel 4 Entertainment
+1.3M views
+ • 
+5 months ago
+LIVE
+dreamy spring morning by the lake 🌿 birdsong, window ASMR ambience & flowing water for tea & study 🌻
+Happiness Window 
+178 watching
+19:47
+Docker Core Concepts Every Developer Should Know
+LearnThatStack
+114K views
+ • 
+1 month ago
+47:09
+Stop putting secrets in .env
+Syntax
+56K views
+ • 
+2 months ago
+2:11:10
+Professor Jiang: We Are Already in World War 3, I Am 80% Certain!
+The Diary Of A CEO
+and Predictive History
+3.3M views
+ • 
+2 days ago
+New
+23:10
+Self-hosted Cloudflare + VPN replacement! Pangolin Tutorial
+Christian Lempa
+64K views
+ • 
+3 months ago
+22:08
+Why Google Just Gave Away Gemma 4 for Free
+Ali H. Salem
+256K views
+ • 
+5 days ago
+New
+16:08
+This Open Source Project Just Killed the Proxmox GUI!
+2GuysTek
+88K views
+ • 
+2 months ago
+17:08
+Smart Engineers Are Moving Away From Github, Here's Why...
+Mischa van den Burg
+92K views
+ • 
+2 months ago
+23:56
+This kubernetes homelab setup is my favorite one yet.
+Mischa van den Burg
+90K views
+ • 
+1 month ago
+15:38
+Self-Hosted Apps That Replace Everything You Pay For in 2026
+WunderTech
+202K views
+ • 
+3 weeks ago
+12:21
+Trump Does Iran War Damage Control, Kash Patel’s in Panic Mode & Rubio's Awkward Pope Meeting
+Jimmy Kimmel Live
+2.4M views
+ • 
+1 day ago
+New
+Show more
+Join this channel and unlock members-only perks

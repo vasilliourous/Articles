@@ -1,0 +1,648 @@
+6 open-source programs I use instead of the paid alternatives
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+5
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+6 open-source programs I use instead of the paid alternatives
+By 
+Megan Ellis
+Published
+ Apr 21, 2026, 9:31 AM EDT
+Megan is a Software Writer at XDA Developers who has been writing about consumer technology since 2016. With a postgraduate degree in New Media journalism, she has always been passionate about diving deep into topics and writing about them in a way that makes them easier to understand for everyday consumers.
+
+She runs her own blog called 
+Tech Valkyrie
+ and has contributed to 
+Tom's Guide
+ and 
+Android Authority
+. She also worked at MakeUseOf as a Lead Editor.
+
+In her spare time she plays video games and geeks out about the latest tech. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+5
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+It's not uncommon nowadays for useful apps and services to require a subscription or a one-time purchase. But there are plenty of free open-source programs. This free availability is one of the 
+reasons you should try open-source software
+, and has been a driving factor in my adoption for years.
+✕
+ Remove Ads
+My first move into open-source software was when Adobe started using a software-as-a-service subscription model. Over the years, I have expanded my list of open-source programs that I regularly use.
+Related
+
+			The 20 best open-source alternatives to popular software on Windows
+		
+Not everyone wants to trust big corporations, and these open-source Windows programs give the power back to the community.
+Posts
+16
+By 
+João Carrasqueira
+Jul 9, 2024
+
+                        GIMP
+               
+
+            An image-editing alternative to Photoshop
+    
+ I'm far from a creative professional when it comes to image editing — I rarely work with layers. Most of what I do involves editing a few things like contrast and saturation, cropping photos, and censoring information in screenshots.
+I used to have access to Photoshop when I was a student, but when that access ended, I switched to GIMP. While it lacks some of the features Photoshop has, you can install 
+GIMP plugins to customize your experience
+.
+Related
+
+			8 ways GIMP isn't just a Photoshop alternative
+		
+It's a powerful tool with its own strengths
+Posts
+6
+By 
+Nolen Jonker
+Mar 15, 2025
+While I'm not utilizing its most powerful features, it facilitated my move away from paid software before many free, capable image editors were available.
+
+    						GNU Image Manipulation Program (GIMP)
+			
+See at GIMP
+Expand
+Collapse
+
+                        VLC
+               
+
+            No need for a paid media player
+    
+✕
+ Remove Ads
+ I've never used a paid media player for Windows, but there was a time when the OS's built-in player was woefully lacking and didn't work with many of the file formats I used. That's when I started using VLC as my go-to video player.
+VLC has basic features but also supports a variety of file formats. I enjoy the fact that I can boost the video playback volume to over 100%. You can also use VLC as a streaming media player — both for self-hosted files and for connecting to remote servers.
+Related
+
+			9 hidden features in VLC you might not know about
+		
+VLC is one of the better media players around but how many of these features do you already use?
+Posts
+By 
+Joe Rice-Jones
+Feb 22, 2025
+However, I mostly use VLC to view videos that I've taken with my phone's camera on my computer. If VLC's features aren't advanced enough for you to use it for streaming from a media server, you could try 
+replacing your streaming services with Jellyfin,
+ a free, self-hosted, open-source app.
+
+    						VLC
+			
+See at VLC
+Expand
+Collapse
+
+                        Firefox
+               
+
+            A free, open-source browser
+    
+When I first started using Firefox, I had no idea it was open-source. There are plenty of free browsers to choose from, but Firefox places a bit more emphasis on privacy than competitors like Chrome.
+✕
+ Remove Ads
+My recent switch back to Firefox was triggered by Google's change to Manifest V3 for Chrome. While a variety of 
+apps keep me bound to Google's ecosystem
+, my browser is the first thing I want to switch out.
+Related
+
+			6 reasons why you should forget Chrome and use Firefox
+		
+It's time to leave Google behind
+Posts
+18
+By 
+João Carrasqueira
+Nov 13, 2024
+I also want to practice more browser compartmentalization. I already do most of my streaming through Firefox, but I hope to move over more accounts and keep certain profiles separate.
+
+    						Firefox
+			
+See at Mozilla
+Expand
+Collapse
+
+                        7-Zip
+               
+
+            Compress files faster and for free
+    
+Many people forget that WinRAR is technically paid software. However, 7-Zip not only supports faster compression with its 7z file format, but it's also completely free and open-source. Most people get by just fine using Windows' built-in unzipping tools, but if you want to compress a large amount of data more quickly, then 7-Zip is a great option.
+I also recommend 
+using 7-Zip instead of WinRAR
+ because WinRAR repeatedly prompts users to upgrade from the free trial. However, its support for more file formats and faster compression algorithms make 7-Zip the best choice for general usage and archiving data.
+
+    						7-Zip
+			
+See at 7-Zip
+Expand
+Collapse
+✕
+ Remove Ads
+
+                        ShareX
+               
+
+            A feature-rich screenshot tool
+    
+Most of us don't need more than Windows' Snipping Tool for taking screenshots. But if you take a large number of screenshots or want to edit the image from within your capture software, then ShareX provides plenty of features while also being free.
+I still rely on Snipping Tool for most of my screenshots, but when I need to add a bit more annotation or pixelate content, I switch over to ShareX. After all, it literally costs me nothing.
+
+				ShareX
+			
+See at ShareX
+See at Microsoft
+Expand
+Collapse
+
+                        OBS
+               
+
+            Great for screen recording and streaming
+    
+I first started using OBS to record games for YouTube as it didn't require a subscription and included an array of features that made recording seamless. Over time, though, I've moved towards using OBS to record interviews and meetings as a backup to my notes.
+
+                    Subscribe for more open-source tool picks and tips
+                
+Join the newsletter to explore curated open-source recommendations, hands-on setup tips, plugin and extension suggestions, and deeper comparisons that help you choose and configure free alternatives to paid apps.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+Video conferencing tools support recording, but this often requires a subscription, or you only get a limited amount of space for recordings. Because OBS is completely free and open-source, my only limitation is how much space I have on my drive.
+✕
+ Remove Ads
+Related
+
+			My webcam didn’t come with customization software, so I used OBS to reframe it
+		
+If your webcam's field of view is too wide, here's how you can use OBS to crop and reframe it
+Posts
+By 
+Sumukh Rao
+Dec 5, 2024
+Other game recording software can capture and stream games, with support for automatic clips for highlights. But 
+OBS is still a great option for streaming and recording games
+ and
+ a capable screen-recording tool for meetings and interviews.
+
+    						OBS Studio
+			
+See at OBS Project
+Expand
+Collapse
+
+            Open-source programs continue to flourish
+    
+While I wouldn't consider myself a big proponent of open-source software, I am a big proponent of free software. I was surprised by just how many programs I use that are also open-source. This has given me a new appreciation for the category of software, and I'm interested in actively trying to use more open-source programs.
+✕
+ Remove Ads
+Software and Services
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			You have probably never updated your BIOS — that's why your PC is struggling
+		
+
+			I replaced three single-purpose apps with VLC's hidden features, and I haven't looked back
+		
+
+			I tested Claude’s new interactive visuals, and they’re changing how I explain things
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+5
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Amaranthine
+Amaranthine
+Amaranthine
+#SZ972961
+Member since 2026-04-12
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Pot Player is better than VLC
+For Windows 11 you don't need 7zip either, the inbuilt zip is fine enough
+2026-04-24 22:57:10
+Upvote
+
+                                    3
+                            
+Downvote
+Reply
+
+                        3
+                    
+Copy
+        
+Zaz
+Zaz
+Zaz
+#FL064345
+Member since 2023-10-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
++1 for Pot Player. Totally underrated.
+2026-04-25 07:11:48
+Upvote
+Downvote
+Reply
+Copy
+        
+Hipno
+Hipno
+Hipno
+#VL843736
+Member since 2025-01-05
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Pot Player vs VLC is similar but is closed-sourced so users can't do anything they want with it, while not having anything more and AFAIK no built-in subtitles searcher like VLC.
+For 7zip, no the built-in is not enough.
+It's slower.
+It's less efficient.
+It's closed-sourced. (Same things as above).
+It doesn't support nearly as many file types.
+It doesn't compress nearly as well.
+It doesn't compress with nearly as many options.
+It's "good enough" only if you don't care about it being worse in every single way by pretty far instead of installing something for like a minute that'll work way better and in way more situations 
+2026-04-28 17:03:36
+Upvote
+Downvote
+Reply
+Copy
+        
+Alan
+Alan
+Alan
+#RK513043
+Member since 2026-04-29
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I'd disagree with you relating to 7Zip. Its a vastly superior archival tool than the inbuilt windows offering. Sure, Windows 11 can handle 7Zip extensions now , however what it can't do is split volumes, create self extracting packages, and creat ultra compressed packages for large chunks of data. Windows 11 archive tools are also notoriously slow and can lock up your system when processing , whereas 7Zip can move the entire process to the background and let you continue your work .
+2026-04-29 04:11:16
+Upvote
+Downvote
+Reply
+Copy
+        
+Hasan
+Hasan
+Hasan
+#EA992435
+Member since 2026-04-21
+Following
+1
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Fox tv android usb software.
+2026-04-21 14:31:18
+Upvote
+Downvote
+Reply
+Copy
+        
+Dan
+Dan
+Dan
+#MW289092
+Member since 2026-03-21
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+GIMP has also been my mainstay for image editing.
+2026-04-21 20:43:48
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 20, 2026
+
+                                    There’s a hidden Android Auto notes app most people never discover — I use it at every red light
+                            
+Apr 19, 2026
+
+                                    I gave Claude Code control of my desktop for a week, and it automated things I didn't think were possible
+                            
+Apr 10, 2026
+
+                                    I run Hyper-V instead of VirtualBox on Windows 11, and it's faster and free
+                            
+Apr 9, 2026
+
+                                    6 Proxmox LXCs I set up once and never think about again
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            How much data does Steam use in a year?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:07
+
+                            The end of affordable PCs?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:15
+
+                            What was the best version of Windows?
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement: 0:06
+Skip Ad
+5

@@ -1,0 +1,249 @@
+A Linux Hardware Maker is Convincing Colorado to Leave Open Source Alone
+🧩 Quizzes & Puzzles
+🎒 Resources
+📬 Newsletter
+▶️ YouTube
+🏘️ Community
+📖 About
+ Contact Us
+ Policies
+👤 Members
+ Get Plus Membership
+ Free eBooks for Members
+About
+🎁 Donate
+Privacy Policy
+Linux Server Stuff
+Log in
+Sign up
+      
+Sign in
+      
+🧩 Quizzes & Puzzles
+🎒 Resources
+📬 Newsletter
+▶️ YouTube
+🏘️ Community
+📖 About
+ Contact Us
+ Policies
+👤 Members
+ Get Plus Membership
+ Free eBooks for Members
+About
+🎁 Donate
+Privacy Policy
+Linux Server Stuff
+
+          Log in
+        
+
+          Subscribe
+        
+A Linux Hardware Maker is Convincing Colorado to Leave Open Source Alone
+After months of advocacy, Colorado's age verification bill is set for an amendment to exclude open source.
+Sourav Rudra
+23 Apr 2026
+2 min read
+4 comments
+On this page
+Speaking up helps!
+Powered By
+10
+Replacing Ubuntu With Newer Version in Dual Boot Setup
+Share
+Next
+Stay
+Skip Ad
+Replacing Ubuntu With Newer Version in Dual Boot Setup
+NOW 
+ PLAYING
+Customize GNOME Task Switcher on Linux [And Give it a Different Look]
+NOW 
+ PLAYING
+How to Install Deb Files in Ubuntu 24.04 [GUI & Terminal]  #UbuntuQuickTip
+NOW 
+ PLAYING
+Install Google Chrome on Ubuntu 24.04 [NO Command Line] #UbuntuQuickTip
+NOW 
+ PLAYING
+How to Run AppImages in Ubuntu 24.04 LTS #UbuntuQuickFixes
+NOW 
+ PLAYING
+Fedora 40 Overview: What's in the latest and greatest release of this cutting edge Linux distro?
+NOW 
+ PLAYING
+Is Ubuntu 24.04 LTS Worth Upgrading To? Full Review!
+NOW 
+ PLAYING
+15 Tweaks to Get More Out of KDE's Dolphin File Manager in Linux
+NOW 
+ PLAYING
+5 Ways to Customize Terminal in Ubuntu Linux
+NOW 
+ PLAYING
+Install and Use Steam to Play Games on Ubuntu #howtoubuntu
+NOW 
+ PLAYING
+Arrow Left #1 Icon
+Created with Sketch.
+Arrow right #1 Icon
+Created with Sketch.
+Carl Richell, the founder of 
+System76
+, has shared that Colorado's Age Attestation Bill (SB26-051) is 
+set to be amended to exclude open source software
+ from its requirements.
+The 
+proposed amendment
+ would exclude open source operating systems and apps, code repositories like GitHub and GitLab, and containers like Docker and Podman.
+We covered this bill 
+back in February
+, when it made no such distinction. Carl has been 
+working directly
+ with Colorado Senator 
+Matt Ball
+, the bill's co-author, to push for these exclusions since then, and it looks like his efforts are paying off.
+Carl Richell via 
+Fosstodon
+.
+When 
+Neal Gompa
+ (
+of Fedora fame
+) 
+followed up
+, asking whether there was any outreach to California and New York over their age verification bills, Carl replied by saying that the community now has 
+a template to take the fight elsewhere
+.
+And that the next step is a letter to Colorado representatives to pass the bill with the amendments in place, and then adapting that letter for other states while working with the open source community to raise awareness.
+Before any of that, though, 
+Carl has to testify
+. 🏛️
+He's scheduled to appear before lawmakers today, on April 23, and is asking the community for backup. He's specifically looking for stories where kids have built or made things thanks to having unhindered access to open source software.
+You can share them on the Fosstodon post linked above or 
+DM him directly
+.
+As for 
+the bill itself
+, it passed the Colorado Senate 28-7 back in March and is currently waiting on a House vote.
+Speaking up helps!
+All this is proof that speaking up against something detrimental and fighting for your rights does work if there's enough noise and disruption surrounding it.
+And while users of Linux distros and other open source platforms in Colorado will hopefully breathe a sigh of relief, those in the other states are still at risk of being affected by age verification laws.
+Maybe Carl's template is something you could apply in your state? 
+😉
+And then there's also the 
+proposed federal bill
+ pushing for OS-level age verification across the US, with no exemptions for open source, potentially overriding any state-level exclusions.
+News
+Share
+Share
+Share
+Share
+Email
+Feedback
+About the author
+Sourav Rudra
+A nerd with a passion for open source software, custom PC builds, motorsports, and exploring the endless possibilities of this world.
+Featured
+Dirty Frag is a New Linux Exploit That Grants Root, and There's No Proper Patch Yet
+After Days of DDoS, Now Ubuntu's Twitter Account Seems to be Compromised
+LibreOffice Questions Whether Euro-Office is Truly Sovereign
+Should You Be Worried About The Copy Fail Linux Exploit?
+Go Away Microsoft! The Netherlands is Quietly Building Its Own GitHub Replacement
+Latest
+Good Job Dell and Lenovo! Hope Others Follow You
+
+                  09 May 2026
+                
+FOSS Weekly #26.19: Ubuntu Under Attack, Linux Exploitation Ongoing, Upgrading to 26.04, Linux on PS5 and More
+
+                  07 May 2026
+                
+Yazi is the Terminal-based File Manager I Didn't Know I Needed
+
+                  07 May 2026
+                
+
+              Become a Better Linux User
+            
+
+                With the FOSS Weekly Newsletter, you learn useful Linux tips, discover applications, explore new distros and stay updated with the latest from Linux world 
+            
+Subscribe
+Great! Check your inbox and click the link.
+Sorry, something went wrong. Please try again.
+Read next
+Good Job Dell and Lenovo! Hope Others Follow You
+Dirty Frag is a New Linux Exploit That Grants Root, and There's No Proper Patch Yet
+After Days of DDoS, Now Ubuntu's Twitter Account Seems to be Compromised
+This $85 PCB is Giving Old Google Home Mini Devices a Second Life
+LibreOffice Questions Whether Euro-Office is Truly Sovereign
+Become a Better Linux User
+With the FOSS Weekly Newsletter, you learn useful Linux tips, discover applications, explore new distros and stay updated with the latest from Linux world 
+Subscribe
+Great! Check your inbox and click the link.
+Sorry, something went wrong. Please try again.
+
+          Making You A Better Linux User
+        
+Subscribe
+Great! Check your inbox and click the link.
+Sorry, something went wrong. Please try again.
+Navigation
+🧩 Quizzes & Puzzles
+🎒 Resources
+📬 Newsletter
+▶️ YouTube
+🏘️ Community
+📖 About
+ Contact Us
+ Policies
+👤 Members
+ Get Plus Membership
+ Free eBooks for Members
+About
+🎁 Donate
+Privacy Policy
+Linux Server Stuff
+Resources
+Courses 🎓
+Distro Resources 📖
+Guides 📒
+Social
+Facebook
+Twitter
+RSS
+Bluesky
+Mastodon
+Download more icon variants from https://tabler-icons.io/i/brand-github
+Github
+Download more icon variants from https://tabler-icons.io/i/brand-instagram
+Instagram
+Reddit
+Download more icon variants from https://tabler-icons.io/i/brand-telegram
+Telegram
+Download more icon variants from https://tabler-icons.io/i/brand-youtube
+Youtube
+©2026 
+It's FOSS
+.
+Hosted on 
+Digital Ocean (get $200 in FREE credits)
+ & Published with 
+Ghost
+ & 
+Rinne
+.
+System
+Light
+Dark
+Great! You’ve successfully signed up.
+Welcome back! You've successfully signed in.
+You've successfully subscribed to It's FOSS.
+Your link has expired.
+Success! Check your email for magic link to sign-in.
+Success! Your billing info has been updated.
+Your billing was not updated.
+Privacy Manager
+Freestar.com

@@ -1,0 +1,545 @@
+Why Noi may be the best way to run ChatGPT and Claude side-by-side on your desktop | ZDNET
+X
+Trending
+I wore the world's first HDR10 smart glasses
+TCL's new E Ink tablet beats the Remarkable and Kindle
+Anker's new charger is one of the most unique I've ever seen
+Best laptop cooling pads
+Best flip phones
+Roku TV vs Fire Stick
+Galaxy Buds 3 Pro vs Apple AirPods Pro 3
+M5 MacBook Pro vs M4 MacBook Air
+Linux Mint vs Zorin OS
+4 quick steps to make your Android phone run like new again
+How much RAM does your Linux PC need
+How to clear your Android phone cache
+How to disable ACR on your TV
+How to turn on Private DNS mode on Android
+ZDNET Recommends
+Tech
+Gaming
+Headphones
+Laptops
+Mobile Accessories
+Networking
+PCs
+Printers
+Smartphones
+Smart Watches
+Speakers
+Streaming Devices
+Streaming Services
+Tablets
+TVs
+Wearables
+Kitchen & Household
+Office Furniture
+Office Hardware & Appliances
+Smart Home
+Smart Lighting
+Yard & Outdoors
+Innovation
+Artificial Intelligence
+AR + VR
+Cloud
+Digital Transformation
+Energy
+Robotics
+Sustainability
+Transportation
+Work Life
+Accelerate your tech game 
+Paid Content
+How the New Space Race Will Drive Innovation
+How the metaverse will change the future of work and society
+Managing the Multicloud
+The Future of the Internet
+The New Rules of Work
+The Tech Trends to Watch in 2023
+Business
+See all Business
+Amazon
+Apple
+Developer
+E-Commerce
+Edge Computing
+Enterprise Software
+Executive
+Google
+Microsoft
+Professional Development
+Social Media
+SMB
+Windows
+How AI is transforming organizations everywhere
+The intersection of generative AI and engineering
+Software development: Emerging trends and changing roles
+Security
+See all Security
+Cyber Threats
+Password Manager
+Ransomware
+VPN
+Cybersecurity: Let's get tactical
+Securing the Cloud
+Advice
+Deals
+How-to
+Product Comparisons
+Product Spotlights
+Reviews
+Buying Guides
+See all Buying Guides
+Best Samsung phones
+Best Android phones
+Best smart rings
+Best blood pressure watches
+Best headphones for sleeping
+Best robot vacuum mops
+Best web hosting services
+Best travel VPNs
+Best VPNs
+Best AI image generators
+Best AI chatbots
+Best 75-inch TVs
+Best smartphones
+Best iPhones
+Best MagSafe battery packs
+Best digital notebooks
+Best TV antennas
+Best TVs
+Best laptops
+Best tablets
+Best smartwatches
+Best headphones
+Best live TV streaming services
+tomorrow
+belongs to those who embrace it
+today
+ZDNET France
+ZDNET Germany
+ZDNET Korea
+ZDNET Japan
+Go
+See all Topics
+Finance
+Education
+Health
+Special Features
+ZDNET In Depth
+ZDNET Recommends
+Newsletters
+Videos
+Editorial Guidelines
+Trending
+I wore the world's first HDR10 smart glasses
+TCL's new E Ink tablet beats the Remarkable and Kindle
+Anker's new charger is one of the most unique I've ever seen
+Best laptop cooling pads
+Best flip phones
+Roku TV vs Fire Stick
+Galaxy Buds 3 Pro vs Apple AirPods Pro 3
+M5 MacBook Pro vs M4 MacBook Air
+Linux Mint vs Zorin OS
+4 quick steps to make your Android phone run like new again
+How much RAM does your Linux PC need
+How to clear your Android phone cache
+How to disable ACR on your TV
+How to turn on Private DNS mode on Android
+ZDNET Recommends
+Tech
+Gaming
+Headphones
+Laptops
+Mobile Accessories
+Networking
+PCs
+Printers
+Smartphones
+Smart Watches
+Speakers
+Streaming Devices
+Streaming Services
+Tablets
+TVs
+Wearables
+Kitchen & Household
+Office Furniture
+Office Hardware & Appliances
+Smart Home
+Smart Lighting
+Yard & Outdoors
+Innovation
+Artificial Intelligence
+AR + VR
+Cloud
+Digital Transformation
+Energy
+Robotics
+Sustainability
+Transportation
+Work Life
+Accelerate your tech game 
+Paid Content
+How the New Space Race Will Drive Innovation
+How the metaverse will change the future of work and society
+Managing the Multicloud
+The Future of the Internet
+The New Rules of Work
+The Tech Trends to Watch in 2023
+Business
+See all Business
+Amazon
+Apple
+Developer
+E-Commerce
+Edge Computing
+Enterprise Software
+Executive
+Google
+Microsoft
+Professional Development
+Social Media
+SMB
+Windows
+How AI is transforming organizations everywhere
+The intersection of generative AI and engineering
+Software development: Emerging trends and changing roles
+Security
+See all Security
+Cyber Threats
+Password Manager
+Ransomware
+VPN
+Cybersecurity: Let's get tactical
+Securing the Cloud
+Advice
+Deals
+How-to
+Product Comparisons
+Product Spotlights
+Reviews
+Buying Guides
+See all Buying Guides
+Best Samsung phones
+Best Android phones
+Best smart rings
+Best blood pressure watches
+Best headphones for sleeping
+Best robot vacuum mops
+Best web hosting services
+Best travel VPNs
+Best VPNs
+Best AI image generators
+Best AI chatbots
+Best 75-inch TVs
+Best smartphones
+Best iPhones
+Best MagSafe battery packs
+Best digital notebooks
+Best TV antennas
+Best TVs
+Best laptops
+Best tablets
+Best smartwatches
+Best headphones
+Best live TV streaming services
+More
+See all Topics
+Finance
+Education
+Health
+Special Features
+ZDNET In Depth
+ZDNET Recommends
+Newsletters
+Videos
+Editorial Guidelines
+Innovation
+
+      Home
+    
+
+      Innovation
+    
+
+      Artificial Intelligence
+    
+
+    Why Noi may be the best way to run ChatGPT and Claude side-by-side on your desktop
+    
+
+    With an uptick in AI services worldwide, it's becoming more difficult to keep them all in one place, which is why an app like Noi is ideal.
+  
+Written by
+
+            Jack Wallen, 
+Contributing Writer
+Contributing Writer
+March 27, 2026 at 7:16 a.m. PT
+must read
+Why Chrome may have quietly downloaded a 4GB file to your PC - and how to get rid of it
+Read now 
+Eugene Mymrin/Getty Images
+Follow ZDNET: 
+Add us as a preferred source
+ on Google.
+ZDNET's key takeaways
+If you use lots of AI services, you need Noi.
+Noi lets you access multiple services through a single UI.
+The system is free to install and connects to multiple AI services.
+I want to preface this article by saying that for 99% of the time, I use 
+locally installed AI
+ (for many reasons). However, that preference doesn't mean I can't appreciate an app that makes things exponentially easier -- and that's certainly the case with 
+Noi
+.
+Noi is a GUI app that brings together all AI services (and more) in one place. This app gives you easy access to services like 
+ChatGPT
+, 
+Claude
+, 
+Gemini
+, 
+Perplexity
+, and 
+more
+.
+The app also includes some neat features, such as multi-window management, session isolation, local-first data for history and prompts, prompt management, a built-in terminal for local commands, and multiple themes.
+Also: 
+I tried a Linux distro that promises free, built-in AI - and things got weird
+I even used the built-in terminal to access my 
+locally installed Ollama instance
+ (and the GUI, once it was added). For some services, such as Gemini and Perplexity, you don't even have to sign in. Of course, if you want to sync and track your chats, you'll need to sign in, but you can use the app anonymously.
+I found myself keeping multiple tabs open with Noi for 
+DeepWiki
+, Perplexity, Gemini, and 
+GitHub
+. With the command line Ollama, I had everything I needed in one place. Sure, most of my time will be spent with local Ollama, but should I need a different service, it's all there, under one digital roof.
+Although I'd like to add Ollama to the GUI, I'm used to interacting with it via the command line, so it's no big deal.
+I ran a quick test on 
+Qwen
+ with the prompt:
+Write a Python GUI app that accepts input from a user for name, age, gender, email address, and favorite Linux distribution.
+The first time I asked, Perplexity failed me, with a warning stating that I didn't have permission to access the service. I closed the Perplexity tab, re-opened it, and ran the query again. This time, the query was successful. I even followed up my query to see how well it worked, which was another success.
+Also: 
+How to run DeepSeek AI locally to protect your privacy - 2 easy ways
+So, yes, some services in Noi do require you to have an account and to log in.
+Spaces
+When you open Noi, you'll notice the sidebar is filled with various services. That sidebar is actually the default space. You can create other spaces and populate them with only the services you need, for a much more efficient UI. You can create multiple spaces, each with different services, meaning you can switch between them as required.
+To create a new space, click the Spaces icon in the bottom toolbar (hover over the icons to find the correct one) and click +. Give the new space a name and click Save.
+Creating a custom space in Noi.
+Jack Wallen/ZDNET
+Once you've added your new space, you manually add the services you want, so you'll need the required URL for each. For example, if you want to add ChatGPT, click the tiny link icon at the top-left of the sidebar, give it a name, and then add https://www.chatgpt.com as the address.
+Ollama knows what Linux is.
+Jack Wallen/ZDNET
+I was able to add an "official" (as in it runs within the GUI) 
+Ollama
+ instance, but that approach required running Ollama (on a local server) using WebUI, and the URL was http://192.168.1.25:3000. This instance worked well. You can bet I'll primarily use this approach with Noi.
+It would be nice if Noi allowed you to pin services to a new space easily, but that's not possible at the moment.
+Getting Noi
+Noi is available for Linux, MacOS, and Windows. You can download an installer file for your OS of choice from the 
+official Noi download page
+. Once downloaded, you can install Noi in the same way you'd install any app on your operating system. The installation process is straightforward, so you should have no problems.
+Featured
+
+
+            Google Maps vs. Waze: I've driven with the two best navigation apps, and one is much better
+          
+
+
+            These 5 critical Windows Defender settings are off by default - turn them on ASAP
+          
+
+
+            I've tested robot mowers for years - here's my expert advice for every yard type
+          
+
+
+            This critical Linux vulnerability is putting millions of systems at risk - how to protect yours
+          
+
+
+              Google Maps vs. Waze: I've driven with the two best navigation apps, and one is much better
+            
+
+
+              These 5 critical Windows Defender settings are off by default - turn them on ASAP
+            
+
+
+              I've tested robot mowers for years - here's my expert advice for every yard type
+            
+
+
+              This critical Linux vulnerability is putting millions of systems at risk - how to protect yours
+            
+Editorial standards
+Show Comments
+
+          Log In to Comment
+        
+Community Guidelines
+Click to unmute
+Every UAP video released by the U.S. Department of War in 14 minutes
+Every UAP video released by the U.S. Department of War in 14 minutes
+Video Player is loading.
+Play Video
+Pause
+Skip Backward
+Skip Forward
+Next playlist item
+Unmute
+Current Time 
+0:30
+/
+Duration 
+14:32
+Loaded
+: 
+10.29%
+00:30
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+14:02
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions settings
+, opens captions settings dialog
+captions off
+, selected
+Share
+Audio Track
+en (Main)
+, selected
+Fullscreen
+This is a modal window.
+Beginning of dialog window. Escape will cancel and close the window.
+Text
+Color
+White
+Black
+Red
+Green
+Blue
+Yellow
+Magenta
+Cyan
+Opacity
+Opaque
+Semi-Transparent
+Text Background
+Color
+Black
+White
+Red
+Green
+Blue
+Yellow
+Magenta
+Cyan
+Opacity
+Opaque
+Semi-Transparent
+Transparent
+Caption Area Background
+Color
+Black
+White
+Red
+Green
+Blue
+Yellow
+Magenta
+Cyan
+Opacity
+Transparent
+Semi-Transparent
+Opaque
+Font Size
+50%
+75%
+100%
+125%
+150%
+175%
+200%
+300%
+400%
+Text Edge Style
+None
+Raised
+Depressed
+Uniform
+Drop shadow
+Font Family
+Proportional Sans-Serif
+Monospace Sans-Serif
+Proportional Serif
+Monospace Serif
+Casual
+Script
+Small Caps
+Reset
+Done
+Close Modal Dialog
+End of dialog window.
+Close Modal Dialog
+This is a modal window. This modal can be closed by pressing the Escape key or activating the close button.
+This is a modal window. This modal can be closed by pressing the Escape key or activating the close button.
+Share: Every UAP video released by the U.S. Department of War in 14 minutes
+Facebook
+Twitter
+Direct Link
+Embed Code
+Close Modal Dialog
+Related
+
+      How to audit what ChatGPT knows about you - and reclaim your data privacy
+    
+
+      I tested ChatGPT and Perplexity AI as my CarPlay voice assistants - both made Siri look bad
+    
+
+      Canonical's approach to AI is refreshingly thoughtful - Microsoft should take note
+    
+ZDNET
+we equip you to harness the power of disruptive innovation, at work and at home.
+Topics
+Galleries
+Videos
+Do Not Sell or Share My Personal Information
+about ZDNET
+Meet The Team
+Sitemap
+Reprint Policy
+Join
+ |
+    
+Log In
+Newsletters
+Licensing
+Accessibility
+
+  © 2026 ZDNET, A Ziff Davis company. All rights reserved.
+
+Privacy Policy
+ |
+   |
+  
+Your Privacy Rights
+ |
+  
+Advertise
+ |
+  
+Terms of Use

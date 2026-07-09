@@ -1,0 +1,101 @@
+Vibe coding is dead. Long live actual coding. | by | Apr, 2026 | Level Up Coding
+Sitemap
+Open in app
+Sign up
+Sign in
+Medium Logo
+Get app
+Write
+Search
+Sign up
+Sign in
+Level Up Coding
+·
+Follow publication
+Coding tutorials and news. The developer homepage
+gitconnected.com
+&&
+skilled.dev
+&&
+levelup.dev
+Follow publication
+Member-only story
+Vibe coding is dead. Long live actual coding.
+We prompt-engineered ourselves into a corner. Now the market wants engineers again not prompt jockeys.
+Follow
+12 min read
+·
+Apr 15, 2026
+601
+7
+Listen
+Share
+Press enter or click to view image in full size
+You ever ship a product nobody wanted?
+Same. Specifically, a SaaS tool. I built it in a weekend.
+Cursor
+wrote 90% of it. It had a landing page, a pricing table, a waitlist. Looked genuinely good. Felt like cheating.
+Nobody signed up.
+Not because the idea was bad. Because the idea was
+everywhere
+. By the time I shipped, there were already six nearly identical tools on Product Hunt. Same gradient blob header. Same
+“seamless, effortless automation”
+hero copy. Same three-tier pricing. Same vibe.
+That’s the thing about vibe coding it worked too well.
+In early 2024,
+Andrej Karpathy dropped the term
+and basically handed every developer, designer, PM, and guy-with-a-napkin-idea a skeleton key to software.
+“Fully give in to the vibes,”
+he said.
+“Forget that the code even exists.”
+And we did. God, we did. Cursor blew up. Bolt.new launched. Replit got a second wind. A whole generation of builders who’d never touched a terminal shipped real products in real weekends. It was electric.
+Then everyone got the cheat code at the same time.
+Press enter or click to view image in full size
+The internet didn’t get richer. It got noisier. Identical tools. Identical copy. Identical forgettable experiences that bounce users in four seconds because they’ve already seen this page twice today. What started as a unlock became a commodity. And commodities don’t make money.
+So here we are. The vibe is fading. Not because AI got worse. Because
+everyone
+has it now and “everyone can build” turns out to mean “nothing you build automatically stands out.”
+This piece is about what actually killed vibe coding, what the market quietly started asking for instead, and what kind of engineer actually wins in 2026. Not hype. Just pattern recognition from watching a lot of weekend SaaS tools die in silence.
+Create an account to read the full story.
+The author made this story available to Medium members only.
+If you’re new to Medium, create a new account to read this story on us.
+Continue in app
+Or, continue in mobile web
+Sign up with Google
+Sign up with Facebook
+Sign up with email
+Already have an account?
+Sign in
+601
+601
+7
+Follow
+Published in Level Up Coding
+326K followers
+·
+Last published 1 day ago
+Coding tutorials and news. The developer homepage
+gitconnected.com
+&&
+skilled.dev
+&&
+levelup.dev
+Follow
+Follow
+Written by
+13.3K followers
+·
+94 following
+Dev tips for folks who break things on purpose. Cloud, AI, and DevOps workflows that work. Daily stories, scars, and lessons. videos:
+youtube.com/@Runitbare
+Follow
+Help
+Status
+About
+Careers
+Press
+Blog
+Privacy
+Rules
+Terms
+Text to speech

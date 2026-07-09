@@ -1,0 +1,71 @@
+{
+  "article_title": "6 Proxmox LXCs I set up once and never think about again",
+  "core_thesis": "The author advocates for using lightweight LXC containers in Proxmox to deploy self-hosted, open-source services that require minimal ongoing maintenance. By containerizing each application in its own LXC, users can achieve a stable, low-touch homelab environment where services run reliably without constant tweaking, freeing up time for other projects.",
+  "detailed_summary": "The article presents six specific LXC-based services that the author has deployed on Proxmox and found to be exceptionally low-maintenance. The services are: BentoPDF (a self-hosted PDF editor with a clean interface and no ads), PairDrop (a cross-platform file-sharing tool similar to Apple's AirDrop, with no file size limits), ByteStash (a code snippet repository with syntax highlighting for various languages and config files), SearXNG (a privacy-focused metasearch engine that aggregates results from multiple search engines and randomizes browser profiles), Pulse (a comprehensive monitoring tool that integrates deeply with Proxmox to track resource usage and send alerts for LXCs, VMs, and even Proxmox Backup Server), and PVE Helper Scripts Local (a local instance of the popular helper scripts repository that enables remote execution via SSH, automatic detection of helper-deployed guests, and access to advanced settings like FUSE options). The author emphasizes that these services required little to no configuration after initial setup, and with a proper 3-2-1 backup strategy, they can be left running unattended. The article also includes a brief discussion in the comments where users debate the merits of LXC vs. Docker on Proxmox, with one commenter noting that LXC is the parent technology of Docker and offers lower overhead.",
+  "entities": [
+    {
+      "name": "Ayush Pande",
+      "type": "person",
+      "role": "Author of the article, PC hardware and gaming writer with homelab experience."
+    },
+    {
+      "name": "Proxmox",
+      "type": "organization",
+      "role": "Open-source virtualization platform based on Debian, used for hosting LXCs and VMs."
+    },
+    {
+      "name": "BentoPDF",
+      "type": "software",
+      "role": "Self-hosted PDF editor with ad-free interface and extensive editing tools."
+    },
+    {
+      "name": "PairDrop",
+      "type": "software",
+      "role": "Cross-platform file-sharing tool, FOSS alternative to Apple AirDrop."
+    },
+    {
+      "name": "ByteStash",
+      "type": "software",
+      "role": "Self-hosted code snippet repository with syntax highlighting."
+    },
+    {
+      "name": "SearXNG",
+      "type": "software",
+      "role": "Privacy-focused metasearch engine that aggregates results from multiple search engines."
+    },
+    {
+      "name": "Pulse",
+      "type": "software",
+      "role": "Monitoring tool for Proxmox that tracks resource usage and sends alerts."
+    },
+    {
+      "name": "PVE Helper Scripts Local",
+      "type": "software",
+      "role": "Local instance of Proxmox VE Helper Scripts for remote execution and advanced configuration."
+    }
+  ],
+  "key_data_points": [
+    "BentoPDF provides a self-hosted PDF editor with no ads, watermarks, or paywalled features, and supports page manipulation, content editing, watermarking, table extraction, and format conversion (🟢 relevant to your productivity: can be used for academic document management without privacy concerns).",
+    "PairDrop enables file sharing between any devices with a browser, with no file size limits, and automatic device detection (🟢 relevant to your homelab: useful for transferring large ISOs or backups between machines without cloud dependency).",
+    "ByteStash stores code snippets, templates, and config files locally with syntax highlighting for programming languages and DevOps scripts (🟢 relevant to your programming: provides a private, self-hosted alternative to PasteBin for archiving code).",
+    "SearXNG is a metasearch engine that randomizes browser profiles before querying Google, Bing, etc., removing sponsored links and enhancing privacy (🟢 relevant to your cybersecurity: can be used for anonymous research and paired with LLMs for secure web queries).",
+    "Pulse integrates with Proxmox to automatically detect LXCs and VMs, monitor resource consumption, and send alerts for events like unexpected LXC shutdowns or resource overuse (🟢 relevant to your homelab: centralised monitoring reduces manual oversight and improves reliability).",
+    "PVE Helper Scripts Local allows remote execution of scripts via SSH, automatic detection of helper-deployed guests, and modification of FUSE and mount settings not available in the Proxmox GUI (🟢 relevant to your homelab: streamlines automation and advanced configuration)."
+  ],
+  "methodology_steps": [
+    "For each service, create a new LXC container in Proxmox using a TurnKey-based Debian template or similar minimal OS.",
+    "Install the service inside the LXC using standard package managers or deployment scripts (e.g., for BentoPDF, PairDrop, etc., follow their official documentation).",
+    "Configure the service as needed (e.g., set up PairDrop's web UI, point ByteStash to a storage location, configure SearXNG's search engines).",
+    "Set up a 3-2-1 backup strategy for the LXC data (e.g., using Proxmox Backup Server) to ensure data safety without manual intervention.",
+    "For Pulse, install the Pulse agent on the Proxmox host and pair it with the Pulse server LXC; it will automatically detect all LXCs and VMs.",
+    "For PVE Helper Scripts Local, deploy the local instance in an LXC and use its web UI to execute scripts remotely on Proxmox nodes via SSH."
+  ],
+  "conclusions": [
+    "The six LXCs (BentoPDF, PairDrop, ByteStash, SearXNG, Pulse, PVE Helper Scripts Local) are set-and-forget services that require minimal maintenance after initial deployment, making them ideal for homelab users who want reliable functionality without constant tinkering.",
+    "Using LXCs instead of full VMs reduces resource overhead and simplifies management, as each container is isolated and can be backed up independently.",
+    "The comment section highlights a debate: some users argue that Docker on a single Ubuntu server could achieve similar results, while others counter that LXC is more lightweight and is the parent technology of Docker, making Proxmox a versatile platform for both approaches."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your homelab and DevOps interests, as it provides concrete examples of low-maintenance LXC services that can enhance your self-hosted infrastructure. For your programming needs, ByteStash offers a private snippet repository, and SearXNG can be used for privacy-focused research. The monitoring tool Pulse is valuable for keeping an eye on your Proxmox nodes, and PVE Helper Scripts Local can automate repetitive tasks. As a student, BentoPDF can help with document editing without cloud dependency. The article also sparks a useful discussion on LXC vs. Docker, which can inform your architecture decisions.",
+  "extra_advice": "Consider deploying Pulse and PVE Helper Scripts Local first, as they directly improve management and monitoring of your Proxmox environment. For a Red Teaming twist, you could use SearXNG to anonymize your search queries during reconnaissance, and PairDrop to exfiltrate files between machines without leaving cloud traces. Also, explore combining ByteStash with a version control system like Git for better code snippet management.",
+  "source_url": "https://www.xda-developers.com/proxmox-lxcs-i-set-up-once-and-never-think-about-again/"
+}

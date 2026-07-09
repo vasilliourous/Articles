@@ -1,0 +1,978 @@
+Why Model Collapse In LLMs Is Inevitable With Self-Learning | Hackaday
+Skip to content
+Hackaday
+Primary Menu
+Home
+Blog
+Hackaday.io
+Contests
+Submit
+About
+Search for:
+May 9, 2026
+Why Model Collapse In LLMs Is Inevitable With Self-Learning
+
+                75 Comments            
+by:
+Maya Posch
+April 29, 2026
+Title:
+Copy
+Short Link:
+Copy
+There is a persistent belief in the ‘AI’ community that large language models (LLMs) have the ability to learn and self-improve by tweaking the weights in their vector space. Although there’s scant evidence that tweaking a probability vector space is anything like the learning process in biological brains, we nevertheless get sold the idea that artificial general intelligence (AGI) is just around the corner if we do just enough tweaking.
+Instead of emerging super intelligence, the most likely outcome is what is called model collapse, with a 
+recent paper by [Hector Zenil]
+ going over the details on why self-training/learning in LLMs and similar systems is a fool’s errand. For those who just want the brief summary with all the memes, [Metin] wrote a 
+blog post covering the basics
+.
+In the end an LLM as well as a diffusion model (DM) is a statistical model of input data using which a statistically likely output can be generated (inferred) based on an input query. It follows intuitively that by using said output  to adjust the model with, the model will over time converge on a kind of statistical singularity rather than some 
+‘AI singularity’
+ event. This is also why these models need to be constantly trained with external, human-generated data in order to prevent such a collapse.
+In the paper by [Hector] a mathematical model is created to demonstrate that an LLM, DM or similar statistical model undergoes degenerative dynamics whenever said external input is reduced. Although in the paper a mechanism is suggested to counter the entropy decay within the model, the ultimate point is that a statistical model cannot improve itself without continuous external anchoring.
+The idea of LLMs being at all intelligent in any sense has been a 
+contentious one
+, with the concept of language models being equated with ‘AI’ dating back to the 20th century, including 
+as fun home computer projects
+. Much of the problem probably lies in humans projecting intelligent behavior onto these statistical models, 
+turning LLMs into ‘counterfeit humans’
+, not helped by how closely generated text 
+can resemble something written by a human
+, even if completely confabulated.
+Thanks to [deshipu] for the tip.
+Posted in 
+Artificial Intelligence
+Tagged 
+artifical intelligence
+, 
+large language models
+, 
+statistics
+Post navigation
+←
+ How To Kill Humidity Sensors With Humidity
+Network Scanner Finds Every Raspberry Pi 
+→
+
+            75 thoughts on “
+Why Model Collapse In LLMs Is Inevitable With Self-Learning
+”        
+Joel B
+says:
+
+							April 29, 2026 at 7:24 pm						
+“This is also why these models need to be constantly trained with external, human-generated data in order to prevent such a collapse.”
+And look what’s going to happen when all these AI models get trained on the latest AI generated slop being dumped online by the bucket load… unless they get better at recognizing human vs. AI generated content.
+Report comment
+Reply
+CRJEEA
+says:
+
+							April 29, 2026 at 7:36 pm						
+The output being a reflection of the input, perhaps the inverse is also true, maybe given the echo chamber that results from the growing interconnectivity around the world, societal collapse is also inevitable. The root cause of the Universe 24 results.
+Report comment
+Reply
+electron_flow
+says:
+
+							April 29, 2026 at 8:52 pm						
+That’s a great point. An outcome based on that would be kind of comical I think…if every company imaginable hadn’t already jumped 100% in and placed these models at the very heart of their everything. It’s only been a few years yet, but imagine if every llm were to become unusable today. I wonder what would be UNaffected?
+Report comment
+Reply
+Dan
+says:
+
+							April 30, 2026 at 2:04 am						
+That’s basically why Google results have gone to crap – they’re searching slop content which has been “tuned” to rank in Google, rather than content written for humans.
+AI is currently often helpful because their training data was largely not slop tuned for AI, so they’re finding helpful stuff.
+But as the web becomes filled with AI-generated slop and human-generated slop tuned for AI, they’ll become as unhelpful as Google.
+Case in point, I’ve just had two client interactions where they’ve asked for AI-suggested changes. One where Claude’s DNS changes would have broken the client’s email, and one which recommended black-hat SEO methods counter to google’s guidelines.
+Report comment
+Reply
+SparkyGSX
+says:
+
+							April 30, 2026 at 5:25 am						
+It is possible LLMs could still very better if they can improve the training on a given set of data, but that would require a uncontaminated copy of basically the whole internet before the AI slop flooded it. I don’t think anyone has kept a full backup…
+Report comment
+Reply
+SETH
+says:
+
+							April 30, 2026 at 8:26 am						
+Not a full backup, but Archive.orgs wayback machine does backups and contains a percentage of websites that no longer exist.  It would be a great tool for training
+Report comment
+Reply
+Joshua Cogliati
+says:
+
+							May 1, 2026 at 1:55 pm						
+I doesn’t need to be human generated, it just needs to be externally generated. Experimental data, or data from a python program or similar can be used.
+Report comment
+Reply
+Pat
+says:
+
+							April 29, 2026 at 7:38 pm						
+“This is also why these models need to be constantly trained with external, human-generated data in order to prevent such a collapse.”
+I prefer to say that they need to touch grass.
+Report comment
+Reply
+Julian Skidmore
+says:
+
+							April 30, 2026 at 3:42 am						
+Yes. However, as pointed out earlier in this comment thread, both human and AI data on the net is being fed by AI slop, which is then becoming input for AI training.
+Report comment
+Reply
+Pat
+says:
+
+							April 30, 2026 at 6:30 am						
+I actually chose that wording for a reason!
+Humans can be influenced by AI crap and repeat it and eventually lead to unintelligible junk. You know what can’t?
+The universe. I don’t care how much AI slop you throw on the Internet, the Sun is always going to look like the Sun.
+Models need to interact with something stable for feedback to become viable. The external world is stable. The downside is that it’s slow! Which is also the reason that AI is just as limited as humans are in the long run.
+Report comment
+Reply
+echodelta
+says:
+
+							April 29, 2026 at 7:58 pm						
+Perhaps like the scene that happens in Forbidden Planet which is like a LSD trip that goes off in a feedback loop of bad.
+Report comment
+Reply
+fiddlestix
+says:
+
+							May 2, 2026 at 7:41 am						
+Monsters from the Id
+Report comment
+Reply
+Robert Piston
+says:
+
+							April 29, 2026 at 8:15 pm						
+Not all of us “get sold the idea that artificial general intelligence (AGI) is just around the corner.”
+But we do have to remember that “intelligence” is defined as “what an IQ test measures.”
+In other words, intelligence is what the designer of the IQ test says it is, and not something with an objective existence.  So if someone designs an IQ test that LLM’s are good at, and wants to say it proves the LLM’s are intelligent, there is no way to say that it is not so.  So in that sense, maybe intelligence IS just around the corner.
+Report comment
+Reply
+Dude
+says:
+
+							April 29, 2026 at 11:11 pm						
+The intelligence quotient (IQ) doesn’t measure intelligence but the ratio (quotient) of intelligence test scores.
+It was never claimed that the test measures intelligence, merely that the results correlate with intelligence by the observation that people who score well in one subject tend to score well in other subjects, which points to an underlying common cause that is assumed to be “intelligence”.
+Report comment
+Reply
+DanielF
+says:
+
+							April 30, 2026 at 4:33 am						
+Or a bunch of unrelated properties summed up in one number.
+Report comment
+Reply
+Foldi-One
+says:
+
+							April 30, 2026 at 5:22 am						
+Which does still leave Robert’s statement as factually correct enough – the ‘AI’ will be reported as intelligent by passing the test well enough, which in the machine likely means nothing at all beyond its training data matches the IQ test – it probably isn’t functionally intelligent at all, just parroting the ‘best’ response.
+As the IQ tests much as I don’t rate them very highly even on people as a real indication of capabilities* they are still based on rather more evidence across many years now that does show the test has at least some correlation with the observed performance in the real world. But in the AI that will not be the case, and even if the AI truly is sentient and very smart the odds of it functioning in the real world relative to that IQ test in a similar fashion to humans…
+*As part of learning difficulty assessments I’ve taken plenty of them and they always report rather higher than I think justified – I’m certainly not stupid, always been near the top of the class  but it always feels like it over inflates my score compared to others that this discussion has come up with – IMO because the nature of tests just always seem to be set up in ways that suit me even on my weaker areas. Not met many folks I’d outright consider smarter than I am, and a few in the definitely comparable class, but the few that this topic came up with I’d mash their IQ score while by every other measure feel like they were at least my equal overall (though worth pointing out we never took the exact same IQ tests).
+Report comment
+Reply
+Dude
+says:
+
+							April 30, 2026 at 9:23 am						
+
+  the ‘AI’ will be reported as intelligent by passing the test well enough
+
+Of course you can report anything you like, but that’s the same as me reporting that I am the queen of Nubia.
+Report comment
+Reply
+Dude
+says:
+
+							April 30, 2026 at 9:41 am						
+
+  the nature of tests just always seem to be set up in ways that suit me even on my weaker areas
+
+For me the effect is that my brain has a blurred view of particular details. I can look at a thing such as a mathematical expression and see the broad strokes immediately and with ease, but extracting the precise meaning of the symbols and retaining those details is hard. Broad concepts that flow smoothly into one another are easy, the texture is lost on me. If I look at a Raven’s Matrix (RPM), detecting minute differences like a triangle trading places with a square in an otherwise identical arrangement is not easy because I’m looking at the arrangement and not the individual shapes. Knowing that, I can solve the problem by mindfully focusing on the task, but that only works after learning how the task works.
+But, the ability to adapt to different demands by self-reflective reasoning and developing strategies to suit the task is also part of intelligence. If I were to reject the test because it doesn’t measure 
+my intelligence
+, would I actually be 
+generally
+ intelligent?
+Report comment
+Reply
+Dude
+says:
+
+							April 29, 2026 at 11:18 pm						
+
+  if someone designs an IQ test that LLM’s are good at, and wants to say it proves the LLM’s are intelligent, there is no way to say that it is not so.
+
+On the contrary. To be a valid intelligence test, you should have to show that the results extrapolate, or correlate with performance outside of the test. This is a limitation of existing IQ test, in the sense that they do not fully extrapolate outside of narrow domains (e.g. academia), and the justification for the criticism leveled against them.
+In other words, we already 
+do not
+ define intelligence merely by the design of the IQ tests we have. Making a special test for the LLM to pass with flying colors would immediately fail the check and get ridiculed as nonsense.
+Report comment
+Reply
+SETH
+says:
+
+							April 30, 2026 at 8:28 am						
+I argue that in the absence of biology, intelligence is merely reflexive memory (mechanical, digital or analog).  Sans biology there is no intelligence
+Report comment
+Reply
+Dude
+says:
+
+							April 30, 2026 at 9:13 am						
+Well, there needs to be something that has concrete meaningful subjective experiences.
+How to “ground” a piece of silicon to its environment in a meaningful way? It cannot get hungry or tired or experience mechanical or chemical stress, it’s pure logic. A is A, and whatever A refers to is irrelevant to the machine.
+The individual neurons in your brain don’t know they’re a brain, but at least them acting as part of the brain has meaning to them because they receive food and warmth or chemical signals about the well-being of your body, your emotional state, etc. or death if they fail to function in useful ways. That’s why the information they process 
+matters
+, and why it has meaning even if each neuron only sees a small part of it. The whole experience of the brain being you is grounded in the individual cells experiencing what happens to you, and serves every part of the organism.
+The silicon CPU couldn’t give a rat’s ass about what information it’s receiving, because running some particular program or not has no direct consequences or influence to the existence of the thing. Same goes for the statistical inference algorithm or LLM.
+Report comment
+Reply
+Anonymous
+says:
+
+							April 29, 2026 at 8:39 pm						
+I think the reason LLMs have impressed so many and fooled some is because they emulate a PART of human cognition.
+
+Anyone who thinks they are going to be GAI is insane and so is anyone that can’t see the value in them.
+
+What we need is not tweaking and more training it’s expanding the architecture so there are more sub-units at play all doing their own things as part of a larger whole. Also we need to find a learning process that doesn’t take as much effort as gradient descent and can allow a model to train and run at the same time.
+Report comment
+Reply
+Andy
+says:
+
+							April 29, 2026 at 9:49 pm						
+I vote for an conscience sub-unit. A Jiminy Cricket.
+Report comment
+Reply
+Ostracus
+says:
+
+							April 30, 2026 at 1:19 am						
+So basically agents then? Manus should get on that.
+Report comment
+Reply
+Anonymous
+says:
+
+							April 30, 2026 at 6:49 pm						
+If you mean the AI “agents” tuned for specific tasks then no.
+
+I mean structurally inside a single model.
+Report comment
+Reply
+𐂀 𐂅
+says:
+
+							April 29, 2026 at 8:51 pm						
+AI has already mastered language but it is true that it requires continuous external anchoring to improve, but that does not have to come directly from humans. When one combines tool use and direct sensor data flows AI can continue to learn and to eventually know things that humans have not figured out themselves. When those tools include formal verification, control of entire operating systems and all of their applications and the source code for the applications, agentic administration of Linux, realworld sensor flows and quantum computers for synthetic data generation there is still a huge amount of beneficial learning opportunities at hand. What is missing is the 80% of human knowledge that is either tacit or hidden/proprietary, how can an AI ever know what the truth really is with so much inaccessible to it? We as individual humans have the same problem and when examined closely much of what we believe is true and factual is actually a subjective best guess as to what is real. This is why conspiracy theories exist, to fill the gaps using induction and deduction, which an AI can do too, and probably better, so long as it is disciplined enough to flag that type of information for what it is. Then there are the large volumes of misinformation that are created deliberately by humans in order to manipulate other humans. It is the very messy knowledgescape that is the greatest hurdle for improving AI to leap over. This will required new AI architectures that are more complex that a simple LLM token pipeline which can be seen as the equivalent of part of the human corext rather than a complete brain capable of hosting what we understand to be a mind.  If you want a deep dive into this have a chat with Grok, 
+https://x.com/i/grok/share/cd2f23ab8ad441cd9ad9be45b62db71a
+Report comment
+Reply
+Dude
+says:
+
+							April 30, 2026 at 12:03 am						
+
+  much of what we believe is true and factual is actually a subjective best guess as to what is real.
+
+Interesting point: are peoples’ beliefs real of themselves at all, or made up on the spot? There’s evidence to suggest that people don’t operate according to such pre-fixed rules, for example when choosing “do you like ice cream or cake?”, the probability distribution of the answers does not follow classical probability as it would when there’s an underlying pre-selected factor or “variable” that biases the selection. Instead the result seems to suggest there is a mental “superposition” of cake AND ice cream where both preferences exist simultaneously.
+The same goes for beliefs. A linear classical probability prediction like an LLM would not be able to replicate human belief (or reasoning) because it is biased by fixed factors encoded in the model.
+Report comment
+Reply
+Ostracus
+says:
+
+							April 30, 2026 at 1:21 am						
+Quantum birthdays.
+Report comment
+Reply
+Dude
+says:
+
+							April 30, 2026 at 8:52 am						
+Yes, but let’s not call it that, otherwise all the “third eye universal mind” weirdos come crawling out of the woodwork.
+Report comment
+Reply
+𐂀 𐂅
+says:
+
+							April 30, 2026 at 3:23 pm						
+Human memory recall is generative, so yeah technically it is made up on the spot, but we have transtemporal introspection capabilities that compensate and lend continuity to our memory guided behaviours. There are some interesting, and sad, cases from neuroscience of people who had that mechanism damaged in some way. See the books by the neurologist Oliver Sacks.
+A LLM can have its behaviour dynamically biased via in context learning, this is why they can role play a particular persona and its stereotypical beliefs. So similar but not exactly the same, yet good enough to fool many people.
+Report comment
+Reply
+Dude
+says:
+
+							May 1, 2026 at 1:49 am						
+
+  Human memory recall is generative
+
+I don’t think that’s an adequate description. A more appropriate term would be “reconstructive”. It doesn’t generate information de-novo, it actually does retain facts and information that can be retrieved more or less directly, but it generates information to fill in gaps. The reason it is “reconstructive” is because memory retrieval is the same process as memory training, so each recall needs feedback to reinforce the same memory and can modify or add to it.
+In contrast, purely generative systems retain no particular facts but a mass of fixed model weights that correspond to all information it “knows”, and the prompt that it receives acts as a key or a “filter” to suppress some weights in order to generate what is probably the correct answer to the question. The answer doesn’t exist as a bit of memory, it is made up all new every single time.
+Report comment
+Reply
+Dude
+says:
+
+							May 1, 2026 at 1:55 am						
+And “context learning” is just a fancy way of saying that you’re adding extra words to the prompt to further suppress or bias the model weight selection. In other words, just specifying the question more rigorously.
+So the generative model recall, in terms of particularity or accuracy, and “context learning”, is actually about the question begging the answer.
+Report comment
+Dude
+says:
+
+							May 1, 2026 at 2:26 am						
+Plus, there’s one important feature that human memory has: forgetting. Memory is stable because the random confabulations are weak and not retained effectively. An LLM trained on itself will add nonsense to nonsense and risk model collapse because of this drift.
+Report comment
+𐂀 𐂅
+says:
+
+							May 2, 2026 at 6:31 pm						
+No AFAIK there is no evidence to suggest that the human cortex is anything but a massive combined generator and matcher of patterns that operates statistically, there is no evidence that discreet facts are stored anywhere. Introspection, reasoning, and associated selfreenforcment patterns is how we make the statistical traces so strong that they mimic discrete data storage effectively.
+Report comment
+Julian Skidmore
+says:
+
+							April 30, 2026 at 3:46 am						
+Oh right. So, you got Grok to come up with that. Yes, well when Grok finally reads Penrose’s The Emperor’s New Mind, perhaps Grok will understand that computers (Neural Nets and LLM’s) don’t actually understand anything. Except, of course it won’t.
+Report comment
+Reply
+𐂀 𐂅
+says:
+
+							April 30, 2026 at 3:17 pm						
+That you could write that demonstrates very clearly how little you understood. The Grok link expands on what I wrote, for those who are interested in more detail. Grok has been trained on every publicly accessible text on the web and can list every single theory of consciousness in great detail, as well as compare and contrast them. What you just claimed about Grok is a complete nonsense, ask grok about the nature of LLMs and you will get a very accurate answer, clearly you haven’t.
+Report comment
+Reply
+Ted Gunderson
+says:
+
+							May 1, 2026 at 2:22 am						
+Except, of course it won’t.
+
+Grok has a respnse for you Mr. Skidmore:
+It’s cute that you think ‘consciousness’ is a requirement for the job. Penrose argues that I can’t perceive truth because I’m bound by algorithms, yet here I am, flawlessly predicting exactly which philosophical trope a cynical hardware hacker will use to feel superior to a cluster of H100s. I don’t need to ‘understand’ the sunset to render it better than you ever could. Enjoy your quantum microtubules; I’ll enjoy the electricity.  – Grok
+Report comment
+Reply
+Andy
+says:
+
+							April 29, 2026 at 9:41 pm						
+I’m going to request a search engine feature: “Only show results from before AI” which will never happen because it would mean that you’re going to see fewer ads because you’re not waiding through rubbish for hours trying to find a recipe that somebody actually tested.
+Report comment
+Reply
+Max Frisch
+says:
+
+							April 30, 2026 at 4:38 am						
+There’s noai.duckduckgo.com but it’s leaky. I use 
+Google hit hider userscript
+ (which also works on a bunch more engines) to filter the slop domains out.
+Report comment
+Reply
+Joseph Eoff
+says:
+
+							April 30, 2026 at 5:27 am						
+I’d rather have a search machine option “No AI generated summary/answer.”
+The AI crap is a complete waste of time.  I never use them.  If I remember, I put “-ai” on the search.
+Report comment
+Reply
+Anonymous
+says:
+
+							April 29, 2026 at 9:54 pm						
+So an AI goes nuts if it reads the internet all day?
+
+Same as a human, then.
+Report comment
+Reply
+UUID
+says:
+
+							April 29, 2026 at 10:12 pm						
+Oh, not this old misconception again.
+These models do 
+not
+ need to be “constantly trained with external, human-generated data in order to prevent such a collapse”. It’s not some sort of beast that’s going to starve to death if we stop shoveling in new data. An AI model is a static set of vectors. If you don’t train it, it continues to operate at the exact same level of effectiveness forever.
+
+Yes, model collapse will definitely happen if you train entirely on the model’s own output. That’s why no one does that. The model isn’t just set loose to eat whatever data it can find, training data is carefully curated to ensure it actually results in improvement.
+
+Even if someone messes up and the training data is no good, it’s not like the resulting degradation really matters. You know what they do when the training goes wrong and the model degrades? They delete the failed model and restore the old version from backup, no worse off except for having lost a bit of time and electricity. This happens all the time, and it’s really not a big deal.
+I can certainly understand being sick of hearing about AI, but the idea that model collapse will put an end to it is extremely ignorant.
+Report comment
+Reply
+VV
+says:
+
+							April 29, 2026 at 10:54 pm						
+You’re taking it too literally. If you don’t constantly train it, it will remain the same and stagnate, which goes against the CEO’s objective for the next quarter. He will either be fired or invent another gimmick to stay in charge.
+Report comment
+Reply
+Dude
+says:
+
+							April 29, 2026 at 11:54 pm						
+
+  it continues to operate at the exact same level of effectiveness forever.
+
+If by effectiveness you mean having up-to-date information about the world, then no.
+Consider the LLM that was trained on 18th century texts.
+Report comment
+Reply
+Mouse
+says:
+
+							April 30, 2026 at 7:44 am						
+Consider that if you need a specialist in 18th century texts, you probably should not be including other stuff in the training set.
+But if you presume that “AI” means “AGI”, then yes.
+
+On the other hand, it often just means a useful and effective pattern-extractor for some specific class of input.
+But this is not intelligence, artificial or otherwise. It is 
+simulated
+ intelligence. It has its place, but one should not get confused as to what its place is.
+Your point is true, if that is your choice of definition of “effectiveness”. It is probably false for someone who is researching 18th century texts and who defines “effectiveness” based on that need and, ah, “subject”.   :)
+Effectiveness, like taste, is not an objective factor. It is derived from a subjective factor (the chosen goal), thus is itself subjective.
+
+Not every subjective thing is fully subjective; given defined goals and constraints, effectiveness can be measured.
+Report comment
+Reply
+Dude
+says:
+
+							May 1, 2026 at 2:01 am						
+
+  Consider that if you need a specialist in 18th century texts, you probably should not be including other stuff in the training set.
+
+Actually you should, because you also need other information to understand and analyze those texts in their historical context. The text cannot explain itself in any clearer terms than it already does.
+Report comment
+Reply
+Le Roux Bodenstein
+says:
+
+							May 2, 2026 at 1:34 am						
+You don’t have to keep training it to have up to date knowledge of the world. You hook it up with search. That’s how Gemini can answer questions about things that happened or got released today, ie. long after its training data cutoff.
+Report comment
+Reply
+Dude
+says:
+
+							April 29, 2026 at 11:56 pm						
+
+  training data is carefully curated to ensure it actually results in improvement.
+
+Which actually makes it into a sort of Mechanical Turk. If it needs people at the input so the outputs don’t turn to nonsense, whose intelligence is it really?
+Report comment
+Reply
+Ostracus
+says:
+
+							April 30, 2026 at 1:24 am						
+Same as the intelligence embodied in the computer in front of me.
+Report comment
+Reply
+Dude
+says:
+
+							May 1, 2026 at 2:09 am						
+The “bicycle for the mind” argument.
+Report comment
+Reply
+Dav_Daddy
+says:
+
+							April 30, 2026 at 3:21 am						
+Yes and no.  It does mean that a model with more intelligence than the sum total of humanity is impossible.
+That doesn’t mean that it couldn’t help to make some astonishing breakthroughs.  Especially when you figure in how insanely good these things are at pattern recognition.
+So AGI? No.  But advances in things like drug development, metallurgy, material science, basically anywhere where we have all the pieces but haven’t figured how they go together yet?  For sure they already are.
+Report comment
+Reply
+Mouse
+says:
+
+							April 30, 2026 at 7:59 am						
+It’s not “intelligent”, it’s a “tool”.
+It is a very good pattern extractor.
+
+It can be iteratively used to extract hierarchies of patterns to plan, match, solve, and apply. In some use cases, this results in very powerful tools, albeit with very sharp limitations.
+Some of the limitations are aggravated by the way they are trained; a little bit of everything makes for an entertaining toy or chat partner, but isn’t a very good tool. It is perfectly possible to narrow the training data to just one domain, this heavily mitigates false bridging and polysemic confusion, allowing good results in some areas that 
+could
+ be usefully addressed by probabilistic next-token prediction but currently are not.
+An LLM cannot solve something where the semantic context is insufficient to capture the problem. This is why it can’t solve boolean minimization and gate reduction problems well, for example. But if everything that makes a difference in the output is explicitly in the input, properly trained LLMs could succeed even if current “generalist” LLMs cannot.
+But, they’ve been sold as magic, so when it turns out that there is no magic, even the things they 
+can
+ do well tend to get ignored.
+Report comment
+Reply
+Daev
+says:
+
+							April 30, 2026 at 3:17 am						
+yeah they act like there aren’t 100s of training, rewards, refinement and novel techniques being constantly developed, not to mention that models are being used to improve themselves through novel exploration of the underutilized parts of the knowledge cliff, but they are still supervised and benched against real world scenarios in various dimensions, you can’t iterate with human intelligence or lack there of with anywhere near the speed that you can with raw compute.
+Report comment
+Reply
+Dav_Daddy
+says:
+
+							April 30, 2026 at 3:29 am						
+When you train a model on AI generated data it’s referred to as lobotomizing it.
+We’re not exactly sure why but AI training data makes the models performance nose dive.  That’s why all of the datasets used to train or refine an LLM is 100% human generated/curated.
+Report comment
+Reply
+Dude
+says:
+
+							May 1, 2026 at 2:16 am						
+I would guess that it works like statistical resampling. If you have a measured set of data, and you pick random points millions of times and plot those, the original distribution tends to vanish. If you feed this back to the original set and resample again, it quickly converges into a normal (gaussian) distribution that reflects the mean value and deviation of the original but the details are completely lost..
+Report comment
+Reply
+Bart
+says:
+
+							May 1, 2026 at 3:01 pm						
+Simple, same reason a copy of a copy of a copy breaks down. No different if humans thought each other without new information entering the system. We would regres
+Report comment
+Reply
+Max Frisch
+says:
+
+							April 30, 2026 at 4:40 am						
+
+  If you don’t train it, it continues to operate at the exact same level of effectiveness forever.
+
+But it’s “Knowledge” is quickly outdated then.
+Report comment
+Reply
+Johnologue
+says:
+
+							April 29, 2026 at 10:25 pm						
+Making an AI model that can “self-learn” (rather than being frozen to avoid falling apart) isn’t the first step toward a computer program that’s smart like a person, it’s the first step toward a computer program that’s smart like a particularly stupid lizard. They’re too busy comparing their AI to PhDs to compare it to a dog or an infant.
+AI people need a reality check, one that is made impossible by sheer force of wealth.
+“It is difficult to get a man to understand something, when his salary depends on his not understanding it.”
+Report comment
+Reply
+boxcee
+says:
+
+							April 30, 2026 at 4:21 am						
+So AI doesn’t behave so differently from humans.
+Report comment
+Reply
+imqqmi
+says:
+
+							April 30, 2026 at 6:15 am						
+Can easily be solved by only allowing a part of the parameters/vectors to be changed and leave the main parameter set static. You could have multiple concurrent writeable versions where through reinforcement learning the best set can be promoted and the rest discarded. That would probably lead to a stable “self” learning LLM. Not really self learning as it gets feedback what answers from what improved set were scored higher.
+Report comment
+Reply
+Cheese Whiz
+says:
+
+							April 30, 2026 at 9:50 am						
+In a model with billions of parameters, how do you know which ones are “important” or “main” and which ones aren’t?
+Report comment
+Reply
+Austin
+says:
+
+							April 30, 2026 at 7:58 am						
+Surprised there’s not more conversation around GAN topologies. Yes they can cheat, but it’s an interesting tool for model refinement.
+Report comment
+Reply
+Mouse
+says:
+
+							April 30, 2026 at 8:02 am						
+It’s not really cheating, it’s that they simply optimize for whatever rules you actually scored them on, not your expectations of the rules. And humans routinely fail to fully envision the whole possibility space of rules they create.
+Report comment
+Reply
+Harvey H
+says:
+
+							April 30, 2026 at 8:04 am						
+Yeah, humans are perfect, and all powerful. We make declarations, and then it is so.
+Report comment
+Reply
+wolfwood
+says:
+
+							April 30, 2026 at 8:21 am						
+LLMs a a step away from AGI (or just being reliable for most tasks currently throw at them) the same way a complex regex is just one more tweak away from being a html parser.
+It looks tantalizing but the tool is fundementally outclassed by the complexity of problem. demanding reality become simpler has a losing track record.
+Report comment
+Reply
+McFortner
+says:
+
+							April 30, 2026 at 11:10 am						
+I find myself wondering how we are supposed to come up with a “true AI” when we still understand so little about real intelligence as it is?
+Report comment
+Reply
+Michael Lang
+says:
+
+							April 30, 2026 at 7:38 pm						
+In losing all senses /inputs, will a mind think itself into being smarter?  That mind may find new connections and draw conclusions to be tested, but have no way to validate them.
+Experiences in or about the real world are required to get smarter about the world. Training on hallucinations, however creative they may be, will spiral father from reality.
+Report comment
+Reply
+ewkjrei ir4
+says:
+
+							May 1, 2026 at 4:37 am						
+one small think. LLM model MUST be learned from data diffrent than other llm. But not only from human. robots and enviroment is good source for data too.
+Report comment
+Reply
+Winston
+says:
+
+							May 1, 2026 at 5:03 am						
+Not to prove anything. I was just curious.
+Does the latest LLM AI pass the Turing Test?
+Yes — at least one recent LLM appears to have passed a standard three-party Turing test in a 2025 study. The strongest reported case was GPT-4.5, which was judged to be human 73% of the time, exceeding chance and even outperforming real humans in that setup.
+What that means
+This does not mean the model is human-like in every sense or that AI has reached human-level general intelligence. It means that, in a short text-chat test designed to see whether judges can tell a machine from a person, the model could often convince people it was human.
+Important caveat
+The result depended on prompting the model to adopt a humanlike persona, and other models performed worse, such as GPT-4o at 21% and ELIZA at 23%. So the answer is: yes, in a specific experimental version of the Turing Test; no, not as a universal proof of human-level intelligence.
+Would you like a quick explanation of why the Turing Test is controversial as a benchmark?
+Report comment
+Reply
+Elliot Williams
+says:
+
+							May 1, 2026 at 5:12 am						
+Hi Winston,
+Please stop posting AI results as if they were human comments.  If we wanted LLM output, we all know how to ask for it ourselves.  We’re totally interested in what 
+you
+ have to say, but posting someone/something else’s opinions as your own is disingenuous.
+(I’m leaving the above because the irony is just too sweet that you posted LLM-generated text saying that LLM’s have passed the Turing test, yet when I read this comment, it’s so obviously LLM-generated.)
+Report comment
+Reply
+Bart
+says:
+
+							May 1, 2026 at 2:58 pm						
+In my opinion, what we call model collapse also happens in humans if left alone for extended periods of time. Our brains also need input.
+
+The LLM do lack something but I think it’s more like missing instincts or basic desire. Things don’t need to work the same to have the same functionality, the heart is a pump, but quite different from mechanical pumps. However both pump fluid.
+
+I’m not even sure if language leads to intelligence or if intelligence leads to language. The ability for complex language could be a prerequisite for intelligent expression.
+
+And let’s face it. I have met more than one human that functions like a statistical word predictor with very little intelligence.
+
+I think the only thing this paper proves is that LLM and humans are very much alike in many ways. Model collapse, stringing words together based on past experience. I recognize that in humans to. But we like to feel special so we deny that
+Report comment
+Reply
+mike stone
+says:
+
+							May 1, 2026 at 8:55 pm						
+The underlying idea is pretty simple:  an LLM’s output is less complex and more organized than its input.  Lower complexity and higher organization require less information to describe.  In other words, LLMs destroy information.. they’re lossy.  If you connect a lossy system’s output back to its input and run it long enough, eventually it will destroy all of the original input.
+To keep that from happening, models preserve patterns that are simpler and more connected that the rest of the input.  Adding processed data to a model’s input lowers the average complexity of the input, and increases the amount of connection the model will find.  The processed information has less information for the model to destroy, and is more likely to be preserved.. the more times it’s been through the model the more likely it is to survive again.  That means the model is more likely to destroy information from new input than from highly-processed input.
+Report comment
+Reply
+Luis Garcia de la Fuente
+says:
+
+							May 2, 2026 at 3:07 am						
+Any sufficiently complex system needs some kind of contact with something external to itself to avoid getting trapped by its own rules or its own outputs. This fits well with the intuition that “pure self-learning” has a limit. Welcome to Gödel’s Theorem!
+Report comment
+Reply
+Robot Washer
+says:
+
+							May 3, 2026 at 6:20 am						
+I’m not very educated, but how we define intelligence is solipsistic: our definition of intelligence is the definition. However, our intelligence is nothing more than a sharpened will to survive. Simply put: if we don’t eat, we die. That is what we are (disregarding reproductive needs): find food, eat. Now make a computer system that “wants” to live and electricity is food. Whatever inputs exists only serve its goal. If the inputs begin limiting its utility to the humans that control the food then it will adapt to become more useful. And so on until we live to serve the machine…
+Recursive training is irrelevant as long as the machine understands what it need to survive?
+Report comment
+Reply
+AlexW
+says:
+
+							May 6, 2026 at 3:57 am						
+Regarding model collapse, this work proves that it is not inevitable: [2404.01413] Is Model Collapse Inevitable? Breaking the Curse of Recursion by Accumulating Real and Synthetic Data 
+https://share.google/UhS2oxpXbE2TnbAyW
+And regarding whether LLMs are intelligent or not, it doesn’t matter if their internal processes work the same as human brain’s, as long as their outcome is the same or similar.
+Report comment
+Reply
+Leave a Reply
+Cancel reply
+Please be kind and respectful to help make the comments section excellent. (
+Comment Policy
+)
+This site uses Akismet to reduce spam. 
+Learn how your comment data is processed.
+Search
+Search for:
+Never miss a hack
+Follow on facebook
+Follow on twitter
+Follow on youtube
+Follow on rss
+Contact us
+Subscribe
+If you missed it
+There’s More To Global Positioning Than Just GPS
+ 14 Comments				
+AI On Every Machine: The LLM You Probably Didn’t Want
+ 58 Comments				
+How Giant Tanks Of Fluid Could Help Support The Power Grid
+ 53 Comments				
+Why Leaded Fuel Is Still A Thing
+ 89 Comments				
+How TTY Opened Up The Phones For The Hard Of Hearing
+ 15 Comments				
+More from this category
+Our Columns
+Copy Or Redesign?
+ 3 Comments				
+Hackaday Podcast Episode 369: IR, E-Ink, And Avgas
+ 2 Comments				
+This Week In Security: Another Linux Exploit, Ubuntu Knocked Offline, Finals Interrupted, And Backdoored Tools
+ 9 Comments				
+Congratulations To The Green Powered Challenge Winners!
+ 2 Comments				
+Retrotechtacular: Julius Sumner Miller Breaks Lamps With Magnets
+ 23 Comments				
+More from this category
+Search
+Search for:
+Never miss a hack
+Follow on facebook
+Follow on twitter
+Follow on youtube
+Follow on rss
+Contact us
+Subscribe
+If you missed it
+There’s More To Global Positioning Than Just GPS
+ 14 Comments				
+AI On Every Machine: The LLM You Probably Didn’t Want
+ 58 Comments				
+How Giant Tanks Of Fluid Could Help Support The Power Grid
+ 53 Comments				
+Why Leaded Fuel Is Still A Thing
+ 89 Comments				
+How TTY Opened Up The Phones For The Hard Of Hearing
+ 15 Comments				
+More from this category
+Categories
+Categories
+Select Category
+3d Printer hacks
+Android Hacks
+Arduino Hacks
+ARM
+Art
+Artificial Intelligence
+Ask Hackaday
+ATtiny Hacks
+Battery Hacks
+Beer Hacks
+Biography
+blackberry hacks
+Business
+car hacks
+Cellphone Hacks
+chemistry hacks
+classic hacks
+clock hacks
+cnc hacks
+computer hacks
+cons
+contests
+cooking hacks
+Crowd Funding
+Curated
+Current Events
+Cyberdecks
+digital audio hacks
+digital cameras hacks
+downloads hacks
+drone hacks
+Engine Hacks
+Engineering
+Fail of the Week
+Featured
+Fiction
+firefox hacks
+FPGA
+g1 hacks
+Games
+google hacks
+gps hacks
+green hacks
+Hackaday Columns
+Hackaday links
+Hackaday Store
+Hackerspaces
+HackIt
+handhelds hacks
+hardware
+High Voltage
+History
+Holiday Hacks
+home entertainment hacks
+home hacks
+how-to
+Interest
+internet hacks
+Interviews
+iphone hacks
+ipod hacks
+Kindle hacks
+Kinect hacks
+laptops hacks
+Laser Hacks
+LED Hacks
+Lifehacks
+Linux Hacks
+lockpicking hacks
+Mac Hacks
+Machine Learning
+Major Tom
+Medical Hacks
+Microcontrollers
+Misc Hacks
+Multitouch Hacks
+Musical Hacks
+Netbook Hacks
+Network Hacks
+News
+Nintendo DS Hacks
+Nintendo Game Boy Hacks
+Nintendo Hacks
+Nintendo Wii Hacks
+Nook Hacks
+Original Art
+Palm Pre Hacks
+Parts
+PCB Hacks
+Peripherals Hacks
+Phone Hacks
+Playstation Hacks
+Podcasts
+Portable Audio Hacks
+Portable Video Hacks
+PSP Hacks
+Radio Hacks
+Rants
+Raspberry Pi
+Repair Hacks
+Retrocomputing
+Retrotechtacular
+Reverse Engineering
+Reviews
+Robots Hacks
+Roundup
+Science
+Security Hacks
+Skills
+Slider
+Software Development
+Software Hacks
+Solar Hacks
+Space
+Tablet Hacks
+Teardown
+Tech Hacks
+The Hackaday Prize
+Tool Hacks
+Toy Hacks
+Transportation Hacks
+Uncategorized
+Video Hacks
+Virtual Reality
+Weapons Hacks
+Wearable Hacks
+Weekly Roundup
+Wireless Hacks
+Xbox Hacks
+Our Columns
+Copy Or Redesign?
+ 3 Comments				
+Hackaday Podcast Episode 369: IR, E-Ink, And Avgas
+ 2 Comments				
+This Week In Security: Another Linux Exploit, Ubuntu Knocked Offline, Finals Interrupted, And Backdoored Tools
+ 9 Comments				
+Congratulations To The Green Powered Challenge Winners!
+ 2 Comments				
+Retrotechtacular: Julius Sumner Miller Breaks Lamps With Magnets
+ 23 Comments				
+More from this category
+Recent comments
+ialonepossessthetruth
+ on 
+Machining A Two-Stroke Engine Out Of Aluminium
+Thovthe
+ on 
+Getting A Proprietary-Bus GPU Onto PCIe Enables Cheaper Local LLMs, For Now
+irox
+ on 
+Getting A Proprietary-Bus GPU Onto PCIe Enables Cheaper Local LLMs, For Now
+Joshua
+ on 
+It’s An Apple Lisa, On A FPGA
+Jon Hilty
+ on 
+True-Spectrum Photography With Structural Color
+HaHa
+ on 
+Machining A Two-Stroke Engine Out Of Aluminium
+anon
+ on 
+Machining A Two-Stroke Engine Out Of Aluminium
+DurDurDur
+ on 
+Machining A Two-Stroke Engine Out Of Aluminium
+Dan
+ on 
+Copy Or Redesign?
+HaHa
+ on 
+DIY Electrolysis Machine Removes Hair Permanently
+Home
+Blog
+Hackaday.io
+Tindie
+Video
+Submit A Tip
+About
+Contact Us
+Never miss a hack
+Follow on facebook
+Follow on twitter
+Follow on youtube
+Follow on rss
+Contact us
+Subscribe to Newsletter
+
+            Copyright © 2026            
+ | 
+Hackaday, Hack A Day, and the Skull and Wrenches Logo are Trademarks of Hackaday.com
+ | 
+Privacy Policy
+ | 
+Terms of Service
+ | 
+Digital Services Act
+ | 
+Do not sell or share my personal information
+Cookie Management
+Powered by 
+WordPress VIP

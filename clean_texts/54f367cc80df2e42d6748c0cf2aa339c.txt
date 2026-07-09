@@ -1,0 +1,674 @@
+How to boost your Linux skills beyond a beginner level
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+Networking
+Storage and NAS
+Components
+Peripherals
+Operating Systems
+Submenu
+Linux
+Windows
+Software
+Submenu
+Programming
+Applications
+Mobile
+Submenu
+Android
+iPhone
+Carriers
+New Tech
+Submenu
+Hobbies
+Smart Home
+Homelab
+Single-Board Computers (SBCs)
+Cutting Edge
+Streaming
+Submenu
+Streaming Content
+Streaming Platforms
+Audio/Video
+Automotive
+Reviews
+Buying Guides
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+4
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Storage
+Streaming
+Linux
+Open Source
+Microsoft Excel
+Android
+Windows
+Close
+How to boost your Linux skills beyond a beginner level
+Credit: Lucas Gouveia/How-To Geek
+By 
+Graeme Peacock
+Published
+ Apr 18, 2026, 10:30 AM EDT
+Graeme Peacock is a seasoned Linux expert with more than 15 years of hands-on experience. He has worked extensively with Ubuntu, Gentoo, Arch Linux, Qubes, and Fedora, gaining deep proficiency in everything from routine terminal operations to highly customized system builds.
+
+Graeme began his journey with Ubuntu, quickly mastering the command line and essential system administration skills. A year later, he moved to Arch Linux, where he spent nearly a decade refining his expertise through the installation and configuration of multiple minimalist systems. After some time, he moved to Gentoo, where he configured and compiled both server and desktop environments using normal and hardened profiles and frequently compiled custom kernels. Graeme moved to Qubes in 2016, where he has remained ever since.
+
+Graeme has extensive experience with highly configurable tools such as Vim, Neovim, and Emacs, and he maintains his own complex configurations. He is also highly proficient with Bash, Zsh, and dozens of utilities.
+
+Graeme holds a B.S. in software engineering and has a strong passion for programming and web development. He is proficient in Golang, Python, Bash, JavaScript, TypeScript, HTML, and CSS. He also has considerable experience with Docker and is currently working on learning Kubernetes. 
+Sign in to your 
+How-To Geek
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+4
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Do you struggle to understand how to boost your Linux skills? Are you sick of getting stuck in tutorial hell? A lack of inspiration can hold you back for years, but all you need are some ideas and a refined process. I have a guide that combines both how I learned Linux and how I approach difficult subjects, so you can breeze past beginner mode and into graybeard territory.
+✕
+ Remove Ads
+Related
+
+			How Linux Took Over the World (Without Anyone Noticing)
+		
+Discover how Linux now powers everything from smartphones to supercomputers.
+Posts
+20
+By 
+Jos Thomas
+Mar 22, 2025
+
+                        Try a project
+               
+
+            Learning is doing
+    
+Practice makes perfect, as they say, but I'd go one further and say that it's 90% of learning.
+I assume you already have the basics nailed down: booting Linux, starting and stopping applications, and rudimentary terminal skills.
+Gaining significant experience takes years if you only partake in everyday Linux use. You want to fast-forward that and challenge yourself—you need a goal, like a project.
+
+            Ideas for projects
+    
+Choosing a project shouldn't be difficult; think of something you need, and systematically pursue it. Some ideas are:
+
+                                        File server (
+NAS
+).
+                        
+
+                                        An advanced router with a transparent VPN.
+                        
+DNS server
+, possibly with ad-blocking (e.g., 
+Pi-hole
+ or 
+DNSCrypt
+).
+                        
+Media server
+.
+                        
+
+                                        A network intrusion detection system (NIDS) that passively monitors all network traffic (e.g., 
+Suricata
+).
+                        
+
+                                        Self-hosted cloud features (like 
+Nextcloud
+). You can use this to sync your cell phone's pictures, contacts, and more.
+                        
+We have tons of ideas in our self-hosted category, so if you're struggling for inspiration, be sure to check it out.
+Related
+
+			The 7 stages of becoming a real Linux user
+		
+From "I installed Ubuntu once" to "I built my own OS"—where do you actually fall on the Linux skill ladder?
+Posts
+34
+By 
+Dibakar Ghosh
+Apr 6, 2026
+
+            Approach
+    
+If your system is powerful enough, and you're up for the challenge, you can host multiple servers on the same system with 
+KVM
+ (virtual machines). However, that's not strictly necessary, and you can run multiple services on the same machine without it. Alternatively, use a 
+VPS
+.
+✕
+ Remove Ads
+Setting up services (like Nextcloud) is much easier these days with technologies like 
+Docker
+. You no longer need to make all the different variables align with your distro, because many of its images work with little fuss.
+Make sure to run Docker in 
+rootless mode
+ or use 
+Podman
+ instead.
+
+            Choose a distro
+    
+Next, 
+choose a distro
+ you're comfortable with. Since 
+Docker Hub
+ hosts official images for most services, your choice really boils down to preference. 
+Debian
+ and 
+Ubuntu Server
+ are easy to recommend, but it's your choice. I'd strongly recommend something without a graphical environment, because we shall use 
+SSH
+ to control it.
+Installing the server is where your project begins, and if you encounter any problems, be sure to keep notes (more on that in the last section). Keep in mind: you'll almost certainly need a keyboard and monitor to begin with.
+
+            Set up SSH
+    
+Credit: Lucas Gouveia/How-To Geek
+ Once you've installed your chosen distro, set up SSH. Think of this as a mini-project. Most server-based systems come with SSH pre-installed and possibly configured to run when you boot the computer. I recommend using 
+key-based authentication instead of a password
+—it's much more secure and convenient.
+However (if possible), having physical access (with a keyboard and monitor) gives you room to make mistakes, because misconfiguring SSH can lock you out of your system.
+✕
+ Remove Ads
+Once you have SSH access set up, you're now ready to do everything else remotely.
+
+            Quickly write a roadmap
+    
+At this point, you should have a primary goal defined, but you may not know the steps to get there. I strongly suggest making a project-specific page in your notes and using it as a temporary workspace.
+To begin with, write down your ultimate goal—like setting up a DNS server—then use 
+reverse-goal setting
+ to discover the intermediate goals. For example, setting up an Unbound DNS server may look something like this:
+
+                                        Configure nftables rules
+                        
+
+                                        Configure Unbound
+                        
+
+                                        Make Unbound accessible to the network
+                        
+That's a start. Now, ask questions about how to achieve each goal, and reformat your list
+
+                                        Configure nftables rules
+                                                
+
+                                        Enable external DNS port access
+                        
+
+                                        Apply the rules at boot
+                        
+
+                                        Make Unbound accessible to the network
+                                                
+
+                                        Set a listening port
+                        
+
+                                        Enable the service at boot
+                        
+Now, keep iterating upon that list until you run out of ideas—do research, take notes, and improve it. This is how I avoid tutorials entirely; I make my own while learning in the process.
+It's difficult to imagine every problem you'll encounter up front, so don't spend longer than 10–20 minutes defining goals. Once you execute the plan, you'll discover any gaps. Just be sure to 
+document your journey
+.
+
+                        Automate with Bash
+               
+
+            A few hours of learning will carry you far
+    
+If you're setting up a server, there's no way to avoid the shell. You can get quite far with Bash by knowing a few key concepts—
+if statements
+, 
+functions
+, 
+variables
+, and 
+exit codes
+. You don't need long and complicated scripts; in most cases, 1–10 lines are sufficient.
+Most scripts you write will be wrappers around complex commands, or they'll launch something via a daemon (
+unit file
+).
+Python or Perl are perfectly suitable alternatives.
+✕
+ Remove Ads
+The basics of Bash should only take an afternoon. As before, define your end goal and use reverse goal setting. Remember to take notes.
+
+                        Document your journey
+               
+
+            Notes help generate ideas and solve future problems
+    
+In recent years, note-taking has become invaluable to me. I can't undertake any moderately difficult project without a workspace (project-specific notes) to record my thoughts, lessons, solutions, goals, and progress. If you've got more than one thing going on in your life, you'll need to switch context frequently, which causes you to forget small details, increasing the difficulty. While doing it without project-specific notes is possible, you'll miss out on long-term retention and next-level organization.
+
+                    Subscribe to the newsletter for practical Linux project prompts
+                
+Level up your Linux practice—subscribe to the newsletter for curated project ideas, hands-on techniques, and repeatable note-taking frameworks that help you learn by doing, avoid tutorial traps, and build real admin skills.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+Here are the different things I record, either under a subheading or in a separate (but linked) note:
+Thoughts
+ (subheading): These are potential project ideas, things that inspired me, or similar things I've previously done. This serves as context to put things into perspective. More important than it sounds.
+                        
+Lessons
+ (separate notes): Problems I've overcome, and their solutions. They're links to separate, long-term notes that include a summary. This keeps all my achievements relevant for the duration of the project.
+                        
+Goals
+ (subheading): Computing this upfront gives me direction, builds a clear overview, and keeps my mind free from confusion. These live front-and-center in my project notes, and they're often a list of to-dos.
+                        
+Progress tracker
+ (subheading): A temporary section in my project notes that's a detailed description of what I have just done and what I need to do. It's usually 1–2 paragraphs, and it helps me pick up where I left off, even after months of absence.
+                        
+Journal
+ (separate notes): Keep track of what you did, what you learned, what your problems were, how you overcame them, and what your weaknesses are. You should review these frequently (or at the end) to guide further learning.
+                        
+✕
+ Remove Ads
+Related
+
+			Why You Should Learn Scripting Even If You're Not A Programmer
+		
+Make your computer work for you, not the other way around!
+Posts
+7
+By 
+David Delony
+Mar 16, 2025
+My project notes are a temporary workspace, and the main page has fewer than 1000 words—which includes thoughts, goals, progress details, and more. These are things I don't mind losing if I delete the project. Everything else I record in permanent notes, which includes my lessons and journals, which are invaluable for self-analysis and a long-term knowledge base.
+You can find more details on 
+my note-taking process
+ in another article I wrote. I used 
+Org-roam
+ (Emacs) for years, but now I use 
+org-node
+. These packages allow me to link notes together (like the World Wide Web). They're not for everyone, and 
+Obsidian
+ or 
+Logseq
+ provide the same benefit with much less difficulty upfront.
+The most important things are that you're making mistakes, finding solutions, and recording your findings using a highly organized note-taking system. These three activities are how you build upon prior experience without it fading. As you administer, maintain, and build new projects, your skills will naturally become stronger and build much faster through tough challenges. Having all the relevant things on hand accommodates and reinforces learning.
+Your results don't need to be perfect; let time and experience take care of that. It may take months to build your first project, but the process is what counts. You're leveling up your skill; remember that.
+✕
+ Remove Ads
+If you take nothing else away, take this: Learn through doing, and always refine your note-taking system.
+
+    						Dell XPS 13 Plus with Linux
+			
+Operating System
+
+									
+										
+											Ubuntu Linux 22.04 LTS
+
+										
+																	
+CPU
+
+									
+										
+											13th Gen Intel Core i7-1360P
+
+										
+																	
+GPU
+
+									
+										
+											Intel Iris Xe Graphics
+
+										
+																	
+RAM
+
+									
+										
+											16GB DDR5
+
+										
+																	
+$1399 at Dell
+Expand
+Collapse
+Linux
+Linux & macOS Terminal
+Open Source
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Readers like you help support How-To Geek. When you make a purchase using links on our site, we may earn an affiliate commission. 
+Read More
+.
+Close
+✕
+ Remove Ads
+
+                                                    Desktop
+                                            
+
+                                                    Mobile
+                                            
+
+			This open-source project brings the best part of Linux to Windows
+		
+40 minutes ago
+
+			These 6 Linux command defaults make the terminal much less frustrating
+		
+1 hour ago
+
+			PowerShell isn't scary—these everyday commands prove it
+		
+3 hours ago
+See More
+
+			I don't use Google Maps in Android Auto anymore—this navigation app took its place
+		
+49 minutes ago
+
+			Please stop typing on your Google Pixel—these 3 voice commands are a game changer
+		
+19 hours ago
+
+			Google Maps has a power-saving mode that extends battery life by 4 hours—but there's a catch
+		
+20 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			How I beat my Netflix slump with these 5 simple tricks
+		
+
+			5 hard truths about switching to Linux that Windows users need to hear
+		
+
+			My flat Ethernet cable was silently cutting my speeds in half
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+4
+Sign in to your 
+How-To Geek
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Jb
+Jb
+Jb
+#CK660658
+Member since 2026-01-01
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Lately we had a ton of garbage articles on XDA and here were just a bunch of nonsensical hot takes are thrown around.
+This article is not one of these! Its how I learned Linux myself and it's a great process for anyone no matter how much you already know. The note taking part is a bit of personal preference but it's on general good advice.
+The only part that is somewhat troublesome is finding a nice project for doing this. A project that's above your skills but not too far off. If you can find something that's useful to you or that you find interesting/fun that's also huge bonus.
+2026-04-18 17:28:11
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Charlie
+Charlie
+Charlie
+#HX228841
+Member since 2023-10-25
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I am new to Linux and I use Gemini as my know it all teacher who has the patience of a saint. I actually wrote a backup script for my first project. To backup my user files I even have it setup in my launcher so I can just click the icon and boom done. I also am using an old Alienware laptop from 2013. So I have been upgrading it and each time I get a new component I have a massive configuration session with Gemini. I have learned so much that way. I even try to type in commands instead of copy n pasting them.
+2026-04-18 17:00:39
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+JimT777
+JimT777
+JimT777
+#VH419765
+Member since 2023-12-16
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I am now retired after almost a quarter century in the computer repair field, and 30 years of consumer electronics repair before that.  I don't need to do anything more than everyday Linux use, and have mastered that in the past two years using Linux Mint.  My current setup is sufficient to get me through the rest of my days on this ball of dirt.
+2026-04-21 19:42:09
+Upvote
+Downvote
+Reply
+Copy
+        
+Dannywoods
+Dannywoods
+Dannywoods
+#PQ919838
+Member since 2025-04-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I’m like a lot of people in that I learn by doing. I’m a retired Unix, vms, Solaris administrator. I grew up as those and subsequently Linux grew up. I had the talent to problem solve. So as I did my daily tasks in them, I’d hit issues I didn’t understand so I researched it, made notes and tried ideas for solutions. That way, the solution stuck with me because I knew how the solution was derived. 
+My way has always been “show me what you need me to do, then get out of the way and I’ll learn it”. 
+Never had much success with learning courses. Too slow and seem to always go fairly superficial into the information. 
+2026-04-19 08:34:21
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 10, 2026
+
+                                    These $30 Dell and HP office computers are secretly ideal for home servers
+                            
+Apr 10, 2026
+
+                                    This hidden Windows 11 tool shows what your PC is really doing
+                            
+Apr 9, 2026
+
+                                    Your DNS server knows every website you visit—here's why Google's 8.8.8.8 is different
+                            
+Apr 9, 2026
+
+                                    5 open-source projects that secretly power the world
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+How-To Geek
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

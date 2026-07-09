@@ -1,0 +1,57 @@
+{
+  "article_title": "Behind the Curtain: We've been warned",
+  "core_thesis": "The article argues that AI is advancing at an unprecedented, exponential rate, with six recent facts demonstrating its power, risk, and lack of transparency. The authors contend that society, government, and institutions are not prepared for the consequences, and that even AI builders acknowledge the justified fear and uncertainty surrounding the technology.",
+  "detailed_summary": "The article presents six alarming facts from the past 60 days about AI's rapid growth and potential dangers. AI is the fastest-growing product category in history, with Anthropic's revenue skyrocketing from $1B to $30B in 16 months. Anthropic built a model (Claude Mythos Preview) so powerful at cracking security vulnerabilities that it won't release it publicly, only to 40+ organizations for defensive purposes. AI is now building AI: both OpenAI and Anthropic report that most code written internally is AI-generated, with plans for fully autonomous AI researchers by 2028-2030. Transparency is declining: Stanford's AI Index shows the Foundation Model Transparency Index dropped from 58 to 40 out of 100, with the most capable models being the least transparent. AI resentment is escalating: Sam Altman's home was attacked twice in one week (firebombing and shooting), and the attacker had a manifesto targeting AI executives. AI's economic impact is already severe: AI agents erased $2 trillion from software company valuations in 10 weeks, more severe relative to market than the dot-com bust or 2008 financial crisis. The article concludes that these facts collectively describe a technology outpacing public understanding, with builders themselves warning of the risks.",
+  "entities": [
+    {
+      "name": "Sam Altman",
+      "type": "person",
+      "role": "CEO of OpenAI, whose home was attacked and who publicly acknowledged justified fear about AI."
+    },
+    {
+      "name": "Anthropic",
+      "type": "organization",
+      "role": "AI company that built Claude Mythos Preview, a model too dangerous for public release, and is the fastest-growing company in history."
+    },
+    {
+      "name": "OpenAI",
+      "type": "organization",
+      "role": "AI company where most code is now AI-generated, and whose chief scientist targets 2028 for a fully autonomous AI researcher."
+    },
+    {
+      "name": "Claude Mythos Preview",
+      "type": "event",
+      "role": "An AI model built by Anthropic that can crack critical security vulnerabilities, withheld from public release due to danger."
+    },
+    {
+      "name": "Stanford AI Index Report",
+      "type": "organization",
+      "role": "Published the 2026 AI Index Report showing declining transparency in AI models."
+    },
+    {
+      "name": "Boris Cherny",
+      "type": "person",
+      "role": "Runs Anthropic's Claude Code, stated that 'pretty much 100%' of code inside Anthropic is AI-generated."
+    }
+  ],
+  "key_data_points": [
+    "AI is the fastest-growing product category in world history, with Anthropic's annualized revenue growing from $1B (end of 2024) to $9B (end of 2025) to $30B (April 2026). (🟢 Relevant to your interests: demonstrates the explosive economic impact of AI, which affects cybersecurity job markets and tooling.)",
+    "Anthropic built Claude Mythos Preview, a model that can crack critical security vulnerabilities in operating systems and browsers, and is limiting access to 40+ organizations for cyberdefense. (🟢 Highly relevant to Red Teaming: this shows AI's offensive capability; you should monitor how such models could be used for penetration testing or weaponized by adversaries.)",
+    "OpenAI and Anthropic report that 'pretty much 100%' of code written internally is AI-generated, and both companies are moving toward fully autonomous AI researchers by 2028-2030. (🟢 Relevant to programming: AI is now writing production code; you should learn to leverage AI coding assistants effectively and understand their limitations.)",
+    "The Foundation Model Transparency Index dropped from 58 to 40 out of 100 in the last year, with the most capable models being the least transparent. (🟢 Relevant to your cybersecurity focus: lack of transparency makes it harder to audit models for vulnerabilities or backdoors.)",
+    "A 20-year-old man firebombed Sam Altman's home and later shot at it, with a manifesto naming AI execs as targets. (🟢 Relevant as a student of psychology/sociology: shows real-world backlash against AI concentration of power.)",
+    "AI agents erased $2 trillion from software company valuations in 10 weeks, more severe relative to market than the dot-com bust or 2008 financial crisis. (🟢 Relevant to your career planning: software engineering jobs are directly threatened; you should diversify skills into AI-hardened areas.)"
+  ],
+  "methodology_steps": [],
+  "conclusions": [
+    "AI is advancing faster than any previous technology, with growth metrics (Anthropic's revenue, adoption rates) that dwarf historical benchmarks like Standard Oil or Google. This means the window for preparation is extremely short.",
+    "The most powerful AI models are being withheld from public release due to their potential for harm (e.g., Claude Mythos Preview's ability to crack security vulnerabilities). This indicates that offensive AI capabilities are outpacing defensive measures, which is critical for Red Teamers to understand.",
+    "AI is now building AI, with companies like OpenAI and Anthropic reporting that nearly all internal code is AI-generated. This self-improvement loop could lead to recursive self-improvement by 2027-2030, which Anthropic's co-founder calls 'the ultimate risk.'",
+    "Transparency is decreasing as models become more powerful, making it harder for regulators and the public to understand risks. This lack of oversight is a systemic vulnerability that could be exploited.",
+    "The economic impact of AI is already severe, with $2 trillion wiped from software company valuations. This signals a fundamental shift in the value of human coding skills, pushing the need for programmers to adapt.",
+    "Even AI leaders like Sam Altman acknowledge that fear and anxiety about AI are justified, and that power must be democratized. This admission from the top underscores the gravity of the situation."
+  ],
+  "personal_relevance_summary": "This article is a stark wake-up call for anyone in cybersecurity, programming, or technology. For your Red Teaming focus, the revelation that AI models can now crack critical security vulnerabilities (and are being withheld for that reason) means you must stay ahead of AI-driven offensive techniques. For your programming work, the fact that AI is now writing the majority of code at leading AI companies signals that you should integrate AI coding assistants into your workflow and learn to review AI-generated code for security flaws. As a student, the article's discussion of AI's exponential growth and societal impact provides rich material for understanding the broader context of your studies. The declining transparency and lack of regulation also highlight an opportunity for you to specialize in AI security auditing, a field that will be in high demand.",
+  "extra_advice": "Consider building a homelab focused on AI security: set up local LLMs (e.g., via Ollama or vLLM) and experiment with red-teaming them using techniques like prompt injection, jailbreaking, and model inversion. This will give you hands-on experience with the very vulnerabilities described in the article. Also, start contributing to open-source AI transparency projects (e.g., the Foundation Model Transparency Index) to build expertise and network in this critical area.",
+  "source_url": "https://www.axios.com/2026/04/29/ai-models-speed-warning"
+}

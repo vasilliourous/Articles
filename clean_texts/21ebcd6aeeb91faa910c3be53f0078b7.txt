@@ -1,0 +1,408 @@
+I replaced my entire workflow with Claude Code, and I'm not even a developer
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I replaced my entire workflow with Claude Code, and I'm not even a developer
+By 
+Joe Rice-Jones
+Published
+ Mar 30, 2026, 7:30 AM EDT
+Maker, meme-r, and unabashed geek, Joe has been writing about technology since starting his career in 2018 at KnowTechie. He's covered everything from Apple to apps and crowdfunding and loves getting to the bottom of complicated topics. In that time, he's also written for SlashGear and numerous corporate clients before finding his home at XDA in the spring of 2023.
+
+He was the kid who took apart every toy to see how it worked, even if it didn't exactly go back together afterward. That's given him a solid background for explaining how complex systems work together, and he promises he's gotten better at the putting things back together stage since then. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																						
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+I have to admit, 
+I slept on Claude
+ at first, and that was a mistake. I was already using several other AI tools and just didn't see the need to further complicate my stack. 
+Perplexity for research
+ tied to a local LLM for summarization, and I didn't see the need for more chefs in the kitchen. Except, I should have fired them all and moved over to Claude Code, because it's far more versatile and powerful for the workflow I use for     
+ideation and research
+.    
+✕
+ Remove Ads
+Related
+
+			I built my AI workflow around NotebookLM, Claude, and local models—here's what each does best
+		
+Each one has a designated role
+Posts
+By 
+Nolen Jonker
+Mar 22, 2026
+
+                        Okay, but why Claude Code?
+               
+
+            The toolchains are easier for me to understand
+    
+ I might have taken a while to dive into Claude Code, but that's mostly because I'm no developer. Yes, I took some computer science modules at university (in pre-LLM AI, no less!), but those were focused on C+, and in one case, Assembly, and are so far divorced from the current meta for LLM work that I might as well forget most of it.
+But after working on a couple of projects that use Claude Code, I realized I don't need any of it. I can just... talk to the computer, as if it was someone on Discord. No code needed, I don't even really need any coding knowledge because I'm not using Claude Code for, well, code.
+I know, that sounds odd, but hear me out. Once I've attached Claude to a couple of MCP servers to search for up-to-date information and social media posts, it turns into an ideation machine for future content.
+
+            I'm on the Max plan, but maybe I don't need to be
+    
+I'm no developer, but my wife is as part of her work, and that's why we've got the Max plan (although it's the x5 plan and not the x20). The amount of Claude usage I do daily barely uses any tokens, while her work needs most of the context window for front-end development use.
+
+				Claude
+			
+OS
+
+									
+										
+											Windows, macOS
+
+										
+																	
+Individual pricing
+
+									
+										
+											Free plan available; $17/month Pro plan
+
+										
+																	
+See at Official Site
+See at Claude
+Expand
+Collapse
+✕
+ Remove Ads
+
+                        Claude Code helps with the friction of the creative process
+               
+
+            I've never been much good at ideation
+    
+ I love being a writer, but there's one aspect of it that isn't my favorite. Ideation is hard work, partly remembering what I've already covered, but also looking for relevant, timely, and genuinely useful topics can feel like an uphill struggle at times. Okay, 
+most
+ of the time, especially in this shifting media landscape.
+But Claude Code can take the annoyances out of the process for me. AI is much faster at browsing the internet and finding relevant social media posts or new GitHub repos with cool tools to highlight. And with a quick 
+CLAUDE.md
+ file, it can find me relevant technical sources and topics that suit the types of software and service journalism that we try to live up to.
+Instead of diving into traffic numbers, Claude can find me the latest topics, before they hit virality. It doesn't always work, but it's close enough that I can generally feel which options are best to move forward with.
+
+            With a little role-play, Claude will put some options together
+    
+✕
+ Remove Ads
+ I can tell Claude Code to set things up for research, and it'll create a new folder and a new markdown file in it to write in. Then it's time for a little role-play, because prompting always works better for ideation with a defined role:
+You are my technical writing partner.
+Using 
+CLAUDE.md
+, propose 5 specific article ideas that would be valuable
+for $userType using $tool1 and $tool2 at home.
+For each idea, include:
+- Working title
+- One-sentence “why this matters”
+- 3–5 bullet points of key sections
+CLAUDE.md
+ already set up the average user for the site, but I'm going to add more archetypes based on traffic patterns, and see what that does to ideation quality. They're already similar to what I was writing, but without the hours spent browsing Reddit, Google Discover, and Feedly to find interesting topics.
+
+            Which can be fleshed out into sections
+    
+ Once a shortlist is together, I'll get Claude Code to expand on a few ideas and let it loose on a folder full of relevant material. Sometimes this'll be a call to Context7 to do some actual code document reading, especially if I'm working with Proxmox or anything else with good source documentation. I could probably use the desktop app for all these things, but Claude Code is set up to create files by default, and that keeps me more organized, and I don't lose anything as I go along.
+
+            I don't use agents yet, but I should
+    
+The next step for me is to split the workflow up into sections and create dedicated subagents for each section. That way, I can keep the ideation thread free of the search and expansion that is normally part of the linear process. One that searches and finds relevant information to download, while another scans that folder to glean insights and create summaries. Perhaps an automated agent that orchestrates the others, so I can wake up every day with new projects and ideas to flesh out. My imagination is really the limit here, and because agents are described in plain language, I don't need to write a single line of code.
+✕
+ Remove Ads
+Related
+
+			I used Claude Code, Google Antigravity and OpenAI Codex to develop an app, and found only one worth using
+		
+Vibe coding is here to stay, and it has only one champion
+Posts
+38
+By 
+Abhinav Raj
+Mar 24, 2026
+
+            You don't have to be a developer to use Claude Code and that's most of its power
+    
+I've always been a big-picture thinker, and pseudocode makes sense to me. It's when you get into the nitty-gritty that my brain refuses to cooperate, but I don't need to worry about that when setting up Claude Code workflows. Everything is defined in Markdown files
+in plain English, and 
+letting Claude find things with minimal supervision
+ is the best way to use
+ this generation of LLMs. They can see interlinked ideas better than I can because that's at the core of their design, which means I can generate ideas to pursue further at breakneck speed, helping me get on with the important task of writing.
+✕
+ Remove Ads
+AI tools
+Claude
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I carried the $54 Thinknode M5 everywhere for weeks, and now I want to build my own mesh network
+		
+
+			Wi-Fi 7 routers are finally here, but most homes aren't wired well enough to take advantage
+		
+
+			I set up Claude Code the way its creator does, and the difference is night and day
+		
+
+                                                
+                
+                                                    
+                                    Thread
+                                                    
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Be the first to post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+This space is open for discussion.
+Be the first to share your thoughts.
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Mar 30, 2026
+
+                                    This 3rd-gen iPod resurrected with a Raspberry Pi proves people still love Apple's older products
+                            
+Mar 29, 2026
+
+                                    Wayland is getting a 6-year-long fix for its most annoying quirk, and KDE and GNOME are already implementing it
+                            
+Mar 28, 2026
+
+                                    I fine-tuned a 7B model to write my Home Assistant automations, and it actually works
+                            
+Mar 28, 2026
+
+                                    Framework is funding KDE to build Linux laptops you can actually customize
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            Windows XP's Secret Themes
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:07
+
+                            The end of affordable PCs?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:26
+
+                            Id Software's Quake turns 30
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

@@ -1,0 +1,47 @@
+{
+  "article_title": "Claude Code Is Wasting 98% Of Your Tokens On Search. Here’s The Fix.",
+  "core_thesis": "Claude Code's default grep-based file search is extremely token-inefficient, often reading irrelevant files and wasting up to 98% of tokens per query. The article proposes a local MCP server called Semble, which uses semantic embedding search to drastically reduce token waste and improve search accuracy.",
+  "detailed_summary": "The article identifies a critical inefficiency in Claude Code: its reliance on grep for file search. Grep matches keywords literally, returning many irrelevant files (e.g., searching 'parse' returns all files containing 'parse', 'parser', 'parsing'). Claude Code then reads the full content of each matched file, consuming 50k+ tokens per query on average, most of which are wasted. This is not a bug but a design choice, and the article implies Anthropic has little incentive to optimize it. The fix is a local, open-source MCP server called Semble, built by Minish (a company known for fast embedding models). Semble uses semantic search (embedding-based) to find files by intent, not just keywords. It runs entirely locally on CPU, requires no API key or GPU, and can be installed via `uv add semble` and added to Claude Code with a simple command. After initialization with `semble init`, Claude Code's search becomes much more efficient, saving tokens and time.",
+  "entities": [
+    {
+      "name": "Claude Code",
+      "type": "software",
+      "role": "AI coding assistant that uses grep for file search, leading to token waste"
+    },
+    {
+      "name": "Semble",
+      "type": "software",
+      "role": "Open-source MCP server providing semantic search to replace grep in Claude Code"
+    },
+    {
+      "name": "Minish",
+      "type": "organization",
+      "role": "Company that created Semble and a fast embedding model"
+    },
+    {
+      "name": "Alex Dunlop",
+      "type": "person",
+      "role": "Author of the article, engineer at Popp AI"
+    }
+  ],
+  "key_data_points": [
+    "Claude Code's default grep+read workflow uses 50k+ tokens per query, with most tokens wasted on irrelevant files (🟢 relevant to your Red Teaming: token waste slows down tooling; efficient search is critical when iterating on exploits or payloads).",
+    "Semble runs locally on CPU with no GPU or API key required, making it free and private (🟢 relevant to your homelab: easy to self-host without external dependencies).",
+    "Installation is simple: `uv add semble`, then `claude mcp add semble -s user -- uvx --from \"semble[mcp]\" semble`, then `semble init` (🟢 relevant to your DevOps: quick integration into existing workflows).",
+    "Semble uses semantic embedding search to match intent, not keywords, drastically reducing false positives (🟢 relevant to your programming: faster file navigation in large codebases)."
+  ],
+  "methodology_steps": [
+    "Install Semble using `uv add semble` (or pip).",
+    "Add Semble as an MCP server to Claude Code: `claude mcp add semble -s user -- uvx --from \"semble[mcp]\" semble`.",
+    "Initialize Semble in your project: run `semble init` inside Claude Code (or Codex).",
+    "No further configuration needed; Claude Code will now use semantic search instead of grep."
+  ],
+  "conclusions": [
+    "Semble eliminates the token waste caused by grep-based search, saving up to 98% of tokens per query. This directly reduces costs and speeds up Claude Code's file-finding operations.",
+    "The fix is local, open-source, and easy to install, making it accessible for any developer using Claude Code. It requires no cloud API, preserving privacy and offline capability.",
+    "For users of AI coding assistants, adopting semantic search is a practical optimization that improves both efficiency and accuracy, especially in large codebases."
+  ],
+  "personal_relevance_summary": "As a programmer and Red Teamer, you frequently navigate large codebases to find vulnerabilities or understand logic. Semble's semantic search will save you significant time and tokens when using Claude Code for code analysis or exploit development. The local, CPU-only deployment fits perfectly into your homelab ethos—no external dependencies, full privacy. This tool directly addresses a pain point in AI-assisted coding: inefficient file retrieval. Adopting it will make your workflow faster and cheaper.",
+  "extra_advice": "Consider integrating Semble into other MCP-compatible tools (e.g., Codex, Cursor) to extend the benefit beyond Claude Code. Also, experiment with Minish's embedding model for other semantic search tasks in your homelab, like documentation indexing or log analysis.",
+  "source_url": "https://medium.com/vibe-coding/claude-code-is-wasting-98-of-your-tokens-on-search-heres-the-fix-1034b2039291"
+}

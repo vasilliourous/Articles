@@ -1,0 +1,39 @@
+{
+  "article_title": "Working-Class People Who Want to Be Successful Should Remove These 10 Words From Their Vocabulary",
+  "core_thesis": "The article argues that the language habits common in working-class environments—words like 'luck,' 'fair,' 'just,' 'try,' 'actually,' 'can't,' 'should,' 'spend,' 'problem,' and 'maybe'—reinforce an external locus of control, which undermines professional ambition. By consciously removing these words and replacing them with more empowered alternatives, individuals can shift to an internal locus of control, signaling agency and decisiveness, which are critical for career advancement and entrepreneurial success.",
+  "detailed_summary": "The article, published on New Trader U, presents a linguistic framework for upward mobility. It identifies ten words that, when used habitually, subtly reinforce a passive mindset and an external locus of control—the belief that life happens to you rather than you shaping it. Each word is dissected with its psychological impact and a recommended replacement. For example, 'luck' is replaced with 'I identified an opportunity and acted on it' to preserve agency; 'fair' is replaced with 'What is the solution?' to shift from grievance to problem-solving; 'just' is removed to eliminate verbal apologies; 'try' is replaced with a firm commitment; 'actually' is dropped to avoid condescension; 'can't' is replaced with 'How can I?' or 'That isn't a priority'; 'should' is replaced with 'I choose to' or 'I will'; 'spend' is replaced with 'invest' to frame resources as assets; 'problem' is replaced with 'challenge' or 'opportunity' to reduce defensiveness; and 'maybe' is replaced with a clear 'yes' or 'no' to build trust. The conclusion ties these changes to shifting from an external to an internal locus of control, which is essential for professional growth. The article acknowledges that working-class language often prioritizes humility and group loyalty, but argues that these traits alone are insufficient for high-level success.",
+  "entities": [
+    {
+      "name": "Steve Burns",
+      "type": "person",
+      "role": "Author of the article and founder of New Trader U, a financial education platform."
+    },
+    {
+      "name": "New Trader U",
+      "type": "organization",
+      "role": "Website publishing financial and success-oriented content, targeting aspiring traders and entrepreneurs."
+    },
+    {
+      "name": "Yoda",
+      "type": "person",
+      "role": "Fictional character from Star Wars, quoted for the phrase 'Do or do not. There is no try.'"
+    }
+  ],
+  "key_data_points": [
+    "The article identifies 10 words that reinforce an external locus of control: luck, fair, just, try, actually, can't, should, spend, problem, maybe. (🟢 Relevant to your personal development: as a student and ambitious professional, eliminating these words can improve your communication and mindset, making you more decisive and proactive in both academic and career settings.)",
+    "Replacing 'luck' with 'I identified an opportunity and acted on it' shifts credit from chance to personal effort, increasing perceived agency. (🟢 Relevant to your Red Teaming and programming: in technical fields, attributing success to skill rather than luck encourages repeatable methodologies and systematic learning.)",
+    "The word 'just' functions as a verbal apology; removing it makes statements more decisive without sounding aggressive. (🟢 Relevant to your professional communication: in emails, code reviews, or team meetings, dropping 'just' can make your suggestions or requests sound more confident.)",
+    "Using 'try' implies an excuse for failure; replacing it with a clean commitment like 'I will have it by Friday at noon' builds trust and accountability. (🟢 Relevant to your programming and DevOps: clear deadlines and commitments are critical for project management and team collaboration.)",
+    "The word 'spend' frames time and money as disappearing resources; replacing it with 'invest' encourages a return-on-investment mindset. (🟢 Relevant to your homelab and DevOps: thinking of time and money as investments can help prioritize learning tools and infrastructure that yield long-term benefits.)",
+    "Labeling a situation a 'problem' triggers a defensive stress response; reframing it as a 'challenge' or 'opportunity' keeps thinking creative and solution-oriented. (🟢 Relevant to your Red Teaming: approaching security vulnerabilities as challenges rather than problems fosters innovative exploitation techniques.)",
+    "The article concludes that working-class language often defaults to an external locus of control due to survival environments that reward humility and caution, but this mindset limits professional growth. (🟢 Relevant to your student life: being aware of this linguistic bias can help you adopt a more empowered internal locus, improving study habits and career planning.)"
+  ],
+  "methodology_steps": [],
+  "conclusions": [
+    "The article concludes that language shapes mindset and professional outcomes. By removing ten specific words from daily vocabulary, individuals can shift from an external to an internal locus of control, which is a foundational trait for success in business and career advancement. The evidence is drawn from psychological principles (locus of control) and practical communication examples. (🟢 Relevant to your ambition: this is a low-effort, high-impact change you can implement immediately to improve your professional image and self-perception.)",
+    "The author acknowledges that working-class language traits like humility and group loyalty have value but are insufficient alone for high-level success. The recommended linguistic shifts are not about abandoning one's roots but about adding a new set of tools for different contexts. (🟢 Relevant to your student background: you can maintain your values while adopting language that opens doors in academic and professional settings.)"
+  ],
+  "personal_relevance_summary": "This article directly addresses your ambition and willingness to take initiative by providing a concrete, actionable framework for improving your mindset and communication. As a student and aspiring cybersecurity professional, the linguistic shifts—especially replacing 'problem' with 'challenge' and 'spend' with 'invest'—can enhance your problem-solving approach and resource management. The advice is simple yet profound: by changing how you speak, you change how you think, which is critical for Red Teaming (where creative exploitation requires an internal locus) and for homelab/DevOps (where investing time wisely yields better learning outcomes). The article also aligns with your interest in productivity and psychology, offering a practical application of cognitive reframing. You can immediately start auditing your vocabulary in emails, study groups, and technical discussions to project confidence and decisiveness.",
+  "extra_advice": "As an ambitious programmer and Red Teamer, consider applying this linguistic framework to your technical documentation and code comments. For example, replace 'This might be a problem' with 'This is a challenge to optimize' in bug reports, or replace 'I'll try to fix this' with 'I will resolve this by EOD.' This not only shifts your mindset but also influences how teammates and managers perceive your reliability. Additionally, you can create a personal 'word audit' checklist for a week, noting each time you use one of the ten words, and consciously practice the replacement. Over time, this will become automatic and reinforce an internal locus of control in all areas of your life.",
+  "source_url": "https://www.newtraderu.com/2026/04/28/working-class-people-who-want-to-be-successful-should-remove-these-10-words-from-their-vocabulary/"
+}

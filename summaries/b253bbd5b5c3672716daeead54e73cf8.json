@@ -1,0 +1,58 @@
+{
+  "article_title": "Open-source privacy proxy masks PII before prompts reach external AI services",
+  "core_thesis": "Dataiku's Kiji Privacy Proxy is an open-source local gateway that detects and masks personally identifiable information (PII) in prompts sent to external AI APIs, enabling enterprises to comply with privacy regulations without sacrificing the utility of large language models. The tool runs inference locally, adds minimal latency, and supports multiple deployment form factors.",
+  "detailed_summary": "The article introduces Kiji Privacy Proxy, an open-source tool developed by Dataiku that sits between local applications and external AI APIs (e.g., OpenAI, Anthropic). It intercepts outbound requests, uses a quantized DistilBERT model running via ONNX Runtime on the user's machine to detect 16+ categories of PII (emails, phone numbers, SSNs, credit cards, IP addresses), replaces them with realistic dummy values, forwards the sanitized request to the API, and then restores the original values in the response. This ensures the calling application receives coherent output while PII never leaves the network. The detection model achieves a 94% F1 score on an industry benchmark, and latency stays under 100 ms for most requests. Deployment options include a macOS Electron app (auto-configures proxy on port 8081), a Linux standalone server binary (requires HTTP_PROXY/HTTPS_PROXY env vars), and a Chrome extension for browser-based AI interactions. The article also cites a 2026 Dataiku survey where 85% of CIOs reported AI project delays due to traceability or explainability gaps, with privacy being a major factor. Kiji is free and available on GitHub.",
+  "entities": [
+    {
+      "name": "Dataiku",
+      "type": "organization",
+      "role": "Developer and publisher of Kiji Privacy Proxy"
+    },
+    {
+      "name": "Kiji Privacy Proxy",
+      "type": "software",
+      "role": "Open-source local gateway for PII masking before AI API calls"
+    },
+    {
+      "name": "DistilBERT",
+      "type": "technology",
+      "role": "Quantized machine learning model used for PII detection"
+    },
+    {
+      "name": "ONNX Runtime",
+      "type": "technology",
+      "role": "Runtime engine for executing the DistilBERT model locally"
+    },
+    {
+      "name": "OpenAI",
+      "type": "organization",
+      "role": "External AI API provider that Kiji proxies requests to"
+    },
+    {
+      "name": "Anthropic",
+      "type": "organization",
+      "role": "External AI API provider that Kiji proxies requests to"
+    }
+  ],
+  "key_data_points": [
+    "Kiji Privacy Proxy detects 16+ categories of PII including email addresses, phone numbers, Social Security numbers, credit card numbers, and IP addresses (🟢 relevant to Red Teaming: understanding PII detection categories helps in crafting evasion techniques or testing proxy robustness).",
+    "The PII detection model is a quantized DistilBERT running via ONNX Runtime locally, achieving a 94% F1 score on an industry benchmark (🟢 relevant to Red Teaming: high detection rate means bypassing it requires sophisticated obfuscation; useful for testing proxy effectiveness).",
+    "Latency stays under 100 milliseconds for most requests, making it suitable for real-time applications (🟢 relevant to DevOps/Homelab: low overhead means it can be integrated into production pipelines without significant performance impact).",
+    "A 2026 Dataiku survey of 600 CIOs found that 85% had seen AI projects delayed or blocked due to gaps in traceability or explainability, with privacy concerns a significant factor (🟢 relevant to student/ambition: highlights market demand for privacy solutions, potential area for innovation or research).",
+    "Kiji is available for free on GitHub under an open-source license (🟢 relevant to Homelab: can be self-hosted and customized; useful for learning proxy architectures and ML-based data sanitization)."
+  ],
+  "methodology_steps": [
+    "Deploy Kiji Privacy Proxy on macOS: Install the native Electron desktop application, which automatically configures Proxy Auto-Config (PAC) so Safari and Chrome route traffic through Kiji on port 8081 without manual environment variables.",
+    "Deploy Kiji Privacy Proxy on Linux: Run the standalone server binary and set the HTTP_PROXY and HTTPS_PROXY environment variables to point to the proxy address.",
+    "Deploy via Chrome extension: Install the dedicated Chrome extension to route web requests through Kiji for browser-based AI services like ChatGPT.",
+    "Configure the proxy to intercept outbound requests to external AI APIs (e.g., OpenAI, Anthropic). The proxy will automatically detect PII using the local ML model, mask it with realistic dummy values, forward the sanitized request, and restore original values in the response.",
+    "Monitor latency: The tool is designed to keep detection and masking under 100 ms; verify performance in your environment using the project's documentation."
+  ],
+  "conclusions": [
+    "Kiji Privacy Proxy provides a practical, open-source solution for enterprises to sanitize PII before sending prompts to external AI APIs, addressing compliance requirements under GDPR, HIPAA, and CCPA. The local inference ensures no additional data leakage, and the low latency makes it viable for production use.",
+    "The tool's architecture—local ML model, proxy interception, and value restoration—can serve as a reference for building custom data sanitization pipelines in homelab or DevOps environments. For Red Teaming, understanding its detection capabilities (16+ PII categories, 94% F1) is valuable for testing bypass techniques or assessing the security posture of AI-integrated applications."
+  ],
+  "personal_relevance_summary": "This article is directly relevant to your cybersecurity and programming interests: Kiji Privacy Proxy is an open-source tool you can deploy in your homelab to learn about proxy architectures, ML-based data detection, and API security. As a Red Teamer, you can analyze its PII detection model to identify potential bypasses or test its robustness in offensive scenarios. The low-latency, local inference design is a good example of privacy-preserving AI integration, which you can adapt for your own projects. Additionally, the survey data on CIO concerns about AI privacy highlights a growing market need—something you could explore for research or tool development.",
+  "extra_advice": "Consider setting up Kiji Privacy Proxy in your homelab as a reverse proxy for AI APIs, then attempt to craft prompts that evade PII detection (e.g., using encoding, synonyms, or split tokens). This will give you hands-on experience with both defensive and offensive aspects of AI data sanitization. You could also extend the tool by adding custom PII patterns or integrating it with a SIEM for logging masked requests.",
+  "source_url": "https://www.helpnetsecurity.com/2026/05/01/open-source-pii-privacy-proxy/"
+}

@@ -1,0 +1,53 @@
+{
+  "article_title": "I transformed Claude into the ultimate coding tutor that tracks my progress (Prompt included)",
+  "core_thesis": "The article presents a structured prompt for Anthropic's Claude AI that transforms it from a passive code generator into an active, exercise-driven coding tutor. The system forces the learner to write code themselves, tracks progress across sessions via project memory, and provides immediate feedback through Claude's Artifacts feature, thereby avoiding the common pitfall of 'spectator mode' where learners watch AI write code without retaining knowledge.",
+  "detailed_summary": "The author, Dibakar Ghosh, describes a method to use Claude as a hands-on coding tutor by creating a Project with a detailed instruction prompt. The prompt defines Claude's role as a tutor that teaches through exercises: it introduces a concept, shows a small example, then challenges the student to modify the code to achieve a specific result. The student copies the code into their local IDE (e.g., VS Code), makes changes, and pastes the result back. Claude reviews the logic and syntax, and refuses to move on until the student submits a correct solution. The system tracks progress across sessions by generating session summaries (e.g., 'Day 1', 'Day 2') that are saved to the Project's knowledge base. At the start of each new session, Claude reads the most recent summary and calibrates the lesson accordingly—continuing from where the student left off, revisiting sticking points, and not re-teaching what is already solid. The workflow works best for languages Claude can execute live: HTML, CSS, JavaScript, React (via Artifacts), and Python for data visualization (via the Analysis tool). It is less effective for back-end or systems languages (Ruby, PHP, Go, Java, C++, etc.) because Claude cannot run them live, but the tutoring method and context tracking still apply. The article includes the full prompt, which also instructs Claude to use Mermaid diagrams for visualizing abstract concepts, comment every meaningful line of code, and explain the 'why' behind each concept. The author emphasizes that this setup takes only two minutes and prevents the learner from slipping into spectator mode.",
+  "entities": [
+    {
+      "name": "Claude",
+      "type": "organization",
+      "role": "AI assistant by Anthropic used as the coding tutor"
+    },
+    {
+      "name": "Dibakar Ghosh",
+      "type": "person",
+      "role": "Author of the article and tech journalist at How-To Geek"
+    },
+    {
+      "name": "How-To Geek",
+      "type": "organization",
+      "role": "Publication that published the article"
+    },
+    {
+      "name": "Anthropic",
+      "type": "organization",
+      "role": "Company that developed Claude"
+    }
+  ],
+  "key_data_points": [
+    "The prompt forces an exercise-driven learning loop: Claude introduces a concept, shows a small example, then challenges the student to modify the code to achieve a specific result. The student must copy the code into their local IDE, make changes, and paste the result back for review. (🟢 Relevant to your programming needs: this method ensures you actively write code rather than passively watching AI generate it, which is critical for building real skills.)",
+    "Claude's Projects feature allows all related chats to live in one space, and Claude builds a memory from conversations within that project. Session summaries (e.g., 'Day 1') are saved to the Project's knowledge base, so Claude can pick up exactly where the student left off in the next session. (🟢 Relevant to your student needs: this provides a structured, long-term learning path that adapts to your progress and difficulties.)",
+    "The workflow works best for languages Claude can execute live: HTML, CSS, JavaScript, React (via Artifacts), and Python for data visualization (via the Analysis tool). It is less effective for back-end or systems languages (Ruby, PHP, Go, Java, C++, etc.) because Claude cannot run them live. (🟢 Relevant to your programming needs: if you're learning web development or data science, this is ideal; for systems programming, you'll need to rely on your local environment with a slower feedback loop.)",
+    "The prompt instructs Claude to use Mermaid diagrams to visualize abstract concepts like control flow, data structures, algorithms, and component trees. This helps make complex ideas click instantly. (🟢 Relevant to your student needs: visual aids can accelerate understanding of tricky programming concepts.)",
+    "The prompt includes a 'Tone' section that tells Claude to be encouraging but honest, celebrate real understanding, and flag confusion clearly. When the student makes a mistake, Claude is instructed to say so clearly and explain the correction. (🟢 Relevant to your learning style: this direct feedback is valuable for rapid improvement.)"
+  ],
+  "methodology_steps": [
+    "1. Open Claude (web or desktop app) and create a new Project (e.g., 'Learning Web Design').",
+    "2. Paste the provided prompt into the Project instructions. The prompt defines Claude's role as a hands-on coding tutor, the curriculum scope (HTML, CSS, JS, React, Python for data viz), the teaching methodology (exercise-driven, live Artifacts, Mermaid diagrams), and session management (summaries saved to knowledge base).",
+    "3. Start a chat inside the project. Tell Claude what you want to learn, or let it recommend a starting point (default path: HTML → CSS → CSS layout → JavaScript → DOM → React).",
+    "4. In each session, Claude introduces a concept and shows a small working example in an Artifact (for web) or Analysis tool (for Python). It then gives you a specific challenge to modify the code (e.g., 'change the paragraph's color to navy with 16px of padding').",
+    "5. Copy the code from the Artifact into your local IDE (e.g., VS Code), make the changes, and paste your version back into the chat.",
+    "6. Claude reviews your logic and syntax, tells you what's right and wrong, and explains why. It will not move to the next concept until you submit a correct solution. If stuck, you can ask for hints, but Claude will not write the full answer.",
+    "7. At the end of the session, say 'wrap up' or 'done for today.' Claude generates a session summary Artifact with sections: Concepts covered, What clicked, Sticking points, Still needs work, Suggested next session.",
+    "8. Save the summary to the Project's knowledge base using the 'Add Content' button, labeled by day (e.g., 'Day 3').",
+    "9. In the next session, Claude reads the most recent summary and calibrates: continues from the last concept that clicked, revisits sticking points, and does not re-teach what is already solid."
+  ],
+  "conclusions": [
+    "The structured prompt effectively prevents 'spectator mode' by requiring the student to write code themselves and pass exercises before moving on. This hands-on approach is far more effective for learning than simply watching AI generate code. (🟢 Relevant to your programming needs: you can apply this method to any language you're learning, especially web technologies.)",
+    "Claude's Projects feature and session summaries provide a persistent, adaptive learning environment that tracks progress across multiple sessions. This is a significant advantage over ad-hoc tutoring sessions where context is lost. (🟢 Relevant to your student needs: this system can help you maintain continuity in your learning, especially if you study in short, irregular sessions.)",
+    "The workflow is limited to languages Claude can execute live (HTML, CSS, JS, React, Python data viz). For back-end or systems languages, the feedback loop is slower because you must rely on your local environment. However, the exercise and tracking methodology still works. (🟢 Relevant to your programming needs: if you're learning a language outside Claude's live execution scope, you can still use the prompt but should expect more context switching.)"
+  ],
+  "personal_relevance_summary": "This article provides a ready-to-use, two-minute setup that transforms Claude into a personalized coding tutor that tracks your progress across sessions. As a programmer, you can immediately apply this to learn new languages or frameworks, especially web technologies (HTML, CSS, JS, React) and Python data visualization. The exercise-driven approach ensures you actively write code, which is far more effective than passive watching. As a student, the session summaries and adaptive curriculum help you maintain continuity and focus on your weak areas. The prompt is fully included, so you can copy it directly and start learning today. This is a practical, actionable tool that aligns with your ambition to take initiative in your own learning.",
+  "extra_advice": "Consider using this Claude tutor setup to learn a new technology you've been putting off, such as React or data visualization with Python. The structured, exercise-based approach will force you to write code and build muscle memory. Additionally, you could modify the prompt to include cybersecurity-specific exercises (e.g., 'write a script that parses HTTP headers' or 'create a simple port scanner in Python') to align with your Red Teaming interests. The same methodology works for any language Claude can execute live, so you can tailor the curriculum to your offensive security goals.",
+  "source_url": "https://www.howtogeek.com/i-transformed-claude-into-the-ultimate-coding-tutor/"
+}

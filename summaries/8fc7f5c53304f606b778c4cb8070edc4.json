@@ -1,0 +1,72 @@
+{
+  "article_title": "Payouts King ransomware uses QEMU VMs to bypass endpoint security",
+  "core_thesis": "The Payouts King ransomware operation (linked to the GOLD ENCOUNTER threat group and possibly former BlackBasta affiliates) leverages QEMU virtual machines to run hidden Alpine Linux VMs on compromised hosts, creating reverse SSH tunnels that bypass endpoint security solutions. This technique allows attackers to execute payloads, store malicious files, and conduct post-exploitation activities without detection by host-based security tools.",
+  "detailed_summary": "Sophos researchers documented two campaigns (STAC4713 and STAC3725) where attackers abuse QEMU, an open-source CPU emulator, to run hidden virtual machines on infected systems. In the STAC4713 campaign, associated with Payouts King ransomware, initial access was achieved via exposed SonicWall VPNs and later via the SolarWinds Web Help Desk vulnerability CVE-2025-26399. The attackers create a scheduled task named 'TPMProfiler' to launch a hidden QEMU VM as SYSTEM, using virtual disk files disguised as databases and DLLs. The VM runs Alpine Linux 3.22.0 with tools like AdaptixC2, Chisel, BusyBox, and Rclone. They set up port forwarding to establish a reverse SSH tunnel for covert access. Post-exploitation includes using VSS (vssuirun.exe) to create shadow copies and copying NTDS.dit, SAM, and SYSTEM hives via SMB print commands. More recent attacks used exposed Cisco SSL VPNs or social engineering via Microsoft Teams (posing as IT staff) to deploy QuickAssist. The second campaign (STAC3725) exploits CitrixBleed 2 (CVE-2025-5777) to compromise NetScaler devices, then deploys a malicious executable that installs a ScreenConnect client for persistence and runs a QEMU VM with a custom disk image. Inside the VM, attackers manually compile tools like Impacket, KrbRelayx, BloodHound.py, and Metasploit for credential harvesting and Active Directory reconnaissance. Payouts King ransomware uses AES-256 (CTR) with RSA-4096 encryption and intermittent encryption for large files, with ransom notes pointing to dark web leak sites.",
+  "entities": [
+    {
+      "name": "Payouts King ransomware",
+      "type": "organization",
+      "role": "Ransomware operation using QEMU VMs for evasion"
+    },
+    {
+      "name": "GOLD ENCOUNTER",
+      "type": "organization",
+      "role": "Threat group behind STAC4713 campaign"
+    },
+    {
+      "name": "Sophos",
+      "type": "organization",
+      "role": "Cybersecurity company that documented the campaigns"
+    },
+    {
+      "name": "QEMU",
+      "type": "software",
+      "role": "Open-source CPU emulator abused to run hidden VMs"
+    },
+    {
+      "name": "Alpine Linux",
+      "type": "software",
+      "role": "Lightweight Linux distribution used inside the hidden VMs"
+    },
+    {
+      "name": "CVE-2025-26399",
+      "type": "vulnerability",
+      "role": "SolarWinds Web Help Desk vulnerability used for initial access"
+    },
+    {
+      "name": "CVE-2025-5777 (CitrixBleed 2)",
+      "type": "vulnerability",
+      "role": "NetScaler vulnerability exploited in STAC3725 campaign"
+    },
+    {
+      "name": "BlackBasta",
+      "type": "organization",
+      "role": "Ransomware group possibly linked to Payouts King via former affiliates"
+    }
+  ],
+  "key_data_points": [
+    "QEMU is used to run hidden Alpine Linux VMs on compromised hosts, bypassing endpoint security because host-based solutions cannot inspect inside the VM (🟢 relevant to Red Teaming: this technique can be weaponized for stealthy payload execution and C2 communication).",
+    "Attackers create a scheduled task named 'TPMProfiler' to launch the QEMU VM as SYSTEM, ensuring high privileges and persistence (🟢 relevant to Red Teaming: scheduled tasks are a common persistence mechanism; using SYSTEM level access maximizes control).",
+    "Virtual disk files are disguised as databases and DLL files to evade detection (🟢 relevant to Red Teaming: file masquerading is a key evasion technique).",
+    "Initial access vectors include exposed SonicWall VPNs, SolarWinds Web Help Desk vulnerability CVE-2025-26399, exposed Cisco SSL VPNs, and social engineering via Microsoft Teams (🟢 relevant to Red Teaming: multiple initial access methods provide flexibility; Teams phishing is a modern social engineering vector).",
+    "Post-exploitation includes using VSS (vssuirun.exe) to create shadow copies and copying NTDS.dit, SAM, and SYSTEM hives via SMB print commands for credential theft (🟢 relevant to Red Teaming: this is a standard technique for domain credential harvesting).",
+    "In STAC3725, attackers manually compile tools like Impacket, KrbRelayx, BloodHound.py, and Metasploit inside the VM, indicating a hands-on-keyboard approach (🟢 relevant to Red Teaming: understanding manual tool compilation helps in emulating advanced adversaries).",
+    "Payouts King ransomware uses AES-256 (CTR) with RSA-4096 and intermittent encryption for large files (🟢 relevant to Red Teaming: knowing encryption algorithms aids in developing decryption tools or understanding impact)."
+  ],
+  "methodology_steps": [
+    "Initial Access: Exploit exposed VPNs (SonicWall, Cisco SSL) or web application vulnerabilities (CVE-2025-26399, CVE-2025-5777), or use social engineering via Microsoft Teams to deploy QuickAssist.",
+    "Persistence: Create a scheduled task named 'TPMProfiler' that runs as SYSTEM to launch a hidden QEMU VM.",
+    "Evasion: Use virtual disk files disguised as databases or DLLs; set up port forwarding to establish a reverse SSH tunnel from the VM to the attacker's C2 server.",
+    "Post-Exploitation: Inside the Alpine Linux VM, use tools like AdaptixC2, Chisel, BusyBox, Rclone, and later manually compile Impacket, KrbRelayx, BloodHound.py, NetExec, Kerbrute, Metasploit for credential harvesting and AD reconnaissance.",
+    "Data Exfiltration: Use Rclone to exfiltrate data to remote SFTP locations; in STAC3725, stage data for exfiltration via FTP servers.",
+    "Encryption: Deploy Payouts King ransomware using AES-256 (CTR) with RSA-4096, with intermittent encryption for large files."
+  ],
+  "conclusions": [
+    "QEMU-based VM evasion is a sophisticated technique that effectively bypasses endpoint security by running malicious activities inside a virtual machine invisible to host-based defenses. This method is being adopted by multiple ransomware groups, including Payouts King and 3AM, indicating a trend in evasion tactics.",
+    "The use of multiple initial access vectors (VPN exploits, web app vulnerabilities, social engineering) shows that Payouts King operators are versatile and adapt their methods based on target environment. Red teamers should incorporate these vectors into their playbooks.",
+    "Manual compilation of tools inside the VM (as seen in STAC3725) suggests a high level of operational security and customization, making detection harder. Defenders should monitor for unauthorized QEMU installations, suspicious scheduled tasks, and unusual SSH port forwarding."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your Red Teaming and cybersecurity interests as it details a cutting-edge evasion technique using QEMU VMs to bypass endpoint security. You can incorporate this method into your own red team operations for stealthy payload execution and C2 communication. The detailed breakdown of initial access vectors (VPN exploits, Teams phishing) and post-exploitation steps (credential harvesting via VSS, SMB) provides actionable techniques for simulating real-world adversaries. Additionally, the use of tools like Chisel, Rclone, and BloodHound aligns with common red team tooling, and understanding how attackers manually compile tools inside a VM can help you build more resilient C2 infrastructure.",
+  "extra_advice": "Consider setting up a lab environment to replicate this QEMU-based evasion technique. Use Alpine Linux as the guest OS and experiment with reverse SSH tunnels through QEMU's port forwarding. This will give you hands-on experience with a tactic that is likely to become more prevalent. Additionally, integrate this technique into your red team exercises to test your organization's detection capabilities for unauthorized QEMU processes and unusual SSH tunnels.",
+  "source_url": "https://www.bleepingcomputer.com/news/security/payouts-king-ransomware-uses-qemu-vms-to-bypass-endpoint-security/"
+}

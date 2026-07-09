@@ -1,0 +1,578 @@
+This is the first self-hosted app I've used that actually feels better than its cloud alternative
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+5
+More Action
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+This is the first self-hosted app I've used that actually feels better than its cloud alternative
+By 
+João Carrasqueira
+Published
+ Apr 11, 2026, 8:30 AM EDT
+João has been covering the tech world for over 7 years, with a heavy focus on laptops and the Windows ecosystem. I also love all things tech and videogames, especially Nintendo, which he's always happy to talk about.
+
+Prior to joining XDA in 2021, he worked at Neowin: 
+https://www.neowin.net/news/poster/jo%C3%A3o-carrasqueira
+/ 
+Sign in to your 
+XDA
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+5
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Since my 
+initial experiment
+ with self-hosting about a year ago, I've gotten pretty used to having important services in my life hosted on my own server, rather than using cloud alternatives. Sometimes, these 
+self-hosted options
+ can have some drawbacks, but it's worth it for the lower costs and the knowledge that your data is completely private and not sent off to servers somewhere.
+✕
+ Remove Ads
+However, not every self-hosted app is something you have to settle for. Some are just fantastic from the get-go, and in the case of Immich, I'd say it's actually better than what I was using before. I'd go so far as to say that it's one of the best arguments for getting into self-hosting in the first place.
+Related
+
+			How I made my own photo hosting platform with Immich
+		
+Ditch Google Photos, iCloud, and OneDrive for this incredible (free!) backup solution.
+Posts
+3
+By 
+Rich Edmonds
+Jan 20, 2025
+
+                        What is Immich?
+               
+
+            And what does it replace?
+    
+If you're at all interested in self-hosting, there's a good chance you've heard of Immich before, but I'll briefly explain it anyway. It's a photo and video storage service, not unlike Google Photos. Except it's very much unlike Google Photos, since you don't have to put your data in a cloud server and trust Google with it.
+Truthfully, though, I was never much of a Google Photos user. For me, Immich replaced 
+OneDrive
+, which is where all my personal photos and videos were stored for the longest time. Of course, it can also replace Google Photos if you're coming from there, just as it can replace other cloud storage services you may be using for your photos.
+And yes, when compared to OneDrive, Immich is genuinely better.
+Related
+
+			Immich is the first self-hosted Google Photos alternative my family actually uses
+		
+Immich combines a simple UI with robust image management and backup features, all while running on my local server
+Posts
+5
+By 
+Ayush Pande
+Jan 13, 2026
+✕
+ Remove Ads
+
+                        A massive UI improvement
+               
+
+            OneDrive is not good
+    
+Compared to using OneDrive, Immich is a pretty massive step up in terms of usability. OneDrive has improved the way it handles photos over time, but loading anything on the service is still relatively slow and it can be painful to get around. There's a nice timeline now for browsing all your images at once, but it's still not ideal.
+Immich has a UI that closely replicates that of Google Photos, and it feels both modern and fast in comparison. The default view shows a full timeline of every photo I have saved, and I can either scroll through it bit by bit, or I can use the scroll bar to jump to a specific point in time in an instant, which makes browsing very easy.
+Of course, you can also create albums, similar to OneDrive, but this too works a bit better here, both in terms of performance and features. Things load a lot faster in Immich and they're presented in a more organized way, but there's also a slideshow feature that OneDrive somehow doesn't have. If you access your OneDrive photos through the Photos app on Windows 11, you can make a slideshow that way, but not on the web interface.
+And there's even more to it. Immich also has facial recognition to identify people in photos, but again, that information never leaves your own server. Actually, there are a few AI features you can enable, like optical character recognition and duplicate detection.
+✕
+ Remove Ads
+Related
+
+			My family stopped using Google Photos and OneDrive after installing this container
+		
+It's time to stop wasting money on cloud storage
+Posts
+14
+By 
+João Carrasqueira
+Sep 2, 2025
+
+                        Private, free, and fully-featured
+               
+
+            You can still have multiple user accounts
+    
+As I've mentioned, I'm not an avid Google Photos user, but I am familiar with it, and Immich still comes out on top for me. In terms of features and overall functionality, these two are pretty similar, and Immich borrows most of its cues from Google Photos. Google does have many editing features built-in that Immich doesn't, but I don't use these services for their editing features, I use them to upload and store the images once I've edited them to look how I want them to.
+The big benefit of Immich over Google Photos is, of course, the privacy and importantly, the cost. Aside from being on your own server, Immich being self-hosted means you don't need a subscription to host more than a certain amount of data. As long as your NAS has enough space, you can add as many files as you want without paying more.
+And that becomes all the more important if you have multiple people in your family. Immich lets you create multiple users, and they can all use the same disk to store their photos, keeping them separate from each other's profiles, and without any extra cost per user, or without having to create multiple deployments of the app. A single Immich server can have as many user accounts as needed, as long as the storage device has space.
+✕
+ Remove Ads
+And on top of that, you can also share photos between users on your server. My wife and I keep our personal photos separated, but since we have a lot of pictures together, we also have shared albums where photos from both of our profiles are visible to both users.
+Related
+
+			I self-hosted my own Google Photos replacement, and it's better than what I was paying for
+		
+Immich-in my disappointment in Google.
+Posts
+5
+By 
+Chandraveer Mathur
+Mar 17, 2026
+
+            Immich is a master class in self-hosted software
+    
+While self-hosted apps offer many genuine benefits compared to cloud solutions, the actual usability of these apps can sometimes vary in quality, but Immich is the gold standard here. It looks and functions beautifully, and it makes it incredibly easy to view and organize my collection.
+This service, along with Nextcloud, is the primary reason to consider a self-hosting server, and I highly recommend checking it out.
+
+    						Immich
+			
+Key highlights
+
+									
+										
+											Self-hosted
+
+										
+																	
+iOS compatible
+
+									
+										
+											Yes
+
+										
+																	
+Android compatible
+
+									
+										
+											Yes
+
+										
+																	
+See at Immich
+Expand
+Collapse
+✕
+ Remove Ads
+Software and Services
+Google Photos
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			4 top-tier open-source apps you can self-host
+		
+
+			I switched from streaming to self-hosting my media — it cost more than I expected
+		
+
+			I used Claude Code, Antigravity, and Perplexity Computer to build a portfolio — there was a clear winner
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+5
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Endian
+Endian
+Endian
+#AJ055770
+Member since 2026-04-07
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+My camera/phone automatically uploads every photo to Google photos as a backup. For me, this is the most valuable feature. 
+2026-04-12 13:25:11
+Upvote
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Shawn
+Shawn
+Shawn
+#CW889782
+Member since 2024-06-02
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+So does Immich, and it's a lot easier to get your photos back. 
+2026-04-12 22:17:34
+Upvote
+Downvote
+Reply
+Copy
+        
+Jon
+Jon
+Jon
+#WJ291299
+Member since 2025-07-04
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Yet another Immich advert by XDA. I'll be surprised if there isn't an almost identical article regarding Nextcloud within 48 hours. I'm fed up of the constant glazing of the same handful of utilities/programs. 
+2026-04-11 12:32:20
+Upvote
+Downvote
+Reply
+Copy
+        
+jimsug
+jimsug
+jimsug
+#MZ484133
+Member since 2026-04-15
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+And what's the backup strategy? I currently use both ente and Google Photos, and I think I want to self host most things eventually, but photos... I'm a bit concerned about. 
+2026-04-15 09:01:10
+Upvote
+Downvote
+Reply
+Copy
+        
+BawsR
+BawsR
+BawsR
+#HJ310319
+Member since 2026-03-09
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+But it’s not FREE as you state:Private, free, and fully-featured
+2026-04-13 10:03:26
+Upvote
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+krbse.
+krbse.
+krbse.
+#SC928549
+Member since 2026-04-06
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Your comment had me confused as I never noticed any paywalls or limited features in my own instance. Immich is a fully free app with the option to support the developer team. It explicitly does not grant you more features.
+"Building Immich takes a lot of time and effort, and we have full-time engineers working on it to make it as good as we possibly can. Our mission is for open-source software and ethical business practices to become a sustainable income source for developers and to create a privacy-respecting ecosystem with real alternatives to exploitative cloud services.
+As we're committed not to add paywalls, this purchase will not grant you any additional features in Immich. We rely on users like you to support Immich's ongoing development."
+2026-04-13 20:45:03
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 10, 2026
+
+                                    I tried an OpenClaw-inspired AI assistant on a $10 ESP32 board, and it actually works
+                            
+Apr 9, 2026
+
+                                    6 Proxmox LXCs I set up once and never think about again
+                            
+Apr 9, 2026
+
+                                    I stopped carrying a laptop after trying Android's desktop mode
+                            
+Apr 9, 2026
+
+                                    Self-hosted LLM took my personal knowledge management system to the next level
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:04
+
+                            MacBook Neo: an iPhone 16 Pro in laptop form
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:05
+
+                            Android 17 is ready for laptop duty
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:27
+
+                            3 big tech anniversaries from 1996
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

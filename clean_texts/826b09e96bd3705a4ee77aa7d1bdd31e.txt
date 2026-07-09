@@ -1,0 +1,175 @@
+MIT study explains why scaling language models works so reliably
+Ad
+Skip to content
+
+							Log In						
+
+						Subscribe					
+DE
+Switch to German
+Primary Menu
+
+						Log In					
+
+					Subscribe				
+DE
+Switch to German
+Primary Menu
+
+								Sign In								
+
+								Register								
+
+					Subscribe Now				
+The Decoder
+Opens discord in a new tab
+Opens LinkedIn in a new tab
+
+							AI research						
+Copy the url to clipboard
+Share this article
+Go to comment section
+MIT study explains why scaling language models works so reliably
+Maximilian Schreiner
+View the LinkedIn Profile of Maximilian Schreiner
+
+					May 3, 2026				
+Nano Banana Pro prompted by THE DECODER
+Topics
+Language models pack more concepts than they have room for
+Two regimes offer two different explanations
+Real language models confirm the theory
+Practical implications for scaling and architecture
+MIT researchers have a mechanistic explanation for why large language model performance scales so reliably with size. The answer comes down to a phenomenon called superposition.
+The observation that bigger models perform better is one of the most consistent findings in AI research. Double the parameters, training data, or compute, and a language model's prediction error drops following a power law. These so-called "Neural Scaling Laws" drive the push to build ever-larger systems. But why they exist in the first place has never been fully explained.
+A study presented at NeurIPS 2025 by Yizhou Liu, Ziming Liu, and Jeff Gore from MIT traces the phenomenon back to a geometric property built into the models themselves: superposition.
+Language models pack more concepts than they have room for
+Language models need to fit tens of thousands of tokens and even more abstract meanings into an internal space that only has a few thousand dimensions. In theory, a three-dimensional space can only hold three concepts without interference. LLMs get around this limitation by storing many concepts simultaneously in the same dimensions. The resulting vectors overlap slightly. This squeezing of multiple meanings into too little space is what researchers call superposition.
+Until now, many explanations assumed that only the most common concepts get cleanly represented while the rest is lost ("weak superposition"). The MIT team shows, using a simplified model from 
+Anthropic
+, that this picture doesn't match how real LLMs actually work.
+Two regimes offer two different explanations
+The researchers built a heavily simplified AI model with a training dial that let them control how much stored concepts were allowed to overlap. This made it possible to compare two extreme cases.
+In the first case—weak superposition—the model only stores the most common concepts cleanly and ignores the rest. Prediction error here comes mainly from the rare concepts that get dropped. Whether performance scales cleanly as a power law depends on how concepts are distributed in the training data. Only when that distribution itself follows a power law does the error follow one too. The paper calls this "power law in, power law out."
+In the second case—strong superposition—the model stores all concepts at once by letting their vectors overlap slightly. The error no longer comes from missing concepts but from the noise created by these overlaps. Here, a robust pattern emerges: doubling the model's width roughly cuts the error in half, predicted by a simple geometric relationship (1/m, where m is the model's width). How concepts are distributed in the data barely matters anymore.
+Real language models confirm the theory
+To check which regime applies to real systems, the team examined the output layers of open-source models: OPT, GPT-2, Qwen2.5, and Pythia, ranging from roughly 100 million to 70 billion parameters. The result is clear: all tokens are represented in the model, their vectors overlap, and the strength of those overlaps shrinks at exactly the predicted 1/m ratio. Language models operate in the strong superposition regime.
+The measured scaling exponent lines up too, landing at 0.91, close to the theoretical value of 1. Deepmind's 
+Chinchilla
+ data produces a nearly identical 0.88. According to the researchers, these scaling laws fall directly out of how language models organize meaning geometrically within their representations.
+Practical implications for scaling and architecture
+The work provides concrete answers to two open questions in AI research. First: does scaling eventually stop working? According to the researchers, yes, once a model's width matches the size of its vocabulary. At that point, there's enough room to represent every token without overlap, and the error caused by cramped representations vanishes. The power law breaks down at that boundary.
+Second: Can scaling laws be sped up to squeeze more performance out of each added parameter? For natural language, probably not; word frequency distributions are relatively flat. But for specialized applications where relevant concepts are distributed very unevenly, steeper scaling could be on the table.
+This also has implications for architecture design: models that actively encourage superposition should perform better at the same size. One example is Nvidia's 
+nGPT
+, which forces internal vectors onto a unit sphere, packing them more densely.
+There's a catch, though: the more concepts overlap, the harder it gets to trace what's actually happening inside the model. That's a real problem for mechanistic interpretability and, by extension, AI safety research.
+AI News Without the Hype – Curated by Humans
+
+					Subscribe to THE DECODER for ad-free reading, a weekly AI newsletter, our exclusive "AI Radar" frontier report six times a year, full archive access, and access to our comment section.				
+
+					Subscribe now				
+AI news without the hype
+Curated by humans.
+More than 16% discount.
+Read without distractions – no Google ads.
+Access to comments and community discussions.
+Weekly AI newsletter.
+6 times a year: “AI Radar” – deep dives on key AI topics.
+Up to 25 % off on KI Pro online events.
+Access to our full ten-year archive.
+Get the latest AI news from The Decoder.
+Subscribe to The Decoder							
+
+			Top
+Stories		
+
+								MIT study explains why scaling language models works so reliably							
+
+								Fields Medalist says ChatGPT 5.5 Pro delivered "PhD-level" math research in under two hours with zero human help							
+
+								Anthropic co-founder maps out how recursive AI improvement could outpace the humans meant to supervise it							
+
+								Microsoft caught sneaking "Co-Authored-by Copilot" into VS Code commits - even with AI off							
+
+								Anthropic ships ten AI agents for finance as both it and OpenAI chase IPO-ready revenue							
+Don't Miss
+What Matters
+Stay in the loop on AI. Clear, useful, no fluff.
+Your email address
+Subscribe to our Newsletter
+
+			Most
+Popular		
+
+								OpenAI says old prompts are holding GPT-5.5 back and developers need a fresh baseline							
+
+								Open-weight Kimi K2.6 takes on GPT-5.4 and Claude Opus 4.6 with agent swarms							
+
+								ChatGPT Images 2.0 is a breakthrough that could fundamentally reshape graphic generation							
+
+								GPT-5.4 reportedly brings a million-token context window and an extreme reasoning mode							
+
+								Deepmind CEO Hassabis says AGI will hit like ten industrial revolutions compressed into a single decade							
+
+								Startup claims first full brain emulation of a fruit fly in a simulated body							
+
+			AI Community 
+& Insights		
+The Decoder
+
+					Follow The Decoder for AI news, background stories and expert analyses.				
+
+							Opens LinkedIn in a new tab						
+
+							Opens Discord in a new tab						
+BETA-TEST
+×
+Start new search
+×
+|
+Send
+wpDiscuz
+Insert
+Newsletter - THE DECODER
+Stay in the loop on AI. Clear, useful, no fluff.
+Your email address
+Subscribe to our Newsletter
+Opens discord in a new tab
+Opens discord in a new tab
+
+				Information			
+
+						About					
+
+						Advertise					
+
+						Publish with us					
+
+							Login						
+
+				Topics			
+AI and society
+AI in practice
+AI research
+Frontier Radar
+Short News
+
+				Legal			
+Privacy Policy
+Privacy Manager
+Imprint
+Terms and Conditions
+Cancellation & Refund
+
+			THE DECODER by 
+DEEP CONTENT by heise
+ | All rights reserved 2026		
+BETA-TEST
+×
+Start new search
+×
+|
+Send
+wpDiscuz
+Insert

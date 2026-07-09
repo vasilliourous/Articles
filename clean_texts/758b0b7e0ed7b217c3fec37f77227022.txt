@@ -1,0 +1,474 @@
+Your NVMe SSD might be running at half speed because of this BIOS setting
+Menu
+Sign in now
+Close
+PC & Mobile
+Submenu
+Windows2
+Linux
+Android
+Apple
+Technical
+Submenu
+Tech Explained
+Security
+Software
+Submenu
+Productivity
+Internet
+Creative
+Screen
+Submenu
+Entertainment
+Streaming
+Home
+Submenu
+Smart Home
+Home
+News
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+1
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+Productivity
+Android
+Smart TVs
+Networking
+Windows 11
+Entertainment
+Close
+Your NVMe SSD might be running at half speed because of this BIOS setting
+Yasir Mahmood / MakeUseOf
+Credit: Yasir Mahmood / MakeUseOf
+By 
+Robin John 
+Published
+ Apr 20, 2026, 1:00 PM EDT
+Robin John brings over nine years of experience covering smartphones, laptops, gaming hardware, and personal tech, across both written and video formats for major publications. His work is rooted in hands-on testing, with a strong emphasis on real-world usability, performance, and long-term user experience. 
+
+His areas of interest include smartphone cameras, tips and tricks across Android and Windows, mobile performance, and PC gaming. By combining technical depth with a straightforward writing style, Robin offers readers a balanced and trustworthy perspective on the tech they use daily.
+
+Outside of work, you'll find Robin glued to his gaming PC or the PlayStation 5, or lacing up for an actual football match. 
+Sign in to your 
+MakeUseOf
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+1
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+I had just finished setting up a new system for testing, and after 
+following my usual routine of installing fresh Windows, enabling XMP, and more,
+ I was ready to transfer benchmarks and a few AAA games from my Samsung T9 onto the main drive, the WD Black SN850X, when something felt off. The transfer was in progress, but the speeds shown on screen didn't add up to what you'd expect for a drive of this caliber (and price).
+✕
+ Remove Ads
+I let it finish, then opened CrystalDiskMark to check whether the T9 was bottlenecking or if something was actually wrong with the SN850X. Sequential read came out to 3,651 MB/s and write to 2,839 MB/s, on a Gen 4 NVMe rated for a maximum of 7,300 MB/s read and 6,600 MB/s write. The drive was fine; it had worked perfectly on my previous testbed. Something else was clearly the problem, and it turned out to be a simple 
+BIOS setting
+.
+Related
+
+			Your SSD is getting slower, and here's how to fix it
+		
+Most SSD slowdowns are just missed settings and neglected maintenance.
+Posts
+4
+By 
+Yasir Mahmood
+Feb 16, 2026
+
+                        What's the difference between PCIe Gen 3 and Gen 4?
+               
+
+            The gap is bigger than the name suggests
+    
+Credit: Behnam Norouzi / Unsplash
+PCIe is the interface that connects your SSD and GPU to the rest of your system. Gen 3 and Gen 4 are two successive generations of that interface, and the difference in available bandwidth between them is significant.
+It is also worth knowing that PCIe Gen 5 NVMe SSDs are already available if you are looking to go even faster. Gen 5 x4 has a theoretical ceiling of around 14,900 MB/s, roughly double that of Gen 4.
+A PCIe Gen 3 x4 connection gives your SSD a theoretical sequential read rate of around 3,500 MB/s. PCIe Gen 4 x4 roughly doubles that, pushing it to around 7,000 MB/s. So if you have 
+bought a high-end Gen 4 NVMe
+, running it at Gen 3 speeds means that it can't reach its full potential. If that's a little too technical and filled with jargon, think of it as owning a 240Hz monitor but running it at 60Hz because you forgot to change it in 
+Windows settings
+.
+✕
+ Remove Ads
+The frustrating part is that nothing warns you about this. The SSD will show up, Windows will boot normally, and everything will work smoothly. You’ll only find out about this issue when you actually transfer large files and notice it's taking longer than it should — and that was the exact case for me.
+
+                        How to check if your SSD is being held back
+               
+
+            Your SSD's report card is one benchmark away
+    
+Credit: Robin John / MakeUseOf
+The easiest way to check is to download CrystalDiskMark (
+free
+) and run a quick sequential read/write test. Look at the top two rows labeled SEQ1M Q8T1 and SEQ1M Q1T1. Those are the numbers that reflect raw sequential throughput.
+Credit: Robin John / MakeUseOf
+If your drive is a Gen 4 NVMe rated for 6,000 MB/s or above and your results are closer to 3,000 MB/s, the BIOS setting is almost certainly the reason. You can confirm the rated speed by searching for your exact drive model name. Most manufacturers list the sequential read and write specs prominently on the product page. In my case, I was getting 3,651 MB/s read and 2,839 MB/s write on a drive rated for up to 7,300 MB/s. That was enough for me to dig into the BIOS.
+✕
+ Remove Ads
+
+                        Fixing this is almost insultingly simple
+               
+
+            From 3,000 MB/s to 6,000 MB/s
+    
+For this, you'll need to get your hands dirty and enter the BIOS. You are looking for something labeled 
+M.2 PCIe Mode, M2_1 Gen Mode, PCIe Speed, or M.2 Slot Configuration
+. It will typically show options for 
+Auto, Gen 3, and Gen 4
+. If it is set to Gen 3 and your board supports Gen 4, that is the problem.
+On my MSI Z890 Gaming Plus Wi-Fi motherboard, I found the settings under 
+Advanced -> PCIe/M.2 Configuration
+. This should be the same for most ASUS, Gigabyte, and ASRock motherboards.
+If you cannot locate it, search for your exact motherboard model name with something like "PCIe M.2 BIOS setting," and you will land on either the manual or a forum thread that points you to the right menu.
+Here is the full process from start to finish:
+1. 
+Restart 
+your PC and enter the 
+BIOS
+. Depending on your board, this is usually the 
+Delete, F2, or F12 key
+ during startup. The correct key typically flashes on the screen for a brief moment before Windows loads.
+2. Navigate to your 
+advanced settings
+ and look for 
+M.2 or PCIe configuration
+ options.
+3. Find the 
+PCIe generation
+ setting for the slot your 
+SSD 
+is installed in. If you are unsure which slot it occupies, head to the Easy Mode section of your BIOS — it will show you the exact location. Look for labels such as 
+M2_1, M2_2, or M2_3
+ to identify which one to target.
+4. Change the setting from 
+Gen 3 to Gen 4
+, or switch it to 
+Auto 
+if that option is available.
+✕
+ Remove Ads
+5. 
+Save 
+the setting and exit. The PC will 
+restart 
+on its own.
+
+                    Subscribe to the newsletter for SSD & BIOS fixes
+                
+Want fewer false alarms about slow NVMe drives? Subscribe to the newsletter for practical SSD troubleshooting, step-by-step BIOS guidance, and real testing tips that help you unlock true Gen 4 performance and avoid wasted support tickets.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+Once you are back in Windows, run CrystalDiskMark again and check the sequential numbers. If everything worked, the jump should be obvious.
+Related
+
+			You don't need a bigger SSD if you do this with your storage
+		
+Free up SSD space without spending a dime.
+Posts
+By 
+Tashreef Shareef
+Apr 17, 2026
+
+            Worth checking before you blame the drive
+    
+Credit: Samsung Memory / Unsplash
+After switching to Gen 4, both sequential read and write speeds improved significantly. The SN850X was finally running the way it should. I had been getting less than half of that for no reason other than a default BIOS setting I had never thought to check.
+If you have a Gen 4 NVMe and your transfer speeds seem suspiciously slow, check the BIOS before assuming the drive is at fault. It takes less time to check than it does to open a support ticket. And while you are in there, it is worth checking any other M.2 slots too if you have multiple drives installed. The same default can affect all of them.
+
+    						WD Black SN850 with Heatsink
+			
+Storage capacity
+
+									
+										
+											500GB, 1TB, 2TB
+
+										
+																	
+Hardware Interface
+
+									
+										
+											PCIe Gen4
+
+										
+																	
+Compatible Devices
+
+									
+										
+											PC, PS5
+
+										
+																	
+Brand
+
+									
+										
+											WD Black
+
+										
+																	
+The WD Black SN850 with Heatsink is a great storage upgrade for both gaming computers and next-gen consoles, not only can this NVMe SSD help improve the loading times on your gaming PC, but it can also be used as an expansion hard drive for your PS5 too.
+
+With incredible lightning-quick speeds, the WD Black SN850 with Heatsink is built to impress, boasting read speeds of up to 7,000MB/s and write speeds of up to 5,300MB/s, making it one of the more impressive NVMe SSDs around today.
+
+The added heatsink is great for both PCs and PS5, helping to reduce temperatures and maintain constant solid performance.
+See at AceBeam
+Expand
+Collapse
+✕
+ Remove Ads
+Technology Explained
+Windows
+PC
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+
+                                                    Technology Explained
+                                            
+
+                                                    PC & Mobile
+                                            
+
+			Wireless charging is finally worth using, but only if you know what to look for
+		
+46 minutes ago
+
+			CPU-Z shows more than PC specs if you know where to look
+		
+3 hours ago
+
+			Your CPU is throttling itself, and one BIOS toggle will fix it
+		
+23 hours ago
+See More
+
+			I ran a Windows network reset and fixed problems I'd blamed on my router for months
+		
+2 hours ago
+
+			I switched to Gentoo Linux and now I get why it's worth the headache
+		
+6 hours ago
+
+			Windows has been hoarding old drivers on your SSD — here's how to clear them out
+		
+18 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			Windows 11 still runs dinosaur services like Fax at boot — here's what you should disable
+		
+
+			The USB trick that bypasses your smart TV's 100Mbps Ethernet limit
+		
+
+			I plugged a Raspberry Pi into my smart TV and it changed how I watch everything
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+1
+Sign in to your 
+MakeUseOf
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Michael J.
+Michael J.
+Michael J.
+#ND910847
+Member since 2025-11-12
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Also worth noting is that on most consumer motherboards, only the closest m.2 nvme to the CPU will get the full pcie bandwidth.  Along with the top x16 pcie slot. 
+Other spots are usually through the chipset or split from the GPU and usually reduces performance.
+For general tasks, you're unlikely to really notice...  The only time I really notice is if I'm compiling a project or working with a lot of data.
+2026-04-21 11:10:47
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 20, 2026
+
+                                    Cloud gaming got so good so fast that I genuinely regret buying my gaming laptop
+                            
+Apr 20, 2026
+
+                                    I built my own Steam Machine, and I love it
+                            
+Apr 19, 2026
+
+                                    I own 3 PC gaming handhelds, and this is the one I barely use
+                            
+Apr 18, 2026
+
+                                    I thought VLC was peak until I found this cleaner alternative
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+MakeUseOf
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

@@ -1,0 +1,580 @@
+I found a free, open-source alternative to Claude Code, and it works with everything
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+6
+More Action
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+I found a free, open-source alternative to Claude Code, and it works with everything
+By 
+Mahnoor Faisal
+Published
+ Mar 19, 2026, 4:30 PM EDT
+Mahnoor Faisal is a tech journalist covering AI and productivity tools with bylines at 
+XDA
+, 
+SlashGear
+, 
+MakeUseOf
+, 
+Laptop Mag
+, and 
+Android Police
+.
+
+She's been writing professionally since she was sixteen, and has since penned hundreds of articles. This includes in-depth coverage of AI tools like NotebookLM to breaking news across the AI space. Her passion for technology started when she received her first iPod Touch (4th generation) on her 8th birthday, and she's been deep in the tech world ever since.
+
+Currently pursuing a degree in computer science, Mahnoor brings both a journalist's eye and a technical foundation to her coverage of how AI is reshaping the way we work and learn. 
+Sign in to your 
+XDA
+ account
+Add Us On
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																										
+6
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Anthropic Claude has been having its moment lately. Shortly after being labeled a supply chain risk by the Pentagon, it shot to the top of the Apple App Store for the first time, dethroning OpenAI’s ChatGPT. According to reports, free active users on Claude have increased by over 60% since the beginning of 2026, and the number of people signing up daily has quadrupled.
+✕
+ Remove Ads
+Given all this momentum, more and more people are discovering that Claude has a lot more to offer than just the basic chatbot experience. One of 
+those features is Claude Code
+, a terminal-based agentic tool that lets you interact with Claude directly from the terminal. While it’s been one of my favorite AI tools lately, it isn’t for everyone. If you happen to be one of them, there’s, fortunately, a free, completely open-source alternative to Claude Code that just so happens to work with almost everything.
+
+                        OpenCode is a completely free and open-source Claude Code alternative
+               
+
+            Same vibes, zero price tag
+    
+Given that Claude Code is a feature within Claude, it’s no surprise that it’s locked to Anthropic’s ecosystem. When you're using Claude Code, you're tied to Anthropic's own models like Claude Opus, Sonnet, and Haiku, and you can't really experiment much beyond what's supported out of the box. For instance, if you prefer using 
+local LLMs instead of cloud-based LLMs
+, Claude Code isn't for you. Claude Code is also currently limited to paid subscribers only.
+You need either a Pro or Max plan, meaning you can't really try it out without committing financially first. Ultimately, it's a tough sell if you're just curious about what agentic coding feels like. 
+OpenCode
+, though, takes a completely different approach. It's free to use, open-source, and it works with over 75 different AI providers, including GPT, Claude, Gemini, and more.
+✕
+ Remove Ads
+Similar to Claude Code, it's available in a command-line terminal interface too, which means it can plug right into your codebase and handle the same kind of tasks: writing code, running terminal commands, testing your code, debugging issues, and making changes across multiple files at once.
+To use OpenCode, you just need a command-line interface (can be the stock macOS Terminal, PowerShell, Command Prompt, or any terminal emulator you already use) and you're good to go. To install OpenCode, simply run the following command in your terminal:
+curl -fsSL 
+https://opencode.ai/install
+ | bash
+You can also download it through npm, Homebrew on macOS, or Scoop and Chocolatey on Windows. You'll find the command to run on this OpenCode's documentation.
+
+                        OpenCode works with whatever you're already paying for
+               
+
+            One less subscription in your life
+    
+Once it's installed and all setup, you simply need to run the /models command to select the model you'd like to use. For some LLM providers, you can authenticate directly with your existing subscription.
+For example, if you have a ChatGPT Plus or Pro subscription, you can sign in and use it right away. The same goes for GitHub Copilot subscribers. There's also an option to use your Claude Pro or Max subscription, though it's worth noting that this isn't officially supported by Anthropic. 
+✕
+ Remove Ads
+For everything else, you can plug in an API key from whichever provider you prefer and get started that way. And if you'd rather keep everything on your own machine, OpenCode supports local models through tools like Ollama and 
+LM Studio
+ too! 
+
+                        Using OpenCode feels a lot like Claude Code
+               
+
+            Familiar? That's the point
+    
+With Claude Code, you essentially give Claude permission to view and make changes to your codebase directly from the terminal. You describe what you want in plain English, and Claude goes off and does it for you. OpenCode works the exact same way. Once you've connected an LLM of your choice, you can ask it to explain your code, add features, fix bugs, and essentially anything you'd typically do in a coding session.
+Given I'm not a developer by profession and my coding skills admittedly aren't all that strong, one of my favorite Claude Code features to use 
+when vibe-coding
+ is its 
+Plan
+ mode. That's a read-only mode where Claude can't make any changes to your codebase. Instead, it just thinks through the problem and tells you exactly how it would approach it before writing a single line of code. I love this because when you're using AI to code, it's extremely easy to get lost in the weeds and lose track of what you're actually trying to build.
+
+                    Subscribe to our newsletter for practical AI coding coverage
+                
+Get hands-on coverage of AI coding tools by subscribing to the newsletter for clear comparisons, setup tips, and tool-focused explainers on OpenCode, Claude Code, and other agentic developer tools so you can choose and use them confidently.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+✕
+ Remove Ads
+If you begin with a vague idea and leave it up to the LLM, chances are you'll end up with a result where you'll need to do a lot of the cleanup yourself afterward. Given that Plan mode lets you map everything out beforehand, it makes the entire process feel a lot more controlled and intentional. Fortunately, OpenCode has this too. All you need to do is hit 
+Tab
+ to switch to 
+Plan
+ mode and walk through what you're trying to build. When you're happy with it, hit 
+Tab
+ again to switch to 
+Build
+ mode and let it handle the rest.
+Beyond Plan and Build mode, OpenCode has a bunch of other features that make the experience feel polished. For instance, you can use the 
+@
+ symbol to fuzzy search for files in the project and reference them directly in your prompts. You can also drag and drop images right into the terminal, which is incredible if you have a mockup you'd like OpenCode to reference. You can undo changes by typing
+ /undo
+, and similarly use 
+/redo
+ to bring them back.
+One feature I think is underrated is session sharing — you can type 
+/share
+, and OpenCode will generate a link to your entire conversation. Finally, OpenCode is super customizable. You can pick a theme, create custom commands, code formatters, and more.
+
+            OpenCode is absolutely worth trying
+    
+Whether you already use Claude Code or haven’t had the chance to try it, I think OpenCode is absolutely worth trying. You get the same structure as Claude Code, similar capabilities, and the option to use models other than Anthropic. If you're curious about agentic coding but don’t want to commit to a paid plan, OpenCode is the perfect way in. And since it's open-source, it's only going to get better.
+✕
+ Remove Ads
+AI tools
+Claude
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I use ChatGPT, Claude, Perplexity, and Gemini daily — here's the only one worth paying for
+		
+
+			The NVIDIA App's Game Optimizer is genuinely magic, and it's not appreciated enough
+		
+
+			I served a 200 billion parameter LLM from a Lenovo workstation the size of a Mac Mini
+		
+
+                                                
+                
+                
+                                    Thread
+                                                    
+6
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Reply / Post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+Sort by:
+Popular
+Oldest
+Newest
+Aleksandar
+Aleksandar
+Aleksandar
+#LM678556
+Member since 2025-08-07
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+You can set some ENV variables to point Claude Code to your locally hosted Ollama (or other places/things) and then call claude with "--model qwen3" and that way have it use your locally hosted models.
+Keep in mind that before your prompt/message, Claude Code (and Open Code) include a lot of "system" type of instructions, for all the tools/MCP/etc.
+Without any MCP, just all default tools of Claude Code - that's 70k characters...
+So if you think the thing kant working because you're not getting a response ... It might be just that it's taking a while.
+2026-03-21 14:19:38
+Upvote
+
+                                    2
+                            
+Downvote
+Reply
+
+                        1
+                    
+Copy
+        
+Rhynn
+Rhynn
+Rhynn
+#BN204950
+Member since 2026-03-26
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I personally use opencode and have never looked back, there are also ways of using really good AI models as coding agents within the IDE....I've made very intricate apps utilizing servers etc for encapsulating/launching old games without a hitch. It just took a few days for the ai model to wire everything together. 
+2026-03-26 18:16:35
+Upvote
+Downvote
+Reply
+Copy
+        
+Derek
+Derek
+Derek
+#HD565949
+Member since 2026-03-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+This is a joke of an article. Claiming that you found a new tool to code with is like bragging about finding a half eaten Twinkie in the garbage that you're excited to try. In real use in real production this app fails miserably. So if XDA wants to allow anyone to write nonsense it just destroys their credibility.
+2026-03-22 11:30:56
+Upvote
+
+                                    1
+                            
+Downvote
+Reply
+Copy
+        
+Brent
+Brent
+Brent
+#PD069206
+Member since 2025-11-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Alternative title: A journalist who doesn't know how to program just discovered there's coding tools other than Claude Code.
+2026-03-22 09:12:23
+Upvote
+Downvote
+Reply
+Copy
+        
+Taylor
+Taylor
+Taylor
+#SP282431
+Member since 2025-12-26
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Curser is better. I've used anti gravity, opencode and the recently started using cursor. The free tier works very well. Curser helped me fix all the wrong code while anti gravity and opencode struggled to fix 
+2026-03-21 14:44:22
+Upvote
+Downvote
+Reply
+Copy
+        
+Dylan
+Dylan
+Dylan
+#WY817785
+Member since 2024-08-03
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+Strictly speaking, Claude Code can be run with local LLMs through OLLAMA Launch.
+2026-03-21 18:02:34
+Upvote
+Downvote
+Reply
+Copy
+        
+Laurent
+Laurent
+Laurent
+#JU073275
+Member since 2024-06-22
+Following
+0
+Topics
+0
+Users
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+0  Followers 
+View
+I love OpenCode, it's great. Models keep changing, it's a race, if at least, I can keep one tool, OpenCode more constant, and simply switch between models, it helps reduce time to adopt new models.
+2026-03-21 06:12:22
+Upvote
+Downvote
+Reply
+Copy
+        
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Mar 18, 2026
+
+                                    This app turns Plex into a streamlined self-hosted live TV platform
+                            
+Mar 18, 2026
+
+                                    These 6 self-hosted tools became my daily drivers after I ditched the cloud
+                            
+Mar 17, 2026
+
+                                    This app could become the best way to use Jellyfin on your Apple TV
+                            
+Mar 16, 2026
+
+                                    I set up Claude Code the way its creator does, and the difference is night and day
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:07
+
+                            The end of affordable PCs?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            Snapdragon X2 Elite Extreme benchmarks: RIP Panther Lake?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:15
+
+                            What was the best version of Windows?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:03
+
+                            Now you can buy fake RAM for your gaming PC
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

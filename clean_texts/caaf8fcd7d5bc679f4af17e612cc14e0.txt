@@ -1,0 +1,496 @@
+4 open-source design tools that don't require a monthly subscription
+Menu
+Sign in now
+Close
+PC & Mobile
+Submenu
+Windows2
+Linux
+Android
+Apple
+Technical
+Submenu
+Tech Explained
+Security
+Software
+Submenu
+Productivity
+Internet
+Creative
+Screen
+Submenu
+Entertainment
+Streaming
+Home
+Submenu
+Smart Home
+Home
+News
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+Productivity
+Android
+Smart TVs
+Networking
+Windows 11
+Entertainment
+Close
+4 open-source design tools that don't require a monthly subscription
+Image taken by Yadullah Abidi | No attribution required.
+By 
+Yadullah Abidi
+Published
+ Apr 23, 2026, 10:30 AM EDT
+Yadullah Abidi is a Computer Science graduate from the University of Delhi and holds a postgraduate degree in Journalism from the Asian College of Journalism, Chennai. With over a decade of experience in Windows and Linux systems, programming, PC hardware, cybersecurity, malware analysis, and gaming, he combines deep technical knowledge with strong editorial instincts.
+
+Yadullah currently writes for MakeUseOf as a Staff Writer, covering cybersecurity, gaming, and consumer tech. He formerly worked as Associate Editor at 
+Candid.Technology
+ and as News Editor at 
+The Mac Observer
+, where he reported on everything from raging cyberattacks to the latest in Apple tech.
+
+In addition to his journalism work, Yadullah is a full-stack developer with experience in JavaScript/TypeScript, 
+Next.js
+, the MERN stack, Python, C/C++, and AI/ML. Whether he's analyzing malware, reviewing hardware, or building tools on GitHub, he brings a hands-on, developer’s perspective to tech journalism. 
+Sign in to your 
+MakeUseOf
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																						
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+If you're a designer, I'm willing to bet that your monthly bill includes at least one design tool, right next to your streaming service and cloud storage. These subscriptions may not hit your wallet hard on your own, but combined with other digital expenses, they add up quickly. If you're just starting, freelancing on a budget, or are simply tired of paying a giant corporation for renting your own work, open-source is the solution. And it's better than ever before.
+✕
+ Remove Ads
+You can 
+replace the entire Adobe suite with open-source programs
+. There's a whole ecosystem of open-source designing tools that feel modern, run fast, and give you full control of your files.
+Related
+
+			These 7 open-source apps are so good I’d happily pay for them
+		
+Some open-source alternatives aren't just good, they're good enough to be paid for. 
+Posts
+15
+By 
+Yadullah Abidi
+Dec 10, 2025
+
+                        Penpot
+               
+
+            The designer-developer bridge you didn't know existed
+    
+Penpot is a fully open-source design and prototyping platform built by Kaleidos under the Mozilla Public License 2.0. You can use it in your browser, or self-host it on your own server. It handles UI design, interactive prototyping, component libraries, and developer handoff—essentially the same core workflow you'd use Figma for.
+Apart from the usual array of tools and features you'd expect from a prototyping tool competing with Figma, one of the most useful Penpot features I found was CSS Grid Layout. It works exactly how it sounds as well: when you build a layout using Penpot's visual grid builder, the tool generates actual CSS grid code that developers can pull from the Inspect panel and drop straight into their projects.
+Then you have native design tokens, developed in collaboration with the wider design-tokens ecosystem. Penpot is one of the first design tools to natively support the W3C design token specification. Your tokens for colors, spacing, and typography are stored in a standardized JSON-like format that moves freely between design tools and developer workflows.
+✕
+ Remove Ads
+Penpot's developer handoff is also great. With Penpot's inspect tab, you get near production-ready code instantly. No plugins or payments required. Developers can open design files and extract what they need. Flexbox, CSS grid, spacing, typography, it all translates directly. This is one of the best tools on the market if you want to quickly convert design prototypes to fully-functional user interfaces. 
+Figma's Dev Mode is useful for developers
+, but it costs extra money. Penpot's Inspect tab is completely free.
+
+    						Penpot
+			
+OS
+
+									
+										
+											Web, Windows, macOS
+
+										
+																	
+Developer
+
+									
+										
+											Kaleidos Open Source
+
+										
+																	
+Price model
+
+									
+										
+											Free, paid options available
+
+										
+																	
+See at Penpot
+Expand
+Collapse
+
+                        Krita
+               
+
+            Seriously powerful digital painting
+    
+Krita has been one of the most popular free and open-source tools for digital artists for well over a decade now. It started as a basic paint program in 1999 and was essentially considered a GUI wrapper for ImageMagick for years. It runs on Windows, macOS, Linux, Android, and ChromeOS, and packs an OpenGL-accelerated canvas, non-destructive layers and masks, and an advanced brush engine that rivals software you'd be paying for. Even as a Photoshop rival, 
+it is better than it has any right to be
+.
+✕
+ Remove Ads
+Krita's brush engine is its biggest strength. While Photoshop gives you basic brush customization, Krita offers nine different brush engines with over 100 professionally crafted presets. It's not just the sheer number of customization options and presets, either. The level of control can get overwhelming if you're migrating from Photoshop, and in a good way. Whether you're trying to simulate watercolors, oil paint, charcoal, or other brush types, Krita makes them feel natural.
+There are also performance benefits you'll see between Photoshop and Krita that make the latter a much better tool, especially if you've got older hardware. Random hangs and crashes are far less common, and you're not slowed down by the program loading a tool or implementing some changes you made. You'll still need good hardware to use the program to its full potential, but Krita is more reliable and easier to run on weaker hardware compared to Photoshop.
+
+    						Krita
+			
+OS
+
+									
+										
+											Windows, macOS, Linux
+
+										
+																	
+Developer
+
+									
+										
+											Krita Foundation
+
+										
+																	
+Price model
+
+									
+										
+											Free, Open-source
+
+										
+																	
+Download on the Microsoft Store
+Download on Google Play Store
+See at Krita
+Expand
+Collapse
+
+                        Inkscape
+               
+
+            Vector work without the Adobe tax
+    
+Inkscape is an open-source vector editor that can handle everything Illustrator can do, including but not limited to drawing, shape tools, advanced path operations, text support, color management, and more, without the Adobe tax you pay monthly. At its core, Inkscape is built around SVG (Scalable Vector Graphics). While Illustrator uses its proprietary AI format and treats SVG as an export option, Inkscape uses SVG as its native format. The files you end up working on in Inkscape are literally the W3C standard code used by modern web browsers.
+✕
+ Remove Ads
+Apart from your usual array of illustration tools, Inkscape also solves Illustrator's unnecessary need for switching tools for every action. For example, you need the Direct Selection Tool to adjust a point, but if you need to adjust a handle, the Pen Tool is required. Over the course of working on a design, that's a lot of tool switching. Inkscape handles this differently—you use the Node Tool instead.
+You don't need multiple tools to select, move, or convert nodes. You just grab the path and drag it. If you want to change a curve, you can click the line segment itself and pull. It's far more tactile and fluid than Illustrator's segmented approach.
+
+    						Inkscape
+			
+OS
+
+									
+										
+											Windows, Linux, macOS
+
+										
+																	
+Developer
+
+									
+										
+											Inkscape
+
+										
+																	
+Price model
+
+									
+										
+											Free, Open-source
+
+										
+																	
+Inkscape is a free and open-source vector graphics editor used to create vector images, primarily in Scalable Vector Graphics (SVG) format.
+See at Inkscape
+Expand
+Collapse
+
+                        PhotoDemon
+               
+
+            The most portable Photoshop alternative you'll find
+    
+PhotoDemon is an open-source, completely free photo editing program for Windows that's been in active development since 2012. The entire application, with all of its features and functionality, weighs just 20.4 MB — hundreds of times smaller than Photoshop. It's the 
+open-source Photoshop clone everyone keeps ignoring
+ when they really should be paying attention.
+
+                    Subscribe to the newsletter for open-source design tools
+                
+Explore deeper open-source design guidance—subscribe to the newsletter for curated tool roundups, practical workflows, and clear comparisons that deepen your skill with open-source design tools.
+Get Updates
+By subscribing, you agree to receive newsletter and marketing emails, and accept our 
+Terms of Use
+ and 
+Privacy Policy
+. You can unsubscribe anytime.
+✕
+ Remove Ads
+PhotoDemon is what's called a portable application. It is Windows-only, but it doesn't require an installation. You can just download a ZIP archive from the official website, extract it, and you're ready to go. No registry entries, system dependencies, or administrator privileges required. It can live on a USB stick, sit on a portable drive, or even run from cloud storage if you want. Wherever you put it, it works the same way.
+It's also not a glorified Paint replacement either. The program has over 200 editing tools built into it, including commonly used features like layers, masks, adjustment curves, content-aware fill, perspective correction, RAW file support, and even Photoshop PSD compatibility.
+
+    						PhotoDemon
+			
+OS
+
+									
+										
+											Windows
+
+										
+																	
+Developer
+
+									
+										
+											Tanner Helland
+
+										
+																	
+Price model
+
+									
+										
+											Free, Open-source
+
+										
+																	
+PhotoDemon is a free, portable, open-source photo editor for Microsoft Windows.
+See at PhotoDemon
+Expand
+Collapse
+
+            Paid design tools aren't necessarily superior anymore
+    
+Dropping subscriptions doesn't mean you're downgrading your tools. Penpot, Krita, Inkscape, and PhotoDemon can easily cover most digital design and image work, regardless of whether you're prototyping an interface, painting a digital scene, working with vectors, or retouching photos.
+Related
+
+			You Don't Need to Pirate Software: Here's How I Find Affordable Alternatives
+		
+Software piracy is never the answer.
+Posts
+4
+By 
+John Awa-abuon
+Feb 1, 2025
+More importantly, they let you build a workflow that isn't at the mercy of billing or policy changes or account lockouts. You can install these tools today, learn them inside-out, and keep using them for years without breaking anything about your workflow. The days of wondering what happens if you skip a month on your subscriptions are long gone.
+✕
+ Remove Ads
+Creative
+Graphic Design
+Open Source
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+
+                                                    Technology Explained
+                                            
+
+                                                    PC & Mobile
+                                            
+
+			Your SSD does not wipe your deleted files — this is what TRIM actually does
+		
+48 minutes ago
+
+			Wireless charging is finally worth using, but only if you know what to look for
+		
+2 hours ago
+
+			CPU-Z shows more than PC specs if you know where to look
+		
+4 hours ago
+See More
+
+			I ran a Windows network reset and fixed problems I'd blamed on my router for months
+		
+3 hours ago
+
+			I switched to Gentoo Linux and now I get why it's worth the headache
+		
+7 hours ago
+
+			Windows has been hoarding old drivers on your SSD — here's how to clear them out
+		
+19 hours ago
+See More
+✕
+ Remove Ads
+Trending Now
+
+			Sorry, Windows and Linux: this is still the better OS for developers
+		
+
+			I thought VLC was peak until I found this cleaner alternative
+		
+
+			I started using Obsidian as a complete beginner and now I understand why people switch and never go back
+		
+
+                                                
+                
+                                                    
+                                    Thread
+                                                    
+Sign in to your 
+MakeUseOf
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Be the first to post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+This space is open for discussion.
+Be the first to share your thoughts.
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 21, 2026
+
+                                    I tested four Linux tiling window managers and one of them clearly won me over
+                            
+Apr 21, 2026
+
+                                    Windows Photos was slowing me down — this free replacement fixed that instantly
+                            
+Apr 20, 2026
+
+                                    Cloud gaming got so good so fast that I genuinely regret buying my gaming laptop
+                            
+Apr 20, 2026
+
+                                    I built my own Steam Machine, and I love it
+                            
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+MakeUseOf
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+10:51
+Loaded
+: 
+1.59%
+00:00
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+10:51
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Advertisement
+Skip Ad
+5

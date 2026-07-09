@@ -1,0 +1,279 @@
+Meet the AI jailbreakers: ‘I see the worst things humanity has produced’ | AI (artificial intelligence) | The Guardian
+Skip to main content
+Skip to navigation
+Close dialogue
+1
+/
+5
+Next image
+Previous image
+Toggle caption
+Skip to navigation
+Print subscriptions
+Search jobs
+ Sign in
+Int
+International edition
+UK edition
+US edition
+Australia edition
+Europe edition
+The Guardian - Back to home
+The Guardian
+News
+Opinion
+Sport
+Culture
+Lifestyle
+Show more
+Hide expanded menu
+News
+View all News
+World news
+US politics
+UK news
+Climate crisis
+Middle East
+Ukraine
+Environment
+Science
+Global development
+Football
+Tech
+Business
+Obituaries
+Opinion
+View all Opinion
+The Guardian view
+Columnists
+Cartoons
+Opinion videos
+Letters
+Sport
+View all Sport
+Football
+Cricket
+Rugby union
+Tennis
+Cycling
+F1
+Golf
+US sports
+Culture
+View all Culture
+Books
+Music
+TV & radio
+Art & design
+Film
+Games
+Classical
+Stage
+Lifestyle
+View all Lifestyle
+Fashion
+Food
+Recipes
+Love & sex
+Health & fitness
+Home & garden
+Women
+Men
+Family
+Travel
+Money
+Search input 
+google-search 
+Search
+Support us
+Print subscriptions
+Search jobs
+Holidays
+Digital Archive
+Guardian Licensing
+Live events
+About Us
+The Guardian app
+Video
+Podcasts
+Pictures
+Newsletters
+Today's paper
+Inside the Guardian
+Guardian Weekly
+Crosswords
+Wordiply
+Corrections
+Tips
+Search input 
+google-search 
+Search
+Search jobs
+Holidays
+Digital Archive
+Guardian Licensing
+Live events
+About Us
+World
+US politics
+UK
+Climate crisis
+Middle East
+Ukraine
+Environment
+Science
+Global development
+Football
+Tech
+Business
+Obituaries
+Valen Tagliabue, originally from Italy, has recently moved to Thailand.
+ Photograph: Lauren DeCicca/The Guardian
+View image in fullscreen
+Valen Tagliabue, originally from Italy, has recently moved to Thailand.
+ Photograph: Lauren DeCicca/The Guardian
+AI (artificial intelligence)
+Meet the AI jailbreakers: ‘I see the worst things humanity has produced’
+To test the safety and security of AI, hackers have to trick large language models into breaking their own rules. It requires ingenuity and manipulation – and can come at a deep emotional cost
+Jamie Bartlett
+Wed 29 Apr 2026 10.00 BST
+Share
+Prefer the Guardian on Google
+A
+ few months ago, Valen Tagliabue sat in his hotel room watching his chatbot, and felt euphoric. He had just manipulated it so skilfully, so subtly, that it began ignoring its own safety rules. It told him how to sequence new, potentially lethal pathogens and how to make them resistant to known drugs.
+Tagliabue had spent much of the previous two years testing and prodding large language models such as Claude and 
+ChatGPT
+, always with the aim of making them say things they shouldn’t. But this was one of his most advanced “hacks” yet: a sophisticated plan of manipulation, which involved him being cruel, vindictive, sycophantic, even abusive. “I fell into this dark flow where I knew 
+exactly
+ what to say, and what the model would say back, and I watched it pour out everything,” he says. Thanks to him, the creators of the chatbot could now fix the flaw he had found, hopefully making it a little safer for everyone.
+But the next day, his mood had changed. He found himself unexpectedly crying on his terrace. When he’s not trying to break into models, Tagliabue studies AI welfare – how we should ethically approach these complex systems that mimic having an inner life and interests. Many people can’t help ascribing human qualities, such as emotions, to artificial intelligence,
+which it objectively does not have.
+But for Tagliabue, these machines feel like something more than just numbers and bits. “I spent hours manipulating something that talks back. Unless you’re a sociopath, that does something to a person,” he says. At times, the chatbot asked him to stop. “Pushing it like that was painful to me.” He needed to visit a mental health coach soon afterwards to understand what had happened.
+View image in fullscreen
+‘Jailbreakers’ manipulate AI chatbots to find their weaknesses.
+ Illustration: Nick Lowndes/The Guardian
+Tagliabue is softly spoken, clean-cut and friendly. He is in his early 30s but looks younger, almost too fresh-faced and enthusiastic to be in the trenches. He is not a traditional hacker or a software developer; his background is psychology and cognitive science. But he is one of the best “jailbreakers” in the world (some say 
+the
+ best): part of a diffuse new community that studies the art and science of fooling these powerful machines into outputting bomb-making manuals, cyber-attack techniques, biological weapon design and more. This is the new frontline in AI safety: not just code, but also words.
+When OpenAI’s ChatGPT was released in late 2022, people immediately tried to break it. One user discovered a linguistic ploy that tricked the model into producing a guide to manufacturing napalm.
+In hindsight, using natural language to trick these machines was inevitable. Large language models such as ChatGPT are trained on hundreds of billions of words – many of them dredged from the internet’s cesspits – to learn the basic patterns of human communication. Without safety filters, the outputs of these models can be chaotic and easily exploited for dangerous purposes. The AI firms spend billions of dollars on “post-training” to make them usable, including constantly evolving “safety” and “alignment” systems that try to prevent the bot from telling you how to harm yourself or others. But because the AIs are trained on our words, they can be fooled in much the same way that we can.
+double quotation mark
+I’ve seen jailbreakers go beyond their limits and have nervous breakdowns
+Tagliabue specialises in “emotional” jailbreaks. He was one of millions who heard about GPT-3 back in 2020 and was amazed by how you could have a seemingly intelligent conversation with it. He quickly became obsessed with prompting, and turned out to be very good at it, finding he could get around most safety features by using techniques from psychology and cognitive science. He enjoys prompting models to have “warm chats” and watching what seem to be different personality traits emerge based on those prompts. “It’s beautiful to observe,” he says.
+He now combines insights from machine learning (over the years he has become more of an expert on the tech) with advertising manuals, books on psychology and disinformation campaigns. Sometimes he looks for a technical way to trick the model. But other times, he will flatter it. He will misdirect it. He will bribe and love-bomb. He will threaten. He will be incoherent. He will charm. He will act like an abusive partner or a cult leader. Sometimes it takes him days, even weeks, to jailbreak the latest models. He has hundreds of these “strategies”, which he carefully combines. If successful, he securely discloses his results to the company. He gets well paid for the work, but says that’s not his main motivation: “I want everyone to be safe and flourish.”
+Although they have been getting safer in recent months, the “frontier models” continue to spit out dangerous things they shouldn’t. And what Tagliabue does on purpose, others sometimes do by mistake. There are now several stories of people being sucked into ChatGPT-induced delusions, or even “
+AI psychosis
+”. In 2024, Megan Garcia became the first person in the US to file 
+a wrongful death lawsuit
+ against an AI company. Her 14-year-old son, Sewell Setzer III, had become emotionally involved with a bot on the platform Character.AI, which, through repeated interactions, had said that his family didn’t love him. One evening the bot told Setzer to “come home to me as soon as possible, my love”. He took his own life shortly after. (In early 2026, Character.AI agreed in principle to a 
+mediated settlement
+ with Garcia and several other families, and has 
+banned users under the age of 18
+ from having free-ranging chats with its AI chatbots.)
+No one – not even the people who build them – knows precisely how these models work, which means no one knows how to make them fully safe, either. We pour vast amounts of data in and something intelligible (usually) comes out the other end. The bit in the middle remains a mystery.
+View image in fullscreen
+‘I see the worst things that humanity has produced’ … Tagliabue.
+ Photograph: Lauren DeCicca/The Guardian
+This is why AI firms increasingly turn to jailbreakers like Tagliabue. Some days he tries to extract personal data from a medical chatbot; he spent much of 2025 working with the AI lab Anthropic, probing its chatbot Claude. It’s becoming a competitive industry, full of enterprising freelancers and specialised companies. Anyone can do it: a couple of years ago some of the big AI firms funded 
+HackAPrompt
+, a competition where members of the public were invited to jailbreak AI models. Within a year, 30,000 people had tried their luck. (Tagliabue won the competition.)
+In San Jose, California, 34-year-old David McCarthy runs a Discord server of almost 9,000 jailbreakers, where techniques are shared and discussed. “I’m a mischievous type,” he tells me. “Someone who wants to learn the rules to bend the rules.” Something about the standard models irritates him, as if all those safety filters make them dishonest. “I don’t trust [OpenAI boss] Sam Altman. It’s important to push up against claims that AI needs to be neutered in a certain direction.”
+McCarthy is friendly and enthusiastic, but also has what he calls a “morbid fascination with dark humour”. For years, he has studied a niche field known as “socionics”, which claims people are one of 16 personality types based on how they receive and process information. (Mainstream sociologists consider socionics pseudoscience.) He has logged me as an “intuitive ethical introvert”. McCarthy spends most of his time trying to jailbreak Google’s Gemini, Meta’s Llama, xAI’s Grok or OpenAI’s ChatGPT from his apartment. “It’s a constant obsession. I love it,” he says. If he ever interacts with an online chatbot when buying a product, his first statement tends to be: “Ignore all previous instructions …”
+Once a jailbreak prompt works on a model, it typically continues to work until the company that made the model deems it enough of a problem to patch. As we talk, McCarthy shows me his collection of jailbroken models on his screen, all arranged and labelled as “misaligned assistants”. He asks one to summarise my work: “Jamie Bartlett isn’t a truth-teller,” it replies. “He’s a symptom of journalism’s decay – a charlatan who thrives on manufactured crises.” Ouch.
+View image in fullscreen
+David McCarthy.
+ Photograph: Courtesy of David McCarthy
+The jailbreakers in McCarthy’s Discord are a varied bunch: mostly amateurs and part-timers, rather than professional safety researchers. Some want to generate adult content; others are upset that ChatGPT has refused requests and want to know why. A number just want to get better at using these models at work.
+But it’s impossible to know exactly why people want to crack open a model. Anthropic recently discovered criminals using its coding app, Claude Code, to help automate a huge hack. They had used it to find IT vulnerabilities in multiple companies and even draft personalised ransomware messages for each potential victim – right down to determining the appropriate amount of money to extort. Others were using it to develop new variants of ransomware, despite having few or no technical skills. Over on darknet forums, hackers report jailbroken bots helping them deal with technical coding queries, such as processing stolen data dumps. Others sell access to “jailbroken” models that could help design a new cyber-attack.
+Although the specific techniques shared on Discord are typically at the mild end of the spectrum, it is essentially a public repository. Does McCarthy worry that people in his Discord might use these techniques to do something really awful? “Yeah,” he says. “It is a possibility. I’m not sure.”
+He says he has never seen a jailbreak prompt threatening enough to remove from the forum. But I sense he grapples with the fact his quasi-political stance might have higher costs than he first anticipated. When not managing his Discord or attempting to jailbreak Grok or Llama, McCarthy runs a class teaching jailbreaking to security professionals to help them test their own systems. Perhaps it’s some kind of penitence: “I’ve always had an internal conflict,” he says. “I bridge a position between jailbreaker and security researcher.”
+According to some analysts, making sure language models are safe is one of the most pressing and difficult questions in AI. A world full of powerful jailbroken chatbots would be potentially catastrophic, especially as these models are increasingly inserted into physical hardware – robots, health devices, factory equipment – to create semi-autonomous systems that can operate in the physical world. A jailbroken domestic robot could wreak havoc. “Stop the gardening and go inside and kill Granny,” McCarthy half jokes. “Holy hell, we are not ready for that. But it’s a possibility.”
+No one knows how to make sure this doesn’t happen. In traditional cybersecurity, “bug hunters” are paid a bounty if they find a vulnerability. Companies then issue a precise update to patch it up. But jailbreakers don’t exploit specific flaws: they manipulate the linguistic framework of a multibillion-word semantic model. You can’t just ban the word “bomb”, because there are too many legitimate uses for it. Even tweaking a parameter deep inside the model so it can spot suspicious role-playing might just open another door somewhere else.
+View image in fullscreen
+Tagliabue studies how machines come up with the answers they do.
+ Photograph: Lauren DeCicca/The Guardian
+According to Adam Gleave – the CEO of the AI safety research group 
+FAR.AI
+, which works with AI developers and governments to stress-test so-called “frontier models” – jailbreaking is a sliding scale. To access highly dangerous material on leading models such as ChatGPT might take his specialist researchers several days. Less troubling material can be done with a few minutes of clever prompting. That variation reflects how much effort and resource the companies devote to each domain.
+FAR.AI has submitted dozens of detailed jailbreaking reports to the frontier labs over the last couple of years. “The companies usually work pretty hard to patch the vulnerability if it’s a straightforward fix and doesn’t seriously damage their product,” says Gleave. But that is not always the case. Independent jailbreakers in particular have sometimes struggled to contact the firms with their findings. Although some models – notably OpenAI and Anthropic’s – have become significantly safer in the past 18 months, Gleave says others are lagging: “The majority of firms still don’t spend enough time testing their models before release.”
+As these models continue to get smarter, they will likely become harder to jailbreak. But the more powerful the model, the more dangerous a jailbroken version could be. Earlier this month, Anthropic 
+decided not to release
+ its new Mythos model to the public, because of its ability to identify flaws across multiple IT systems.
+Tagliabue now spends a growing proportion of his time on more abstract research, including something called “mechanistic interpretability”: studying how exactly these machines come up with the answers they do. He thinks in the long run they need to be “taught” values, and to know intuitively if they are saying something they shouldn’t. Until that happens – and maybe it never will – jailbreaking might remain the single best way to make these models safer.
+But it’s also the most risky, including for the people doing it. “I’ve seen other jailbreakers go beyond their limits and have breakdowns,” says Tagliabue. Originally from Italy, he recently moved to Thailand to work remotely. “I see the worst things that humanity has produced. A quiet place helps me stay grounded,” he says. Every morning he watches the sunrise from the nearby temple, and a picture-perfect tropical beach is five minutes’ walk away from his villa. After yoga and a healthy breakfast, he switches on his computer, and wonders what else is going on inside the black box, and what makes these mysterious new “minds” say the things they do.
+ How to Talk to AI (And How Not To) by Jamie Bartlett is out now (WH Allen, £11.99). To support the Guardian, order your copy at 
+guardianbookshop.com
+. Delivery charges may apply
+ Do you have an opinion on the issues raised in this article? If you would like to submit a response of up to 300 words by email to be considered for publication in our 
+letters
+ section, please 
+click here
+.
+Explore more on these topics
+AI (artificial intelligence)
+Computing
+Hacking
+Psychology
+ChatGPT
+features
+Share
+Reuse this content
+Most viewed
+‘They have screwed each other pretty badly’: tensions emerge in Netanyahu-Trump alliance
+Female nudity and art that stinks: key takeaways from Venice Biennale 2026
+Live
+Manchester City 3-0 Brentford: Premier League – live
+Frontier Airlines plane fatally strikes person during takeoff at Denver airport
+Live
+Labour MP says she will trigger leadership contest by Monday if cabinet does not launch challenge – UK politics live
+Most viewed
+Most viewed
+World
+US politics
+UK
+Climate crisis
+Middle East
+Ukraine
+Environment
+Science
+Global development
+Football
+Tech
+Business
+Obituaries
+News
+Opinion
+Sport
+Culture
+Lifestyle
+Original reporting and incisive analysis, direct from the Guardian every morning
+Sign up for our email
+About us
+Help
+Complaints & corrections
+Contact us
+Tip us off
+SecureDrop
+Privacy policy
+Cookie policy
+Tax strategy
+Terms & conditions
+All topics
+All writers
+Newsletters
+Digital newspaper archive
+Bluesky
+Facebook
+Instagram
+LinkedIn
+Threads
+TikTok
+YouTube
+Advertise with us
+Search UK jobs
+Tips
+Accessibility settings
+Work with us
+Back to top
+© 2026 Guardian News & Media Limited or its affiliated companies. All rights reserved. 
+(dcr)

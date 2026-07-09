@@ -1,0 +1,369 @@
+This self-hosted presentation tool does everything Canva does, and it costs nothing
+Menu
+Sign in now
+Close
+News
+Tech Deals
+PC Hardware
+Submenu
+CPU
+GPU
+Storage
+Monitors
+Keyboards & Mice
+Software
+Submenu
+AI tools
+Productivity
+Self-Hosting
+Home Lab
+Other Software
+Operating Systems
+Submenu
+Windows
+Linux
+macOS
+Devices
+Submenu
+Single-Board Computers
+Laptops
+Gaming Handheld
+Prebuilt PC
+Home
+Submenu
+Networking
+Smart Home
+Entertainment
+Submenu
+Entertainment
+Gaming
+Sign in
+Newsletter
+Menu
+
+                                    Follow
+                                
+
+                                            Followed
+                                    
+Like
+Threads
+More Action
+Summary
+Generate a summary of this story
+Sign in now
+🔥Tech Deals
+Claude
+ESP32
+AI Tools
+Entertainment
+Forums
+Close
+This self-hosted presentation tool does everything Canva does, and it costs nothing
+By 
+Nolen Jonker
+Published
+ Apr 9, 2026, 3:00 PM EDT
+Nolen began their writing career in 2019, with three years dedicated to editing the Creative section at 
+MakeUseOf
+. Their expertise lies at the crossroads of technology and creativity, covering areas like photography, video editing, and graphic design.
+
+Outside of work, you'll often find Nolen diving into a good book, writing their own stories, or playing video games. 
+Sign in to your 
+XDA
+ account
+Add Us On
+Summary
+Generate a summary of this story
+follow
+
+                                    Follow
+                            
+followed
+
+                                    Followed
+                            
+Like
+
+                            Like
+                                
+
+								Thread
+																						
+Log in
+
+							Here is a fact-based summary of the story contents:
+						
+Try something different:
+							
+
+									Show me the facts
+								
+
+									Explain it like I’m 5
+								
+
+									Give me a lighthearted recap
+								
+Canva used to be my go-to for presentations and slides. It’s super quick to navigate, it’s a good-looking app, and just easy enough that you don’t really have to think about it when you’re using it. But Canva’s been on a tear with its pricing these past few years and also paywalled more of the previously free features.
+✕
+ Remove Ads
+So, I 
+looked at what else is out there
+, and found an open-source tool called Presenton. It’s self-hosted, AI-powered, and honestly more capable than I expected for something I spun up in Docker on a whim. It’s not the most obvious Canva replacement, but it’s a lot more interesting than I thought it would be.
+
+                        What exactly is Presenton?
+               
+
+            It creates slides for you, and runs on your own machine
+    
+ Presenton is an open-source AI presentation generator - think Gamma, Decktopus, or 
+Beautiful.ai
+, but self-hosted and free. It was built specifically as an alternative to tools like Gamma, but if you used Canva to create presentations like me, then it’s a perfectly good option for this use case. Presenton lets you run it on your own machine, all data stays local, and there’s no monthly fee attached to it. You bring your own API key from whatever provider you prefer, or skip the external APIs entirely and run a local model through Ollama - either way, what you get out the other end is a proper editable PPTX file.
+✕
+ Remove Ads
+The way it works is pretty simple - you give it a prompt or upload a document of notes, and it 
+builds out a full slide deck
+ from that. You get to choose your image provider for visuals separately from your LLM, which gives you a decent amount of flexibility over the final result. And Presenton itself also gives you some templates to work with to modify the style. It’s the kind of tool that makes sense for anyone who needs to put together presentations regularly but is either short on time to learn design software from scratch, or doesn’t want to do it inside a SaaS app with subscriptions attached. It’s for students, teams handling internal reports, or anyone working with sensitive data who doesn’t want it going through a third-party cloud.
+Related
+
+			I replaced Adobe, Figma, and Canva with one free tool, and I'm not paying for design software again
+		
+It's an all-kill design tool
+Posts
+14
+By 
+Nolen Jonker
+Apr 3, 2026
+
+                        Setting up Presenton
+               
+
+            It’s simple but takes a minute
+    
+Presenton runs in Docker, which means setup is basically one command in your terminal and a browser tab. The first hurdle was the image download, which was a little chunky since it bundles Ollama and local model options out of the box, but worth the wait though. Then you’ll go to the localhost in your browser for the setup. I was met with a window for API keys, but rather than sign up for yet another API key, I just picked a local model from the dropdown and skipped the cloud providers entirely. My model of choice was Qwen 3:8b - small enough not to choke my machine, but capable enough to actually use.
+✕
+ Remove Ads
+This is optional, but I also wanted to pick an image provider. A Pexels API key is free and super quick to get, so I went with that - though there are more sophisticated and AI-powered options. Then it will download your model, which honestly took a little longer than I expected. Once it’s loaded, you’ll be directed to the prompting window, which is where the presentation-making starts.
+I’m using Windows with PowerShell:
+docker run -it --name presenton -p 5000:80 -v "${PWD}\app_data:/app_data" 
+ghcr.io/presenton/presenton:latest
+
+                        Creating slides with Presenton
+               
+
+            It’s completely AI-powered
+    
+The way you create slides in Presenton happens mostly through AI generation. You prompt your model, and it uses your image provider to create presentation slides - that’s the gist of it. After your model has loaded, you’ll be redirected to the prompting window - the top box is where you add your prompt. If you want to include any specifics or want a particular style, I recommend laying it out or adding all the details with a document, and there's also an Advanced Settings button for further elaboration. But the AI will be able to pull from your model’s data to generate whatever you throw at it, no matter how short or vague.
+You can customize the presentation too. Presenton gives you a selection of template styles to base your presentation on, and you can also select the number of slides you want to create. When picking your language, ensure it’s one supported by your model as well. Up until this point, everything was smooth sailing for me, but then it started generating my presentation, and it took longer than I anticipated. So that’s worth noting if you’re expecting speed.
+✕
+ Remove Ads
+Furthermore, while Presenton gives you a good number of templates to work with, the tool also lets you create your own that you can reuse. And at the end, you can export your slides as PDF or PPTX files which you can then edit elsewhere if needed.
+Related
+
+			I ditched PowerPoint and Canva for NotebookLM, and my presentations have never been better
+		
+Simply the most powerful NotebookLM feature
+Posts
+7
+By 
+Mahnoor Faisal
+Feb 8, 2026
+
+            Creating presentations on your own terms
+    
+While Presenton doesn’t give you the hoards of templates and premade elements that you’ll find in Canva, you don’t need them when you can instruct the AI to generate anything you want. If presentations are a regular part of your workflow and you’d rather not have that data passing through other servers, Presenton is a genuinely solid option.
+
+    						Presenton
+			
+See at Presenton
+Expand
+Collapse
+✕
+ Remove Ads
+Software and Services
+
+                                                                        Follow
+                                                            
+
+                                                            Followed
+                                                    
+Like
+Share
+Facebook
+X
+WhatsApp
+Threads
+Bluesky
+LinkedIn
+Reddit
+Flipboard
+Copy link
+Email
+Close
+✕
+ Remove Ads
+✕
+ Remove Ads
+Trending Now
+
+			I don't pay for ChatGPT, Perplexity, Gemini, or Claude – I stick to my self-hosted LLMs instead
+		
+
+			I tried Gemini, ChatGPT, and Copilot for a month and I have a clear winner for you
+		
+
+			I use local LLMs and self-hosted apps to manage my documents instead of relying on ChatGPT
+		
+
+                                                
+                
+                                                    
+                                    Thread
+                                                    
+Sign in to your 
+XDA
+ account
+We want to hear from you. Share your perspective in the comments below, and please keep the conversation respectful.
+Be the first to post
+Images
+Attachment(s)
+
+                                    Please respect our 
+community guidelines
+. No links, inappropriate language, or spam.
+                                
+Your comment has not been saved
+Send confirmation email
+This space is open for discussion.
+Be the first to share your thoughts.
+Terms
+Privacy
+Feedback
+✕
+ Remove Ads
+Recommended
+Apr 8, 2026
+
+                                    Your desktop might already support one of the best storage upgrades nobody thinks to try
+                            
+Apr 7, 2026
+
+                                    This tool translates your thoughts into LinkedIn speak, and the results are horrifyingly accurate
+                            
+Apr 5, 2026
+
+                                    I used Claude Code, Antigravity, and Perplexity Computer to build a portfolio — there was a clear winner
+                            
+Apr 5, 2026
+
+                                    My favorite alternative to Office 365 isn’t LibreOffice – it’s something way cooler
+                            
+Shorts
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:10
+
+                            Would you rent your gaming PC?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:08
+
+                            How much data does Steam use in a year?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:04
+
+                            MacBook Neo: an iPhone 16 Pro in laptop form
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:07
+
+                            The end of affordable PCs?
+                        
+By 
+
+                                                    Alex Dobie
+                                                
+Mar 17, 2026
+1:24
+
+                            The next Xbox is a PC. And your PC is now an Xbox.
+                        
+✕
+ Remove Ads
+Join Our Team
+Our Audience
+About Us
+Press & Events
+Media Coverage
+Contact Us
+Follow Us
+Advertising
+Careers
+Terms
+Privacy
+Policies
+XDA
+ is part of the
+                            
+Valnet Publishing Group
+
+                Copyright © 2026 Valnet Inc.
+            
+✕
+✕
+Visit
+Now Playing
+WATCH
+NEXT
+Video Player is loading.
+Play Video
+Play
+Unmute
+Current Time 
+0:00
+/
+Duration 
+-:-
+Loaded
+: 
+0%
+Stream Type 
+LIVE
+Seek to live, currently behind live
+LIVE
+Remaining Time 
+-
+0:00
+1x
+Playback Rate
+Chapters
+Chapters
+Descriptions
+descriptions off
+, selected
+Captions
+captions off
+, selected
+Audio Track
+Picture-in-Picture
+Fullscreen
+This is a modal window.
+Skip Ad
+5

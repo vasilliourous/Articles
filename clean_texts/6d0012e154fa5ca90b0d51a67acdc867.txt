@@ -1,0 +1,202 @@
+Hackers exploit RCE flaws in Qinglong task scheduler for cryptomining
+News
+Featured
+Latest
+Canvas login portals hacked in mass ShinyHunters extortion campaign
+Ivanti warns of new EPMM flaw exploited in zero-day attacks
+Student hacked Taiwan high-speed rail to trigger emergency brakes
+New Cisco DoS flaw requires manual reboot to revive devices
+Fake OpenAI repository on Hugging Face pushes infostealer malware
+This Babbel deal shows how human-created language learning works better
+NVIDIA confirms GeForce NOW data breach affecting Armenian users
+Why More Analysts Won’t Solve Your SOC’s Alert Problem
+Tutorials
+Latest
+Popular
+How to access the Dark Web using the Tor Browser
+How to enable Kernel-mode Hardware-enforced Stack Protection in Windows 11
+How to use the Windows Registry Editor
+How to backup and restore the Windows Registry
+How to start Windows in Safe Mode
+How to remove a Trojan, Virus, Worm, or other Malware
+How to show hidden files in Windows 7
+How to see hidden files in Windows
+Webinars
+Downloads
+Latest
+Most Downloaded
+Qualys BrowserCheck
+STOPDecrypter
+AuroraDecrypter
+FilesLockerDecrypter
+AdwCleaner
+ComboFix
+RKill
+Junkware Removal Tool
+Deals
+Categories
+eLearning
+IT Certification Courses
+Gear + Gadgets
+Security
+VPNs
+Popular
+Best VPNs
+How to change IP address
+Access the dark web safely
+Best VPN for YouTube
+Forums
+More
+Virus Removal Guides
+Startup Database
+Uninstall Database
+Glossary
+Send us a Tip!
+Welcome Guide
+Home
+News
+Security
+Hackers exploit RCE flaws in Qinglong task scheduler for cryptomining
+Hackers exploit RCE flaws in Qinglong task scheduler for cryptomining
+
+                            By 
+Bill Toulas
+April 29, 2026
+04:50 PM
+0
+Hackers are exploiting two authentication bypass vulnerabilities in the Qinglong open-source task scheduling tool to deploy cryptominers on developers' servers.
+Exploitation started in early February, before the security issues were disclosed publicly at the end of the month, according to researchers at cloud-native application security company Snyk.
+Qinglong is a self-hosted open-source time management platform popular among Chinese developers. It has been forked more than 3,200 times and has over 
+19,000 stars on GitHub
+.
+1/1
+Skip 
+Ad
+Continue watching
+after the ad
+Visit Advertiser website
+GO TO PAGE
+The two security problems impact Qinglong versions 2.20.1 and older and can be chained to achieve remote code execution:
+CVE-2026-3965: A misconfigured rewrite rule maps ‘/open/*’ requests to ‘/api/*’, unintentionally exposing protected admin endpoints through an unauthenticated path
+CVE-2026-4047: The authentication check treats paths as case-sensitive (/api/), while the router matches them case-insensitively, allowing requests like ‘/aPi/...’ to bypass authentication and reach protected endpoints.
+The root cause in both flaws is a mismatch between middleware authorization logic and Express.js routing behavior.
+“Both vulnerabilities stem from a mismatch between the security middleware's assumptions and the framework's behavior,” 
+Snyk researchers explain
+.
+“The auth layer assumed certain URL patterns would always be handled one way, while Express.js treated them differently.”
+Snyk reports that attackers have been targeting these two flaws on publicly exposed Qinglong panels to deploy cryptominers since February 7.
+This activity was first spotted by Qinglong users, 
+who reported
+ about a rogue hidden process named ‘.fullgc’ utilizing between 85% and 100% of their CPU power.
+The name deliberately mimics “Full GC,” an innocuous but resource-intensive process, to evade detection.
+According to Snyk, the attackers exploited the flaws to modify Qinglong’s config.sh and injected shell commands that downloaded a miner to ‘/ql/data/db/.fullgc,’ and executed it in the background.
+The remote resource located at ‘file.551911.xyz’ hosted multiple variants of the binary, including for Linux x86_64, ARM64, and macOS.
+The attacks 
+continued
+ with multiple 
+confirmed infections
+ across various setups, including behind Nginx and SSL, while the Qinglong maintainers only responded to the situation on March 1.
+The maintainer acknowledged the vulnerability and urged users to install the latest update. However, the mitigation in pull release #2924 focused on blocking command injection patterns, which Snyk says was insufficient.
+The researchers report that the effective fix came in PR #2941, which corrected the authentication bypass in the middleware.
+99% of What Mythos Found Is Still Unpatched.
+AI chained four zero-days into one exploit that bypassed both renderer and OS sandboxes. A wave of new exploits is coming.
+At the Autonomous Validation Summit (May 12 & 14), see how autonomous, context-rich validation finds what's exploitable, proves controls hold, and closes the remediation loop.
+Claim Your Spot
+Related Articles:
+Ivanti fixes EPMM zero-days chained in code execution attacks
+CISA gives feds four days to patch Ivanti flaw exploited as zero-day
+Ivanti warns of new EPMM flaw exploited in zero-day attacks
+Palo Alto Networks firewall zero-day exploited for nearly a month
+Palo Alto Networks warns of firewall RCE zero-day exploited in attacks
+Actively Exploited
+Authentication Bypass
+CryptoMiner
+Miner
+Open Source
+Qinglong
+RCE
+Remote Code Execution
+Bill Toulas
+
+              Bill Toulas is a tech writer and infosec news reporter with over a decade of experience working on various online publications, covering open-source, Linux, malware, data breach incidents, and hacks.
+            
+ Previous Article 
+Next Article 
+Post a Comment 
+Community Rules
+You need to login in order to post a comment
+Not a member yet? 
+Register Now
+You may also like:
+  Upcoming Webinar
+Popular Stories
+New Linux 'Dirty Frag' zero-day gives root on all major distros
+Canvas login portals hacked in mass ShinyHunters extortion campaign
+Palo Alto Networks warns of firewall RCE zero-day exploited in attacks
+Sponsor Posts
+Want to search 25 billion leaked credentials in 15 minutes for free? You can now. 
+Stop ransomware, verify clean restores, and recover fast with Acronis.
+What Claude Mythos Actually Means for Your Security Program
+See where traditional DLP falls short. Read the report.
+5.4M EOL package versions are live in registries. Your SCA tool tracks 7K. Scan free.
+  Upcoming Webinar
+Follow us:
+Main Sections
+News
+Webinars
+VPN Buyer Guides
+SysAdmin Software Guides
+Downloads
+Virus Removal Guides
+Tutorials
+Startup Database
+Uninstall Database
+Glossary
+Community
+Forums
+Forum Rules
+Chat
+Useful Resources
+Welcome Guide
+Sitemap
+Company
+About BleepingComputer
+Contact Us
+Send us a Tip!
+Advertising
+Write for BleepingComputer
+Social & Feeds
+Changelog
+Terms of Use
+  - 
+ Privacy Policy
+ - 
+Ethics Statement
+ - 
+Affiliate Disclosure
+Copyright @ 2003 - 2026 
+ Bleeping Computer
+®
+ LLC 
+ -   All Rights Reserved
+Login
+Username
+Password
+Remember Me
+Sign in anonymously
+ Sign in with Twitter
+Not a member yet? 
+Register Now
+Reporter
+Help us understand the problem. What is going on with this comment?
+Spam
+Abusive or Harmful
+Inappropriate content
+Strong language
+Other
+Read our 
+posting guidelinese
+ to learn what content is prohibited.
+Submitting...
+SUBMIT
+Freestar.com
