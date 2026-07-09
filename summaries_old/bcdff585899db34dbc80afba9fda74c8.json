@@ -1,0 +1,56 @@
+{
+  "article_title": "Proxmox turned my old PC into a home lab that runs 10 VMs simultaneously",
+  "core_thesis": "The article argues that Proxmox VE can transform an aging, underutilized PC into a powerful home lab capable of running multiple virtual machines and containers, enabling safe experimentation, service isolation, and efficient resource utilization. The author shares personal experience with a Geekom Air12 Lite mini PC, emphasizing that Proxmox makes old hardware predictable and valuable by shifting its role from a personal computer to shared infrastructure.",
+  "detailed_summary": "The author describes how installing Proxmox on an old Geekom Air12 Lite mini PC (with 256GB NVMe SSD) allowed them to run up to 10 VMs simultaneously, including multiple Linux VMs, LXCs, a Windows 11 VM, and a pearOS VM. The key benefit is the ability to spin up isolated environments for testing without risking the host system. Linux VMs are used for evaluating distributions, packages, and kernels; LXCs provide lightweight service isolation (one container per service); Windows 11 VM handles compatibility tasks; and pearOS is tested in a sandbox. The author notes that Proxmox's web interface and proven hypervisor foundation make it suitable for hobbyists. However, they caution about potential pitfalls: resource contention if VMs are overprovisioned, storage and networking complexity, and VM sprawl leading to maintenance overhead. The author concludes that Proxmox gave their old PC a purposeful job and encourages right-sizing workloads rather than maxing out resources.",
+  "entities": [
+    {
+      "name": "Jeff Butts",
+      "type": "person",
+      "role": "Author of the article, IT professional with experience in technical support and system administration."
+    },
+    {
+      "name": "Ayush Pande",
+      "type": "person",
+      "role": "XDA's Proxmox guru who inspired the author to install Proxmox."
+    },
+    {
+      "name": "Proxmox VE",
+      "type": "software",
+      "role": "Open-source virtualization platform used to create the home lab."
+    },
+    {
+      "name": "Geekom Air12 Lite",
+      "type": "product",
+      "role": "Mini PC used as the hardware for the home lab."
+    },
+    {
+      "name": "pearOS",
+      "type": "software",
+      "role": "Linux distribution tested inside a Proxmox VM."
+    }
+  ],
+  "key_data_points": [
+    "The author runs 10 VMs simultaneously on a Geekom Air12 Lite mini PC with a 256GB NVMe SSD, demonstrating that modest hardware can support a substantial home lab when using Proxmox. (🟢 Relevant to homelabbing: shows that you don't need expensive hardware to start; a mini PC with decent RAM and storage is sufficient.)",
+    "Proxmox provides a web interface and a proven hypervisor foundation, making it accessible for hobbyists while still being robust enough for serious experimentation. (🟢 Relevant to DevOps/homelab: the web UI simplifies management, and the underlying KVM/LXC technology is industry-standard.)",
+    "LXCs are lighter than full VMs and encourage clean service boundaries: one container per service, making maintenance and troubleshooting easier. (🟢 Relevant to homelab organization: this pattern reduces complexity and improves maintainability.)",
+    "Running Windows 11 as a VM avoids dual-booting and keeps the host environment clean; the VM can be updated, tested, and rolled back on the author's schedule. (🟢 Relevant to Red Teaming: a Windows VM is useful for testing Windows-specific tools or exploits in an isolated environment.)",
+    "The author warns about VM sprawl: creating many VMs that accumulate over time, requiring updates, backups, and naming conventions. Resource contention can occur if VMs are overprovisioned. (🟢 Relevant to homelab management: highlights the need for disciplined resource budgeting and cleanup.)"
+  ],
+  "methodology_steps": [
+    "Install Proxmox VE on an old PC (e.g., Geekom Air12 Lite) by downloading the ISO and booting from it. Follow the installation wizard to set up the hypervisor.",
+    "Access the Proxmox web interface (typically https://<host-ip>:8006) to manage VMs and containers.",
+    "Create Linux VMs for testing: allocate appropriate CPU cores, RAM, and disk space. Use the VM to evaluate distributions, packages, or kernels without affecting the host.",
+    "Create LXCs for lightweight services: choose a template (e.g., Ubuntu, Debian) and assign minimal resources. Run one service per container to maintain clean boundaries.",
+    "Create a Windows 11 VM for compatibility tasks: allocate sufficient resources (e.g., 4GB RAM, 2 cores) and install from an ISO. Use it only when needed to avoid resource drain.",
+    "Test new distributions like pearOS in a VM: create a new VM, attach the ISO, and experiment. Delete the VM when done to avoid clutter.",
+    "Monitor resource usage and right-size VMs/containers: avoid overprovisioning to prevent contention. Regularly review and clean up unused VMs to manage sprawl."
+  ],
+  "conclusions": [
+    "Proxmox can revitalize old hardware by turning it into a stable, predictable home lab host. The author's Geekom Air12 Lite runs 10 VMs simultaneously, proving that modest specs are sufficient for learning and experimentation. (Supports the user's homelabbing interest: this is a low-cost entry point.)",
+    "The ability to isolate experiments in VMs and LXCs reduces the fear of breaking the host system, encouraging more frequent and diverse testing. This is especially valuable for cybersecurity practice, where safe sandboxes are essential. (🟢 Relevant to Red Teaming: safe environments for testing exploits or malware.)",
+    "Resource management and organization are critical to avoid sprawl and contention. The author recommends treating resources like a budget and maintaining naming conventions. (🟢 Relevant to DevOps: these practices scale to production environments.)"
+  ],
+  "personal_relevance_summary": "This article directly supports your homelabbing ambitions by demonstrating how to repurpose an old PC into a multi-VM lab using Proxmox. As a programmer and cybersecurity enthusiast, you can leverage the described setup to test exploits, evaluate Linux distributions, and run isolated Windows environments for Red Teaming exercises. The emphasis on LXCs for lightweight services aligns with DevOps practices, and the caution about resource management and sprawl provides practical advice for maintaining a clean lab. The article also reinforces the value of experimentation without consequences, which is crucial for learning offensive security techniques safely.",
+  "extra_advice": "Consider using Proxmox's snapshot and backup features to create restore points for your VMs before risky experiments. This is especially useful for Red Teaming: you can revert to a clean state after testing malware or exploits. Also, explore clustering multiple Proxmox nodes for high availability and to scale your lab as your needs grow.",
+  "source_url": "https://www.xda-developers.com/proxmox-turned-old-pc-home-lab-runs-10-vms-simultaneously/"
+}

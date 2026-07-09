@@ -1,0 +1,55 @@
+{
+  "article_title": "Stop prompting Claude",
+  "core_thesis": "The article argues that traditional prompting—typing one-shot instructions into an AI chat—is the least effective way to use Claude. Instead, the author advocates for a persistent, file-based approach using Claude Cowork (a desktop feature that reads a folder of markdown files as context) combined with Obsidian (a free markdown editor) to create a 'Second Brain' that automatically informs every AI interaction, eliminating the need to re-explain style, rules, and preferences.",
+  "detailed_summary": "The author, Ruben Hassid, begins by criticising the common practice of writing short, context-free prompts, which yields generic, average results. He introduces Claude Cowork, a desktop feature that connects to a local folder of text files (markdown) and reads them automatically before each session, effectively making the files the permanent prompt. However, managing raw markdown files is cumbersome for non-developers. Hassid then presents Obsidian as the solution: a free app that opens a folder as a 'vault', rendering markdown files with proper formatting, a sidebar, and full-text search. By pointing Obsidian at the same Cowork folder, users can easily edit their context files (e.g., 'about-me.md', 'anti-ai-writing-style.md') and see changes reflected instantly in Cowork. The article provides a step-by-step setup guide: create a Cowork folder with subfolders ('about-me', 'claude-output', 'templates'), install Obsidian, open the Cowork folder as a vault, and then edit files in Obsidian to update Claude's context. Hassid also introduces 'Skills'—saved workflows callable with a slash command (e.g., '/negotiation')—which are created via a prompt, saved as markdown files, and editable in Obsidian. He compares Obsidian favourably against Notion, Google Docs, Apple Notes, VS Code, GitHub, Typora, and MarkEdit, citing its simplicity, free cost, and crucially, its ability to leave markdown files untouched (no hidden metadata). The article concludes with a call to action: spend two 20-minute sessions to set up the system, promising that this method makes AI output far more personalised and efficient.",
+  "entities": [
+    {
+      "name": "Ruben Hassid",
+      "type": "person",
+      "role": "Author of the newsletter and advocate of the Cowork+Obsidian workflow."
+    },
+    {
+      "name": "Claude Cowork",
+      "type": "software",
+      "role": "A desktop feature of Claude AI that reads a local folder of markdown files as persistent context for every session."
+    },
+    {
+      "name": "Obsidian",
+      "type": "software",
+      "role": "A free markdown editor and knowledge base app that renders and edits markdown files without altering their format, used to manage the Cowork folder."
+    },
+    {
+      "name": "Steph Ango",
+      "type": "person",
+      "role": "CEO of Obsidian, noted for the company's privacy-focused approach (no forced accounts, no analytics)."
+    }
+  ],
+  "key_data_points": [
+    "Traditional prompting (e.g., 'Write a LinkedIn post about AI') yields average results because it lacks context about the user's style, audience, and rules. (🟢 Relevant to your productivity: this insight applies to any AI tool you use—investing in persistent context saves time and improves output quality.)",
+    "Claude Cowork reads a local folder of markdown files before every session, making the files the permanent prompt. Users no longer need to re-explain preferences. (🟢 Relevant to your Red Teaming: you could store attack patterns, tool preferences, or reporting templates in such files for consistent AI-assisted workflows.)",
+    "Obsidian is free for single-device use and costs $4/month for sync across devices. It renders markdown with proper formatting, provides a sidebar and full-text search, and crucially does not inject hidden metadata that could break Cowork's file reading. (🟢 Relevant to your homelab/devops: this is a lightweight, local-first tool that integrates seamlessly with file-based workflows.)",
+    "The article claims that after Cowork's release, software lost $2.5 trillion in valuation, and Claude's growth surpassed ChatGPT. While hyperbolic, it underscores the perceived impact of persistent context on AI utility.",
+    "Skills are saved workflows created via a prompt (e.g., 'Create a skill called negotiation...'), stored as markdown files, and callable with a slash command like '/negotiation'. They can be edited in Obsidian and re-uploaded to Claude. (🟢 Relevant to your programming: you can create skills for code review, vulnerability analysis, or report generation.)"
+  ],
+  "methodology_steps": [
+    "1. Download the Claude desktop app (free) and subscribe to a paid plan ($20/month minimum; the author uses $100/month).",
+    "2. Create a folder on your computer named 'Claude Cowork'. Inside, create three subfolders: 'about-me', 'claude-output', and 'templates'.",
+    "3. In the 'about-me' folder, create at least three markdown files: 'about-me.md' (your style, taste, goals), 'anti-ai-writing-style.md' (rules to avoid AI-sounding language), and 'my-company.md' (business context).",
+    "4. In Claude's Settings > Cowork > Global Instructions, add a directive to always read the 'about-me' folder and not modify other folders.",
+    "5. Download and install Obsidian from obsidian.md. Launch it and select 'Open folder as a vault', then choose your 'Claude Cowork' folder.",
+    "6. Edit your markdown files in Obsidian (e.g., add 'I love coconuts' to about-me.md). Save the file—it automatically syncs with the Cowork folder.",
+    "7. Open Claude Cowork, start a new session, and select the same folder. Claude will read the updated files and incorporate the new context into its responses.",
+    "8. To create a Skill: in Cowork, prompt 'Create a skill called [name]. Interview me about [task]. Build the best [task] skill. Save it as a skill I can call with /[name].' Answer the questions, allow file edits, and Claude will generate the skill file in the OUTPUT folder.",
+    "9. Move the skill file from OUTPUT to a new 'SKILLS' folder (created inside the Cowork folder) using Obsidian. The skill is now callable via /[name] in any Cowork session.",
+    "10. To edit a skill, open its markdown file in Obsidian, make changes, save, and then re-upload it to Claude via the Skills interface (the article notes this step but does not detail the re-upload process)."
+  ],
+  "conclusions": [
+    "Persistent context files (markdown) are far superior to one-shot prompts because they encode the user's style, rules, and goals permanently, eliminating repetitive instructions and producing consistently better output. This is supported by the author's own experience and the viral success of his previous Cowork guide (3 million reads).",
+    "Obsidian is the ideal companion for Cowork because it is free, local, non-destructive to markdown files, and user-friendly for non-developers. The author's comparison with seven other tools (Notion, Google Docs, Apple Notes, VS Code, GitHub, Typora, MarkEdit) shows that only Obsidian meets all criteria: free, local, clean design, and no hidden metadata.",
+    "The 'Skills' feature extends the persistent context concept to reusable workflows, allowing users to save complex task instructions (e.g., negotiation, newsletter writing) as slash-command-triggered files. This is particularly valuable for repetitive tasks and can be adapted to any domain, including cybersecurity (e.g., a '/vuln-scan' skill).",
+    "The article's hyperbolic claim about software losing $2.5 trillion in valuation is not substantiated, but the underlying message—that persistent context dramatically improves AI utility—is a practical takeaway for any power user."
+  ],
+  "personal_relevance_summary": "This article directly addresses your need for efficient AI workflows, whether for programming, cybersecurity, or study. As a programmer, you can apply the Cowork+Obsidian setup to store coding style guides, project conventions, or even vulnerability analysis templates, ensuring Claude consistently outputs code or reports in your preferred format. For Red Teaming, you could create skills for common tasks like '/recon' or '/exploit-dev' that load your preferred tools and methodologies. As a student, the 'Second Brain' concept helps you organise research notes and writing rules, making AI-generated drafts more aligned with your academic voice. The article also provides a concrete, step-by-step methodology that you can implement in under an hour, and the extra advice on Skills opens the door to automating repetitive tasks—a clear win for your ambition to take initiative.",
+  "extra_advice": "Consider creating a 'Red Team Skills' folder within your Cowork setup. For example, a '/phish-email' skill could store your preferred social engineering templates, target profiling rules, and anti-detection phrasing. Similarly, a '/report' skill could enforce a specific vulnerability disclosure format. This turns Claude into a consistent, always-ready assistant for your offensive security workflows, saving you hours of prompt engineering each week.",
+  "source_url": "https://ruben.substack.com/p/stop-prompting-claude"
+}

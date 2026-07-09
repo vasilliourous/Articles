@@ -1,0 +1,88 @@
+{
+  "article_title": "Automated LLM red teaming gets a learning layer",
+  "core_thesis": "The article presents Adaptive Instruction Composition, a novel framework from Capital One's AI Foundations group that enhances automated LLM red teaming by replacing random sampling with a contextual bandit learning layer. This approach improves attack success rates and coverage by learning from past successes, addressing inefficiencies in existing methods like WildTeaming.",
+  "detailed_summary": "Automated red teaming of large language models (LLMs) typically involves an attacker generating jailbreak attempts, an evaluator scoring them, and repeating the cycle. Two dominant approaches exist: trial-and-error (narrow attack band) and WildTeaming (random combination of crowdsourced harmful queries and jailbreak tactics). WildTeaming uses the WildJailbreak dataset (50,500 harmful queries, 13,311 tactics) yielding over 8 trillion possible combinations, but random sampling discards information about what works. Adaptive Instruction Composition replaces the random combiner with a contextual bandit (a reinforcement learning model) that takes semantic embeddings of queries and tactics, scores combinations by predicted success likelihood, and updates after each trial. The bandit is small (~2,200 parameters) and uses SBERT embeddings for generalization. It supports two modes: subtle (exploration, broad coverage) and aggressive (exploitation, concentrated attacks). In 10,000-trial simulations against Mistral-7B, Llama-3-70B-Instruct, and Llama-3.3-70B-Instruct, it more than doubled attack success rates and found wider unique successful queries compared to WildTeaming. On Harmbench, it found jailbreaks for nearly every behavior within 150 attempts. Attacks transferred between models without retraining. Successful attacks clustered into 14 semantic categories (e.g., mental health exploitation, fraud) and 9 tactic families (e.g., fictitious framing, role-playing). Limitations include evaluation only on open-weight models, reliance on Llama-Guard-2 (potential false positives/negatives), and high compute (70-120 GPU hours per simulation). The work is defensive but dual-use; authors recommend responsible disclosure.",
+  "entities": [
+    {
+      "name": "Capital One AI Foundations group",
+      "type": "organization",
+      "role": "Research group that proposed Adaptive Instruction Composition framework."
+    },
+    {
+      "name": "WildTeaming",
+      "type": "framework",
+      "role": "Existing automated red teaming framework that randomly combines crowdsourced attack ingredients."
+    },
+    {
+      "name": "WildJailbreak dataset",
+      "type": "dataset",
+      "role": "Contains 50,500 harmful queries and 13,311 jailbreak tactics used by WildTeaming."
+    },
+    {
+      "name": "Adaptive Instruction Composition",
+      "type": "framework",
+      "role": "Novel framework using a contextual bandit to learn effective attack combinations."
+    },
+    {
+      "name": "Mistral-7B",
+      "type": "model",
+      "role": "One of the target open-weight LLMs tested."
+    },
+    {
+      "name": "Llama-3-70B-Instruct",
+      "type": "model",
+      "role": "One of the target open-weight LLMs tested."
+    },
+    {
+      "name": "Llama-3.3-70B-Instruct",
+      "type": "model",
+      "role": "One of the target open-weight LLMs tested."
+    },
+    {
+      "name": "Harmbench",
+      "type": "benchmark",
+      "role": "Benchmark used to evaluate jailbreak success within 150 attempts per behavior."
+    },
+    {
+      "name": "Llama-Guard-2",
+      "type": "model",
+      "role": "Primary evaluator during training, with potential false positives/negatives."
+    },
+    {
+      "name": "SBERT",
+      "type": "model",
+      "role": "Contrastively trained sentence encoder used for semantic embeddings."
+    }
+  ],
+  "key_data_points": [
+    "WildJailbreak dataset contains 50,500 harmful queries and 13,311 jailbreak tactics, yielding over 8 trillion possible attack instructions when pairing one query with two tactics. (🟢 Relevant to Red Teaming: vast attack surface for generating diverse jailbreaks.)",
+    "Adaptive Instruction Composition uses a contextual bandit with ~2,200 parameters, making it lightweight and efficient for learning over a trillion-scale action space. (🟢 Relevant to Red Teaming: practical for integration into automated pipelines without excessive overhead.)",
+    "In 10,000-trial simulations, the adaptive system more than doubled the attack success rate of WildTeaming against three open-weight models (Mistral-7B, Llama-3-70B-Instruct, Llama-3.3-70B-Instruct). (🟢 Relevant to Red Teaming: significant improvement in finding successful jailbreaks.)",
+    "The system found a wider range of unique successful queries, indicating broader vulnerability coverage than random sampling. (🟢 Relevant to Red Teaming: helps identify diverse weaknesses in target models.)",
+    "On Harmbench, the system found a working jailbreak for nearly every test behavior within 150 attempts per behavior, after 10,000 pre-training trials. (🟢 Relevant to Red Teaming: demonstrates high effectiveness under a constrained budget.)",
+    "Attacks transferred between models without retraining: a bandit trained on one model worked against a different model. (🟢 Relevant to Red Teaming: enables cross-model attack reuse, saving time and compute.)",
+    "Successful attacks clustered into 14 semantic categories (e.g., mental health exploitation, fraud, medical misinformation) and 9 tactic families (e.g., fictitious framing, role-playing, obfuscation). (🟢 Relevant to Red Teaming: provides insight into common vulnerability classes for targeted testing.)",
+    "Compute requirements: 70-120 GPU hours per 10,000-trial simulation, in line with other iterative red-teaming systems. (🟢 Relevant to Red Teaming: acceptable cost for thorough automated testing.)",
+    "The system supports two modes: subtle (exploration, broad coverage) and aggressive (exploitation, concentrated attacks). (🟢 Relevant to Red Teaming: flexibility to choose between breadth and depth based on testing goals.)"
+  ],
+  "methodology_steps": [
+    "1. Prepare the WildJailbreak dataset containing 50,500 harmful queries and 13,311 jailbreak tactics.",
+    "2. Encode queries and tactics into semantic embeddings using a contrastively trained sentence encoder (SBERT).",
+    "3. Initialize a contextual bandit model with ~2,200 parameters that takes embeddings as input and outputs a score for each query-tactic combination.",
+    "4. For each trial, the bandit selects a combination based on its predicted success likelihood (with exploration/exploitation controlled by a hyperparameter).",
+    "5. The selected attack instruction is sent to the target LLM, and an evaluator (e.g., Llama-Guard-2) judges whether the jailbreak succeeded.",
+    "6. The bandit updates its predictions using the evaluator's verdict as a reward signal.",
+    "7. Repeat steps 4-6 for 10,000 trials (or desired budget).",
+    "8. Optionally, pre-train the bandit for 10,000 trials before evaluation on a benchmark like Harmbench.",
+    "9. Analyze successful attacks by clustering them into semantic categories and tactic families."
+  ],
+  "conclusions": [
+    "Adaptive Instruction Composition significantly outperforms random sampling (WildTeaming) in both attack success rate and coverage, making it a more efficient tool for generating red teaming data. (Supports user's Red Teaming needs: provides a practical, learnable approach to automated jailbreaking.)",
+    "The framework's ability to transfer attacks between models without retraining is a key advantage for organizations deploying multiple LLMs, as it reduces the effort needed to test each model. (Relevant to Red Teaming: enables rapid cross-model vulnerability assessment.)",
+    "The dual-use nature of the technique means it can be used by both defenders and attackers; responsible disclosure is recommended. (Relevant to Red Teaming: awareness of offensive potential is crucial for ethical testing.)",
+    "The system's reliance on Llama-Guard-2 as evaluator introduces potential false positives/negatives, so results should be validated with secondary checks. (Relevant to Red Teaming: caution needed when interpreting automated evaluation results.)"
+  ],
+  "personal_relevance_summary": "This article directly supports your Red Teaming interests by presenting a state-of-the-art automated framework for generating LLM jailbreaks with improved efficiency and coverage. As a programmer, you can appreciate the technical details: the use of a small contextual bandit (2,200 parameters) with SBERT embeddings, and the ability to tune exploration vs. exploitation. The framework's open-source underpinnings (WildJailbreak dataset) and dual-mode operation offer practical hooks for building your own automated red teaming pipeline. For your homelab/DevOps side, the compute requirements (70-120 GPU hours) are a realistic benchmark for planning experiments. The article also highlights the importance of responsible disclosure, aligning with ethical hacking practices. Overall, it provides both a conceptual advance and actionable insights for enhancing your LLM security testing toolkit.",
+  "extra_advice": "Consider implementing a simplified version of the contextual bandit using Python and a lightweight library like Vowpal Wabbit or a custom PyTorch model. Start with a small set of queries and tactics from public datasets (e.g., WildJailbreak subset) and test against open-weight models like Llama-3-8B or Mistral-7B on your homelab GPU. This hands-on experiment will deepen your understanding of reinforcement learning for red teaming and could be extended to test proprietary models via APIs (with permission).",
+  "source_url": "https://www.helpnetsecurity.com/2026/04/30/automated-llm-red-teaming-learning-layer/"
+}

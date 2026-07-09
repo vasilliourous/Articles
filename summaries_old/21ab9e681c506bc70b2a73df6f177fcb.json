@@ -1,0 +1,58 @@
+{
+  "article_title": "Here's an open-source Google Circle To Search alternative that works offline",
+  "core_thesis": "A solo developer named Aditya has released an open-source alternative to Google's Circle To Search that works on any Android device running Android 10 or higher. Unlike Google's version, it performs text recognition, QR code detection, and smart scanning offline without uploading images to Google servers, though it currently uses Catbox for image uploads during actual searches—a privacy concern the developer is actively addressing by moving to a self-hosted approach.",
+  "detailed_summary": "The article introduces an open-source Android app developed by Aditya that replicates Google's Circle To Search functionality. It allows users to draw a circle on their screen to search for content, but with key advantages: it works offline for text recognition, QR code detection, and smart scanning, and it supports multiple search engines (Bing, Yandex, TinEye) instead of being locked to Google. The app also restores the 'Share' and 'Save' features that Google removed. However, a privacy issue was raised: the app uses Catbox (a file storage server) to upload images for search, storing them indefinitely. The developer acknowledged this and is working on a self-hosted solution where the device acts as the server, and plans to add a confirmation layer to prevent accidental uploads. The app is available on GitHub and is intended for users who have de-Googled their phones or want more privacy and flexibility.",
+  "entities": [
+    {
+      "name": "Aditya",
+      "type": "person",
+      "role": "Solo developer of the open-source Circle To Search alternative"
+    },
+    {
+      "name": "Google Circle To Search",
+      "type": "software",
+      "role": "Proprietary Android feature that this app aims to replace"
+    },
+    {
+      "name": "Catbox",
+      "type": "organization",
+      "role": "File storage server used by the app for image uploads, raising privacy concerns"
+    },
+    {
+      "name": "GitHub",
+      "type": "organization",
+      "role": "Platform where the app is hosted and distributed"
+    },
+    {
+      "name": "Bing",
+      "type": "organization",
+      "role": "Supported search engine in the alternative app"
+    },
+    {
+      "name": "Yandex",
+      "type": "organization",
+      "role": "Supported search engine in the alternative app"
+    },
+    {
+      "name": "TinEye",
+      "type": "organization",
+      "role": "Supported reverse image search engine in the alternative app"
+    }
+  ],
+  "key_data_points": [
+    "The app works on any Android device running Android 10 or higher, making it widely accessible (🟢 relevant to your Red Teaming: can be used on diverse Android targets for reconnaissance).",
+    "Text recognition, QR code detection, and smart scanning are performed offline without uploading to Google servers, enhancing privacy (🟢 relevant to your privacy-conscious homelab: aligns with de-Googling efforts).",
+    "The app supports multiple search engines (Bing, Yandex, TinEye) instead of being locked to Google, offering flexibility (🟢 relevant to your Red Teaming: TinEye is useful for OSINT and reverse image searches).",
+    "The app restores 'Share' and 'Save' features that Google removed, allowing users to bookmark or share circled content (🟢 relevant to your productivity: quick saving of information).",
+    "A privacy concern exists: the app uses Catbox to upload images for search, storing files indefinitely (🟢 relevant to your security awareness: be cautious when using the app for sensitive content).",
+    "The developer is working on a self-hosted approach where the device acts as the server, eliminating third-party storage (🟢 relevant to your homelab: self-hosting aligns with your infrastructure interests).",
+    "The developer plans to add a confirmation layer to prevent accidental uploads (🟢 relevant to your Red Teaming: understanding app security flaws can inform exploitation or hardening)."
+  ],
+  "methodology_steps": [],
+  "conclusions": [
+    "The open-source Circle To Search alternative offers significant privacy and flexibility benefits over Google's version, particularly for users who have de-Googled their devices or want offline OCR capabilities. However, the current reliance on Catbox for image uploads is a notable privacy risk that the developer is actively addressing. For Red Teaming, the app's support for TinEye and multiple search engines can be leveraged for OSINT, but caution is advised when using it for sensitive searches until the self-hosted update is released."
+  ],
+  "personal_relevance_summary": "This article is directly relevant to your interests in open-source tools, privacy, and Android customization. As a Red Teamer, the app's offline OCR and multi-engine search (especially TinEye) can be used for reconnaissance and data gathering without sending data to Google. The developer's move toward self-hosting aligns with your homelab ethos. However, the current Catbox privacy issue means you should either wait for the update or use the app only for non-sensitive searches. The app also restores Share/Save features, boosting productivity. Overall, it's a promising tool for privacy-conscious users and a good example of open-source alternatives to proprietary features.",
+  "extra_advice": "Consider contributing to the project on GitHub by testing the self-hosted version once released, or even helping with the implementation if you have server-side skills. For Red Teaming, you could use the app's offline OCR to extract text from screenshots during engagements without network traces. Also, monitor the developer's progress on the confirmation layer—it could be a model for implementing similar privacy controls in your own projects.",
+  "source_url": "https://www.howtogeek.com/an-open-source-google-circle-to-search-alternative-that-works-offline/"
+}

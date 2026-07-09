@@ -1,0 +1,52 @@
+{
+  "article_title": "I finally figured out what was eating my Android storage — and the culprit wasn't what I expected",
+  "core_thesis": "The article reveals that on Samsung Galaxy phones (One UI), a hidden 'Other files' category can consume tens of gigabytes of storage, often exceeding visible categories like photos and apps. This storage is not truly missing but is obscured by the system's default UI, and cleaning it requires navigating a multi-step process that Samsung does not clearly document.",
+  "detailed_summary": "The author, a Samsung Galaxy Z Flip 6 user, repeatedly received low storage warnings despite deleting photos, videos, and apps. Upon investigating, they discovered that the 'Other files' section (hidden under 'Show more' in Storage settings) held over 20 GB of data. This category is a catch-all for files that don't fit into standard types (Images, Videos, Audio, Documents, Apps). Samsung's One UI provides a breakdown into three tabs: 'Invisible backups' (duplicate originals of edited photos), 'Pending files' (mostly .nomedia markers and stuck transfers), and 'Uncategorised' (dominated by WhatsApp encrypted database backups). Only 'Invisible backups' allows direct deletion; the other tabs require manually locating files via the My Files app or the source app. The author recovered 8–10 GB by clearing invisible backups and WhatsApp backups, but notes that the storage was never truly missing—it was just poorly categorized and hidden from default views.",
+  "entities": [
+    {
+      "name": "Samsung Galaxy Z Flip 6",
+      "type": "product",
+      "role": "The device used in the article; a foldable smartphone running One UI."
+    },
+    {
+      "name": "One UI",
+      "type": "software",
+      "role": "Samsung's Android skin that hides the 'Other files' category behind a 'Show more' button."
+    },
+    {
+      "name": "WhatsApp",
+      "type": "organization",
+      "role": "App whose encrypted database backups (msgstore-incr-*.db.crypt14) filled the 'Uncategorised' tab."
+    },
+    {
+      "name": "Tashreef Shareef",
+      "type": "person",
+      "role": "Author of the article, a tech writer with a background in computer science and developer insights."
+    }
+  ],
+  "key_data_points": [
+    "The 'Other files' category on Samsung One UI can exceed 20 GB, often larger than visible categories like Images, Videos, and Apps combined. (🟢 Relevant to your Red Teaming: Understanding hidden storage locations can help in forensic analysis or data exfiltration scenarios.)",
+    "The 'Other files' section is hidden behind a 'Show more' button on the Storage page, making it easy to overlook during routine cleanup. (🟢 Relevant to your homelab/DevOps: Similar hidden storage patterns exist in Linux systems; knowing where to look can prevent unexpected disk full issues.)",
+    "Samsung's own support documentation (as of the article's publication) still states that 'Other storage' cannot be explored, contradicting the actual UI that provides a three-tab breakdown. (🟢 Relevant to your student needs: Always verify official documentation against real-world behavior; this is a critical research skill.)",
+    "The 'Invisible backups' tab contained 1.81 GB of duplicate originals from edited photos, which can be safely deleted. (🟢 Relevant to your programming: Automating cleanup of such duplicates could be a useful script project.)",
+    "The 'Uncategorised' tab held 5.02 GB, primarily WhatsApp encrypted database backups (msgstore-incr-*.db.crypt14). These are rolling backups that accumulate over time. (🟢 Relevant to your Red Teaming: Encrypted backups may contain sensitive chat data; understanding their location and format is useful for offensive operations.)",
+    "Only 'Invisible backups' allows direct deletion; 'Pending files' and 'Uncategorised' only show file details, requiring manual deletion via My Files or the source app. (🟢 Relevant to your homelab/DevOps: This multi-step process is inefficient; a scripted solution could save time.)"
+  ],
+  "methodology_steps": [
+    "1. Open Settings > Battery and device care > Storage to view the storage breakdown.",
+    "2. Tap 'Show more' (if available) to reveal hidden categories including 'Other files'.",
+    "3. Tap 'Other files' to see the three-tab breakdown: Invisible backups, Pending files, and Uncategorised.",
+    "4. For Invisible backups: tap 'Delete' to remove duplicate originals of edited photos (safe to delete).",
+    "5. For Pending files and Uncategorised: tap a file, note its location, then open the My Files app or the source app (e.g., WhatsApp) to delete manually.",
+    "6. Alternatively, clear app cache via Settings > Apps > [app] > Storage > Clear cache. Avoid 'Clear data' unless you want to reset app settings.",
+    "7. For WhatsApp specifically: open WhatsApp > Settings > Storage and Data > Manage Storage to delete old backups or media."
+  ],
+  "conclusions": [
+    "The storage was never truly missing; it was hidden in a poorly documented 'Other files' category. Once identified, the gap between used and accounted storage closed. This highlights the importance of exploring all system menus rather than relying on default views.",
+    "Samsung's One UI provides a breakdown of 'Other files' but only allows direct deletion from one of three tabs, making cleanup cumbersome. Users must manually locate files or clear app caches to reclaim space.",
+    "The article's findings are device-specific (Samsung Galaxy Z Flip 6 with One UI), but similar hidden storage categories exist on other Android skins. Users should check their device's storage settings thoroughly."
+  ],
+  "personal_relevance_summary": "This article is directly relevant to your homelab and DevOps interests because it reveals how hidden storage categories can silently consume disk space—a common issue in Linux servers and embedded systems. As a programmer, you can automate the detection and cleanup of such files using scripts (e.g., Python or shell). For Red Teaming, understanding where apps like WhatsApp store encrypted backups (msgstore-incr-*.db.crypt14) can inform data exfiltration or forensic analysis. As a student, the article reinforces the value of questioning default UI assumptions and verifying documentation against actual behavior.",
+  "extra_advice": "Consider writing a Python script (or a shell script for Linux) that scans for hidden storage categories (e.g., .nomedia files, duplicate backups) and provides a summary or automated cleanup. This could be a useful homelab project and a portfolio piece. For Red Teaming, explore whether the WhatsApp encrypted backups can be accessed via ADB or other means on a rooted device.",
+  "source_url": "https://www.makeuseof.com/unexpected-android-storage-hog/"
+}

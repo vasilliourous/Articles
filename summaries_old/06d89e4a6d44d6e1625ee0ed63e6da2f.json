@@ -1,0 +1,65 @@
+{
+  "article_title": "I ditched my GUI file manager for these 5 terminal tools, and I'm never going back",
+  "core_thesis": "The article argues that terminal-based file management tools are superior to GUI file managers for speed, power, and flexibility, especially for Linux users who are comfortable with the command line. It presents five specific tools—zoxide, Yazi, eza, fzf, and bat—that replace common GUI file operations with faster, keyboard-driven workflows, and claims that once mastered, users will prefer the terminal over graphical interfaces.",
+  "detailed_summary": "The author, a Linux user, describes transitioning from GUI file managers to terminal tools and finding the experience transformative. The article highlights five tools: zoxide for smart directory jumping based on usage history; Yazi for a full-screen, keyboard-driven file manager with image and PDF previews; eza as a modern replacement for ls with color-coded output, icons, and Git status; fzf for fuzzy searching files, directories, and command history; and bat as a cat replacement with syntax highlighting and line numbers. Each tool is presented as faster and more efficient than GUI alternatives. The article also briefly mentions ncdu for disk usage analysis. The author emphasizes that these tools boost productivity and make terminal workflows enjoyable, though Yazi requires learning keybindings. The comments include a note that Yazi's image previews require a terminal supporting graphics protocols like sixel or kitty.",
+  "entities": [
+    {
+      "name": "Kashif Javed",
+      "type": "person",
+      "role": "Author of the article, a tech enthusiast with experience in Linux and programming."
+    },
+    {
+      "name": "zoxide",
+      "type": "software",
+      "role": "A smarter cd command that learns user directory habits for instant navigation."
+    },
+    {
+      "name": "Yazi",
+      "type": "software",
+      "role": "A terminal-based file manager with keyboard navigation and media previews."
+    },
+    {
+      "name": "eza",
+      "type": "software",
+      "role": "A modern ls replacement with color-coded output, icons, and Git integration."
+    },
+    {
+      "name": "fzf",
+      "type": "software",
+      "role": "A fuzzy finder for searching files, directories, and command history."
+    },
+    {
+      "name": "bat",
+      "type": "software",
+      "role": "A cat replacement with syntax highlighting, line numbers, and Git integration."
+    },
+    {
+      "name": "ncdu",
+      "type": "software",
+      "role": "A disk usage analyzer mentioned briefly for interactive storage inspection."
+    }
+  ],
+  "key_data_points": [
+    "zoxide remembers directories you visit and allows jumping with keywords (e.g., 'z projects') instead of typing full paths (🟢 relevant to your programming workflow: speeds up navigation in large projects).",
+    "Yazi provides a full-screen terminal file manager with image, video, and PDF previews without external apps, but requires learning keybindings (🟢 relevant to your homelab: efficient file management on headless servers).",
+    "eza displays color-coded file types, icons, and Git status indicators in terminal listings, and includes a built-in tree view (🟢 relevant to your DevOps: quick visual insight into repository status).",
+    "fzf enables real-time fuzzy searching of files, directories, and command history; can be piped with other tools like find or git branches (🟢 relevant to your Red Teaming: fast searching through logs or payloads).",
+    "bat shows file contents with syntax highlighting and line numbers, and integrates with less for paging large files (🟢 relevant to your programming: reading code/configs without opening an editor).",
+    "ncdu provides interactive disk usage visualization in the terminal, showing which folders consume space (🟢 relevant to your homelab: monitoring storage on servers)."
+  ],
+  "methodology_steps": [
+    "Install zoxide via your package manager (e.g., 'sudo apt install zoxide' on Debian/Ubuntu) and add its shell hook to your .bashrc or .zshrc for automatic learning of directory usage.",
+    "Install Yazi from its GitHub page (e.g., via cargo: 'cargo install yazi-fm') and configure keybindings to your preference; ensure your terminal supports sixel or kitty protocol for image previews.",
+    "Install eza via package manager or cargo ('cargo install eza'), then alias 'ls' to 'eza' in your shell config for color-coded listings with icons and Git status.",
+    "Install fzf via package manager or from GitHub; enable shell integration (e.g., source /usr/share/fzf/key-bindings.bash) to use Ctrl+R for fuzzy command history search.",
+    "Install bat via package manager or from GitHub; alias 'cat' to 'bat' for syntax-highlighted file viewing with line numbers and Git change markers."
+  ],
+  "conclusions": [
+    "Terminal file management tools offer significant speed and efficiency gains over GUI file managers, especially for repetitive tasks like navigation, searching, and file inspection. The article's tools collectively replace most GUI file operations with keyboard-driven workflows.",
+    "The learning curve for tools like Yazi is manageable, and customization options allow users to tailor keybindings. The payoff in productivity justifies the initial time investment.",
+    "Integration between tools (e.g., piping fzf with zoxide or bat with less) creates a cohesive terminal environment that surpasses GUI capabilities for power users."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your interests as a programmer and homelab enthusiast. The tools described—zoxide, fzf, bat, eza, and Yazi—directly enhance terminal productivity for coding, DevOps, and server management. For Red Teaming, fzf can speed up searching through logs or payloads, and bat helps quickly review code/configs. The article provides practical installation and usage steps that you can immediately apply to your workflow. The mention of ncdu is also useful for monitoring disk usage on your homelab servers.",
+  "extra_advice": "Consider integrating fzf with your shell's command history and with tools like kubectl or git for even faster workflows. For example, use 'git branch | fzf' to quickly switch branches, or 'kubectl get pods | fzf' to select a pod for logs. This pattern can be extended to any command that outputs a list, making your terminal sessions much more efficient.",
+  "source_url": "https://www.xda-developers.com/ditched-gui-file-manager-for-terminal-tools-never-going-back/"
+}

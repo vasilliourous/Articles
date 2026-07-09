@@ -1,0 +1,41 @@
+{
+  "article_title": "I Just Tested (New) Claude Code Routines (That Kill Your Boring Backlogs)",
+  "core_thesis": "Claude Code Routines is a new feature that automates repetitive development tasks by allowing users to define a prompt, repository, and connectors once, then schedule execution on Anthropic-managed cloud infrastructure, eliminating the need for manual cron jobs or terminal uptime.",
+  "detailed_summary": "The article introduces Claude Code Routines, a feature that packages a prompt, GitHub repository, and connectors into a scheduled automation that runs on Anthropic's cloud infrastructure. Unlike previous automation methods that required users to manage cron jobs, infrastructure, and MCP servers, routines are set-and-forget: they execute even when the user's terminal is off. Triggers include scheduled (hourly, nightly, weekly), API calls, or GitHub events. The author tested the feature and found it effective for clearing backlogs of boring, repetitive dev tasks. The article is a member-only story, so full details are behind a paywall, but the key takeaway is that routines simplify automation by offloading execution to Anthropic.",
+  "entities": [
+    {
+      "name": "Joe Njenga",
+      "type": "person",
+      "role": "Author and tester of Claude Code Routines; Software & AI Automation Engineer"
+    },
+    {
+      "name": "Claude Code Routines",
+      "type": "product",
+      "role": "New automation feature by Anthropic for scheduling development tasks"
+    },
+    {
+      "name": "Anthropic",
+      "type": "organization",
+      "role": "Developer of Claude and provider of cloud infrastructure for routines"
+    }
+  ],
+  "key_data_points": [
+    "Claude Code Routines allow users to define a prompt, repository, and connectors once, then schedule execution via cron-like triggers, API calls, or GitHub events (🟢 relevant to your DevOps/homelab needs: reduces manual overhead for recurring tasks like code cleanup, testing, or deployment).",
+    "Routines run on Anthropic-managed cloud infrastructure, so they continue executing even when the user's terminal is off (🟢 relevant to your Red Teaming: could be used to automate persistent scanning or reconnaissance tasks without maintaining a local server).",
+    "The feature is currently in research phase, implying it may not be fully stable or widely available (🟢 relevant to your ambition: early adoption could give you a competitive edge, but expect potential bugs or changes)."
+  ],
+  "methodology_steps": [
+    "Define a routine: create a prompt describing the task, link a GitHub repository, and configure connectors (e.g., APIs, databases).",
+    "Set triggers: choose scheduled (hourly, nightly, weekly), API call, or GitHub event (e.g., push, pull request).",
+    "Deploy: the routine runs on Anthropic's cloud; no need to keep your terminal open or manage cron jobs.",
+    "Review results: check the output next time you log in; Claude executes the task autonomously."
+  ],
+  "conclusions": [
+    "Claude Code Routines effectively eliminate the burden of managing automation infrastructure, making it easier to offload repetitive dev tasks. The author's test confirmed the feature delivers on its promise.",
+    "For developers, this means less time spent on boring backlogs and more focus on creative work. The cloud execution model ensures reliability without local resource consumption.",
+    "The research-phase status suggests caution, but the potential for streamlining CI/CD, code maintenance, and even security automation is significant."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your programming and DevOps interests, as it introduces a tool that automates repetitive development tasks without requiring you to manage cron jobs or infrastructure. For your homelab, you could use routines to automate backups, log analysis, or periodic security scans. As a student, it can help you maintain code repositories or automate assignment-related tasks. The cloud execution model also aligns with Red Teaming needs: you could schedule reconnaissance or vulnerability scanning routines that run persistently. The early-stage nature means you can experiment and gain expertise before wider adoption.",
+  "extra_advice": "Consider using Claude Code Routines to automate your homelab's periodic security audits (e.g., running nmap or OpenVAS scans on a schedule) or to automatically update and test your personal projects. Since it's in research, set up a small non-critical routine first to evaluate reliability and cost (if any).",
+  "source_url": "https://medium.com/@joe.njenga/i-just-tested-new-claude-code-routines-that-kill-your-boring-backlogs-4b0811b6f7a8"
+}

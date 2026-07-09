@@ -12,7 +12,7 @@ from pathlib import Path
 from bs4 import BeautifulSoup
 from tqdm import tqdm
 
-from crawl4ai import AsyncWebCrawler, CrawlerRunConfig, CacheMode
+from crawl4ai import AsyncWebCrawler, BrowserConfig, CrawlerRunConfig, CacheMode
 from crawl4ai.content_filter_strategy import PruningContentFilter
 from crawl4ai.markdown_generation_strategy import DefaultMarkdownGenerator
 
@@ -59,6 +59,27 @@ source: {url}
 ---
 
 {content_md}"""
+
+
+def make_browser_config() -> BrowserConfig:
+    """Build the Crawl4AI browser config with stealth enhancements."""
+    return BrowserConfig(
+        headless=True,
+        enable_stealth=True,
+        use_managed_browser=True,
+        light_mode=False,
+        extra_args=[
+            "--disable-blink-features=AutomationControlled",
+            "--disable-features=IsolateOrigins,site-per-process",
+            "--no-sandbox",
+            "--disable-setuid-sandbox",
+        ],
+        user_agent=(
+            "Mozilla/5.0 (X11; Linux x86_64) AppleWebKit/537.36 "
+            "(KHTML, like Gecko) Chrome/131.0.0.0 Safari/537.36"
+        ),
+        ignore_https_errors=True,
+    )
 
 
 def make_crawl_config() -> CrawlerRunConfig:
@@ -115,11 +136,12 @@ async def process_articles():
         print("Nothing to do.")
         return
 
-    config = make_crawl_config()
+    browser_config = make_browser_config()
+    crawl_config = make_crawl_config()
     success_count = 0
     fail_count = 0
 
-    async with AsyncWebCrawler() as crawler:
+    async with AsyncWebCrawler(config=browser_config) as crawler:
         # Build a list of (url, title) tuples for the todo items
         url_title_pairs = [(bm["url"], bm["title"]) for bm in todo]
         url_hash_lookup = {
@@ -130,7 +152,7 @@ async def process_articles():
         with tqdm(total=len(todo), desc="Fetching articles", unit="article") as pbar:
             results = await crawler.arun_many(
                 [url for url, _ in url_title_pairs],
-                config=config,
+                config=crawl_config,
                 stream=True,
             )
             for result in results:
@@ -182,7 +204,10 @@ async def process_articles():
 
 
 def main():
-    asyncio.run(process_articles())
+    try:
+        asyncio.run(process_articles())
+    except KeyboardInterrupt:
+        print("\n\n⏸️  Interrupted — progress saved. Re-run to continue where you left off.")
 
 
 if __name__ == "__main__":

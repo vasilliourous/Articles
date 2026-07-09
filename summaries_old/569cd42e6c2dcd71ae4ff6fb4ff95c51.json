@@ -1,0 +1,136 @@
+{
+  "article_title": "CVE MCP Server Turns Claude Into a Fully Capable Security Analyst With 27 Tools Across 21 APIs",
+  "core_thesis": "The CVE MCP Server is an open-source project that integrates Anthropic's Claude AI with 27 security tools across 21 APIs via the Model Context Protocol, enabling security analysts to triage CVEs through natural-language queries. It addresses the manual bottleneck of vulnerability triage by providing correlated intelligence from sources like NVD, EPSS, CISA KEV, GitHub, VirusTotal, and Shodan, and includes a weighted risk scoring formula that prioritizes vulnerabilities beyond CVSS alone.",
+  "detailed_summary": "The article introduces CVE MCP Server, a production-grade open-source tool that transforms Claude into a security analyst by connecting it to 27 tools across 21 APIs. The server is built with Python, FastMCP, httpx, aiosqlite, Pydantic v2, and defusedxml, and operates via outbound HTTPS only—no inbound ports, telemetry, or API key logging. It addresses the common pain point of manual CVE triage, where analysts must open multiple browser tabs to gather data from NVD, EPSS, CISA KEV, GitHub, VirusTotal, Shodan, etc. Industry data cited shows that 96% of CVE alerts below an exploitation threshold go uninvestigated due to manual workload. The server's tool catalog is organized into five categories: Core Vulnerability Intelligence, Exploit & Attack Intelligence, Advanced Risk & Reporting, Network Intelligence, and Threat Intelligence. Key tools include lookup_cve (NVD), get_epss_score (FIRST), check_kev_status (CISA), bulk_cve_lookup (batch up to 20 CVEs), MITRE ATT&CK mapping, PoC checks on GitHub and Exploit-DB, CAPEC patterns, AbuseIPDB, GreyNoise, Shodan, CIRCL Passive DNS, VirusTotal, MalwareBazaar, ThreatFox, and Ransomwhere. The server implements a weighted risk scoring formula: EPSS probability (35%), CISA KEV status (30%), CVSS (20%), PoC availability (15%), with boost multipliers for active KEV+PoC, CVSS ≥9.0 with high EPSS, and recently published CVEs. Scores 76–100 trigger CRITICAL label requiring patching within 24–48 hours. Eight tools require zero API keys (EPSS, CISA KEV, OSV.dev, MITRE ATT&CK, CWE lookups, CVSS parsing, Ransomwhere, NVD at reduced rate). Teams can start immediately and add Tier 1 keys (NVD, GitHub) for 10× throughput, Tier 2 keys (AbuseIPDB, VirusTotal, GreyNoise, Shodan) for full intelligence. The server also includes DevSecOps tools: scan_dependencies (OSV.dev), scan_github_advisories, and urlscan_check. A developer can scan a requirements.txt file via Claude and receive prioritized upgrade recommendations. The project is available on GitHub under an open-source license, with Claude Desktop and Claude Code configuration supported.",
+  "entities": [
+    {
+      "name": "CVE MCP Server",
+      "type": "software",
+      "role": "Open-source tool integrating Claude with 27 security tools for CVE triage"
+    },
+    {
+      "name": "Anthropic",
+      "type": "organization",
+      "role": "Creator of Claude AI and the Model Context Protocol (MCP)"
+    },
+    {
+      "name": "Claude",
+      "type": "software",
+      "role": "AI assistant that becomes a security analyst via CVE MCP Server"
+    },
+    {
+      "name": "Mahipal (mukul975)",
+      "type": "person",
+      "role": "Developer who released CVE MCP Server on GitHub"
+    },
+    {
+      "name": "NVD",
+      "type": "organization",
+      "role": "National Vulnerability Database, source of CVSS scores and CVE details"
+    },
+    {
+      "name": "EPSS",
+      "type": "organization",
+      "role": "Exploit Prediction Scoring System by FIRST, provides exploitation probability"
+    },
+    {
+      "name": "CISA KEV",
+      "type": "organization",
+      "role": "CISA's Known Exploited Vulnerabilities catalog"
+    },
+    {
+      "name": "GitHub",
+      "type": "organization",
+      "role": "Platform for PoC exploits and security advisories"
+    },
+    {
+      "name": "VirusTotal",
+      "type": "organization",
+      "role": "Malware and IOC analysis service"
+    },
+    {
+      "name": "Shodan",
+      "type": "organization",
+      "role": "Search engine for internet-connected devices, used for host profiling"
+    },
+    {
+      "name": "AbuseIPDB",
+      "type": "organization",
+      "role": "IP reputation database"
+    },
+    {
+      "name": "GreyNoise",
+      "type": "organization",
+      "role": "Threat intelligence for internet scanning activity"
+    },
+    {
+      "name": "CIRCL",
+      "type": "organization",
+      "role": "Computer Incident Response Center Luxembourg, provides Passive DNS"
+    },
+    {
+      "name": "MalwareBazaar",
+      "type": "organization",
+      "role": "Malware sample sharing platform"
+    },
+    {
+      "name": "ThreatFox",
+      "type": "organization",
+      "role": "IOC sharing platform"
+    },
+    {
+      "name": "Ransomwhere",
+      "type": "organization",
+      "role": "Ransomware Bitcoin address tracker"
+    },
+    {
+      "name": "OSV.dev",
+      "type": "organization",
+      "role": "Open Source Vulnerabilities database"
+    },
+    {
+      "name": "MITRE ATT&CK",
+      "type": "organization",
+      "role": "Knowledge base of adversary tactics and techniques"
+    },
+    {
+      "name": "Exploit-DB",
+      "type": "organization",
+      "role": "Exploit database for PoC checks"
+    },
+    {
+      "name": "CAPEC",
+      "type": "organization",
+      "role": "Common Attack Pattern Enumeration and Classification"
+    }
+  ],
+  "key_data_points": [
+    "CVE MCP Server integrates 27 security tools across 21 APIs into a single natural-language interface via Claude (🟢 relevant to Red Teaming: enables rapid, automated CVE triage and prioritization, reducing manual effort).",
+    "96% of CVE alerts below an exploitation threshold go uninvestigated due to manual workload (EPSS v4 research) (🟢 highlights the efficiency gain: automated triage can cover the long tail of CVEs that are often ignored).",
+    "The weighted risk scoring formula: EPSS 35%, CISA KEV 30%, CVSS 20%, PoC availability 15%, with boost multipliers for KEV+PoC, CVSS≥9.0+high EPSS, and recent CVEs (🟢 provides a multi-signal prioritization method that goes beyond CVSS, useful for Red Teaming to focus on high-impact vulnerabilities).",
+    "Scores 76–100 trigger CRITICAL label requiring patching within 24–48 hours under emergency change window (🟢 actionable threshold for operational security teams).",
+    "Eight tools require zero API keys: EPSS, CISA KEV, OSV.dev, MITRE ATT&CK, CWE lookups, CVSS parsing, Ransomwhere, and NVD at reduced rate (🟢 lowers barrier to entry; can start triaging immediately without API key management).",
+    "Tier 1 keys (NVD, GitHub) provide 10× throughput; Tier 2 keys (AbuseIPDB, VirusTotal, GreyNoise, Shodan) unlock full multi-domain intelligence (🟢 scalable deployment model for growing teams).",
+    "DevSecOps tools: scan_dependencies (OSV.dev), scan_github_advisories, urlscan_check (🟢 directly applicable for supply chain vulnerability scanning in CI/CD pipelines).",
+    "Built with Python, FastMCP, httpx, aiosqlite, Pydantic v2, defusedxml; outbound HTTPS only, no inbound ports, no telemetry, no API key logging (🟢 security-conscious design, important for deployment in sensitive environments)."
+  ],
+  "methodology_steps": [
+    "Deploy CVE MCP Server: Clone the GitHub repository (github.com/mukul975/cve-mcp-server) and follow the setup instructions. The server runs as a Python application using FastMCP and requires Python 3.8+.",
+    "Configure Claude Desktop or Claude Code: Add the MCP server configuration to Claude's settings so that Claude can invoke the tools. The article states out-of-the-box support for both.",
+    "Start with zero API keys: Use the eight tools that require no keys (EPSS, CISA KEV, OSV.dev, MITRE ATT&CK, CWE lookups, CVSS parsing, Ransomwhere, NVD at reduced rate) to begin querying immediately.",
+    "Progressively add API keys: Obtain Tier 1 keys (NVD, GitHub) for higher throughput, then Tier 2 keys (AbuseIPDB, VirusTotal, GreyNoise, Shodan) for full intelligence. No API keys are ever logged.",
+    "Query via natural language: In Claude, ask questions like 'Analyze CVE-2024-1234' or 'Scan my requirements.txt for vulnerabilities'. The server will fetch data from multiple sources and return a prioritized risk score.",
+    "Interpret the weighted risk score: The server outputs a score from 0–100. Scores 76–100 are CRITICAL and require patching within 24–48 hours. Use the breakdown (EPSS, KEV, CVSS, PoC) to understand the rationale.",
+    "Use bulk_cve_lookup for batch triage: Fetch up to 20 CVEs in parallel to prioritize a large queue efficiently.",
+    "Integrate DevSecOps workflows: Use scan_dependencies on package files (e.g., requirements.txt) to get prioritized upgrade recommendations directly from Claude."
+  ],
+  "conclusions": [
+    "CVE MCP Server significantly reduces the manual overhead of CVE triage by aggregating 27 tools into a single natural-language interface, addressing the 96% of alerts that are currently ignored due to workload. For Red Teaming, this means faster identification of exploitable vulnerabilities and better prioritization of attack paths.",
+    "The weighted risk scoring formula provides a more nuanced prioritization than CVSS alone, incorporating exploitation probability (EPSS), known exploitation (CISA KEV), and PoC availability. This aligns with industry best practices and helps teams focus on vulnerabilities that are most likely to be weaponized.",
+    "The zero-API-key entry point and progressive key tiers make the tool accessible to small teams and individual researchers, while the production-grade design (outbound HTTPS, no telemetry, no key logging) ensures it can be deployed in sensitive environments. For a student or homelab user, this is an excellent way to learn automated vulnerability triage without upfront costs.",
+    "The DevSecOps tools (dependency scanning, advisory search, URL analysis) extend the server's utility beyond triage into supply chain security, making it a versatile addition to CI/CD pipelines. A programmer can integrate it into their development workflow to catch vulnerabilities early."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your Red Teaming and programming interests. As a Red Teamer, you can use CVE MCP Server to automate the tedious process of CVE triage, quickly identifying which vulnerabilities have active exploits, are in CISA KEV, or have high EPSS scores—allowing you to focus on the most impactful attack vectors. The tool's natural-language interface via Claude means you can query complex intelligence without writing custom scripts, saving time during reconnaissance and weaponization phases. For your programming side, the server is built with Python and modern async libraries (httpx, aiosqlite, Pydantic v2), providing a clean codebase to study or extend. You can also integrate the DevSecOps tools into your own projects to scan dependencies and GitHub advisories automatically. As a student, this is a practical way to learn about vulnerability intelligence aggregation and multi-source risk scoring without needing expensive commercial tools. The zero-API-key entry point lets you experiment immediately in your homelab.",
+  "extra_advice": "Consider forking the CVE MCP Server and extending it with additional tools relevant to your Red Teaming workflow, such as integrating with Cobalt Strike or Metasploit for automated exploitation validation. You could also build a custom dashboard that visualizes the weighted risk scores over time, helping you track which CVEs are trending in your target environment. Since the server uses FastMCP, you can easily add new tools by following the MCP standard—this is a great opportunity to contribute to the open-source community while building a tool tailored to your needs.",
+  "source_url": "https://cybersecuritynews.com/cve-mcp-server-and-claude/"
+}

@@ -1,0 +1,67 @@
+{
+  "article_title": "Self-hosting over 40 services taught me I couldn't live without these 5",
+  "core_thesis": "After self-hosting over 40 services for five years, the author identifies five essential services that have become indispensable: Plex for media streaming, Audiobookshelf for audiobooks, Home Assistant for smart home bridging, Scrypted for non-HomeKit camera integration, and Pi-hole for DNS-level content filtering and network monitoring. These services provide convenience, cost savings, and control that the author cannot replicate with commercial alternatives.",
+  "detailed_summary": "The article recounts the author's five-year homelab journey, during which they have tried hundreds of self-hosted services and currently run 30-40 concurrently. They highlight five services that have become non-negotiable. Plex, their entry point 15 years ago, replaced all streaming subscriptions by allowing them to rip their Blu-ray collection and stream it anywhere. Audiobookshelf replaced Audible due to cost and DRM limitations; the author buys audiobooks on CD or directly and shares the library with family while tracking individual progress. Home Assistant serves primarily as a HomeKit bridge, enabling non-HomeKit devices (like cheap Gosund smart plugs) to integrate into Apple's ecosystem. Scrypted similarly bridges non-HomeKit cameras into HomeKit Secure Video, simplifying recording and leveraging iCloud+ storage. Pi-hole provides network-wide ad blocking and DNS filtering; it helped the author detect and remove a lingering Auvik collector that was phoning home, and it blocks smart devices from calling home to China while allowing local control via Home Assistant. The author emphasizes that while their homelab constantly changes, these five services are permanent fixtures.",
+  "entities": [
+    {
+      "name": "Patrick Campanale",
+      "type": "person",
+      "role": "Author and homelab enthusiast with over 15 years of experience running Plex and five years of active homelabbing."
+    },
+    {
+      "name": "Plex",
+      "type": "organization",
+      "role": "Media server software that allows streaming personal media libraries; the author's primary content consumption platform."
+    },
+    {
+      "name": "Audiobookshelf",
+      "type": "organization",
+      "role": "Self-hosted audiobook server that the author uses to replace Audible, offering DRM-free sharing and progress tracking."
+    },
+    {
+      "name": "Home Assistant",
+      "type": "organization",
+      "role": "Open-source home automation platform used by the author as a HomeKit bridge for non-HomeKit devices."
+    },
+    {
+      "name": "Scrypted",
+      "type": "organization",
+      "role": "Software that integrates non-HomeKit cameras into HomeKit Secure Video; used by the author for camera bridging."
+    },
+    {
+      "name": "Pi-hole",
+      "type": "organization",
+      "role": "DNS-level ad blocker and network monitoring tool; used by the author for content filtering and detecting unwanted outbound connections."
+    },
+    {
+      "name": "HomeKit",
+      "type": "organization",
+      "role": "Apple's smart home framework; the author's preferred ecosystem that Home Assistant and Scrypted extend."
+    },
+    {
+      "name": "Auvik",
+      "type": "organization",
+      "role": "Network management software whose trial left a lingering collector that Pi-hole helped detect and remove."
+    }
+  ],
+  "key_data_points": [
+    "The author has been self-hosting for over five years and currently runs 30-40 services simultaneously, indicating a mature and complex homelab setup.",
+    "Plex has been used for nearly 15 years, allowing the author to ditch all streaming subscriptions by ripping personal Blu-ray and DVD collections (🟢 relevant to homelab: demonstrates long-term viability of self-hosted media).",
+    "Audiobookshelf replaced Audible due to cost and DRM limitations; the author buys audiobooks on CD from thrift stores or directly from publishers, enabling family sharing with individual progress tracking (🟢 relevant to cost-saving and privacy: avoids vendor lock-in).",
+    "Home Assistant is used primarily as a HomeKit bridge, integrating non-HomeKit devices like $1 Gosund smart plugs into Apple's ecosystem (🟢 relevant to homelab: shows how to extend smart home compatibility cheaply).",
+    "Scrypted bridges non-HomeKit cameras into HomeKit Secure Video, leveraging iCloud+ for recording instead of running a separate NVR (🟢 relevant to homelab: simplifies camera management and reduces maintenance).",
+    "Pi-hole detected a lingering Auvik collector that was phoning home, which the author thought was fully removed; it also blocks smart devices from calling home to China while allowing local control via Home Assistant (🟢 relevant to security: provides network visibility and control over IoT devices).",
+    "The author uses custom DNS records in Pi-hole (e.g., proxmox.domain.com) without registering a public domain, enabling internal service discovery (🟢 relevant to homelab: useful for internal networking)."
+  ],
+  "methodology_steps": [],
+  "conclusions": [
+    "Plex remains the author's primary media consumption tool despite privacy concerns with Jellyfin, because of its convenience, reliability, and long-term familiarity.",
+    "Audiobookshelf is the most-used service by the author's wife, proving that self-hosted alternatives can be family-friendly and replace expensive subscriptions.",
+    "Home Assistant and Scrypted together extend Apple's HomeKit ecosystem far beyond native support, allowing the author to use cheap or non-HomeKit devices without sacrificing integration.",
+    "Pi-hole is indispensable for network monitoring and control, catching unwanted outbound connections and enabling local-only control of IoT devices, which enhances both security and privacy.",
+    "A homelab naturally evolves to include a set of core services that become permanent; these five represent the author's non-negotiable foundation."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your homelab interests as it provides a curated list of five essential self-hosted services that have proven their worth over years of use. For your Red Teaming and cybersecurity focus, Pi-hole's network monitoring capability is directly applicable for detecting beaconing or unauthorized outbound traffic in a lab environment. Home Assistant and Scrypted demonstrate how to integrate diverse devices securely, which can inform your understanding of IoT attack surfaces and local control. As a programmer, you can explore the APIs and automation possibilities of these tools. The article also offers practical advice on cost-saving and reducing reliance on commercial services, aligning with your ambition to build a self-sufficient tech stack.",
+  "extra_advice": "Consider deploying Pi-hole in your homelab immediately as a network-wide monitoring tool; it can help you detect malware callbacks or C2 traffic during Red Team exercises. Additionally, explore Audiobookshelf's API to automate audiobook ingestion or integrate it with your existing media pipeline. For Home Assistant, look into its automation engine to simulate smart home attacks or test IoT security controls.",
+  "source_url": "https://www.howtogeek.com/self-hosting-over-services-taught-me-i-couldnt-live-without-these/"
+}

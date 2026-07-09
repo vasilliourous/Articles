@@ -1,0 +1,63 @@
+{
+  "article_title": "New Python Backdoor Uses Tunneling Service to Steal Browser and Cloud Credentials",
+  "core_thesis": "A stealthy Python-based backdoor framework called DEEP#DOOR uses a public tunneling service (bore.pub) for command-and-control, enabling credential theft from browsers and cloud services while employing extensive anti-analysis and persistence mechanisms. The malware is delivered via a batch script that disables Windows security controls and extracts an embedded Python payload, reducing forensic footprint.",
+  "detailed_summary": "Securonix researchers disclosed DEEP#DOOR, a Python backdoor delivered via a batch script ('install_obf.bat') that disables Windows security controls (e.g., Defender, AMSI, ETW) and extracts an embedded Python payload ('svc.py'). The payload establishes persistence through Startup folder scripts, Registry Run keys, scheduled tasks, and WMI subscriptions, with a watchdog mechanism that recreates removed artifacts. C2 communication uses bore.pub, a Rust-based public TCP tunneling service, blending malicious traffic and avoiding dedicated infrastructure. The backdoor capabilities include reverse shell, keylogging, clipboard monitoring, screenshot capture, webcam access, audio recording, and credential theft from browsers (Chrome, Firefox), Windows Credential Manager, SSH keys, and cloud providers (AWS, GCP, Azure). Anti-analysis features include sandbox/VM detection, NTDLL unhooking, PowerShell logging suppression, and timestamp stomping. The campaign appears limited and targeted, not widespread.",
+  "entities": [
+    {
+      "name": "Securonix",
+      "type": "organization",
+      "role": "Cybersecurity firm that discovered and analyzed DEEP#DOOR"
+    },
+    {
+      "name": "Akshay Gaikwad",
+      "type": "person",
+      "role": "Senior security research engineer at Securonix and co-author of the report"
+    },
+    {
+      "name": "Shikha Sangwan",
+      "type": "person",
+      "role": "Security researcher at Securonix and co-author"
+    },
+    {
+      "name": "Aaron Beardslee",
+      "type": "person",
+      "role": "Security researcher at Securonix and co-author"
+    },
+    {
+      "name": "DEEP#DOOR",
+      "type": "malware",
+      "role": "Python-based backdoor framework with tunneling C2 and credential theft"
+    },
+    {
+      "name": "bore.pub",
+      "type": "service",
+      "role": "Public Rust-based TCP tunneling service used for C2 communication"
+    }
+  ],
+  "key_data_points": [
+    "The intrusion chain starts with a batch script ('install_obf.bat') that disables Windows security controls and extracts an embedded Python payload (🟢 relevant to Red Teaming: demonstrates a fileless delivery technique that evades initial detection).",
+    "The Python payload is embedded directly inside the dropper script, reducing external infrastructure dependencies and forensic footprint (🟢 relevant to Red Teaming: can be adapted for stealthy payload delivery).",
+    "C2 communication uses bore.pub, a public Rust-based tunneling service, eliminating the need for dedicated C2 infrastructure and blending traffic with legitimate services (🟢 relevant to Red Teaming: provides a low-cost, low-risk C2 channel).",
+    "DEEP#DOOR steals credentials from Google Chrome, Mozilla Firefox, Windows Credential Manager, SSH keys, and cloud services (AWS, GCP, Azure) (🟢 relevant to Red Teaming: highlights high-value targets for credential harvesting).",
+    "The malware employs multiple persistence mechanisms (Startup folder, Registry Run keys, scheduled tasks, WMI subscriptions) with a watchdog that recreates removed artifacts (🟢 relevant to Red Teaming: shows how to maintain persistence despite removal attempts).",
+    "Anti-analysis features include sandbox/VM detection, AMSI/ETW patching, NTDLL unhooking, Defender tampering, SmartScreen bypass, PowerShell logging suppression, and timestamp stomping (🟢 relevant to Red Teaming: provides a checklist of evasion techniques to implement).",
+    "The campaign appears limited and targeted, not widespread, according to Securonix (🟢 relevant to Red Teaming: suggests the framework is modular and could be adapted by other actors)."
+  ],
+  "methodology_steps": [
+    "1. Delivery: Distribute the batch script 'install_obf.bat' via phishing emails or other social engineering methods.",
+    "2. Execution: The batch script disables Windows security controls (e.g., Defender, AMSI, ETW) using built-in commands or API calls.",
+    "3. Payload Extraction: The script dynamically extracts the embedded Python payload ('svc.py') from itself and executes it.",
+    "4. Persistence: The payload creates multiple persistence mechanisms: Startup folder scripts, Registry Run keys, scheduled tasks, and optional WMI subscriptions. A watchdog process monitors these artifacts and recreates them if removed.",
+    "5. C2 Communication: The implant connects to bore.pub (a public TCP tunneling service) to establish a reverse shell and receive commands.",
+    "6. Reconnaissance and Theft: The backdoor performs system reconnaissance, keylogging, clipboard monitoring, screenshot capture, webcam access, audio recording, and credential theft from browsers, Windows Credential Manager, SSH keys, and cloud provider config files.",
+    "7. Evasion: The malware uses sandbox/VM detection, NTDLL unhooking, PowerShell logging suppression, command-line wiping, timestamp stomping, and log clearing to avoid detection and complicate forensics."
+  ],
+  "conclusions": [
+    "DEEP#DOOR represents a sophisticated, fileless Python backdoor that leverages public tunneling services for C2, making detection harder. Its modular design and extensive evasion techniques make it a potent tool for targeted attacks, though current usage appears limited. For Red Teamers, the framework demonstrates effective use of public infrastructure for C2 and a comprehensive set of post-exploitation capabilities.",
+    "The malware's ability to steal cloud credentials (AWS, GCP, Azure) highlights the growing focus on cloud environments as high-value targets. Red Teamers should incorporate similar credential harvesting techniques in cloud-focused exercises.",
+    "The watchdog persistence mechanism, which automatically recreates removed artifacts, poses a significant challenge for incident response. This technique can be adopted by Red Teams to test an organization's ability to fully eradicate persistence."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your Red Teaming and cybersecurity interests. It details a real-world Python backdoor that uses a public tunneling service for C2, which you can emulate in your own operations to test detection capabilities. The credential theft techniques targeting browsers and cloud services (AWS, GCP, Azure) are directly applicable to offensive security exercises. The extensive anti-analysis and persistence mechanisms provide a blueprint for building stealthy implants. As a programmer, you can study the embedded payload extraction and Python-based evasion techniques to improve your own tooling.",
+  "extra_advice": "Consider setting up a lab environment to replicate DEEP#DOOR's C2 using bore.pub or a similar tunneling service (e.g., ngrok, frp). Experiment with embedding Python payloads inside batch scripts and implementing the watchdog persistence mechanism. This will give you hands-on experience with fileless delivery and resilient persistence, which are valuable for advanced Red Team engagements.",
+  "source_url": "https://thehackernews.com/2026/04/new-python-backdoor-uses-tunneling.html?m=1"
+}

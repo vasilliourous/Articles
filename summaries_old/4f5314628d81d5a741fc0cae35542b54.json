@@ -1,0 +1,62 @@
+{
+  "article_title": "Dead Internet? A Third of New Websites Are AI-Generated, Says Stanford",
+  "core_thesis": "A Stanford-led study quantifies the rapid proliferation of AI-generated content on the web, finding that by mid-2025, 35% of newly published websites were AI-generated or AI-assisted—up from zero before ChatGPT's launch in November 2022. The study confirms two concrete harms: reduced semantic diversity (33% higher similarity among AI texts) and artificially inflated positive sentiment (107% more positive than human writing). However, contrary to popular belief, it found no statistically significant evidence that AI content increases factual inaccuracies or creates stylistic homogeneity. The findings also elevate model collapse from a theoretical risk to an empirical concern for future AI training.",
+  "detailed_summary": "The study, conducted by researchers from Stanford University, Imperial College London, and the Internet Archive, analyzed 33 months of website snapshots from the Wayback Machine using the AI text detector Pangram v3. It found that the share of AI-generated or AI-assisted new websites rose from effectively zero before November 2022 to 35% by mid-2025. The researchers tested six common hypotheses about AI content's impact on the web. Only two were confirmed: AI-generated text is significantly less semantically diverse (pairwise similarity scores 33% higher than human text) and exhibits over 107% more positive sentiment, attributed to LLMs' sycophantic training on human approval signals. Notably, the study found no statistically significant correlation between AI prevalence and factual error rates, nor evidence of increased stylistic homogeneity—despite 83% of survey respondents believing the latter. A U.S. survey conducted alongside the study revealed that most Americans already believe all six negative hypotheses, with infrequent AI users 12% more likely to believe in harms than frequent users. The researchers warn that at 35% AI prevalence, model collapse—where future AI models degrade when trained on AI-generated data—becomes an empirical risk rather than a theoretical one. The team is now working with the Internet Archive to create a continuous live monitoring tool for AI's share of the web.",
+  "entities": [
+    {
+      "name": "Stanford University",
+      "type": "organization",
+      "role": "Lead institution conducting the study on AI-generated web content."
+    },
+    {
+      "name": "Imperial College London",
+      "type": "organization",
+      "role": "Co-authoring institution; researcher Jonáš Doležal contributed to the study."
+    },
+    {
+      "name": "Internet Archive",
+      "type": "organization",
+      "role": "Provided Wayback Machine snapshots for the 33-month analysis; collaborating on a live monitoring tool."
+    },
+    {
+      "name": "Jonáš Doležal",
+      "type": "person",
+      "role": "Researcher at Imperial College London and co-author of the study."
+    },
+    {
+      "name": "Pangram v3",
+      "type": "tool",
+      "role": "AI text detector used to classify websites as AI-generated or AI-assisted."
+    },
+    {
+      "name": "ChatGPT",
+      "type": "product",
+      "role": "AI chatbot launched in November 2022, marking the baseline before which AI-generated web content was negligible."
+    }
+  ],
+  "key_data_points": [
+    "By mid-2025, 35% of newly published websites were classified as AI-generated or AI-assisted, up from zero before ChatGPT's launch in November 2022. (🟢 Relevant to your Red Teaming: This indicates a massive attack surface—AI-generated sites may be easier to spoof or inject with malicious content due to predictable patterns.)",
+    "AI-generated text shows pairwise semantic similarity scores 33% higher than human-written text, indicating reduced semantic diversity. (🟢 Relevant to your programming: This homogeneity could be exploited for automated content analysis or adversarial attacks that rely on predictable language patterns.)",
+    "AI content exhibits positive sentiment scores more than 107% higher than human content, linked to LLMs' sycophantic tendencies. (🟢 Relevant to your Red Teaming: Overly positive AI content could be used in social engineering campaigns to build trust or manipulate sentiment.)",
+    "The study found no statistically significant evidence that AI content increases factual error rates or stylistic homogeneity, contrary to 83% of survey respondents who believed in stylistic monoculture. (🟢 Relevant to your student needs: This challenges common assumptions—critical thinking is essential when evaluating AI-generated information.)",
+    "At 35% AI prevalence, model collapse shifts from a theoretical risk to an empirical concern for future foundation models trained on web crawls. (🟢 Relevant to your DevOps/homelab: If you train models on web data, you may need to filter AI-generated content to maintain model quality.)",
+    "A U.S. survey found that infrequent AI users were 12% more likely to believe in the harms of AI content than frequent users. (🟢 Relevant to your psychology interest: This highlights a familiarity bias—frequent users may be more discerning or desensitized.)"
+  ],
+  "methodology_steps": [
+    "Collected 33 months of website snapshots from the Internet Archive's Wayback Machine, covering the period from before ChatGPT's launch (November 2022) to mid-2025.",
+    "Used the AI text detector Pangram v3 to classify each webpage as human-written, AI-generated, or AI-assisted.",
+    "Tested six hypotheses: reduced semantic diversity, increased positive sentiment, higher factual error rates, stylistic homogeneity, and two others not detailed in the article.",
+    "Measured semantic diversity using pairwise semantic similarity scores between texts.",
+    "Measured sentiment using a sentiment analysis tool, comparing AI-generated vs. human-written content.",
+    "Surveyed a U.S. sample to gauge public perception of AI content harms.",
+    "Analyzed correlation between AI prevalence and factual error rates using external fact-checking databases."
+  ],
+  "conclusions": [
+    "The rapid adoption of AI for web content creation has led to measurable reductions in semantic diversity and increases in positive sentiment, but not to the factual degradation or stylistic flattening that many fear. This suggests that while AI content may be 'zombie-like' in its homogeneity and cheerfulness, it is not necessarily more inaccurate or stylistically uniform.",
+    "The study elevates model collapse from a theoretical risk to an empirical one: at 35% AI prevalence, future AI models trained on web data will inevitably ingest AI-generated content, potentially degrading their performance. This has direct implications for anyone training or fine-tuning models, including in cybersecurity contexts where model quality is critical.",
+    "Public perception of AI harms is often misaligned with empirical evidence—people overestimate stylistic homogeneity and factual inaccuracies. This disconnect is important for students and researchers to recognize when evaluating AI's societal impact."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your interests in cybersecurity, programming, and critical thinking. For Red Teaming, the homogeneity and positivity of AI-generated content can be exploited for social engineering or automated attacks—predictable language patterns make it easier to craft convincing phishing or disinformation campaigns. For programming and DevOps, the risk of model collapse means that if you scrape web data for training or analysis, you must filter AI-generated content to maintain quality. As a student, the study's debunking of common myths about AI content (e.g., stylistic monoculture) reinforces the importance of evidence-based reasoning over popular belief. The live monitoring tool being developed could also be a valuable resource for tracking AI's footprint in your own projects.",
+  "extra_advice": "Consider building a small tool that uses Pangram v3 or a similar detector to flag AI-generated content in your own web scraping or data pipelines. This could help you maintain data quality for training models or for Red Teaming exercises where you want to avoid AI-generated noise. Additionally, experiment with generating adversarial examples that exploit the semantic homogeneity of AI text—this could be a novel attack vector for penetration testing.",
+  "source_url": "https://decrypt.co/365864/one-third-new-websites-ai-generated-study"
+}

@@ -1,0 +1,84 @@
+{
+  "article_title": "Why Noi may be the best way to run ChatGPT and Claude side-by-side on your desktop",
+  "core_thesis": "Noi is a free desktop GUI application that aggregates multiple AI services (ChatGPT, Claude, Gemini, Perplexity, etc.) into a single interface, offering features like multi-window management, session isolation, local-first data storage, prompt management, a built-in terminal, and custom spaces. It simplifies the workflow for users who regularly switch between different AI tools, including local models like Ollama, by providing a unified, efficient environment.",
+  "detailed_summary": "The article presents Noi as a solution for the growing challenge of managing multiple AI services across different tabs or applications. Noi is a cross-platform desktop app (Linux, macOS, Windows) that acts as a hub for AI chatbots and tools. Key features include: a sidebar with default services (ChatGPT, Claude, Gemini, Perplexity, etc.), the ability to create custom 'Spaces' with only the services you need, multi-window management, session isolation (each service runs in its own context), local-first storage for chat history and prompts, a built-in terminal for running local commands (e.g., accessing Ollama via CLI), and multiple themes. The author tested Noi by running a Python GUI code generation prompt on Perplexity (which initially failed due to a permission issue but succeeded after reopening the tab) and by adding a local Ollama instance via WebUI (using a local network URL). The app is free to download and install, and many services can be used anonymously without signing in, though signing in enables chat syncing. The author concludes that Noi is ideal for heavy AI users who want to consolidate their tools.",
+  "entities": [
+    {
+      "name": "Noi",
+      "type": "software",
+      "role": "Desktop application that aggregates multiple AI services into one interface."
+    },
+    {
+      "name": "Jack Wallen",
+      "type": "person",
+      "role": "Author of the article and ZDNET contributing writer."
+    },
+    {
+      "name": "ChatGPT",
+      "type": "software",
+      "role": "AI chatbot service accessible via Noi."
+    },
+    {
+      "name": "Claude",
+      "type": "software",
+      "role": "AI chatbot service accessible via Noi."
+    },
+    {
+      "name": "Gemini",
+      "type": "software",
+      "role": "AI chatbot service accessible via Noi."
+    },
+    {
+      "name": "Perplexity",
+      "type": "software",
+      "role": "AI search/chat service accessible via Noi."
+    },
+    {
+      "name": "Ollama",
+      "type": "software",
+      "role": "Local AI model runner that can be integrated into Noi via CLI or WebUI."
+    },
+    {
+      "name": "DeepWiki",
+      "type": "software",
+      "role": "AI service mentioned as used by the author within Noi."
+    },
+    {
+      "name": "GitHub",
+      "type": "organization",
+      "role": "Platform used by the author within Noi."
+    },
+    {
+      "name": "Qwen",
+      "type": "software",
+      "role": "AI model used in a test prompt within Noi."
+    }
+  ],
+  "key_data_points": [
+    "Noi is a free desktop app available for Linux, macOS, and Windows, designed to centralize access to multiple AI services in one UI.",
+    "The app includes features like multi-window management, session isolation, local-first data storage for history and prompts, prompt management, a built-in terminal, and multiple themes.",
+    "Users can create custom 'Spaces' to group only the services they need, improving UI efficiency. Spaces are created via the sidebar and require manually adding service URLs.",
+    "Many services (e.g., Gemini, Perplexity) can be used anonymously without signing in, but signing in enables chat syncing and tracking.",
+    "The author successfully integrated a local Ollama instance via WebUI using a local network URL (http://192.168.1.25:3000), allowing GUI-based interaction with local AI models.",
+    "During testing, a prompt to Perplexity initially failed with a permission error but succeeded after reopening the tab, indicating occasional service-specific issues.",
+    "The built-in terminal can be used to access Ollama via command line, providing an alternative to GUI integration.",
+    "🟢 For Red Teaming: Noi can be used to quickly switch between different AI models (including local ones like Ollama) for tasks like generating payloads, analyzing code, or researching vulnerabilities, all from a single interface. The session isolation feature helps keep different research contexts separate."
+  ],
+  "methodology_steps": [
+    "Download Noi from the official download page (https://noi.ai/download) for your operating system (Linux, macOS, or Windows).",
+    "Install Noi using the standard installation process for your OS (e.g., double-click the installer and follow prompts).",
+    "Open Noi. The default sidebar displays a list of AI services (ChatGPT, Claude, Gemini, Perplexity, etc.). Click on any service to open it in a tab.",
+    "To create a custom Space: click the Spaces icon in the bottom toolbar, click '+', give the space a name, and save. Then manually add services by clicking the link icon at the top-left of the sidebar, entering a name and the service's URL (e.g., https://www.chatgpt.com).",
+    "To integrate a local Ollama instance: run Ollama with a WebUI (e.g., using a Docker container or a separate WebUI tool) on a local server, then add it as a custom service with the URL (e.g., http://192.168.1.25:3000).",
+    "Use the built-in terminal (accessible from the interface) to run local commands, such as interacting with Ollama via CLI (e.g., 'ollama run llama2').",
+    "Optionally sign in to individual services (e.g., ChatGPT) to sync chat history; otherwise, use them anonymously."
+  ],
+  "conclusions": [
+    "Noi effectively solves the problem of managing multiple AI services by providing a unified desktop interface, which is especially useful for power users who frequently switch between different AI tools. The app's custom Spaces and session isolation features enhance organization and context separation.",
+    "The integration of local AI models like Ollama via WebUI or CLI makes Noi a versatile tool for users who prioritize privacy or want to run models offline. This aligns with the author's preference for local AI.",
+    "While Noi is free and easy to set up, some services may require accounts or experience occasional permission issues (as seen with Perplexity). However, the overall experience is positive and recommended for heavy AI users."
+  ],
+  "personal_relevance_summary": "As a programmer and cybersecurity enthusiast, Noi can streamline your workflow by centralizing access to AI assistants for code generation, vulnerability research, and scripting. You can run local models like Ollama for privacy-sensitive tasks (e.g., testing payloads without sending data to third parties) while keeping cloud-based services like ChatGPT or Claude handy for broader queries. The built-in terminal and session isolation are particularly useful for Red Teaming: you can isolate different research contexts (e.g., one space for exploit development, another for reconnaissance) and quickly switch between them. Additionally, as a student, Noi can help manage multiple AI tools for studying, note-taking, or generating summaries, all from one app.",
+  "extra_advice": "Consider creating separate Noi spaces for different projects: e.g., one space for Red Teaming (with Ollama, Perplexity, and a local code analysis tool) and another for academic work (with ChatGPT and Gemini). Use the built-in terminal to run local scripts or interact with Ollama directly, and leverage the prompt management feature to store reusable prompts for common tasks like generating reverse shells or analyzing logs.",
+  "source_url": "https://www.zdnet.com/article/noi-ai-desktop-app/"
+}

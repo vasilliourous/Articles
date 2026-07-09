@@ -1,0 +1,54 @@
+{
+  "article_title": "A Coding Tutorial on OpenMythos on Recurrent-Depth Transformers with Depth Extrapolation, Adaptive Computation, and Mixture-of-Experts Routing",
+  "core_thesis": "This tutorial demonstrates how OpenMythos, a theoretical reconstruction of the Claude Mythos architecture, enables deeper reasoning through iterative computation rather than increased parameter size. By using recurrent depth, adaptive computation (ACT), and mixture-of-experts (MoE) routing, the model can improve inference-time performance simply by increasing loop depth without retraining, offering a compute-adaptive alternative to scaling model parameters.",
+  "detailed_summary": "The article provides a hands-on coding tutorial for OpenMythos, an architecture that implements recurrent-depth transformers with depth extrapolation, adaptive computation, and MoE routing. It begins by setting up the environment and comparing two attention mechanisms: Grouped Query Attention (GQA) and Multi-head Latent Attention (MLA). The tutorial then evaluates KV-cache memory efficiency, showing MLA is significantly smaller (e.g., 2.5× smaller in the example). It also validates the stability of the recurrent update by analyzing the spectral radius of the injection matrix, confirming stability even under abusive training conditions (lr=1.0 for 30 steps).\n\nThe core experiment trains a small OpenMythos model (64-dim, 4 heads, 4 experts) on a cumulative parity task with a fixed loop depth of 3. After training, the model is evaluated at inference with varying loop depths (1 to 16). Results show that accuracy improves as loop depth increases, even beyond the training depth, demonstrating depth extrapolation. The tutorial also instruments the Adaptive Computation Time (ACT) mechanism to capture halting probabilities per loop and position, and tracks MoE expert utilization to show balanced routing. Finally, it generates sequences at different loop depths to illustrate the effect on output quality. The conclusion emphasizes that this architecture trades additional inference compute for better performance without modifying parameters.",
+  "entities": [
+    {
+      "name": "OpenMythos",
+      "type": "software",
+      "role": "theoretical reconstruction of Claude Mythos architecture, implemented as a PyTorch model"
+    },
+    {
+      "name": "Asif Razzaq",
+      "type": "person",
+      "role": "author of the tutorial on MarkTechPost"
+    },
+    {
+      "name": "MarkTechPost",
+      "type": "organization",
+      "role": "AI news and tutorial publication"
+    }
+  ],
+  "key_data_points": [
+    "MLA attention reduces KV-cache memory by approximately 2.5× compared to GQA in the given configuration (GQA cache: 10.25 KB, MLA cache: 4.10 KB) (🟢 relevant to Red Teaming: efficient memory usage allows running larger models or longer sequences on limited hardware, useful for adversarial simulations).",
+    "The spectral radius of the recurrent injection matrix A remains between 0 and 1 at initialization (GQA: min=0.0001, max=0.9999, mean=0.5000; MLA: min=0.0001, max=0.9999, mean=0.5000), ensuring stability. Even after abusive training (lr=1.0, 30 steps), the spectral radius stays within bounds (min=0.0001, max=0.9999, mean=0.5000) (🟢 relevant to Red Teaming: stable recurrence means the model can be pushed to many loops without divergence, useful for deep reasoning attacks).",
+    "Training on a parity task with T_train=3 achieves ~0.85 accuracy at step 599. At inference, increasing loops from 1 to 16 improves accuracy from ~0.5 to ~1.0, with T=3 (trained depth) achieving ~0.85 and T=16 achieving ~1.0 (🟢 relevant to programming: demonstrates depth extrapolation—more compute at inference yields better results without retraining, a key insight for building adaptive models).",
+    "ACT halting probabilities vary across positions and loops; the mean halt-prob per loop ranges from ~0.00 to ~0.15, indicating that most tokens require multiple loops (🟢 relevant to student: understanding adaptive computation can inspire efficient study strategies—allocate more time to difficult problems).",
+    "MoE expert utilization is nearly balanced: expert 0: 24.87%, expert 1: 25.13%, expert 2: 25.00%, expert 3: 25.00% (🟢 relevant to Red Teaming: balanced routing prevents single-expert overload, making the model more robust against targeted attacks)."
+  ],
+  "methodology_steps": [
+    "Install the open-mythos package via pip and import dependencies (torch, numpy, matplotlib). Set random seeds and device (CUDA if available).",
+    "Define a make_config function to create MythosConfig for GQA or MLA attention. For GQA, set n_kv_heads=2; for MLA, set kv_lora_rank=32, q_lora_rank=64, qk_rope_head_dim=16, qk_nope_head_dim=16, v_head_dim=16.",
+    "Instantiate OpenMythos models for both attention types and print parameter counts to compare sizes.",
+    "Compute KV-cache memory footprint by running a forward pass with n_loops=4 and measuring bytes via a cache_bytes helper function. Compare GQA vs MLA cache sizes.",
+    "Check spectral stability by calling model.recurrent.injection.get_A() and printing min, max, mean of A, and whether all values are between 0 and 1.",
+    "Stress-test stability by training the MLA model with lr=1.0 for 30 steps on random inputs, then re-check spectral radius.",
+    "Define a cumulative parity task: generate random bits (1 or 2), compute cumulative sum modulo 2, and set target as parity+1. Create a batch function make_batch.",
+    "Configure a smaller OpenMythos model (dim=64, n_heads=4, n_kv_heads=2, n_experts=4, act_threshold=0.99) and train for 600 steps with AdamW (lr=3e-4) on the parity task with n_loops=3. Monitor loss and accuracy.",
+    "Evaluate depth extrapolation by running the trained model on a larger batch (512 samples) with varying n_loops (1 to 16). Record accuracy for each loop depth and plot results.",
+    "Instrument the ACT halting mechanism by replacing the forward method of model.recurrent.act with a hook that stores halting probabilities. Run a single sample with n_loops=16 and collect halt traces.",
+    "Instrument the MoE router by replacing the forward method of model.recurrent.block.ffn with a hook that counts topk expert selections. Run a batch of 32 samples with n_loops=3 and compute expert utilization percentages.",
+    "Generate sequences from a prompt using model.generate with different n_loops (1, 4, 12) and temperature=0.1, top_k=2. Observe output differences.",
+    "Visualize training loss, depth extrapolation accuracy vs loops, and ACT halting probability matrix using matplotlib. Save the figure as 'openmythos_tutorial.png'."
+  ],
+  "conclusions": [
+    "OpenMythos effectively leverages looped computation to achieve depth extrapolation: increasing inference-time loops improves accuracy without retraining, as shown by the parity task where accuracy rose from ~0.5 (T=1) to ~1.0 (T=16) after training at T=3. This demonstrates a compute-adaptive reasoning paradigm where additional inference compute substitutes for larger model size.",
+    "The recurrent mechanism remains stable even under extreme training conditions (lr=1.0 for 30 steps), with the spectral radius of matrix A staying within (0,1). This ensures that the model can be run for many loops without divergence, a critical property for reliable depth extrapolation.",
+    "MLA attention significantly reduces KV-cache memory usage compared to GQA (e.g., 4.10 KB vs 10.25 KB in the example), making it more memory-efficient for long sequences or many loops. This is beneficial for deployment on resource-constrained hardware.",
+    "ACT enables dynamic computation across sequence positions, with halting probabilities varying per token and loop. This allows the model to allocate more computation to harder tokens, improving efficiency.",
+    "MoE routing distributes workload nearly evenly across experts (each ~25% in the example), preventing expert collapse and ensuring balanced utilization. This is important for maintaining model capacity and robustness."
+  ],
+  "personal_relevance_summary": "This tutorial is highly relevant to your interests in programming, Red Teaming, and homelabbing. As a programmer, you get a complete, runnable PyTorch implementation of a cutting-edge transformer architecture with recurrent depth, ACT, and MoE—code you can adapt for your own projects. For Red Teaming, the stability analysis and memory efficiency insights are directly applicable: you can deploy deeper models on limited hardware (e.g., a homelab GPU) and push inference loops to improve adversarial reasoning without retraining. The depth extrapolation property means you can trade compute for accuracy at inference time, which is useful for simulating adaptive adversaries. Additionally, the tutorial's focus on spectral radius and KV-cache optimization provides practical techniques for building robust, efficient models. As a student, the structured approach to training and evaluation serves as a template for your own experiments.",
+  "extra_advice": "Consider adapting the OpenMythos architecture for a Red Teaming tool: train a small model on a sequence prediction task (e.g., predicting next command in a penetration testing workflow) and use depth extrapolation to improve accuracy at inference time without retraining. The ACT mechanism can be repurposed to dynamically allocate compute to critical steps in an attack chain. Also, the KV-cache comparison suggests that MLA is preferable for memory-constrained environments—use it in your homelab to run larger models on limited VRAM.",
+  "source_url": "https://www.marktechpost.com/2026/04/23/a-coding-tutorial-on-openmythos-on-recurrent-depth-transformers-with-depth-extrapolation-adaptive-computation-and-mixture-of-experts-routing/"
+}

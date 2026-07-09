@@ -1,0 +1,47 @@
+{
+  "article_title": "AI Coding Assistants Haven’t Sped up Delivery Because Coding Was Never the Bottleneck",
+  "core_thesis": "AI coding assistants increase individual developer output but yield only modest project-level velocity gains because coding was never the primary bottleneck in software delivery. The real bottleneck has shifted upstream to specification and verification, which require human judgment. Consequently, team structures should prioritize small, aligned teams that excel at collaborative specification and architectural alignment, and engineers must adopt a 'grey box' stance where they own specification and evidence-based verification rather than line-by-line code review.",
+  "detailed_summary": "The article, based on observations from Agoda engineer Leonardo Stern and industry data, argues that AI coding tools have not dramatically accelerated software delivery because the bottleneck has moved from coding to specification and verification. Stern frames this as a rediscovery of Fred Brooks' 'No Silver Bullet' argument: improvements in one part of the lifecycle produce diminishing returns. Industry data from Faros AI, analyzing over 10,000 developers across 1,255 teams, shows that high AI adoption teams completed 21% more tasks and merged 98% more pull requests, but PR review time increased by 91%, confirming that pressure shifts elsewhere.\n\nStern introduces a three-stance taxonomy for interacting with AI-generated code: 'white box' (human reads every line, does not scale), 'black box' or 'vibe coding' (ship with minimal verification, fast but brittle), and 'grey box' (humans write precise specifications and verify results against evidence, without inspecting implementation line by line). He emphasizes that accountability remains with the engineer, not the AI. This reframing aligns with Spec-Driven Development, where specifications become executable source of truth and code is a downstream artifact. The article concludes that human authority is migrating from writing code to defining and governing intent, and that small teams win because they achieve shared understanding faster, not because they reduce coordination overhead.",
+  "entities": [
+    {
+      "name": "Leonardo Stern",
+      "type": "person",
+      "role": "Software engineer at Agoda who published the observation and proposed the three-stance taxonomy for AI code interaction."
+    },
+    {
+      "name": "Agoda",
+      "type": "organization",
+      "role": "Online travel booking platform where Stern works; the source of the observation about AI coding bottlenecks."
+    },
+    {
+      "name": "Fred Brooks",
+      "type": "person",
+      "role": "Computer scientist whose 'No Silver Bullet' argument is cited to explain why coding speed improvements yield diminishing returns."
+    },
+    {
+      "name": "Faros AI",
+      "type": "organization",
+      "role": "Research firm that provided telemetry data from over 10,000 developers across 1,255 teams, showing increased PR review time with high AI adoption."
+    },
+    {
+      "name": "Eran Stiller",
+      "type": "person",
+      "role": "Author of the InfoQ article summarizing Stern's observations and connecting them to broader industry trends."
+    }
+  ],
+  "key_data_points": [
+    "Teams with high AI adoption completed 21% more tasks and merged 98% more pull requests, but PR review time increased by 91% (🟢 relevant to your Red Teaming: this suggests that AI-generated code may introduce more surface area for vulnerabilities, and the review bottleneck could be exploited if review processes are overwhelmed).",
+    "The bottleneck in software delivery has shifted from coding to specification and verification, which require human judgment and cannot be easily automated (🟢 relevant to your programming and DevOps: you should invest in writing precise specifications and automated verification tests to keep pace with AI-generated code).",
+    "Stern's 'grey box' stance: engineers write precise specifications and verify results against evidence, rather than inspecting every line of AI-generated code (🟢 relevant to your programming: adopt this approach to maintain quality and security without being overwhelmed by code volume).",
+    "Small teams (5 people) can achieve shared understanding faster than larger teams (15 people), making them more effective when the bottleneck is collaborative specification (🟢 relevant to your homelab/DevOps: keep your teams small and focused on alignment, not just coding output)."
+  ],
+  "methodology_steps": [],
+  "conclusions": [
+    "AI coding assistants do not eliminate the need for human judgment in specification and verification; they shift the bottleneck upstream. Engineers must focus on writing high-fidelity specifications and evidence-based verification to maintain velocity and quality.",
+    "Team structure should prioritize small, aligned teams that can achieve shared understanding quickly, as communication is no longer overhead but the primary value-creating activity when coding is delegated to AI.",
+    "The 'grey box' approach—where humans own specification and verification but not line-by-line code review—is the most scalable and accountable way to work with AI-generated code, ensuring that accountability remains with the engineer."
+  ],
+  "personal_relevance_summary": "As a programmer and Red Teamer, this article is highly relevant because it reveals that AI-generated code shifts the bottleneck to specification and verification—areas where you can apply your security mindset. For Red Teaming, the increased PR review time (91% increase) indicates that AI-generated code may introduce vulnerabilities that slip through if review processes are not adapted. You should adopt the 'grey box' stance: write precise specifications with security requirements and verify outputs against evidence (e.g., automated security tests) rather than reviewing every line. For your homelab/DevOps, this reinforces the value of small, focused teams and automated verification pipelines. As a student, the article's emphasis on specification and verification as the new core skills suggests you should practice writing clear, testable requirements and designing verification strategies.",
+  "extra_advice": "Consider building a personal project where you use an AI coding assistant to generate code, but enforce a 'grey box' workflow: write a detailed specification with security constraints, generate code, then write automated tests that verify the code against the specification (including security properties). This will train you in the new bottleneck skills and directly apply to Red Teaming (e.g., verifying that AI-generated code doesn't introduce backdoors).",
+  "source_url": "https://www.infoq.com/news/2026/03/agoda-ai-code-bottleneck/"
+}

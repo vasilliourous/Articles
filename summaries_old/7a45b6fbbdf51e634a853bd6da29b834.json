@@ -1,0 +1,53 @@
+{
+  "article_title": "3 insightful homelab projects to try this weekend (April 24 - 26)",
+  "core_thesis": "This article presents three practical homelab projects—self-hosting Umami as a Google Analytics alternative, deploying Dashy as a homepage dashboard, and setting up Outline as a self-hosted wiki—to improve control, organization, and documentation in a growing homelab environment. The author emphasizes that these tools enhance self-sufficiency, reduce reliance on third-party services, and help manage complexity as the homelab expands.",
+  "detailed_summary": "The article, published on How-To Geek, outlines three weekend homelab projects aimed at improving analytics, dashboard management, and documentation. First, it recommends self-hosting Umami, a privacy-focused analytics tool that tracks page views, visitors, sources, and environments via a clean interface. Umami can be installed via Docker Compose or npm and supports multiple websites on a single instance. Second, it suggests deploying Dashy, a web-based homepage dashboard that allows easy bookmark management without manual YAML editing. The author notes that Dashy can be hosted on Vercel for high availability, ensuring the dashboard remains accessible even if the homelab goes offline. Third, it advocates for Outline, a self-hosted wiki and knowledge base for documenting IP address schemes, server configurations, and deployment procedures. Outline is deployable via Docker and serves as a central repository for homelab documentation, reducing reliance on memory and paper notes. The article concludes with a personal reflection on the benefits of homelabbing, encouraging readers to start with old hardware and learn networking and server management skills that apply to both personal and professional contexts.",
+  "entities": [
+    {
+      "name": "Umami",
+      "type": "software",
+      "role": "Self-hosted analytics tool, alternative to Google Analytics"
+    },
+    {
+      "name": "Dashy",
+      "type": "software",
+      "role": "Homepage dashboard for homelab service bookmarks"
+    },
+    {
+      "name": "Outline",
+      "type": "software",
+      "role": "Self-hosted wiki and knowledge base for documentation"
+    },
+    {
+      "name": "Vercel",
+      "type": "organization",
+      "role": "Cloud platform for hosting Dashy off-site for high availability"
+    },
+    {
+      "name": "Patrick Campanale",
+      "type": "person",
+      "role": "Author and homelab enthusiast with extensive tech experience"
+    }
+  ],
+  "key_data_points": [
+    "Umami provides a cleaner interface than Google Analytics and includes a seven-day traffic view broken down by hour, with dot sizes indicating visitor volume (🟢 relevant to your homelab: self-hosting analytics gives you full control over data and privacy).",
+    "Dashy allows web-based editing of bookmarks, eliminating the need to manually edit YAML files via SSH, and can be hosted on Vercel for off-site high availability (🟢 relevant to your DevOps/homelab: simplifies service discovery and ensures dashboard uptime).",
+    "Outline is deployable via Docker and serves as a central wiki for documenting IP address blocks, server configurations, and deployment steps, reducing reliance on memory (🟢 relevant to your homelab: critical for managing complex setups and re-deploying services).",
+    "The author notes that hosting Dashy on Vercel keeps the dashboard accessible even if the homelab goes offline, but there are trade-offs detailed in Dashy's documentation (🟢 relevant to your homelab: high availability strategy for critical management tools).",
+    "A single Umami instance can track multiple websites, making it efficient for homelabbers running several sites (🟢 relevant to your homelab: consolidates analytics across projects)."
+  ],
+  "methodology_steps": [
+    "Self-host Umami: Choose a deployment method (Docker Compose with sample file from GitHub, or npm install). Run the container, configure the database, and add your websites to start tracking analytics.",
+    "Deploy Dashy: Install via Docker (e.g., `docker run -d -p 8080:80 lissy93/dashy`) or deploy on Vercel by forking the Dashy repo and connecting it to Vercel. Access the web UI to add bookmarks and organize services.",
+    "Set up Outline: Deploy via Docker using the official image. Configure environment variables for database (PostgreSQL) and authentication (OIDC or Slack). Start the container and create your first wiki pages to document IP schemes, server roles, and deployment notes."
+  ],
+  "conclusions": [
+    "Self-hosting Umami gives you full control over website analytics without relying on Google, with a simpler interface and useful traffic visualization (supports homelab independence and privacy).",
+    "Dashy provides an intuitive, web-editable dashboard that reduces the friction of managing many services, and hosting it off-site (e.g., Vercel) ensures high availability (improves homelab organization and resilience).",
+    "Outline serves as a dedicated wiki for homelab documentation, helping to systematically record IP allocations, configurations, and procedures, which is invaluable as the homelab scales (prevents knowledge loss and eases re-deployment).",
+    "The author's personal experience underscores that homelabbing builds transferable skills in networking, server management, and problem-solving, applicable to both personal projects and professional roles (motivational for students and aspiring IT professionals)."
+  ],
+  "personal_relevance_summary": "This article directly supports your homelab and DevOps interests by providing three concrete, actionable projects that enhance control, organization, and documentation. As a programmer and cybersecurity enthusiast, you can apply Umami to self-host analytics for your own sites, Dashy to streamline access to your services (including security tools), and Outline to document your homelab's architecture and configurations—critical for both troubleshooting and red teaming exercises where clear documentation of test environments is essential. The off-site hosting tip for Dashy is particularly valuable for ensuring your management interface remains available during experiments. Additionally, the author's encouragement to start homelabbing with old hardware aligns with your ambition to learn hands-on skills that bridge personal projects and professional cybersecurity work.",
+  "extra_advice": "Consider integrating Outline with your red teaming workflow by documenting attack paths, tool configurations, and lessons learned from penetration tests. You could also extend Dashy with custom bookmarks to your security tools (e.g., Burp Suite, Metasploit) and use Umami to track traffic on your honeypot or test websites. For high availability, explore hosting Dashy on a free tier of Vercel or Cloudflare Pages to keep your dashboard up even when your homelab is offline for maintenance.",
+  "source_url": "https://www.howtogeek.com/homelab-projects-to-try-this-weekend-april-24-26/"
+}

@@ -1,0 +1,37 @@
+{
+  "article_title": "I use the '3-Layer Rewrite' prompt to turn messy notes into fully developed ideas — here’s how it works",
+  "core_thesis": "The article argues that most ideas fail not because they are bad, but because they are not clearly structured, clarified, and stress-tested. The author presents a three-layer AI prompt framework that separates the cognitive tasks of organizing, clarifying, and strengthening ideas, enabling users to transform scattered notes into coherent, bulletproof arguments without overwhelming cognitive load.",
+  "detailed_summary": "The author, Amanda Caswell, describes a common problem: notes apps are full of half-formed ideas that never materialize because people try to organize, clarify, and refine them all at once. To solve this, she created the '3-Layer Rewrite' prompt, which works with any chatbot. The first layer uses a prompt to organize messy notes into a logical structure without worrying about tone—just grouping related ideas and suggesting a progression. The second layer asks the AI to identify the core thesis, main argument, tension, and specific problem being solved, sharpening the focus. The third layer adopts a critic's mindset, prompting the AI to find weak logic, missing evidence, vague claims, and likely objections, then provide a stronger thesis and three concrete upgrades. The author emphasizes that this method reduces cognitive load and produces sharper output than asking AI to 'make this better' in one pass.",
+  "entities": [
+    {
+      "name": "Amanda Caswell",
+      "type": "person",
+      "role": "Author and AI editor at Tom's Guide; creator of the 3-Layer Rewrite prompt"
+    },
+    {
+      "name": "Tom's Guide",
+      "type": "organization",
+      "role": "Publisher of the article; technology news and reviews website"
+    }
+  ],
+  "key_data_points": [
+    "The 3-Layer Rewrite prompt separates idea development into three distinct layers: structure, clarify, and strengthen, reducing cognitive load by not trying to do everything at once. (🟢 Relevant to your productivity as a student: this method can help you turn rough study notes or project ideas into polished arguments or essays more efficiently.)",
+    "Layer 1 prompt: 'Organize these notes into a logical structure. Group related ideas and suggest a clear progression. Do not rewrite for tone — focus only on the architecture.' This forces the AI to act as a pattern recognizer, not a writer. (🟢 Useful for your programming projects: you can use this to structure brainstorming notes for a new feature or architecture.)",
+    "Layer 2 prompt: 'Based on this structure, identify the core thesis. What is the main argument? Where is the tension? What specific problem is this solving?' This step clarifies the true angle of the idea. (🟢 Helpful for Red Teaming: use this to distill the core vulnerability or attack vector from a messy set of reconnaissance notes.)",
+    "Layer 3 prompt: 'Be my toughest critic. Don’t polish the writing. Find the holes: weak logic, missing evidence, vague claims, likely reader objections, and where the stakes aren’t clear. Then give me a stronger thesis and 3 concrete upgrades to make the argument bulletproof.' This stress-tests the idea. (🟢 Applicable to cybersecurity: use this to critique your penetration testing report or exploit chain before presenting it.)",
+    "The author notes that in 2026, content is cheap but structured thinking is rare; the mistake most people make is asking AI to 'make this better' too vaguely, resulting in mediocre output."
+  ],
+  "methodology_steps": [
+    "Step 1 (Structure the chaos): Take your messy notes (from sticky notes, notes app, or journal) and use the prompt: 'Organize these notes into a logical structure. Group related ideas and suggest a clear progression. Do not rewrite for tone — focus only on the architecture.' The AI will output a skeleton of grouped ideas and a suggested flow.",
+    "Step 2 (Clarify): Using the structured output from Step 1, use the prompt: 'Based on this structure, identify the core thesis. What is the main argument? Where is the tension? What specific problem is this solving?' This identifies the strongest angle and sharpens the 'why this matters'.",
+    "Step 3 (Strengthen the argument): With the clarified thesis, use the prompt: 'Be my toughest critic. Don’t polish the writing. Find the holes: weak logic, missing evidence, vague claims, likely reader objections, and where the stakes aren’t clear. Then give me a stronger thesis and 3 concrete upgrades to make the argument bulletproof.' Paste your current draft. The AI will expose gaps and suggest improvements."
+  ],
+  "conclusions": [
+    "The 3-Layer Rewrite method effectively reduces cognitive load by breaking idea development into three separate passes: structure, clarify, and strengthen. This prevents the overwhelm of trying to perfect an idea in one go and leads to sharper, more coherent outputs.",
+    "The article concludes that the common mistake with AI is using it too vaguely; by giving specific, layered instructions, users can transform scattered notes into bulletproof arguments. This is particularly valuable for students and professionals who need to develop ideas from rough notes into polished work.",
+    "The author emphasizes that structured thinking is rare and valuable, and that this prompt framework helps users harness AI as a thinking partner rather than a content generator, ultimately turning late-night notes into actionable ideas."
+  ],
+  "personal_relevance_summary": "As a student and programmer, you often deal with messy notes from lectures, brainstorming sessions, or project ideas. This 3-Layer Rewrite prompt provides a systematic way to turn those notes into structured, clear, and well-defended arguments or plans. For your Red Teaming work, you can adapt the layers to structure reconnaissance data, clarify attack vectors, and stress-test your exploit chains. The method also aligns with your ambition to take initiative—it gives you a concrete, repeatable process to improve your output quality without extra cognitive strain. Additionally, the prompt templates are directly usable with any chatbot, making it easy to integrate into your workflow.",
+  "extra_advice": "Consider adapting the 3-Layer Rewrite for technical writing: use Layer 1 to structure your code comments or documentation outline, Layer 2 to clarify the core functionality or security issue, and Layer 3 to have the AI critique your logic for edge cases or vulnerabilities. This can help you produce more robust code and reports.",
+  "source_url": "https://www.tomsguide.com/ai/i-use-the-3-layer-rewrite-prompt-to-turn-messy-notes-into-fully-developed-ideas-heres-how-it-works"
+}

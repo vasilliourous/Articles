@@ -1,0 +1,68 @@
+{
+  "article_title": "Sniffnet is my new go-to app for network monitoring — Free, open-source, and taking on GlassWire and Wireshark",
+  "core_thesis": "Sniffnet is a free, open-source network monitoring tool built in Rust that offers an intuitive, resource-light alternative to Wireshark and GlassWire. It provides detailed traffic inspection, application-level bandwidth tracking, IP blacklist import, and VPN compatibility, all while collecting zero user data. The recent 1.5 update adds per-application monitoring and alerting, making it a powerful tool for both casual users and security-conscious individuals.",
+  "detailed_summary": "Sniffnet, developed solely by Giuliano Bellini (GyulyVGC on GitHub), has surpassed 401,000 downloads and 33,800 GitHub stars. It is designed as a more intuitive and simpler-to-use version of Wireshark and a completely free alternative to GlassWire. The app runs on Windows 11 (including ARM64) and requires Npcap for packet capture. It displays network hosts, services, programs, and traffic rates in a clean dashboard, with 12 preset themes and 24 language options. A thumbnail overlay widget allows monitoring without the full app open. Sniffnet does not collect any user data and works with VPNs. The version 1.5 update (April 14, 2026) added the ability to identify which apps and programs are using bandwidth, favorite them, set notifications for traffic generation, import IP blacklists, and view traffic rundowns for any network adapter. The author praises its speed, low resource usage, and detail level, recommending it for detecting suspicious activity, especially on networks with IoT devices.",
+  "entities": [
+    {
+      "name": "Sniffnet",
+      "type": "software",
+      "role": "Free, open-source network monitoring tool; the subject of the article."
+    },
+    {
+      "name": "Giuliano Bellini (GyulyVGC)",
+      "type": "person",
+      "role": "Sole developer of Sniffnet."
+    },
+    {
+      "name": "Wireshark",
+      "type": "software",
+      "role": "Popular network protocol analyzer; Sniffnet is positioned as a simpler alternative."
+    },
+    {
+      "name": "GlassWire",
+      "type": "software",
+      "role": "Commercial network monitoring tool; Sniffnet is positioned as a free alternative."
+    },
+    {
+      "name": "Npcap",
+      "type": "software",
+      "role": "Packet capture library required by Sniffnet for traffic monitoring."
+    },
+    {
+      "name": "Windows Central",
+      "type": "organization",
+      "role": "Publisher of the article."
+    },
+    {
+      "name": "Cale Hunt",
+      "type": "person",
+      "role": "Author of the article and contributor to Windows Central."
+    }
+  ],
+  "key_data_points": [
+    "Sniffnet has over 401,000 total downloads and 33,800 GitHub stars, indicating strong community adoption. (🟢 relevant to your homelab/DevOps: high popularity suggests reliability and active development.)",
+    "The app is built with Rust, resulting in minimal system resource usage. (🟢 relevant to your homelab: efficient for running alongside other services on a homelab server.)",
+    "Sniffnet collects no user data and works with VPNs, ensuring privacy and compatibility with common security setups. (🟢 relevant to your Red Teaming: can be used to monitor traffic without leaking data, even over VPN.)",
+    "Version 1.5 (April 14, 2026) added per-application bandwidth tracking, favorites, notifications, IP blacklist import, and per-adapter traffic rundowns. (🟢 relevant to your Red Teaming: IP blacklist import helps detect known malicious hosts; app-level monitoring can reveal unauthorized or suspicious programs.)",
+    "The tool provides a thumbnail overlay widget for continuous traffic monitoring without the full interface. (🟢 relevant to your productivity: allows passive monitoring while working on other tasks.)",
+    "Sniffnet offers 12 preset themes and 24 language options, enhancing user experience and accessibility. (🟢 relevant to your student needs: customizable UI can reduce eye strain during long study sessions.)"
+  ],
+  "methodology_steps": [
+    "Download Sniffnet from the official website or GitHub repository.",
+    "Run the installer; during installation, you will be prompted to download and install Npcap (required for packet capture).",
+    "Launch Sniffnet; the app automatically populates with available traffic sources (network adapters).",
+    "Select a traffic source to begin monitoring. The dashboard displays network hosts, services, programs, and traffic rates.",
+    "Use the filter and notification settings to customize alerts for specific connections or data thresholds.",
+    "To leverage the version 1.5 features: navigate to the application view to see which programs are using bandwidth. Favorite important apps and enable notifications for when they generate traffic.",
+    "Import IP blacklists (e.g., from threat intelligence feeds) to automatically flag or block connections to known malicious addresses.",
+    "Optionally, enable the thumbnail overlay widget to keep an eye on traffic from the corner of your screen without the full app open."
+  ],
+  "conclusions": [
+    "Sniffnet is a compelling free and open-source alternative to both Wireshark and GlassWire, offering a balance of simplicity and depth. Its Rust-based architecture ensures low resource consumption, making it suitable for continuous monitoring on any Windows machine. (🟢 relevant to your homelab: can be deployed on a dedicated monitoring VM or alongside other services.)",
+    "The version 1.5 update significantly enhances security monitoring capabilities by adding per-application tracking and IP blacklist import. This allows users to detect unauthorized or malicious software communicating over the network, which is critical for both personal security and Red Teaming exercises. (🟢 relevant to your Red Teaming: use IP blacklists to simulate C2 detection or identify beaconing activity.)",
+    "The author's positive hands-on experience confirms that Sniffnet is easy to set up and use, with a clean interface and useful features like thumbnail overlay and customizable themes. Its privacy-first approach (no data collection) and VPN compatibility make it a trustworthy tool for sensitive environments."
+  ],
+  "personal_relevance_summary": "This article introduces Sniffnet, a free, open-source network monitor that is highly relevant to your cybersecurity and homelab interests. For Red Teaming, its per-application traffic tracking and IP blacklist import can help identify suspicious connections or simulate detection of command-and-control traffic. For your homelab, its low resource usage (Rust-based) and VPN compatibility make it ideal for continuous monitoring on a server or dedicated machine. As a programmer, you can inspect the open-source code on GitHub to understand its implementation or even contribute. The tool also boosts productivity by providing a thumbnail overlay for passive monitoring, and its customizable themes can reduce eye strain during long study sessions. Overall, Sniffnet is a practical addition to your toolkit for network visibility and security analysis.",
+  "extra_advice": "Consider integrating Sniffnet with your homelab's logging pipeline: export its alerts to a SIEM like Wazuh or Elastic Stack by parsing its notification logs. For Red Teaming, use the IP blacklist feature to simulate threat intelligence feeds and test your detection rules. Also, since it's open-source in Rust, you could extend it with custom plugins for specific attack simulations (e.g., DNS tunneling detection).",
+  "source_url": "https://www.windowscentral.com/software-apps/sniffnet-network-monitor-app"
+}

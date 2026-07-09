@@ -1,0 +1,77 @@
+{
+  "article_title": "I tried an open-source Figma alternative, and its AI does what Figma's can't",
+  "core_thesis": "OpenPencil is an emerging open-source (MIT-licensed) design editor that positions itself as a Figma alternative with a key differentiator: native, on-canvas AI that operates via a bring-your-own-API-key (BYOK) model, allowing users to connect any OpenAI-compatible endpoint (including local models via Ollama) without subscription fees or credit caps. While still early-stage and lacking prototyping and plugins, it already supports native .fig file read/write, auto-layout, components, variables, and P2P collaboration, making it a compelling option for solo UX/UI designers and small teams who want a Figma-adjacent workflow with full AI control.",
+  "detailed_summary": "The article reviews OpenPencil, an open-source design tool that started development around January 2026. It is built on CanvasKit and the Yoga layout engine, with a lightweight 7MB Tauri desktop app. The standout feature is its AI assistant, accessible via Ctrl+J, which connects to providers like Anthropic, OpenAI, Google AI, OpenRouter, or any OpenAI-compatible endpoint using the user's own API key. This gives users around 100 tools for creating shapes, managing auto-layout, components, variables, boolean operations, and design token analysis—all through natural language prompts. The AI operates directly on the canvas, with collapsible timeline entries and undo support. The author tested it with OpenRouter after initial issues with a Claude key, and 8 prompts cost only $0.50.\n\nOpenPencil reads and writes .fig files natively using the same Kiwi binary codec as Figma, ensuring seamless file compatibility without conversion issues. Copy-paste between Figma and OpenPencil preserves fills, strokes, auto-layout, text, effects, and corner radiuses. The editor itself includes standard vector drawing tools, rich text editing, auto-layout via flexbox and CSS Grid, components with instance overrides, and design variables with Light/Dark mode collections. However, it lacks prototyping (frame transitions and interaction triggers are on the roadmap) and a plugin ecosystem. The author concludes that while not yet a full Figma replacement for production teams, it is a promising tool for solo creators and those seeking an open-source alternative with native AI capabilities.",
+  "entities": [
+    {
+      "name": "OpenPencil",
+      "type": "organization",
+      "role": "Open-source design editor reviewed in the article; main subject."
+    },
+    {
+      "name": "Figma",
+      "type": "organization",
+      "role": "Proprietary design tool that OpenPencil aims to replace; comparison point."
+    },
+    {
+      "name": "Nolen Jonker",
+      "type": "person",
+      "role": "Author of the article and reviewer of OpenPencil."
+    },
+    {
+      "name": "CanvasKit",
+      "type": "software",
+      "role": "Graphics engine used by OpenPencil."
+    },
+    {
+      "name": "Yoga layout engine",
+      "type": "software",
+      "role": "CSS flexbox/grid layout engine used by OpenPencil."
+    },
+    {
+      "name": "Tauri",
+      "type": "software",
+      "role": "Framework used to build the lightweight desktop app."
+    },
+    {
+      "name": "OpenRouter",
+      "type": "organization",
+      "role": "AI model provider used successfully by the author for OpenPencil's AI."
+    },
+    {
+      "name": "Anthropic",
+      "type": "organization",
+      "role": "AI provider (Claude) that had initial compatibility issues with OpenPencil."
+    },
+    {
+      "name": "Ollama",
+      "type": "software",
+      "role": "Tool for running local LLMs; mentioned as compatible via OpenAI-compatible endpoints."
+    }
+  ],
+  "key_data_points": [
+    "OpenPencil is MIT-licensed and open-source, with development starting around January 2026. (🟢 Relevant to your homelab/self-hosting interests: you can inspect, modify, and self-host the tool if desired.)",
+    "The desktop app is only 7MB and built on Tauri, making it extremely lightweight compared to Electron-based alternatives. (🟢 Useful for resource-constrained environments or homelab setups.)",
+    "OpenPencil reads and writes .fig files natively using the same Kiwi binary codec as Figma, ensuring full compatibility without conversion loss. (🟢 Critical for migrating existing Figma projects without rework.)",
+    "The AI assistant supports BYOK (bring your own API key) and accepts any OpenAI-compatible endpoint, including local models via Ollama. (🟢 Directly applicable to your Red Teaming and homelab: you can run AI locally for sensitive design work without sending data to third parties.)",
+    "The AI has around 100 tools for canvas operations (shapes, fills, strokes, auto-layout, components, variables, boolean ops, design tokens) and provides collapsible timeline entries for transparency. (🟢 Enhances productivity for UI/UX design tasks; can be scripted or automated for rapid prototyping.)",
+    "The author spent only $0.50 for 8 AI prompts using OpenRouter, demonstrating cost-effectiveness compared to Figma's subscription model. (🟢 Budget-friendly for students and hobbyists.)",
+    "OpenPencil lacks prototyping (frame transitions, interaction triggers) and a plugin ecosystem, which are on the roadmap but not yet implemented. (🟢 Limitation for advanced workflows; but for basic UI design, it's sufficient.)",
+    "Copy-paste between Figma and OpenPencil preserves fills, strokes, auto-layout, text, effects, and corner radiuses. (🟢 Smooth interoperability reduces friction when testing the tool.)"
+  ],
+  "methodology_steps": [
+    "To install OpenPencil's AI assistant: ensure Node.js is installed, then run `npm i -g @open-pencil/mcp` in the terminal, and restart the app.",
+    "To use the AI: press Ctrl+J to open the sidebar, connect a provider (Anthropic, OpenAI, Google AI, OpenRouter, or any OpenAI-compatible endpoint), paste your API key, and start prompting.",
+    "For local AI models: use an OpenAI-compatible endpoint like Ollama to serve a local model, then configure OpenPencil to connect to that endpoint.",
+    "To import Figma files: simply open the .fig file in OpenPencil; it reads the native binary format directly. Copy-paste layers from Figma into OpenPencil also works seamlessly.",
+    "To undo AI actions: each AI operation is recorded as a collapsible timeline entry and is fully undoable via standard undo commands."
+  ],
+  "conclusions": [
+    "OpenPencil is a promising open-source Figma alternative that excels in native AI integration and file compatibility, but it is not yet production-ready due to missing prototyping and plugin support. The author recommends it for solo designers and small teams who want a cost-effective, AI-powered design tool with full control over their data and AI models.",
+    "The BYOK AI model is a significant advantage over Figma's credit-based system, as it allows users to choose their preferred AI provider (including local models) and pay only for actual usage. This aligns with the user's interest in self-hosting and cost optimization.",
+    "For Red Teaming and cybersecurity contexts, the ability to run AI locally via Ollama means sensitive design files never leave the local network, reducing data leakage risks. Additionally, the open-source nature allows for security auditing and customization."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your interests in open-source tools, self-hosting, and cost-effective alternatives. As a programmer and cybersecurity enthusiast, you can leverage OpenPencil's BYOK AI to run local models (e.g., via Ollama) for secure, offline design work—ideal for red teaming UI mockups or sensitive projects. The native .fig compatibility means you can migrate existing Figma files without losing work. The lightweight Tauri app is perfect for homelab environments with limited resources. Additionally, the AI's natural language interface can accelerate UI prototyping, saving time on repetitive design tasks. The article also provides a concrete example of integrating AI into a design workflow, which you can extend or automate for your own projects.",
+  "extra_advice": "Consider setting up a local AI model (e.g., Llama 3 or Mistral via Ollama) and connecting it to OpenPencil for a fully offline, private design AI. This not only saves API costs but also ensures no data leaves your homelab. You could also explore extending OpenPencil's MCP (Model Context Protocol) integration to build custom AI tools for your red teaming workflows, such as generating phishing page templates or UI overlays for social engineering tests.",
+  "source_url": "https://www.xda-developers.com/ditched-figma-for-open-source-tool-ai-does-what-figma-cant/"
+}

@@ -1,0 +1,62 @@
+{
+  "article_title": "5 Linux commands that replaced my desktop apps",
+  "core_thesis": "The author argues that modern Terminal User Interface (TUI) apps can effectively replace several graphical desktop applications for daily workflows, offering speed, minimal resource usage, and keyboard-driven efficiency. The article presents five specific TUI tools—Yazi, btop, Calcurse, Taskwarrior, and Wordgrinder—that the author personally adopted after finding them superior to their GUI counterparts for file management, system monitoring, calendaring, task management, and word processing.",
+  "detailed_summary": "The article begins by challenging the common perception that the Linux terminal is only for troubleshooting or running sudo commands, introducing the concept of TUI apps—terminal-based tools with real interfaces. The author shares their personal journey of experimenting with TUI apps and settling on five that have permanently replaced their graphical desktop apps.\n\nYazi is a file manager using a Miller columns layout (three columns: parent, current, preview), written in Rust with async I/O for speed. It supports Vim-style navigation, ripgrep-powered search, and quick copy/paste/delete operations, but lacks mouse-based drag-and-drop. btop++ is a system resource monitor showing CPU per core, RAM, disk, network, and process list with real-time graphs; it is faster and more detailed than htop, and its negligible resource footprint makes it more practical than graphical monitors. Calcurse is a calendar app with a three-panel layout (appointments, monthly calendar, to-do list), storing data as plain text in ~/.local/share/calcurse/. It loads instantly and offers keyboard shortcuts for adding events, but CalDAV sync requires manual setup. Taskwarrior is a command-line task manager using JSON storage, with commands like 'task add', 'task done', and automatic urgency sorting; its speed of capturing tasks (via Ctrl+Alt+T) reduces friction compared to graphical apps. Wordgrinder is a terminal word processor supporting paragraph styles, bold/italic, word count, spellcheck, and export to HTML/Markdown/ODT; it launches instantly and uses a .wg container format for multiple documents, but is not a full LibreOffice replacement for complex formatting.\n\nThe author concludes that TUI apps aren't for everyone, but recommends trying these five, especially for users who appreciate minimal aesthetics and keyboard-centric workflows. The article also includes reader comments discussing the history of TUI vs CLI, with some praising the tools and others questioning the need to use terminal apps on a GUI desktop.",
+  "entities": [
+    {
+      "name": "Yazi",
+      "type": "software",
+      "role": "Terminal-based file manager with Miller columns layout, written in Rust"
+    },
+    {
+      "name": "btop++",
+      "type": "software",
+      "role": "Terminal-based system resource monitor with real-time graphs"
+    },
+    {
+      "name": "Calcurse",
+      "type": "software",
+      "role": "Terminal-based calendar and to-do app with plain-text storage"
+    },
+    {
+      "name": "Taskwarrior",
+      "type": "software",
+      "role": "Command-line task management system with JSON storage and urgency scoring"
+    },
+    {
+      "name": "Wordgrinder",
+      "type": "software",
+      "role": "Terminal-based word processor supporting basic formatting and export"
+    },
+    {
+      "name": "Dibakar Ghosh",
+      "type": "person",
+      "role": "Author of the article, tech journalist at How-To Geek"
+    }
+  ],
+  "key_data_points": [
+    "Yazi uses a Miller columns layout showing three directories simultaneously (parent, current, preview) for context-aware navigation (🟢 relevant to your homelab/devops: efficient file management in SSH sessions or minimal environments).",
+    "Yazi is written in Rust with async I/O, providing fast navigation even in directories with thousands of files (🟢 relevant to your programming: Rust's performance benefits are demonstrated in a practical tool).",
+    "btop++ shows CPU usage per core, RAM, disk read/write speeds, network activity, and a full process list with real-time graphs, all in one screen (🟢 relevant to your Red Teaming: useful for monitoring system resources during penetration testing or resource-intensive exploits).",
+    "btop++ has a negligible resource footprint compared to graphical system monitors, making it more practical for monitoring resource consumption (🟢 relevant to your homelab: ideal for low-resource servers or VMs).",
+    "Calcurse stores all data as plain text in ~/.local/share/calcurse/, enabling easy automation and manipulation (🟢 relevant to your programming: plain-text storage allows scripting and AI integration, as the author did with Claude Code).",
+    "Taskwarrior automatically calculates an urgency score for each task based on priority, due date, tags, and projects, sorting tasks so high-priority overdue items appear first (🟢 relevant to your student productivity: helps manage assignments and deadlines efficiently).",
+    "Taskwarrior allows task capture via a single terminal command (e.g., 'task add Buy groceries'), reducing friction compared to graphical apps (🟢 relevant to your productivity: faster capture means less chance of forgetting tasks).",
+    "Wordgrinder launches instantly and supports export to HTML, Markdown, and ODT, but is not suitable for complex formatting or shared documents (🟢 relevant to your programming: useful for quick note-taking or drafting in terminal)."
+  ],
+  "methodology_steps": [
+    "Install Yazi via package manager (e.g., 'sudo apt install yazi' on Debian/Ubuntu) or from GitHub releases. Launch with 'yazi' in terminal. Navigate with arrow keys or Vim-style h/j/k/l. Use Space to select files, y to copy, p to paste, d to delete. Use ripgrep-powered search for quick file finding.",
+    "Install btop++ via package manager (e.g., 'sudo apt install btop'). Launch with 'btop'. Navigate process list with arrow keys or h/j/k/l. Press F to filter by process name, Enter to expand a process, K to kill it. Use number keys 1-4 to toggle individual panels.",
+    "Install Calcurse via package manager (e.g., 'sudo apt install calcurse'). Launch with 'calcurse'. Press Tab to move between panels. Press 'a' to add an appointment or to-do, 'r' to make an event recurring, 'd' to delete. Press '?' for built-in help. Data stored in ~/.local/share/calcurse/ as plain text.",
+    "Install Taskwarrior via package manager (e.g., 'sudo apt install task'). Use 'task add <description>' to create a task. Use 'task' to view sorted list. Use 'task <id> done' to mark complete, 'task <id> delete' to remove. Add priority with 'priority:H', due date with 'due:eom', project with 'project:Writing'. Start with basic commands and expand gradually.",
+    "Install Wordgrinder via package manager (e.g., 'sudo apt install wordgrinder'). Launch with 'wordgrinder'. Press ESC to open menu. Use Ctrl+S to save, Ctrl+B for bold, Ctrl+I for italic. Use Style menu for paragraph styles. Export via menu to HTML, Markdown, or ODT. Save in .wg format for multiple documents per file."
+  ],
+  "conclusions": [
+    "TUI apps like Yazi, btop, Calcurse, Taskwarrior, and Wordgrinder can effectively replace graphical desktop apps for specific tasks, offering speed, minimal resource usage, and keyboard-driven efficiency. The author's personal experience shows that these tools are not just novelties but practical daily drivers, especially for users comfortable with the terminal.",
+    "The key trade-off is the loss of mouse-based interactions and complex formatting capabilities (e.g., Wordgrinder vs LibreOffice). However, for users who prioritize speed, low resource consumption, and keyboard-centric workflows, these TUI apps provide a compelling alternative. The author notes that the minimal resource footprint of btop makes it more practical than graphical monitors, and the instant launch of Wordgrinder beats LibreOffice's startup time.",
+    "Taskwarrior's urgency scoring and quick capture mechanism directly address the friction of task management in graphical apps, making it easier to maintain a task list. This is particularly valuable for students and professionals who need to manage multiple deadlines and priorities efficiently."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your interests as a programmer, homelab enthusiast, and student. The TUI tools described—especially Yazi, btop, and Taskwarrior—are directly applicable to your homelab and DevOps workflows, where terminal-based efficiency and low resource usage are critical. For Red Teaming, btop provides real-time system monitoring during engagements, and Yazi enables fast file management over SSH. Taskwarrior's urgency scoring and quick capture can boost your student productivity, while Calcurse's plain-text storage allows scripting and AI integration (as the author demonstrated with Claude Code). The article also offers practical installation and usage steps, making it easy to adopt these tools immediately.",
+  "extra_advice": "Consider integrating Taskwarrior with your existing development workflow by creating custom scripts that automatically add tasks from code comments or issue trackers. For homelab, use btop in a tmux session to monitor multiple servers simultaneously. If you're comfortable with Rust, explore Yazi's source code to understand async I/O patterns—this could inspire your own terminal tools or contribute to the project.",
+  "source_url": "https://www.howtogeek.com/linux-commands-that-replaced-my-desktop-apps/"
+}

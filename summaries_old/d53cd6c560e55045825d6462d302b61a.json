@@ -1,0 +1,57 @@
+{
+  "article_title": "How I’m Using (New) Warp Universal Agent Support (To Power My Parallel Workflow)",
+  "core_thesis": "Warp's new Universal Agent Support enables developers to run multiple AI coding agents (e.g., Claude Code, Codex, Gemini CLI) simultaneously in isolated Git worktrees, each in its own tab, allowing parallel execution of tasks like refactoring, testing, and documentation without conflicts, thereby dramatically speeding up development workflows.",
+  "detailed_summary": "The article introduces Warp's Universal Agent Support, a feature that allows developers to run multiple AI coding agents concurrently in separate tabs within the Warp terminal. Each agent operates in its own isolated Git worktree, preventing code conflicts. The author demonstrates a practical setup using two agents on a demo project: one for refactoring and another for writing tests. The workflow involves configuring vertical tabs for easy monitoring, managing agent notifications, and using Warp's Code Review panel to review changes from all agents. The key benefit is eliminating the sequential queue of agents, enabling parallel work that saves time and improves efficiency. The article also covers how to set up Git worktrees for isolation and how to switch between agent contexts seamlessly.",
+  "entities": [
+    {
+      "name": "Warp",
+      "type": "organization",
+      "role": "Developer of the terminal with Universal Agent Support feature"
+    },
+    {
+      "name": "Claude Code",
+      "type": "software",
+      "role": "AI coding agent used in the parallel workflow"
+    },
+    {
+      "name": "Codex",
+      "type": "software",
+      "role": "AI coding agent used in the parallel workflow"
+    },
+    {
+      "name": "Gemini CLI",
+      "type": "software",
+      "role": "AI coding agent mentioned as compatible with Universal Agent Support"
+    },
+    {
+      "name": "Joe Njenga",
+      "type": "person",
+      "role": "Author and software engineer demonstrating the workflow"
+    }
+  ],
+  "key_data_points": [
+    "Warp's Universal Agent Support allows running multiple AI agents (Claude Code, Codex, Gemini CLI) simultaneously in isolated Git worktrees, preventing code conflicts (🟢 relevant to your Red Teaming: parallel agent execution can be used for simultaneous vulnerability scanning, exploit development, and report generation).",
+    "Each agent runs in its own tab with vertical tab layout for easy monitoring and switching between agent contexts (🟢 relevant to your programming: improves multitasking efficiency when working on multiple codebases or tasks).",
+    "Git worktrees provide isolation so that changes from different agents do not interfere, enabling safe parallel development (🟢 relevant to your homelab/devops: can be applied to parallel infrastructure-as-code updates or testing multiple configurations).",
+    "Warp's Code Review panel aggregates changes from all agents, allowing unified review before committing (🟢 relevant to your programming: streamlines code review process for multi-agent outputs).",
+    "The author demonstrates a practical setup with two agents: one refactoring code and another writing tests, completing tasks faster than sequential execution (🟢 relevant to your productivity: demonstrates a concrete time-saving technique for student projects or side projects)."
+  ],
+  "methodology_steps": [
+    "Install or update Warp to the latest version that includes Universal Agent Support.",
+    "Open multiple tabs in Warp, each configured to run a different AI agent (e.g., Claude Code in tab 1, Codex in tab 2).",
+    "For each agent, set up a separate Git worktree from the same repository to ensure isolated working directories: `git worktree add ../project-agent1 branch1` and `git worktree add ../project-agent2 branch2`.",
+    "Configure vertical tabs in Warp's settings to display all agent tabs side by side for easy monitoring.",
+    "Enable agent notifications to get alerts when an agent completes a task or requires input.",
+    "Run each agent on its assigned task (e.g., refactoring, test writing) simultaneously.",
+    "Use Warp's Code Review panel to view and compare changes from all agents before merging.",
+    "Review and commit changes from each worktree as needed, then clean up worktrees with `git worktree remove`."
+  ],
+  "conclusions": [
+    "Warp's Universal Agent Support effectively solves the bottleneck of sequential AI agent execution by enabling parallel workflows, which can significantly reduce development time for multi-task projects. The use of Git worktrees ensures isolation, making the approach safe and practical for real-world use.",
+    "This feature is particularly valuable for developers who rely on multiple AI agents for different aspects of coding (e.g., writing, testing, documentation) and want to maximize efficiency without risking code conflicts.",
+    "The article demonstrates that with proper setup (vertical tabs, notifications, code review panel), managing multiple agents in parallel is straightforward and can be integrated into existing Git-based workflows."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your programming and DevOps interests as it introduces a practical method to run multiple AI agents in parallel using Warp's Universal Agent Support. For your Red Teaming work, you can apply this to run simultaneous vulnerability scans, exploit development, and report generation using different AI agents. As a student, this technique can help you manage multiple coding assignments or research tasks concurrently, boosting productivity. The detailed setup steps (Git worktrees, vertical tabs, code review) provide actionable insights for your homelab or devops pipelines, allowing you to parallelize infrastructure tasks safely.",
+  "extra_advice": "Consider setting up a Warp-based 'agent farm' for your Red Teaming projects: use one agent for reconnaissance (e.g., scanning with AI-assisted tools), another for exploit development, and a third for documentation. The isolated worktrees ensure no cross-contamination of changes. Additionally, explore integrating this with CI/CD pipelines to trigger parallel agent tasks on code commits.",
+  "source_url": "https://medium.com/ai-software-engineer/how-im-using-new-warp-universal-agent-support-to-power-my-parallel-workflow-6684955b066d"
+}

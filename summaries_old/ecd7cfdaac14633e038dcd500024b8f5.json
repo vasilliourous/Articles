@@ -1,0 +1,57 @@
+{
+  "article_title": "Your Proxmox 8 server stops getting security updates in August, and upgrading to PVE 9 isn't straightforward",
+  "core_thesis": "Proxmox 8.x will reach end-of-life in August 2026, requiring users to upgrade to PVE 9.0 to continue receiving security updates. While the upgrade process is documented, it involves multiple steps and potential pitfalls, making thorough backups and troubleshooting preparation essential for a smooth transition.",
+  "detailed_summary": "The article announces that Proxmox 8.x will stop receiving security updates in August 2026, pushing users to upgrade to PVE 9.0 (based on Debian 13 and Linux kernel 6.14). The author emphasizes that the upgrade is not straightforward and requires careful preparation. Key steps include backing up both virtual guests (LXCs/VMs) and host configuration files, then manually modifying the Proxmox repository to point to the new version. The author shares a personal experience where overprovisioned local-lvm storage caused a failure after upgrade, resolved via the 'lvconvert --repair' command. Other potential issues like Nvidia GPU frame buffer freezes are mentioned, with fixes such as adding 'nomodeset' or blacklisting drivers. The article recommends using Proxmox Backup Server for efficient backups and suggests a fresh install as an alternative if troubleshooting becomes too complex. User comments indicate that running the pve8to9 script and addressing warnings beforehand can make the upgrade smooth.",
+  "entities": [
+    {
+      "name": "Proxmox",
+      "type": "organization",
+      "role": "Developer of the Proxmox Virtual Environment (PVE) platform."
+    },
+    {
+      "name": "Ayush Pande",
+      "type": "person",
+      "role": "Author of the article, PC hardware and gaming writer."
+    },
+    {
+      "name": "tis24dev",
+      "type": "person",
+      "role": "Developer of the ProxSave tool for backing up Proxmox host configuration."
+    },
+    {
+      "name": "Proxmox Backup Server",
+      "type": "software",
+      "role": "Recommended backup solution for Proxmox, offering incremental snapshots, compression, and deduplication."
+    },
+    {
+      "name": "Debian 13",
+      "type": "software",
+      "role": "Underlying OS for Proxmox 9.0, codenamed 'Trixie'."
+    }
+  ],
+  "key_data_points": [
+    "Proxmox 8.x will reach end-of-life in August 2026, after which no security updates will be provided (🟢 relevant to your homelab: you must plan the upgrade before August to maintain a secure environment).",
+    "The upgrade to PVE 9.0 requires manually editing /etc/apt/sources.list.d/proxmox.sources to add Debian 13 (Trixie) repositories; otherwise, new packages won't appear in the Updates tab (🟢 relevant to your DevOps: precise repository configuration is critical for a successful upgrade).",
+    "A common issue after upgrade is an offline local-lvm pool due to overprovisioning; the fix is running 'lvconvert --repair pve/data' (🟢 relevant to your homelab: know this command to recover VMs/LXCs if storage fails).",
+    "Nvidia GPU users may encounter frame buffer freezes; workarounds include adding 'nomodeset' to boot parameters or blacklisting Nvidia drivers in /etc/modprobe.d/blacklist.conf (🟢 relevant to your homelab: if you use Nvidia GPUs, prepare these fixes).",
+    "The pve8to9 script (mentioned in comments) helps identify warnings before upgrade, such as running VMs that need to be shut down (🟢 relevant to your homelab: run this script to preempt issues)."
+  ],
+  "methodology_steps": [
+    "Back up all virtual guests (LXCs and VMs) using Proxmox Backup Server or vzdump, and transfer backups to an external node or cloud storage to avoid loss during upgrade.",
+    "Back up Proxmox host configuration files: /etc/pve/user.cfg, /etc/pve/storage.cfg, /etc/network/interfaces, and other config directories. Optionally use the ProxSave tool (github.com/tis24dev/ProxSave) to automate this.",
+    "Ensure your current Proxmox node is updated to version 8.4.9.",
+    "Modify the Proxmox repository by running: cat > /etc/apt/sources.list.d/proxmox.sources << EOF Types: deb URIs: http://download.proxmox.com/debian/pve Suites: trixie Components: pve-no-subscription Signed-By: /usr/share/keyrings/proxmox-archive-keyring.gpg EOF",
+    "Refresh package lists and upgrade via the Updates tab in the Proxmox web interface or using 'apt update && apt dist-upgrade'.",
+    "Monitor the upgrade process; Proxmox may prompt for confirmation on settings—choose default options unless you have specific requirements.",
+    "After reboot, verify that all services are running and check for errors. If local-lvm pool fails, run 'lvconvert --repair pve/data' to repair it.",
+    "If Nvidia GPU issues occur, add 'nomodeset' to kernel boot parameters or blacklist Nvidia drivers in /etc/modprobe.d/blacklist.conf.",
+    "As a fallback, perform a fresh installation of PVE 9.0 and restore backups of VMs/LXCs and host configuration."
+  ],
+  "conclusions": [
+    "Upgrading from Proxmox 8.x to 9.0 is necessary before August 2026 to maintain security updates, but the process is not trivial and requires careful preparation, especially backups. The author's experience shows that even with a successful upgrade, issues like local-lvm pool failure can occur, but are fixable with community-sourced commands. For homelab users, this means allocating time for the upgrade and having recovery plans in place.",
+    "User comments on the article suggest that running the pve8to9 script and addressing its warnings beforehand can make the upgrade smooth, as evidenced by multiple users reporting success with their servers. This indicates that proactive validation is key to avoiding problems."
+  ],
+  "personal_relevance_summary": "This article is directly relevant to your homelab interests, as it provides a detailed guide for upgrading Proxmox—a critical platform for virtualization. The step-by-step methodology, including repository configuration and backup strategies, offers practical DevOps knowledge. The troubleshooting tips for local-lvm and Nvidia issues are valuable for maintaining a stable lab. As a student, you can apply these skills to keep your home lab secure and learn about system migration planning. The article also highlights the importance of community forums for resolving unexpected errors, a skill useful in both cybersecurity and general IT.",
+  "extra_advice": "Consider setting up a test Proxmox node (even a VM) to practice the upgrade process before touching your production server. This will help you identify any issues specific to your configuration without risking downtime. Additionally, automate host config backups using a script (e.g., ProxSave) and schedule regular vzdump backups to a separate storage location—this is a best practice for any homelab and aligns with your Red Teaming mindset of redundancy and recovery planning.",
+  "source_url": "https://www.xda-developers.com/your-proxmox-8-server-stops-getting-security-updates-in-august/"
+}

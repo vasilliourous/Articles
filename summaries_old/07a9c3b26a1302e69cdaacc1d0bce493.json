@@ -1,0 +1,56 @@
+{
+  "article_title": "Install Roon Server 2.65 or 2.66 in a Docker Container on QNAP",
+  "core_thesis": "This article provides a step-by-step guide for QNAP NAS users to run Roon Server 2.65/2.66 via Docker Container Station after the official QNAP App Center installation stopped working due to new minimum OS requirements. The containerization trick allows the software to run on older, incompatible QTS operating systems by bundling its own runtime environment.",
+  "detailed_summary": "As of April 27, 2026, Roon Server versions 2.65 and 2.66 no longer run natively on QNAP's QTS operating system because RoonLabs raised the minimum OS requirements. This leaves many QNAP users unable to start the server after an update. The solution is to run Roon Server inside a Docker container using QNAP's built-in Container Station. The article explains Docker concepts (image, container, host, hub) and why containers can bypass OS incompatibility: they include their own code, runtime, system tools, and libraries. The guide covers six steps: backing up the old Roon database and uninstalling the old app, installing Container Station from the App Center, configuring a custom Roon Docker image via a GitHub configurator (setting platform to QNAP, specifying volume paths for the Roon database, music library, and backups, with a strong recommendation to use SSD storage for the database), downloading the Docker Compose YAML file, creating an application in Container Station using that YAML, and finally connecting Roon Remote and restoring the backup. The article also warns about common pitfalls like folder access errors and emphasizes checking RAM usage to confirm the server is running.",
+  "entities": [
+    {
+      "name": "RoonLabs",
+      "type": "organization",
+      "role": "Developer of Roon Server software; raised minimum OS requirements causing incompatibility."
+    },
+    {
+      "name": "QNAP",
+      "type": "organization",
+      "role": "NAS manufacturer whose QTS operating system is no longer supported for native Roon installation."
+    },
+    {
+      "name": "Container Station",
+      "type": "software",
+      "role": "QNAP's built-in Docker management app used to run the Roon container."
+    },
+    {
+      "name": "GitHub",
+      "type": "organization",
+      "role": "Hosts the Roon Server Docker Configurator tool used to generate the Docker Compose file."
+    },
+    {
+      "name": "Docker",
+      "type": "technology",
+      "role": "Containerization platform that enables Roon to run on incompatible OS by bundling dependencies."
+    }
+  ],
+  "key_data_points": [
+    "Roon Server 2.65/2.66 no longer runs natively on QNAP QTS due to new minimum OS requirements (🟢 relevant to homelab: shows how containerization can extend software life on legacy systems).",
+    "The Docker container includes its own runtime environment, system tools, and libraries, allowing it to run on QTS 5.x despite incompatibility (🟢 relevant to DevOps: demonstrates container isolation benefits).",
+    "The Roon database path must be on SSD storage for performance; if no SSD is available, a fast USB flash drive formatted as EXT4 is recommended (🟢 relevant to homelab: performance optimization tip).",
+    "The GitHub configurator requires setting platform to QNAP, specifying volume paths with '/share/' prefix, and selecting the Production release branch (🟢 relevant to homelab: precise configuration steps).",
+    "After container creation, verify Roon is running by checking RAM usage in Container Station overview – it should appear in the top 5 memory consumers (🟢 relevant to homelab: troubleshooting tip).",
+    "The backup folder path must match the one shared with the container; restore backup via Roon Remote under Settings > Backups (🟢 relevant to homelab: data migration procedure)."
+  ],
+  "methodology_steps": [
+    "Step 1: Back up the existing Roon database manually to a dedicated folder on the NAS, then disable local storage folders and uninstall the old Roon app from the App Center completely.",
+    "Step 2: Install Container Station from the QNAP App Center (found under Utilities).",
+    "Step 3: Use the Roon Server Docker Configurator on GitHub (https://github.com/roonlabs/roon-docker-configurator) to generate a custom configuration. Set Platform to 'QNAP', Roon Server Release Branch to 'Production'. Under VOLUMES, define three paths: (a) Roon database path (e.g., /share/Container/roon) – must be on SSD; (b) Music library path (e.g., /share/Multimedia/Music); (c) Backups path (e.g., /share/Container/roon-backups). Adjust time zone and audio outputs as needed.",
+    "Step 4: Download the Docker Compose .YML file using the download button on the configurator page.",
+    "Step 5: In Container Station, go to the 'Application' section, click 'Create', then upload the .YML file or paste its contents into the text field. Click 'Create' to pull the image and start the container. Check the container logs for errors and verify that RAM usage increases significantly.",
+    "Step 6: Open Roon Remote on a device, use 'Connect to another Roon Server' to find the new server, log in, then restore the backup via Settings > Backups. Finally, in Storage settings, activate the new music path and remove old inaccessible folders."
+  ],
+  "conclusions": [
+    "Running Roon Server in a Docker container is a viable workaround for QNAP users affected by the OS incompatibility introduced in version 2.65/2.66. The container bundles all necessary dependencies, allowing the software to function on QTS 5.x without modification.",
+    "The guide emphasizes the importance of using SSD storage for the Roon database to avoid performance bottlenecks, and provides clear troubleshooting steps (checking logs, RAM usage) to ensure the container is running correctly.",
+    "For homelab enthusiasts, this article demonstrates a practical application of Docker to overcome software obsolescence, reinforcing the value of containerization in maintaining legacy systems."
+  ],
+  "personal_relevance_summary": "This article is directly relevant to your homelab interests as it provides a detailed, step-by-step guide to containerizing a critical application (Roon Server) on a QNAP NAS. You can apply the same Docker principles to other services that may become incompatible with your NAS OS. The guide also includes performance tips (SSD for database) and troubleshooting methods (checking logs, RAM usage) that are valuable for any homelab setup. As a programmer, understanding Docker Compose and volume mapping will help you containerize your own applications.",
+  "extra_advice": "Consider automating the backup and restore process using a script that runs before any major Roon update. You could also set up a monitoring alert in Container Station to notify you if the Roon container stops unexpectedly.",
+  "source_url": "https://stereoguide.com/guides/streaming-en/install-roon-server-2-65-in-a-docker-container-on-qnap/"
+}

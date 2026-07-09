@@ -1,0 +1,70 @@
+{
+  "article_title": "I replaced Portainer, Grafana, and Prometheus with this stack",
+  "core_thesis": "The author argues that for small-scale home lab setups, a leaner stack consisting of Dockhand (container management), Beszel (monitoring), and Glance (dashboard) is superior to the heavier, more complex combination of Portainer, Grafana, and Prometheus. The new trio offers better UI/UX, lower resource consumption, and simpler configuration, making it more suitable for beginners and resource-constrained devices like Raspberry Pi.",
+  "detailed_summary": "The article describes the author's migration from a traditional self-hosted monitoring and container management stack (Portainer, Grafana, Prometheus) to a lighter alternative: Dockhand, Beszel, and Glance. The author, a home lab enthusiast, initially used Portainer for Docker container management due to its GUI, but found its UI cluttered and lacking quick actions. Dockhand provides a cleaner interface with per-container quick actions, easier stack creation, and built-in update checks (unlike Portainer, which requires Watchtower or manual recreation). For monitoring, the author replaced Grafana and Prometheus with Beszel, which uses under 50 MB of RAM, offers pre-configured graphs, and includes alerting—far simpler and lighter than Grafana's heavy resource usage and steep learning curve. Finally, Glance serves as a customizable dashboard that displays container status, RSS feeds, weather, and more, replacing the need for multiple browser tabs. The author concludes that this trio is visually appealing, feature-rich for small-scale needs, and imposes minimal system load, making it ideal for SBCs, mini PCs, or desktops. The article also includes reader comments debating the trade-offs: some note that Dockhand lacks advanced features like secrets and Swarm support, while others find Beszel redundant if using Homepage or Portainer for monitoring.",
+  "entities": [
+    {
+      "name": "Abhishek Kumar Mishra",
+      "type": "person",
+      "role": "Author of the article, a home lab enthusiast and technology writer."
+    },
+    {
+      "name": "Dockhand",
+      "type": "software",
+      "role": "Docker container management tool with a clean UI, quick actions, and update checks."
+    },
+    {
+      "name": "Beszel",
+      "type": "software",
+      "role": "Lightweight monitoring tool with pre-configured graphs and alerts, replacing Grafana/Prometheus."
+    },
+    {
+      "name": "Glance",
+      "type": "software",
+      "role": "Customizable dashboard displaying container status, RSS feeds, weather, etc."
+    },
+    {
+      "name": "Portainer",
+      "type": "software",
+      "role": "Popular Docker management GUI, criticized for cluttered UI and lack of update features."
+    },
+    {
+      "name": "Grafana",
+      "type": "software",
+      "role": "Heavy monitoring dashboard, deemed overkill for small home labs."
+    },
+    {
+      "name": "Prometheus",
+      "type": "software",
+      "role": "Metrics collection tool, paired with Grafana but resource-intensive."
+    },
+    {
+      "name": "Watchtower",
+      "type": "software",
+      "role": "Container update tool (no longer actively maintained), mentioned as a workaround for Portainer."
+    }
+  ],
+  "key_data_points": [
+    "Dockhand uses approximately 100 MB of RAM, similar to Portainer, but offers a cleaner UI with quick actions (start/stop/restart) next to each container, whereas Portainer requires selecting a container and using the top bar. (🟢 Relevant to homelab: saves time and reduces friction in daily container management.)",
+    "Beszel consumes under 50 MB of RAM when active, compared to Grafana and Prometheus which are significantly heavier. It provides pre-configured graphs and built-in alerts without complex setup. (🟢 Relevant to homelab: ideal for low-resource devices like Raspberry Pi; reduces overhead.)",
+    "Glance replaces multiple browser tabs by aggregating container status, RSS feeds, YouTube/Twitch activity, and weather into a single-page dashboard. It can be set as the browser homepage. (🟢 Relevant to homelab: centralizes information, improving workflow efficiency.)",
+    "Portainer lacks a built-in update button for containers; users must either recreate containers or use Watchtower (no longer actively maintained). Dockhand highlights containers with available updates directly on the management page. (🟢 Relevant to homelab: simplifies maintenance and reduces reliance on external tools.)",
+    "Reader comments highlight that Dockhand does not support Docker Secrets, Configs, or Swarm mode, making it unsuitable for production or advanced setups. (🟢 Relevant to homelab: important consideration if scaling up or needing enterprise features.)",
+    "One reader noted that Beszel's information overlaps with what Portainer or Homepage already provide, suggesting it may be redundant for some users. (🟢 Relevant to homelab: evaluate if Beszel adds value to your existing monitoring.)"
+  ],
+  "methodology_steps": [
+    "1. Deploy Dockhand: Use Docker Compose to spin up Dockhand. Example compose snippet: `services: dockhand: image: ghcr.io/dockhand/dockhand:latest ports: - 8080:8080 volumes: - /var/run/docker.sock:/var/run/docker.sock`. Access the web UI at port 8080.",
+    "2. Deploy Beszel: Run Beszel hub and agents. Hub compose: `services: beszel: image: ghcr.io/henrygd/beszel:latest ports: - 8090:8090 volumes: - ./data:/beszel/data`. On each monitored machine, run the agent: `docker run -d --name beszel-agent -e KEY=<your-key> -v /var/run/docker.sock:/var/run/docker.sock ghcr.io/henrygd/beszel-agent:latest`. Access hub UI at port 8090.",
+    "3. Deploy Glance: Use Docker Compose with a YAML configuration file. Example: `services: glance: image: ghcr.io/glanceapp/glance:latest ports: - 8081:8080 volumes: - ./glance.yml:/app/glance.yml`. Configure glance.yml to add widgets (e.g., Docker containers, RSS, weather). Set as browser homepage.",
+    "4. (Optional) Remove old stack: Stop and remove Portainer, Grafana, and Prometheus containers. Ensure no data loss by backing up volumes if needed.",
+    "5. Customize Glance: Edit glance.yml to add or remove widgets. Example widget for Docker containers: `- type: docker-containers host: http://dockhand:8080`. For RSS: `- type: rss url: https://example.com/feed.xml`."
+  ],
+  "conclusions": [
+    "The Dockhand, Beszel, and Glance stack is a viable lightweight alternative to Portainer, Grafana, and Prometheus for small home labs, offering lower resource usage and simpler configuration. However, it lacks advanced features like Docker Secrets and Swarm support, so users planning to scale or require enterprise-grade functionality should stick with the traditional stack.",
+    "Beszel's pre-configured graphs and low overhead make it ideal for beginners or those with limited hardware, but users already using Portainer or Homepage for monitoring may find it redundant. The choice depends on whether you prefer a dedicated monitoring tool or an all-in-one dashboard.",
+    "Glance effectively consolidates multiple information sources into one dashboard, reducing tab clutter. It is particularly useful for homelabbers who want a quick overview of container health and external feeds without opening multiple applications."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your homelab and DevOps interests, as it provides a concrete comparison of lightweight alternatives to popular but resource-heavy tools. As a programmer and homelab enthusiast, you can immediately apply the Docker Compose steps to deploy Dockhand, Beszel, and Glance on your own servers, reducing overhead and simplifying management. The article also highlights trade-offs (e.g., missing advanced features) that help you make an informed decision based on your scale. Additionally, the reader comments offer real-world perspectives on limitations, which is valuable for avoiding pitfalls. If you value efficiency and a clean UI, this stack is worth trying.",
+  "extra_advice": "Consider integrating Glance with your existing services by adding widgets for your CI/CD pipelines (e.g., GitHub Actions status) or security tools (e.g., fail2ban logs). This turns Glance into a central operations dashboard. Also, since you're into Red Teaming, you could use Beszel to monitor resource usage on target VMs during penetration testing labs, helping you detect anomalies or performance impacts of your exploits.",
+  "source_url": "https://www.xda-developers.com/i-replaced-portainer-grafana-and-prometheus-with-this-stack/"
+}

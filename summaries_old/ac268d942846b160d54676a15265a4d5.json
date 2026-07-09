@@ -1,0 +1,87 @@
+{
+  "article_title": "I automated 8 household tasks with $3 NFC tags and freed up hours every week",
+  "core_thesis": "The article argues that inexpensive NFC tags (around $3 each) can be used to automate a variety of household tasks by triggering smartphone actions via the Shortcuts app (iOS) or NFC Tools (Android), thereby saving time and reducing friction in daily routines. The author demonstrates eight practical automations, emphasizing that NFC tags offer a tactile, quick alternative to voice commands or manual app opening, especially in situations where voice assistants are disruptive or unreliable.",
+  "detailed_summary": "The author, Chris Hachey, describes how he used cheap NFC tags to automate eight household tasks, primarily on an iPhone using the Shortcuts app. He explains that NFC tags work by generating a magnetic field when tapped by a phone, triggering predefined actions such as opening apps, playing music, starting timers, or controlling smart home devices. The automations include: opening a music app (e.g., Apple Music) in the kitchen for cooking; loading a specific recipe website (WhatsGabyCooking.com) for hands-free cooking; starting a timer for cooking steps; launching an audiobook to continue listening; opening the Nanit baby monitor app from the bedside table; toggling a WeMo Smart Plug via Apple HomeKit; controlling a WiZ smart bulb; and activating Do Not Disturb focus mode at bedtime. The author notes that NFC tags are cheap, easy to set up, and can be placed strategically around the house. The article also includes a comment section where readers debate the utility versus voice commands, with some suggesting alternative uses like setting reminders or driving modes.",
+  "entities": [
+    {
+      "name": "Chris Hachey",
+      "type": "person",
+      "role": "Author and user of NFC tags, describing his personal automations."
+    },
+    {
+      "name": "NFC tags",
+      "type": "technology",
+      "role": "Inexpensive hardware used to trigger smartphone automations via near-field communication."
+    },
+    {
+      "name": "Shortcuts app",
+      "type": "software",
+      "role": "iOS app used to create automations triggered by NFC tags."
+    },
+    {
+      "name": "NFC Tools app",
+      "type": "software",
+      "role": "Android app for setting up NFC tag actions."
+    },
+    {
+      "name": "Apple HomeKit",
+      "type": "platform",
+      "role": "Smart home ecosystem used to control WeMo Smart Plug via NFC."
+    },
+    {
+      "name": "WeMo Smart Plug",
+      "type": "product",
+      "role": "Smart plug controlled via NFC tag and Apple HomeKit."
+    },
+    {
+      "name": "WiZ smart bulb",
+      "type": "product",
+      "role": "Smart bulb controlled via NFC tag and Shortcuts automation."
+    },
+    {
+      "name": "Nanit",
+      "type": "product",
+      "role": "Baby monitor app opened via NFC tag."
+    },
+    {
+      "name": "WhatsGabyCooking.com",
+      "type": "website",
+      "role": "Recipe website linked to an NFC tag for quick access."
+    }
+  ],
+  "key_data_points": [
+    "NFC tags cost around $3 each and can be purchased in packs, making them an extremely low-cost automation tool (🟢 relevant to your homelabbing: cheap hardware for DIY automation projects).",
+    "NFC tags work with both iPhone (via Shortcuts) and Android (via NFC Tools), and the setup involves tapping the tag to a phone to program it with a trigger action (🟢 relevant to your programming: you can extend this with custom scripts or integrations).",
+    "The author automated opening a music app (Apple Music) to play immediately upon scanning, useful for hands-free cooking (🟢 relevant to your productivity: reduces friction for routine tasks).",
+    "An NFC tag was used to open a specific recipe website (WhatsGabyCooking.com) to avoid manually searching while cooking (🟢 relevant to your student life: can be adapted for study resources or quick access to reference materials).",
+    "A timer automation was set to start a countdown (e.g., for pasta) by tapping an NFC tag, helping manage cooking steps without manual app interaction (🟢 relevant to your productivity: can be used for Pomodoro timers or study sessions).",
+    "The author placed an NFC tag on his bedside table to open the Nanit baby monitor app, allowing quick viewing of camera feeds without fumbling for glasses (🟢 relevant to your homelabbing: demonstrates integration with IP cameras or security feeds).",
+    "A WeMo Smart Plug was controlled via NFC tag and Apple HomeKit, enabling silent light control without voice commands that might wake others (🟢 relevant to your Red Teaming: physical access to NFC tags could be used for triggering actions in physical security assessments).",
+    "A WiZ smart bulb was toggled on/off by tapping an NFC tag placed near a light switch, providing an alternative to voice control or app usage (🟢 relevant to your homelabbing: shows how to integrate cheap smart bulbs with NFC).",
+    "The author set an NFC tag to activate Do Not Disturb focus mode on his iPhone, helping him sleep without disturbances (🟢 relevant to your student life: can be used to enforce study focus modes).",
+    "Commenters suggested additional uses: one placed an NFC tag by a furnace filter to set a 3-month reminder; another used one in a car to enable driving mode with auto-reply texts (🟢 relevant to your ambition: shows extensibility for custom automations)."
+  ],
+  "methodology_steps": [
+    "Purchase NFC tags (e.g., NTAG213 or NTAG215) from online retailers; they are typically sold in packs and cost around $3 each.",
+    "On iPhone: Open the Shortcuts app, tap 'Automation' at the bottom, then tap the '+' icon and select 'Create Personal Automation'.",
+    "Choose 'NFC' as the trigger, then tap 'Scan' and hold your iPhone near the NFC tag to register it. Give the tag a name (e.g., 'Kitchen Music').",
+    "After scanning, tap 'Next' and then 'Add Action' to define what happens when the tag is scanned. For example, search for 'Open App' and select Apple Music, or search for 'Set Timer' and specify duration.",
+    "Optionally, add multiple actions (e.g., open app and play music) by tapping the '+' button within the automation builder.",
+    "Disable 'Ask Before Running' if you want the automation to run immediately without confirmation (recommended for most use cases).",
+    "Tap 'Done' to save the automation. Test by tapping your phone to the NFC tag again.",
+    "On Android: Download the 'NFC Tools' app from the Play Store. Open the app, tap 'Write', then 'Add a record'.",
+    "Choose the action type (e.g., 'Application' to open an app, 'URI' to open a website, or 'Task' for more complex actions via Tasker integration).",
+    "Follow the app's prompts to write the action to the tag. Tap 'Write' and hold the tag near the phone's NFC reader.",
+    "For smart home control (e.g., WeMo plug or WiZ bulb), ensure the device is compatible with Shortcuts (iOS) or IFTTT (Android). In Shortcuts, add a 'Control Home' action and select the device and desired state (on/off).",
+    "Place the programmed NFC tags in convenient locations: kitchen counter, bedside table, light switch, etc. Use adhesive backing or a holder to keep them accessible."
+  ],
+  "conclusions": [
+    "NFC tags are a cheap and versatile tool for automating routine tasks, offering a tactile alternative to voice commands or manual app opening. The article demonstrates eight practical automations that save time and reduce friction, particularly in scenarios where voice assistants are disruptive (e.g., at night) or where hands-free operation is needed (e.g., cooking).",
+    "The automations are highly customizable and can be extended to any app or smart home device that supports Shortcuts (iOS) or IFTTT (Android). This makes NFC tags a valuable addition to a homelab or smart home setup, enabling physical triggers for digital actions.",
+    "Commenters noted that some automations (e.g., timers, lights) can be done with voice commands, but the author argues that NFC tags provide a silent, reliable method that doesn't require speaking or waking others. The discussion highlights that NFC tags are best suited for specific contexts where voice is impractical.",
+    "For Red Teaming and cybersecurity enthusiasts, NFC tags can be used in physical access scenarios (e.g., triggering scripts or opening specific apps when a tag is scanned), which could be leveraged for social engineering or physical penetration testing exercises."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your interests in homelabbing, productivity, and programming. It provides a low-cost, DIY approach to automating household tasks using NFC tags, which you can integrate into your own smart home or homelab setup. The step-by-step methodology gives you a clear blueprint for creating custom automations, and the examples (e.g., opening apps, controlling smart plugs, setting timers) can be adapted for study routines (e.g., Pomodoro timers, focus modes) or Red Teaming experiments (e.g., triggering scripts via physical tags). As a programmer, you can extend these automations with custom scripts (e.g., using Shortcuts with Pythonista or Android's Tasker) to create more complex workflows. The article also sparks ideas for combining NFC tags with other technologies (e.g., AI, as mentioned in a related article) for advanced automation.",
+  "extra_advice": "Consider using NFC tags as part of a physical Red Teaming exercise: program a tag to open a phishing page or trigger a data exfiltration script when scanned by a target's phone. For homelabbing, combine NFC tags with a Raspberry Pi running Home Assistant to trigger automations beyond smartphone actions (e.g., turning on lights, locking doors). You could also write a custom script that logs NFC scans to a database for tracking usage patterns.",
+  "source_url": "https://www.makeuseof.com/household-tasks-i-automated-with-nfc-tags/"
+}

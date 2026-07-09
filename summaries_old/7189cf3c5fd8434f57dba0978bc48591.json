@@ -1,0 +1,52 @@
+{
+  "article_title": "PVE Note Buddy Is a Smarter Way to Use Proxmox Notes in Your Home Lab",
+  "core_thesis": "PVE Note Buddy is an open-source, client-side web tool that transforms the underutilized Proxmox Notes field into a structured, visually appealing documentation system for VMs and containers. By generating formatted HTML notes with service icons, metadata fields, and templates, it reduces friction in home lab documentation without replacing external tools.",
+  "detailed_summary": "The article highlights how the Proxmox Notes field is often ignored because it lacks formatting and structure. PVE Note Buddy, created by GitHub developer JangaJones, addresses this by providing a browser-based tool that connects to the Proxmox API (read-only for template generation) and lets users create rich, standardized notes. It includes a built-in library of 400+ service templates (sourced from the community scripts repo) with icons, default ports, config locations, and website links. Users can customize fields like IP address, VLAN, role, owner, and add custom Markdown/HTML sections. The tool is fully client-side, offers live preview, SVG logo support, and template import/export. Currently, it does not automatically update notes in Proxmox; users copy-paste the generated HTML into the Notes field. The author notes that while external documentation (e.g., Git-based) is still essential, embedding critical metadata directly in the VM notes reduces lookup friction. The developer plans local deployment with API calls in the future but prioritizes security and simplicity.",
+  "entities": [
+    {
+      "name": "PVE Note Buddy",
+      "type": "software",
+      "role": "Open-source tool for formatting Proxmox notes with templates and icons"
+    },
+    {
+      "name": "JangaJones",
+      "type": "person",
+      "role": "GitHub developer who created PVE Note Buddy"
+    },
+    {
+      "name": "Proxmox VE",
+      "type": "software",
+      "role": "Hypervisor platform where the Notes field is enhanced"
+    },
+    {
+      "name": "Virtualization Howto",
+      "type": "organization",
+      "role": "Blog that published the article, authored by Brandon Lee"
+    }
+  ],
+  "key_data_points": [
+    "PVE Note Buddy is a client-side web tool hosted on GitHub Pages; no installation on Proxmox is required, reducing security risks (🟢 relevant to homelab: easy to test without modifying the hypervisor).",
+    "The tool includes 400+ service templates with icons, default ports, config locations, and website links, sourced from the community scripts repo (🟢 relevant to homelab: saves time manually looking up common service details).",
+    "Notes can include structured fields: Environment, Primary VLAN, IP Address, Role, Owner, Created date, plus a custom Markdown/HTML section (🟢 relevant to homelab: enables consistent metadata across all VMs).",
+    "Templates can be exported and imported as JSON files, allowing reuse across clusters or sharing with others (🟢 relevant to homelab: standardize documentation across multiple nodes).",
+    "The tool does not automatically update notes in Proxmox; users must copy-paste the generated HTML into the Notes field (🟢 relevant to homelab: manual step but keeps control over what gets written).",
+    "Local deployment with API calls is planned but not yet available; the developer emphasizes keeping the tool separate from Proxmox for security (🟢 relevant to homelab: future self-hosting option)."
+  ],
+  "methodology_steps": [
+    "Access PVE Note Buddy at its GitHub Pages URL (no installation needed).",
+    "Click the search field in the tool and type a service name (e.g., 'docker') to load a pre-built template with icon, default ports, and config paths.",
+    "Customize the template fields: set hostname, IP address, management URL, VLAN, role, owner, and any custom notes using Markdown or HTML.",
+    "Use the live preview to see how the note will appear in the Proxmox web UI.",
+    "Click the 'Copy to Clipboard' button to copy the generated HTML.",
+    "In the Proxmox web UI, navigate to the VM or container, open the Notes field, paste the HTML, and save.",
+    "Optionally, export the template as a JSON file for reuse or import a previously saved template."
+  ],
+  "conclusions": [
+    "PVE Note Buddy makes the Proxmox Notes field useful by turning it into structured, visually rich metadata, reducing the need to consult external documentation for basic VM info. The author recommends using it alongside external tools (e.g., Git-based docs) for critical details that benefit from being immediately accessible.",
+    "The tool is lightweight and secure because it runs client-side and does not require any agent or plugin on the Proxmox host. This aligns with homelab best practices of minimizing attack surface.",
+    "While the tool currently lacks automatic note updates, its template system and import/export features enable consistent documentation across a cluster. The developer's focus on simplicity and security suggests it will remain a low-friction addition to any Proxmox homelab."
+  ],
+  "personal_relevance_summary": "For your homelab, PVE Note Buddy directly addresses the common problem of neglected VM documentation. As someone who runs multiple VMs and containers, you can use this tool to embed critical metadata (IPs, VLANs, roles) directly into Proxmox, reducing time spent switching between external docs. The 400+ service templates save you from manually looking up default ports and config paths, and the structured fields help enforce consistency across your lab. Since it's client-side and requires no installation, you can test it immediately without risk. This fits your DevOps/homelab interest in lightweight, practical tools that improve operational efficiency.",
+  "extra_advice": "Consider creating a standard template for your homelab that includes fields like 'Backup Schedule', 'Last Patch Date', and 'Dependencies' to turn notes into a lightweight CMDB. Export the template and share it across your Proxmox cluster for uniformity. If you later self-host the tool, you could script periodic note updates via the Proxmox API to keep metadata current.",
+  "source_url": "https://www.virtualizationhowto.com/2026/03/pve-note-buddy-is-a-smarter-way-to-use-proxmox-notes-in-your-home-lab/"
+}

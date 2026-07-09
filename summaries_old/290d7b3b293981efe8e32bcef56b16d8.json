@@ -1,0 +1,63 @@
+{
+  "article_title": "Hacking Millions of Modems (and Investigating Who Hacked My Modem)",
+  "core_thesis": "The article details the author's discovery of a critical authorization bypass vulnerability in Cox Communications' business portal API, which allowed an unauthenticated attacker to access and modify any customer's modem settings, execute commands, and exfiltrate PII. The vulnerability stemmed from a race condition in the backend API that intermittently bypassed authentication, combined with a leaked cryptographic secret that could be reverse-engineered from client-side JavaScript. The author also recounts a personal incident where their home modem was compromised by an unknown attacker who replayed HTTP traffic, and while the disclosed vulnerability was not the cause, it highlights the broader risk of ISP-level device management interfaces being abused.",
+  "detailed_summary": "The article begins with a personal anecdote: in 2021, the author noticed an unknown IP address replaying his HTTP requests from multiple devices on his home network. After ruling out cloud provider compromise, he concluded his Cox Panoramic Wifi modem was hacked. He replaced the modem and the behavior stopped, but he was unable to reverse-engineer the device. Three years later, inspired by a conversation with friends, he investigated the ISP's device management infrastructure. He discovered that Cox's business portal (myaccount-business.cox.com) exposed a reverse-proxied API under /api/cbma/ that handled device management. By fuzzing for Swagger documentation, he found over 700 API endpoints. Crucially, he identified an authorization bypass: replaying the same HTTP request multiple times would intermittently return a 200 OK instead of an authorization error, due to a race condition. Using this, he could search for any Cox business customer by name, retrieve their account PII, list all connected devices with MAC addresses, and then modify device settings (e.g., WiFi SSID) by forging an encryptedValue parameter. The encryption key and IV were extracted from client-side JavaScript, allowing him to craft valid encrypted payloads. He demonstrated full device takeover by changing his own modem's SSID. The vulnerability was patched within 24 hours of disclosure. The author notes that this exploit was not the cause of his 2021 compromise (the portal went live in 2023), but it illustrates a dangerous attack surface: ISP backend APIs that can be abused to remotely control millions of modems.",
+  "entities": [
+    {
+      "name": "Sam Curry",
+      "type": "person",
+      "role": "Author and security researcher who discovered the vulnerability"
+    },
+    {
+      "name": "Cox Communications",
+      "type": "organization",
+      "role": "ISP whose business portal API was vulnerable"
+    },
+    {
+      "name": "159.65.76.209",
+      "type": "location",
+      "role": "DigitalOcean IP address used by the attacker who compromised the author's modem"
+    },
+    {
+      "name": "TR-069",
+      "type": "event",
+      "role": "Protocol used by ISPs to remotely manage modems; the article targets the management API rather than the protocol itself"
+    },
+    {
+      "name": "DigitalOcean",
+      "type": "organization",
+      "role": "Cloud provider hosting the attacker's C&C server"
+    },
+    {
+      "name": "ISG Latam",
+      "type": "organization",
+      "role": "South American cybersecurity company that was phished using the same IP address"
+    }
+  ],
+  "key_data_points": [
+    "The author's home modem was compromised by an attacker who replayed HTTP requests from his network to an external server; the attacker's IP (159.65.76.209) was linked to phishing campaigns and a domain generation algorithm (DGA) used for C&C servers. (🟢 Relevant to Red Teaming: demonstrates real-world modem compromise and C2 infrastructure patterns.)",
+    "The Cox Business portal API at /api/cbma/ exposed over 700 endpoints for device management, customer data access, and account modification. (🟢 Relevant to Red Teaming: large attack surface for ISP-level exploitation.)",
+    "An authorization bypass existed where replaying the same HTTP request multiple times would intermittently return a 200 OK instead of an authorization error, due to a race condition in the backend. (🟢 Relevant to Red Teaming: race condition bypasses can be weaponized for privilege escalation.)",
+    "The encryptedValue parameter used to authorize device modifications was generated client-side using AES encryption with a hardcoded IV and key derived from the JavaScript. The author reverse-engineered the encryption function to forge valid tokens. (🟢 Relevant to Red Teaming: client-side secrets are never truly secret; always extract and reuse.)",
+    "Using the vulnerability, an attacker could: (1) search for a customer by name/email/phone, (2) retrieve their account UUID and PII, (3) list all connected devices with MAC addresses, (4) modify device settings (e.g., WiFi password, SSID) or execute commands. (🟢 Relevant to Red Teaming: full kill chain from zero knowledge to device takeover.)",
+    "Cox patched the vulnerability within 6 hours of disclosure; the portal had been live since 2023, so it was not the vector used in the author's 2021 compromise. (🟢 Relevant to Red Teaming: even if not the original vector, similar ISP APIs are likely vulnerable elsewhere.)"
+  ],
+  "methodology_steps": [
+    "1. Identify the target API: Analyze the Cox Business portal JavaScript to find the base path /api/cbma/ and confirm it is a reverse proxy by sending requests with and without the prefix.",
+    "2. Discover API documentation: Fuzz for Swagger UI endpoints (e.g., /api/cbma/userauthorization/swagger-ui/index.html) to enumerate all available API routes.",
+    "3. Bypass static resource loading: Append %2f to .js file requests to bypass a proxy rule that redirected static assets, allowing Swagger UI to load fully.",
+    "4. Find authorization bypass: Send the same API request repeatedly (e.g., using Burp Intruder) until a 200 OK is returned instead of an authorization error; this exploits a race condition.",
+    "5. Extract encryption logic: Locate the encryptWithSaltandPadding and decryptWithSaltandPadding functions in the client-side JavaScript. Set a breakpoint to capture runtime values (IV, key) and then call the functions from the console to encrypt/decrypt arbitrary payloads.",
+    "6. Forge encryptedValue: Construct a payload string containing account ID, device name, device ID, a constant, MAC address, and a label. Encrypt it using the extracted function to produce a valid token.",
+    "7. Execute device modification: Send a POST request to an endpoint like /api/cbma/accountequipment/services/accountequipment/gatewaydevice/wifisettings with the forged encryptedValue to change the WiFi SSID (or other settings).",
+    "8. Confirm compromise: Observe the device reboot and verify the new settings (e.g., SSID changed to 'Curry')."
+  ],
+  "conclusions": [
+    "The authorization bypass vulnerability in Cox's business portal API allowed an unauthenticated attacker to fully compromise any customer's modem, demonstrating that ISP-level device management interfaces are a critical attack surface. The author successfully executed a full kill chain: customer search → PII extraction → device enumeration → configuration overwrite. This highlights the need for robust server-side authorization checks and the danger of relying on client-side secrets.",
+    "The attacker who compromised the author's modem in 2021 remains unidentified, but the investigation revealed that the same IP address was used for phishing and C2 operations, suggesting a sophisticated threat actor. The author's inability to reverse-engineer the modem underscores the challenge of defending against hardware-level compromises, especially when ISPs do not cooperate with security research.",
+    "The article emphasizes that even without exploiting the modem directly, attackers can leverage ISP backend APIs to achieve similar effects. For Red Teamers, this is a valuable case study in chaining multiple vulnerabilities (race condition, client-side encryption, exposed API docs) to achieve remote code execution on ISP-managed devices."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your Red Teaming and programming interests. It provides a detailed, step-by-step account of how to discover and exploit an authorization bypass in a large ISP's API, including reverse-engineering client-side encryption to forge authentication tokens. The techniques shown—fuzzing for Swagger docs, exploiting race conditions, extracting secrets from JavaScript—are directly applicable to offensive security engagements. As a programmer, you'll appreciate the code-level analysis of the encryption functions and the use of Burp Suite for automation. The article also offers a cautionary tale about modem security and ISP trust, which can inform your homelab hardening practices. Finally, the author's persistence in investigating a personal incident demonstrates the mindset of a proactive security researcher.",
+  "extra_advice": "Consider setting up a honeypot modem or router in your homelab to monitor for similar replay attacks. You could also practice the techniques from this article by auditing your own ISP's customer portal for exposed APIs or weak authorization. For Red Teaming, this case study is a perfect template for testing ISP-level device management interfaces—many providers use similar TR-069-based systems. Try to replicate the kill chain on a test account (with permission) to build a reusable exploit module.",
+  "source_url": "https://samcurry.net/hacking-millions-of-modems"
+}

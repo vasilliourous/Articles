@@ -1,0 +1,68 @@
+{
+  "article_title": "I gave up on Kindle and built my own eBook server with Calibre",
+  "core_thesis": "The article argues that self-hosting an eBook library using Calibre and Calibre Web is a viable, open-source alternative to Amazon's Kindle ecosystem, especially after Amazon removed the ability to download purchased eBooks. It provides a step-by-step guide for setting up a Calibre server via Docker, highlights the importance of keeping the database on local storage, and shows how to integrate with Kindle's Send to Kindle feature to continue using Kindle hardware without relying on Amazon's store.",
+  "detailed_summary": "The author, Patrick Campanale, explains his decision to abandon Kindle as a purchasing platform after Amazon removed the feature to download eBooks for personal devices, calling it anti-consumer. He discovered Calibre, a free and open-source self-hosted eBook manager, and set it up on a Docker host using Portainer. The initial setup was straightforward, but he encountered a critical issue: Calibre refuses to work properly if the database is stored on a network share (NAS). After moving the database to local storage on the Docker server, it worked fine. He then installed Calibre Web, a separate Docker container that provides a user-friendly web interface for browsing, uploading, and reading eBooks. Calibre Web also integrates with Amazon's Send to Kindle feature via SMTP (using an app password for Gmail), allowing him to send EPUBs to his Kindle Voyage. The article concludes by encouraging readers to embrace homelabbing and open-source alternatives, noting that a Calibre server is a great entry point into self-hosting.",
+  "entities": [
+    {
+      "name": "Patrick Campanale",
+      "type": "person",
+      "role": "Author of the article and the person who set up the Calibre server."
+    },
+    {
+      "name": "Calibre",
+      "type": "software",
+      "role": "Free, open-source eBook management tool used to self-host and organize eBooks."
+    },
+    {
+      "name": "Calibre Web",
+      "type": "software",
+      "role": "A separate Docker container that provides a web-based frontend for Calibre, enabling easy browsing, uploading, and Send to Kindle integration."
+    },
+    {
+      "name": "Amazon Kindle",
+      "type": "product",
+      "role": "Amazon's eBook ecosystem and hardware; the author ditched it as a purchasing platform but still uses the device."
+    },
+    {
+      "name": "Docker",
+      "type": "technology",
+      "role": "Containerization platform used to deploy Calibre and Calibre Web."
+    },
+    {
+      "name": "Portainer",
+      "type": "software",
+      "role": "Docker management UI used by the author to install Calibre."
+    },
+    {
+      "name": "Send to Kindle",
+      "type": "feature",
+      "role": "Amazon's email-based service to send documents to Kindle devices; integrated via Calibre Web."
+    }
+  ],
+  "key_data_points": [
+    "Amazon removed the ability to download purchased eBooks for personal devices, which the author calls anti-consumer and a reason to switch to self-hosting. (🟢 Relevant to your Red Teaming mindset: highlights vendor lock-in and the importance of owning your data.)",
+    "Calibre is 100% free and open-source, with no subscription fees, and supports formats like EPUB and PDF. (🟢 Useful for your homelab: zero-cost, self-hosted solution.)",
+    "Calibre's database must be stored on local storage, not a network share (NAS), or it will fail to function. The author spent significant time troubleshooting this. (🟢 Critical for your homelab: avoid this pitfall when deploying Calibre.)",
+    "Calibre Web provides a clean, responsive web interface that works on any device (phone, laptop, iPad) and supports reverse proxy for external access. (🟢 Great for your homelab: enables remote access and easy management.)",
+    "Calibre Web integrates with Amazon's Send to Kindle via SMTP (using an app password for Gmail) to send EPUBs to Kindle devices. The author notes OAuth didn't work in Docker. (🟢 Practical tip for your homelab: use SMTP with app passwords for reliable email delivery.)",
+    "The author used Portainer to deploy Calibre on a Docker host, forwarding three ports and mounting two volumes. (🟢 Relevant to your DevOps/homelab: concrete Docker deployment steps.)"
+  ],
+  "methodology_steps": [
+    "Install Calibre via Docker using Portainer: forward three ports (e.g., host 8082 to container 8080), mount two volumes (one for config, one for books), and set environmental variables.",
+    "Ensure the Calibre database is stored on local storage (not a network share like NFS or CIFS) to avoid setup failures.",
+    "Launch the Calibre web interface on port 8080 (or your mapped port) and complete the initial setup.",
+    "Deploy Calibre Web as a separate Docker container, connecting it to the Calibre server.",
+    "Configure Calibre Web: enable uploads by navigating to Admin > Edit Basic Configuration > Feature Configuration > Enable Uploads.",
+    "Set up Send to Kindle integration: configure an SMTP email account (e.g., Gmail with an app password) in Calibre Web settings, then use the 'Send EPUB to Reader' button to send books to your Kindle.",
+    "(Optional) Use a reverse proxy to access Calibre Web outside your local network."
+  ],
+  "conclusions": [
+    "Self-hosting with Calibre and Calibre Web is a practical, cost-free way to own your eBook library and bypass Amazon's restrictions. The author successfully reads on his Kindle without purchasing from Amazon's store.",
+    "The main technical hurdle is that Calibre's database must be on local storage; network shares cause failures. This is a key lesson for anyone deploying Calibre in a homelab.",
+    "Calibre Web's Send to Kindle integration works reliably via SMTP, allowing continued use of Kindle hardware while sourcing eBooks from other legal sources.",
+    "The article positions Calibre as an excellent entry point into homelabbing, encouraging readers to explore other self-hosted alternatives for media, photos, and smart home systems."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your homelab and DevOps interests, providing a concrete Docker deployment guide for Calibre and Calibre Web. It includes a critical troubleshooting tip (avoid network shares for the database) that will save you time. For your Red Teaming perspective, it underscores the importance of data ownership and vendor independence. As a student, you can apply the self-hosting concept to other services (e.g., media servers, note-taking) to build a robust, private infrastructure. The step-by-step methodology is directly actionable for your homelab projects.",
+  "extra_advice": "Consider extending this setup by adding a reverse proxy (e.g., Nginx Proxy Manager or Traefik) with SSL to securely access your Calibre Web library from anywhere. You could also automate eBook sourcing using tools like LazyLibrarian or Readarr to integrate with your existing *arr stack, creating a fully automated personal eBook pipeline.",
+  "source_url": "https://www.howtogeek.com/i-gave-up-on-kindle-and-built-an-ebook-server-with-calibre/"
+}

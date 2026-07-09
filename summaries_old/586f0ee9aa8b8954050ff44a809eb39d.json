@@ -1,0 +1,50 @@
+{
+  "article_title": "My homelab felt broken until I added a reverse proxy",
+  "core_thesis": "A reverse proxy transforms a homelab from a collection of disjointed, port-based services into a cohesive, user-friendly system by providing a single entry point for routing, HTTPS, and access rules, eliminating the friction of memorizing ports and workarounds.",
+  "detailed_summary": "The author describes how their Docker-based homelab, while technically functional, became increasingly frustrating to use as services accumulated on different ports (e.g., 3000, 8080, 9000). They relied on bookmarks and guesswork to access services, and remote access or sharing with others felt like a puzzle. The real issue was behavioral: the friction caused them to avoid using their own homelab. The solution was adding a reverse proxy (specifically Nginx in Docker), which routes traffic from human-readable addresses (e.g., myapp.local) to the correct container. This single change eliminated the need to remember ports, enabled consistent HTTPS via Let's Encrypt, and made adding new services seamless. The author provides a step-by-step setup: create a Docker network, attach containers to it, run Nginx with a minimal config, and define server blocks for each service. The result was not a performance improvement but a dramatic reduction in cognitive load, making the homelab feel complete and intuitive.",
+  "entities": [
+    {
+      "name": "Roine Bertelson",
+      "type": "person",
+      "role": "Author of the article, a tech writer and homelab enthusiast."
+    },
+    {
+      "name": "Nginx",
+      "type": "organization",
+      "role": "Web server software used as the reverse proxy in the setup."
+    },
+    {
+      "name": "Docker",
+      "type": "organization",
+      "role": "Containerization platform used to run the homelab services and the reverse proxy."
+    },
+    {
+      "name": "Let's Encrypt",
+      "type": "organization",
+      "role": "Certificate authority for free HTTPS certificates, mentioned as an optional addition."
+    }
+  ],
+  "key_data_points": [
+    "The author's homelab had services on multiple ports (3000, 8080, 9000) requiring bookmarks and guesswork to access (🟢 relevant to your homelab: this is a common pain point that a reverse proxy solves).",
+    "A reverse proxy acts as a traffic router, allowing each service to have a human-readable address (e.g., myapp.local) instead of an IP:port combination (🟢 relevant to your homelab: simplifies access and organization).",
+    "The reverse proxy centralizes HTTPS, routing, and access rules, solving these problems once for all services (🟢 relevant to your homelab: reduces configuration overhead and improves security).",
+    "The author used Nginx in Docker with a minimal configuration: create a Docker network, attach containers, and define server blocks with proxy_pass directives (🟢 relevant to your homelab: provides a concrete, reproducible setup).",
+    "After adding the reverse proxy, the author stopped relying on memory and workarounds, and the homelab felt cohesive rather than a collection of temporary endpoints (🟢 relevant to your homelab: improves user experience and encourages regular use)."
+  ],
+  "methodology_steps": [
+    "Create a Docker network for the reverse proxy and services: `docker network create proxy`.",
+    "Run each service container attached to this network: `docker run -d --name myapp --network proxy -p 3000:3000 myapp-image`.",
+    "Run Nginx as a container on the same network, mounting a custom nginx.conf: `docker run -d --name nginx-proxy --network proxy -p 80:80 -v $(pwd)/nginx.conf:/etc/nginx/nginx.conf:ro nginx`.",
+    "Configure nginx.conf with an events block and an http block. Inside http, define a server block for each service: listen 80; server_name myapp.local; location / { proxy_pass http://myapp:3000; proxy_set_header Host $host; proxy_set_header X-Real-IP $remote_addr; }.",
+    "Access services via http://myapp.local instead of http://192.168.x.x:3000. Repeat server blocks for additional services.",
+    "Optionally add HTTPS later using Let's Encrypt with a companion container."
+  ],
+  "conclusions": [
+    "A reverse proxy is a simple, low-effort addition that dramatically improves the usability of a homelab by providing consistent, name-based access and centralizing HTTPS and routing. The author emphasizes that the benefit is not technical performance but reduced cognitive friction, making the homelab feel like a unified system rather than a collection of hacks.",
+    "The setup with Nginx in Docker is straightforward and reproducible, requiring only a Docker network, a minimal configuration file, and a few commands. This approach scales well as new services are added, since each service just needs a new server block.",
+    "The article highlights that 'it works' is a low bar; usability and maintainability matter for long-term satisfaction. For homelab enthusiasts, investing in a reverse proxy early prevents the accumulation of workarounds that lead to avoidance behavior."
+  ],
+  "personal_relevance_summary": "This article directly addresses a common pain point in homelab management: the chaos of port-based service access. As someone building and maintaining a homelab, you can immediately apply the Nginx reverse proxy setup to unify your services under clean, memorable URLs, centralize HTTPS, and reduce cognitive overhead. The step-by-step instructions are practical and can be adapted to your existing Docker environment. This aligns with your need for technical DevOps advice and will make your homelab more enjoyable to use and easier to expand.",
+  "extra_advice": "Consider extending this setup with a dynamic DNS service and a Let's Encrypt companion container (like nginx-proxy or acme-companion) to automate HTTPS certificates and enable secure remote access. This turns your homelab into a polished, production-like environment that you can confidently share with others or access from anywhere.",
+  "source_url": "https://www.makeuseof.com/my-homelab-felt-broken-until-i-added-a-reverse-proxy/"
+}

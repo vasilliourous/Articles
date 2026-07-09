@@ -1,0 +1,67 @@
+{
+  "article_title": "Even cybersecurity researchers are exposing secrets in their arXiv LaTeX source - Help Net Security",
+  "core_thesis": "A study from RWTH Aachen University, presented at the 2026 IEEE Symposium on Security and Privacy, analyzed 2.7 million arXiv submissions from 1991 onward and found that 88% contain hidden information in LaTeX source files—such as dangling files, metadata, and comments—that is not visible in the compiled PDF. This poses significant security and privacy risks, including exposure of credentials, API tokens, private keys, and sensitive internal communications. Notably, papers from top-tier security conferences leak more hidden information on average than papers from other fields, and existing sanitization tools are inadequate. The researchers developed a new tool, ALC-NG, to address these gaps.",
+  "detailed_summary": "The article reports on a comprehensive study by RWTH Aachen University that examined 2.7 million arXiv paper submissions with LaTeX source files. The researchers found that 88% of submissions contained content not needed for the compiled PDF, including backup folders, old drafts, Git repositories, configuration files, metadata embedded in images/PDFs (usernames, software versions, GPS coordinates), and comments or commented-out text within LaTeX files. Sensitive findings included 699 Google Docs links with edit access, 200 documents exposing review materials, 18 containing PII, and 82 submissions with API tokens, private keys, or passwords. The study also uncovered links to FTP/SSH servers and GPS coordinates of research buildings and residential addresses. Surprisingly, papers from top-tier security conferences (A-star and A-ranked) leaked more hidden information than other fields, even after normalizing for file size. The researchers tested six existing sanitization tools and found them all lacking—some crash, some remove necessary files, and none handle metadata stripping. They built ALC-NG, which uses structured parsing and metadata stripping, achieving visually identical PDFs in 87% of test cases. Disclosure efforts faced challenges: arXiv declined to coordinate, so the researchers manually contacted 2,660 authors; only 18 submissions were updated, and old versions remain accessible. The article emphasizes that once published, cleaning source files is ineffective; credentials must be revoked or rotated.",
+  "entities": [
+    {
+      "name": "RWTH Aachen University",
+      "type": "organization",
+      "role": "Conducted the study on arXiv LaTeX source leaks."
+    },
+    {
+      "name": "IEEE Symposium on Security and Privacy",
+      "type": "event",
+      "role": "Venue where the study was presented (2026)."
+    },
+    {
+      "name": "arXiv",
+      "type": "organization",
+      "role": "Preprint repository where the analyzed papers are hosted."
+    },
+    {
+      "name": "Shwetha Babu Prasad",
+      "type": "person",
+      "role": "Information security specialist quoted on risks of comments in LaTeX."
+    },
+    {
+      "name": "Juan Mathews Rebello Santos",
+      "type": "person",
+      "role": "Cybersecurity analyst quoted on disclosure responsibility."
+    },
+    {
+      "name": "ALC-NG",
+      "type": "tool",
+      "role": "New sanitization tool developed by the researchers to clean LaTeX source files."
+    },
+    {
+      "name": "arxiv_latex_cleaner",
+      "type": "tool",
+      "role": "Google's recommended tool for cleaning LaTeX, found inadequate."
+    }
+  ],
+  "key_data_points": [
+    "88% of 2.7 million arXiv submissions contain hidden content not visible in the compiled PDF (🟢 relevant to Red Teaming: demonstrates a common oversight that can be exploited for reconnaissance).",
+    "82 submissions exposed API tokens, private keys, or passwords (🟢 critical for Red Teaming: these are direct credentials that could be used for unauthorized access).",
+    "699 Google Docs links with edit access were found, and 200 documents exposed review materials, rebuttals, and meeting minutes (🟢 relevant for social engineering and intelligence gathering).",
+    "18 documents contained survey data with personally identifiable information (PII) (🟢 relevant for privacy attacks and identity theft).",
+    "Papers from top-tier security conferences leak more hidden information than other fields, even after normalizing for file size (🟢 ironic and actionable: security researchers are prime targets; their own papers can be used against them).",
+    "Existing sanitization tools (including Google's arxiv_latex_cleaner) fail to handle all cases; none strip metadata (🟢 opportunity: Red Teamers can exploit these gaps to find leaks).",
+    "Only 18 of 1,141 notified papers were updated after disclosure; old versions remain on arXiv (🟢 important: once leaked, data is persistent; credential rotation is the only fix)."
+  ],
+  "methodology_steps": [
+    "The study analyzed 2.7 million arXiv submissions with LaTeX source files from 1991 to 2026.",
+    "Researchers categorized hidden content into three groups: dangling files (backups, Git repos, .nfs files), metadata (in images/PDFs), and LaTeX comments/commented-out text.",
+    "They matched papers to top-tier security conferences (A-star and A-ranked) and compared leak rates to other fields.",
+    "They tested six existing sanitization tools against standard cases, evaluating crashes, false positives/negatives, and metadata handling.",
+    "They developed ALC-NG, which uses structured LaTeX parsing and metadata stripping, and tested it on submissions to verify PDF visual identity."
+  ],
+  "conclusions": [
+    "LaTeX source files on arXiv are a significant source of unintentional data leaks, including credentials, PII, and internal communications, which can be exploited by adversaries. (🟢 Red Teaming: this is a goldmine for OSINT and initial access.)",
+    "Security researchers are ironically more vulnerable than others, as their papers contain more hidden information, making them high-value targets. (🟢 Red Teaming: targeting security researchers' arXiv submissions could yield sensitive data.)",
+    "Current sanitization tools are insufficient; ALC-NG improves coverage but is not yet widely adopted. (🟢 Opportunity: Red Teamers can develop custom scrapers to find leaks before they are cleaned.)",
+    "Disclosure is ineffective because arXiv does not remove old versions; the only mitigation is credential revocation. (🟢 Practical advice: if you find a leak, advise the owner to rotate credentials immediately.)"
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your Red Teaming and cybersecurity interests. It reveals a widespread, overlooked attack surface: LaTeX source files on arXiv contain credentials, API keys, internal comments, and PII that can be used for reconnaissance, social engineering, or direct access. As a programmer, you can leverage this knowledge to build automated tools that scan arXiv for leaks (e.g., regex for API keys, Google Docs links). The irony that security researchers are the worst offenders means you can target their submissions for high-value intelligence. Additionally, the study's disclosure challenges highlight the importance of credential rotation over file cleaning. As a student, you can apply this to your own work: always sanitize LaTeX sources before submission to avoid leaking personal or academic data.",
+  "extra_advice": "Consider building a simple Python script that monitors new arXiv submissions in security categories (e.g., cs.CR) and scans LaTeX source files for patterns like API keys, private keys, or Google Docs links. This could serve as a Red Team reconnaissance tool or a personal audit tool for your own submissions. Also, test ALC-NG on your own LaTeX projects to see if it catches hidden data.",
+  "source_url": "https://www.helpnetsecurity.com/2026/04/28/cybersecurity-researchers-arxiv-latex-source-leaks/"
+}

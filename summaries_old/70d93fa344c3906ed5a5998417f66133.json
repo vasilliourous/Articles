@@ -1,0 +1,51 @@
+{
+  "article_title": "Open source models can find bugs as well as Mythos",
+  "core_thesis": "Open source AI models, when orchestrated with proper scaffolding, can match the bug-finding capabilities of Anthropic's proprietary Mythos model, challenging the notion that only closed, expensive systems are effective for automated vulnerability discovery. This democratization of AI-driven security testing will not eliminate infosec jobs but rather shift them toward orchestrating models and triaging results.",
+  "detailed_summary": "At Black Hat Asia 2026, Ari Herbert-Voss (CEO of RunSybil and OpenAI's first security hire) argued that open source LLMs can achieve comparable bug-finding performance to Anthropic's Mythos, a model known for discovering 271 Firefox flaws. He attributed Mythos's success to 'supralinear scaling'—where doubling data, compute, and time yields quadruple capability—but noted that open source models can be combined via 'scaffolding' to run multiple models in parallel, catching different bug types and providing defense in depth. Cost is a major driver: Mythos is expensive and tightly restricted, making open source alternatives necessary for many organizations. Herbert-Voss emphasized that human expertise remains essential for orchestrating these models and assessing their output, and that AI bug hunters will generate many false positives (similar to fuzzing), ensuring ongoing demand for security professionals. He predicted that economic incentives to utilize expensive GPU/datacenter infrastructure will force infosec teams to adopt AI, improving proactive and defensive security.",
+  "entities": [
+    {
+      "name": "Ari Herbert-Voss",
+      "type": "person",
+      "role": "CEO of RunSybil and former OpenAI security hire; speaker at Black Hat Asia presenting the thesis."
+    },
+    {
+      "name": "Anthropic",
+      "type": "organization",
+      "role": "Creator of the Mythos model, which is proprietary and tightly restricted."
+    },
+    {
+      "name": "Mythos",
+      "type": "product",
+      "role": "Anthropic's AI model for bug finding, known for discovering 271 Firefox flaws."
+    },
+    {
+      "name": "RunSybil",
+      "type": "organization",
+      "role": "AI-powered security startup founded by Herbert-Voss."
+    },
+    {
+      "name": "Black Hat Asia",
+      "type": "event",
+      "role": "Conference where the talk was given."
+    }
+  ],
+  "key_data_points": [
+    "Mythos found 271 Firefox flaws, but none that a human couldn't spot (🟢 relevant to Red Teaming: indicates AI can automate initial vulnerability discovery, but human analysis is still needed for exploitation).",
+    "Supralinear scaling: a model trained on twice the data, compute, and time can be four times more capable (🟢 relevant to Red Teaming: suggests that investing in larger models yields disproportionate gains in bug-finding ability).",
+    "Open source models can match Mythos performance when combined via 'scaffolding'—running multiple models in parallel to catch different bug types (🟢 relevant to Red Teaming: provides a cost-effective way to build an AI-powered vulnerability discovery pipeline).",
+    "Mythos is expensive to build and run, and may never be publicly available (🟢 relevant to Red Teaming: reinforces the need for open source alternatives for independent researchers and smaller teams).",
+    "AI bug hunters produce many false positives, similar to fuzzing, creating extra work for humans (🟢 relevant to Red Teaming: highlights that AI is a tool, not a replacement; triage skills remain critical).",
+    "Economic incentives to use AI (to justify GPU/datacenter costs) will force infosec teams to adopt AI (🟢 relevant to Red Teaming: indicates industry trend; learning to integrate AI into workflows is a strategic advantage)."
+  ],
+  "methodology_steps": [
+    "To replicate Mythos-level bug finding with open source models: 1) Select multiple open source LLMs (e.g., CodeLlama, StarCoder, DeepSeek-Coder) to cover different blind spots. 2) Build a 'scaffolding' layer that orchestrates these models—sending the same code to each model and aggregating results. 3) Implement a triage pipeline to filter false positives, possibly using a separate classifier or human review. 4) Continuously fine-tune models on vulnerability datasets to improve detection of shallow and complex bugs. 5) Run the pipeline as part of CI/CD to catch bugs early."
+  ],
+  "conclusions": [
+    "Open source models, when properly orchestrated, can achieve bug-finding performance comparable to proprietary models like Mythos, making advanced AI security testing accessible to more organizations. This is supported by Herbert-Voss's talk and the concept of supralinear scaling.",
+    "Human expertise remains indispensable for orchestrating AI models and triaging their output, meaning AI will augment rather than replace security professionals. The analogy to fuzzing—which also generates many false positives—supports this.",
+    "The high cost of proprietary models and the economic push to utilize AI infrastructure will accelerate adoption of AI in infosec, benefiting both attackers and defenders. For Red Teamers, this means learning to leverage open source models for vulnerability discovery is a valuable skill."
+  ],
+  "personal_relevance_summary": "This article directly connects to your Red Teaming and programming interests by showing how open source AI models can be used to automate vulnerability discovery at a fraction of the cost of proprietary systems. As a programmer, you can integrate these models into your own security testing pipelines, using scaffolding to combine multiple models for better coverage. The insight that AI generates many false positives (like fuzzing) means your programming skills are still needed to build triage and filtering tools. For your homelab, you could experiment with running open source LLMs locally to find bugs in your own projects or practice software. The article also reinforces that AI is a tool to augment, not replace, human expertise—so your ambition to stay ahead in cybersecurity is well-placed.",
+  "extra_advice": "Consider setting up a local bug-finding pipeline using open source models like CodeLlama or DeepSeek-Coder. Start by fuzzing a small open source project (e.g., a C library) and then feed the crash inputs to the LLM for analysis. This will give you hands-on experience with AI-assisted vulnerability discovery and triage, a skill increasingly valuable in Red Teaming.",
+  "source_url": "https://www.theregister.com/security/2026/04/24/open-source-models-can-find-bugs-as-well-as-mythos/5224166"
+}

@@ -1,0 +1,64 @@
+{
+  "article_title": "Starkiller Phishing Suite Uses AitM Reverse Proxy to Bypass Multi-Factor Authentication",
+  "core_thesis": "The article details a new phishing-as-a-service platform called Starkiller, operated by the threat group Jinkusu, which uses an adversary-in-the-middle (AitM) reverse proxy technique to bypass multi-factor authentication (MFA). By proxying legitimate login pages in real time via headless Chrome in Docker containers, it eliminates the need for template updates and evades detection, lowering the skill barrier for cybercriminals. The article also covers related phishing campaigns targeting 1Password users (1Phish kit) and Microsoft 365 accounts via OAuth device code abuse, as well as a multi-stage campaign against U.S. financial institutions.",
+  "detailed_summary": "Starkiller is a phishing suite that provides a dashboard for selecting a brand to impersonate or entering a real URL, choosing custom keywords (e.g., 'login', 'verify'), and integrating URL shorteners like TinyURL. It launches a headless Chrome instance inside a Docker container that loads the legitimate website and acts as a reverse proxy between the victim and the real site. This AitM approach serves genuine page content through attacker infrastructure, so the phishing page is always up-to-date and cannot be fingerprinted by security vendors. All keystrokes, form submissions, and session tokens are captured for account takeover, effectively bypassing MFA. The platform centralizes infrastructure management, phishing page deployment, and session monitoring, giving low-skill attackers access to advanced capabilities.\n\nSeparately, the 1Phish kit targeting 1Password users evolved from a basic credential harvester in September 2025 into a multi-stage kit with pre-phishing fingerprinting, OTP/recovery code capture, and browser fingerprinting to filter bots. Another campaign abuses the OAuth 2.0 device authorization grant flow: attackers register a Microsoft OAuth app, generate a device code, and trick victims into entering it on the legitimate microsoft.com/devicelogin portal, thereby issuing a valid OAuth access token to the attacker's app for persistent access to Microsoft 365 accounts. Additionally, a campaign targeting U.S. banks and credit unions uses [.]co[.]com domains spoofing financial institutions, with a multi-stage evasion chain including a fake Cloudflare CAPTCHA, referrer validation, cookie-based access controls, intentional delays, and code obfuscation.",
+  "entities": [
+    {
+      "name": "Starkiller",
+      "type": "organization",
+      "role": "Phishing-as-a-service platform operated by Jinkusu, using AitM reverse proxy to bypass MFA."
+    },
+    {
+      "name": "Jinkusu",
+      "type": "organization",
+      "role": "Threat group advertising and operating the Starkiller phishing suite."
+    },
+    {
+      "name": "Abnormal Security",
+      "type": "organization",
+      "role": "Cybersecurity firm that disclosed details of Starkiller."
+    },
+    {
+      "name": "Datadog",
+      "type": "organization",
+      "role": "Security firm that revealed the evolution of the 1Phish kit targeting 1Password users."
+    },
+    {
+      "name": "BlueVoyant",
+      "type": "organization",
+      "role": "Security firm that analyzed the phishing campaign against U.S. financial institutions."
+    },
+    {
+      "name": "1Phish",
+      "type": "organization",
+      "role": "Multi-stage phishing kit targeting 1Password users, evolved from a basic credential harvester."
+    },
+    {
+      "name": "Microsoft 365",
+      "type": "organization",
+      "role": "Target of OAuth device code abuse phishing campaign."
+    },
+    {
+      "name": "OAuth 2.0",
+      "type": "event",
+      "role": "Protocol abused in phishing campaign to bypass MFA via device authorization grant flow."
+    }
+  ],
+  "key_data_points": [
+    "Starkiller uses a headless Chrome instance inside a Docker container as an AitM reverse proxy, proxying the real login page live so that the phishing page is always current and cannot be blacklisted by template fingerprints. (🟢 Relevant to Red Teaming: This technique can be weaponized for highly evasive phishing campaigns that bypass MFA and evade detection.)",
+    "The platform allows attackers to select a brand, choose custom keywords, and integrate URL shorteners like TinyURL to obscure the destination URL. (🟢 Relevant to Red Teaming: Demonstrates how to operationalize phishing with minimal effort; can be used to simulate real-world attacks.)",
+    "1Phish kit evolved from a basic credential harvester in September 2025 to include pre-phishing fingerprinting, OTP/recovery code capture, and browser fingerprinting to filter bots. (🟢 Relevant to Red Teaming: Shows iterative improvement in phishing kits; useful for understanding adversary TTPs.)",
+    "OAuth device code abuse campaign: attackers register a Microsoft OAuth app, generate a device code, and trick victims into entering it on microsoft.com/devicelogin, resulting in persistent access tokens. (🟢 Relevant to Red Teaming: This technique can be used to compromise Microsoft 365 accounts without triggering MFA; valuable for red team exercises.)",
+    "Phishing campaign against U.S. financial institutions uses [.]co[.]com domains with a multi-stage evasion chain including fake Cloudflare CAPTCHA, referrer validation, cookie-based access controls, intentional delays, and code obfuscation. (🟢 Relevant to Red Teaming: Highlights advanced evasion techniques that can be adopted for red team operations.)"
+  ],
+  "methodology_steps": [],
+  "conclusions": [
+    "Starkiller represents a shift toward phishing-as-a-service with SaaS-like workflows, lowering the barrier for low-skill attackers to perform sophisticated MFA bypass attacks. (🟢 Relevant to Red Teaming: Red teams should test their defenses against such AitM proxy attacks.)",
+    "The evolution of 1Phish shows that phishing kits are becoming more modular and adaptive, incorporating fingerprinting and OTP capture to increase success rates. (🟢 Relevant to Red Teaming: Understanding these evolutions helps in designing better detection and response strategies.)",
+    "OAuth device code abuse is an effective method to bypass MFA because it uses legitimate Microsoft domains and flows, making it hard to detect. (🟢 Relevant to Red Teaming: This technique should be included in red team playbooks for testing MFA resilience.)",
+    "Multi-stage evasion chains using CAPTCHA, referrer checks, and obfuscation are increasingly common, requiring advanced detection mechanisms. (🟢 Relevant to Red Teaming: Red teams can emulate these chains to test security tool effectiveness.)"
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your Red Teaming and cybersecurity interests as it details cutting-edge phishing techniques that bypass MFA, including AitM reverse proxying, OAuth device code abuse, and multi-stage evasion chains. As a programmer, you can analyze the technical implementation (headless Chrome, Docker, reverse proxy) to build custom red team tools or simulate these attacks in controlled environments. The article also provides insights into the evolution of phishing kits, which can inform your understanding of adversary TTPs. For your homelab, you could set up a test environment to replicate these techniques for defensive research. Additionally, the article's coverage of multiple campaigns offers a broad view of current threats, useful for both offensive and defensive security work.",
+  "extra_advice": "Consider building a lab environment using Docker and headless Chrome to replicate the AitM reverse proxy technique. This will give you hands-on experience with the attack flow and help you develop detection signatures or mitigation strategies. Also, explore the OAuth device code abuse method by setting up a test Microsoft 365 tenant and simulating the attack to understand how to detect anomalous device code logins.",
+  "source_url": "https://thehackernews.com/2026/03/starkiller-phishing-suite-uses-aitm.html?m=1"
+}

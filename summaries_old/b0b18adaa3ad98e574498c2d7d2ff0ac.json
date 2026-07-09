@@ -1,0 +1,53 @@
+{
+  "article_title": "The rise of the 'Adderall novel': How our attention spans are changing the way authors write",
+  "core_thesis": "The article argues that contemporary literature is increasingly adopting a fragmentary, concise style—dubbed the 'Adderall novel'—in response to shrinking attention spans and the influence of digital media. This trend is characterized by shorter page counts, pithy paragraphs, and episodic narratives that mirror the fragmented nature of modern life, though some authors see it as a deliberate formal experiment rather than a mere concession to distraction.",
+  "detailed_summary": "The Los Angeles Times article by Maddie Connors explores how bestselling books have become shorter over the past decade, with a 2022 WordsRated study showing a drop of over 50 pages in average length. Authors like Anika Jade Levy (\"Flat Earth\") and Jenny Offill (\"Dept. of Speculation\") exemplify this trend, using fragmentary prose to capture the speed and disjointedness of contemporary existence. UCLA professor Mitchum Huehls notes that literature has shifted from world-building and setting to plot and action, partly due to attention spans but also as intentional formal experimentation with technology. Offill, however, predicts a potential swing back toward longer, more expansive novels, citing writers influenced by Thomas Bernhard. The article positions this literary shift as both a reflection of and a reaction to the digital age, with authors like Levy arguing that fragmented writing feels more authentic to a nonlinear reality.",
+  "entities": [
+    {
+      "name": "Anika Jade Levy",
+      "type": "person",
+      "role": "Author of the debut novel 'Flat Earth,' which exemplifies the fragmentary style discussed in the article."
+    },
+    {
+      "name": "Jenny Offill",
+      "type": "person",
+      "role": "Author of 'Dept. of Speculation,' a key fragmentary novel that influenced the trend; she discusses her writing process and predictions for literature."
+    },
+    {
+      "name": "Mitchum Huehls",
+      "type": "person",
+      "role": "UCLA English professor who provides academic context on the shift from lengthy descriptive novels to plot-driven, shorter works."
+    },
+    {
+      "name": "WordsRated",
+      "type": "organization",
+      "role": "International research group that conducted a 2022 study showing bestselling books are getting shorter."
+    },
+    {
+      "name": "Flat Earth",
+      "type": "event",
+      "role": "Levy's 2025 debut novel, used as a primary example of the 'Adderall novel' style."
+    },
+    {
+      "name": "Dept. of Speculation",
+      "type": "event",
+      "role": "Offill's 2014 fragmentary novel, a forebear of the trend and a reference point for Levy."
+    }
+  ],
+  "key_data_points": [
+    "A 2022 study by WordsRated found that the average length of a New York Times bestseller dropped by more than 50 pages within the last decade (🟢 relevant to understanding cultural shifts that may affect how technical documentation or reports are consumed).",
+    "UCLA professor Mitchum Huehls observes that literature has moved away from extensive setting and scene description (as in Tolstoy or Steinbeck) toward plot, action, and character, reflecting shorter attention spans (🟢 useful for adapting communication styles in cybersecurity or DevOps documentation).",
+    "Jenny Offill wrote 'Dept. of Speculation' in 'little scraps' after having a baby, evolving the fragmentary style out of necessity to capture the nature of her thoughts and time (🟢 demonstrates how constraints can drive innovation, applicable to problem-solving in programming or homelab projects).",
+    "Anika Jade Levy argues that fragmented writing feels more authentic to contemporary reality, which she experiences as episodic rather than linear (🟢 offers a perspective on structuring narratives or reports in a way that resonates with modern audiences).",
+    "Offill predicts a potential swing back toward 'big, baggy monster' novels, citing writers influenced by Thomas Bernhard who use sentences that go on for pages (🟢 indicates that trends are cyclical, so long-form content may regain popularity)."
+  ],
+  "methodology_steps": [],
+  "conclusions": [
+    "The trend toward shorter, fragmentary novels is driven by both shrinking attention spans and deliberate artistic choice, with authors like Levy and Offill using the style to mirror digital-age reality. This suggests that for technical writing or presentations, concise, episodic formats may be more engaging.",
+    "Despite the current popularity of brevity, Offill believes the pendulum may swing back toward longer works, implying that content creators should remain flexible and not abandon depth entirely.",
+    "The article highlights that literary trends are influenced by technology and societal changes, which is relevant for understanding how to communicate complex ideas (e.g., in cybersecurity or programming) effectively in an era of information overload."
+  ],
+  "personal_relevance_summary": "As a student and programmer, this article offers insights into how attention spans are shaping content consumption, which can inform how you structure documentation, tutorials, or even code comments. The fragmentary style mirrors the modular, concise approach often used in technical writing and agile development. For red teaming, understanding that audiences (including clients or peers) may prefer bite-sized, impactful information can help you craft more effective reports or briefings. The discussion of cyclical trends also reminds you to balance brevity with depth when needed.",
+  "extra_advice": "Consider applying the 'Adderall novel' concept to your own work: when writing technical reports or study notes, use short, punchy sections with clear headings and bullet points to maintain reader engagement. For homelab documentation, adopt an episodic style—each configuration step as a self-contained fragment—to make it easier to digest and reuse.",
+  "source_url": "https://www.latimes.com/entertainment-arts/books/story/2026-04-28/short-novels-digital-age-literary-trends"
+}

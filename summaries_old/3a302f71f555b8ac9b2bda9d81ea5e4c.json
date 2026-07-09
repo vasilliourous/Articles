@@ -1,0 +1,59 @@
+{
+  "article_title": "I Changed How I Access My Home Lab and This Fixed Everything",
+  "core_thesis": "Centralizing home lab remote access through Apache Guacamole—a clientless, browser-based gateway that supports SSH, RDP, and VNC—dramatically simplifies workflow, reduces attack surface, and enforces consistent security controls (like MFA) compared to juggling multiple direct access methods (SSH, VPN, exposed dashboards).",
+  "detailed_summary": "The article describes the author's transition from a fragmented home lab access setup (multiple SSH sessions, VPN, reverse proxies, exposed dashboards) to a centralized model using Apache Guacamole deployed via Docker Compose. Guacamole acts as a clientless bastion host, allowing all remote connections (SSH, RDP, VNC) through a single web interface. The author provides a step-by-step installation guide: creating directories, generating the PostgreSQL init script, setting environment variables, and deploying three containers (guacd, postgres, guacamole). Configuration includes enabling TOTP-based multi-factor authentication via an environment variable. The architecture places Guacamole in an intermediary network with strict firewall rules, funneling all access through one point. The author contrasts the old workflow (VPN → terminal → SSH jumps → multiple tabs/credentials) with the new one (VPN → single web UI → instant connection), highlighting reduced friction and improved security through minimized attack surface, centralized logging, and enforced MFA. Comments mention alternatives like Kasm (feature-rich) and WireGuard (lightweight VPN), but the article advocates for Guacamole's simplicity and security benefits.",
+  "entities": [
+    {
+      "name": "Apache Guacamole",
+      "type": "software",
+      "role": "Clientless remote access gateway supporting SSH, RDP, VNC via web browser"
+    },
+    {
+      "name": "Brandon Lee",
+      "type": "person",
+      "role": "Author and senior writer at Virtualization Howto, 7-time VMware vExpert"
+    },
+    {
+      "name": "Docker Compose",
+      "type": "technology",
+      "role": "Container orchestration tool used to deploy Guacamole stack"
+    },
+    {
+      "name": "PostgreSQL",
+      "type": "technology",
+      "role": "Database backend for Guacamole connection configurations"
+    },
+    {
+      "name": "TOTP",
+      "type": "technology",
+      "role": "Time-based one-time password for multi-factor authentication"
+    }
+  ],
+  "key_data_points": [
+    "Guacamole provides a single web interface for SSH, RDP, and VNC connections without installing client software on the accessing device (🟢 relevant to your Red Teaming: simplifies managing multiple jump boxes and reduces tool overhead during engagements).",
+    "The Docker Compose deployment uses three containers: guacd (backend), postgres (database), and guacamole (UI), with TOTP MFA enabled via the environment variable TOTP_ENABLED: 'true' (🟢 relevant to your DevOps/homelab: clear, reproducible infrastructure-as-code pattern).",
+    "The initdb.sql script must be generated before first container startup using 'docker run --rm guacamole/guacamole:latest /opt/guacamole/bin/initdb.sh --postgresql > ./init/initdb.sql' because PostgreSQL only processes files in /docker-entrypoint-initdb.d/ during initial volume creation (🟢 relevant to your programming: illustrates a common Docker pitfall and its solution).",
+    "The author's architecture places Guacamole in an intermediary network with firewall rules allowing only the Guacamole host to reach internal servers, Docker Swarm, and Kubernetes clusters, funneling all access through a single bastion (🟢 relevant to your Red Teaming: this is a classic jump box design that limits lateral movement if compromised).",
+    "The old workflow required multiple steps: connect VPN → open terminal → SSH into one node → possibly jump to another → open browser tabs for dashboards → manage multiple credentials. The new workflow: connect VPN → open single web interface → choose system → connect instantly (🟢 relevant to your productivity: reduces cognitive load and time wasted on access logistics)."
+  ],
+  "methodology_steps": [
+    "Create directories for Guacamole data: mkdir -p ${HOME}/homelabservices/guacamole/init && mkdir -p ${HOME}/homelabservices/guacamole/postgres-data && cd ${HOME}/homelabservices/guacamole",
+    "Generate the PostgreSQL initialization script before first container startup: docker run --rm guacamole/guacamole:latest /opt/guacamole/bin/initdb.sh --postgresql > ./init/initdb.sql",
+    "Create a .env file with database credentials: cat > .env <<EOF POSTGRES_USERNAME=guacamole POSTGRES_PASSWORD=SuperSecurePassword123 EOF",
+    "Write a docker-compose.yml defining three services: guacd (guacamole/guacd:latest), postgres (postgres:latest with environment variables and volume mounts for data and init script), and guacamole (guacamole/guacamole:latest with depends_on, environment variables including TOTP_ENABLED: 'true', port mapping 8090:8080, and volume mounts for drive and recordings).",
+    "Start the stack: docker compose up -d",
+    "Verify services are running: docker compose ps",
+    "Access the Guacamole web UI at http://your-server-ip:8090/guacamole and log in with default credentials guacadmin/guacadmin",
+    "Add connections via Settings → Connections → New Connection, specifying name, protocol (SSH/RDP/VNC), hostname, port, and authentication credentials",
+    "Enable MFA by adding TOTP_ENABLED: 'true' to the guacamole service environment in docker-compose.yml, then restart the stack with docker compose down && docker compose up -d"
+  ],
+  "conclusions": [
+    "Centralizing remote access with Guacamole simplifies the home lab workflow by replacing multiple SSH sessions, VPN hops, and dashboard tabs with a single web interface, reducing friction and saving time (supports user's productivity needs as a student and professional).",
+    "Security is improved through minimized attack surface (only one web endpoint exposed), enforced MFA, centralized logging, and network segmentation where only the Guacamole host can reach internal resources—this aligns with zero-trust principles and is directly applicable to Red Teaming bastion host designs.",
+    "The Docker Compose deployment is reproducible and easy to maintain, making it suitable for homelab environments where infrastructure-as-code is valued (relevant to DevOps/homelab interests).",
+    "Comments suggest alternatives like Kasm (more features) and WireGuard (simpler VPN), but Guacamole strikes a balance between simplicity and security for users who want a browser-based, clientless solution."
+  ],
+  "personal_relevance_summary": "This article directly addresses your need for streamlined, secure home lab access—a common pain point when managing multiple VMs, clusters, and services. As a Red Teamer, the centralized bastion architecture (Guacamole as a jump box) is a pattern you can replicate in engagements to control lateral movement and audit access. The Docker Compose setup provides a clean, repeatable deployment that fits your DevOps/homelab interests, and the MFA integration adds a critical security layer. The productivity gains (single UI, fewer steps) also benefit your student workflow by reducing context switching. You can adapt this to manage your own lab or as a template for client environments.",
+  "extra_advice": "Consider extending Guacamole with session recording (already mounted in the compose) for audit trails—useful for both homelab accountability and Red Team operation logs. Also, evaluate Kasm as an alternative if you need browser isolation or containerized desktop environments; it builds on Guacamole's protocol support but adds workspace management.",
+  "source_url": "https://www.virtualizationhowto.com/2026/03/i-changed-how-i-access-my-home-lab-and-this-fixed-everything/"
+}

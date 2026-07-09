@@ -1,0 +1,95 @@
+{
+  "article_title": "Bitwarden CLI Compromised in Ongoing Checkmarx Supply Chain Campaign",
+  "core_thesis": "The Bitwarden CLI package @bitwarden/cli@2026.4.0 was compromised via a compromised GitHub Action in Bitwarden's CI/CD pipeline, part of a broader Checkmarx supply chain campaign. The malicious code steals secrets (GitHub/npm tokens, .ssh, .env, shell history, cloud secrets) and exfiltrates them to a fake Checkmarx domain and GitHub repositories, with a self-propagating worm capability. The attack highlights the danger of supply chain attacks targeting developer tools and CI/CD pipelines.",
+  "detailed_summary": "On April 22, 2026, between 5:57 PM and 7:30 PM ET, a malicious version of Bitwarden CLI (2026.4.0) was distributed via npm. The compromise originated from a compromised GitHub Action in Bitwarden's CI/CD pipeline, consistent with the Checkmarx supply chain campaign. The malicious code, located in 'bw1.js', executes via a preinstall hook. It steals credentials from multiple sources: local files (.ssh, .env, shell history), GitHub Actions environments, CI/CD secrets, and AI coding tool configurations (Claude, Kiro, Cursor, Codex CLI, Aider). Data is encrypted with AES-256-GCM and exfiltrated to 'audit.checkmarx[.]cx' (a domain impersonating Checkmarx) and, as a fallback, to a GitHub repository under the victim's account using a Dune-themed naming scheme. If GitHub tokens are found, the malware injects malicious GitHub Actions workflows into repositories to extract more secrets. The malware also quits if the system locale is Russian. The threat actor is suspected to be TeamPCP, whose X account was suspended. The attack is linked to the 'Shai-Hulud' campaign, with the string 'Shai-Hulud: The Third Coming' found in the package. Bitwarden confirmed the incident, stating no end-user vault data was accessed, and released version 2026.4.1 (a re-release of 2026.3.0). Approximately 334 downloads of the malicious version occurred. Affected users are advised to uninstall the malicious package, rotate secrets, and review GitHub activity.",
+  "entities": [
+    {
+      "name": "Bitwarden",
+      "type": "organization",
+      "role": "Password manager company whose CLI package was compromised."
+    },
+    {
+      "name": "Checkmarx",
+      "type": "organization",
+      "role": "Application security company; the campaign impersonates Checkmarx and exploits its supply chain."
+    },
+    {
+      "name": "JFrog",
+      "type": "organization",
+      "role": "Security company that identified the malicious package and described its behavior."
+    },
+    {
+      "name": "Socket",
+      "type": "organization",
+      "role": "Security company that analyzed the attack and linked it to the Checkmarx campaign."
+    },
+    {
+      "name": "StepSecurity",
+      "type": "organization",
+      "role": "Security company that warned about the broader supply chain compromise risk."
+    },
+    {
+      "name": "OX Security",
+      "type": "organization",
+      "role": "Security company that detailed the attack chain and identified the 'Shai-Hulud' reference."
+    },
+    {
+      "name": "Endor Labs",
+      "type": "organization",
+      "role": "Security company that described the payload as a multi-cloud credential harvester and self-propagating worm."
+    },
+    {
+      "name": "GitGuardian",
+      "type": "organization",
+      "role": "Security company that emphasized the need for secret rotation."
+    },
+    {
+      "name": "TeamPCP",
+      "type": "organization",
+      "role": "Suspected threat actor behind the attack; X account suspended."
+    },
+    {
+      "name": "Adnan Khan",
+      "type": "person",
+      "role": "Security researcher who noted this is the first known compromise of a package using npm trusted publishing."
+    },
+    {
+      "name": "Moshe Siman Tov Bustan",
+      "type": "person",
+      "role": "Security Research Team Lead at OX Security, commented on the public exfiltration risk."
+    },
+    {
+      "name": "Kiran Raj",
+      "type": "person",
+      "role": "Endor Labs researcher who detailed the payload capabilities."
+    }
+  ],
+  "key_data_points": [
+    "The malicious package @bitwarden/cli@2026.4.0 was available on npm for about 1.5 hours (5:57 PM to 7:30 PM ET on April 22, 2026) and had 334 downloads. (🟢 Relevant to Red Teaming: This shows the speed of supply chain attacks; a short window can still cause significant damage.)",
+    "The malware steals GitHub/npm tokens, .ssh, .env, shell history, GitHub Actions secrets, and cloud secrets, then exfiltrates them to audit.checkmarx[.]cx and GitHub repositories. (🟢 Relevant to Red Teaming: This is a credential stealer that can be used to pivot into CI/CD pipelines and cloud environments.)",
+    "The malware uses AES-256-GCM encryption for exfiltration, making detection harder. (🟢 Relevant to Red Teaming: Understanding encryption in exfiltration helps in building detection rules.)",
+    "If GitHub tokens are found, the malware injects malicious GitHub Actions workflows into repositories to extract CI/CD secrets. (🟢 Relevant to Red Teaming: This is a self-propagating technique that can compromise entire organizations.)",
+    "The malware quits execution if the system locale is Russia, indicating possible geopolitical targeting or false flag. (🟢 Relevant to Red Teaming: This evasion technique can be used to avoid attribution.)",
+    "The attack is linked to the 'Shai-Hulud' campaign, with the string 'Shai-Hulud: The Third Coming' found in the package. (🟢 Relevant to Red Teaming: Tracking campaign naming helps in threat intelligence.)",
+    "Bitwarden confirmed no end-user vault data was accessed, but developer secrets and CI/CD credentials were at risk. (🟢 Relevant to Red Teaming: This highlights that even if user data is safe, developer environments are a high-value target.)",
+    "The compromised GitHub Action was 'checkmarx/ast-github-action', which was part of the Checkmarx supply chain incident. (🟢 Relevant to Red Teaming: This shows how third-party actions can be a vector for supply chain attacks.)"
+  ],
+  "methodology_steps": [
+    "If you installed @bitwarden/cli@2026.4.0, immediately uninstall it via npm: 'npm uninstall -g @bitwarden/cli'.",
+    "Clear the npm cache: 'npm cache clean --force'.",
+    "Temporarily disable npm install scripts during cleanup as a precaution: 'npm config set ignore-scripts true'.",
+    "Review for indicators of compromise: check for unexpected files (e.g., bw1.js), unusual outbound connections to audit.checkmarx[.]cx, or unauthorized GitHub commits.",
+    "Rotate any secrets that may have been exposed: GitHub tokens, npm tokens, SSH keys, cloud provider keys, environment variables, and AI coding tool tokens.",
+    "Review GitHub activity, CI workflows, and related credentials for unauthorized access or changes. Look for new workflows or commits you didn't make.",
+    "Install the safe version: 'npm install -g @bitwarden/cli@2026.4.1' (which is a re-release of 2026.3.0)."
+  ],
+  "conclusions": [
+    "The Bitwarden CLI compromise is a stark reminder that supply chain attacks targeting developer tools are increasingly sophisticated and can lead to widespread credential theft. The use of a compromised GitHub Action in the CI/CD pipeline allowed the attacker to publish a malicious npm package, affecting 334 downloads. (🟢 Relevant to Red Teaming: This attack vector can be used to simulate real-world supply chain compromises in red team exercises.)",
+    "The malware's ability to self-propagate via GitHub token theft and workflow injection makes it particularly dangerous, as a single compromised developer can lead to compromise of multiple repositories and CI/CD pipelines. (🟢 Relevant to Red Teaming: This technique can be weaponized for lateral movement in red team operations.)",
+    "The attack underscores the importance of rotating secrets regularly and monitoring for unauthorized GitHub activity. Bitwarden's response (deprecating the malicious version, releasing a fix, and advising secret rotation) is a model for incident response. (🟢 Relevant to Red Teaming: Understanding proper incident response helps in planning realistic attack scenarios.)",
+    "The involvement of the 'Shai-Hulud' campaign and the impersonation of Checkmarx indicate a persistent threat actor (TeamPCP) with a focus on developer ecosystems. (🟢 Relevant to Red Teaming: This threat intelligence can be used to tailor red team scenarios against similar targets.)"
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your Red Teaming and programming interests. It details a real-world supply chain attack that compromised a widely used developer tool (Bitwarden CLI) via a compromised CI/CD pipeline. The attack techniques—credential theft, encrypted exfiltration, self-propagation via GitHub token abuse, and workflow injection—are directly applicable to offensive security operations. As a programmer, you can learn how to secure your own npm packages and CI/CD pipelines against such attacks. The article also provides actionable steps for incident response (uninstall, rotate secrets, review GitHub activity) that you can incorporate into your security practices. Additionally, the threat intelligence on the 'Shai-Hulud' campaign and TeamPCP can inform your understanding of current threat actors.",
+  "extra_advice": "Consider setting up a honeypot environment with a fake npm package and a GitHub Action to simulate this attack. This will help you understand the attack chain hands-on and develop detection rules for your red team toolkit. Also, review your own CI/CD pipelines for use of third-party GitHub Actions and consider pinning them to specific commit hashes to prevent similar compromises.",
+  "source_url": "https://thehackernews.com/2026/04/bitwarden-cli-compromised-in-ongoing.html?m=1"
+}

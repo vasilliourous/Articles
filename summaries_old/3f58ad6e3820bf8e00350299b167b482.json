@@ -1,0 +1,71 @@
+{
+  "article_title": "Why I'm learning to code in Kate instead of VS Code",
+  "core_thesis": "The author argues that choosing Kate, a fully open-source, lightweight text editor from the KDE ecosystem, over VS Code is a deliberate pedagogical and philosophical decision. By avoiding VS Code's proprietary elements, AI integrations (Copilot), and hand-holding features, the author aims to gain a deeper understanding of programming fundamentals, develop genuine marketable skills, and maintain alignment with open-source values—even if it means a steeper learning curve.",
+  "detailed_summary": "The article explains the author's switch from VS Code to Kate for learning Rust, Python, and other languages. Key reasons include: (1) Kate is fully open-source, unlike VS Code which includes Microsoft-specific customizations; (2) Kate is more lightweight, consuming about half the resources; (3) VS Code aggressively promotes AI-assisted 'vibe coding' via Copilot, which the author believes undermines true learning and troubleshooting ability; (4) Kate's minimalism forces the author to manually install and configure language support (e.g., rust-analyzer, pylsp), leading to a deeper understanding of how editors and IDEs work. The author also values Kate's integration with the KDE Plasma desktop and Konsole terminal. The article concludes by noting that Kate is used not only for coding but also for Bash scripting and Markdown writing, reinforcing the author's commitment to hands-on learning.",
+  "entities": [
+    {
+      "name": "Kate",
+      "type": "software",
+      "role": "Advanced text editor from KDE, fully open-source, used as primary coding environment"
+    },
+    {
+      "name": "Visual Studio Code (VS Code)",
+      "type": "software",
+      "role": "Proprietary code editor by Microsoft, criticized for AI features and non-open-source components"
+    },
+    {
+      "name": "KDE Plasma",
+      "type": "software",
+      "role": "Desktop environment used by the author, with which Kate integrates seamlessly"
+    },
+    {
+      "name": "Copilot",
+      "type": "software",
+      "role": "Microsoft's AI coding assistant integrated into VS Code, which the author avoids"
+    },
+    {
+      "name": "rust-analyzer",
+      "type": "software",
+      "role": "Language server for Rust that the author manually installed in Kate"
+    },
+    {
+      "name": "pylsp",
+      "type": "software",
+      "role": "Python language server manually installed in Kate"
+    },
+    {
+      "name": "marksman",
+      "type": "software",
+      "role": "Markdown language server manually installed in Kate"
+    },
+    {
+      "name": "Jordan Gloor",
+      "type": "person",
+      "role": "Author of the article, open-source enthusiast and Linux user"
+    }
+  ],
+  "key_data_points": [
+    "Kate is fully open-source, whereas VS Code includes Microsoft-specific customizations that make it not purely open-source (🟢 relevant to your Red Teaming: using fully open-source tools avoids potential backdoors or telemetry that could compromise your environment).",
+    "Kate consumes about half the resources of VS Code on the author's device, making it more portable and suitable for lower-resource machines (🟢 relevant to your Homelab: lightweight tools are ideal for constrained environments like Raspberry Pi or old hardware).",
+    "VS Code aggressively promotes AI-assisted coding via Copilot, which the author argues leads to 'vibe coding'—producing code without understanding it, hindering skill development (🟢 relevant to your programming: avoiding over-reliance on AI helps build deep, transferable skills).",
+    "The author had to manually install language servers (rust-analyzer, pylsp, marksman) in Kate, requiring research and providing a deeper understanding of how editors and IDEs work (🟢 relevant to your programming: this hands-on approach mirrors the DIY ethos of homelabbing and DevOps).",
+    "Kate integrates with the KDE Plasma desktop and Konsole terminal, creating a cohesive ecosystem without Microsoft oversight (🟢 relevant to your Homelab: ecosystem consistency reduces friction and improves workflow)."
+  ],
+  "methodology_steps": [
+    "Install Kate on a Linux system (preferably with KDE Plasma for best integration).",
+    "For Rust development: install the rust-analyzer language server (e.g., via your package manager or rustup).",
+    "For Python development: install pylsp (e.g., via pip: pip install python-lsp-server).",
+    "For Markdown editing: install marksman (e.g., via your package manager or download from GitHub).",
+    "Configure Kate to use these language servers via Settings > Configure Kate > Plugins > LSP Client, then add each server's command.",
+    "Use Kate's built-in terminal (Konsole integration) for compiling and running code without leaving the editor.",
+    "Optionally, customize Kate's theme to match your KDE Plasma theme for a unified look."
+  ],
+  "conclusions": [
+    "Choosing a minimal, open-source editor like Kate over a feature-rich IDE like VS Code can lead to a deeper understanding of programming fundamentals, as it forces manual configuration and research. This aligns with the user's ambition to build genuine skills rather than relying on AI crutches.",
+    "Avoiding AI-assisted coding (vibe coding) is a deliberate choice to maintain troubleshooting ability and ownership of one's code. For a Red Teamer, understanding every layer of the toolchain is critical for identifying and exploiting vulnerabilities.",
+    "Kate's lightweight nature and open-source purity make it an excellent choice for homelab environments where resources are limited and transparency is valued. The integration with KDE Plasma further streamlines the workflow."
+  ],
+  "personal_relevance_summary": "This article directly supports your programming and homelab interests by advocating for a lightweight, open-source editor that forces deeper learning. As a programmer, you can adopt Kate to avoid the bloat and AI distractions of VS Code, gaining a more intimate understanding of your toolchain—valuable for both development and Red Teaming, where knowing the internals of your tools can reveal attack surfaces. The manual configuration of language servers mirrors the DIY spirit of homelabbing, and the emphasis on open-source aligns with security-conscious practices. Additionally, the author's rejection of 'vibe coding' resonates with your ambition to build real, marketable skills rather than relying on AI.",
+  "extra_advice": "Consider setting up Kate in your homelab as a lightweight coding environment for scripting and automation tasks. Pair it with a terminal multiplexer like tmux to manage multiple sessions. For Red Teaming, explore Kate's plugin system to write custom LSP clients or syntax highlighters for obscure languages used in exploit development.",
+  "source_url": "https://www.howtogeek.com/why-im-learning-to-code-in-kate-instead-of-vs-code/"
+}

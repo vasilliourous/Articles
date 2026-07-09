@@ -1,0 +1,56 @@
+{
+  "article_title": "I used Jeff Bezos’ 'Day 1' rule to fix my ChatGPT workflow — and it actually killed my procrastination",
+  "core_thesis": "The article argues that applying Jeff Bezos' 'Day 1' mindset—acting with 70% of the information, treating decisions as reversible, and prioritizing momentum over perfection—can break procrastination in AI-assisted workflows. The author demonstrates how this principle transforms overthinking and excessive planning into immediate action, using specific prompts to force rapid iteration and reduce the fear of starting.",
+  "detailed_summary": "The author, Amanda Caswell, describes how she fell into a 'Day 2' trap of over-preparing—researching excessively, saving too many prompts, and optimizing her AI setup instead of actually producing work. She adopted Bezos' 'Day 1' philosophy, which emphasizes flexibility, experimentation, and acting with incomplete information. Key tactics included the '70% information rule' (start with 70% of the data and fill gaps as you go), treating most AI prompts as 'two-way doors' (easily reversible, so low risk), and using specific prompts to force action. For example, she replaced hour-long research sessions with messy brain dumps into NotebookLM, then iterated. She also used prompts like 'I have 30 minutes... what is the highest-impact thing I can finish?' and 'Shrink this project into a 15-minute Day 1 version.' The result was reduced procrastination, faster starts, and better momentum. The article concludes that motion beats rumination, and that AI can help maintain focus when used with a bias toward action.",
+  "entities": [
+    {
+      "name": "Jeff Bezos",
+      "type": "person",
+      "role": "Founder of Amazon; originator of the 'Day 1' philosophy and the 70% information rule applied in the article."
+    },
+    {
+      "name": "Amanda Caswell",
+      "type": "person",
+      "role": "Author and AI editor at Tom's Guide; she tested and wrote about the Day 1 rule in her ChatGPT workflow."
+    },
+    {
+      "name": "ChatGPT",
+      "type": "organization",
+      "role": "AI tool used by the author to implement the Day 1 rule and overcome procrastination."
+    },
+    {
+      "name": "NotebookLM",
+      "type": "organization",
+      "role": "AI research tool mentioned as a source of distraction (deep research holes) and later used for messy brain dumps."
+    },
+    {
+      "name": "Gemini Deep Research",
+      "type": "organization",
+      "role": "AI research tool that the author previously used for lengthy research before adopting the Day 1 approach."
+    }
+  ],
+  "key_data_points": [
+    "The author identified that her AI workflow had slipped into 'Day 2'—characterized by too many tabs, saved prompts, and excessive optimization that delayed actual work. (🟢 Relevant to productivity: recognizing when preparation becomes procrastination is key for students and professionals.)",
+    "Bezos' '70% information rule' states that most decisions should be made with about 70% of the desired information; waiting for 90% leads to slowness. The author applied this by starting with messy brain dumps instead of exhaustive research. (🟢 Actionable for any task: reduces the barrier to starting.)",
+    "Amazon categorizes decisions into Type 1 (irreversible, one-way doors) and Type 2 (reversible, two-way doors). The author realized most AI prompts are two-way doors—bad results can be regenerated or edited—so there is no risk in trying. (🟢 Encourages experimentation; useful for Red Teaming where quick iteration on exploits is common.)",
+    "The author used three specific prompts to implement Day 1 thinking: (1) 'I have 30 minutes... what is the highest-impact thing I can finish?' (2) 'I have 70% of the info... help me highlight the 30% I still need.' (3) 'Shrink this into a Day 1 version I can complete in 15 minutes.' (🟢 Directly usable templates for students and programmers to break down overwhelming tasks.)",
+    "The author reports that adopting the Day 1 rule killed her procrastination by forcing immediate action and reducing the fear of the blank page. She notes that motion beats rumination every time. (🟢 Psychological insight: momentum is a powerful antidote to perfectionism.)"
+  ],
+  "methodology_steps": [
+    "Step 1: Recognize when you are in 'Day 2' mode—overplanning, over-researching, or optimizing instead of doing. Identify specific behaviors like excessive tab-saving or prompt curation.",
+    "Step 2: Adopt the 70% information rule: start a task with only 70% of the information you think you need. For writing, do a messy brain dump into a tool like NotebookLM; for coding, write a rough prototype; for studying, begin with a quick outline.",
+    "Step 3: Treat most AI prompts as two-way doors. Before prompting, remind yourself that a bad output can be regenerated or edited—there is no permanent cost. This lowers the stakes and encourages experimentation.",
+    "Step 4: Use time-boxed, action-oriented prompts. Example: 'I have 30 minutes. Here is a rough list of what I need to do. What is the smartest, highest-impact thing I can finish right now?'",
+    "Step 5: When stuck on research, use: 'I have 70% of the info for [Task]. Here are my messy notes. Help me highlight the 30% I still need to find.' This shifts focus from gathering to identifying gaps.",
+    "Step 6: For overwhelming projects, use: 'This project feels overwhelming, and I'm procrastinating. Shrink this down into a 'Day 1' version—a version I can complete in 15 minutes to get the momentum started.'",
+    "Step 7: Iterate quickly. After the first small action, review and adjust. The goal is to build momentum, not perfection."
+  ],
+  "conclusions": [
+    "The Day 1 rule effectively combats procrastination by replacing perfectionism with a bias toward action. The author's experience shows that starting with incomplete information and iterating leads to faster progress than waiting for the 'perfect' plan. (Supports the user's need for productivity hacks as a student.)",
+    "AI tools like ChatGPT can amplify procrastination if used for excessive planning, but they can also break it when guided by principles like the 70% rule and two-way door thinking. The specific prompts provided are practical templates for immediate use. (Relevant to the user's interest in AI and productivity.)",
+    "The psychological insight that 'motion beats rumination' is a key takeaway. For programmers and Red Teamers, this translates to prototyping exploits or scripts quickly rather than over-analyzing. (🟢 Directly applicable to the user's technical work.)"
+  ],
+  "personal_relevance_summary": "This article directly addresses the user's need for productivity techniques as a student and programmer. The Day 1 rule—acting with 70% information and treating decisions as reversible—can be applied to coding projects, study sessions, and even Red Teaming tasks where rapid iteration is crucial. The provided prompts are ready-to-use templates that can be adapted for breaking down large assignments or overcoming the fear of starting a complex exploit. The psychological framing (motion beats rumination) is especially valuable for ambitious individuals who tend to overplan. By adopting this mindset, the user can reduce procrastination and increase output across all domains.",
+  "extra_advice": "Consider creating a custom GPT or a set of saved prompts that embody the Day 1 rule for your most common tasks (e.g., 'Day 1 code prototype' or 'Day 1 research gap finder'). This automates the mindset shift and makes it frictionless to start. For Red Teaming, apply the 70% rule to reconnaissance: begin with a quick scan or a simple exploit attempt rather than waiting for full intel—many vulnerabilities are found by just trying something.",
+  "source_url": "https://www.tomsguide.com/ai/i-used-jeff-bezos-day-1-rule-to-fix-my-chatgpt-workflow-and-it-actually-killed-my-procrastination"
+}

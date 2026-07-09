@@ -15,6 +15,8 @@ summaries/
 clean_texts/
 failed/
 
+
+
 # OS files
 .DS_Store
 Thumbs.db

@@ -1,0 +1,71 @@
+{
+  "article_title": "I thought my Proxmox server was slow until I changed this setting",
+  "core_thesis": "Changing the default display setting in Proxmox VMs from the default (likely 'Default' or 'VirtIO-GPU') to 'SPICE' significantly improves GUI responsiveness, fixes high-resolution display bugs, and eliminates cursor lag, making virtual machines feel snappier for everyday use. The article also notes that for Windows VMs, RDP is a better choice, and for gaming, dedicated streaming solutions like Parsec or Sunshine/Moonlight are superior.",
+  "detailed_summary": "The author describes experiencing persistent sluggishness in Proxmox VMs, including cursor lag and slow application launches, despite allocating sufficient resources, enabling QEMU guest tools, and even passing through a GPU. The issue was resolved by changing the VM's Display setting from the default to 'SPICE'. This change made the cursor responsive and app switching seamless. Additionally, SPICE fixed a bug where high-resolution displays (above 1440p) on Linux VMs caused crashes or black screens after login. The author notes that SPICE can be accessed via the Proxmox web UI's Console tab (which downloads a .vv file for use with Virt-viewer) or directly via the left-side Console tab for quick access without extra client configuration. For Windows VMs, the author prefers RDP for its performance and ease of use, and for gaming VMs, recommends Parsec (simple but with paywalled features and reliance on company servers) or Sunshine + Moonlight (more customizable, no external servers). The article concludes with a reminder that SPICE and RDP are not suitable for low-latency gaming, where dedicated streaming tools are necessary.",
+  "entities": [
+    {
+      "name": "Ayush Pande",
+      "type": "person",
+      "role": "Author of the article, PC hardware and gaming writer"
+    },
+    {
+      "name": "Proxmox",
+      "type": "organization",
+      "role": "Open-source virtualization platform based on Debian Linux"
+    },
+    {
+      "name": "SPICE",
+      "type": "technology",
+      "role": "Display protocol that improves VM GUI responsiveness and fixes high-resolution bugs"
+    },
+    {
+      "name": "QEMU guest tools",
+      "type": "technology",
+      "role": "Drivers and tools installed inside VMs to improve performance and integration"
+    },
+    {
+      "name": "RDP",
+      "type": "technology",
+      "role": "Remote Desktop Protocol used for Windows VMs, offering good performance for everyday tasks"
+    },
+    {
+      "name": "Parsec",
+      "type": "technology",
+      "role": "Remote game-streaming service with low latency, but paywalled features and external authentication"
+    },
+    {
+      "name": "Sunshine + Moonlight",
+      "type": "technology",
+      "role": "Open-source remote game-streaming combination, more customizable and no external servers"
+    },
+    {
+      "name": "Virt-viewer",
+      "type": "technology",
+      "role": "Remote access client for SPICE .vv files"
+    }
+  ],
+  "key_data_points": [
+    "The default Display setting in Proxmox VMs causes cursor lag and sluggish GUI responsiveness, even with ample resources and GPU passthrough (🟢 relevant to your homelab: a simple fix to improve VM usability for development or testing).",
+    "Switching to SPICE display instantly made VMs snappier, eliminating cursor trails and improving app switching (🟢 actionable tip: change this setting in VM options to enhance performance without hardware upgrades).",
+    "SPICE also fixed a bug where Linux VMs with high-resolution displays (above 1440p) would crash or show a black screen after login (🟢 useful for Red Teaming: stable high-res VMs for running GUI tools or analysis environments).",
+    "SPICE can be accessed via the Proxmox web UI's Console tab (downloads .vv file for Virt-viewer) or directly via the left-side Console tab for quick access without extra client setup (🟢 practical for quick VM interaction).",
+    "For Windows VMs, RDP is recommended over SPICE for better everyday performance (🟢 relevant for Windows-based development or testing).",
+    "For gaming VMs, Parsec is simple but has paywalled features and uses company servers for authentication; Sunshine + Moonlight (or Apollo + Artemis for Android) offers a better experience without external servers (🟢 relevant for Red Teaming: consider these for low-latency remote access to GPU-accelerated VMs)."
+  ],
+  "methodology_steps": [
+    "1. Identify sluggish VM performance: cursor lag, slow app launches, even with sufficient CPU/RAM and GPU passthrough.",
+    "2. Enable QEMU guest tools inside the VM if not already done (install via VM's OS package manager).",
+    "3. In Proxmox web UI, navigate to the VM's Hardware tab, select the Display device, and change it from 'Default' to 'SPICE'.",
+    "4. Optionally, for quick GUI access without extra clients, use the Console tab on the left side of the VM's summary page (this uses SPICE directly in the browser).",
+    "5. For Windows VMs, consider using RDP instead of SPICE for better performance (enable RDP in Windows and connect via Remote Desktop client).",
+    "6. For gaming VMs, install Parsec (simple, but requires account and may have paywalled features) or set up Sunshine (host) + Moonlight (client) for low-latency streaming without external servers."
+  ],
+  "conclusions": [
+    "Changing the Proxmox VM display setting to SPICE is a simple, effective fix for GUI sluggishness and high-resolution bugs, making VMs feel native for everyday tasks. This is especially valuable for homelab users who rely on desktop environments for development or testing.",
+    "For Windows VMs, RDP outperforms SPICE and is the recommended choice for non-gaming workloads. For gaming, dedicated streaming solutions like Parsec or Sunshine/Moonlight are necessary due to lower latency.",
+    "The article underscores that Proxmox's default settings prioritize stability over performance, and users should not hesitate to tweak display settings to match their use case."
+  ],
+  "personal_relevance_summary": "This article directly addresses a common pain point in homelabbing: sluggish VM performance despite adequate resources. As a programmer and Red Teamer, you likely run multiple VMs for development, testing, or offensive security labs. The simple fix of switching to SPICE can dramatically improve GUI responsiveness, making your workflow smoother. Additionally, the advice on RDP for Windows VMs and game-streaming tools for GPU-accelerated tasks is valuable for setting up remote access to specialized environments. The article also provides a workaround for quick SPICE access without extra clients, saving time during rapid prototyping or analysis.",
+  "extra_advice": "Consider automating the display setting change via Proxmox's API or CLI (e.g., `qm set <vmid> --display spice`) for new VMs created from templates. This ensures all your lab VMs start with optimal display performance without manual intervention. For Red Teaming, a snappy GUI VM can host tools like Burp Suite, Wireshark, or custom scripts with a responsive interface, improving efficiency during engagements.",
+  "source_url": "https://www.xda-developers.com/i-thought-my-proxmox-setup-was-slow-until-i-changed-one-setting/"
+}

@@ -1,0 +1,86 @@
+{
+  "article_title": "Stop Hitting Claude Code Limits: 4 Fixes to Cut Your Bill (Without Changing Your Workflow)",
+  "core_thesis": "The article argues that high Claude Code costs are primarily caused by four user-controllable factors—cache misses, context bloat, wrong model/effort settings, and inefficient input formats—and provides concrete, copy-paste-ready fixes to reduce spending from ~$1,389/mo to ~$200/mo without altering the core workflow.",
+  "detailed_summary": "The author, Paweł Huryn, shares his experience reducing Claude Code costs from €1,184.95 to €180/mo by addressing four root causes. First, cache misses are the biggest lever: locking tools and models at session start preserves the prompt cache, achieving ~90% hit rate on 5-min TTL. Second, context bloat is mitigated by disabling 1M context (falling back to 200K), compacting early (at 50% or after each task), using /clear and /rewind, and offloading work to subagents (Haiku for mechanical, Sonnet for research, Opus for planning). Third, wrong model/effort settings: default reasoning burns ~2× tokens of medium; the article recommends per-prompt effort control (low/medium/high/xhigh/max) and routing via CLAUDE.md (Sonnet session or Opus + delegation). Fourth, wrong input formats: replacing screenshots with agent-browser (90% fewer tokens), PDFs with pdftotext, and large repos with code-review-graph (up to 49× fewer tokens). The article also provides monitoring dashboards (historical, real-time, API cache) and an upgraded subagent instruction block to prevent useless or unverified data propagation.",
+  "entities": [
+    {
+      "name": "Paweł Huryn",
+      "type": "person",
+      "role": "Author and practitioner who reduced Claude Code costs from $1,389/mo to $200/mo"
+    },
+    {
+      "name": "Thariq",
+      "type": "person",
+      "role": "Source of prompt caching rules and session management techniques"
+    },
+    {
+      "name": "Anthropic",
+      "type": "organization",
+      "role": "Developer of Claude Code; shipped bug fixes and reset subscriber limits"
+    },
+    {
+      "name": "Nimbalyst",
+      "type": "organization",
+      "role": "Visual workspace for Claude Code and Codex (sponsored)"
+    },
+    {
+      "name": "rtk-ai/rtk",
+      "type": "tool",
+      "role": "CLI proxy that compresses tool output, reducing tokens by 20-30%"
+    },
+    {
+      "name": "juliusbrussee/caveman",
+      "type": "tool",
+      "role": "Drops conversational filler from responses"
+    },
+    {
+      "name": "vercel-labs/agent-browser",
+      "type": "tool",
+      "role": "Browser automation via accessibility tree, ~90% fewer tokens than screenshot-based tools"
+    },
+    {
+      "name": "tirth8205/code-review-graph",
+      "type": "tool",
+      "role": "Knowledge graph for codebase, reduces tokens by up to 49× on daily tasks"
+    },
+    {
+      "name": "phuryn/claude-usage",
+      "type": "tool",
+      "role": "Historical usage dashboard for Pro/Max/Team"
+    },
+    {
+      "name": "Gronsten/claude-usage-monitor",
+      "type": "tool",
+      "role": "Real-time usage monitor with color thresholds"
+    }
+  ],
+  "key_data_points": [
+    "Cache read costs 0.1× input price, cache write (5-min TTL) costs 1.25×, and cache write (1-hour TTL) costs 2×; hitting a cached prefix resets TTL at no extra cost (🟢 relevant to Red Teaming: maintaining cache can reduce costs during long reconnaissance sessions).",
+    "Locking tools and model at session start prevents cache invalidation; adding/removing tools or switching models mid-session forces a full re-read (🟢 relevant to DevOps: automate session setup to avoid accidental cache busts).",
+    "Disabling 1M context (CLAUDE_CODE_DISABLE_1M_CONTEXT=1) and setting auto-compact at 80% (CLAUDE_AUTOCOMPACT_PCT_OVERRIDE=80) reduces context bloat; compacting before auto-trigger saves tokens (🟢 relevant to programming: keeps context lean for focused coding tasks).",
+    "Subagents can parallelize work: Haiku for mechanical, Sonnet for research, Opus for planning; parent context stays clean (🟢 relevant to Red Teaming: spawn subagents for parallel vulnerability scanning or log analysis).",
+    "Default reasoning effort burns ~2× tokens of medium; per-prompt effort control (low/medium/high/xhigh/max) saves significant tokens (🟢 relevant to student: use low effort for simple study questions, high for complex problem-solving).",
+    "agent-browser uses accessibility tree instead of screenshots, reducing tokens by ~90% for web scraping (🟢 relevant to Red Teaming: efficient data gathering from target websites).",
+    "code-review-graph builds a persistent code map, reducing tokens by up to 49× on daily coding tasks (🟢 relevant to programming: essential for large codebases to avoid re-reading entire repo).",
+    "The author reduced monthly cost from €1,184.95 to €180/mo (84% reduction) by applying these fixes (🟢 relevant to student: demonstrates significant savings for budget-conscious users)."
+  ],
+  "methodology_steps": [
+    "1. Lock tools and model at session start: Do not add/remove MCP servers or use /model mid-session to preserve prompt cache.",
+    "2. Disable 1M context: Set environment variables CLAUDE_CODE_DISABLE_1M_CONTEXT=1 and CLAUDE_AUTOCOMPACT_PCT_OVERRIDE=80 in your Claude Code config.",
+    "3. Compact early: Run /compact at 50% context usage or after every task; use /clear between unrelated work; use /rewind when a turn goes sideways.",
+    "4. Offload to subagents: Add a CLAUDE.md block defining subagent delegation (Haiku for mechanical, Sonnet for research, Opus for planning). Spawn subagents for bulk-mechanical or parallelizable tasks.",
+    "5. Control effort per prompt: Use /effort low for quick fixes, medium for most prompts, high for demanding reasoning, xhigh for agentic coding, max only when necessary (diminishing returns).",
+    "6. Route model in CLAUDE.md: Choose Sonnet session for cheap work or Opus session with delegation; specify delegation rules in CLAUDE.md.",
+    "7. Replace inefficient input formats: Use agent-browser (npm i -g agent-browser) for web scraping instead of screenshots; use pdftotext for PDFs instead of Read tool; use code-review-graph for large repos.",
+    "8. Monitor usage: Install phuryn/claude-usage for historical data, Gronsten/claude-usage-monitor for real-time, and check Anthropic's cache dashboard (API users) to track cache hit rate."
+  ],
+  "conclusions": [
+    "The four root causes (cache misses, context bloat, wrong model/effort, wrong input format) are entirely user-controllable, and fixing them can reduce Claude Code costs by over 80% without changing workflow. The author's personal reduction from €1,184.95 to €180/mo validates the approach.",
+    "Prompt caching is the single biggest lever: locking tools and model at session start preserves the cache, and monitoring hit rate is essential. Without visibility into cache performance, optimization is impossible.",
+    "Subagents are underused but highly effective for isolating context and parallelizing work. The upgraded subagent instructions (with strategic context and verification) prevent useless or unverified data from propagating, saving tokens and improving output quality.",
+    "Switching to token-efficient input formats (agent-browser, pdftotext, code-review-graph) yields dramatic savings—up to 90% fewer tokens for web scraping and up to 49× fewer for code reviews—making them essential for heavy users."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your Red Teaming, programming, and homelab/DevOps interests. For Red Teaming, the cache optimization and subagent techniques can be applied to long reconnaissance sessions or parallel vulnerability scanning, reducing costs while maintaining efficiency. For programming, the code-review-graph tool and context management tips directly improve coding workflows in large projects. For homelab/DevOps, the environment variable configurations and monitoring dashboards provide actionable steps to optimize Claude Code in automated pipelines. As a student, the cost-saving strategies (e.g., using lower effort for simple tasks) help stretch limited budgets, and the productivity hacks (compact early, use subagents) can be adapted to study workflows. The article also includes copy-paste templates and tool recommendations that you can immediately implement.",
+  "extra_advice": "Consider integrating the subagent delegation pattern into your own CLAUDE.md for any project involving Claude Code. For Red Teaming, create a dedicated subagent skill that uses agent-browser to scrape target websites and extract endpoints or forms, then feed that data back to the parent agent for analysis. This will keep your parent context clean and reduce token usage significantly.",
+  "source_url": "https://www.productcompass.pm/p/stop-hitting-claude-code-limits"
+}

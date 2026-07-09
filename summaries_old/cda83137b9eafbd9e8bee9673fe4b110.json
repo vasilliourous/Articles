@@ -1,0 +1,63 @@
+{
+  "article_title": "AWS Load Balancer Controller Reaches GA with Kubernetes Gateway API Support",
+  "core_thesis": "AWS has made the Kubernetes Gateway API generally available in its Load Balancer Controller, replacing annotation-based Ingress configuration with type-safe, validated Custom Resource Definitions (CRDs). This move modernizes Kubernetes networking on AWS by enabling structured, GitOps-friendly YAML for both Layer 4 (TCP/UDP/TLS) and Layer 7 (HTTP/gRPC) load balancing, while also improving role separation across platform teams, cluster operators, and application developers.",
+  "detailed_summary": "The article announces that the AWS Load Balancer Controller now supports the Kubernetes Gateway API at GA, allowing teams to manage Application Load Balancers (ALB) and Network Load Balancers (NLB) through the standard Gateway API specification. Previously, users had to embed JSON-like configuration into Kubernetes annotations, which lacked schema validation and IDE support, leading to runtime errors. The new approach introduces three AWS-specific CRDs: TargetGroupConfiguration, LoadBalancerConfiguration, and ListenerRuleConfiguration, which validate at apply time. The Gateway API splits responsibilities across three resource types: GatewayClass (infrastructure templates for platform teams), Gateway (listeners, TLS, subnet placement for cluster operators), and HTTPRoute/TCPRoute (routing rules for app developers). This maps cleanly to RBAC boundaries, enabling cross-namespace routing without granting cluster-admin to developers. The controller also integrates with AWS Certificate Manager for automatic TLS certificate discovery and rotation. The Gateway API is not AWS-specific; it is supported by Google Cloud, NGINX, Envoy Gateway, Istio, and over 20 other conformant controllers, making core routing logic portable. AWS-specific CRDs remain optional and isolated. The article notes that existing Ingress resources are still supported and not deprecated, but new projects may benefit from starting with Gateway API. One limitation mentioned is the lack of external certificate support. The controller requires feature flags to be enabled and specific versions (v2.13.3+ for Layer 4, v2.14.0+ for Layer 7).",
+  "entities": [
+    {
+      "name": "AWS Load Balancer Controller",
+      "type": "organization",
+      "role": "AWS component that manages ALB and NLB; now supports Gateway API at GA"
+    },
+    {
+      "name": "Kubernetes Gateway API",
+      "type": "technology",
+      "role": "Standard Kubernetes API for configuring service networking, successor to Ingress"
+    },
+    {
+      "name": "Alexandra Huides",
+      "type": "person",
+      "role": "AWS engineer who co-authored the GA announcement"
+    },
+    {
+      "name": "Zac Nixon",
+      "type": "person",
+      "role": "AWS engineer who co-authored the GA announcement"
+    },
+    {
+      "name": "Steef-Jan Wiggers",
+      "type": "person",
+      "role": "InfoQ editor and author of the article"
+    }
+  ],
+  "key_data_points": [
+    "The AWS Load Balancer Controller now supports Kubernetes Gateway API at GA, enabling management of ALB and NLB through type-safe CRDs instead of annotation strings (🟢 relevant to your DevOps/homelab: you can now configure load balancers with validated YAML, reducing runtime errors and improving GitOps workflows).",
+    "Three new AWS-specific CRDs are introduced: TargetGroupConfiguration, LoadBalancerConfiguration, and ListenerRuleConfiguration, which validate at apply time (🟢 relevant to your programming: structured data means better IDE support and easier debugging).",
+    "Gateway API splits responsibilities across GatewayClass (platform team), Gateway (cluster operator), and Route (app developer), aligning with RBAC boundaries (🟢 relevant to your homelab: you can delegate routing to different teams without giving cluster-admin).",
+    "Automatic TLS certificate discovery from AWS Certificate Manager is supported for Gateway API listeners, including automatic rotation (🟢 relevant to your homelab: simplifies certificate management for your services).",
+    "The Gateway API is portable across 20+ conformant controllers including GKE, NGINX, Envoy Gateway, and Istio (🟢 relevant to your DevOps: core routing logic remains consistent, reducing vendor lock-in).",
+    "Existing Ingress resources are still supported and not deprecated; migration is optional (🟢 relevant to your homelab: you can adopt Gateway API gradually without breaking existing setups).",
+    "One limitation noted: no external certificate support (🟢 relevant to your homelab: if you use Let's Encrypt or other external CAs, you may need a workaround).",
+    "Minimum controller versions required: v2.13.3+ for Layer 4 support, v2.14.0+ for Layer 7 support (🟢 relevant to your homelab: ensure your EKS cluster is updated before enabling Gateway API)."
+  ],
+  "methodology_steps": [
+    "Enable Gateway API support in the AWS Load Balancer Controller by setting the appropriate feature flags during installation (see installation docs).",
+    "Install the Gateway API CRDs (GatewayClass, Gateway, HTTPRoute, etc.) on your EKS cluster.",
+    "Define a GatewayClass resource to specify the infrastructure template (e.g., which load balancer type to use).",
+    "Create a Gateway resource with listeners, TLS configuration, and subnet placement for the cluster operator role.",
+    "Application developers create HTTPRoute or TCPRoute resources that reference the Gateway, defining path-based routing, header matching, and weighted traffic splitting.",
+    "Optionally, use AWS-specific CRDs (TargetGroupConfiguration, LoadBalancerConfiguration, ListenerRuleConfiguration) for advanced settings like deregistration delay or stickiness.",
+    "Test cross-namespace routing by having a shared Gateway in one namespace and HTTPRoutes in separate namespaces.",
+    "Verify automatic TLS certificate discovery by specifying a hostname in the Gateway listener; the controller will query ACM and attach the matching certificate.",
+    "Run conformance tests to ensure your Gateway API features work as expected (the controller includes conformance test results in v3.1.0)."
+  ],
+  "conclusions": [
+    "The GA release of Gateway API support in the AWS Load Balancer Controller marks a significant step forward for Kubernetes networking on AWS, replacing fragile annotation-based configuration with structured, validated CRDs. This reduces runtime errors and improves developer experience.",
+    "The role-based separation of GatewayClass, Gateway, and Route resources aligns with organizational boundaries, making it easier to manage multi-team clusters without granting excessive permissions.",
+    "Portability across multiple Gateway API implementations means that core routing logic can be reused across different cloud providers and on-premise environments, reducing vendor lock-in.",
+    "While existing Ingress resources remain supported, new projects should consider adopting Gateway API from the start to benefit from better validation, clearer error messages, and future-proofing.",
+    "The lack of external certificate support is a notable limitation; teams relying on Let's Encrypt or other external CAs may need to supplement with additional tooling or wait for future updates."
+  ],
+  "personal_relevance_summary": "This article is directly relevant to your DevOps and homelab interests, as it provides a concrete, modern approach to configuring AWS load balancers in Kubernetes using the Gateway API. As a programmer, you'll appreciate the shift from error-prone annotation strings to type-safe, validated YAML that integrates with GitOps workflows. For your homelab, you can now set up ALB/NLB with proper role separation and automatic TLS, reducing manual overhead. The portability aspect also means you can apply similar configurations across different Kubernetes environments, which is valuable for learning and experimentation. Additionally, the article's mention of conformance tests and version requirements gives you a clear upgrade path for your EKS clusters.",
+  "extra_advice": "Consider setting up a small EKS homelab cluster and migrating one of your existing Ingress-based services to Gateway API using the AWS Load Balancer Controller. This will give you hands-on experience with the new CRDs and role separation. Also, explore the Gateway API conformance test results to understand which features are fully supported and which have limitations (e.g., ReplacePrefixMatch). If you use external certificates, look into cert-manager with ACME issuers as a workaround until AWS adds external cert support.",
+  "source_url": "https://www.infoq.com/news/2026/03/aws-gateway-api-ga/"
+}

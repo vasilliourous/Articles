@@ -1,0 +1,51 @@
+{
+  "article_title": "How to Stop Falling for the Wrong Things",
+  "core_thesis": "Our decisions are heavily influenced by irrelevant ambient feelings (like weather, mood, or physical state) through a psychological mechanism called 'affect as information,' which causes us to mistake transient feelings for genuine judgments about people, places, or opportunities. The article argues that awareness and simple corrective strategies can help mitigate these hidden biases, but the underlying filter cannot be turned off entirely.",
+  "detailed_summary": "The article opens with a striking finding from a 2026 study by Feldman, Hyman, and McGann: bad weather during a college campus tour reduces application rates by up to 10% (rain: 8%, heat: 10%, cloudy: 5%; up to 15% for students from warm climates). Crucially, the weather effect disappears at the enrollment stage, meaning the bias operates at the initial impression stage, filtering out options before they are seriously considered. The author connects this to classic psychological research: Schwarz and Clore's 1983 'affect as information' study (people reported higher life satisfaction on sunny days unless they were first asked about the weather) and Dutton and Aron's 1974 'misattribution of arousal' experiment (men on a scary bridge were more likely to call a female researcher, mistaking fear for attraction). The article argues that these biases pervade everyday decisions—job offers, dates, friendships, apartment choices—and that the feeling of 'obviousness' is a red flag that the nervous system has already voted. The author proposes three practical strategies: (1) 'Name the Weather'—explicitly identify ambient conditions (sleep, hunger, mood) before important decisions; (2) 'The Second Saturday Rule'—never let a single impression be final; revisit decisions under different conditions; (3) 'Audit the Ghosts'—periodically review past decisions to detect where the filter may have operated invisibly.",
+  "entities": [
+    {
+      "name": "Eric Solomon",
+      "type": "person",
+      "role": "Author of the article, Ph.D. in psychology, former executive at YouTube/Spotify/Instagram, CEO of The Human OS."
+    },
+    {
+      "name": "Feldman, Hyman, & McGann",
+      "type": "person",
+      "role": "Researchers of the 2026 NBER study on campus tour weather and college applications."
+    },
+    {
+      "name": "Norbert Schwarz & Gerald Clore",
+      "type": "person",
+      "role": "Psychologists who discovered the 'affect as information' mechanism in 1983."
+    },
+    {
+      "name": "Donald Dutton & Arthur Aron",
+      "type": "person",
+      "role": "Psychologists who conducted the 1974 'misattribution of arousal' experiment on the Capilano suspension bridge."
+    },
+    {
+      "name": "National Bureau of Economic Research (NBER)",
+      "type": "organization",
+      "role": "Published the 2026 working paper on weather and college choice."
+    }
+  ],
+  "key_data_points": [
+    "Bad weather on a college tour reduces applications by up to 10% (rain: 8%, heat: 10%, cloudy: 5%); for students from warm climates, a chilly tour caused a nearly 15% drop. (🟢 Relevant to student decision-making: highlights how irrelevant factors can derail important life choices.)",
+    "The weather effect disappears at the enrollment stage, indicating the bias operates at the initial impression stage, not during final deliberation. (🟢 Shows that the damage is done early, before conscious reasoning can intervene.)",
+    "Schwarz & Clore (1983): People reported higher life satisfaction on sunny days than rainy days, but the effect vanished when they were first asked about the weather. (🟢 Demonstrates that simply naming the ambient condition can neutralize its influence.)",
+    "Dutton & Aron (1974): 50% of men on a scary suspension bridge called a female researcher, vs. almost none on a low, sturdy bridge. (🟢 Classic example of misattribution of arousal; relevant to understanding how emotional states can be misattributed to unrelated stimuli.)"
+  ],
+  "methodology_steps": [
+    "Step 1: Name the 'Weather' – Before any important decision, explicitly identify your current ambient conditions: Did you sleep well? Are you hungry? Did you just have a stressful conversation? Saying it out loud weakens its influence.",
+    "Step 2: Apply the 'Second Saturday Rule' – Never let a single impression be final. Revisit the decision under different circumstances (another day, another mood, another location) to see if the feeling persists.",
+    "Step 3: Audit the 'Ghosts' – Periodically review past decisions (people you didn't call back, ideas you dismissed, schools you never visited twice) and try to identify where an irrelevant feeling may have influenced the outcome."
+  ],
+  "conclusions": [
+    "The 'affect as information' mechanism is an ancient, fast, and automatic filter that cannot be turned off, but its influence can be reduced through awareness and simple corrective strategies.",
+    "Many of our most important decisions are subtly shaped by transient feelings (weather, mood, physical state) that have nothing to do with the actual merits of the choice, leading to 'mistakes' in the decision-theory sense.",
+    "The most dangerous decisions are those that feel 'obvious'—that feeling of certainty is often a sign that the nervous system has already voted, bypassing conscious reasoning."
+  ],
+  "personal_relevance_summary": "As a student, this article is directly applicable to your academic and career decisions—from choosing a college to selecting courses or study environments. The 'Second Saturday Rule' can help you avoid snap judgments about professors, study groups, or even research topics. The 'Name the Weather' technique is a practical metacognitive tool you can use before exams or important meetings to separate genuine insight from transient mood. The article also reinforces a broader lesson for your cybersecurity and programming work: be aware of cognitive biases when evaluating tools, vulnerabilities, or architectures—a 'gut feeling' about a solution might be influenced by irrelevant factors like time pressure or fatigue.",
+  "extra_advice": "Consider implementing a 'decision journal' where you record the ambient conditions (sleep, mood, weather, hunger) before making any significant decision—whether it's choosing a homelab setup, selecting a vulnerability to research, or deciding on a study technique. Over time, you'll build a personal dataset to identify your own hidden biases, which is a form of self-hacking that aligns with your Red Teaming mindset of finding and exploiting weaknesses—in this case, your own cognitive vulnerabilities.",
+  "source_url": "https://www.psychologytoday.com/us/blog/story-over-spreadsheet/202604/how-to-stop-falling-for-the-wrong-things"
+}

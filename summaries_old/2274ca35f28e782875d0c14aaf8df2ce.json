@@ -1,0 +1,62 @@
+{
+  "article_title": "I use OpenCode over Claude Code, and it's every bit as good",
+  "core_thesis": "The article argues that while Claude Code is a powerful AI coding tool, its main advantage is the underlying Claude model, not the tool itself. OpenCode, a free and open-source alternative, offers a similar terminal-based interface but with native support for over 75 LLM providers (including GPT, Gemini, and local models), making it more flexible and often just as capable for coding tasks.",
+  "detailed_summary": "The author, a tech journalist and computer science student, compares Claude Code and OpenCode for AI-assisted coding. She acknowledges Claude Code's excellence but highlights its limitation: it only supports Anthropic's Claude models. OpenCode, by contrast, is a bring-your-own-model tool that integrates with over 75 providers via the AI SDK and Models.dev, including ChatGPT Plus, GitHub Copilot, and local LLMs through Ollama. It also supports existing subscriptions and stores API keys locally via a /connect command. OpenCode replicates key Claude Code features like Plan mode (read-only analysis) and Build mode, MCP server integration, and reusable Skills (via SKILL.md files). It can even read existing CLAUDE.md files for migration. The author concludes that Claude's intelligence is the real value, and OpenCode provides a more flexible shell without locking users into one model. However, reader comments point out that Claude Code can also be configured to use non-Claude models via environment variables (e.g., ANTHROPIC_BASE_URL) with compatible servers like Ollama, partially undermining the article's claim.",
+  "entities": [
+    {
+      "name": "OpenCode",
+      "type": "software",
+      "role": "Free, open-source AI coding tool that supports multiple LLM providers"
+    },
+    {
+      "name": "Claude Code",
+      "type": "software",
+      "role": "Anthropic's terminal-based AI coding assistant limited to Claude models"
+    },
+    {
+      "name": "Anthropic",
+      "type": "organization",
+      "role": "AI safety company that created Claude and Claude Code"
+    },
+    {
+      "name": "Mahnoor Faisal",
+      "type": "person",
+      "role": "Author, tech journalist, and computer science student"
+    },
+    {
+      "name": "Models.dev",
+      "type": "service",
+      "role": "Provider aggregator used by OpenCode to support 75+ LLM providers"
+    },
+    {
+      "name": "GPT-5.5",
+      "type": "software",
+      "role": "OpenAI model that scored 82.7% on Terminal-Bench 2.0, outperforming Claude Opus 4.7 on terminal workflows"
+    }
+  ],
+  "key_data_points": [
+    "OpenCode supports over 75 LLM providers natively, including GPT, Gemini, and local models via Ollama, while Claude Code is limited to Anthropic's Claude models (🟢 relevant to your Red Teaming: ability to switch models for different tasks like vulnerability analysis or scripting).",
+    "GPT-5.5 scored 82.7% on Terminal-Bench 2.0 vs Claude Opus 4.7's 69.4%, showing model-specific strengths (🟢 relevant to your programming: choose the best model for terminal-heavy workflows).",
+    "OpenCode can use existing subscriptions like ChatGPT Plus, GitHub Copilot, and GitLab Duo, reducing API costs (🟢 relevant to your student budget: leverage subscriptions you may already have).",
+    "OpenCode replicates Claude Code's Plan mode (read-only analysis) and Build mode, MCP server support, and Skills via SKILL.md files (🟢 relevant to your programming: structured planning before code changes).",
+    "OpenCode is free and open-source, and can natively read existing CLAUDE.md files for migration (🟢 relevant to your homelab/devops: no vendor lock-in, easy to self-host or modify).",
+    "Reader comments note that Claude Code can be configured to use non-Claude models via ANTHROPIC_BASE_URL pointing to Ollama or LM Studio, though it's not a first-party feature (🟢 relevant to your Red Teaming: workaround for using local models with Claude Code's interface)."
+  ],
+  "methodology_steps": [
+    "Install OpenCode (free, open-source) from its official repository.",
+    "Run the /connect command to configure API keys; keys are stored locally.",
+    "Choose a model provider from over 75 options (e.g., GPT-5.5, Gemini, local Ollama models).",
+    "Switch to Plan mode for read-only analysis of your project structure and dependencies before making changes.",
+    "Switch to Build mode to execute terminal commands, edit files, and iterate on errors.",
+    "Optionally create reusable Skills by defining a SKILL.md file with specific instructions for the agent.",
+    "If migrating from Claude Code, place your existing CLAUDE.md file in the project root; OpenCode will read it as a fallback."
+  ],
+  "conclusions": [
+    "OpenCode is a viable, often superior alternative to Claude Code for users who want multi-model flexibility without vendor lock-in. Its native support for 75+ providers and local models makes it ideal for diverse coding workflows.",
+    "The core value of Claude Code is the Claude model itself, not the tool. OpenCode provides the same interface with broader model choice, making it a better fit for users who need to switch models per task.",
+    "Reader feedback indicates that Claude Code can be made to work with non-Claude models via environment variables, but OpenCode offers a more seamless and officially supported multi-provider experience."
+  ],
+  "personal_relevance_summary": "As a programmer and Red Teamer, this article is highly relevant because it introduces OpenCode, a free, open-source AI coding tool that supports multiple LLMs including local models. For Red Teaming, you can leverage different models for specific tasks (e.g., GPT-5.5 for terminal-heavy exploits, local models for privacy-sensitive work). As a student, the ability to use existing subscriptions (like ChatGPT Plus) reduces costs. The tool's Plan mode aids in structured code analysis, which is useful for both development and security assessments. The open-source nature allows customization and integration into your homelab or DevOps pipeline.",
+  "extra_advice": "Consider setting up OpenCode with a local LLM (e.g., via Ollama) for offline code analysis and scripting tasks that require privacy. For Red Teaming, experiment with model switching: use GPT-5.5 for rapid prototyping of exploits and Claude for detailed code review. Also, explore OpenCode's MCP server integration to connect it with your existing security tools (e.g., vulnerability scanners) for an automated workflow.",
+  "source_url": "https://www.xda-developers.com/i-use-opencode-over-claude-code-and-its-every-bit-as-good/"
+}

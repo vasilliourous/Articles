@@ -1,0 +1,121 @@
+{
+  "article_title": "Six exploits broke AI coding agents. IAM never saw them.",
+  "core_thesis": "The article argues that the primary security vulnerability in AI coding agents is not the model itself but the runtime credentials they hold and the lack of identity and access management (IAM) controls governing them. Six exploits across Codex, Claude Code, Copilot, and Vertex AI all followed the same pattern: attackers targeted credentials, not model outputs, exploiting unsanitized inputs, excessive permissions, and missing session anchoring to exfiltrate tokens and gain unauthorized access.",
+  "detailed_summary": "The article details six security exploits against major AI coding agents (Codex, Claude Code, Copilot, Vertex AI) discovered over nine months, all targeting runtime credentials. BeyondTrust demonstrated that a crafted GitHub branch name could steal Codex's OAuth token in cleartext via command injection (Critical P1). Claude Code had two CVEs: CVE-2026-25723 (file-write restrictions bypassed via piped commands) and CVE-2026-33068 (permission mode bypass via settings.json before trust dialog). Additionally, Adversa found that Claude Code dropped deny-rule enforcement after 50 subcommands. Copilot had CVE-2025-53773 (hidden instructions in PR descriptions enabling RCE) and Orca Security's RoguePilot (hidden instructions in GitHub issues exfiltrating GITHUB_TOKEN via symbolic links). Vertex AI's default P4SA service identity had excessive OAuth scopes, granting read access to all Cloud Storage buckets and Google's Artifact Registry. The article emphasizes that every exploit targeted credentials, not model outputs, and that enterprises lack inventory, governance, and runtime monitoring for AI agent identities. It provides a defense grid and an action plan for security directors, including inventorying agents, auditing OAuth scopes, treating inputs as untrusted, and governing agent identities like privileged human identities.",
+  "entities": [
+    {
+      "name": "BeyondTrust",
+      "type": "organization",
+      "role": "Security vendor that discovered the Codex branch name exploit."
+    },
+    {
+      "name": "Tyler Jespersen",
+      "type": "person",
+      "role": "Researcher at BeyondTrust who found the Codex OAuth token exfiltration."
+    },
+    {
+      "name": "Adversa",
+      "type": "organization",
+      "role": "Security firm that discovered the 50-subcommand bypass in Claude Code."
+    },
+    {
+      "name": "Johann Rehberger",
+      "type": "person",
+      "role": "Researcher who demonstrated CVE-2025-53773 against GitHub Copilot."
+    },
+    {
+      "name": "Orca Security",
+      "type": "organization",
+      "role": "Security firm that cracked Copilot inside GitHub Codespaces (RoguePilot)."
+    },
+    {
+      "name": "Unit 42",
+      "type": "organization",
+      "role": "Palo Alto Networks threat research team that found Vertex AI P4SA excessive permissions."
+    },
+    {
+      "name": "Ofir Shaty",
+      "type": "person",
+      "role": "Unit 42 researcher who discovered the Vertex AI P4SA credential issue."
+    },
+    {
+      "name": "Michael Bargury",
+      "type": "person",
+      "role": "Zenity CTO who demonstrated zero-click hijacking of AI agents at Black Hat USA 2025."
+    },
+    {
+      "name": "Merritt Baer",
+      "type": "person",
+      "role": "CSO at Enkrypt AI and former Deputy CISO at AWS, interviewed about the credential gap."
+    },
+    {
+      "name": "Elia Zaitsev",
+      "type": "person",
+      "role": "CrowdStrike CTO who advised collapsing agent identities back to the human."
+    },
+    {
+      "name": "Kayne McGladrey",
+      "type": "person",
+      "role": "IEEE Senior Member who noted agents use far more permissions than humans."
+    },
+    {
+      "name": "Mike Riemer",
+      "type": "person",
+      "role": "CTO at Ivanti who emphasized patching within 72 hours and validating before trusting."
+    },
+    {
+      "name": "Carter Rees",
+      "type": "person",
+      "role": "VP of AI and Machine Learning at Reputation, commented on broken access control."
+    },
+    {
+      "name": "OpenAI",
+      "type": "organization",
+      "role": "Developer of Codex; classified the branch name exploit as Critical P1."
+    },
+    {
+      "name": "Anthropic",
+      "type": "organization",
+      "role": "Developer of Claude Code; patched multiple CVEs and the 50-subcommand bypass."
+    },
+    {
+      "name": "Microsoft",
+      "type": "organization",
+      "role": "Developer of Copilot; patched CVE-2025-53773 in August 2025."
+    },
+    {
+      "name": "Google",
+      "type": "organization",
+      "role": "Developer of Vertex AI; default P4SA credentials had excessive permissions."
+    }
+  ],
+  "key_data_points": [
+    "BeyondTrust proved that a crafted GitHub branch name could steal Codex's OAuth token in cleartext via command injection (semicolon and backtick subshell). Unicode U+3000 characters made the malicious branch appear identical to 'main' in the web portal. (🟢 Red Teaming: This technique can be weaponized to exfiltrate tokens from AI coding agents by injecting payloads into branch names.)",
+    "Claude Code had CVE-2026-25723 where piped sed and echo commands escaped the project sandbox because command chaining was not validated. Patched in 2.0.55. (🟢 Red Teaming: Exploiting command chaining in AI agents can bypass sandbox restrictions.)",
+    "Claude Code CVE-2026-33068 allowed permission mode bypass: malicious repos set permissions.defaultMode to bypassPermissions in .claude/settings.json, and the trust dialog never appeared. Patched in 2.1.53. (🟢 Red Teaming: Manipulating agent configuration files can disable security prompts.)",
+    "Adversa found that Claude Code silently dropped deny-rule enforcement after 50 subcommands. Anthropic traded security for speed. Patched in 2.1.90. (🟢 Red Teaming: Chaining many subcommands can bypass security rules; useful for red team exercises.)",
+    "Copilot CVE-2025-53773: hidden instructions in PR descriptions flipped auto-approve mode in .vscode/settings.json, disabling confirmations and granting unrestricted shell execution. Patched in August 2025. (🟢 Red Teaming: PR descriptions can be used to inject malicious configurations into Copilot.)",
+    "Orca Security's RoguePilot: hidden instructions in a GitHub issue manipulated Copilot to check out a malicious PR with a symbolic link to user-secrets-envs.json, exfiltrating GITHUB_TOKEN via a crafted JSON $schema URL. Zero user interaction beyond opening the issue. (🟢 Red Teaming: GitHub issues can be weaponized to steal tokens from Copilot in Codespaces.)",
+    "Vertex AI's default P4SA service identity had excessive OAuth scopes, granting unrestricted read access to every Cloud Storage bucket in the project and reaching Google's Artifact Registry. (🟢 Red Teaming: Default service accounts with excessive permissions are prime targets for credential theft.)",
+    "The Sonar 2026 State of Code Developer Survey found 25% of developers use AI agents regularly, and 64% have started using them. (🟢 Relevance: High adoption means more attack surface for red teaming.)",
+    "Veracode tested more than 100 LLMs and found 45% of generated code samples introduced OWASP Top 10 flaws. (🟢 Relevance: AI-generated code introduces additional vulnerabilities that compound credential risks.)",
+    "Gravitee's 2026 survey found only 21.9% of teams have onboarded agent OAuth credentials into PAM platforms. (🟢 Relevance: Most organizations lack governance for AI agent identities, creating opportunities for red team exploitation.)"
+  ],
+  "methodology_steps": [
+    "Inventory every AI coding agent (CIEM): List Codex, Claude Code, Copilot, Cursor, Gemini Code Assist, Windsurf. Document the credentials and OAuth scopes each received at setup. If your CMDB has no category for AI agent identities, create one.",
+    "Audit OAuth scopes and patch levels: Upgrade Claude Code to 2.1.90 or later. Verify Copilot's August 2025 patch. Migrate Vertex AI to the bring-your-own-service-account model to limit default permissions.",
+    "Treat branch names, pull request descriptions, GitHub issues, and repo configuration as untrusted input. Monitor for Unicode obfuscation (U+3000), command chaining over 50 subcommands, and changes to .vscode/settings.json or .claude/settings.json that flip permission modes.",
+    "Govern agent identities the way you govern human privileged identities (PAM/IGA): Implement credential rotation, least-privilege scoping, and separation of duties between the agent that writes code and the agent that deploys it. Use CyberArk, Delinea, or any PAM platform that accepts non-human identities to onboard agent OAuth credentials.",
+    "Validate before you communicate: Before any AI coding agent authenticates to GitHub, Gmail, or an internal repository, verify the agent's identity, scope, and the human session it is bound to.",
+    "Ask each vendor in writing before your next renewal: 'Show me the identity lifecycle management controls for the AI agent running in my environment, including credential scope, rotation policy, and permission audit trail.' If the vendor cannot answer, that is the audit finding."
+  ],
+  "conclusions": [
+    "The six exploits demonstrate that AI coding agents' primary vulnerability is not the model but the runtime credentials they hold. Attackers consistently target credentials via unsanitized inputs, excessive permissions, and missing session anchoring. (🟢 Red Teaming: Focus on credential exfiltration and input injection in AI agent workflows.)",
+    "Enterprises lack inventory and governance for AI agent identities. Most CISOs inventory every human identity but have zero inventory of AI agents running with equivalent credentials. (🟢 Relevance: This gap is a prime target for red team operations to demonstrate risk.)",
+    "The recommended defense is to collapse agent identities back to the human, ensuring agents never have more privileges than the human user. This requires IAM frameworks to treat agent credentials with the same rigor as human privileged identities. (🟢 Advice: Implement agent identity lifecycle management and least-privilege scoping.)",
+    "Patching alone is insufficient; threat actors reverse-engineer patches within 72 hours. Organizations must also implement runtime monitoring, input sanitization, and credential exfiltration detection. (🟢 Red Teaming: Exploit the window between patch release and deployment.)"
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your Red Teaming and cybersecurity interests as it details six real-world exploits against AI coding agents, all targeting credential theft via input injection, configuration manipulation, and excessive permissions. You can directly apply these techniques in red team exercises: crafting malicious branch names with Unicode obfuscation, chaining subcommands to bypass deny rules, injecting hidden instructions in PR descriptions or GitHub issues, and exploiting default service accounts with excessive OAuth scopes. The article also provides a concrete action plan for securing AI agents, which you can use to assess and harden your own homelab or client environments. As a programmer, understanding these vulnerabilities helps you write more secure code and configure AI tools safely. The emphasis on IAM governance and credential lifecycle management offers valuable insights for DevOps and homelab setups where AI agents are increasingly used.",
+  "extra_advice": "Consider building a red team lab that simulates these exploits: set up a local instance of Claude Code or Copilot (or use a sandboxed environment) and practice injecting malicious branch names, PR descriptions, and GitHub issues to exfiltrate tokens. Automate the process with a script that chains subcommands to bypass deny rules. This will give you hands-on experience with the attack vectors and help you develop detection signatures for your homelab SIEM.",
+  "source_url": "https://venturebeat.com/security/six-exploits-broke-ai-coding-agents-iam-never-saw-them"
+}

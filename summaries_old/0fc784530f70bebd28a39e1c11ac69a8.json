@@ -1,0 +1,43 @@
+{
+  "article_title": "Why AI engineering needs old-school discipline",
+  "core_thesis": "The article argues that the gap between AI proof-of-concept and production is widening because organizations focus on speed rather than engineering fundamentals. Thoughtworks' Nimisha Asthagiri advocates for revisiting traditional practices like test-driven development, mutation testing, DORA metrics, and zero-trust security to manage the complexity introduced by AI-generated code. She also introduces the concept of 'dark code'—ephemeral, disposable code that should be generated only when needed and explicitly lifecycle-managed.",
+  "detailed_summary": "The article is based on a podcast interview with Nimisha Asthagiri, data and AI advisor at Thoughtworks, discussing the latest Thoughtworks Technology Radar. It highlights that over 40% of agentic AI projects are predicted to be canceled by 2027 (Gartner), primarily due to the difficulty of moving from proof-of-concept to production. Asthagiri suggests that instead of asking 'how to go faster,' organizations should ask 'what can we build now that we couldn't before,' emphasizing systems thinking and organizational literacy. The Radar points to a resurgence of engineering discipline: test-driven development, mutation testing, DORA metrics, and zero-trust security are critical for maintaining control over AI-generated code. Asthagiri warns of 'cognitive debt'—the gap between what AI produces and what developers understand. She introduces 'dark code,' analogous to dark data, meaning much AI-generated code is unnecessary and should be ephemeral or explicitly lifecycle-managed. The Radar also recommends 'sandboxed execution for coding agents' to isolate agent activities. The overall message is that old-school engineering rigor is essential to harness AI's potential without accumulating technical and cognitive debt.",
+  "entities": [
+    {
+      "name": "Nimisha Asthagiri",
+      "type": "person",
+      "role": "Data and AI advisor at Thoughtworks, interviewed for the article; key proponent of returning to engineering fundamentals."
+    },
+    {
+      "name": "Thoughtworks",
+      "type": "organization",
+      "role": "Global technology consultancy that publishes the Technology Radar; sponsor of the article."
+    },
+    {
+      "name": "Thoughtworks Technology Radar",
+      "type": "event/publication",
+      "role": "A periodic report that assesses technologies and practices; the 34th edition is discussed in the article."
+    },
+    {
+      "name": "Gartner",
+      "type": "organization",
+      "role": "Research firm cited for the prediction that over 40% of agentic AI projects will be canceled by 2027."
+    }
+  ],
+  "key_data_points": [
+    "Gartner predicts that more than 40% of agentic AI projects will be canceled by the end of 2027, reflecting the widespread PoC-to-production gap. (🟢 Relevant to your Red Teaming: This indicates a market ripe for security assessments of AI systems that are rushed to production without proper testing.)",
+    "Thoughtworks' Technology Radar highlights the return of test-driven development, mutation testing, DORA metrics, and zero-trust security as essential practices for AI engineering. (🟢 Relevant to your programming and DevOps: These are actionable practices you can adopt immediately to improve code quality and security in your projects.)",
+    "Asthagiri introduces the concept of 'dark code'—AI-generated code that is never used or needed—and advocates for ephemeral code generation and explicit lifecycle management. (🟢 Relevant to your homelab and DevOps: You can apply this by using infrastructure-as-code with short-lived resources and automated cleanup.)",
+    "The Radar recommends 'sandboxed execution for coding agents' to isolate agent activities with restricted file system access, network control, and resource limits. (🟢 Relevant to your Red Teaming: This is a defensive technique you should understand to evaluate how agents can be contained or potentially escaped.)",
+    "Asthagiri emphasizes that successful organizations invest in 'literacy and enablement' rather than just tooling, and that multi-agent setups should be orchestrated by humans. (🟢 Relevant to your student and productivity interests: This underscores the importance of continuous learning and human oversight in automated workflows.)"
+  ],
+  "methodology_steps": [],
+  "conclusions": [
+    "The PoC-to-production gap in AI is largely due to a lack of engineering discipline, not a lack of tools. Organizations that succeed invest in fundamentals like testing, security, and organizational literacy. For you, this means that as you build AI-powered tools or agents, you should prioritize robust testing and security practices from the start.",
+    "AI-generated code should be treated as ephemeral when possible, with explicit expiration dates and architectural segregation. This reduces technical debt and cognitive load. In your homelab or DevOps pipelines, consider using disposable containers or serverless functions for one-off tasks.",
+    "Zero-trust security and sandboxed execution are critical for controlling AI agents. As a red teamer, you should explore how these sandboxes can be bypassed or how agents might leak data if not properly isolated."
+  ],
+  "personal_relevance_summary": "This article directly connects to your interests in cybersecurity, programming, and DevOps by advocating for the return of rigorous engineering practices in the age of AI. As a red teamer, the discussion of zero-trust and sandboxed execution for agents provides insight into defensive measures you may need to evaluate or bypass. For your programming and homelab work, the concepts of test-driven development, mutation testing, and ephemeral code are immediately applicable to improve code quality and reduce waste. As a student, the emphasis on organizational literacy and continuous learning reinforces the value of mastering fundamentals before adopting new tools. The article also offers a strategic perspective on AI adoption that can help you make informed decisions in your projects.",
+  "extra_advice": "Consider setting up a small homelab experiment where you deploy an AI coding agent (e.g., using open-source tools like LangChain or AutoGPT) inside a sandboxed Docker container with restricted network and file access. Then attempt to break out of the sandbox or exfiltrate data. This will give you hands-on experience with both the defensive techniques described and the offensive security implications of agentic AI.",
+  "source_url": "https://thenewstack.io/thoughtworks-radar-agentic-ai/"
+}

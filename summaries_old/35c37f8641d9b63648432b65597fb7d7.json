@@ -1,0 +1,60 @@
+{
+  "article_title": "Karpathy says developers have 'AI Psychosis.' Everyone else is next.",
+  "core_thesis": "The article argues that developers are currently experiencing a unique 'AI Psychosis'—a perception gap where those who use frontier AI models professionally in coding see staggering improvements, while the general public remains skeptical due to low-quality consumer AI experiences. This gap exists because AI capability, domain expertise, and AI fluency converge most strongly in software development, but the same dynamic will soon spread to other fields as agentic tools mature for law, medicine, finance, and operations.",
+  "detailed_summary": "Andrej Karpathy's essay describes a growing perception gap around AI: one group tried free ChatGPT, saw hallucinations, and formed a negative opinion; another group pays for frontier models like Codex and Claude Code and experiences 'AI Psychosis' as these models solve complex programming problems in days or weeks. The article expands on this by noting that developers feel AI's impact first not because coding is uniquely vulnerable, but because it's where frontier-model capability, AI fluency, and deep domain expertise overlap most cleanly. As models improve and agentic tools become usable in other domains, the same dynamic will spread outward.\n\nThe article provides evidence of this spread: Anthropic's Claude Cowork is bringing agentic tools to HR, operations, finance, and design; Claude Mythos Preview demonstrated emergent cybersecurity capabilities—finding zero-day vulnerabilities in every major OS and browser without explicit training—showing that improving reasoning models cascades into adjacent domains. Meanwhile, a Gallup study shows Gen Z's anger toward AI rising to 31%, and Goldman Sachs estimates AI eliminates ~16,000 net U.S. jobs per month. Meta's internal 'Claudeonomics' dashboard tracked 60 trillion tokens consumed by 85,000+ employees in 30 days, with top users achieving 10x productivity. The article concludes that developers are not uniquely threatened but are merely the first to experience the full effects of AI in their industry.",
+  "entities": [
+    {
+      "name": "Andrej Karpathy",
+      "type": "person",
+      "role": "OpenAI co-founder who coined 'AI Psychosis' to describe the perception gap among developers using frontier AI models."
+    },
+    {
+      "name": "Anthropic",
+      "type": "organization",
+      "role": "AI company that released Claude Cowork (enterprise agentic tools) and Claude Mythos Preview (model with emergent cybersecurity capabilities)."
+    },
+    {
+      "name": "Meta",
+      "type": "organization",
+      "role": "Company whose internal 'Claudeonomics' dashboard tracked massive AI token consumption by employees, indicating aggressive adoption."
+    },
+    {
+      "name": "Goldman Sachs",
+      "type": "organization",
+      "role": "Investment bank that estimated AI eliminates ~16,000 net U.S. jobs per month."
+    },
+    {
+      "name": "Gallup",
+      "type": "organization",
+      "role": "Polling organization that found 31% of Gen Z now says AI makes them angry, up 9 points from last year."
+    },
+    {
+      "name": "Claude Mythos Preview",
+      "type": "event",
+      "role": "Anthropic's model that demonstrated emergent zero-day exploitation capabilities across all major OS and browsers."
+    },
+    {
+      "name": "Project Glasswing",
+      "type": "event",
+      "role": "Anthropic's initiative with Amazon, Apple, Microsoft, and others to use Mythos defensively, pledging $100M in credits and $4M in donations."
+    }
+  ],
+  "key_data_points": [
+    "Karpathy's 'AI Psychosis' describes a perception gap: one group tried free ChatGPT and saw hallucinations; another uses frontier models professionally and sees staggering improvements in coding tasks that previously took days or weeks. (🟢 Relevant to your Red Teaming: understanding this gap helps you anticipate where AI will disrupt security roles and how to leverage AI for offensive tasks.)",
+    "Anthropic's Claude Mythos Preview identified and exploited zero-day vulnerabilities in every major OS and every major web browser, including a 27-year-old DoS bug in OpenBSD and a 16-year-old flaw in FFmpeg. It developed 181 working exploits for Firefox JavaScript engine vulnerabilities vs. 2 for the previous model. (🟢 Critical for Red Teaming: this shows AI can autonomously discover and weaponize vulnerabilities at scale—you can use similar models to accelerate vulnerability research.)",
+    "Anthropic stated that Mythos's cybersecurity capabilities emerged as a downstream consequence of general improvements in code, reasoning, and autonomy—not explicit training. (🟢 Relevant to your programming: improving general AI reasoning cascades into security capabilities, meaning you can apply similar models to automate exploit development.)",
+    "Goldman Sachs estimates AI eliminates ~16,000 net U.S. jobs per month (25,000 wiped out, 9,000 added back). Nikkei Asia reports 78,557 tech workers laid off in Q1 2026, nearly half attributed to AI. (🟢 Relevant to your career planning: staying ahead of AI adoption is essential; focus on skills that complement AI rather than compete.)",
+    "Meta's internal 'Claudeonomics' dashboard tracked 60 trillion tokens consumed by 85,000+ employees in 30 days; top user averaged 281 billion tokens/month. CTO Andrew Bosworth claimed a top engineer spending their entire salary on tokens achieved 10x productivity. (🟢 Relevant to your DevOps/homelab: token consumption metrics can indicate productivity gains; consider tracking your own AI usage to optimize workflows.)",
+    "Gallup study: 31% of Gen Z now says AI makes them angry (up 9 points), only 22% excited (down from 36%), and 80% believe AI use may impede future learning. (🟢 Relevant as a student: be aware of this backlash but don't let it deter you—embrace AI as a learning accelerator.)"
+  ],
+  "methodology_steps": [],
+  "conclusions": [
+    "Developers are experiencing 'AI Psychosis' because AI capability, domain expertise, and AI fluency converge in software development, making it the first field to feel transformative effects. This is not a sign of unique vulnerability but a preview of what other industries will face as agentic tools mature.",
+    "AI models like Claude Mythos demonstrate that improving general reasoning leads to emergent capabilities in adjacent domains like cybersecurity. For Red Teaming, this means AI can autonomously discover and exploit zero-day vulnerabilities, drastically changing the offensive security landscape.",
+    "The job market data (Goldman Sachs, Nikkei) confirms that AI is already displacing tech workers, but the real impact may take up to a year to materialize. To stay relevant, you must become proficient in using AI tools for programming, security, and DevOps tasks.",
+    "Gen Z's growing anger toward AI (Gallup) reflects exposure to low-quality consumer AI, not the frontier models used by professionals. As a student, you can bridge this gap by learning to use advanced AI tools effectively, giving you a competitive edge."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to your Red Teaming and programming interests because it highlights how AI models like Claude Mythos can autonomously discover and exploit zero-day vulnerabilities—a capability you can leverage for offensive security research. The discussion of 'AI Psychosis' and the perception gap underscores the importance of staying ahead of AI adoption: as a programmer and cybersecurity enthusiast, you should actively integrate frontier AI tools (e.g., Claude Code, Codex) into your workflow to boost productivity and vulnerability research. The article also provides concrete data on job displacement and token consumption metrics, which can inform your career planning and DevOps optimization. As a student, the Gen Z backlash data reminds you to embrace AI as a learning accelerator rather than fear it.",
+  "extra_advice": "Consider setting up a local AI coding assistant (e.g., via Ollama with CodeLlama or using Claude Code) to automate repetitive programming tasks and vulnerability scanning. For Red Teaming, experiment with AI-driven fuzzing or exploit generation using models like Mythos (if accessible) or open-source alternatives. Track your own token consumption to measure productivity gains, similar to Meta's 'Claudeonomics' approach.",
+  "source_url": "https://thenewstack.io/karpathy-says-developers-have-ai-psychosis-everyone-else-is-next/"
+}

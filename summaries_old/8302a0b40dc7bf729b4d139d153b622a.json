@@ -1,0 +1,64 @@
+{
+  "article_title": "Nobody talks about this polished open-source note-taking app, and I don’t get it",
+  "core_thesis": "Joplin is an underappreciated, polished open-source note-taking app that prioritizes consistency, privacy, and data ownership over flashy aesthetics. Its true value emerges over time through features like end-to-end encryption, cross-platform consistency, a REST API, and a plugin ecosystem, making it a superior choice for users who value long-term control and flexibility over immediate visual appeal.",
+  "detailed_summary": "The article argues that Joplin deserves more recognition as a note-taking app. While it lacks the visual polish of Notion or Obsidian, Joplin offers a deliberately consistent three-panel interface across all platforms (desktop and mobile), ensuring a seamless experience. Its core strength lies in data ownership: notes are stored locally in Markdown, with free end-to-end encryption (E2EE) for sync, unlike Obsidian which charges for E2EE. Joplin also provides a clean Markdown export, avoiding vendor lock-in. The app's depth becomes apparent over time through features like a local REST API for automation, a command-line client, and a plugin ecosystem (e.g., the Jarvis plugin for AI summarization via Ollama). The author acknowledges Joplin's weaknesses—lack of native bidirectional linking and less attractive design—but concludes that these are trade-offs for a tool focused on reliable, private, and cross-platform note-taking. User comments highlight sync issues with OneDrive but praise Joplin Cloud and overall reliability.",
+  "entities": [
+    {
+      "name": "Joplin",
+      "type": "software",
+      "role": "Open-source note-taking app, the subject of the article"
+    },
+    {
+      "name": "Obsidian",
+      "type": "software",
+      "role": "Competing note-taking app with plain .md files but paid E2EE"
+    },
+    {
+      "name": "Notion",
+      "type": "software",
+      "role": "Competing note-taking app with proprietary format and no local-first approach"
+    },
+    {
+      "name": "Evernote",
+      "type": "software",
+      "role": "Competing note-taking app with proprietary format and no free E2EE"
+    },
+    {
+      "name": "OneNote",
+      "type": "software",
+      "role": "Competing note-taking app with proprietary format and no free E2EE"
+    },
+    {
+      "name": "Laurent Cozic",
+      "type": "person",
+      "role": "Original developer of Joplin"
+    },
+    {
+      "name": "Afam Onyimadu",
+      "type": "person",
+      "role": "Author of the article"
+    }
+  ],
+  "key_data_points": [
+    "Joplin uses a three-panel layout (notebooks, notes, editor) that is consistent across Windows, macOS, Linux, Android, and iOS, ensuring a seamless cross-platform experience (🟢 relevant to your productivity: if you use multiple devices, this consistency reduces friction).",
+    "Joplin stores notes locally in Markdown within a database, and offers free end-to-end encryption (E2EE) for sync, unlike Obsidian which charges $4/month for E2EE (🟢 relevant to your cybersecurity interests: free E2EE protects your notes from unauthorized access during sync).",
+    "Joplin provides a clean Markdown export, avoiding vendor lock-in; notes are readable in any text editor (🟢 relevant to your programming needs: Markdown is developer-friendly and easily version-controlled).",
+    "Joplin has a local REST API that allows you to create, search, and modify notes programmatically, enabling automation (🟢 relevant to your Red Teaming and programming: you can script note ingestion or exfiltration of data).",
+    "Joplin supports plugins; the Jarvis plugin connects to a local Ollama instance for AI summarization, auto-tagging, and semantic search (🟢 relevant to your homelab/devops: you can run local AI models for enhanced note processing).",
+    "Joplin's sync can be self-hosted via WebDAV/Nextcloud/Dropbox, or via Joplin Cloud (€2.40/month) for convenience (🟢 relevant to your homelab: self-hosting gives you full control over your data).",
+    "User comments report sync issues with OneDrive (e.g., phantom deletion of entries), but Joplin Cloud sync is reliable (🟢 relevant to your homelab: avoid OneDrive for sync; use WebDAV/Nextcloud or Joplin Cloud)."
+  ],
+  "methodology_steps": [
+    "To automate note creation via Joplin's REST API: 1) Enable the API in Joplin desktop settings (Tools > Options > Web Clipper > Enable Web Clipper service). 2) Note the authorization token. 3) Use curl or a script to POST to http://localhost:41184/notes with JSON payload (title, body, notebook_id). 4) Example: curl -X POST http://localhost:41184/notes?token=YOUR_TOKEN -H 'Content-Type: application/json' -d '{\"title\":\"Test\",\"body\":\"Hello\",\"parent_id\":\"NOTEBOOK_ID\"}'.",
+    "To use the Jarvis plugin with local Ollama: 1) Install Ollama on your machine. 2) Pull a model (e.g., ollama pull llama3). 3) Install the Jarvis plugin in Joplin. 4) Configure the plugin to point to your local Ollama endpoint (http://localhost:11434). 5) Use the plugin to summarize notes or auto-tag.",
+    "To sync Joplin via WebDAV (self-hosted): 1) Set up a WebDAV server (e.g., Nextcloud). 2) In Joplin, go to Preferences > Synchronisation > Sync Target > WebDAV. 3) Enter the WebDAV URL, username, and password. 4) Enable E2EE in Joplin settings for encrypted sync."
+  ],
+  "conclusions": [
+    "Joplin is a strong choice for users who prioritize data ownership, privacy, and cross-platform consistency over visual aesthetics. Its free E2EE and local-first Markdown storage make it superior to Obsidian for privacy-conscious users, despite Obsidian's more direct file access.",
+    "Joplin's depth (REST API, CLI, plugins) makes it highly extensible for power users and developers, allowing automation and integration with local AI tools. This aligns with the user's programming and homelab interests.",
+    "The main trade-offs are the lack of native bidirectional linking (important for Zettelkasten) and a less polished interface. However, for straightforward note-taking with strong privacy and automation, Joplin is a top contender."
+  ],
+  "personal_relevance_summary": "This article is highly relevant to you as a programmer and cybersecurity enthusiast. Joplin's local-first, Markdown-based storage and free E2EE align with your data privacy needs. Its REST API and CLI enable automation and scripting, which you can leverage for Red Teaming workflows (e.g., automated note ingestion from tools). The plugin ecosystem, especially with local AI via Ollama, fits your homelab interests. As a student, Joplin's cross-platform consistency and offline access make it a reliable study tool. The article also warns against using OneDrive for sync, which is a practical tip for your homelab setup.",
+  "extra_advice": "Consider setting up Joplin with a self-hosted Nextcloud instance for sync, and use the REST API to automatically log findings from penetration testing tools (e.g., Nmap, Burp Suite) into Joplin notebooks. This creates a searchable, encrypted knowledge base for your Red Teaming engagements.",
+  "source_url": "https://www.makeuseof.com/nobody-talks-about-this-polished-open-source-note-taking-app-and-i-dont-get-it/"
+}
